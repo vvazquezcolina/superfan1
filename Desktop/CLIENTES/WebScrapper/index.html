@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Asset Scraper - Extract Brand Assets Instantly</title>
+    <meta name="description" content="Extract brand assets, analyze website content, and download optimized media files for rapid site cloning.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-bar {
+            transition: width 0.3s ease;
+        }
+        
+        .toast {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .toast.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-spider text-3xl"></i>
+                    <h1 class="text-2xl font-bold">Brand Asset Scraper</h1>
+                </div>
+                <a href="https://github.com/vvazquezcolina/web-scrapper" target="_blank" 
+                   class="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">
+                Extract Brand Assets <span class="text-purple-600">Instantly</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Analyze websites, download optimized media, detect logos, and generate comprehensive brand briefs for rapid site cloning.
+            </p>
+            
+            <!-- Main Form -->
+            <div class="max-w-2xl mx-auto">
+                <form id="scraperForm" class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="mb-6">
+                        <label for="websiteUrl" class="block text-left text-sm font-semibold text-gray-700 mb-2">
+                            Website URL
+                        </label>
+                        <div class="relative">
+                            <input type="url" id="websiteUrl" name="websiteUrl" 
+                                   placeholder="https://example.com" required
+                                   class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                            <i class="fas fa-globe absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Advanced Options -->
+                    <div class="mb-6">
+                        <button type="button" id="toggleAdvanced" 
+                                class="text-purple-600 hover:text-purple-800 font-medium flex items-center space-x-2">
+                            <span>Advanced Options</span>
+                            <i class="fas fa-chevron-down transform transition-transform" id="advancedIcon"></i>
+                        </button>
+                        
+                        <div id="advancedOptions" class="hidden mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Max Depth</label>
+                                <select id="maxDepth" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                                    <option value="1">1 Level</option>
+                                    <option value="2">2 Levels</option>
+                                    <option value="3" selected>3 Levels</option>
+                                    <option value="4">4 Levels</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Max Pages</label>
+                                <select id="maxPages" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                                    <option value="10">10 Pages</option>
+                                    <option value="25">25 Pages</option>
+                                    <option value="50">50 Pages</option>
+                                    <option value="100" selected>100 Pages</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" id="skipVideos" class="rounded">
+                                    <span class="text-sm text-gray-700">Skip video extraction (faster processing)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn" 
+                            class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                        <span id="submitText">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Extract Brand Assets
+                        </span>
+                        <span id="loadingText" class="hidden">
+                            <div class="spinner inline-block mr-2"></div>
+                            Processing...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Powerful Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-spider text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Web Crawling</h4>
+                    <p class="text-gray-600">Crawl entire websites with configurable depth and page limits</p>
+                </div>
+                
+                <div class="feature-card text-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-images text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Asset Processing</h4>
+                    <p class="text-gray-600">Download, optimize, and organize all media files automatically</p>
+                </div>
+                
+                <div class="feature-card text-center p-6 rounded-xl bg-gradient-to-br from-green-50 to-green-100">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Logo Detection</h4>
+                    <p class="text-gray-600">Automatically identify and separate logo files from other images</p>
+                </div>
+                
+                <div class="feature-card text-center p-6 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Brand Analysis</h4>
+                    <p class="text-gray-600">AI-powered brand analysis with colors, fonts, and tone detection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section (Hidden by default) -->
+    <section id="progressSection" class="hidden py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Processing Progress</h4>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-600 mb-1">
+                            <span id="progressText">Initializing...</span>
+                            <span id="progressPercent">0%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div id="progressBar" class="progress-bar bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div id="progressDetails" class="text-sm text-gray-500">
+                        <!-- Progress details will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (Hidden by default) -->
+    <section id="resultsSection" class="hidden py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Extraction Results</h3>
+                <div id="resultsContent" class="bg-white rounded-xl shadow-lg p-8">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2024 Brand Asset Scraper. Use responsibly and respect website terms of service.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/vvazquezcolina/web-scrapper" target="_blank" class="hover:text-purple-400 transition">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-purple-400 transition">
+                    <i class="fas fa-book text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50">
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-exclamation-circle"></i>
+            <span id="toastMessage">Something went wrong!</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 

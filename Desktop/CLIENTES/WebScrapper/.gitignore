@@ -167,4 +167,18 @@ secrets.txt
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local 
+.env.production.local
+
+# Vercel deployment files
+.vercel
+.vercel.json.bak
+
+# Node.js (if used for frontend tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/ 
