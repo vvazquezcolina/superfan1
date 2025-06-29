@@ -4,7 +4,6 @@ Vercel Serverless Function - Progress Check API Endpoint
 
 import json
 import time
-import uuid
 
 # Mock job storage (shared with scrape.py - use database in production)
 MOCK_JOBS = {}
@@ -35,9 +34,18 @@ def handler(request):
         }
     
     try:
-        # Extract job ID from URL
-        job_id = request.query.get('jobId') or request.url.split('/')[-1]
+        # Extract job ID from request
+        job_id = None
         
+        # Try different ways to get the job ID from Vercel request
+        if hasattr(request, 'query') and request.query.get('jobId'):
+            job_id = request.query.get('jobId')
+        elif hasattr(request, 'args') and request.args.get('jobId'):
+            job_id = request.args.get('jobId')
+        elif hasattr(request, 'url'):
+            # Extract from URL path
+            job_id = request.url.split('/')[-1]
+            
         if not job_id:
             return {
                 'statusCode': 400,
@@ -142,7 +150,8 @@ def simulate_progress(job_id):
                     'fonts': ['Inter', 'Roboto'],
                     'services': ['Software Development', 'Consulting', 'Design']
                 },
-                'download_url': f'/downloads/demo-{job_id}.zip'
+                'download_url': f'/downloads/demo-{job_id}.zip',
+                'jobId': job_id
             }
         }
         
