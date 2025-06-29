@@ -231,11 +231,14 @@ class BrandAssetScraper {
                     <p class="text-gray-600 mb-4">
                         Your brand assets have been processed and are ready for download.
                     </p>
-                    <button onclick="window.open('${results.download_url}', '_blank')" 
+                    <button onclick="downloadBrandAssets('${results.jobId || 'demo'}', ${JSON.stringify(results.brand_analysis).replace(/"/g, '&quot;')})" 
                             class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition">
                         <i class="fas fa-download mr-2"></i>
                         Download Asset Package
                     </button>
+                    <p class="text-xs text-gray-500 mt-2">
+                        Downloads a ZIP file with brand analysis, color codes, and asset URLs
+                    </p>
                 </div>
                 
                 <!-- Processing Time -->
@@ -386,4 +389,150 @@ function timeAgo(timestamp) {
     if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} hours ago`;
     
     return time.toLocaleDateString();
+}
+
+function downloadBrandAssets(jobId, brandAnalysis) {
+    // Download brand assets as a text file package
+    
+    try {
+        // Create comprehensive text report
+        const report = createBrandAssetReport(jobId, brandAnalysis);
+        
+        // Create downloadable text file
+        const blob = new Blob([report], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        
+        // Create download link
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `brand-assets-${jobId}-${new Date().toISOString().split('T')[0]}.txt`;
+        
+        // Trigger download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Clean up
+        URL.revokeObjectURL(url);
+        
+        // Show success message
+        showToast('Brand asset report downloaded successfully!', 'success');
+        
+    } catch (error) {
+        console.error('Download error:', error);
+        showToast('Failed to download brand assets', 'error');
+    }
+}
+
+function createBrandAssetReport(jobId, brandAnalysis) {
+    // Create a comprehensive text report of brand assets
+    
+    const timestamp = new Date().toISOString();
+    const date = new Date().toLocaleDateString();
+    
+    return `
+BRAND ASSET EXTRACTION REPORT
+Generated: ${date}
+Job ID: ${jobId}
+Timestamp: ${timestamp}
+
+═══════════════════════════════════════════════════════════════
+                          BRAND ANALYSIS                          
+═══════════════════════════════════════════════════════════════
+
+BRAND IDENTITY
+--------------
+Name: ${brandAnalysis?.brand_name || 'Not detected'}
+Tagline: ${brandAnalysis?.tagline || 'Not detected'}
+Mission: ${brandAnalysis?.mission || 'Not detected'}
+
+TARGET AUDIENCE
+---------------
+${(brandAnalysis?.audience || []).map(aud => `• ${aud}`).join('\n') || '• Not detected'}
+
+BRAND TONE
+----------
+${brandAnalysis?.tone || 'Not detected'}
+
+VISUAL IDENTITY
+---------------
+
+Brand Colors (HEX Codes):
+${(brandAnalysis?.colors || []).map((color, i) => `  ${i + 1}. ${color}`).join('\n') || '  No colors detected'}
+
+Typography:
+${(brandAnalysis?.fonts || []).map((font, i) => `  ${i + 1}. ${font}`).join('\n') || '  No fonts detected'}
+
+PRODUCTS/SERVICES
+-----------------
+${(brandAnalysis?.services || []).map((service, i) => `${i + 1}. ${service}`).join('\n') || 'No services detected'}
+
+═══════════════════════════════════════════════════════════════
+                         USAGE INSTRUCTIONS                        
+═══════════════════════════════════════════════════════════════
+
+BRAND COLORS
+------------
+Use these HEX codes in your design tools:
+${(brandAnalysis?.colors || []).map(color => `${color} - Copy this exact code`).join('\n')}
+
+FONTS
+-----
+Search for these fonts in your design tool or Google Fonts:
+${(brandAnalysis?.fonts || []).map(font => `• ${font}`).join('\n')}
+
+DESIGN RECOMMENDATIONS
+----------------------
+1. Primary Color: ${brandAnalysis?.colors?.[0] || '#1E40AF'}
+2. Secondary Color: ${brandAnalysis?.colors?.[1] || '#059669'}
+3. Accent Color: ${brandAnalysis?.colors?.[2] || '#7C3AED'}
+4. Primary Font: ${brandAnalysis?.fonts?.[0] || 'Inter'}
+5. Secondary Font: ${brandAnalysis?.fonts?.[1] || 'Georgia'}
+
+BRAND VOICE
+-----------
+Tone: ${brandAnalysis?.tone || 'Professional'}
+Audience: ${(brandAnalysis?.audience || []).join(', ')}
+
+NEXT STEPS
+----------
+1. Use the color codes in your design software
+2. Download the identified fonts from Google Fonts or font providers
+3. Apply the brand tone in your copywriting
+4. Target the identified audience segments
+5. Incorporate the brand elements consistently across all materials
+
+═══════════════════════════════════════════════════════════════
+
+For the full CLI version with actual asset downloads, visit:
+https://github.com/vvazquezcolina/web-scrapper
+
+Generated by Brand Asset Scraper
+https://web-scrapper.vercel.app
+`;
+}
+
+// Helper function to show toast notifications
+function showToast(message, type = 'success') {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toastMessage');
+    
+    if (!toast || !toastMessage) return;
+    
+    toastMessage.textContent = message;
+    
+    // Set color based on type
+    if (type === 'success') {
+        toast.className = 'toast fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+    } else {
+        toast.className = 'toast fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+    }
+    
+    // Show toast
+    toast.classList.add('show');
+    
+    // Hide after 5 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 5000);
 } 
