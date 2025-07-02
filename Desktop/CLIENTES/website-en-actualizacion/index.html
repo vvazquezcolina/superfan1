@@ -512,7 +512,20 @@
         // Handle logo load error
         document.querySelector('.logo').addEventListener('error', function() {
             this.style.display = 'none';
+            console.log('Logo not found - hiding logo element');
         });
+
+        // Check if logo loads successfully, if not hide it
+        const logo = document.querySelector('.logo');
+        const logoImg = new Image();
+        logoImg.onload = function() {
+            console.log('Logo loaded successfully');
+        };
+        logoImg.onerror = function() {
+            logo.style.display = 'none';
+            console.log('Logo file not found - element hidden');
+        };
+        logoImg.src = logo.src;
 
         // Add smooth transitions
         document.querySelectorAll('a').forEach(link => {
