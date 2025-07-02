@@ -1,2 +1,0 @@
-# Minimal requirements for Vercel serverless functions
-# Only basic Python standard library functions are used 

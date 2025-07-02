@@ -1,6 +1,0 @@
-# robots.txt for Puerto Maya Cancun
-
-User-agent: *
-Allow: /
-
-Sitemap: https://www.puertomayacancun.com/sitemap.xml
