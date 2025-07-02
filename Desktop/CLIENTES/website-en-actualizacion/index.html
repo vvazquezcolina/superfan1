@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Solutions - Sitio en Actualización</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Meta tags -->
+    <meta name="description" content="Angular Solutions - Nuestro sitio web se encuentra en actualización. Pronto tendremos nuevas funcionalidades para servir mejor a nuestros clientes.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --angular-blue: #1f3658;
+            --angular-yellow: #f8e71c;
+            --angular-white: #FFFFFF;
+            --angular-gray-light: #f4f5f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--angular-gray-light) 0%, #ffffff 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--angular-blue);
+            overflow: hidden;
+            position: relative;
+            padding: 1rem 0;
+        }
+
+        /* Animated background elements */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .floating-shape {
+            position: absolute;
+            background: var(--angular-yellow);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: -1s;
+        }
+
+        .shape-2 {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            right: 10%;
+            animation-delay: -3s;
+        }
+
+        .shape-3 {
+            width: 60px;
+            height: 60px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        .container {
+            text-align: center;
+            padding: 1rem;
+            max-width: 550px;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 10px 20px rgba(31, 54, 88, 0.1));
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes logoFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--angular-blue);
+            margin-bottom: 0.8rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            color: #6b7280;
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .spinner-container {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--angular-gray-light);
+            border-top: 3px solid var(--angular-yellow);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-text {
+            font-size: 1rem;
+            color: var(--angular-blue);
+            font-weight: 500;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 3px;
+            background-color: var(--angular-gray-light);
+            border-radius: 2px;
+            margin: 1rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--angular-blue), var(--angular-yellow));
+            border-radius: 2px;
+            animation: progressFill 3s ease-in-out infinite;
+        }
+
+        @keyframes progressFill {
+            0% {
+                width: 0%;
+                transform: translateX(-100%);
+            }
+            50% {
+                width: 100%;
+                transform: translateX(0%);
+            }
+            100% {
+                width: 100%;
+                transform: translateX(100%);
+            }
+        }
+
+        .message {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 2px solid var(--angular-yellow);
+            margin-top: 1rem;
+        }
+
+        .message h2 {
+            color: var(--angular-blue);
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .message p {
+            color: #6b7280;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--angular-gray-light);
+        }
+
+        .contact-info p {
+            font-weight: 500;
+            color: var(--angular-blue);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--angular-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            padding: 0.3rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 0.2rem 0;
+        }
+
+        .contact-info a:hover,
+        .contact-info a:focus {
+            color: var(--angular-yellow);
+            background-color: rgba(31, 54, 88, 0.05);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem 0;
+                height: 100vh;
+            }
+            
+            .container {
+                padding: 0.8rem;
+                max-width: 95%;
+            }
+            
+            .logo {
+                max-width: 160px;
+                margin-bottom: 0.8rem;
+            }
+            
+            .message {
+                padding: 1rem;
+                margin-top: 0.8rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .spinner-container {
+                gap: 0.8rem;
+                margin: 1.5rem 0;
+            }
+            
+            .spinner {
+                width: 30px;
+                height: 30px;
+                border-width: 2px;
+            }
+            
+            .loading-text {
+                font-size: 0.9rem;
+            }
+            
+            .spinner-container {
+                margin: 0.8rem 0;
+            }
+            
+            .progress-bar {
+                margin: 0.8rem 0;
+                height: 2px;
+            }
+            
+            /* Reduce floating shapes visibility on mobile */
+            .floating-shape {
+                opacity: 0.4;
+            }
+            
+            .shape-1, .shape-2, .shape-3 {
+                transform: scale(0.5);
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            body {
+                padding: 0.5rem 0;
+                height: 100vh;
+            }
+            
+            .container {
+                padding: 0.6rem;
+                max-width: 98%;
+            }
+            
+            .logo {
+                max-width: 140px;
+                margin-bottom: 0.6rem;
+            }
+            
+            h1 {
+                font-size: clamp(1.5rem, 5vw, 2rem);
+                margin-bottom: 0.5rem;
+            }
+            
+            .subtitle {
+                font-size: clamp(0.9rem, 3vw, 1rem);
+                margin-bottom: 0.8rem;
+                padding: 0 0.5rem;
+            }
+            
+            .message {
+                padding: 0.8rem;
+                margin-top: 0.6rem;
+                margin-bottom: 0;
+                border-radius: 8px;
+            }
+            
+            .message h2 {
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .message p {
+                font-size: 0.85rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.4;
+            }
+            
+            .contact-info {
+                margin-top: 0.8rem;
+                padding-top: 0.8rem;
+            }
+            
+            .contact-info p {
+                font-size: 0.8rem;
+                margin-bottom: 0.3rem;
+            }
+            
+            .spinner-container {
+                margin: 0.6rem 0;
+                gap: 0.5rem;
+            }
+            
+            .spinner {
+                width: 25px;
+                height: 25px;
+                border-width: 2px;
+            }
+            
+            .loading-text {
+                font-size: 0.8rem;
+            }
+            
+            .progress-bar {
+                margin: 0.6rem 0;
+                height: 2px;
+            }
+        }
+        
+        /* Very small screens */
+        @media (max-width: 360px) {
+            .logo {
+                max-width: 120px;
+                margin-bottom: 0.4rem;
+            }
+            
+            h1 {
+                font-size: clamp(1.3rem, 5vw, 1.8rem);
+            }
+            
+            .subtitle {
+                font-size: clamp(0.8rem, 3vw, 0.9rem);
+                margin-bottom: 0.6rem;
+            }
+            
+            .message {
+                padding: 0.6rem;
+                margin-top: 0.4rem;
+            }
+            
+            .contact-info p {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .spinner,
+            .logo,
+            .floating-shape,
+            .progress-fill {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <img src="angular-solutions-logo.png" alt="Angular Solutions Logo" class="logo">
+        
+        <h1>Sitio en Actualización</h1>
+        <p class="subtitle">
+            Estamos trabajando para mejorar tu experiencia. Nuestro sitio web estará disponible muy pronto con nuevas funcionalidades.
+        </p>
+
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <span class="loading-text">Actualizando...</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="message">
+            <h2>🚀 Estamos Mejorando Para Ti</h2>
+            <p>
+                En Angular Solutions estamos implementando nuevas funcionalidades para ofrecerte una mejor experiencia en nuestros servicios de staffing industrial, logística de materiales e inspección de calidad.
+            </p>
+            <p>
+                Mientras tanto, puedes contactarnos directamente para cualquier consulta o requerimiento.
+            </p>
+
+            <div class="contact-info">
+                <p><strong>¿Necesitas ayuda urgente?</strong></p>
+                <p>📱 WhatsApp: <a href="https://wa.me/524499722505" target="_blank">+52 44 9972 2505</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactive feedback
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth loading animation
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+
+            // Dynamic loading messages
+            const loadingMessages = [
+                'Actualizando...',
+                'Mejorando experiencia...',
+                'Casi listo...',
+                'Preparando novedades...'
+            ];
+
+            const loadingText = document.querySelector('.loading-text');
+            let messageIndex = 0;
+
+            setInterval(() => {
+                messageIndex = (messageIndex + 1) % loadingMessages.length;
+                loadingText.textContent = loadingMessages[messageIndex];
+            }, 2000);
+
+            // Dynamic completion date
+            const now = new Date();
+            const estimatedDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000)); // 7 days from now
+            
+            // You can add date display if needed
+            // console.log('Estimated completion:', estimatedDate.toLocaleDateString('es-ES'));
+        });
+
+        // Handle logo load error
+        document.querySelector('.logo').addEventListener('error', function() {
+            this.style.display = 'none';
+        });
+
+        // Add smooth transitions
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html> 

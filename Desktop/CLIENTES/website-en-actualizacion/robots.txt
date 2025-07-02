@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Página de mantenimiento - No indexar
+# Angular Solutions - Sitio en actualización 
