@@ -76,6 +76,14 @@ $router->get('/verify/{token}', __DIR__ . '/endpoints/verify.php');
 // Resend verification email endpoint
 $router->post('/resend', __DIR__ . '/endpoints/resend.php');
 
+// Session management endpoints
+$router->get('/session', __DIR__ . '/endpoints/session.php');
+$router->post('/session', __DIR__ . '/endpoints/session.php');
+$router->delete('/session', __DIR__ . '/endpoints/session.php');
+
+// UniFi Controller test endpoint (admin)
+$router->get('/unifi/test', __DIR__ . '/endpoints/unifi-test.php');
+
 // Data export endpoint (for admin)
 $router->get('/export', __DIR__ . '/endpoints/export.php');
 

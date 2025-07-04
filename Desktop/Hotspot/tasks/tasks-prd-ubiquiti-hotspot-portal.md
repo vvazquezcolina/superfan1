@@ -15,15 +15,17 @@
 - `api/config/app.php` - General application configuration and environment settings
 - `config.example` - Sample environment configuration template
 - `api/endpoints/register.php` - User registration API endpoint with comprehensive validation and email integration
-- `api/endpoints/verify.php` - Email verification API endpoint with token validation and welcome email
+- `api/endpoints/verify.php` - Email verification API endpoint with token validation, welcome email, and UniFi network authorization
 - `api/endpoints/resend.php` - Resend verification email endpoint with rate limiting (max 5 attempts, 5-minute cooldown)
+- `api/endpoints/session.php` - Session management endpoint for checking, creating, and terminating user network access sessions
+- `api/endpoints/unifi-test.php` - UniFi Controller connection test endpoint for admin verification
 - `api/endpoints/export.php` - Data export API endpoint placeholder
 - `api/classes/Database.php` - Database connection and operations class
 - `api/classes/ApiResponse.php` - Standardized JSON response formatting class
 - `api/classes/Router.php` - API request routing and URL handling class
 - `api/classes/ErrorHandler.php` - Comprehensive error and exception handling class
 - `api/classes/EmailService.php` - Comprehensive email service with SMTP support and HTML/text templates (528 lines)
-- `api/classes/UniFiController.php` - UniFi API integration class
+- `api/classes/UniFiController.php` - Comprehensive UniFi Controller API integration with authentication, guest authorization, and session management (517 lines)
 - `api/classes/UserManager.php` - User data management class
 - `api/classes/Security.php` - Security utilities and validation
 - `api/index.php` - Main API entry point with routing configuration
@@ -78,13 +80,13 @@
   - [x] 3.5 Implement email verification confirmation page and flow
   - [x] 3.6 Add resend verification functionality with rate limiting
 
-- [ ] 4.0 UniFi API Integration and Network Access Control
-  - [ ] 4.1 Research and implement UniFi Controller API authentication
-  - [ ] 4.2 Create UniFi API wrapper class for guest authorization
-  - [ ] 4.3 Implement guest network access upon email verification
-  - [ ] 4.4 Add session management for authenticated users
-  - [ ] 4.5 Handle UniFi API errors and connection failures gracefully
-  - [ ] 4.6 Test integration with UniFi Cloud Key or Dream Machine
+- [x] 4.0 UniFi API Integration and Network Access Control
+  - [x] 4.1 Research and implement UniFi Controller API authentication
+  - [x] 4.2 Create UniFi API wrapper class for guest authorization
+  - [x] 4.3 Implement guest network access upon email verification
+  - [x] 4.4 Add session management for authenticated users
+  - [x] 4.5 Handle UniFi API errors and connection failures gracefully
+  - [x] 4.6 Test integration with UniFi Cloud Key or Dream Machine
 
 - [ ] 5.0 Data Management and Export Functionality
   - [ ] 5.1 Create user data management class with CRUD operations

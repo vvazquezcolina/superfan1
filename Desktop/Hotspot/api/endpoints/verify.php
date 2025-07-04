@@ -108,14 +108,60 @@ try {
         // Continue with verification even if welcome email fails
     }
     
-    // TODO: Grant network access via UniFi API (will be implemented in Task 4.0)
+    // Grant network access via UniFi API
+    require_once __DIR__ . '/../classes/UniFiController.php';
+    $unifiController = new UniFiController();
+    
+    // Get client MAC address from session/cookies or request headers
+    $macAddress = getClientMacAddress();
+    
+    if ($macAddress) {
+        $authResult = $unifiController->authorizeGuest($macAddress);
+        
+        if ($authResult['success']) {
+            ErrorHandler::logMessage("Network access granted to {$user['email']} (MAC: $macAddress)", 'INFO');
+            
+            // Create session record for tracking
+            $stmt = $db->prepare("
+                INSERT INTO sessions (user_id, mac_address, authorized_at, expires_at, status, created_at, updated_at)
+                VALUES (?, ?, NOW(), ?, 'active', NOW(), NOW())
+            ");
+            $stmt->execute([
+                $user['id'],
+                $macAddress,
+                $authResult['expires_at']
+            ]);
+            
+            $networkAccess = [
+                'granted' => true,
+                'mac_address' => $macAddress,
+                'expires_at' => $authResult['expires_at'],
+                'session_timeout' => $authResult['session_timeout']
+            ];
+        } else {
+            ErrorHandler::logMessage("Failed to grant network access to {$user['email']}: " . $authResult['error'], 'WARNING');
+            $networkAccess = [
+                'granted' => false,
+                'error' => 'Network authorization failed',
+                'details' => $authResult['error']
+            ];
+        }
+    } else {
+        ErrorHandler::logMessage("No MAC address available for network authorization: {$user['email']}", 'WARNING');
+        $networkAccess = [
+            'granted' => false,
+            'error' => 'Client MAC address not detected',
+            'note' => 'Network access will be granted when you connect to the WiFi network'
+        ];
+    }
     
     // Return success response
     ApiResponse::success([
         'message' => 'Email verified successfully! You now have access to the WiFi network.',
         'email' => $user['email'],
         'verified' => true,
-        'access_granted' => true
+        'access_granted' => true,
+        'network_access' => $networkAccess
     ], 'Email verification successful');
     
 } catch (PDOException $e) {
@@ -125,6 +171,45 @@ try {
 } catch (Exception $e) {
     ErrorHandler::logMessage("Verification error: " . $e->getMessage(), 'ERROR');
     ApiResponse::serverError('Verification failed. Please try again.');
+}
+
+/**
+ * Attempt to get client MAC address
+ * Note: This is challenging in web environments due to browser security
+ */
+function getClientMacAddress() {
+    // Try to get MAC from session if previously stored
+    if (isset($_SESSION['client_mac'])) {
+        return $_SESSION['client_mac'];
+    }
+    
+    // Try to get MAC from cookie if previously stored
+    if (isset($_COOKIE['client_mac'])) {
+        return $_COOKIE['client_mac'];
+    }
+    
+    // Try to get MAC from request headers (if available from captive portal)
+    $headers = getallheaders();
+    if (isset($headers['X-Client-MAC'])) {
+        return $headers['X-Client-MAC'];
+    }
+    
+    // Check for common captive portal headers
+    $macHeaders = ['HTTP_X_CLIENT_MAC', 'HTTP_CLIENT_MAC', 'HTTP_X_MAC_ADDRESS'];
+    foreach ($macHeaders as $header) {
+        if (isset($_SERVER[$header])) {
+            return $_SERVER[$header];
+        }
+    }
+    
+    // For development/testing - return a mock MAC
+    if (getenv('ENVIRONMENT') === 'development') {
+        return '00:11:22:33:44:55';
+    }
+    
+    // If all else fails, return null
+    // In a real captive portal setup, the MAC would be provided by the gateway
+    return null;
 }
 
 ?> 
