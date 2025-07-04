@@ -1,0 +1,84 @@
+# Hotspot Portal Environment Configuration
+# Copy this file to .env and update with your actual values
+# Or set these as environment variables in your hosting control panel
+
+# ========================================
+# Environment Settings
+# ========================================
+ENVIRONMENT=production
+DEBUG=false
+TIMEZONE=UTC
+
+# ========================================
+# Application URLs
+# ========================================
+BASE_URL=https://your-domain.com
+API_URL=https://your-domain.com/api
+
+# ========================================
+# Database Configuration (Bluehost)
+# ========================================
+DB_HOST=localhost
+DB_USERNAME=your_cpanel_username_dbuser
+DB_PASSWORD=your_database_password
+DB_NAME=your_cpanel_username_hotspot_portal
+
+# ========================================
+# Email Configuration (Bluehost SMTP)
+# ========================================
+SMTP_HOST=mail.your-domain.com
+SMTP_USERNAME=noreply@your-domain.com
+SMTP_PASSWORD=your_email_password
+FROM_EMAIL=noreply@your-domain.com
+
+# ========================================
+# UniFi Controller Configuration
+# ========================================
+UNIFI_HOST=your-controller-ip
+UNIFI_USERNAME=your-admin-username
+UNIFI_PASSWORD=your-admin-password
+UNIFI_SITE=default
+PORTAL_URL=https://your-domain.com
+REDIRECT_URL=https://your-domain.com/success.html
+
+# ========================================
+# Logging Configuration
+# ========================================
+LOG_LEVEL=info
+
+# ========================================
+# Security Settings (Optional)
+# ========================================
+# SESSION_TIMEOUT=1440
+# TOKEN_EXPIRY=3600
+# MAX_LOGIN_ATTEMPTS=5
+# LOCKOUT_DURATION=900
+
+# ========================================
+# Rate Limiting (Optional)
+# ========================================
+# RATE_LIMIT_REGISTRATION=5
+# RATE_LIMIT_VERIFICATION=3
+# RATE_LIMIT_GENERAL=100
+
+# ========================================
+# Feature Flags (Optional)
+# ========================================
+# ENABLE_EMAIL_VERIFICATION=true
+# ENABLE_USER_REGISTRATION=true
+# ENABLE_DATA_EXPORT=true
+# ENABLE_ADMIN_DASHBOARD=true
+# ENABLE_API_RATE_LIMITING=true
+# ENABLE_GUEST_PORTAL=true
+# ENABLE_UNIFI_INTEGRATION=true
+
+# ========================================
+# Bluehost Setup Instructions
+# ========================================
+# 1. Create a database in cPanel > MySQL Databases
+# 2. Create an email account in cPanel > Email Accounts
+# 3. Update the values above with your actual credentials
+# 4. Set these as environment variables in cPanel if supported
+# 5. Or hardcode them in the config files (less secure)
+# 6. Run php database/migrate.php to set up the database
+# 7. Test your configuration by accessing /api/health 
