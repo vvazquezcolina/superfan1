@@ -1,0 +1,12 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rectangle -->
+  <rect width="200" height="80" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Placeholder text -->
+  <text x="100" y="35" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" 
+        text-anchor="middle" fill="#ffffff">Company Logo</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="55" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="300" 
+        text-anchor="middle" fill="#cccccc">Placeholder</text>
+</svg>

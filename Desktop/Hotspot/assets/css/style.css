@@ -1,0 +1,1043 @@
+/* ========================================
+   Hotspot Portal CSS
+   Black background, white text, responsive design
+   ======================================== */
+
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   Container and Layout
+   ======================================== */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* ========================================
+   Header and Logo
+   ======================================== */
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    display: inline-block;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========================================
+   Welcome Section
+   ======================================== */
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+    letter-spacing: -0.025em;
+}
+
+.welcome-subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #cccccc;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   Form Styles
+   ======================================== */
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 0.025em;
+}
+
+.required {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #888888;
+}
+
+.form-input:focus {
+    border-color: #4f83cc;
+    box-shadow: 0 0 0 3px rgba(79, 131, 204, 0.1);
+    background-color: #222222;
+}
+
+.form-input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #ff6b6b;
+}
+
+.form-input:valid:not(:focus):not(:placeholder-shown) {
+    border-color: #51cf66;
+}
+
+.form-help {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+/* ========================================
+   Checkbox Styles
+   ======================================== */
+
+.checkbox-group {
+    margin-bottom: 32px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    margin-right: 12px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.checkbox-custom::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+    background-color: #4f83cc;
+    border-color: #4f83cc;
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+    opacity: 1;
+}
+
+.checkbox-input:focus + .checkbox-custom {
+    box-shadow: 0 0 0 3px rgba(79, 131, 204, 0.1);
+}
+
+.checkbox-text {
+    color: #cccccc;
+}
+
+.terms-link,
+.privacy-link {
+    color: #4f83cc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.terms-link:hover,
+.privacy-link:hover {
+    border-bottom-color: #4f83cc;
+}
+
+/* ========================================
+   Button Styles
+   ======================================== */
+
+.submit-btn {
+    width: 100%;
+    padding: 16px 24px;
+    background: linear-gradient(135deg, #4f83cc 0%, #3366aa 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+}
+
+.submit-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #5a8dd1 0%, #4070b8 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(79, 131, 204, 0.3);
+}
+
+.submit-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-text {
+    transition: opacity 0.2s ease;
+}
+
+.btn-spinner {
+    position: absolute;
+}
+
+.submit-btn:disabled .btn-text {
+    opacity: 0;
+}
+
+.submit-btn:disabled .btn-spinner {
+    opacity: 1;
+}
+
+/* ========================================
+   Messages and Feedback
+   ======================================== */
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.75rem;
+    margin-top: 6px;
+    line-height: 1.4;
+    display: block;
+}
+
+.error-message:empty {
+    display: none;
+}
+
+.form-messages {
+    margin-top: 24px;
+}
+
+.success-message,
+.error-message-global {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.success-message {
+    background-color: rgba(81, 207, 102, 0.1);
+    border: 1px solid rgba(81, 207, 102, 0.3);
+    color: #51cf66;
+}
+
+.error-message-global {
+    background-color: rgba(255, 107, 107, 0.1);
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    color: #ff6b6b;
+}
+
+.message-icon {
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-content strong {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.message-content p {
+    margin: 0;
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   Loading States
+   ======================================== */
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.loading-spinner {
+    text-align: center;
+    color: #ffffff;
+}
+
+.loading-text {
+    margin-top: 16px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.spinner,
+.spinner-small {
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #4f83cc;
+    animation: spin 1s linear infinite;
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+}
+
+.spinner-small {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================================
+   Help Section
+   ======================================== */
+
+.help-section {
+    margin-bottom: 30px;
+}
+
+.help-details {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.help-summary {
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333333;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.help-summary:hover {
+    background-color: #222222;
+}
+
+.help-summary::marker {
+    color: #4f83cc;
+}
+
+.help-content {
+    padding: 20px;
+    color: #cccccc;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.help-content p {
+    margin-bottom: 12px;
+}
+
+.help-content p:last-child {
+    margin-bottom: 0;
+}
+
+.help-list {
+    margin: 12px 0 16px 20px;
+    padding: 0;
+}
+
+.help-list li {
+    margin-bottom: 8px;
+    color: #aaaaaa;
+}
+
+.help-link {
+    color: #4f83cc;
+    text-decoration: none;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+.help-contact {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #333333;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+    margin-top: auto;
+    padding-top: 30px;
+    border-top: 1px solid #333333;
+}
+
+.footer-content {
+    text-align: center;
+    color: #888888;
+    font-size: 0.75rem;
+}
+
+.footer-text {
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #4f83cc;
+}
+
+.footer-separator {
+    color: #555555;
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+/* Large mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .registration-form {
+        padding: 24px 20px;
+    }
+    
+    .welcome-title {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        max-width: 160px;
+    }
+    
+    .form-input {
+        padding: 12px 14px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .submit-btn {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .footer-separator {
+        display: none;
+    }
+}
+
+/* Tablet devices */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+    
+    .welcome-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* Desktop devices */
+@media (min-width: 769px) {
+    .container {
+        padding: 40px;
+    }
+    
+    .main-content {
+        padding: 40px 0;
+    }
+    
+    .registration-form {
+        padding: 40px;
+    }
+    
+    .form-input:hover {
+        border-color: #4a4a4a;
+    }
+    
+    .checkbox-label:hover .checkbox-custom {
+        border-color: #4a4a4a;
+    }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Dark mode (already dark, but for system preference) */
+@media (prefers-color-scheme: dark) {
+    /* Already optimized for dark mode */
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .loading-overlay,
+    .submit-btn,
+    .help-section {
+        display: none;
+    }
+} 
+/* ========================================
+   Additional Pages Styles
+   ======================================== */
+
+/* Verification, Success, and Error Pages */
+.verification-section,
+.success-section,
+.error-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.verification-result,
+.success-result,
+.error-result {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 40px 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.result-icon {
+    font-size: 4rem;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.result-icon.large-icon {
+    font-size: 5rem;
+}
+
+.success-icon {
+    color: #51cf66;
+}
+
+.error-icon {
+    color: #ff6b6b;
+}
+
+.processing-icon {
+    color: #4f83cc;
+}
+
+.result-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.result-message {
+    font-size: 1.125rem;
+    color: #cccccc;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #666666 0%, #4a4a4a 100%);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #777777 0%, #555555 100%);
+}
+
+.connection-info {
+    font-size: 0.875rem;
+    color: #888888;
+    margin-top: 16px;
+}
+
+/* Connection Details */
+.connection-details {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+    text-align: left;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    color: #888888;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin: 32px 0;
+}
+
+.actions-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #222222;
+    border-color: #4a4a4a;
+}
+
+.action-icon {
+    font-size: 1rem;
+}
+
+.action-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Speed Test Results */
+.speed-test-results {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.speed-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.speed-metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.speed-metric {
+    text-align: center;
+}
+
+.speed-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+.speed-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4f83cc;
+}
+
+.speed-unit {
+    display: block;
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.speed-status {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #cccccc;
+}
+
+/* Usage Information */
+.usage-info {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.usage-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.usage-stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.usage-stat {
+    text-align: center;
+}
+
+.usage-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+.usage-value {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #51cf66;
+}
+
+/* Info Section */
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-details {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-summary {
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333333;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.info-summary:hover {
+    background-color: #222222;
+}
+
+.info-content {
+    padding: 20px;
+    color: #cccccc;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.info-content h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.info-content h4:first-child {
+    margin-top: 0;
+}
+
+.info-list {
+    margin: 12px 0 16px 20px;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+    color: #aaaaaa;
+}
+
+.contact-info {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #333333;
+}
+
+.error-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 32px;
+}
+
+/* Responsive adjustments for additional pages */
+@media (max-width: 480px) {
+    .verification-result,
+    .success-result,
+    .error-result {
+        padding: 24px 20px;
+    }
+    
+    .result-icon {
+        font-size: 3rem;
+    }
+    
+    .result-icon.large-icon {
+        font-size: 4rem;
+    }
+    
+    .result-title {
+        font-size: 1.5rem;
+    }
+    
+    .result-message {
+        font-size: 1rem;
+    }
+    
+    .speed-metrics,
+    .usage-stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .result-actions {
+        gap: 12px;
+    }
+}
+
+@media (min-width: 481px) {
+    .result-actions {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
