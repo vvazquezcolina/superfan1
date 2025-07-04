@@ -16,7 +16,11 @@ require_once __DIR__ . '/../classes/Database.php';
 require_once __DIR__ . '/../classes/ApiResponse.php';
 require_once __DIR__ . '/../classes/ErrorHandler.php';
 require_once __DIR__ . '/../classes/EmailService.php';
+require_once __DIR__ . '/../classes/Security.php';
 require_once __DIR__ . '/../config/database.php';
+
+// Apply security headers
+Security::applySecurityHeaders();
 
 // Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -32,19 +36,33 @@ if (!$input || !is_array($input)) {
 }
 
 // Validate email
-$email = isset($input['email']) ? trim(strtolower($input['email'])) : null;
-
-if (!$email) {
+if (!isset($input['email']) || empty(trim($input['email']))) {
     ApiResponse::badRequest('Email address is required');
 }
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    ApiResponse::badRequest('Please provide a valid email address');
+$emailValidation = Security::validateInput($input['email'], 'email');
+if (!$emailValidation['valid']) {
+    ApiResponse::badRequest($emailValidation['error']);
 }
+
+$email = $emailValidation['sanitized'];
 
 // Get client information for rate limiting
 $clientIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
 $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'unknown';
+
+// CSRF token validation
+$csrfToken = null;
+if (isset($_SERVER['HTTP_X_CSRF_TOKEN'])) {
+    $csrfToken = $_SERVER['HTTP_X_CSRF_TOKEN'];
+} elseif (isset($input['csrf_token'])) {
+    $csrfToken = $input['csrf_token'];
+}
+
+if (!$csrfToken || !Security::validateCsrfToken($csrfToken)) {
+    ErrorHandler::logMessage("Invalid CSRF token in resend attempt from IP: $clientIp", 'WARNING');
+    ApiResponse::forbidden('Invalid or expired security token. Please refresh the page and try again.');
+}
 
 // Connect to database
 try {
@@ -112,7 +130,7 @@ try {
     }
     
     // Generate new verification token
-    $verificationToken = bin2hex(random_bytes(32));
+    $verificationToken = Security::generateSecureToken();
     $tokenExpiry = date('Y-m-d H:i:s', strtotime('+1 hour'));
     
     // Update user with new token and resend information

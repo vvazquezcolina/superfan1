@@ -76,6 +76,62 @@ class ApiResponse {
     }
     
     /**
+     * Send bad request response
+     */
+    public static function badRequest($message = 'Bad request', $errors = null) {
+        self::sendResponse([
+            'success' => false,
+            'message' => $message,
+            'errors' => $errors,
+            'timestamp' => date('Y-m-d H:i:s')
+        ], 400);
+    }
+    
+    /**
+     * Send conflict response
+     */
+    public static function conflict($message = 'Conflict') {
+        self::sendResponse([
+            'success' => false,
+            'message' => $message,
+            'timestamp' => date('Y-m-d H:i:s')
+        ], 409);
+    }
+    
+    /**
+     * Send too many requests response
+     */
+    public static function tooManyRequests($message = 'Too many requests') {
+        self::sendResponse([
+            'success' => false,
+            'message' => $message,
+            'timestamp' => date('Y-m-d H:i:s')
+        ], 429);
+    }
+    
+    /**
+     * Send forbidden response
+     */
+    public static function forbidden($message = 'Forbidden') {
+        self::sendResponse([
+            'success' => false,
+            'message' => $message,
+            'timestamp' => date('Y-m-d H:i:s')
+        ], 403);
+    }
+    
+    /**
+     * Send method not allowed response
+     */
+    public static function methodNotAllowed($message = 'Method not allowed') {
+        self::sendResponse([
+            'success' => false,
+            'message' => $message,
+            'timestamp' => date('Y-m-d H:i:s')
+        ], 405);
+    }
+    
+    /**
      * Send raw response
      */
     private static function sendResponse($data, $code) {

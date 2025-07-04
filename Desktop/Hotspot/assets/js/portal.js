@@ -37,10 +37,11 @@ const HotspotPortal = {
     /**
      * Initialize the portal
      */
-    init() {
+    async init() {
         this.cacheElements();
         this.bindEvents();
         this.initializeValidation();
+        await this.fetchCsrfToken();
         this.checkApiHealth();
         console.log('Hotspot Portal initialized');
     },
@@ -186,6 +187,47 @@ const HotspotPortal = {
     },
 
     /**
+     * Fetch CSRF token from API
+     */
+    async fetchCsrfToken() {
+        try {
+            const response = await fetch(this.config.apiUrl + '/csrf-token', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.success && data.data.csrf_token) {
+                    this.csrfToken = data.data.csrf_token;
+                    
+                    // Update hidden input if it exists
+                    if (this.elements.csrfToken) {
+                        this.elements.csrfToken.value = this.csrfToken;
+                    }
+                    
+                    console.log('CSRF token fetched successfully');
+                } else {
+                    console.warn('Failed to fetch CSRF token');
+                }
+            } else {
+                console.warn('CSRF token request failed:', response.status);
+            }
+        } catch (error) {
+            console.error('Error fetching CSRF token:', error.message);
+        }
+    },
+
+    /**
+     * Refresh CSRF token
+     */
+    async refreshCsrfToken() {
+        await this.fetchCsrfToken();
+    },
+
+    /**
      * Handle form submission
      */
     async handleFormSubmit() {
@@ -241,7 +283,7 @@ const HotspotPortal = {
             last_name: this.elements.lastNameInput?.value.trim() || '',
             email: this.elements.emailInput?.value.trim() || '',
             terms_agreement: this.elements.termsCheckbox?.checked || false,
-            csrf_token: this.elements.csrfToken?.value || ''
+            csrf_token: this.csrfToken || ''
         };
     },
 
@@ -555,7 +597,7 @@ const HotspotPortal = {
     },
 
     /**
-     * Make API request
+     * Make API request with CSRF protection
      */
     async apiRequest(method, endpoint, data = null) {
         const url = this.config.apiUrl + endpoint;
@@ -568,7 +610,16 @@ const HotspotPortal = {
             }
         };
 
+        // Add CSRF token to headers for state-changing requests
+        if (this.csrfToken && (method === 'POST' || method === 'PUT' || method === 'PATCH' || method === 'DELETE')) {
+            options.headers['X-CSRF-Token'] = this.csrfToken;
+        }
+
         if (data && (method === 'POST' || method === 'PUT' || method === 'PATCH')) {
+            // Add CSRF token to data as well for dual validation
+            if (this.csrfToken) {
+                data.csrf_token = this.csrfToken;
+            }
             options.body = JSON.stringify(data);
         }
 
@@ -577,6 +628,30 @@ const HotspotPortal = {
             const result = await response.json();
 
             if (!response.ok) {
+                // Handle CSRF token expiration
+                if (response.status === 403 && result.message && result.message.toLowerCase().includes('csrf')) {
+                    console.log('CSRF token expired, refreshing...');
+                    await this.refreshCsrfToken();
+                    
+                    // Retry the request with new token
+                    if (this.csrfToken) {
+                        options.headers['X-CSRF-Token'] = this.csrfToken;
+                        if (data && (method === 'POST' || method === 'PUT' || method === 'PATCH')) {
+                            data.csrf_token = this.csrfToken;
+                            options.body = JSON.stringify(data);
+                        }
+                        
+                        const retryResponse = await fetch(url, options);
+                        const retryResult = await retryResponse.json();
+                        
+                        if (!retryResponse.ok) {
+                            throw new Error(retryResult.message || 'HTTP ' + retryResponse.status + ': ' + retryResponse.statusText);
+                        }
+                        
+                        return retryResult;
+                    }
+                }
+                
                 throw new Error(result.message || 'HTTP ' + response.status + ': ' + response.statusText);
             }
 

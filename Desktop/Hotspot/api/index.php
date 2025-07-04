@@ -76,6 +76,9 @@ $router->get('/verify/{token}', __DIR__ . '/endpoints/verify.php');
 // Resend verification email endpoint
 $router->post('/resend', __DIR__ . '/endpoints/resend.php');
 
+// CSRF token endpoint
+$router->get('/csrf-token', __DIR__ . '/endpoints/csrf-token.php');
+
 // Session management endpoints
 $router->get('/session', __DIR__ . '/endpoints/session.php');
 $router->post('/session', __DIR__ . '/endpoints/session.php');

@@ -15,7 +15,11 @@ if (!defined('API_CONTEXT')) {
 require_once __DIR__ . '/../classes/Database.php';
 require_once __DIR__ . '/../classes/ApiResponse.php';
 require_once __DIR__ . '/../classes/ErrorHandler.php';
+require_once __DIR__ . '/../classes/Security.php';
 require_once __DIR__ . '/../config/database.php';
+
+// Apply security headers
+Security::applySecurityHeaders();
 
 // Only allow GET requests
 if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
@@ -29,9 +33,22 @@ if (!$token) {
     ApiResponse::badRequest('Verification token is required');
 }
 
-// Validate token format
-if (!preg_match('/^[a-f0-9]{64}$/', $token)) {
-    ApiResponse::badRequest('Invalid token format');
+// Rate limiting check for verification attempts
+$clientIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+$rateLimitResult = Security::checkRateLimit('verify_' . $clientIp, 10, 300); // 10 attempts per 5 minutes
+if (!$rateLimitResult['allowed']) {
+    ApiResponse::tooManyRequests('Too many verification attempts. Please try again later.');
+}
+
+// Sanitize and validate token format
+try {
+    $token = Security::sanitizeInput($token, 'string', ['max_length' => 64]);
+    if (!preg_match('/^[a-f0-9]{64}$/i', $token)) {
+        ApiResponse::badRequest('Invalid token format');
+    }
+} catch (Exception $e) {
+    ErrorHandler::logMessage("Invalid verification token received: " . substr($token, 0, 20), 'WARNING');
+    ApiResponse::badRequest('Invalid token provided');
 }
 
 // Connect to database and verify token

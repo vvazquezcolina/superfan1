@@ -14,7 +14,11 @@ if (!defined('API_CONTEXT')) {
 require_once __DIR__ . '/../classes/Database.php';
 require_once __DIR__ . '/../classes/ApiResponse.php';
 require_once __DIR__ . '/../classes/ErrorHandler.php';
+require_once __DIR__ . '/../classes/Security.php';
 require_once __DIR__ . '/../config/database.php';
+
+// Apply security headers
+Security::applySecurityHeaders();
 
 // Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -29,93 +33,71 @@ if (!$input || !is_array($input)) {
     ApiResponse::badRequest('Invalid JSON data');
 }
 
-// Define validation rules
-$validation = [
-    'first_name' => [
-        'required' => true,
-        'min_length' => 2,
-        'max_length' => 100,
-        'pattern' => '/^[a-zA-Z\s\-\'\.]+$/',
-        'message' => 'First name must be 2-100 characters and contain only letters, spaces, hyphens, apostrophes, and periods'
-    ],
-    'last_name' => [
-        'required' => true,
-        'min_length' => 2,
-        'max_length' => 100,
-        'pattern' => '/^[a-zA-Z\s\-\'\.]+$/',
-        'message' => 'Last name must be 2-100 characters and contain only letters, spaces, hyphens, apostrophes, and periods'
-    ],
-    'email' => [
-        'required' => true,
-        'max_length' => 255,
-        'email' => true,
-        'message' => 'Please provide a valid email address'
-    ],
-    'terms_agreement' => [
-        'required' => true,
-        'boolean' => true,
-        'must_be_true' => true,
-        'message' => 'You must agree to the Terms of Service and Privacy Policy'
-    ]
-];
+// Rate limiting check
+$clientIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+$rateLimitResult = Security::checkRateLimit('register_' . $clientIp, 5, 300); // 5 attempts per 5 minutes
+if (!$rateLimitResult['allowed']) {
+    ApiResponse::tooManyRequests('Too many registration attempts. Please try again later.');
+}
 
-// Validate required fields and format
+// CSRF token validation
+$csrfToken = null;
+if (isset($_SERVER['HTTP_X_CSRF_TOKEN'])) {
+    $csrfToken = $_SERVER['HTTP_X_CSRF_TOKEN'];
+} elseif (isset($input['csrf_token'])) {
+    $csrfToken = $input['csrf_token'];
+}
+
+if (!$csrfToken || !Security::validateCsrfToken($csrfToken)) {
+    ErrorHandler::logMessage("Invalid CSRF token in registration attempt from IP: $clientIp", 'WARNING');
+    ApiResponse::forbidden('Invalid or expired security token. Please refresh the page and try again.');
+}
+
+// Validate and sanitize input fields
 $errors = [];
 $validatedData = [];
 
-foreach ($validation as $field => $rules) {
-    $value = isset($input[$field]) ? trim($input[$field]) : null;
-    
-    // Check if field is required
-    if ($rules['required'] && (empty($value) && $value !== '0' && $value !== false)) {
-        $errors[$field] = $rules['message'];
-        continue;
+// Validate first name
+if (!isset($input['first_name']) || empty(trim($input['first_name']))) {
+    $errors['first_name'] = 'First name is required';
+} else {
+    $firstNameValidation = Security::validateInput($input['first_name'], 'name', ['min_length' => 2]);
+    if (!$firstNameValidation['valid']) {
+        $errors['first_name'] = $firstNameValidation['error'];
+    } else {
+        $validatedData['first_name'] = $firstNameValidation['sanitized'];
     }
-    
-    // Skip validation if field is empty and not required
-    if (empty($value) && !$rules['required']) {
-        continue;
+}
+
+// Validate last name
+if (!isset($input['last_name']) || empty(trim($input['last_name']))) {
+    $errors['last_name'] = 'Last name is required';
+} else {
+    $lastNameValidation = Security::validateInput($input['last_name'], 'name', ['min_length' => 2]);
+    if (!$lastNameValidation['valid']) {
+        $errors['last_name'] = $lastNameValidation['error'];
+    } else {
+        $validatedData['last_name'] = $lastNameValidation['sanitized'];
     }
-    
-    // Length validation
-    if (isset($rules['min_length']) && strlen($value) < $rules['min_length']) {
-        $errors[$field] = $rules['message'];
-        continue;
+}
+
+// Validate email
+if (!isset($input['email']) || empty(trim($input['email']))) {
+    $errors['email'] = 'Email address is required';
+} else {
+    $emailValidation = Security::validateInput($input['email'], 'email');
+    if (!$emailValidation['valid']) {
+        $errors['email'] = $emailValidation['error'];
+    } else {
+        $validatedData['email'] = $emailValidation['sanitized'];
     }
-    
-    if (isset($rules['max_length']) && strlen($value) > $rules['max_length']) {
-        $errors[$field] = $rules['message'];
-        continue;
-    }
-    
-    // Pattern validation
-    if (isset($rules['pattern']) && !preg_match($rules['pattern'], $value)) {
-        $errors[$field] = $rules['message'];
-        continue;
-    }
-    
-    // Email validation
-    if (isset($rules['email']) && !filter_var($value, FILTER_VALIDATE_EMAIL)) {
-        $errors[$field] = $rules['message'];
-        continue;
-    }
-    
-    // Boolean validation
-    if (isset($rules['boolean'])) {
-        if (!is_bool($value) && !in_array($value, [0, 1, '0', '1', 'true', 'false'], true)) {
-            $errors[$field] = $rules['message'];
-            continue;
-        }
-        $value = (bool)$value;
-    }
-    
-    // Must be true validation
-    if (isset($rules['must_be_true']) && !$value) {
-        $errors[$field] = $rules['message'];
-        continue;
-    }
-    
-    $validatedData[$field] = $value;
+}
+
+// Validate terms agreement
+if (!isset($input['terms_agreement']) || !$input['terms_agreement']) {
+    $errors['terms_agreement'] = 'You must agree to the Terms of Service and Privacy Policy';
+} else {
+    $validatedData['terms_agreement'] = true;
 }
 
 // Return validation errors if any
@@ -126,31 +108,9 @@ if (!empty($errors)) {
     ]);
 }
 
-// Additional security checks
-$clientIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+// Additional security info
 $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'unknown';
-$email = strtolower($validatedData['email']);
-
-// Check for suspicious patterns
-$suspiciousPatterns = [
-    '/script/i',
-    '/javascript/i',
-    '/vbscript/i',
-    '/onload/i',
-    '/onerror/i',
-    '/<.*>/i'
-];
-
-foreach ($validatedData as $field => $value) {
-    if (is_string($value)) {
-        foreach ($suspiciousPatterns as $pattern) {
-            if (preg_match($pattern, $value)) {
-                ErrorHandler::logMessage("Suspicious input detected in $field: $value", 'WARNING');
-                ApiResponse::badRequest('Invalid input detected');
-            }
-        }
-    }
-}
+$email = $validatedData['email'];
 
 // Connect to database
 try {
@@ -186,7 +146,7 @@ try {
     }
     
     // Generate verification token
-    $verificationToken = bin2hex(random_bytes(32));
+    $verificationToken = Security::generateSecureToken();
     $tokenExpiry = date('Y-m-d H:i:s', strtotime('+1 hour'));
     
     // Insert new user
