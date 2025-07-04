@@ -14,20 +14,22 @@
 - `api/config/unifi.php` - UniFi Controller API configuration
 - `api/config/app.php` - General application configuration and environment settings
 - `config.example` - Sample environment configuration template
-- `api/endpoints/register.php` - User registration API endpoint
-- `api/endpoints/verify.php` - Email verification API endpoint
-- `api/endpoints/export.php` - Data export API endpoint
+- `api/endpoints/register.php` - User registration API endpoint with comprehensive validation and email integration
+- `api/endpoints/verify.php` - Email verification API endpoint with token validation and welcome email
+- `api/endpoints/resend.php` - Resend verification email endpoint with rate limiting (max 5 attempts, 5-minute cooldown)
+- `api/endpoints/export.php` - Data export API endpoint placeholder
 - `api/classes/Database.php` - Database connection and operations class
 - `api/classes/ApiResponse.php` - Standardized JSON response formatting class
 - `api/classes/Router.php` - API request routing and URL handling class
 - `api/classes/ErrorHandler.php` - Comprehensive error and exception handling class
-- `api/classes/EmailService.php` - Email sending service class
+- `api/classes/EmailService.php` - Comprehensive email service with SMTP support and HTML/text templates (528 lines)
 - `api/classes/UniFiController.php` - UniFi API integration class
 - `api/classes/UserManager.php` - User data management class
 - `api/classes/Security.php` - Security utilities and validation
 - `api/index.php` - Main API entry point with routing configuration
 - `database/migrations/001_create_users_table.sql` - Database schema creation
 - `database/migrations/002_create_sessions_table.sql` - Session tracking table
+- `database/migrations/003_update_users_table_rate_limiting.sql` - Add rate limiting fields and fix field name inconsistencies
 - `database/migrate.php` - Database migration runner with CLI commands
 - `database/README.md` - Database setup and migration documentation
 - `verify.html` - Email verification confirmation page
@@ -68,13 +70,13 @@
   - [x] 2.5 Add loading states and user feedback messages
   - [x] 2.6 Create additional pages for verification, success, and error states
 
-- [ ] 3.0 User Registration and Email Verification System
-  - [ ] 3.1 Implement user registration API endpoint with data validation
-  - [ ] 3.2 Create email service class for sending verification emails
-  - [ ] 3.3 Build email verification system with secure token generation
-  - [ ] 3.4 Design HTML email templates for verification messages
-  - [ ] 3.5 Implement email verification confirmation page and flow
-  - [ ] 3.6 Add resend verification functionality with rate limiting
+- [x] 3.0 User Registration and Email Verification System
+  - [x] 3.1 Implement user registration API endpoint with data validation
+  - [x] 3.2 Create email service class for sending verification emails
+  - [x] 3.3 Build email verification system with secure token generation
+  - [x] 3.4 Design HTML email templates for verification messages
+  - [x] 3.5 Implement email verification confirmation page and flow
+  - [x] 3.6 Add resend verification functionality with rate limiting
 
 - [ ] 4.0 UniFi API Integration and Network Access Control
   - [ ] 4.1 Research and implement UniFi Controller API authentication

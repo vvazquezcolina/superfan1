@@ -8,6 +8,9 @@
 // Start output buffering
 ob_start();
 
+// Define API context for security
+define('API_CONTEXT', true);
+
 // Include required classes
 require_once __DIR__ . '/classes/ErrorHandler.php';
 require_once __DIR__ . '/classes/ApiResponse.php';
@@ -69,6 +72,9 @@ $router->post('/register', __DIR__ . '/endpoints/register.php');
 
 // Email verification endpoint
 $router->get('/verify/{token}', __DIR__ . '/endpoints/verify.php');
+
+// Resend verification email endpoint
+$router->post('/resend', __DIR__ . '/endpoints/resend.php');
 
 // Data export endpoint (for admin)
 $router->get('/export', __DIR__ . '/endpoints/export.php');
