@@ -1,0 +1,215 @@
+## Relevant Files
+
+- `apps/web-console/` - Next.js web application for Admin and Venue Manager dashboards
+- `apps/web-console/package.json` - Dependencies and scripts for the web console
+- `apps/web-console/next.config.js` - Next.js configuration with security headers and optimizations
+- `apps/web-console/tailwind.config.js` - Tailwind CSS configuration with Mandala brand colors
+- `apps/web-console/tsconfig.json` - TypeScript configuration with path aliases
+- `apps/web-console/src/styles/globals.css` - Global styles with Tailwind and custom Mandala theme
+- `apps/web-console/src/app/layout.tsx` - Root layout with providers and metadata
+- `apps/web-console/src/app/dashboard/layout.tsx` - Dashboard layout with sidebar and header
+- `apps/web-console/src/app/dashboard/page.tsx` - Main dashboard page with overview components
+- `apps/web-console/src/providers/providers.tsx` - Main providers wrapper with auth, theme, and query client
+- `apps/web-console/src/providers/auth-provider.tsx` - Authentication provider with role-based access
+- `apps/web-console/src/providers/theme-provider.tsx` - Theme provider for dark/light mode support
+- `apps/web-console/src/components/auth/auth-guard.tsx` - Route protection component with role validation
+- `apps/pwa-client/` - Progressive Web App for Client and RP users
+- `apps/api-gateway/` - GraphQL API gateway for routing requests
+- `services/wallet-service/` - NestJS microservice for balance and transaction management
+- `services/auth-service/` - Firebase Auth integration and role management
+- `services/geofence-service/` - Radar.io integration for location-based features
+- `services/notification-service/` - Firebase Cloud Messaging for push notifications
+- `services/xetux-proxy/` - Integration proxy for Xetux POS API
+- `database/schema/` - Supabase database schema and migrations
+- `shared/types/` - TypeScript types shared across services
+- `shared/utils/` - Common utilities and helpers
+- `config/` - Environment configuration files
+- `docker-compose.yml` - Local development environment setup
+- `apps/web-console/components/Dashboard.tsx` - Admin dashboard component
+- `apps/web-console/components/VenueManager.tsx` - Venue manager interface
+- `apps/pwa-client/components/Wallet.tsx` - Main wallet interface
+- `apps/pwa-client/components/QRScanner.tsx` - QR code scanning component
+- `apps/pwa-client/components/PaymentForm.tsx` - Payment and recharge form
+- `services/wallet-service/src/wallet.controller.ts` - Wallet operations API
+- `services/wallet-service/src/transaction.service.ts` - Transaction processing logic
+- `services/wallet-service/src/balance.service.ts` - Balance management with expiration rules
+- `services/wallet-service/src/payment/payment.service.ts` - Payment processing service with multi-provider support
+- `services/wallet-service/src/payment/payment.controller.ts` - Payment API endpoints and webhook handlers
+- `services/wallet-service/src/payment/payment.module.ts` - Payment module organization and dependency injection
+- `services/auth-service/src/roles.middleware.ts` - Role-based access control
+- `services/geofence-service/src/radar.webhook.ts` - Geofencing webhook handler
+- `services/notification-service/src/push.service.ts` - Push notification service
+- `services/geofence-service/src/notification/notification.service.ts` - Push notification service with geofence and gamification support
+- `services/geofence-service/src/gamification/gamification.service.ts` - Points and tier system service
+- `services/geofence-service/src/gamification/gamification.controller.ts` - Gamification API endpoints
+- `services/geofence-service/src/passport/passport.service.ts` - QR Passport system for venue stamp collection
+- `services/geofence-service/src/passport/passport.controller.ts` - Passport API endpoints and stamp management
+- `services/geofence-service/src/database/database.service.ts` - Database service with gamification and passport methods
+- `database/schema/users.sql` - User table with roles and profile data
+- `database/schema/wallets.sql` - Wallet balance tables with balance types
+- `database/schema/transactions.sql` - Transaction ledger with audit trail
+- `database/schema/venues.sql` - Venue catalog and geofence data
+- `database/schema/rewards.sql` - Rewards, tiers, and gamification data
+- `database/schema/user_tiers.sql` - User tier tracking and history tables
+- `database/schema/points_transactions.sql` - Points transaction and audit trail tables
+- `database/schema/user_passports.sql` - User passport collection and progress tables
+- `database/schema/qr_stamps.sql` - QR stamp collection and validation tables
+- `shared/types/user.types.ts` - User and role type definitions
+- `shared/types/wallet.types.ts` - Wallet and transaction type definitions
+- `shared/types/venue.types.ts` - Venue and location type definitions
+- `shared/types/gamification.types.ts` - Gamification, points, and tier type definitions
+- `shared/types/passport.types.ts` - QR Passport, stamp, and achievement type definitions
+- `services/geofence-service/src/progress/progress-tracking.service.ts` - Comprehensive progress tracking service with analytics and visualization
+- `services/geofence-service/src/progress/progress-tracking.controller.ts` - REST API controller for progress tracking endpoints
+- `shared/types/src/progress.types.ts` - Complete type definitions for progress tracking and visualization
+- `apps/web-console/src/components/transactions/live-transaction-monitor.tsx` - Real-time transaction monitoring with live updates and filtering
+- `apps/web-console/src/components/analytics/transaction-analytics.tsx` - Transaction analytics with charts and insights
+- `apps/web-console/src/app/dashboard/transactions/live/page.tsx` - Live transaction monitoring page
+- `apps/web-console/src/app/dashboard/analytics/page.tsx` - Analytics dashboard page
+- `apps/web-console/src/components/venues/venue-catalog.tsx` - Venue catalog management with search, filters, and status controls
+- `apps/web-console/src/components/venues/venue-form.tsx` - Multi-step venue creation and editing form
+- `apps/web-console/src/components/venues/venue-details.tsx` - Detailed venue information display with analytics
+- `apps/web-console/src/app/dashboard/venues/page.tsx` - Venue management page for administrators
+- `apps/web-console/src/components/users/user-management.tsx` - User management interface with search, filtering, and bulk operations
+- `apps/web-console/src/components/users/role-assignment.tsx` - Role assignment and permission management system
+- `apps/web-console/src/components/users/user-form.tsx` - Multi-step user creation and editing form with role selection
+- `apps/web-console/src/components/users/user-activity-monitor.tsx` - User activity monitoring and audit trail system
+- `apps/web-console/src/app/dashboard/users/page.tsx` - User management page for administrators
+
+### Notes
+
+- The project uses a monorepo structure with apps/ and services/ directories
+- All services communicate through the API gateway using GraphQL
+- Database migrations should be run before starting any services
+- Environment variables are required for all external service integrations
+- Use `npm run dev` to start all services in development mode
+- Use `npm run test` to run the complete test suite
+- Firebase Auth requires configuration for social login providers
+- Stripe webhooks must be configured for payment confirmations
+- Radar.io webhooks need to be set up for geofencing events
+
+## Tasks
+
+- [x] 1.0 Set up project infrastructure and development environment
+  - [x] 1.1 Initialize project structure with monorepo setup
+  - [x] 1.2 Set up TypeScript configuration for all services
+  - [x] 1.3 Configure shared types package
+  - [x] 1.4 Set up database configuration and migrations
+  - [x] 1.5 Initialize Git repository and version control
+
+- [x] 2.0 Build authentication and user management system with Firebase
+  - [x] 2.1 Set up Firebase project and configuration
+  - [x] 2.2 Implement Firebase Auth integration
+  - [x] 2.3 Create user role management system (Admin, Venue Manager, RP, Client)
+  - [x] 2.4 Build user registration and login flows
+  - [x] 2.5 Implement JWT token management
+  - [x] 2.6 Create user profile management
+
+- [x] 3.0 Design and implement complete database schema with migrations
+  - [x] 3.1 Design user and role tables
+  - [x] 3.2 Create wallet and transaction tables
+  - [x] 3.3 Design venue and location tables
+  - [x] 3.4 Create payment and transaction history tables
+  - [x] 3.5 Implement database migrations and seeding
+
+- [x] 4.0 Build wallet and balance management service with triple balance system
+  - [x] 4.1 Implement wallet creation and management
+  - [x] 4.2 Create triple balance system (Cash, Credit, Rewards)
+  - [x] 4.3 Build balance transfer and conversion logic
+  - [x] 4.4 Implement transaction history and reporting
+  - [x] 4.5 Create wallet security and validation
+  - [x] 4.6 Build balance inquiry and summary features
+
+- [x] 5.0 Integrate payment processing with Stripe, OxxoPay, and Apple Pay
+  - [x] 5.1 Set up Stripe payment processing
+  - [x] 5.2 Integrate OxxoPay for cash payments
+  - [x] 5.3 Implement Apple Pay integration
+  - [x] 5.4 Create unified payment interface
+  - [x] 5.5 Build webhook handlers for payment status updates
+  - [x] 5.6 Add partial payment and refund processing
+  - [x] 5.7 Implement payment confirmation and notification system
+  - [x] 5.8 Create payment reconciliation and reporting tools
+
+- [x] 6.0 Implement geofencing and gamification features
+  - [x] 6.1 Set up Radar.io geofencing service
+  - [x] 6.2 Create geofence management for venues
+  - [x] 6.3 Build location-based notifications and push system
+  - [x] 6.4 Implement points and tier system
+  - [x] 6.5 Create QR passport collection system
+  - [x] 6.6 Build reward trigger system for location-based promotions
+  - [x] 6.7 Implement gamification progress tracking and visualization
+
+- [x] 7.0 Admin & Management Web Console
+  - [x] 7.1 Build Next.js web application with responsive design
+  - [x] 7.2 Create Admin dashboard with global venue management
+  - [x] 7.3 Implement Venue Manager interface with local controls
+  - [x] 7.4 Add real-time transaction monitoring and analytics
+  - [x] 7.5 Build venue catalog management system
+  - [x] 7.6 Create user management tools for role assignments
+  - [ ] 7.7 Implement approval workflow system for large transactions
+    - [x] 7.7.1 Create approval workflow management interface with configurable thresholds
+    - [x] 7.7.2 Build transaction approval queue and notification system
+    - [ ] 7.7.3 Implement multi-level approval process with role-based authorization
+    - [ ] 7.7.4 Create approval history and audit trail system
+    - [ ] 7.7.5 Add automated approval rules and escalation workflows
+  - [ ] 7.8 Integrate Metabase for advanced analytics dashboards
+
+- [ ] 8.0 Mobile PWA & Client Applications
+  - [ ] 8.1 Build Progressive Web App with offline capabilities
+  - [ ] 8.2 Create responsive wallet interface with balance breakdown
+  - [ ] 8.3 Implement QR code scanner for payments
+  - [ ] 8.4 Build payment and recharge forms with multiple methods
+  - [ ] 8.5 Add push notification handling and preferences
+  - [ ] 8.6 Create gamification interface (points, tiers, stamps)
+  - [ ] 8.7 Implement PWA installation prompts and service workers
+  - [ ] 8.8 Add support button and help system integration
+
+- [ ] 9.0 RP (Representative) Features
+  - [ ] 9.1 Build RP dashboard with monthly balance tracking
+  - [ ] 9.2 Create QR code generation system for guest invitations
+  - [ ] 9.3 Implement RP conversion tracking and metrics
+  - [ ] 9.4 Add RP performance analytics and reporting
+  - [ ] 9.5 Build guest management system for invited clients
+  - [ ] 9.6 Create RP monthly allocation automation
+  - [ ] 9.7 Implement RP credit expiration and rollover handling
+  - [ ] 9.8 Add RP activity monitoring and compliance tools
+
+- [ ] 10.0 Integration & External Services
+  - [ ] 10.1 Build Xetux POS API integration proxy
+  - [ ] 10.2 Implement QR code validation with Xetux system
+  - [ ] 10.3 Create webhook system for payment confirmations
+  - [ ] 10.4 Add Apple Wallet and Google Pay integration
+  - [ ] 10.5 Build notification service with Firebase Cloud Messaging
+  - [ ] 10.6 Implement Radar.io geofencing integration
+  - [ ] 10.7 Create external API monitoring and health checks
+  - [ ] 10.8 Add integration testing and mock services
+
+- [ ] 11.0 Testing & Quality Assurance
+  - [ ] 11.1 Set up Jest testing framework across all services
+  - [ ] 11.2 Create unit tests for wallet and transaction services
+  - [ ] 11.3 Build integration tests for payment processing
+  - [ ] 11.4 Add end-to-end tests for critical user flows
+  - [ ] 11.5 Implement API testing with automated test suites
+  - [ ] 11.6 Create performance tests for 100 concurrent users
+  - [ ] 11.7 Add security testing for financial transactions
+  - [ ] 11.8 Build load testing scenarios for peak usage
+
+- [ ] 12.0 Deployment & DevOps
+  - [ ] 12.1 Configure production environment variables
+  - [ ] 12.2 Set up monitoring and logging with error tracking
+  - [ ] 12.3 Deploy frontend applications to Vercel
+  - [ ] 12.4 Deploy backend services to Fly.io
+  - [ ] 12.5 Configure production database with backups
+  - [ ] 12.6 Set up SSL certificates and security headers
+  - [ ] 12.7 Implement health checks and uptime monitoring
+  - [ ] 12.8 Create deployment scripts and rollback procedures
+
+- [ ] 13.0 Documentation & Support
+  - [ ] 13.1 Create API documentation with OpenAPI/Swagger
+  - [ ] 13.2 Write user guides for each role (Admin, Manager, RP, Client)
+  - [ ] 13.3 Create developer documentation for system architecture
+  - [ ] 13.4 Build troubleshooting guides for common issues
+  - [ ] 13.5 Create support system integration documentation
+  - [ ] 13.6 Add inline help and tooltips throughout applications
+  - [ ] 13.7 Create video tutorials for key user flows
+  - [ ] 13.8 Build FAQ system for common user questions 
