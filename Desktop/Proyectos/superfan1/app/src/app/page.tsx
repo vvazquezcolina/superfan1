@@ -586,10 +586,10 @@ export default function Home() {
                 Universidad del Caribe · Cancún, Quintana Roo
               </h2>
               <p className="text-base text-neutral-600">
-                Campus frente al mar con instalaciones académicas, deportivas y
-                culturales certificadas. A 15 minutos del Aeropuerto
-                Internacional de Cancún y con fácil acceso al centro de la
-                ciudad.
+                Campus ubicado sobre la avenida Kabah, rodeado del Parque Urbano
+                Kabah y del Ombligo Verde, con instalaciones académicas,
+                deportivas y culturales certificadas. A 15 minutos del centro de
+                Cancún y a 20 minutos del Aeropuerto Internacional.
               </p>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-xl border border-neutral-200 bg-white p-5 shadow-soft">
