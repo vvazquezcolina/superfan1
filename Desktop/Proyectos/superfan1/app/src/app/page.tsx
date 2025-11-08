@@ -252,8 +252,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
       />
       <main id="contenido" className="flex flex-col">
-        <header className="relative isolate overflow-hidden bg-hero-pattern text-white">
-          <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_55%)]" />
+        <header className="relative isolate overflow-hidden bg-white text-neutral-900">
           <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 sm:px-10 lg:px-12">
             <nav
               aria-label="Navegación principal"
@@ -262,44 +261,44 @@ export default function Home() {
               <Link
                 href="#contenido"
                 onClick={handleAnchorClick("#contenido")}
-                className="text-base font-semibold text-white transition hover:text-white/80"
+                className="text-base font-semibold text-brand transition hover:text-brand-dark"
                 aria-label="Superfan Cancún 2025"
               >
                 Superfan Cancún 2025
               </Link>
-              <div className="hidden items-center gap-4 text-sm font-semibold text-white sm:flex">
+              <div className="hidden items-center gap-4 text-sm font-semibold text-brand sm:flex">
                 <Link
                   href="#agenda"
                   onClick={handleAnchorClick("#agenda")}
-                  className="transition hover:text-white/80"
+                  className="transition hover:text-brand-dark"
                 >
                   Agenda
                 </Link>
                 <Link
                   href="#logistica"
                   onClick={handleAnchorClick("#logistica")}
-                  className="transition hover:text-white/80"
+                  className="transition hover:text-brand-dark"
                 >
                   Logística
                 </Link>
                 <Link
                   href="#hospedaje"
                   onClick={handleAnchorClick("#hospedaje")}
-                  className="transition hover:text-white/80"
+                  className="transition hover:text-brand-dark"
                 >
                   Hospedaje
                 </Link>
                 <Link
                   href="#faq"
                   onClick={handleAnchorClick("#faq")}
-                  className="transition hover:text-white/80"
+                  className="transition hover:text-brand-dark"
                 >
                   FAQ
                 </Link>
                 <Link
                   href="#contacto"
                   onClick={handleAnchorClick("#contacto")}
-                  className="transition hover:text-white/80"
+                  className="transition hover:text-brand-dark"
                 >
                   Contacto
                 </Link>
@@ -307,7 +306,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handleToggleMenu}
-                className="flex items-center gap-2 rounded-full border border-white/60 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-brand sm:hidden"
+                className="flex items-center gap-2 rounded-full border border-brand/40 px-3 py-2 text-sm font-semibold text-brand transition hover:bg-brand/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white sm:hidden"
                 aria-controls="mobile-menu"
                 aria-expanded={menuOpen}
               >
@@ -321,41 +320,41 @@ export default function Home() {
               id="mobile-menu"
               className={`sm:hidden ${
                 menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-              } overflow-hidden rounded-2xl border border-white/20 bg-white/10 backdrop-blur transition-all duration-300`}
+              } overflow-hidden rounded-2xl border border-brand/20 bg-brand/5 transition-all duration-300`}
             >
-              <div className="flex flex-col gap-2 px-6 py-4 text-sm font-semibold text-white">
+              <div className="flex flex-col gap-2 px-6 py-4 text-sm font-semibold text-brand">
                 <Link
                   href="#agenda"
                   onClick={handleAnchorClick("#agenda")}
-                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  className="rounded-xl px-4 py-3 transition hover:bg-brand/10"
                 >
                   Agenda
                 </Link>
                 <Link
                   href="#logistica"
                   onClick={handleAnchorClick("#logistica")}
-                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  className="rounded-xl px-4 py-3 transition hover:bg-brand/10"
                 >
                   Logística
                 </Link>
                 <Link
                   href="#hospedaje"
                   onClick={handleAnchorClick("#hospedaje")}
-                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  className="rounded-xl px-4 py-3 transition hover:bg-brand/10"
                 >
                   Hospedaje
                 </Link>
                 <Link
                   href="#faq"
                   onClick={handleAnchorClick("#faq")}
-                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  className="rounded-xl px-4 py-3 transition hover:bg-brand/10"
                 >
                   FAQ
                 </Link>
                 <Link
                   href="#contacto"
                   onClick={handleAnchorClick("#contacto")}
-                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  className="rounded-xl px-4 py-3 transition hover:bg-brand/10"
                 >
                   Contacto
                 </Link>
@@ -375,14 +374,14 @@ export default function Home() {
               </div>
             </div>
           <div className="flex flex-col gap-6 sm:max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium uppercase tracking-wider text-white">
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-4 py-2 text-sm font-medium uppercase tracking-wider text-brand">
               Superfan Cancún 2025 · 17 nov – 12 dic
             </span>
-            <h1 className="text-4xl font-semibold text-white sm:text-5xl">
+            <h1 className="text-4xl font-semibold text-neutral-900 sm:text-5xl">
               El encuentro universitario que conecta a México desde la
               Universidad del Caribe.
             </h1>
-            <p className="text-lg text-white/85 sm:text-xl">
+            <p className="text-lg text-neutral-700 sm:text-xl">
               Vive cuatro semanas de actividades integradoras, experiencias
               culturales frente al mar y la participación especial de la 45
               Muestra Nacional de Teatro. Cancún se convierte en el punto de
@@ -391,44 +390,44 @@ export default function Home() {
             <div className="flex flex-col items-start gap-4 sm:flex-row">
               <Link
                 href="#agenda"
-                className="rounded-full bg-white px-6 py-3 text-base font-semibold text-brand transition hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white"
+                className="rounded-full bg-brand px-6 py-3 text-base font-semibold text-white transition hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
                 Explorar agenda
               </Link>
               <Link
                 href="#logistica"
-                className="rounded-full border border-white/70 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/40"
+                className="rounded-full border border-brand px-6 py-3 text-base font-semibold text-brand transition hover:bg-brand/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               >
                 Información logística
               </Link>
             </div>
           </div>
           <dl className="grid gap-6 sm:grid-cols-3">
-            <div className="rounded-2xl bg-white/10 p-6 shadow-soft backdrop-blur">
-              <dt className="text-sm uppercase tracking-widest text-white/70">
+            <div className="rounded-2xl border border-brand/10 bg-brand/5 p-6 shadow-soft">
+              <dt className="text-sm uppercase tracking-widest text-brand-dark/70">
                 Universidades confirmadas
               </dt>
-              <dd className="mt-3 text-3xl font-semibold text-white">32</dd>
-              <p className="mt-2 text-sm text-white/70">
+              <dd className="mt-3 text-3xl font-semibold text-brand-dark">32</dd>
+              <p className="mt-2 text-sm text-neutral-600">
                 Delegaciones de 18 estados ya preparan su participación.
               </p>
             </div>
-            <div className="rounded-2xl bg-white/10 p-6 shadow-soft backdrop-blur">
-              <dt className="text-sm uppercase tracking-widest text-white/70">
+            <div className="rounded-2xl border border-brand/10 bg-brand/5 p-6 shadow-soft">
+              <dt className="text-sm uppercase tracking-widest text-brand-dark/70">
                 Actividades integradoras
               </dt>
-              <dd className="mt-3 text-3xl font-semibold text-white">45+</dd>
-              <p className="mt-2 text-sm text-white/70">
+              <dd className="mt-3 text-3xl font-semibold text-brand-dark">45+</dd>
+              <p className="mt-2 text-sm text-neutral-600">
                 Labs de innovación, deporte, liderazgo y experiencias
                 colaborativas.
               </p>
             </div>
-            <div className="rounded-2xl bg-white/10 p-6 shadow-soft backdrop-blur">
-              <dt className="text-sm uppercase tracking-widest text-white/70">
+            <div className="rounded-2xl border border-brand/10 bg-brand/5 p-6 shadow-soft">
+              <dt className="text-sm uppercase tracking-widest text-brand-dark/70">
                 Funciones teatrales
               </dt>
-              <dd className="mt-3 text-3xl font-semibold text-white">12</dd>
-              <p className="mt-2 text-sm text-white/70">
+              <dd className="mt-3 text-3xl font-semibold text-brand-dark">12</dd>
+              <p className="mt-2 text-sm text-neutral-600">
                 Cartelera curada por la 45 Muestra Nacional de Teatro INBAL.
               </p>
             </div>
