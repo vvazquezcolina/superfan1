@@ -253,7 +253,7 @@ export default function Home() {
       />
       <main id="contenido" className="flex flex-col">
         <header className="relative isolate overflow-hidden bg-white text-neutral-900">
-          <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 sm:px-10 lg:px-12">
+          <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 pt-6 pb-20 sm:px-10 sm:pt-8 sm:pb-24 lg:px-12 lg:pt-10 lg:pb-28">
             <nav
               aria-label="Navegación principal"
               className="flex items-center justify-between"
