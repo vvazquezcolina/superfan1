@@ -267,12 +267,11 @@ export default function Home() {
                 <Image
                   src="/logo-superfan.png"
                   alt="Logo Superfan Cancún 2025"
-                  width={52}
-                  height={52}
-                  className="h-12 w-12 object-contain"
+                  width={156}
+                  height={156}
+                  className="h-36 w-36 object-contain"
                   priority
                 />
-                <span className="text-base font-semibold">Superfan Cancún 2025</span>
               </Link>
               <div className="hidden items-center gap-4 text-sm font-semibold text-brand sm:flex">
                 <Link
