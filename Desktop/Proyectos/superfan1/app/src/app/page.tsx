@@ -672,7 +672,7 @@ export default function Home() {
               y asesoría para grupos.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {hotels.map((hotel) => (
               <article
                 key={hotel.name}
