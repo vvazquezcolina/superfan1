@@ -10,8 +10,8 @@
 ## Archivos Relevantes
 - `tasks/prd-superfan-cancun.md` — Requerimientos detallados del sitio.
 - `tasks/task-list.md` — Seguimiento de avance y entregables.
-- `app/` — Proyecto Next.js base (TypeScript + Tailwind).
-- `app/src/app/page.tsx` — Landing con secciones completas del evento.
-- `app/src/app/layout.tsx` — Metadatos, tipografías y accesibilidad global.
-- `app/src/app/robots.ts` — Configuración robots.txt.
-- `app/src/app/sitemap.ts` — Sitemap estático para difusión.
+- `.` — Proyecto Next.js base (TypeScript + Tailwind) en la raíz del repositorio.
+- `src/app/page.tsx` — Landing con secciones completas del evento.
+- `src/app/layout.tsx` — Metadatos, tipografías y accesibilidad global.
+- `src/app/robots.ts` — Configuración robots.txt.
+- `src/app/sitemap.ts` — Sitemap estático para difusión.
