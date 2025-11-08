@@ -1,0 +1,8 @@
+<svg width="200" height="70" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="70" rx="14" fill="#F1592A"/>
+  <path d="M35 48L45.5 22H52.7L63.2 48H56L54 42.4H44.2L42.3 48H35ZM45.8 36.7H52.3L49.1 28.5L45.8 36.7Z" fill="white"/>
+  <path d="M74.3 22H80.9L90.3 35.8V22H96.7V48H90.3L80.6 34V48H74.3V22Z" fill="white"/>
+  <path d="M111.4 22H118.2L127.2 35.6V22H133.6V48H127.3L117.6 34.1V48H111.4V22Z" fill="white"/>
+  <path d="M147.2 22H168.8V27.3H153.6V31.6H167.4V36.5H153.6V42H169V48H147.2V22Z" fill="white"/>
+  <text x="26" y="63" fill="#FFE6DD" font-family="'Arial', sans-serif" font-size="12" font-weight="600">45 Muestra Nacional de Teatro</text>
+</svg>
