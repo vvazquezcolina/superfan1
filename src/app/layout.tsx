@@ -40,12 +40,26 @@ export const metadata: Metadata = {
     siteName: "Superfan Cancún 2025",
     locale: "es_MX",
     type: "website",
+    images: [
+      {
+        url: "/logo-superfan.png",
+        width: 1024,
+        height: 1024,
+        alt: "Superfan Cancún 2025",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Superfan Cancún 2025 | Universidad del Caribe",
     description:
       "Actividades integradoras, cultura y teatro nacional en la Universidad del Caribe.",
+    images: [
+      {
+        url: "/logo-superfan.png",
+        alt: "Superfan Cancún 2025",
+      },
+    ],
   },
   icons: {
     icon: "/logo-superfan.png",
