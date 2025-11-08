@@ -1,6 +1,6 @@
- 'use client';
+'use client';
 
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -115,6 +115,11 @@ const testimonials = [
   },
 ];
 
+const logos = {
+  unicaribe: "https://www.unicaribe.mx/static/img/logo.184cad1780d2.png",
+  mnt: "https://mnt.inba.gob.mx/front/img/logoactividades.jpg",
+};
+
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -167,7 +172,19 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleToggleMenu = () => setMenuOpen((prev) => !prev);
-  const handleCloseMenu = () => setMenuOpen(false);
+
+  const handleAnchorClick =
+    (hash: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+      event.preventDefault();
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      setMenuOpen(false);
+      if (typeof window !== "undefined") {
+        window.history.replaceState(null, "", hash);
+      }
+    };
 
   return (
     <>
@@ -187,6 +204,7 @@ export default function Home() {
             >
               <Link
                 href="#contenido"
+                onClick={handleAnchorClick("#contenido")}
                 className="text-base font-semibold text-white transition hover:text-white/80"
                 aria-label="Superfan Cancún 2025"
               >
@@ -195,36 +213,36 @@ export default function Home() {
               <div className="hidden items-center gap-4 text-sm font-semibold text-white sm:flex">
                 <Link
                   href="#agenda"
+                  onClick={handleAnchorClick("#agenda")}
                   className="transition hover:text-white/80"
-                  onClick={handleCloseMenu}
                 >
                   Agenda
                 </Link>
                 <Link
                   href="#logistica"
+                  onClick={handleAnchorClick("#logistica")}
                   className="transition hover:text-white/80"
-                  onClick={handleCloseMenu}
                 >
                   Logística
                 </Link>
                 <Link
                   href="#hospedaje"
+                  onClick={handleAnchorClick("#hospedaje")}
                   className="transition hover:text-white/80"
-                  onClick={handleCloseMenu}
                 >
                   Hospedaje
                 </Link>
                 <Link
                   href="#faq"
+                  onClick={handleAnchorClick("#faq")}
                   className="transition hover:text-white/80"
-                  onClick={handleCloseMenu}
                 >
                   FAQ
                 </Link>
                 <Link
                   href="#contacto"
+                  onClick={handleAnchorClick("#contacto")}
                   className="transition hover:text-white/80"
-                  onClick={handleCloseMenu}
                 >
                   Contacto
                 </Link>
@@ -251,36 +269,36 @@ export default function Home() {
               <div className="flex flex-col gap-2 px-6 py-4 text-sm font-semibold text-white">
                 <Link
                   href="#agenda"
+                  onClick={handleAnchorClick("#agenda")}
                   className="rounded-xl px-4 py-3 transition hover:bg-white/10"
-                  onClick={handleCloseMenu}
                 >
                   Agenda
                 </Link>
                 <Link
                   href="#logistica"
+                  onClick={handleAnchorClick("#logistica")}
                   className="rounded-xl px-4 py-3 transition hover:bg-white/10"
-                  onClick={handleCloseMenu}
                 >
                   Logística
                 </Link>
                 <Link
                   href="#hospedaje"
+                  onClick={handleAnchorClick("#hospedaje")}
                   className="rounded-xl px-4 py-3 transition hover:bg-white/10"
-                  onClick={handleCloseMenu}
                 >
                   Hospedaje
                 </Link>
                 <Link
                   href="#faq"
+                  onClick={handleAnchorClick("#faq")}
                   className="rounded-xl px-4 py-3 transition hover:bg-white/10"
-                  onClick={handleCloseMenu}
                 >
                   FAQ
                 </Link>
                 <Link
                   href="#contacto"
+                  onClick={handleAnchorClick("#contacto")}
                   className="rounded-xl px-4 py-3 transition hover:bg-white/10"
-                  onClick={handleCloseMenu}
                 >
                   Contacto
                 </Link>
@@ -369,11 +387,11 @@ export default function Home() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:items-center">
             <div className="flex flex-col items-center gap-3 rounded-2xl border border-neutral-100 bg-neutral-50 px-6 py-5 shadow-soft">
               <Image
-                src="/unicaribe-logo.svg"
+                src={logos.unicaribe}
                 alt="Universidad del Caribe"
-                width={140}
-                height={70}
-                className="h-16 w-auto"
+                width={160}
+                height={80}
+                className="h-16 w-auto object-contain"
               />
               <p className="text-sm text-neutral-600">
                 Excelencia académica, desarrollo humano y compromiso con el
@@ -382,11 +400,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-3 rounded-2xl border border-neutral-100 bg-neutral-50 px-6 py-5 shadow-soft">
               <Image
-                src="/mnt-logo.svg"
+                src={logos.mnt}
                 alt="45 Muestra Nacional de Teatro"
-                width={130}
-                height={70}
-                className="h-16 w-auto"
+                width={160}
+                height={80}
+                className="h-16 w-auto object-contain"
               />
               <p className="text-sm text-neutral-600">
                 La plataforma teatral más importante del país llega a Cancún con
@@ -632,7 +650,7 @@ export default function Home() {
               y asesoría para grupos.
             </p>
           </div>
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-6 lg:grid-cols-3">
             {hotels.map((hotel) => (
               <article
                 key={hotel.name}
@@ -832,18 +850,18 @@ export default function Home() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex items-center gap-6">
               <Image
-                src="/unicaribe-logo.svg"
+                src={logos.unicaribe}
                 alt="Universidad del Caribe"
-                width={140}
-                height={70}
-                className="h-14 w-auto"
+                width={160}
+                height={80}
+                className="h-14 w-auto object-contain"
               />
               <Image
-                src="/mnt-logo.svg"
+                src={logos.mnt}
                 alt="45 Muestra Nacional de Teatro"
-                width={120}
-                height={60}
-                className="h-12 w-auto"
+                width={150}
+                height={80}
+                className="h-12 w-auto object-contain"
               />
             </div>
             <div className="text-sm text-neutral-400">

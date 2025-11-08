@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "content.skyscnr.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.unicaribe.mx",
+      },
+      {
+        protocol: "https",
+        hostname: "mnt.inba.gob.mx",
+      },
     ],
   },
 };
