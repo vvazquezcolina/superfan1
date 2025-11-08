@@ -196,7 +196,7 @@ export default function Home() {
       />
       <main id="contenido" className="flex flex-col">
         <header className="relative isolate overflow-hidden bg-hero-pattern text-white">
-          <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_55%)]" />
+          <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_55%)]" />
           <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 sm:px-10 lg:px-12">
             <nav
               aria-label="Navegación principal"
