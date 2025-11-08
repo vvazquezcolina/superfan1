@@ -540,10 +540,11 @@ export default function Home() {
                 </h3>
                 <p className="text-base text-white/85">
                   Curaduría del Instituto Nacional de Bellas Artes y Literatura
-                  con compañías invitadas que recorrerán el país antes de llegar
-                  a Cancún. Talleres escénicos, residencias creativas y una
-                  función estelar se integran a Superfan 2025 para reforzar la
-                  colaboración artística.
+                  con compañías invitadas que recorren el país antes de llegar a
+                  Cancún. Talleres escénicos, residencias creativas y una función
+                  estelar se integran a Superfan 2025 para reforzar la
+                  colaboración artística. Consulta la cartelera completa en el
+                  programa oficial.
                 </p>
                 <ul className="space-y-3 text-sm text-white/85">
                   <li>• Taller «Escena viva» para líderes culturales.</li>
@@ -568,6 +569,14 @@ export default function Home() {
                   className="inline-flex items-center gap-2 self-start rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand transition hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >
                   Conoce la Muestra Nacional de Teatro
+                </Link>
+                <Link
+                  href="https://mnt.inba.gob.mx/downloads/Programa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 self-start rounded-full border border-white/70 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
+                >
+                  Descargar programa oficial (PDF)
                 </Link>
               </div>
             </div>
