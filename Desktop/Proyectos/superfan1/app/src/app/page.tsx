@@ -845,10 +845,10 @@ export default function Home() {
         </div>
       </section>
 
-        <footer className="bg-neutral-900 text-neutral-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-12 sm:px-10 lg:px-12">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-6">
+        <footer className="border-t border-neutral-200 bg-white text-neutral-800">
+          <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-12 sm:px-10 lg:px-12">
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+              <div className="flex items-center gap-6">
               <Image
                 src={logos.unicaribe}
                 alt="Universidad del Caribe"
@@ -864,7 +864,7 @@ export default function Home() {
                 className="h-12 w-auto object-contain"
               />
             </div>
-            <div className="text-sm text-neutral-400">
+            <div className="text-sm text-neutral-600">
               <p>Universidad del Caribe · Cancún, Quintana Roo</p>
               <p>Superfan Cancún 2025 — Todas las actividades sujetas a cambios.</p>
             </div>
@@ -874,25 +874,25 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="#agenda"
-                className="transition hover:text-neutral-200"
+                className="transition hover:text-neutral-800"
               >
                 Agenda
               </Link>
               <Link
                 href="#hospedaje"
-                className="transition hover:text-neutral-200"
+                className="transition hover:text-neutral-800"
               >
                 Hospedaje
               </Link>
               <Link
                 href="#faq"
-                className="transition hover:text-neutral-200"
+                className="transition hover:text-neutral-800"
               >
                 FAQ
               </Link>
               <Link
                 href="#contacto"
-                className="transition hover:text-neutral-200"
+                className="transition hover:text-neutral-800"
               >
                 Contacto
               </Link>
