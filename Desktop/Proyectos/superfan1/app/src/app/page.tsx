@@ -304,6 +304,19 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            <div className="overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-soft backdrop-blur">
+              <div className="relative w-full">
+                <div className="relative aspect-[2220/840] w-full">
+                  <Image
+                    src="https://www.unicaribe.mx/media/images/carruselaniv25.2e16d0ba.fill-2220x840.format-webp.webp"
+                    alt="Banner aniversario Universidad del Caribe"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           <div className="flex flex-col gap-6 sm:max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium uppercase tracking-wider text-white">
               Superfan Cancún 2025 · 17 nov – 12 dic
