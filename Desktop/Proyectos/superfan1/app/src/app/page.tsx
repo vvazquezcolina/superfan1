@@ -624,7 +624,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-3xl border border-white shadow-[0_30px_80px_-40px_rgba(0,88,161,0.5)]">
               <iframe
                 title="Ubicación Universidad del Caribe Cancún"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.244609608698!2d-86.84799072373459!3d21.148682084595248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c299f23e5d7d3%3A0x4c4d6f90e1aaff42!2sUniversidad%20del%20Caribe!5e0!3m2!1ses-419!2smx!4v1731028800000!5m2!1ses-419!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4765.983927872895!2d-86.826036088242!3d21.2004069804109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2c298cab405b%3A0xc7ce34485e9b3b8!2sUniversidad%20Del%20Caribe!5e1!3m2!1sen!2smx!4v1762585633051!5m2!1sen!2smx"
                 className="h-[360px] w-full"
                 allowFullScreen
                 loading="lazy"
