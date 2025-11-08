@@ -120,6 +120,63 @@ const logos = {
   mnt: "https://mnt.inba.gob.mx/front/img/logoactividades.jpg",
 };
 
+const news = [
+  {
+    title:
+      "Titular de SEMA, Lic. Óscar Rébora, urge desde la Unicaribe a crear la agenda de adaptación al cambio climático",
+    image:
+      "https://www.unicaribe.mx/media/images/Rebora2.2e16d0ba.fill-720x480.format-webp.webp",
+    href: "https://www.unicaribe.mx/noticias/titular-de-sema-urge-desde-la-unicaribe-a-crear-la-agenda-de-adaptacion-al-cambio-climatico",
+    alt: "Titular de SEMA en conferencia en la Universidad del Caribe",
+    category: "Sostenibilidad",
+  },
+  {
+    title:
+      "Impulsa la Unicaribe la preservación, inclusiva y sostenible, de nuestra tradiciones",
+    image:
+      "https://www.unicaribe.mx/media/images/Janal_Pixan_2.2e16d0ba.fill-720x480.format-webp.webp",
+    href: "https://www.unicaribe.mx/noticias/impulsa-la-unicaribe-la-preservacion-inclusiva-y-sostenible-de-nuestra-tradiciones",
+    alt: "Celebración cultural en la Universidad del Caribe",
+    category: "Cultura",
+  },
+  {
+    title:
+      "La Unicaribe refuerza la colaboración con la Universidad Sun Yat sen de China",
+    image:
+      "https://www.unicaribe.mx/media/images/Confucio4_2wbWvg1.2e16d0ba.fill-720x480.format-webp.webp",
+    href: "https://www.unicaribe.mx/noticias/la-unicaribe-refuerza-la-colaboracion-con-la-universidad-sun-yat-sen-de-china",
+    alt: "Representantes de Unicaribe y Sun Yat sen estrechando manos",
+    category: "Vinculación",
+  },
+];
+
+const events = [
+  {
+    title: "Ofrendas",
+    image:
+      "https://www.unicaribe.mx/media/images/catrin-02_copia_2.max-480x680.format-webp.webp",
+    fullImage:
+      "https://www.unicaribe.mx/media/images/catrin-02_copia_2.width-800.jpg",
+    caption: "Ofrendas · Festival Superfan",
+  },
+  {
+    title: "Catrines",
+    image:
+      "https://www.unicaribe.mx/media/images/catrin-01_copia.max-480x680.format-webp.webp",
+    fullImage:
+      "https://www.unicaribe.mx/media/images/catrin-01_copia.width-800.jpg",
+    caption: "Catrines · Pasarela cultural",
+  },
+  {
+    title: "Congreso CBEI",
+    image:
+      "https://www.unicaribe.mx/media/images/DIGITAL_CEI_2025_copia.max-480x680.format-webp.webp",
+    fullImage:
+      "https://www.unicaribe.mx/media/images/DIGITAL_CEI_2025_copia.width-800.jpg",
+    caption: "Congreso CBEI 2025",
+  },
+];
+
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -437,6 +494,180 @@ export default function Home() {
                 Estudiantes impactados por iniciativas culturales y deportivas.
               </p>
             </div>
+          </div>
+          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+            <div className="order-2 flex flex-col gap-4 rounded-3xl border border-neutral-200 bg-neutral-50 p-8 shadow-soft lg:order-2">
+              <h3 className="text-2xl font-semibold text-neutral-800">
+                Conoce nuestros 25 años de historia
+              </h3>
+              <p className="text-sm text-neutral-600">
+                Un recorrido audiovisual por los proyectos, logros y alianzas
+                que han consolidado a la Universidad del Caribe como referente
+                académico y cultural en Quintana Roo.
+              </p>
+              <div className="relative overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-900 shadow-soft">
+                <div className="relative aspect-video w-full">
+                  <iframe
+                    className="absolute left-0 top-0 h-full w-full"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/hddNZAG9JcM?si=xQ_i-uZdFJWo__wk&rel=0"
+                    title="¡La Universidad del Caribe cumple 25 años!"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="order-1 flex flex-col gap-4 rounded-3xl border border-brand/15 bg-brand/5 p-8 text-brand shadow-soft lg:order-1">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-dark">
+                25 años de impacto
+              </span>
+              <p className="text-lg text-brand-dark">
+                Desde 2000, Unicaribe ha impulsado iniciativas académicas,
+                ambientales y culturales que hoy conectan al Caribe mexicano con
+                universidades de todo el país. Superfan Cancún 2025 es parte de
+                esta celebración.
+              </p>
+              <ul className="space-y-2 text-sm text-brand-dark/80">
+                <li>• Reconocimientos nacionales en innovación educativa.</li>
+                <li>• Comunidad estudiantil comprometida con el desarrollo sostenible.</li>
+                <li>• Alianzas estratégicas con instituciones culturales y académicas.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="noticias" className="bg-neutral-50 py-20">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 sm:px-10 lg:px-12">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+                Noticias
+              </p>
+              <h2 className="text-3xl font-semibold text-neutral-800">
+                Actualidad desde la Universidad del Caribe
+              </h2>
+            </div>
+            <Link
+              href="https://www.unicaribe.mx/noticias"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-brand px-5 py-3 text-sm font-semibold text-brand transition hover:bg-brand hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2"
+            >
+              Ver más
+            </Link>
+          </div>
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+            <article className="group flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_25px_70px_-45px_rgba(0,88,161,0.45)]">
+              <Link href={news[0].href} target="_blank" rel="noopener noreferrer">
+                <div className="relative h-80 w-full overflow-hidden">
+                  <Image
+                    src={news[0].image}
+                    alt={news[0].alt}
+                    fill
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-col gap-3 p-6">
+                  <span className="inline-flex w-fit items-center rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand">
+                    {news[0].category}
+                  </span>
+                  <h3 className="text-xl font-semibold text-neutral-800">
+                    {news[0].title}
+                  </h3>
+                </div>
+              </Link>
+            </article>
+            <div className="grid gap-6">
+              {news.slice(1).map((item) => (
+                <article
+                  key={item.href}
+                  className="group flex gap-5 overflow-hidden rounded-3xl border border-neutral-200 bg-white p-4 shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_25px_70px_-45px_rgba(0,88,161,0.45)]"
+                >
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex w-full gap-5"
+                  >
+                    <div className="relative h-28 w-40 flex-shrink-0 overflow-hidden rounded-2xl">
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        fill
+                        className="object-cover transition duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <span className="inline-flex w-fit items-center rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand">
+                        {item.category}
+                      </span>
+                      <h3 className="text-base font-semibold text-neutral-800">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="eventos" className="bg-white py-20">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 sm:px-10 lg:px-12">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+                Eventos
+              </p>
+              <h2 className="text-3xl font-semibold text-neutral-800">
+                Conoce más eventos
+              </h2>
+            </div>
+            <Link
+              href="https://www.unicaribe.mx/eventos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-brand px-5 py-3 text-sm font-semibold text-brand transition hover:bg-brand hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark focus-visible:ring-offset-2"
+            >
+              Ver calendario completo
+            </Link>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {events.map((evento) => (
+              <article
+                key={evento.fullImage}
+                className="group flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_25px_70px_-45px_rgba(0,88,161,0.45)]"
+              >
+                <Link
+                  href={evento.fullImage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col"
+                >
+                  <div className="relative h-80 w-full overflow-hidden bg-neutral-200">
+                    <Image
+                      src={evento.image}
+                      alt={evento.caption}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2 p-6">
+                    <span className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+                      {evento.title}
+                    </span>
+                    <p className="text-xs text-neutral-500">
+                      {evento.caption}
+                    </p>
+                  </div>
+                </Link>
+              </article>
+            ))}
           </div>
         </div>
       </section>
