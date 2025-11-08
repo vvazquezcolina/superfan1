@@ -1,3 +1,6 @@
+ 'use client';
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -161,6 +164,11 @@ const eventSchema = {
 };
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => setMenuOpen((prev) => !prev);
+  const handleCloseMenu = () => setMenuOpen(false);
+
   return (
     <>
       <Script
@@ -171,8 +179,8 @@ export default function Home() {
       />
       <main id="contenido" className="flex flex-col">
         <header className="relative isolate overflow-hidden bg-hero-pattern text-white">
-        <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_55%)]" />
-        <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 sm:px-10 lg:px-12">
+          <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_55%)]" />
+          <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 sm:px-10 lg:px-12">
             <nav
               aria-label="Navegación principal"
               className="flex items-center justify-between"
@@ -188,35 +196,96 @@ export default function Home() {
                 <Link
                   href="#agenda"
                   className="transition hover:text-white/80"
+                  onClick={handleCloseMenu}
                 >
                   Agenda
                 </Link>
                 <Link
                   href="#logistica"
                   className="transition hover:text-white/80"
+                  onClick={handleCloseMenu}
                 >
                   Logística
                 </Link>
                 <Link
                   href="#hospedaje"
                   className="transition hover:text-white/80"
+                  onClick={handleCloseMenu}
                 >
                   Hospedaje
                 </Link>
                 <Link
                   href="#faq"
                   className="transition hover:text-white/80"
+                  onClick={handleCloseMenu}
                 >
                   FAQ
                 </Link>
                 <Link
                   href="#contacto"
                   className="transition hover:text-white/80"
+                  onClick={handleCloseMenu}
                 >
                   Contacto
                 </Link>
               </div>
+              <button
+                type="button"
+                onClick={handleToggleMenu}
+                className="flex items-center gap-2 rounded-full border border-white/60 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-brand sm:hidden"
+                aria-controls="mobile-menu"
+                aria-expanded={menuOpen}
+              >
+                <span>{menuOpen ? "Cerrar" : "Menú"}</span>
+                <span aria-hidden="true" className="text-lg leading-none">
+                  ☰
+                </span>
+              </button>
             </nav>
+            <div
+              id="mobile-menu"
+              className={`sm:hidden ${
+                menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              } overflow-hidden rounded-2xl border border-white/20 bg-white/10 backdrop-blur transition-all duration-300`}
+            >
+              <div className="flex flex-col gap-2 px-6 py-4 text-sm font-semibold text-white">
+                <Link
+                  href="#agenda"
+                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  onClick={handleCloseMenu}
+                >
+                  Agenda
+                </Link>
+                <Link
+                  href="#logistica"
+                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  onClick={handleCloseMenu}
+                >
+                  Logística
+                </Link>
+                <Link
+                  href="#hospedaje"
+                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  onClick={handleCloseMenu}
+                >
+                  Hospedaje
+                </Link>
+                <Link
+                  href="#faq"
+                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  onClick={handleCloseMenu}
+                >
+                  FAQ
+                </Link>
+                <Link
+                  href="#contacto"
+                  className="rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  onClick={handleCloseMenu}
+                >
+                  Contacto
+                </Link>
+              </div>
+            </div>
           <div className="flex flex-col gap-6 sm:max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium uppercase tracking-wider text-white">
               Superfan Cancún 2025 · 17 nov – 12 dic
@@ -537,8 +606,9 @@ export default function Home() {
             <div className="overflow-hidden rounded-3xl border border-white shadow-[0_30px_80px_-40px_rgba(0,88,161,0.5)]">
               <iframe
                 title="Ubicación Universidad del Caribe Cancún"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.3275025620197!2d-86.8479565!3d21.1457789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c299f2097fe93%3A0x4c73189855285bb!2sUniversidad%20del%20Caribe!5e0!3m2!1ses-419!2smx!4v1731028200000!5m2!1ses-419!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.244609608698!2d-86.84799072373459!3d21.148682084595248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c299f23e5d7d3%3A0x4c4d6f90e1aaff42!2sUniversidad%20del%20Caribe!5e0!3m2!1ses-419!2smx!4v1731028800000!5m2!1ses-419!2smx"
                 className="h-[360px] w-full"
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
