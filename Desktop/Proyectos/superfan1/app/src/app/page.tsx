@@ -495,46 +495,39 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
-            <div className="order-2 flex flex-col gap-4 rounded-3xl border border-neutral-200 bg-neutral-50 p-8 shadow-soft lg:order-2">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="flex flex-col gap-5 rounded-3xl border border-neutral-200 bg-neutral-50 p-8 shadow-soft">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
+                25 años de impacto
+              </span>
               <h3 className="text-2xl font-semibold text-neutral-800">
                 Conoce nuestros 25 años de historia
               </h3>
               <p className="text-sm text-neutral-600">
-                Un recorrido audiovisual por los proyectos, logros y alianzas
-                que han consolidado a la Universidad del Caribe como referente
-                académico y cultural en Quintana Roo.
+                Desde 2000, la Universidad del Caribe ha impulsado iniciativas
+                académicas, ambientales y culturales que conectan al Caribe
+                mexicano con universidades de todo el país. Superfan Cancún 2025
+                forma parte de esta celebración.
               </p>
-              <div className="relative overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-900 shadow-soft">
-                <div className="relative aspect-video w-full">
-                  <iframe
-                    className="absolute left-0 top-0 h-full w-full"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/hddNZAG9JcM?si=xQ_i-uZdFJWo__wk&rel=0"
-                    title="¡La Universidad del Caribe cumple 25 años!"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="order-1 flex flex-col gap-4 rounded-3xl border border-brand/15 bg-brand/5 p-8 text-brand shadow-soft lg:order-1">
-              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-dark">
-                25 años de impacto
-              </span>
-              <p className="text-lg text-brand-dark">
-                Desde 2000, Unicaribe ha impulsado iniciativas académicas,
-                ambientales y culturales que hoy conectan al Caribe mexicano con
-                universidades de todo el país. Superfan Cancún 2025 es parte de
-                esta celebración.
-              </p>
-              <ul className="space-y-2 text-sm text-brand-dark/80">
+              <ul className="space-y-2 text-sm text-neutral-600">
                 <li>• Reconocimientos nacionales en innovación educativa.</li>
                 <li>• Comunidad estudiantil comprometida con el desarrollo sostenible.</li>
                 <li>• Alianzas estratégicas con instituciones culturales y académicas.</li>
               </ul>
+            </div>
+            <div className="relative overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-900 shadow-soft">
+              <div className="relative aspect-video w-full">
+                <iframe
+                  className="absolute left-0 top-0 h-full w-full"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/hddNZAG9JcM?si=xQ_i-uZdFJWo__wk&rel=0"
+                  title="¡La Universidad del Caribe cumple 25 años!"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
