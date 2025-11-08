@@ -4,6 +4,7 @@
 !README.md
 !package.json
 !package-lock.json
+!next-env.d.ts
 !next.config.ts
 !postcss.config.mjs
 !tailwind.config.ts
@@ -58,6 +59,5 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 
 public/.localized
