@@ -261,10 +261,18 @@ export default function Home() {
               <Link
                 href="#contenido"
                 onClick={handleAnchorClick("#contenido")}
-                className="text-base font-semibold text-brand transition hover:text-brand-dark"
+                className="flex items-center gap-3 text-brand transition hover:text-brand-dark"
                 aria-label="Superfan Cancún 2025"
               >
-                Superfan Cancún 2025
+                <Image
+                  src="/logo-superfan.png"
+                  alt="Logo Superfan Cancún 2025"
+                  width={52}
+                  height={52}
+                  className="h-12 w-12 object-contain"
+                  priority
+                />
+                <span className="text-base font-semibold">Superfan Cancún 2025</span>
               </Link>
               <div className="hidden items-center gap-4 text-sm font-semibold text-brand sm:flex">
                 <Link

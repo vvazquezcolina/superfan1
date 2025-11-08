@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     description:
       "Actividades integradoras, cultura y teatro nacional en la Universidad del Caribe.",
   },
+  icons: {
+    icon: "/logo-superfan.png",
+    shortcut: "/logo-superfan.png",
+    apple: "/logo-superfan.png",
+  },
 };
 
 export default function RootLayout({
