@@ -24,7 +24,7 @@ El evento universitario Superfan Cancún 2025 reunirá a universidades de todo M
 8. Añadir un módulo «¿Quieres ser hotel patrocinador?» con botón que abre un correo a `2025@superfaninfo.com`.
 9. Destacar testimonios o citas breves de ediciones anteriores ficticias para reforzar credibilidad.
 10. Incorporar sección de preguntas frecuentes (FAQ) con al menos cinco preguntas y respuestas.
-11. Añadir bloque de contacto que liste los correos `2025@superfaninfo.com` y `superfaninfo@unicaribe.mx`.
+11. Añadir bloque de contacto que liste los correos `2025@superfaninfo.com` y `superfan@unicaribe.mx`.
 12. Footer con logos de Universidad del Caribe y 45 Muestra Nacional de Teatro, redes sociales principales, aviso de privacidad y derechos reservados.
 13. Garantizar responsividad en escritorio, tablet y móvil.
 14. Optimizar imágenes para peso < 150 KB y atributos alt descriptivos.
