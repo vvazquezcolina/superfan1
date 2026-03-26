@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /generate_pages.py
+Disallow: /generate_enhanced_pages.py
+
+# Sitemap location
+Sitemap: https://www.superfan.com/sitemap.xml
+
+

@@ -1,0 +1,37 @@
+Nivel,Pilar,Cluster,Página / Tema,Intención,H1 ejemplo,Keywords objetivo (EN/ES),URL sugerida,Monetización / Notas
+L1,Torneo 2026,Overview,Guía general 2026,Informacional,Guía independiente del Mundial 2026,world cup 2026 guide / guía mundial 2026,/world-cup-2026/,Lead magnet + newsletter
+L2,Torneo 2026,Formato,Formato 48 equipos,Informacional,Formato del Mundial 2026: así funciona,world cup 48 teams format / formato 48 equipos,/world-cup-2026/format/,"Evergreen, enlaza a calendario"
+L2,Torneo 2026,Calendario,Calendario por fases,Informacional,Calendario 2026: fases y fechas,world cup 2026 schedule / calendario mundial 2026,/world-cup-2026/schedule/,"Tabla filtrable, capta enlaces"
+L2,Torneo 2026,Sedes,Mapa de sedes,Informacional,Sedes y estadios del 2026,2026 host cities / sedes mundial 2026,/world-cup-2026/cities/,Enlaza a cada ciudad
+L3,Torneo 2026,Sedes,Ciudad de México,Informacional,Guía de la sede: Ciudad de México,mexico city world cup guide / guía ciudad de méxico mundial,/world-cup-2026/cities/mexico-city/,Afiliados: tours locales
+L3,Torneo 2026,Sedes,Monterrey,Informacional,Guía de la sede: Monterrey,monterrey world cup guide / guía monterrey mundial,/world-cup-2026/cities/monterrey/,
+L3,Torneo 2026,Sedes,Guadalajara,Informacional,Guía de la sede: Guadalajara,guadalajara world cup guide / guía guadalajara mundial,/world-cup-2026/cities/guadalajara/,
+L3,Torneo 2026,Sedes,Toronto,Informacional,Guía de la sede: Toronto,toronto world cup guide / guía toronto mundial,/world-cup-2026/cities/toronto/,
+L3,Torneo 2026,Sedes,Vancouver,Informacional,Guía de la sede: Vancouver,vancouver world cup guide / guía vancouver mundial,/world-cup-2026/cities/vancouver/,
+L3,Torneo 2026,Sedes,Los Ángeles,Informacional,Guía de la sede: Los Ángeles,los angeles world cup guide / guía los ángeles mundial,/world-cup-2026/cities/los-angeles/,
+L2,Torneo 2026,Estadios,Índice de estadios,Informacional,Estadios del 2026: capacidades y partidos,2026 stadiums / estadios mundial 2026,/world-cup-2026/stadiums/,Interlinking a ciudades
+L3,Torneo 2026,Estadios,Estadio Azteca,Informacional,Estadio Azteca: partidos y guía,estadio azteca world cup / estadio azteca mundial,/world-cup-2026/stadiums/estadio-azteca/,
+L2,Torneo 2026,Partidos,Partidos por ciudad,Informacional,Partidos en [Ciudad]: fechas y cómo llegar,matches in [city] 2026 / partidos en [ciudad] 2026,/world-cup-2026/matches/[city]/,Relaciona vuelos y hospedaje
+L2,Viajes,Vuelos baratos,Cómo encontrar vuelos,Comercial,Vuelos baratos para el 2026: guía,cheap flights world cup / vuelos baratos mundial,/travel/flights/cheap-flights-world-cup-2026/,Afiliado: OTA/metabuscador
+L3,Viajes,Vuelos baratos,Desde México,Comercial,Vuelos baratos desde México al 2026,cheap flights from mexico / vuelos baratos desde méxico,/travel/flights/from-mexico/,Afiliado
+L3,Viajes,Vuelos baratos,Desde USA,Comercial,Vuelos baratos desde USA al 2026,cheap flights from usa / vuelos baratos desde usa,/travel/flights/from-usa/,Afiliado
+L3,Viajes,Vuelos baratos,Desde Europa,Comercial,Vuelos baratos desde Europa al 2026,cheap flights from europe / vuelos baratos desde europa,/travel/flights/from-europe/,Afiliado
+L2,Viajes,Hospedaje,Dónde hospedarse (guía general),Comercial,Dónde hospedarse durante el 2026,where to stay world cup / dónde hospedarse mundial,/travel/stay/where-to-stay-2026/,Afiliado: hoteles/apartamentos
+L3,Viajes,Hospedaje,Por ciudad sede,Comercial,Dónde hospedarse en [Ciudad sede],where to stay in [city] / dónde hospedarse en [ciudad],/travel/stay/[city]/,Zonas + rangos de precio
+L3,Viajes,Hospedaje,Barato vs céntrico,Comercial,Barato o céntrico: qué conviene,budget vs central stay / hospedaje barato vs céntrico,/travel/stay/budget-vs-central/,Comparativa
+L2,Viajes,Transporte,Entre ciudades,Informacional,Cómo moverse entre sedes,travel between host cities / transporte entre sedes,/travel/transport/between-cities/,Afiliado: buses/trenes/renta auto
+L3,Viajes,Transporte,Local por ciudad,Informacional,Transporte local en [Ciudad],local transport [city] / transporte [ciudad],/travel/transport/[city]/,
+L2,Fan Experience,Entradas oficiales,Cómo comprar entradas,Informacional,Cómo comprar entradas de forma segura,buy world cup tickets safely / cómo comprar entradas seguro,/fan/tickets/how-to-buy-safely/,Solo informativo + enlaces oficiales (no reventa)
+L2,Fan Experience,Viewing parties,Zonas fan y pantallas,Informacional,Dónde ver los partidos en [Ciudad],where to watch in [city] / dónde ver en [ciudad],/fan/where-to-watch/[city]/,Afiliado: bares/tours
+L2,Fan Experience,Seguridad,Consejos y seguros,Informacional,"Seguridad, salud y seguros de viaje",travel insurance tips / seguros de viaje mundial,/fan/safety-and-insurance/,Afiliado: seguros
+L1,Selecciones,Índice,Todas las selecciones,Informacional,Selecciones participantes 2026,world cup teams 2026 / selecciones 2026,/world-cup-2026/teams/,Enlaza a fichas
+L2,Selecciones,Fichas,Selección país (ej. México),Informacional,México en el 2026: plantilla y estilo,mexico squad 2026 / méxico selección 2026,/world-cup-2026/teams/mexico/,Captura long-tail
+L2,Jugadores,Top jugadores,Ranking por posiciones,Informacional,Top jugadores a seguir en 2026,best players 2026 / jugadores a seguir 2026,/world-cup-2026/players/top-players/,Evergreen
+L1,Historia & Datos,Records,Récords históricos,Informacional,Récords históricos de la Copa,world cup records / récords del mundial,/history/records/,Link bait
+L2,Historia & Datos,Estadísticas,"Goles, tarjetas, xG",Informacional,Estadísticas esenciales 1930–2026,world cup stats / estadísticas mundial,/history/statistics/,Visualizaciones
+L1,Noticias & Análisis,Análisis,Táctica y tendencias,Informacional,Claves tácticas rumbo a 2026,tactics trends 2026 / táctica 2026,/analysis/tactics-2026/,Contenido fresco
+L2,Noticias & Análisis,Guías “cómo ver”,Dónde ver streaming/TV,Informacional,Cómo ver el 2026 en tu país,how to watch 2026 in [country] / cómo ver en [país],/how-to-watch/[country]/,Evitar marcas; informar opciones generales
+L1,Herramientas,Planificador,Planner de viaje por sede,Transaccional suave,Planifica tu viaje por sedes,world cup trip planner / planificador sedes,/tools/trip-planner/,Captura email
+L2,Herramientas,Presupuesto,Calculadora de costo,Transaccional suave,Calculadora de presupuesto 2026,world cup budget calculator / calculadora presupuesto,/tools/budget-calculator/,Lead + afiliados
+L2,Herramientas,Alerts,Alertas de vuelos,Transaccional suave,Activa alertas de vuelos baratos,flight price alerts / alertas de vuelos,/tools/flight-alerts/,Afiliado + newsletter
+L1,Legal,Sobre/Disclaimer,No afiliación,Informacional,Sobre el proyecto y disclaimer,independent project disclaimer / aviso de no afiliación,/about/,Reducir riesgo legal
