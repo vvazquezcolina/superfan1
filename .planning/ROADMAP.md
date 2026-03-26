@@ -122,7 +122,11 @@ Plans:
   3. Booking.com hotel search widgets appear contextually on city guide pages
   4. An affiliate disclosure page exists at /es/divulgacion/ with FTC-compliant Spanish language
   5. A privacy policy page and cookie consent banner handle GDPR/CCPA compliance
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 06-01-PLAN.md -- GA4 integration, affiliate data layer (affiliates.json + Zod loader), AffiliateLink component, Booking.com widgets on city pages, affiliate disclosure page
+- [ ] 06-02-PLAN.md -- Privacy policy pages, About pages, cookie consent banner, Footer link fixes for locale-aware legal paths
 
 ### Phase 7: Team Pages
 **Goal**: Fans can browse all 48 participating teams with group assignments, World Cup history, key players, and links to host city guides where their matches will be played
@@ -183,7 +187,7 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 3. City Guides | 0/5 | Planning complete | - |
 | 4. Stadium Pages & Homepage | 0/2 | Planning complete | - |
 | 5. LLM Optimization Layer | 0/2 | Planning complete | - |
-| 6. Monetization & Analytics | 0/TBD | Not started | - |
+| 6. Monetization & Analytics | 0/2 | Planning complete | - |
 | 7. Team Pages | 0/TBD | Not started | - |
 | 8. Travel & Fan Experience Guides | 0/TBD | Not started | - |
 | 9. Lead Capture & Engagement | 0/TBD | Not started | - |
