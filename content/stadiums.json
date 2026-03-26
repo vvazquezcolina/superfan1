@@ -1,0 +1,212 @@
+{
+  "stadiums": [
+    {
+      "id": "estadio-azteca",
+      "slugs": { "es": "estadio-azteca", "en": "estadio-azteca" },
+      "name": { "es": "Estadio Azteca", "en": "Estadio Azteca" },
+      "city": "ciudad-de-mexico",
+      "capacity": 87523,
+      "coordinates": { "lat": 19.3029, "lng": -99.1505 },
+      "description": {
+        "es": "Legendario estadio de Ciudad de Mexico, el unico en el mundo que ha sido sede de dos finales de Copa del Mundo.",
+        "en": "Legendary Mexico City stadium, the only venue in the world to have hosted two World Cup finals."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "estadio-bbva",
+      "slugs": { "es": "estadio-bbva", "en": "estadio-bbva" },
+      "name": { "es": "Estadio BBVA", "en": "Estadio BBVA" },
+      "city": "monterrey",
+      "capacity": 53500,
+      "coordinates": { "lat": 25.6699, "lng": -100.2438 },
+      "description": {
+        "es": "Moderno estadio de Monterrey, hogar de los Rayados, con impresionantes vistas a la Sierra Madre.",
+        "en": "Modern Monterrey stadium, home of Rayados, with stunning views of the Sierra Madre mountains."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "estadio-akron",
+      "slugs": { "es": "estadio-akron", "en": "estadio-akron" },
+      "name": { "es": "Estadio Akron", "en": "Estadio Akron" },
+      "city": "guadalajara",
+      "capacity": 49850,
+      "coordinates": { "lat": 20.6824, "lng": -103.4624 },
+      "description": {
+        "es": "Sede de las Chivas de Guadalajara, un estadio con diseno volcanico unico en el area metropolitana de Guadalajara.",
+        "en": "Home of Chivas de Guadalajara, a stadium with a unique volcanic design in the Guadalajara metropolitan area."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "sofi-stadium",
+      "slugs": { "es": "sofi-stadium", "en": "sofi-stadium" },
+      "name": { "es": "SoFi Stadium", "en": "SoFi Stadium" },
+      "city": "los-angeles",
+      "capacity": 70240,
+      "coordinates": { "lat": 33.9535, "lng": -118.3392 },
+      "description": {
+        "es": "Estadio de ultima generacion en Inglewood, California. Sera la sede de la final del Mundial 2026.",
+        "en": "State-of-the-art stadium in Inglewood, California. It will host the 2026 World Cup Final."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "metlife-stadium",
+      "slugs": { "es": "metlife-stadium", "en": "metlife-stadium" },
+      "name": { "es": "MetLife Stadium", "en": "MetLife Stadium" },
+      "city": "nueva-york-nueva-jersey",
+      "capacity": 82500,
+      "coordinates": { "lat": 40.8135, "lng": -74.0745 },
+      "description": {
+        "es": "El estadio mas grande de la NFL, ubicado en East Rutherford, Nueva Jersey. Sede de partidos clave del Mundial 2026.",
+        "en": "The largest NFL stadium, located in East Rutherford, New Jersey. Host of key 2026 World Cup matches."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "att-stadium",
+      "slugs": { "es": "att-stadium", "en": "att-stadium" },
+      "name": { "es": "AT&T Stadium", "en": "AT&T Stadium" },
+      "city": "dallas",
+      "capacity": 80000,
+      "coordinates": { "lat": 32.7473, "lng": -97.0945 },
+      "description": {
+        "es": "Imponente estadio en Arlington, Texas, conocido por su pantalla de video gigante y techo retractil.",
+        "en": "Imposing stadium in Arlington, Texas, known for its giant video screen and retractable roof."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "levis-stadium",
+      "slugs": { "es": "levis-stadium", "en": "levis-stadium" },
+      "name": { "es": "Levi's Stadium", "en": "Levi's Stadium" },
+      "city": "san-francisco",
+      "capacity": 68500,
+      "coordinates": { "lat": 37.4033, "lng": -121.9694 },
+      "description": {
+        "es": "Estadio tecnologicamente avanzado en Santa Clara, hogar de los 49ers de San Francisco.",
+        "en": "Technologically advanced stadium in Santa Clara, home of the San Francisco 49ers."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "nrg-stadium",
+      "slugs": { "es": "nrg-stadium", "en": "nrg-stadium" },
+      "name": { "es": "NRG Stadium", "en": "NRG Stadium" },
+      "city": "houston",
+      "capacity": 72220,
+      "coordinates": { "lat": 29.6847, "lng": -95.4107 },
+      "description": {
+        "es": "Estadio con techo retractil en Houston, Texas. Ha sido sede de Super Bowls y otros eventos deportivos de primer nivel.",
+        "en": "Retractable-roof stadium in Houston, Texas. It has hosted Super Bowls and other top-tier sporting events."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "mercedes-benz-stadium",
+      "slugs": { "es": "mercedes-benz-stadium", "en": "mercedes-benz-stadium" },
+      "name": { "es": "Mercedes-Benz Stadium", "en": "Mercedes-Benz Stadium" },
+      "city": "atlanta",
+      "capacity": 71000,
+      "coordinates": { "lat": 33.7553, "lng": -84.4006 },
+      "description": {
+        "es": "Estadio futurista en Atlanta con su iconica apertura de techo en forma de estrella de ocho puntas.",
+        "en": "Futuristic stadium in Atlanta with its iconic eight-petal retractable roof opening."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "lincoln-financial-field",
+      "slugs": { "es": "lincoln-financial-field", "en": "lincoln-financial-field" },
+      "name": { "es": "Lincoln Financial Field", "en": "Lincoln Financial Field" },
+      "city": "filadelfia",
+      "capacity": 69176,
+      "coordinates": { "lat": 39.9012, "lng": -75.1676 },
+      "description": {
+        "es": "Estadio de los Philadelphia Eagles en el corazon del complejo deportivo del sur de Filadelfia.",
+        "en": "Home of the Philadelphia Eagles in the heart of South Philadelphia's sports complex."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "hard-rock-stadium",
+      "slugs": { "es": "hard-rock-stadium", "en": "hard-rock-stadium" },
+      "name": { "es": "Hard Rock Stadium", "en": "Hard Rock Stadium" },
+      "city": "miami",
+      "capacity": 64767,
+      "coordinates": { "lat": 25.958, "lng": -80.2389 },
+      "description": {
+        "es": "Estadio multiusos en Miami Gardens, sede habitual del Super Bowl y del Miami Open de tenis.",
+        "en": "Multi-purpose stadium in Miami Gardens, regular host of the Super Bowl and the Miami Open tennis tournament."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "lumen-field",
+      "slugs": { "es": "lumen-field", "en": "lumen-field" },
+      "name": { "es": "Lumen Field", "en": "Lumen Field" },
+      "city": "seattle",
+      "capacity": 68740,
+      "coordinates": { "lat": 47.5952, "lng": -122.3316 },
+      "description": {
+        "es": "Famoso estadio de Seattle conocido por su ambiente ensordecedor generado por sus gradas cubiertas.",
+        "en": "Famous Seattle stadium known for its deafening atmosphere generated by its covered stands."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "arrowhead-stadium",
+      "slugs": { "es": "arrowhead-stadium", "en": "arrowhead-stadium" },
+      "name": { "es": "Arrowhead Stadium", "en": "Arrowhead Stadium" },
+      "city": "kansas-city",
+      "capacity": 76416,
+      "coordinates": { "lat": 39.0489, "lng": -94.4839 },
+      "description": {
+        "es": "Uno de los estadios mas ruidosos del mundo, hogar de los Kansas City Chiefs en Missouri.",
+        "en": "One of the loudest stadiums in the world, home of the Kansas City Chiefs in Missouri."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "gillette-stadium",
+      "slugs": { "es": "gillette-stadium", "en": "gillette-stadium" },
+      "name": { "es": "Gillette Stadium", "en": "Gillette Stadium" },
+      "city": "boston",
+      "capacity": 65878,
+      "coordinates": { "lat": 42.0909, "lng": -71.2643 },
+      "description": {
+        "es": "Estadio en Foxborough, Massachusetts, hogar de los New England Patriots y New England Revolution.",
+        "en": "Stadium in Foxborough, Massachusetts, home of the New England Patriots and New England Revolution."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "bmo-field",
+      "slugs": { "es": "bmo-field", "en": "bmo-field" },
+      "name": { "es": "BMO Field", "en": "BMO Field" },
+      "city": "toronto",
+      "capacity": 30000,
+      "coordinates": { "lat": 43.6332, "lng": -79.4185 },
+      "description": {
+        "es": "Estadio de futbol dedicado en Toronto, hogar del Toronto FC. Ampliado para el Mundial 2026.",
+        "en": "Dedicated football stadium in Toronto, home of Toronto FC. Expanded for the 2026 World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "bc-place",
+      "slugs": { "es": "bc-place", "en": "bc-place" },
+      "name": { "es": "BC Place", "en": "BC Place" },
+      "city": "vancouver",
+      "capacity": 54500,
+      "coordinates": { "lat": 49.2768, "lng": -123.112 },
+      "description": {
+        "es": "Estadio con techo retractil en el centro de Vancouver, rodeado de montanas y el Oceano Pacifico.",
+        "en": "Retractable-roof stadium in downtown Vancouver, surrounded by mountains and the Pacific Ocean."
+      },
+      "lastUpdated": "2026-03-26"
+    }
+  ]
+}

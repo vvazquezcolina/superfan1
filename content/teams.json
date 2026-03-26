@@ -1,0 +1,532 @@
+{
+  "teams": [
+    {
+      "id": "mexico",
+      "slugs": { "es": "mexico", "en": "mexico" },
+      "name": { "es": "Mexico", "en": "Mexico" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Seleccion anfitriona con gran tradicion mundialista. Mexico participa en su decimoctava Copa del Mundo.",
+        "en": "Host nation with a great World Cup tradition. Mexico participates in its eighteenth World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "usa",
+      "slugs": { "es": "estados-unidos", "en": "united-states" },
+      "name": { "es": "Estados Unidos", "en": "United States" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Seleccion anfitriona que busca aprovechar el apoyo local en su undecima participacion mundialista.",
+        "en": "Host nation looking to capitalize on home support in their eleventh World Cup appearance."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "canada",
+      "slugs": { "es": "canada", "en": "canada" },
+      "name": { "es": "Canada", "en": "Canada" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Seleccion anfitriona que vive un resurgimiento historico en el futbol internacional.",
+        "en": "Host nation experiencing a historic resurgence in international football."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "jamaica",
+      "slugs": { "es": "jamaica", "en": "jamaica" },
+      "name": { "es": "Jamaica", "en": "Jamaica" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Los Reggae Boyz buscan su segunda participacion en una Copa del Mundo.",
+        "en": "The Reggae Boyz seek their second appearance in a World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "honduras",
+      "slugs": { "es": "honduras", "en": "honduras" },
+      "name": { "es": "Honduras", "en": "Honduras" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Seleccion centroamericana con una apasionada aficion futbolera.",
+        "en": "Central American team with a passionate football fanbase."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "costa-rica",
+      "slugs": { "es": "costa-rica", "en": "costa-rica" },
+      "name": { "es": "Costa Rica", "en": "Costa Rica" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Los Ticos buscan repetir su historica actuacion de cuartos de final en Brasil 2014.",
+        "en": "Los Ticos seek to repeat their historic quarterfinal run from Brazil 2014."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "panama",
+      "slugs": { "es": "panama", "en": "panama" },
+      "name": { "es": "Panama", "en": "Panama" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "Seleccion canalera que hizo su debut mundialista en Rusia 2018.",
+        "en": "The Canal team that made their World Cup debut in Russia 2018."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "el-salvador",
+      "slugs": { "es": "el-salvador", "en": "el-salvador" },
+      "name": { "es": "El Salvador", "en": "El Salvador" },
+      "confederation": "CONCACAF",
+      "description": {
+        "es": "La Selecta busca regresar a un Mundial despues de mas de cuatro decadas.",
+        "en": "La Selecta seeks to return to a World Cup after more than four decades."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "brazil",
+      "slugs": { "es": "brasil", "en": "brazil" },
+      "name": { "es": "Brasil", "en": "Brazil" },
+      "confederation": "CONMEBOL",
+      "description": {
+        "es": "La seleccion mas exitosa en la historia de los Mundiales con cinco titulos.",
+        "en": "The most successful team in World Cup history with five titles."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "argentina",
+      "slugs": { "es": "argentina", "en": "argentina" },
+      "name": { "es": "Argentina", "en": "Argentina" },
+      "confederation": "CONMEBOL",
+      "description": {
+        "es": "Campeonas defensoras del titulo tras su victoria en Qatar 2022.",
+        "en": "Defending champions after their victory in Qatar 2022."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "uruguay",
+      "slugs": { "es": "uruguay", "en": "uruguay" },
+      "name": { "es": "Uruguay", "en": "Uruguay" },
+      "confederation": "CONMEBOL",
+      "description": {
+        "es": "Dos veces campeon del mundo con una tradicion futbolera que supera su tamano.",
+        "en": "Two-time world champion with a football tradition that exceeds its size."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "colombia",
+      "slugs": { "es": "colombia", "en": "colombia" },
+      "name": { "es": "Colombia", "en": "Colombia" },
+      "confederation": "CONMEBOL",
+      "description": {
+        "es": "Los Cafeteros llegan con una generacion talentosa y una aficion vibrante.",
+        "en": "Los Cafeteros arrive with a talented generation and a vibrant fanbase."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "ecuador",
+      "slugs": { "es": "ecuador", "en": "ecuador" },
+      "name": { "es": "Ecuador", "en": "Ecuador" },
+      "confederation": "CONMEBOL",
+      "description": {
+        "es": "Seleccion en ascenso con una nueva generacion de talentos sudamericanos.",
+        "en": "Rising team with a new generation of South American talent."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "paraguay",
+      "slugs": { "es": "paraguay", "en": "paraguay" },
+      "name": { "es": "Paraguay", "en": "Paraguay" },
+      "confederation": "CONMEBOL",
+      "description": {
+        "es": "La Albirroja busca regresar a la elite del futbol mundial.",
+        "en": "La Albirroja seeks to return to the elite of world football."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "germany",
+      "slugs": { "es": "alemania", "en": "germany" },
+      "name": { "es": "Alemania", "en": "Germany" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Cuatro veces campeon del mundo y una de las selecciones mas consistentes de la historia.",
+        "en": "Four-time world champion and one of the most consistent teams in history."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "france",
+      "slugs": { "es": "francia", "en": "france" },
+      "name": { "es": "Francia", "en": "France" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Dos veces campeon del mundo y subcampeon en Qatar 2022. Potencia futbolistica europea.",
+        "en": "Two-time world champion and runner-up in Qatar 2022. European football powerhouse."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "spain",
+      "slugs": { "es": "espana", "en": "spain" },
+      "name": { "es": "Espana", "en": "Spain" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Campeon del mundo en 2010 y potencia del futbol de posesion.",
+        "en": "2010 World Champion and a powerhouse of possession-based football."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "england",
+      "slugs": { "es": "inglaterra", "en": "england" },
+      "name": { "es": "Inglaterra", "en": "England" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Cuna del futbol y campeon del mundo en 1966. Buscan su segundo titulo mundial.",
+        "en": "Birthplace of football and 1966 World Champion. Seeking their second world title."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "portugal",
+      "slugs": { "es": "portugal", "en": "portugal" },
+      "name": { "es": "Portugal", "en": "Portugal" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Seleccion con una rica cantera de talentos y campeon de la Eurocopa 2016.",
+        "en": "Team with a rich talent pipeline and Euro 2016 champion."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "netherlands",
+      "slugs": { "es": "paises-bajos", "en": "netherlands" },
+      "name": { "es": "Paises Bajos", "en": "Netherlands" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Tres veces subcampeon del mundo y cuna del futbol total.",
+        "en": "Three-time World Cup runner-up and birthplace of total football."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "belgium",
+      "slugs": { "es": "belgica", "en": "belgium" },
+      "name": { "es": "Belgica", "en": "Belgium" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Los Diablos Rojos buscan capitalizar su generacion dorada en el escenario mundial.",
+        "en": "The Red Devils seek to capitalize on their golden generation on the world stage."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "italy",
+      "slugs": { "es": "italia", "en": "italy" },
+      "name": { "es": "Italia", "en": "Italy" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Cuatro veces campeon del mundo y una de las selecciones mas laureadas del futbol.",
+        "en": "Four-time world champion and one of football's most decorated teams."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "croatia",
+      "slugs": { "es": "croacia", "en": "croatia" },
+      "name": { "es": "Croacia", "en": "Croatia" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Subcampeon en 2018 y tercero en 2022. Seleccion que supera consistentemente las expectativas.",
+        "en": "Runner-up in 2018 and third in 2022. A team that consistently exceeds expectations."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "denmark",
+      "slugs": { "es": "dinamarca", "en": "denmark" },
+      "name": { "es": "Dinamarca", "en": "Denmark" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Solida seleccion escandinava con un estilo de juego disciplinado y efectivo.",
+        "en": "Solid Scandinavian team with a disciplined and effective playing style."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "switzerland",
+      "slugs": { "es": "suiza", "en": "switzerland" },
+      "name": { "es": "Suiza", "en": "Switzerland" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Seleccion multicultural y consistente que ha crecido como potencia europea.",
+        "en": "Multicultural and consistent team that has grown as a European force."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "austria",
+      "slugs": { "es": "austria", "en": "austria" },
+      "name": { "es": "Austria", "en": "Austria" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Seleccion centroeuropea en ascenso que busca dejar huella en el escenario mundial.",
+        "en": "Rising Central European team looking to make their mark on the world stage."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "serbia",
+      "slugs": { "es": "serbia", "en": "serbia" },
+      "name": { "es": "Serbia", "en": "Serbia" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Seleccion balcanica con gran tradicion futbolistica y talento individual.",
+        "en": "Balkan team with great footballing tradition and individual talent."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "scotland",
+      "slugs": { "es": "escocia", "en": "scotland" },
+      "name": { "es": "Escocia", "en": "Scotland" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Una de las selecciones mas antiguas del mundo con una apasionada aficion.",
+        "en": "One of the oldest national teams in the world with a passionate fanbase."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "poland",
+      "slugs": { "es": "polonia", "en": "poland" },
+      "name": { "es": "Polonia", "en": "Poland" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Seleccion con una mezcla de experiencia y juventud liderada por goleadores de clase mundial.",
+        "en": "Team with a blend of experience and youth led by world-class strikers."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "turkey",
+      "slugs": { "es": "turquia", "en": "turkey" },
+      "name": { "es": "Turquia", "en": "Turkey" },
+      "confederation": "UEFA",
+      "description": {
+        "es": "Seleccion con una rica historia mundialista y un futbol apasionado.",
+        "en": "Team with a rich World Cup history and passionate football."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "morocco",
+      "slugs": { "es": "marruecos", "en": "morocco" },
+      "name": { "es": "Marruecos", "en": "Morocco" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Historico semifinalista en Qatar 2022, la primera seleccion africana en llegar tan lejos en un Mundial.",
+        "en": "Historic semifinalist in Qatar 2022, the first African team to go that far in a World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "senegal",
+      "slugs": { "es": "senegal", "en": "senegal" },
+      "name": { "es": "Senegal", "en": "Senegal" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Campeon de Africa y una de las selecciones mas fuertes del continente.",
+        "en": "African champion and one of the strongest teams on the continent."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "nigeria",
+      "slugs": { "es": "nigeria", "en": "nigeria" },
+      "name": { "es": "Nigeria", "en": "Nigeria" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Las Super Aguilas son una de las selecciones africanas mas exitosas en Mundiales.",
+        "en": "The Super Eagles are one of the most successful African teams in World Cup history."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "cameroon",
+      "slugs": { "es": "camerun", "en": "cameroon" },
+      "name": { "es": "Camerun", "en": "Cameroon" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Los Leones Indomables tienen una rica historia mundialista desde Italia 1990.",
+        "en": "The Indomitable Lions have a rich World Cup history since Italy 1990."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "tunisia",
+      "slugs": { "es": "tunez", "en": "tunisia" },
+      "name": { "es": "Tunez", "en": "Tunisia" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Las Aguilas de Cartago representan al futbol norteafricano con experiencia mundialista.",
+        "en": "The Eagles of Carthage represent North African football with World Cup experience."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "algeria",
+      "slugs": { "es": "argelia", "en": "algeria" },
+      "name": { "es": "Argelia", "en": "Algeria" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Los Zorros del Desierto buscan brillar nuevamente en el escenario mundial.",
+        "en": "The Desert Foxes seek to shine again on the world stage."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "egypt",
+      "slugs": { "es": "egipto", "en": "egypt" },
+      "name": { "es": "Egipto", "en": "Egypt" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Los Faraones son la seleccion mas exitosa de Africa con siete titulos de la Copa Africana.",
+        "en": "The Pharaohs are Africa's most successful team with seven African Cup titles."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "ivory-coast",
+      "slugs": { "es": "costa-de-marfil", "en": "ivory-coast" },
+      "name": { "es": "Costa de Marfil", "en": "Ivory Coast" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Los Elefantes son campeonas vigentes de la Copa Africana de Naciones.",
+        "en": "The Elephants are the reigning African Cup of Nations champions."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "south-africa",
+      "slugs": { "es": "sudafrica", "en": "south-africa" },
+      "name": { "es": "Sudafrica", "en": "South Africa" },
+      "confederation": "CAF",
+      "description": {
+        "es": "Bafana Bafana busca regresar al Mundial tras ser anfitriones en 2010.",
+        "en": "Bafana Bafana seek to return to the World Cup after hosting in 2010."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "japan",
+      "slugs": { "es": "japon", "en": "japan" },
+      "name": { "es": "Japon", "en": "Japan" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Los Samurai Azules son la seleccion asiatica con mas participaciones mundialistas consecutivas.",
+        "en": "The Blue Samurai are the Asian team with the most consecutive World Cup appearances."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "south-korea",
+      "slugs": { "es": "corea-del-sur", "en": "south-korea" },
+      "name": { "es": "Corea del Sur", "en": "South Korea" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Historica semifinalista en 2002, la mejor actuacion asiatica en un Mundial.",
+        "en": "Historic semifinalist in 2002, the best Asian performance in a World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "australia",
+      "slugs": { "es": "australia", "en": "australia" },
+      "name": { "es": "Australia", "en": "Australia" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Los Socceroos representan a Oceania convertidos en miembros de la AFC.",
+        "en": "The Socceroos represent Oceania turned AFC members."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "saudi-arabia",
+      "slugs": { "es": "arabia-saudita", "en": "saudi-arabia" },
+      "name": { "es": "Arabia Saudita", "en": "Saudi Arabia" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Famosa por su victoria sobre Argentina en Qatar 2022 en uno de los mayores upsets mundialistas.",
+        "en": "Famous for their victory over Argentina in Qatar 2022 in one of the greatest World Cup upsets."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "iran",
+      "slugs": { "es": "iran", "en": "iran" },
+      "name": { "es": "Iran", "en": "Iran" },
+      "confederation": "AFC",
+      "description": {
+        "es": "La seleccion mas exitosa de Asia occidental con multiples participaciones mundialistas.",
+        "en": "The most successful team in Western Asia with multiple World Cup appearances."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "qatar",
+      "slugs": { "es": "qatar", "en": "qatar" },
+      "name": { "es": "Qatar", "en": "Qatar" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Campeon de Asia que debuto como anfitrion del Mundial 2022.",
+        "en": "Asian champion that debuted as host of the 2022 World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "iraq",
+      "slugs": { "es": "irak", "en": "iraq" },
+      "name": { "es": "Irak", "en": "Iraq" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Seleccion con una historia de superacion que busca regresar a la elite mundial.",
+        "en": "A team with a story of resilience seeking to return to the world elite."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "uzbekistan",
+      "slugs": { "es": "uzbekistan", "en": "uzbekistan" },
+      "name": { "es": "Uzbekistan", "en": "Uzbekistan" },
+      "confederation": "AFC",
+      "description": {
+        "es": "Los Lobos Blancos buscan su primera clasificacion a una Copa del Mundo.",
+        "en": "The White Wolves seek their first qualification to a World Cup."
+      },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "new-zealand",
+      "slugs": { "es": "nueva-zelanda", "en": "new-zealand" },
+      "name": { "es": "Nueva Zelanda", "en": "New Zealand" },
+      "confederation": "OFC",
+      "description": {
+        "es": "Los All Whites representan a Oceania como la principal potencia futbolistica de la confederacion.",
+        "en": "The All Whites represent Oceania as the confederation's main football power."
+      },
+      "lastUpdated": "2026-03-26"
+    }
+  ]
+}

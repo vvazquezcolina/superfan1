@@ -1,0 +1,212 @@
+{
+  "cities": [
+    {
+      "id": "ciudad-de-mexico",
+      "slugs": { "es": "ciudad-de-mexico", "en": "mexico-city" },
+      "name": { "es": "Ciudad de Mexico", "en": "Mexico City" },
+      "country": "mexico",
+      "description": {
+        "es": "Capital de Mexico y sede historica del Mundial. El Estadio Azteca sera el primer recinto en albergar tres Copas del Mundo.",
+        "en": "Capital of Mexico and historic World Cup host. Estadio Azteca will become the first venue to host three World Cups."
+      },
+      "stadium": "estadio-azteca",
+      "coordinates": { "lat": 19.4326, "lng": -99.1332 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "monterrey",
+      "slugs": { "es": "monterrey", "en": "monterrey" },
+      "name": { "es": "Monterrey", "en": "Monterrey" },
+      "country": "mexico",
+      "description": {
+        "es": "Capital industrial del norte de Mexico, rodeada por la iconica Sierra Madre. Sede del moderno Estadio BBVA.",
+        "en": "Industrial capital of northern Mexico, surrounded by the iconic Sierra Madre mountains. Home to the modern Estadio BBVA."
+      },
+      "stadium": "estadio-bbva",
+      "coordinates": { "lat": 25.6866, "lng": -100.3161 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "guadalajara",
+      "slugs": { "es": "guadalajara", "en": "guadalajara" },
+      "name": { "es": "Guadalajara", "en": "Guadalajara" },
+      "country": "mexico",
+      "description": {
+        "es": "Cuna del mariachi y el tequila, Guadalajara es la segunda ciudad mas grande de Mexico y un destino cultural vibrante.",
+        "en": "Birthplace of mariachi and tequila, Guadalajara is Mexico's second-largest city and a vibrant cultural destination."
+      },
+      "stadium": "estadio-akron",
+      "coordinates": { "lat": 20.6597, "lng": -103.3496 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "los-angeles",
+      "slugs": { "es": "los-angeles", "en": "los-angeles" },
+      "name": { "es": "Los Angeles", "en": "Los Angeles" },
+      "country": "usa",
+      "description": {
+        "es": "La ciudad mas grande de California y hogar de una enorme comunidad latina. Sede de la final del Mundial 2026 en el SoFi Stadium.",
+        "en": "California's largest city and home to a massive Latino community. Host of the 2026 World Cup Final at SoFi Stadium."
+      },
+      "stadium": "sofi-stadium",
+      "coordinates": { "lat": 34.0522, "lng": -118.2437 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "nueva-york-nueva-jersey",
+      "slugs": { "es": "nueva-york-nueva-jersey", "en": "new-york-new-jersey" },
+      "name": { "es": "Nueva York / Nueva Jersey", "en": "New York / New Jersey" },
+      "country": "usa",
+      "description": {
+        "es": "La region metropolitana mas grande de Estados Unidos. El MetLife Stadium en Nueva Jersey acogera partidos clave del torneo.",
+        "en": "The largest metropolitan area in the United States. MetLife Stadium in New Jersey will host key tournament matches."
+      },
+      "stadium": "metlife-stadium",
+      "coordinates": { "lat": 40.8135, "lng": -74.0745 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "dallas",
+      "slugs": { "es": "dallas", "en": "dallas" },
+      "name": { "es": "Dallas", "en": "Dallas" },
+      "country": "usa",
+      "description": {
+        "es": "Centro economico de Texas con una vibrante cultura deportiva. El AT&T Stadium ofrece uno de los recintos mas impresionantes del mundo.",
+        "en": "Economic hub of Texas with a vibrant sports culture. AT&T Stadium offers one of the most impressive venues in the world."
+      },
+      "stadium": "att-stadium",
+      "coordinates": { "lat": 32.7473, "lng": -97.0945 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "san-francisco",
+      "slugs": { "es": "san-francisco", "en": "san-francisco" },
+      "name": { "es": "San Francisco", "en": "San Francisco Bay Area" },
+      "country": "usa",
+      "description": {
+        "es": "Iconica ciudad californiana conocida por el Golden Gate y su diversidad cultural. El Levi's Stadium en Santa Clara sera sede mundialista.",
+        "en": "Iconic Californian city known for the Golden Gate and its cultural diversity. Levi's Stadium in Santa Clara will host World Cup matches."
+      },
+      "stadium": "levis-stadium",
+      "coordinates": { "lat": 37.4033, "lng": -121.9694 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "houston",
+      "slugs": { "es": "houston", "en": "houston" },
+      "name": { "es": "Houston", "en": "Houston" },
+      "country": "usa",
+      "description": {
+        "es": "La cuarta ciudad mas grande de Estados Unidos, con una de las comunidades hispanohablantes mas grandes del pais.",
+        "en": "The fourth-largest city in the United States, with one of the country's largest Spanish-speaking communities."
+      },
+      "stadium": "nrg-stadium",
+      "coordinates": { "lat": 29.6847, "lng": -95.4107 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "atlanta",
+      "slugs": { "es": "atlanta", "en": "atlanta" },
+      "name": { "es": "Atlanta", "en": "Atlanta" },
+      "country": "usa",
+      "description": {
+        "es": "Capital de Georgia y centro cultural del sureste de Estados Unidos. El Mercedes-Benz Stadium es reconocido por su techo retractil unico.",
+        "en": "Capital of Georgia and cultural hub of the southeastern United States. Mercedes-Benz Stadium is renowned for its unique retractable roof."
+      },
+      "stadium": "mercedes-benz-stadium",
+      "coordinates": { "lat": 33.7553, "lng": -84.4006 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "filadelfia",
+      "slugs": { "es": "filadelfia", "en": "philadelphia" },
+      "name": { "es": "Filadelfia", "en": "Philadelphia" },
+      "country": "usa",
+      "description": {
+        "es": "Cuna de la independencia de Estados Unidos y una ciudad con rica historia deportiva. Sede mundialista en el Lincoln Financial Field.",
+        "en": "Birthplace of American independence and a city with rich sports history. World Cup host at Lincoln Financial Field."
+      },
+      "stadium": "lincoln-financial-field",
+      "coordinates": { "lat": 39.9012, "lng": -75.1676 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "miami",
+      "slugs": { "es": "miami", "en": "miami" },
+      "name": { "es": "Miami", "en": "Miami" },
+      "country": "usa",
+      "description": {
+        "es": "Puerta de entrada a America Latina y ciudad con fuerte identidad hispanohablante. El Hard Rock Stadium sera epicentro del futbol mundial.",
+        "en": "Gateway to Latin America and a city with a strong Spanish-speaking identity. Hard Rock Stadium will be an epicenter of world football."
+      },
+      "stadium": "hard-rock-stadium",
+      "coordinates": { "lat": 25.958, "lng": -80.2389 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "seattle",
+      "slugs": { "es": "seattle", "en": "seattle" },
+      "name": { "es": "Seattle", "en": "Seattle" },
+      "country": "usa",
+      "description": {
+        "es": "Ciudad del noroeste del Pacifico rodeada de naturaleza impresionante. El Lumen Field es conocido por su atmosfera electrizante.",
+        "en": "Pacific Northwest city surrounded by stunning nature. Lumen Field is known for its electrifying atmosphere."
+      },
+      "stadium": "lumen-field",
+      "coordinates": { "lat": 47.5952, "lng": -122.3316 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "kansas-city",
+      "slugs": { "es": "kansas-city", "en": "kansas-city" },
+      "name": { "es": "Kansas City", "en": "Kansas City" },
+      "country": "usa",
+      "description": {
+        "es": "Corazon del Medio Oeste estadounidense y hogar de una apasionada cultura deportiva. El Arrowhead Stadium es uno de los mas ruidosos del mundo.",
+        "en": "Heart of the American Midwest and home to a passionate sports culture. Arrowhead Stadium is one of the loudest in the world."
+      },
+      "stadium": "arrowhead-stadium",
+      "coordinates": { "lat": 39.0489, "lng": -94.4839 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "boston",
+      "slugs": { "es": "boston", "en": "boston" },
+      "name": { "es": "Boston", "en": "Boston" },
+      "country": "usa",
+      "description": {
+        "es": "Ciudad historica de Nueva Inglaterra con gran tradicion deportiva. El Gillette Stadium en Foxborough recibira partidos del Mundial.",
+        "en": "Historic New England city with a great sports tradition. Gillette Stadium in Foxborough will host World Cup matches."
+      },
+      "stadium": "gillette-stadium",
+      "coordinates": { "lat": 42.0909, "lng": -71.2643 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "toronto",
+      "slugs": { "es": "toronto", "en": "toronto" },
+      "name": { "es": "Toronto", "en": "Toronto" },
+      "country": "canada",
+      "description": {
+        "es": "La ciudad mas grande de Canada y una de las metropolis mas multiculturales del mundo. Sede mundialista en el BMO Field.",
+        "en": "Canada's largest city and one of the world's most multicultural metropolises. World Cup host at BMO Field."
+      },
+      "stadium": "bmo-field",
+      "coordinates": { "lat": 43.6332, "lng": -79.4185 },
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "vancouver",
+      "slugs": { "es": "vancouver", "en": "vancouver" },
+      "name": { "es": "Vancouver", "en": "Vancouver" },
+      "country": "canada",
+      "description": {
+        "es": "Ciudad costera de la Columbia Britanica, rodeada de montanas y oceano. El BC Place ofrecera un escenario espectacular para el Mundial.",
+        "en": "Coastal city of British Columbia, surrounded by mountains and ocean. BC Place will provide a spectacular setting for the World Cup."
+      },
+      "stadium": "bc-place",
+      "coordinates": { "lat": 49.2768, "lng": -123.112 },
+      "lastUpdated": "2026-03-26"
+    }
+  ]
+}
