@@ -20,7 +20,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 6: Monetization & Analytics** - GA4 integration, affiliate link system, Booking.com widgets, disclosure page, and privacy/cookie compliance (completed 2026-03-26)
 - [ ] **Phase 7: Team Pages** - 48 team pages with group assignments, history, and team index
 - [ ] **Phase 8: Travel & Fan Experience Guides** - Flight, hotel, transport, visa, ticket, safety guides, and match schedule calendar
-- [ ] **Phase 9: Lead Capture & Engagement** - Newsletter signup, countdown timer, and site-wide search
+- [x] **Phase 9: Lead Capture & Engagement** - Newsletter signup, countdown timer, and site-wide search (completed 2026-03-26)
 - [ ] **Phase 10: Interactive Tools & Final Polish** - Budget calculator, interactive host city map, and content attribution audit
 
 ## Phase Details
@@ -170,10 +170,10 @@ Plans:
   1. Newsletter signup forms (name + email) appear inline within content and trigger on exit-intent
   2. A countdown timer to June 11, 2026 is visible on the homepage and key pages
   3. Site-wide search lets visitors find content across all pages (Pagefind or equivalent)
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
-- [ ] 09-01-PLAN.md -- NewsletterSignup + ExitIntentWrapper components, live CountdownTimer, Pagefind search with Header trigger
+- [x] 09-01-PLAN.md -- NewsletterSignup + ExitIntentWrapper components, live CountdownTimer, Pagefind search with Header trigger
 **UI hint**: yes
 
 ### Phase 10: Interactive Tools & Final Polish
@@ -203,5 +203,5 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 6. Monetization & Analytics | 2/2 | Complete   | 2026-03-26 |
 | 7. Team Pages | 0/4 | Planning complete | - |
 | 8. Travel & Fan Experience Guides | 0/2 | Planning complete | - |
-| 9. Lead Capture & Engagement | 0/1 | Planning complete | - |
+| 9. Lead Capture & Engagement | 1/1 | Complete   | 2026-03-26 |
 | 10. Interactive Tools & Final Polish | 0/TBD | Not started | - |
