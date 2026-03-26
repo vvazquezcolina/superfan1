@@ -44,6 +44,25 @@
     "description": "The page you are looking for does not exist.",
     "backHome": "Back to home"
   },
+  "stadium": {
+    "overview": "Overview",
+    "gettingThere": "Getting to the Stadium",
+    "seatingGuide": "Seating Guide",
+    "nearbyHotels": "Nearby Hotels & Food",
+    "accessibility": "Accessibility",
+    "matchSchedule": "Match Schedule",
+    "faq": "Frequently Asked Questions",
+    "sources": "Sources",
+    "backToIndex": "View all stadiums",
+    "indexTitle": "2026 World Cup Stadiums",
+    "indexDescription": "Complete guide to the 16 stadiums hosting the 2026 World Cup. Capacity, transport, seating, nearby hotels, and accessibility.",
+    "countryMexico": "Mexico",
+    "countryUSA": "United States",
+    "countryCanada": "Canada",
+    "capacity": "Capacity",
+    "hostCity": "Host City",
+    "lastUpdated": "Last updated"
+  },
   "city": {
     "gettingThere": "Getting There",
     "gettingAround": "Getting Around",

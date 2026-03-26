@@ -11,7 +11,41 @@
         "es": "Legendario estadio de Ciudad de Mexico, el unico en el mundo que ha sido sede de dos finales de Copa del Mundo.",
         "en": "Legendary Mexico City stadium, the only venue in the world to have hosted two World Cup finals."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Estadio Azteca es el coloso de Ciudad de Mexico.",
+          "en": "Estadio Azteca is the colossus of Mexico City."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "estadio-bbva",
@@ -24,7 +58,41 @@
         "es": "Moderno estadio de Monterrey, hogar de los Rayados, con impresionantes vistas a la Sierra Madre.",
         "en": "Modern Monterrey stadium, home of Rayados, with stunning views of the Sierra Madre mountains."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Estadio BBVA es el moderno hogar de los Rayados de Monterrey.",
+          "en": "Estadio BBVA is the modern home of CF Monterrey Rayados."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "estadio-akron",
@@ -37,7 +105,41 @@
         "es": "Sede de las Chivas de Guadalajara, un estadio con diseno volcanico unico en el area metropolitana de Guadalajara.",
         "en": "Home of Chivas de Guadalajara, a stadium with a unique volcanic design in the Guadalajara metropolitan area."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Estadio Akron es la casa de las Chivas de Guadalajara.",
+          "en": "Estadio Akron is the home of Chivas de Guadalajara."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "sofi-stadium",
@@ -50,7 +152,41 @@
         "es": "Estadio de ultima generacion en Inglewood, California. Sera la sede de la final del Mundial 2026.",
         "en": "State-of-the-art stadium in Inglewood, California. It will host the 2026 World Cup Final."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "SoFi Stadium es el estadio mas caro jamas construido.",
+          "en": "SoFi Stadium is the most expensive stadium ever built."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "metlife-stadium",
@@ -63,7 +199,41 @@
         "es": "El estadio mas grande de la NFL, ubicado en East Rutherford, Nueva Jersey. Sede de partidos clave del Mundial 2026.",
         "en": "The largest NFL stadium, located in East Rutherford, New Jersey. Host of key 2026 World Cup matches."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "MetLife Stadium es el estadio mas grande que sera sede del Mundial 2026.",
+          "en": "MetLife Stadium is the largest stadium hosting the 2026 World Cup."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "att-stadium",
@@ -76,7 +246,41 @@
         "es": "Imponente estadio en Arlington, Texas, conocido por su pantalla de video gigante y techo retractil.",
         "en": "Imposing stadium in Arlington, Texas, known for its giant video screen and retractable roof."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "AT&T Stadium es una obra maestra arquitectonica en Arlington, Texas.",
+          "en": "AT&T Stadium is an architectural masterpiece in Arlington, Texas."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "levis-stadium",
@@ -89,7 +293,41 @@
         "es": "Estadio tecnologicamente avanzado en Santa Clara, hogar de los 49ers de San Francisco.",
         "en": "Technologically advanced stadium in Santa Clara, home of the San Francisco 49ers."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Levi's Stadium es un estadio moderno en Santa Clara, California.",
+          "en": "Levi's Stadium is a modern stadium in Santa Clara, California."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "nrg-stadium",
@@ -102,7 +340,41 @@
         "es": "Estadio con techo retractil en Houston, Texas. Ha sido sede de Super Bowls y otros eventos deportivos de primer nivel.",
         "en": "Retractable-roof stadium in Houston, Texas. It has hosted Super Bowls and other top-tier sporting events."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "NRG Stadium fue el primer estadio de la NFL con techo retractil.",
+          "en": "NRG Stadium was the first NFL stadium with a retractable roof."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "mercedes-benz-stadium",
@@ -115,7 +387,41 @@
         "es": "Estadio futurista en Atlanta con su iconica apertura de techo en forma de estrella de ocho puntas.",
         "en": "Futuristic stadium in Atlanta with its iconic eight-petal retractable roof opening."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Mercedes-Benz Stadium es un estadio futurista en el centro de Atlanta.",
+          "en": "Mercedes-Benz Stadium is a futuristic stadium in downtown Atlanta."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "lincoln-financial-field",
@@ -128,7 +434,41 @@
         "es": "Estadio de los Philadelphia Eagles en el corazon del complejo deportivo del sur de Filadelfia.",
         "en": "Home of the Philadelphia Eagles in the heart of South Philadelphia's sports complex."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Lincoln Financial Field es el hogar de los Philadelphia Eagles en el sur de Filadelfia.",
+          "en": "Lincoln Financial Field is the home of the Philadelphia Eagles in South Philadelphia."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "hard-rock-stadium",
@@ -141,7 +481,41 @@
         "es": "Estadio multiusos en Miami Gardens, sede habitual del Super Bowl y del Miami Open de tenis.",
         "en": "Multi-purpose stadium in Miami Gardens, regular host of the Super Bowl and the Miami Open tennis tournament."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Hard Rock Stadium es un estadio multiusos en Miami Gardens, Florida.",
+          "en": "Hard Rock Stadium is a multi-purpose stadium in Miami Gardens, Florida."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "lumen-field",
@@ -154,7 +528,41 @@
         "es": "Famoso estadio de Seattle conocido por su ambiente ensordecedor generado por sus gradas cubiertas.",
         "en": "Famous Seattle stadium known for its deafening atmosphere generated by its covered stands."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Lumen Field es el famoso estadio de Seattle conocido por su ambiente intenso.",
+          "en": "Lumen Field is Seattle's famous stadium known for its intense atmosphere."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "arrowhead-stadium",
@@ -167,7 +575,41 @@
         "es": "Uno de los estadios mas ruidosos del mundo, hogar de los Kansas City Chiefs en Missouri.",
         "en": "One of the loudest stadiums in the world, home of the Kansas City Chiefs in Missouri."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Arrowhead Stadium es uno de los estadios mas ruidosos del mundo.",
+          "en": "Arrowhead Stadium is one of the loudest stadiums in the world."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "gillette-stadium",
@@ -180,7 +622,41 @@
         "es": "Estadio en Foxborough, Massachusetts, hogar de los New England Patriots y New England Revolution.",
         "en": "Stadium in Foxborough, Massachusetts, home of the New England Patriots and New England Revolution."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Gillette Stadium esta ubicado en Foxborough, Massachusetts.",
+          "en": "Gillette Stadium is located in Foxborough, Massachusetts."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "bmo-field",
@@ -193,7 +669,41 @@
         "es": "Estadio de futbol dedicado en Toronto, hogar del Toronto FC. Ampliado para el Mundial 2026.",
         "en": "Dedicated football stadium in Toronto, home of Toronto FC. Expanded for the 2026 World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "BMO Field es un estadio de futbol dedicado en Toronto, Ontario.",
+          "en": "BMO Field is a dedicated football stadium in Toronto, Ontario."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     },
     {
       "id": "bc-place",
@@ -206,7 +716,41 @@
         "es": "Estadio con techo retractil en el centro de Vancouver, rodeado de montanas y el Oceano Pacifico.",
         "en": "Retractable-roof stadium in downtown Vancouver, surrounded by mountains and the Pacific Ocean."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "BC Place es un estadio con techo retractil en el centro de Vancouver.",
+          "en": "BC Place is a retractable-roof stadium in downtown Vancouver."
+        },
+        "gettingThere": {
+          "title": { "es": "Como llegar al estadio", "en": "Getting to the Stadium" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "seatingGuide": {
+          "title": { "es": "Guia de asientos", "en": "Seating Guide" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "nearbyHotels": {
+          "title": { "es": "Hoteles y comida cerca", "en": "Nearby Hotels & Food" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "accessibility": {
+          "title": { "es": "Accesibilidad", "en": "Accessibility" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de partidos", "en": "Match Schedule" },
+          "content": { "es": "Contenido en desarrollo.", "en": "Content under development." }
+        },
+        "faq": [
+          { "question": { "es": "Pregunta pendiente", "en": "Pending question" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 2", "en": "Pending question 2" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } },
+          { "question": { "es": "Pregunta pendiente 3", "en": "Pending question 3" }, "answer": { "es": "Respuesta pendiente.", "en": "Pending answer." } }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/26" }
+        ]
+      }
     }
   ]
 }

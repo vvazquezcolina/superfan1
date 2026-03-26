@@ -44,6 +44,25 @@
     "description": "La pagina que buscas no existe.",
     "backHome": "Volver al inicio"
   },
+  "stadium": {
+    "overview": "Descripcion general",
+    "gettingThere": "Como llegar al estadio",
+    "seatingGuide": "Guia de asientos",
+    "nearbyHotels": "Hoteles y comida cerca",
+    "accessibility": "Accesibilidad",
+    "matchSchedule": "Calendario de partidos",
+    "faq": "Preguntas frecuentes",
+    "sources": "Fuentes",
+    "backToIndex": "Ver todos los estadios",
+    "indexTitle": "Estadios del Mundial 2026",
+    "indexDescription": "Guia completa de los 16 estadios sede del Mundial 2026. Capacidad, transporte, asientos, hoteles cercanos y accesibilidad.",
+    "countryMexico": "Mexico",
+    "countryUSA": "Estados Unidos",
+    "countryCanada": "Canada",
+    "capacity": "Capacidad",
+    "hostCity": "Ciudad sede",
+    "lastUpdated": "Ultima actualizacion"
+  },
   "city": {
     "gettingThere": "Como llegar",
     "gettingAround": "Como moverse",

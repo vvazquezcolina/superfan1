@@ -59,6 +59,17 @@ export const CitySchema = z.object({
   content: CityContentSchema,
 })
 
+export const StadiumContentSchema = z.object({
+  overview: LocalizedText,
+  gettingThere: CitySectionSchema,   // Transport from city center to stadium
+  seatingGuide: CitySectionSchema,   // Seating sections, capacity, tips
+  nearbyHotels: CitySectionSchema,   // Hotels and food near stadium
+  accessibility: CitySectionSchema,  // ADA/wheelchair, family services
+  matchSchedule: CitySectionSchema,  // Placeholder for future match data (ISR-ready)
+  faq: z.array(CityFAQSchema).min(3).max(7),
+  sources: z.array(CitySourceSchema).min(1),
+})
+
 export const StadiumSchema = z.object({
   id: z.string().min(1),
   slugs: LocalizedSlug,
@@ -68,6 +79,7 @@ export const StadiumSchema = z.object({
   coordinates: Coordinates,
   description: LocalizedText,
   lastUpdated: z.string(),
+  content: StadiumContentSchema,
 })
 
 export const TeamSchema = z.object({
@@ -97,5 +109,6 @@ export type CityContent = z.infer<typeof CityContentSchema>
 export type CitySection = z.infer<typeof CitySectionSchema>
 export type CityFAQ = z.infer<typeof CityFAQSchema>
 export type Stadium = z.infer<typeof StadiumSchema>
+export type StadiumContent = z.infer<typeof StadiumContentSchema>
 export type Team = z.infer<typeof TeamSchema>
 export type Locale = 'es' | 'en'

@@ -1,4 +1,5 @@
 import { StadiumsFileSchema, type Stadium, type Locale } from './schemas'
+import { getCityById } from './cities'
 import stadiumsJson from '@content/stadiums.json'
 
 // Validate at import time -- if this throws, next build fails (D-05)
@@ -14,6 +15,21 @@ export function getStadium(slug: string, lang: Locale): Stadium | undefined {
 
 export function getStadiumById(id: string): Stadium | undefined {
   return stadiums.find((stadium) => stadium.id === id)
+}
+
+/**
+ * Returns stadiums grouped by country for index page rendering.
+ * Looks up each stadium's city to determine the country.
+ */
+export function getStadiumsByCountry(): Record<string, Stadium[]> {
+  const grouped: Record<string, Stadium[]> = { mexico: [], usa: [], canada: [] }
+  for (const stadium of stadiums) {
+    const city = getCityById(stadium.city)
+    if (city) {
+      grouped[city.country].push(stadium)
+    }
+  }
+  return grouped
 }
 
 /**
