@@ -52,7 +52,12 @@ Plans:
   3. /robots.txt returns valid directives allowing search engine crawling
   4. Every page has a unique title, meta description, canonical URL, Open Graph tags, and Twitter Cards
   5. The site is fully responsive -- usable on mobile, tablet, and desktop with touch-friendly navigation
-**Plans**: TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md -- Tailwind v4 green/gold theme, Header, Footer, MobileNav components, layout integration
+- [ ] 02-02-PLAN.md -- sitemap.ts, robots.ts, seo.ts metadata helper, enhanced generateMetadata on all pages
+- [ ] 02-03-PLAN.md -- Breadcrumbs component, BreadcrumbList JSON-LD, WebSite JSON-LD, visual verification
 **UI hint**: yes
 
 ### Phase 3: City Guides
@@ -158,8 +163,8 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold & Data Architecture | 0/2 | Planning complete | - |
-| 2. Base Layout & Technical SEO | 0/TBD | Not started | - |
+| 1. Project Scaffold & Data Architecture | 2/2 | Complete | 2026-03-26 |
+| 2. Base Layout & Technical SEO | 0/3 | Planning complete | - |
 | 3. City Guides | 0/TBD | Not started | - |
 | 4. Stadium Pages & Homepage | 0/TBD | Not started | - |
 | 5. LLM Optimization Layer | 0/TBD | Not started | - |
