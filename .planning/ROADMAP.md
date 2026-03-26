@@ -92,7 +92,7 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Extend StadiumSchema, stadium components, stadium index page, 8 stadiums full content (Mexico 3 + USA 5)
+- [x] 04-01-PLAN.md -- Extend StadiumSchema, stadium components, stadium index page, 8 stadiums full content (Mexico 3 + USA 5)
 - [ ] 04-02-PLAN.md -- Remaining 8 stadiums full content (USA 6 + Canada 2) and homepage with hero, featured sections, CTAs
 **UI hint**: yes
 

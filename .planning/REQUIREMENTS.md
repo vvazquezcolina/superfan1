@@ -26,9 +26,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content — Stadiums
 
-- [ ] **STAD-01**: 16 stadium pages with capacity, location, transport, nearby hotels, accessibility info
-- [ ] **STAD-02**: Stadium listing/index page organized by city/country
-- [ ] **STAD-03**: Each stadium page links to its host city guide and match schedule (when available)
+- [x] **STAD-01**: 16 stadium pages with capacity, location, transport, nearby hotels, accessibility info
+- [x] **STAD-02**: Stadium listing/index page organized by city/country
+- [x] **STAD-03**: Each stadium page links to its host city guide and match schedule (when available)
 
 ### Content — Teams
 
@@ -151,9 +151,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CITY-02 | Phase 3 | Complete |
 | CITY-03 | Phase 3 | Complete |
 | CITY-04 | Phase 3 | Complete |
-| STAD-01 | Phase 4 | Pending |
-| STAD-02 | Phase 4 | Pending |
-| STAD-03 | Phase 4 | Pending |
+| STAD-01 | Phase 4 | Complete |
+| STAD-02 | Phase 4 | Complete |
+| STAD-03 | Phase 4 | Complete |
 | TEAM-01 | Phase 7 | Pending |
 | TEAM-02 | Phase 7 | Pending |
 | TEAM-03 | Phase 7 | Pending |
