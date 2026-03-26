@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 09-01-PLAN.md
-last_updated: "2026-03-26T23:41:04.455Z"
+stopped_at: Completed 07-01-PLAN.md
+last_updated: "2026-03-26T23:52:35.762Z"
 progress:
   total_phases: 10
   completed_phases: 7
   total_plans: 23
-  completed_plans: 17
+  completed_plans: 18
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-26)
 ## Current Position
 
 Phase: 07 (team-pages) — EXECUTING
-Plan: 2 of 4
+Plan: 3 of 4
 
 ## Performance Metrics
 
@@ -63,6 +63,7 @@ Plan: 2 of 4
 | Phase 06 P01 | 2min | 2 tasks | 13 files |
 | Phase 06 P02 | 4min | 2 tasks | 9 files |
 | Phase 09 P01 | 4min | 3 tasks | 10 files |
+| Phase 07 P01 | 15 | 3 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -127,6 +128,9 @@ Recent decisions affecting current work:
 - [Phase 09]: Pagefind via npx (not installed in node_modules) to avoid large binary dependency; postbuild script auto-runs after npm run build
 - [Phase 09]: SearchModal is self-contained with trigger button -- Header is a Server Component so isOpen state must live in the client island itself
 - [Phase 09]: Newsletter form fires GA4 event only (no backend POST) -- email provider wiring deferred to Resend/Buttondown per D-01
+- [Phase 07]: TeamContentSchema.content is optional on TeamSchema so 36 non-content teams still validate at build time
+- [Phase 07]: Team index groups by group field; ungrouped section shows all teams until FIFA draw assigns groups
+- [Phase 07]: TeamFAQ casts as CityFAQ[] for buildFAQPageJsonLd — structurally identical shapes
 
 ### Pending Todos
 
@@ -141,6 +145,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T23:41:04.452Z
-Stopped at: Completed 09-01-PLAN.md
+Last session: 2026-03-26T23:52:35.759Z
+Stopped at: Completed 07-01-PLAN.md
 Resume file: None

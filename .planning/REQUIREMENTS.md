@@ -32,9 +32,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content — Teams
 
-- [ ] **TEAM-01**: 48 team pages with group assignment, historical World Cup record, key players, qualifying path
-- [ ] **TEAM-02**: Team listing/index page organized by group and confederation
-- [ ] **TEAM-03**: Each team page includes schedule of matches (when available) and links to host city guides
+- [x] **TEAM-01**: 48 team pages with group assignment, historical World Cup record, key players, qualifying path
+- [x] **TEAM-02**: Team listing/index page organized by group and confederation
+- [x] **TEAM-03**: Each team page includes schedule of matches (when available) and links to host city guides
 
 ### Content — Travel & Fan Experience
 
@@ -78,9 +78,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Lead Capture & Engagement
 
-- [ ] **LEAD-01**: Email newsletter signup form (name + email) with inline placement in content and exit-intent trigger
-- [ ] **LEAD-02**: Countdown timer to tournament start (June 11, 2026) on homepage and key pages
-- [ ] **LEAD-03**: Search functionality across all content pages (Pagefind or equivalent)
+- [x] **LEAD-01**: Email newsletter signup form (name + email) with inline placement in content and exit-intent trigger
+- [x] **LEAD-02**: Countdown timer to tournament start (June 11, 2026) on homepage and key pages
+- [x] **LEAD-03**: Search functionality across all content pages (Pagefind or equivalent)
 
 ### Interactive Tools
 
@@ -154,9 +154,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | STAD-01 | Phase 4 | Complete |
 | STAD-02 | Phase 4 | Complete |
 | STAD-03 | Phase 4 | Complete |
-| TEAM-01 | Phase 7 | Pending |
-| TEAM-02 | Phase 7 | Pending |
-| TEAM-03 | Phase 7 | Pending |
+| TEAM-01 | Phase 7 | Complete |
+| TEAM-02 | Phase 7 | Complete |
+| TEAM-03 | Phase 7 | Complete |
 | TRVL-01 | Phase 8 | Pending |
 | TRVL-02 | Phase 8 | Pending |
 | TRVL-03 | Phase 8 | Pending |
@@ -185,9 +185,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MON-06 | Phase 6 | Complete |
 | MON-07 | Phase 6 | Complete |
 | MON-08 | Phase 6 | Complete |
-| LEAD-01 | Phase 9 | Pending |
-| LEAD-02 | Phase 9 | Pending |
-| LEAD-03 | Phase 9 | Pending |
+| LEAD-01 | Phase 9 | Complete |
+| LEAD-02 | Phase 9 | Complete |
+| LEAD-03 | Phase 9 | Complete |
 | TOOL-01 | Phase 10 | Pending |
 | TOOL-02 | Phase 10 | Pending |
 | TOOL-03 | Phase 4 | Complete |
