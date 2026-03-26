@@ -9,6 +9,9 @@ export const pathTranslations: Record<string, Record<Locale, string>> = {
   ciudades: { es: 'ciudades', en: 'cities' },
   estadios: { es: 'estadios', en: 'stadiums' },
   equipos: { es: 'equipos', en: 'teams' },
+  divulgacion: { es: 'divulgacion', en: 'disclosure' },
+  privacidad: { es: 'privacidad', en: 'privacy' },
+  acerca: { es: 'acerca', en: 'about' },
 }
 
 /**

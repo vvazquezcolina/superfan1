@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getCity, getCitySlugs } from '@/lib/content/cities'
@@ -11,6 +12,7 @@ import { buildPlaceJsonLd, buildFAQPageJsonLd, buildArticleJsonLd } from '@/lib/
 import { CityHero } from '@/components/city/CityHero'
 import { CitySection } from '@/components/city/CitySection'
 import { CityFAQ } from '@/components/city/CityFAQ'
+import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import type { Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -152,13 +154,22 @@ export default async function CityPage({
           const qh = questionHeaders[key]
           const titleOverride = qh ? qh[locale].replace('{cityName}', city.name[locale]) : undefined
           return (
-            <CitySection
-              key={key}
-              section={city.content[key]}
-              lang={locale}
-              id={sectionIds[key]}
-              titleOverride={titleOverride}
-            />
+            <React.Fragment key={key}>
+              <CitySection
+                section={city.content[key]}
+                lang={locale}
+                id={sectionIds[key]}
+                titleOverride={titleOverride}
+              />
+              {key === 'neighborhoods' && (
+                <BookingWidget
+                  cityName={city.name[locale]}
+                  citySlug={slug}
+                  lang={locale}
+                  dict={dict.affiliate}
+                />
+              )}
+            </React.Fragment>
           )
         })}
 
