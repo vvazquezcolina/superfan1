@@ -77,7 +77,7 @@ Plans:
 - [x] 03-02-PLAN.md -- Full content for Monterrey, Guadalajara, New York/New Jersey, Los Angeles
 - [x] 03-03-PLAN.md -- Full content for Dallas, Houston, Atlanta, Philadelphia
 - [x] 03-04-PLAN.md -- Full content for Miami, Seattle, San Francisco, Boston, Kansas City
-- [ ] 03-05-PLAN.md -- Full content for Toronto, Vancouver (completes all 16 cities)
+- [x] 03-05-PLAN.md -- Full content for Toronto, Vancouver (completes all 16 cities)
 **UI hint**: yes
 
 ### Phase 4: Stadium Pages & Homepage
