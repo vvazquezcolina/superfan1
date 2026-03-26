@@ -74,7 +74,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **MON-05**: Contextual affiliate links woven naturally into travel and city content
 - [x] **MON-06**: Affiliate disclosure page (/divulgacion) in Spanish with FTC-compliant language
 - [x] **MON-07**: GA4 custom events for affiliate clicks, newsletter signups, and tool usage
-- [ ] **MON-08**: Privacy policy and cookie consent banner (GDPR/CCPA compliant)
+- [x] **MON-08**: Privacy policy and cookie consent banner (GDPR/CCPA compliant)
 
 ### Lead Capture & Engagement
 
@@ -91,7 +91,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Legal & Trust
 
 - [x] **LEGAL-01**: FIFA non-affiliation disclaimer visible in site footer on every page
-- [ ] **LEGAL-02**: About page with project description, editorial independence statement, and contact info
+- [x] **LEGAL-02**: About page with project description, editorial independence statement, and contact info
 - [x] **LEGAL-03**: Content attribution — cite FIFA.com, official tourism sites, and official sources where applicable
 
 ## v2 Requirements
@@ -184,7 +184,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MON-05 | Phase 6 | Complete |
 | MON-06 | Phase 6 | Complete |
 | MON-07 | Phase 6 | Complete |
-| MON-08 | Phase 6 | Pending |
+| MON-08 | Phase 6 | Complete |
 | LEAD-01 | Phase 9 | Pending |
 | LEAD-02 | Phase 9 | Pending |
 | LEAD-03 | Phase 9 | Pending |
@@ -192,7 +192,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TOOL-02 | Phase 10 | Pending |
 | TOOL-03 | Phase 4 | Complete |
 | LEGAL-01 | Phase 2 | Complete |
-| LEGAL-02 | Phase 6 | Pending |
+| LEGAL-02 | Phase 6 | Complete |
 | LEGAL-03 | Phase 3 | Complete |
 
 **Coverage:**

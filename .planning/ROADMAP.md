@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 3: City Guides** - 16 host city pages with deep editorial content and city index page
 - [ ] **Phase 4: Stadium Pages & Homepage** - 16 stadium pages, stadium index, and homepage with featured content sections
 - [ ] **Phase 5: LLM Optimization Layer** - JSON-LD schema stacking, llms.txt, FAQ sections, direct-answer blocks, and freshness signals
-- [ ] **Phase 6: Monetization & Analytics** - GA4 integration, affiliate link system, Booking.com widgets, disclosure page, and privacy/cookie compliance
+- [x] **Phase 6: Monetization & Analytics** - GA4 integration, affiliate link system, Booking.com widgets, disclosure page, and privacy/cookie compliance (completed 2026-03-26)
 - [ ] **Phase 7: Team Pages** - 48 team pages with group assignments, history, and team index
 - [ ] **Phase 8: Travel & Fan Experience Guides** - Flight, hotel, transport, visa, ticket, safety guides, and match schedule calendar
 - [ ] **Phase 9: Lead Capture & Engagement** - Newsletter signup, countdown timer, and site-wide search
@@ -122,11 +122,11 @@ Plans:
   3. Booking.com hotel search widgets appear contextually on city guide pages
   4. An affiliate disclosure page exists at /es/divulgacion/ with FTC-compliant Spanish language
   5. A privacy policy page and cookie consent banner handle GDPR/CCPA compliance
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 06-01-PLAN.md -- GA4 integration, affiliate data layer (affiliates.json + Zod loader), AffiliateLink component, Booking.com widgets on city pages, affiliate disclosure page
-- [ ] 06-02-PLAN.md -- Privacy policy pages, About pages, cookie consent banner, Footer link fixes for locale-aware legal paths
+- [x] 06-02-PLAN.md -- Privacy policy pages, About pages, cookie consent banner, Footer link fixes for locale-aware legal paths
 
 ### Phase 7: Team Pages
 **Goal**: Fans can browse all 48 participating teams with group assignments, World Cup history, key players, and links to host city guides where their matches will be played
@@ -187,7 +187,7 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 3. City Guides | 0/5 | Planning complete | - |
 | 4. Stadium Pages & Homepage | 0/2 | Planning complete | - |
 | 5. LLM Optimization Layer | 0/2 | Planning complete | - |
-| 6. Monetization & Analytics | 1/2 | In Progress|  |
+| 6. Monetization & Analytics | 2/2 | Complete   | 2026-03-26 |
 | 7. Team Pages | 0/TBD | Not started | - |
 | 8. Travel & Fan Experience Guides | 0/TBD | Not started | - |
 | 9. Lead Capture & Engagement | 0/TBD | Not started | - |

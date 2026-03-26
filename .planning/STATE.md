@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 06-01-PLAN.md
-last_updated: "2026-03-26T23:08:13.874Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 06-02-PLAN.md
+last_updated: "2026-03-26T23:13:46.211Z"
 progress:
   total_phases: 10
-  completed_phases: 5
+  completed_phases: 6
   total_plans: 16
-  completed_plans: 15
+  completed_plans: 16
 ---
 
 # Project State
@@ -61,6 +61,7 @@ Plan: 2 of 2
 | Phase 05 P01 | 4min | 2 tasks | 8 files |
 | Phase 05 P02 | 3min | 2 tasks | 8 files |
 | Phase 06 P01 | 2min | 2 tasks | 13 files |
+| Phase 06 P02 | 4min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -119,6 +120,9 @@ Recent decisions affecting current work:
 - [Phase 06]: Cookie-consent-gated GA4: reads localStorage cookie-consent on mount, defaults to null until Plan 02 adds cookie banner UI
 - [Phase 06]: BookingWidget is server component wrapping AffiliateLink client island for optimal RSC/hydration split
 - [Phase 06]: Booking.com affiliate aid 304142 used as standard public affiliate tracking ID with World Cup week 1 default dates (June 11-18, 2026)
+- [Phase 06]: Single-locale generateStaticParams used for language-specific legal pages (privacidad/privacy, acerca/about)
+- [Phase 06]: CookieConsent dispatches cookie-consent-changed event on accept so GoogleAnalytics can load GA4 without page reload
+- [Phase 06]: getLegalPath() added inline to Footer.tsx for locale-aware legal URL mapping (privacidad, acerca, divulgacion for ES)
 
 ### Pending Todos
 
@@ -133,6 +137,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T23:08:13.871Z
-Stopped at: Completed 06-01-PLAN.md
+Last session: 2026-03-26T23:13:46.208Z
+Stopped at: Completed 06-02-PLAN.md
 Resume file: None
