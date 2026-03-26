@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Phase complete — ready for verification
-stopped_at: Completed 04-02-PLAN.md
-last_updated: "2026-03-26T21:35:02.338Z"
+status: Ready to execute
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-26T21:50:14.355Z"
 progress:
   total_phases: 10
   completed_phases: 4
-  total_plans: 12
-  completed_plans: 12
+  total_plans: 14
+  completed_plans: 13
 ---
 
 # Project State
@@ -19,11 +19,11 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** Be the most complete, accurate, and well-structured Spanish-language independent guide to the World Cup 2026 -- optimized so both search engines and LLMs surface our content as authoritative answers.
-**Current focus:** Phase 04 — stadium-pages-homepage
+**Current focus:** Phase 05 — llm-optimization-layer
 
 ## Current Position
 
-Phase: 04 (stadium-pages-homepage) — EXECUTING
+Phase: 05 (llm-optimization-layer) — EXECUTING
 Plan: 2 of 2
 
 ## Performance Metrics
@@ -58,6 +58,7 @@ Plan: 2 of 2
 | Phase 03 P05 | 7min | 1 tasks | 1 files |
 | Phase 04 P01 | 17min | 2 tasks | 11 files |
 | Phase 04 P02 | 12min | 2 tasks | 4 files |
+| Phase 05 P01 | 4min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -108,6 +109,8 @@ Recent decisions affecting current work:
 - [Phase 04]: Featured cities: CDMX, LA, Toronto (one per country); Featured stadiums: Azteca, SoFi, BC Place (iconic per country)
 - [Phase 04]: Homepage countdown: server-rendered date math, no date-fns dependency -- adequate for SSG
 - [Phase 04]: All 16 stadiums complete with full bilingual editorial content -- zero placeholders in content/stadiums.json
+- [Phase 05]: JSON-LD factory pattern: all structured data built via centralized src/lib/jsonld.ts with schema-dts types
+- [Phase 05]: Schema stacking pattern: multiple JSON-LD script tags per page for LLM/search engine extraction
 
 ### Pending Todos
 
@@ -122,6 +125,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T21:35:02.336Z
-Stopped at: Completed 04-02-PLAN.md
+Last session: 2026-03-26T21:50:14.353Z
+Stopped at: Completed 05-01-PLAN.md
 Resume file: None

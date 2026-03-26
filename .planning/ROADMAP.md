@@ -109,7 +109,7 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md -- Install schema-dts, create JSON-LD factory functions in src/lib/jsonld.ts, stack schemas on all 6 page types
+- [x] 05-01-PLAN.md -- Install schema-dts, create JSON-LD factory functions in src/lib/jsonld.ts, stack schemas on all 6 page types
 - [ ] 05-02-PLAN.md -- llms.txt/llms-full.txt route handlers, direct-answer blocks, prompt-aligned headers, key facts, freshness signals
 
 ### Phase 6: Monetization & Analytics

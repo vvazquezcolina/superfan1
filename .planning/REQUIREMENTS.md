@@ -57,10 +57,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### LLM Optimization
 
-- [ ] **LLM-01**: JSON-LD schema stacking per page type (Place for cities, StadiumOrArena for stadiums, SportsEvent for matches, FAQPage for FAQs, Article for guides)
+- [x] **LLM-01**: JSON-LD schema stacking per page type (Place for cities, StadiumOrArena for stadiums, SportsEvent for matches, FAQPage for FAQs, Article for guides)
 - [ ] **LLM-02**: llms.txt and llms-full.txt files at site root, updated with each content deployment
 - [ ] **LLM-03**: Direct-answer content blocks — first 200 words of every page directly answer the primary query
-- [ ] **LLM-04**: FAQ sections with FAQPage schema on every content page (3-5 natural-language questions per page)
+- [x] **LLM-04**: FAQ sections with FAQPage schema on every content page (3-5 natural-language questions per page)
 - [ ] **LLM-05**: Prompt-aligned H2/H3 headers phrased as questions users and AI systems would ask
 - [ ] **LLM-06**: Content freshness signals — "Last updated" visible date on every page, ISR for regular rebuilds
 - [ ] **LLM-07**: Cited statistics with named sources throughout content for higher AI citation probability
@@ -170,10 +170,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-04 | Phase 2 | Complete |
 | SEO-05 | Phase 2 | Complete |
 | SEO-06 | Phase 2 | Complete |
-| LLM-01 | Phase 5 | Pending |
+| LLM-01 | Phase 5 | Complete |
 | LLM-02 | Phase 5 | Pending |
 | LLM-03 | Phase 5 | Pending |
-| LLM-04 | Phase 5 | Pending |
+| LLM-04 | Phase 5 | Complete |
 | LLM-05 | Phase 5 | Pending |
 | LLM-06 | Phase 5 | Pending |
 | LLM-07 | Phase 5 | Pending |
