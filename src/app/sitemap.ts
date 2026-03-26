@@ -98,6 +98,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     )
   }
 
+  // Stadium index pages -- high priority
+  entries.push(
+    {
+      url: `${SITE_URL}/es/estadios`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          'es-419': `${SITE_URL}/es/estadios`,
+          en: `${SITE_URL}/en/stadiums`,
+        },
+      },
+    },
+    {
+      url: `${SITE_URL}/en/stadiums`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          'es-419': `${SITE_URL}/es/estadios`,
+          en: `${SITE_URL}/en/stadiums`,
+        },
+      },
+    }
+  )
+
   // Stadium pages -- high priority
   for (const stadium of stadiums) {
     entries.push(
