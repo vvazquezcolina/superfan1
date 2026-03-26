@@ -18,6 +18,35 @@ export const Coordinates = z.object({
   lng: z.number().min(-180).max(180),
 })
 
+// City content sub-schemas for rich editorial pages
+export const CitySectionSchema = z.object({
+  title: LocalizedText,
+  content: LocalizedText, // HTML-free markdown-style paragraphs, separated by \n\n
+})
+
+export const CityFAQSchema = z.object({
+  question: LocalizedText,
+  answer: LocalizedText,
+})
+
+export const CitySourceSchema = z.object({
+  name: z.string().min(1),
+  url: z.string().url(),
+})
+
+export const CityContentSchema = z.object({
+  overview: LocalizedText,
+  gettingThere: CitySectionSchema,
+  gettingAround: CitySectionSchema,
+  neighborhoods: CitySectionSchema,
+  foodAndDrink: CitySectionSchema,
+  safety: CitySectionSchema,
+  weather: CitySectionSchema,
+  culturalContext: CitySectionSchema,
+  faq: z.array(CityFAQSchema).min(3).max(7),
+  sources: z.array(CitySourceSchema).min(1),
+})
+
 export const CitySchema = z.object({
   id: z.string().min(1),
   slugs: LocalizedSlug,
@@ -27,6 +56,7 @@ export const CitySchema = z.object({
   stadium: z.string().min(1), // Reference to stadium id
   coordinates: Coordinates,
   lastUpdated: z.string(), // ISO date string for freshness signals
+  content: CityContentSchema,
 })
 
 export const StadiumSchema = z.object({
@@ -63,6 +93,9 @@ export const TeamsFileSchema = z.object({
 
 // Inferred TypeScript types -- these ARE the interfaces
 export type City = z.infer<typeof CitySchema>
+export type CityContent = z.infer<typeof CityContentSchema>
+export type CitySection = z.infer<typeof CitySectionSchema>
+export type CityFAQ = z.infer<typeof CityFAQSchema>
 export type Stadium = z.infer<typeof StadiumSchema>
 export type Team = z.infer<typeof TeamSchema>
 export type Locale = 'es' | 'en'

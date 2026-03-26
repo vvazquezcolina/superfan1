@@ -43,5 +43,25 @@
     "title": "Page not found",
     "description": "The page you are looking for does not exist.",
     "backHome": "Back to home"
+  },
+  "city": {
+    "gettingThere": "Getting There",
+    "gettingAround": "Getting Around",
+    "neighborhoods": "Where to Stay",
+    "foodAndDrink": "Food & Drink",
+    "safety": "Safety",
+    "weather": "Weather",
+    "culturalContext": "Cultural Context for Latin American Fans",
+    "faq": "Frequently Asked Questions",
+    "sources": "Sources",
+    "allCities": "All Host Cities",
+    "backToIndex": "View all cities",
+    "stadium": "Stadium",
+    "lastUpdated": "Last updated",
+    "indexTitle": "2026 World Cup Host Cities",
+    "indexDescription": "Complete guide to the 16 host cities of the 2026 World Cup in Mexico, the United States, and Canada. Transport, accommodation, food, safety, and cultural tips.",
+    "countryMexico": "Mexico",
+    "countryUSA": "United States",
+    "countryCanada": "Canada"
   }
 }

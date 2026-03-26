@@ -43,5 +43,25 @@
     "title": "Pagina no encontrada",
     "description": "La pagina que buscas no existe.",
     "backHome": "Volver al inicio"
+  },
+  "city": {
+    "gettingThere": "Como llegar",
+    "gettingAround": "Como moverse",
+    "neighborhoods": "Donde hospedarse",
+    "foodAndDrink": "Comida y bebida",
+    "safety": "Seguridad",
+    "weather": "Clima",
+    "culturalContext": "Contexto cultural para fans latinos",
+    "faq": "Preguntas frecuentes",
+    "sources": "Fuentes",
+    "allCities": "Todas las ciudades sede",
+    "backToIndex": "Ver todas las ciudades",
+    "stadium": "Estadio",
+    "lastUpdated": "Ultima actualizacion",
+    "indexTitle": "Ciudades Sede del Mundial 2026",
+    "indexDescription": "Guia completa de las 16 ciudades sede del Mundial 2026 en Mexico, Estados Unidos y Canada. Transporte, hospedaje, comida, seguridad y consejos culturales.",
+    "countryMexico": "Mexico",
+    "countryUSA": "Estados Unidos",
+    "countryCanada": "Canada"
   }
 }
