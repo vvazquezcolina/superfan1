@@ -75,7 +75,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md -- Extend CitySchema with rich content fields, city components, city index page, Ciudad de Mexico full content
 - [x] 03-02-PLAN.md -- Full content for Monterrey, Guadalajara, New York/New Jersey, Los Angeles
-- [ ] 03-03-PLAN.md -- Full content for Dallas, Houston, Atlanta, Philadelphia
+- [x] 03-03-PLAN.md -- Full content for Dallas, Houston, Atlanta, Philadelphia
 - [ ] 03-04-PLAN.md -- Full content for Miami, Seattle, San Francisco, Boston, Kansas City
 - [ ] 03-05-PLAN.md -- Full content for Toronto, Vancouver (completes all 16 cities)
 **UI hint**: yes
