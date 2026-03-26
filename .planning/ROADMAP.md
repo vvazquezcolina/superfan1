@@ -160,7 +160,10 @@ Plans:
   1. Newsletter signup forms (name + email) appear inline within content and trigger on exit-intent
   2. A countdown timer to June 11, 2026 is visible on the homepage and key pages
   3. Site-wide search lets visitors find content across all pages (Pagefind or equivalent)
-**Plans**: TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 09-01-PLAN.md -- NewsletterSignup + ExitIntentWrapper components, live CountdownTimer, Pagefind search with Header trigger
 **UI hint**: yes
 
 ### Phase 10: Interactive Tools & Final Polish
@@ -190,5 +193,5 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 6. Monetization & Analytics | 2/2 | Complete   | 2026-03-26 |
 | 7. Team Pages | 0/TBD | Not started | - |
 | 8. Travel & Fan Experience Guides | 0/TBD | Not started | - |
-| 9. Lead Capture & Engagement | 0/TBD | Not started | - |
+| 9. Lead Capture & Engagement | 0/1 | Planning complete | - |
 | 10. Interactive Tools & Final Polish | 0/TBD | Not started | - |
