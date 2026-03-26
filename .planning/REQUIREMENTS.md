@@ -20,7 +20,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Content — Cities
 
 - [x] **CITY-01**: 16 host city guide pages with overview, getting there, getting around, neighborhoods, food, safety, weather
-- [ ] **CITY-02**: Each city page includes cultural context relevant to Latin American fans (Spanish-speaking services, community spots, consulate info)
+- [x] **CITY-02**: Each city page includes cultural context relevant to Latin American fans (Spanish-speaking services, community spots, consulate info)
 - [x] **CITY-03**: City listing/index page with all 16 cities organized by country (Mexico, USA, Canada)
 - [x] **CITY-04**: Content is native Spanish (not translated), with English versions as secondary locale
 
@@ -148,7 +148,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-06 | Phase 1 | Complete |
 | INFRA-07 | Phase 1 | Complete |
 | CITY-01 | Phase 3 | Complete |
-| CITY-02 | Phase 3 | Pending |
+| CITY-02 | Phase 3 | Complete |
 | CITY-03 | Phase 3 | Complete |
 | CITY-04 | Phase 3 | Complete |
 | STAD-01 | Phase 4 | Pending |
