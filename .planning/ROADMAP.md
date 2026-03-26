@@ -35,7 +35,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Content JSON files are validated by Zod schemas at build time -- invalid data breaks the build
   4. Data loader functions return typed content for cities, stadiums, and teams (even if pages don't exist yet)
   5. The build generates static pages for both locales via generateStaticParams
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [x] 01-01-PLAN.md -- Bootstrap Next.js 16 project with bilingual i18n routing, proxy, and English URL rewrites
+- [ ] 01-02-PLAN.md -- Zod schemas, content JSON files (16 cities, 16 stadiums, 48 teams), data loaders, and stub pages with SSG
 **UI hint**: yes
 
 ### Phase 2: Base Layout & Technical SEO
@@ -154,7 +158,7 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold & Data Architecture | 0/TBD | Not started | - |
+| 1. Project Scaffold & Data Architecture | 0/2 | Planning complete | - |
 | 2. Base Layout & Technical SEO | 0/TBD | Not started | - |
 | 3. City Guides | 0/TBD | Not started | - |
 | 4. Stadium Pages & Homepage | 0/TBD | Not started | - |
