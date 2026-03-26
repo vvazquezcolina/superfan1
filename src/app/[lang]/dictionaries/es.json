@@ -19,7 +19,25 @@
   },
   "footer": {
     "disclaimer": "Este sitio no esta afiliado, respaldado ni conectado con la FIFA ni con ningun organismo oficial del Mundial.",
-    "copyright": "SuperFan Mundial 2026. Todos los derechos reservados."
+    "copyright": "SuperFan Mundial 2026. Todos los derechos reservados.",
+    "sections": {
+      "explore": "Explorar",
+      "info": "Informacion",
+      "legal": "Legal"
+    },
+    "links": {
+      "about": "Acerca de",
+      "privacy": "Privacidad",
+      "disclosure": "Divulgacion"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "cities": "Ciudades sede",
+    "stadiums": "Estadios",
+    "teams": "Selecciones",
+    "travel": "Viajes",
+    "tools": "Herramientas"
   },
   "notFound": {
     "title": "Pagina no encontrada",

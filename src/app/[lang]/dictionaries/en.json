@@ -19,7 +19,25 @@
   },
   "footer": {
     "disclaimer": "This site is not affiliated with, endorsed by, or connected to FIFA or any official World Cup organizing body.",
-    "copyright": "SuperFan World Cup 2026. All rights reserved."
+    "copyright": "SuperFan World Cup 2026. All rights reserved.",
+    "sections": {
+      "explore": "Explore",
+      "info": "Information",
+      "legal": "Legal"
+    },
+    "links": {
+      "about": "About",
+      "privacy": "Privacy",
+      "disclosure": "Disclosure"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "cities": "Host Cities",
+    "stadiums": "Stadiums",
+    "teams": "Teams",
+    "travel": "Travel",
+    "tools": "Tools"
   },
   "notFound": {
     "title": "Page not found",
