@@ -19,10 +19,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content — Cities
 
-- [ ] **CITY-01**: 16 host city guide pages with overview, getting there, getting around, neighborhoods, food, safety, weather
+- [x] **CITY-01**: 16 host city guide pages with overview, getting there, getting around, neighborhoods, food, safety, weather
 - [ ] **CITY-02**: Each city page includes cultural context relevant to Latin American fans (Spanish-speaking services, community spots, consulate info)
-- [ ] **CITY-03**: City listing/index page with all 16 cities organized by country (Mexico, USA, Canada)
-- [ ] **CITY-04**: Content is native Spanish (not translated), with English versions as secondary locale
+- [x] **CITY-03**: City listing/index page with all 16 cities organized by country (Mexico, USA, Canada)
+- [x] **CITY-04**: Content is native Spanish (not translated), with English versions as secondary locale
 
 ### Content — Stadiums
 
@@ -92,7 +92,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **LEGAL-01**: FIFA non-affiliation disclaimer visible in site footer on every page
 - [ ] **LEGAL-02**: About page with project description, editorial independence statement, and contact info
-- [ ] **LEGAL-03**: Content attribution — cite FIFA.com, official tourism sites, and official sources where applicable
+- [x] **LEGAL-03**: Content attribution — cite FIFA.com, official tourism sites, and official sources where applicable
 
 ## v2 Requirements
 
@@ -147,10 +147,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-05 | Phase 2 | Complete |
 | INFRA-06 | Phase 1 | Complete |
 | INFRA-07 | Phase 1 | Complete |
-| CITY-01 | Phase 3 | Pending |
+| CITY-01 | Phase 3 | Complete |
 | CITY-02 | Phase 3 | Pending |
-| CITY-03 | Phase 3 | Pending |
-| CITY-04 | Phase 3 | Pending |
+| CITY-03 | Phase 3 | Complete |
+| CITY-04 | Phase 3 | Complete |
 | STAD-01 | Phase 4 | Pending |
 | STAD-02 | Phase 4 | Pending |
 | STAD-03 | Phase 4 | Pending |
@@ -193,7 +193,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TOOL-03 | Phase 4 | Pending |
 | LEGAL-01 | Phase 2 | Complete |
 | LEGAL-02 | Phase 6 | Pending |
-| LEGAL-03 | Phase 3 | Pending |
+| LEGAL-03 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 54 total
