@@ -52,7 +52,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-02**: Canonical URLs, Open Graph tags, and Twitter Cards on every page via `generateMetadata()`
 - [x] **SEO-03**: Proper heading hierarchy (single H1, structured H2/H3) on every page
 - [x] **SEO-04**: Alt text on all images, lazy loading, responsive images via next/image
-- [ ] **SEO-05**: BreadcrumbList JSON-LD schema on every page
+- [x] **SEO-05**: BreadcrumbList JSON-LD schema on every page
 - [x] **SEO-06**: Mobile-first responsive design with touch-friendly navigation
 
 ### LLM Optimization
@@ -168,7 +168,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-02 | Phase 2 | Complete |
 | SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 2 | Complete |
-| SEO-05 | Phase 2 | Pending |
+| SEO-05 | Phase 2 | Complete |
 | SEO-06 | Phase 2 | Complete |
 | LLM-01 | Phase 5 | Pending |
 | LLM-02 | Phase 5 | Pending |
