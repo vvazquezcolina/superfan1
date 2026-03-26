@@ -106,7 +106,11 @@ Plans:
   3. The first 200 words of every content page directly answer the primary query for that page
   4. Every content page includes 3-5 FAQ questions with FAQPage schema markup
   5. Statistics and facts throughout content cite named sources for higher AI citation probability
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md -- Install schema-dts, create JSON-LD factory functions in src/lib/jsonld.ts, stack schemas on all 6 page types
+- [ ] 05-02-PLAN.md -- llms.txt/llms-full.txt route handlers, direct-answer blocks, prompt-aligned headers, key facts, freshness signals
 
 ### Phase 6: Monetization & Analytics
 **Goal**: The site generates revenue through contextual affiliate links and tracks all user interactions -- every city page has hotel booking widgets, every affiliate link is FTC-compliant, and GA4 captures meaningful events
@@ -178,7 +182,7 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 2. Base Layout & Technical SEO | 0/3 | Planning complete | - |
 | 3. City Guides | 0/5 | Planning complete | - |
 | 4. Stadium Pages & Homepage | 0/2 | Planning complete | - |
-| 5. LLM Optimization Layer | 0/TBD | Not started | - |
+| 5. LLM Optimization Layer | 0/2 | Planning complete | - |
 | 6. Monetization & Analytics | 0/TBD | Not started | - |
 | 7. Team Pages | 0/TBD | Not started | - |
 | 8. Travel & Fan Experience Guides | 0/TBD | Not started | - |
