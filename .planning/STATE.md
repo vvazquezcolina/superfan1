@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-26T21:19:57.016Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-26T21:35:02.338Z"
 progress:
   total_phases: 10
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 12
-  completed_plans: 11
+  completed_plans: 12
 ---
 
 # Project State
@@ -57,6 +57,7 @@ Plan: 2 of 2
 | Phase 03 P04 | 14min | 2 tasks | 1 files |
 | Phase 03 P05 | 7min | 1 tasks | 1 files |
 | Phase 04 P01 | 17min | 2 tasks | 11 files |
+| Phase 04 P02 | 12min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -104,6 +105,9 @@ Recent decisions affecting current work:
 - [Phase 04]: Reused CitySectionSchema/CityFAQSchema/CitySourceSchema in StadiumContentSchema -- same shape avoids duplication
 - [Phase 04]: Stadium components in separate /stadium/ namespace despite structural similarity to city components -- allows future divergence
 - [Phase 04]: Placeholder content added to all 16 stadiums in Task 1 to satisfy build-time Zod validation before Task 2 populated full content
+- [Phase 04]: Featured cities: CDMX, LA, Toronto (one per country); Featured stadiums: Azteca, SoFi, BC Place (iconic per country)
+- [Phase 04]: Homepage countdown: server-rendered date math, no date-fns dependency -- adequate for SSG
+- [Phase 04]: All 16 stadiums complete with full bilingual editorial content -- zero placeholders in content/stadiums.json
 
 ### Pending Todos
 
@@ -118,6 +122,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T21:19:57.013Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-03-26T21:35:02.336Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None
