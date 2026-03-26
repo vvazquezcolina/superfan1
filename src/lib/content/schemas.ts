@@ -82,6 +82,36 @@ export const StadiumSchema = z.object({
   content: StadiumContentSchema,
 })
 
+export const TeamPlayerSchema = z.object({
+  name: z.string().min(1),
+  position: LocalizedText,    // e.g. { es: "Delantero", en: "Forward" }
+  club: z.string().min(1),    // Current club
+  note: LocalizedText,        // Short note on the player
+})
+
+export const TeamFAQSchema = z.object({
+  question: LocalizedText,
+  answer: LocalizedText,
+})
+
+export const TeamSourceSchema = z.object({
+  name: z.string().min(1),
+  url: z.string().url(),
+})
+
+export const TeamContentSchema = z.object({
+  overview: LocalizedText,            // 2-3 paragraphs, first answers "quien es este equipo"
+  worldCupHistory: CitySectionSchema, // Apariciones, mejor resultado, records notables
+  keyPlayers: z.object({
+    title: LocalizedText,
+    players: z.array(TeamPlayerSchema).min(5).max(8),
+  }),
+  qualifyingPath: CitySectionSchema,  // How they qualified, performance in qualifying
+  matchSchedule: CitySectionSchema,   // Placeholder — "Calendario de partidos proximamente"
+  faq: z.array(TeamFAQSchema).min(3).max(5),
+  sources: z.array(TeamSourceSchema).min(1),
+})
+
 export const TeamSchema = z.object({
   id: z.string().min(1),
   slugs: LocalizedSlug,
@@ -90,6 +120,7 @@ export const TeamSchema = z.object({
   group: z.string().optional(), // May not be assigned yet
   description: LocalizedText,
   lastUpdated: z.string(),
+  content: TeamContentSchema.optional(),
 })
 
 // File-level schemas for validating entire JSON files
@@ -111,4 +142,7 @@ export type CityFAQ = z.infer<typeof CityFAQSchema>
 export type Stadium = z.infer<typeof StadiumSchema>
 export type StadiumContent = z.infer<typeof StadiumContentSchema>
 export type Team = z.infer<typeof TeamSchema>
+export type TeamContent = z.infer<typeof TeamContentSchema>
+export type TeamPlayer = z.infer<typeof TeamPlayerSchema>
+export type TeamFAQ = z.infer<typeof TeamFAQSchema>
 export type Locale = 'es' | 'en'
