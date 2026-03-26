@@ -110,7 +110,7 @@ Plans:
 
 Plans:
 - [x] 05-01-PLAN.md -- Install schema-dts, create JSON-LD factory functions in src/lib/jsonld.ts, stack schemas on all 6 page types
-- [ ] 05-02-PLAN.md -- llms.txt/llms-full.txt route handlers, direct-answer blocks, prompt-aligned headers, key facts, freshness signals
+- [x] 05-02-PLAN.md -- llms.txt/llms-full.txt route handlers, direct-answer blocks, prompt-aligned headers, key facts, freshness signals
 
 ### Phase 6: Monetization & Analytics
 **Goal**: The site generates revenue through contextual affiliate links and tracks all user interactions -- every city page has hotel booking widgets, every affiliate link is FTC-compliant, and GA4 captures meaningful events
