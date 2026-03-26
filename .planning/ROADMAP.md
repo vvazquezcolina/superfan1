@@ -56,7 +56,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md -- Tailwind v4 green/gold theme, Header, Footer, MobileNav components, layout integration
-- [ ] 02-02-PLAN.md -- sitemap.ts, robots.ts, seo.ts metadata helper, enhanced generateMetadata on all pages
+- [x] 02-02-PLAN.md -- sitemap.ts, robots.ts, seo.ts metadata helper, enhanced generateMetadata on all pages
 - [ ] 02-03-PLAN.md -- Breadcrumbs component, BreadcrumbList JSON-LD, WebSite JSON-LD, visual verification
 **UI hint**: yes
 

@@ -48,10 +48,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO & Technical
 
-- [ ] **SEO-01**: Programmatic sitemap.ts and robots.ts with proper priority levels and change frequencies
-- [ ] **SEO-02**: Canonical URLs, Open Graph tags, and Twitter Cards on every page via `generateMetadata()`
+- [x] **SEO-01**: Programmatic sitemap.ts and robots.ts with proper priority levels and change frequencies
+- [x] **SEO-02**: Canonical URLs, Open Graph tags, and Twitter Cards on every page via `generateMetadata()`
 - [x] **SEO-03**: Proper heading hierarchy (single H1, structured H2/H3) on every page
-- [ ] **SEO-04**: Alt text on all images, lazy loading, responsive images via next/image
+- [x] **SEO-04**: Alt text on all images, lazy loading, responsive images via next/image
 - [ ] **SEO-05**: BreadcrumbList JSON-LD schema on every page
 - [x] **SEO-06**: Mobile-first responsive design with touch-friendly navigation
 
@@ -164,10 +164,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TRVL-05 | Phase 8 | Pending |
 | TRVL-06 | Phase 8 | Pending |
 | TRVL-07 | Phase 8 | Pending |
-| SEO-01 | Phase 2 | Pending |
-| SEO-02 | Phase 2 | Pending |
+| SEO-01 | Phase 2 | Complete |
+| SEO-02 | Phase 2 | Complete |
 | SEO-03 | Phase 2 | Complete |
-| SEO-04 | Phase 2 | Pending |
+| SEO-04 | Phase 2 | Complete |
 | SEO-05 | Phase 2 | Pending |
 | SEO-06 | Phase 2 | Complete |
 | LLM-01 | Phase 5 | Pending |
