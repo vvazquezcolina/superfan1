@@ -67,13 +67,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Monetization & Analytics
 
-- [ ] **MON-01**: GA4 integration (G-HMRJTYPDPP) with page view tracking on all pages
-- [ ] **MON-02**: Centralized affiliate configuration (affiliates.json) with all partner URLs
-- [ ] **MON-03**: `<AffiliateLink>` component with built-in FTC disclosure, `rel="nofollow sponsored"`, and GA4 event tracking
-- [ ] **MON-04**: Booking.com hotel search widgets embedded contextually in city guide pages
-- [ ] **MON-05**: Contextual affiliate links woven naturally into travel and city content
-- [ ] **MON-06**: Affiliate disclosure page (/divulgacion) in Spanish with FTC-compliant language
-- [ ] **MON-07**: GA4 custom events for affiliate clicks, newsletter signups, and tool usage
+- [x] **MON-01**: GA4 integration (G-HMRJTYPDPP) with page view tracking on all pages
+- [x] **MON-02**: Centralized affiliate configuration (affiliates.json) with all partner URLs
+- [x] **MON-03**: `<AffiliateLink>` component with built-in FTC disclosure, `rel="nofollow sponsored"`, and GA4 event tracking
+- [x] **MON-04**: Booking.com hotel search widgets embedded contextually in city guide pages
+- [x] **MON-05**: Contextual affiliate links woven naturally into travel and city content
+- [x] **MON-06**: Affiliate disclosure page (/divulgacion) in Spanish with FTC-compliant language
+- [x] **MON-07**: GA4 custom events for affiliate clicks, newsletter signups, and tool usage
 - [ ] **MON-08**: Privacy policy and cookie consent banner (GDPR/CCPA compliant)
 
 ### Lead Capture & Engagement
@@ -177,13 +177,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LLM-05 | Phase 5 | Complete |
 | LLM-06 | Phase 5 | Complete |
 | LLM-07 | Phase 5 | Complete |
-| MON-01 | Phase 6 | Pending |
-| MON-02 | Phase 6 | Pending |
-| MON-03 | Phase 6 | Pending |
-| MON-04 | Phase 6 | Pending |
-| MON-05 | Phase 6 | Pending |
-| MON-06 | Phase 6 | Pending |
-| MON-07 | Phase 6 | Pending |
+| MON-01 | Phase 6 | Complete |
+| MON-02 | Phase 6 | Complete |
+| MON-03 | Phase 6 | Complete |
+| MON-04 | Phase 6 | Complete |
+| MON-05 | Phase 6 | Complete |
+| MON-06 | Phase 6 | Complete |
+| MON-07 | Phase 6 | Complete |
 | MON-08 | Phase 6 | Pending |
 | LEAD-01 | Phase 9 | Pending |
 | LEAD-02 | Phase 9 | Pending |
