@@ -9,7 +9,106 @@
         "es": "Seleccion anfitriona con gran tradicion mundialista. Mexico participa en su decimoctava Copa del Mundo.",
         "en": "Host nation with a great World Cup tradition. Mexico participates in its eighteenth World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Mexico es la seleccion anfitriona del Mundial FIFA 2026 y una de las potencias historicas de la CONCACAF. Con 17 participaciones mundialistas previas, el Tri regresa a casa para su decimoctava Copa del Mundo, compartiendo la organizacion con Estados Unidos y Canada. La asignacion de grupo aun esta pendiente de la ceremonia del sorteo oficial de la FIFA.\n\nEl futbol es religion en Mexico, y nada encarna esa pasion como la expresion 'El Quinto Partido'. Durante generaciones, la Seleccion ha llegado a la segunda ronda (los octavos de final) para luego caer, sin lograr avanzar al quinto partido del torneo. En 2026, jugando en casa ante millones de aficionados, Mexico busca romper ese karma y escribir un nuevo capitulo de su historia.\n\nCon estadios icónicos como el Azteca en Ciudad de Mexico y el Akron en Guadalajara entre las sedes, la aficion mexicana promete crear una atmosfera sin igual. Este es el Mundial de Mexico, y el pais entero estara de pie.",
+          "en": "Mexico is the FIFA World Cup 2026 host nation and one of CONCACAF's historic powers. With 17 previous World Cup appearances, El Tri returns home for their eighteenth World Cup, co-hosting with the United States and Canada. Group assignment is pending the official FIFA draw ceremony.\n\nFootball is religion in Mexico, and nothing embodies that passion more than the phrase 'El Quinto Partido' (The Fifth Game). For generations, the national team has reached the Round of 16 only to fall, never advancing to a fifth tournament match. In 2026, playing at home before millions of fans, Mexico seeks to break that curse and write a new chapter in its history.\n\nWith iconic stadiums like Azteca in Mexico City and Akron in Guadalajara among the venues, Mexican fans promise to create an unmatched atmosphere. This is Mexico's World Cup, and the entire country will be on its feet."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Mexico ha participado en 17 Copas del Mundo (1930, 1950, 1954, 1958, 1966, 1970, 1978, 1986, 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022) y en el Mundial 2026 jugara su decimoctava participacion. El mejor resultado historico es cuartos de final, logrado en cinco ocasiones: 1970 (como anfitrion), 1986 (como anfitrion), y tres veces mas. Fue precisamente en Mexico 86 donde Diego Maradona hizo su famosa 'Mano de Dios' eliminando a England.\n\nLa marca mas dolorosa es el fenomeno cultural conocido como 'El Quinto Partido': desde 1994 hasta 2018, Mexico llego a los octavos de final en siete Mundiales consecutivos, pero nunca paso a cuartos. En Qatar 2022, la seleccion quedo eliminada en la fase de grupos por primera vez en 44 anos, lo que genero una profunda reflexion sobre el modelo futbolistico del pais.",
+            "en": "Mexico has appeared in 17 World Cups (1930–2022), making 2026 their eighteenth. Their best result is the quarterfinals, achieved five times, including as hosts in 1970 and 1986. It was in Mexico 86 that Diego Maradona scored his famous 'Hand of God' goal to eliminate England.\n\nThe most painful mark is the cultural phenomenon known as 'El Quinto Partido': from 1994 to 2018, Mexico reached the Round of 16 in seven consecutive World Cups but never advanced further. In Qatar 2022, the team was eliminated in the group stage for the first time in 44 years, prompting a deep national reflection on the country's football model."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Guillermo Ochoa",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "America",
+              "note": {
+                "es": "Memo Ochoa es una leyenda viviente del futbol mexicano. Con cinco Mundiales a cuestas, su actuacion ante Brasil en 2014 es considerada una de las mayores exhibiciones de porteria en la historia del torneo.",
+                "en": "Memo Ochoa is a living legend of Mexican football. With five World Cups on his resume, his performance against Brazil in 2014 is considered one of the greatest goalkeeping displays in tournament history."
+              }
+            },
+            {
+              "name": "Edson Alvarez",
+              "position": { "es": "Mediocampista Defensivo", "en": "Defensive Midfielder" },
+              "club": "West Ham United",
+              "note": {
+                "es": "El 'Machín' es el ancla del mediocampo mexicano. Su disciplina tactica y capacidad para recuperar balones lo convierten en el jugador mas importante del esquema nacional.",
+                "en": "The 'Machín' is the anchor of Mexico's midfield. His tactical discipline and ball-winning ability make him the most important player in the national setup."
+              }
+            },
+            {
+              "name": "Hirving 'Chucky' Lozano",
+              "position": { "es": "Extremo", "en": "Winger" },
+              "club": "PSV Eindhoven",
+              "note": {
+                "es": "El 'Chucky' es el jugador mas electrizante de Mexico. Su velocidad explosiva y su capacidad goleadora lo han convertido en referente de una nueva generacion de futbolistas mexicanos.",
+                "en": "El 'Chucky' is Mexico's most electrifying player. His explosive pace and scoring ability have made him the benchmark for a new generation of Mexican footballers."
+              }
+            },
+            {
+              "name": "Santiago Gimenez",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Feyenoord",
+              "note": {
+                "es": "Santi Gimenez es el presente y futuro del ataque mexicano. Goleador prolífico en la Eredivisie, se espera que sea el referente ofensivo de Mexico en 2026 con ganas de demostrar su nivel.",
+                "en": "Santi Gimenez is the present and future of Mexico's attack. A prolific scorer in the Eredivisie, he is expected to be Mexico's offensive reference in 2026, eager to prove his level on the world stage."
+              }
+            },
+            {
+              "name": "Jorge Sanchez",
+              "position": { "es": "Lateral Derecho", "en": "Right Back" },
+              "club": "Ajax",
+              "note": {
+                "es": "Lateral dinamico que aporta profundidad por la banda derecha. Su experiencia en la Eredivisie lo ha convertido en uno de los defensas mas completos de la region CONCACAF.",
+                "en": "A dynamic fullback who provides depth on the right flank. His experience in the Eredivisie has made him one of the most complete defenders in the CONCACAF region."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Mexico clasifica automaticamente al Mundial 2026 como nacion anfitriona, compartiendo la organizacion con Estados Unidos y Canada. Esta es la segunda vez que Mexico sera sede de un Mundial (la primera fue en 1970 y 1986), y la primera vez que el torneo se celebra en tres paises al mismo tiempo.\n\nLa clasificacion automatica como anfitrion libera a la Seleccion de la presion de los eliminatorias, pero tambien genera expectativas enormes. Jugar en casa, ante su propia aficion, en estadios como el Azteca, es tanto una ventaja como una responsabilidad enorme.",
+            "en": "Mexico qualifies automatically for the 2026 World Cup as a host nation, co-hosting with the United States and Canada. This is the second time Mexico has hosted a World Cup (the first was in 1970, then again in 1986), and the first time the tournament is held across three countries simultaneously.\n\nAutomatic qualification as a host frees El Tri from the pressure of qualifying campaigns, but also generates enormous expectations. Playing at home, in front of their own fans, in stadiums like the Azteca, is both an advantage and an enormous responsibility."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Mexico en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Se espera que Mexico juegue algunos partidos en el Estadio Azteca de Ciudad de Mexico y en el Estadio Akron de Guadalajara.",
+            "en": "Mexico's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Mexico is expected to play some matches at Estadio Azteca in Mexico City and Estadio Akron in Guadalajara."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿En que grupo esta Mexico en el Mundial 2026?", "en": "What group is Mexico in at the 2026 World Cup?" },
+            "answer": { "es": "Los grupos del Mundial 2026 aun no han sido definidos oficialmente por la FIFA. Una vez que se realice el sorteo oficial, podras encontrar aqui la informacion completa del grupo de Mexico y sus rivales.", "en": "The 2026 World Cup groups have not yet been officially determined by FIFA. Once the official draw takes place, you will find Mexico's complete group and rival information here." }
+          },
+          {
+            "question": { "es": "¿Que es 'El Quinto Partido' en el futbol mexicano?", "en": "What is 'El Quinto Partido' in Mexican football?" },
+            "answer": { "es": "'El Quinto Partido' es el fenomeno cultural que describe el fracaso recurrente de Mexico al no avanzar mas alla de los octavos de final en los Mundiales. Desde 1994 hasta 2018, Mexico llego a la segunda ronda en siete torneos consecutivos, pero nunca gano ese partido para avanzar al quinto juego. En 2026, jugando como anfitrion, la nacion entera espera romper ese maleficio.", "en": "'El Quinto Partido' (The Fifth Game) is the cultural phenomenon describing Mexico's recurring failure to advance beyond the Round of 16 at World Cups. From 1994 to 2018, Mexico reached the second round in seven consecutive tournaments but never won that game to advance to a fifth match. In 2026, playing as hosts, the entire nation hopes to break that curse." }
+          },
+          {
+            "question": { "es": "¿Como clasifico Mexico al Mundial 2026?", "en": "How did Mexico qualify for the 2026 World Cup?" },
+            "answer": { "es": "Mexico clasifico automaticamente al Mundial 2026 como uno de los tres paises anfitriones, junto con Estados Unidos y Canada. La FIFA otorga plazas automaticas a todas las naciones organizadoras del torneo.", "en": "Mexico qualified automatically for the 2026 World Cup as one of the three host nations, alongside the United States and Canada. FIFA grants automatic berths to all tournament host nations." }
+          },
+          {
+            "question": { "es": "¿Donde juega Mexico sus partidos del Mundial 2026?", "en": "Where does Mexico play its 2026 World Cup matches?" },
+            "answer": { "es": "Se espera que Mexico juegue partidos en sedes mexicanas incluyendo el Estadio Azteca en Ciudad de Mexico, el Estadio Akron en Guadalajara y el Estadio BBVA en Monterrey. Las fechas y sedes exactas seran confirmadas tras el sorteo oficial de la FIFA.", "en": "Mexico is expected to play matches at Mexican venues including Estadio Azteca in Mexico City, Estadio Akron in Guadalajara, and Estadio BBVA in Monterrey. Exact dates and venues will be confirmed after the official FIFA draw." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "FMF Oficial", "url": "https://www.fmf.mx/" }
+        ]
+      }
     },
     {
       "id": "usa",
@@ -20,7 +119,102 @@
         "es": "Seleccion anfitriona que busca aprovechar el apoyo local en su undecima participacion mundialista.",
         "en": "Host nation looking to capitalize on home support in their eleventh World Cup appearance."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Estados Unidos es uno de los tres paises anfitriones del Mundial FIFA 2026 y la seleccion con mayor crecimiento en CONCACAF durante los ultimos anos. Con una nueva generacion de talentos formados en las mejores ligas europeas, la USMNT llega al torneo con aspiraciones de superar por primera vez sus historicos cuartos de final de 2002. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl futbol ha dado un salto cuantitativo en Estados Unidos en la ultima decada. Jugadores como Christian Pulisic, Tyler Adams y Gio Reyna se han convertido en figuras habituales de clubes de la Champions League, elevando el nivel del equipo nacional a cotas desconocidas. La apuesta es clara: 2026, jugando en casa, puede ser el momento definitivo del futbol estadounidense.\n\nCon estadios de clase mundial como SoFi Stadium en Los Angeles y MetLife Stadium en Nueva York entre las sedes, la USMNT tendra el apoyo de millones de aficionados, incluyendo la enorme comunidad hispana del pais que vive el futbol con una pasion inigualable.",
+          "en": "The United States is one of three FIFA World Cup 2026 host nations and the fastest-growing team in CONCACAF over recent years. With a new generation of talents honed in Europe's top leagues, the USMNT arrives at the tournament with aspirations to surpass their historic quarterfinal run from 2002 for the first time. Group assignment is pending the official FIFA draw.\n\nFootball has made quantum leaps in the United States over the last decade. Players like Christian Pulisic, Tyler Adams, and Gio Reyna have become regulars at Champions League clubs, elevating the national team to previously unknown heights. The goal is clear: 2026, playing at home, could be the defining moment for American football.\n\nWith world-class stadiums like SoFi Stadium in Los Angeles and MetLife Stadium in New York among the venues, the USMNT will have the support of millions of fans, including the country's enormous Hispanic community who live football with unmatched passion."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Estados Unidos tiene una historia mundialista sorprendentemente rica. En el primer Mundial de la historia, Uruguay 1930, terminaron terceros. Luego vinieron decadas de ausencia hasta su retorno en Italia 1990. Su mejor resultado moderno fue el cuarto lugar en 2002 (Corea/Japon), donde vencieron a Portugal y Mexico antes de caer ante Alemania en cuartos.\n\nEn los ultimos torneos, la USMNT ha tenido resultados mixtos: octavos en Sudafrica 2010, eliminacion en primera ronda en Brasil 2014, y la traumatica no clasificacion para Rusia 2018. En Qatar 2022 llegaron a octavos pero cayeron ante Holanda. La generacion actual es la mas talentosa en decadas y las expectativas para 2026 son las mas altas de la historia del futbol estadounidense.",
+            "en": "The United States has a surprisingly rich World Cup history. At the first World Cup in history, Uruguay 1930, they finished third. Decades of absence followed until their return at Italy 1990. Their best modern result was fourth place in 2002 (Korea/Japan), where they defeated Portugal and Mexico before losing to Germany in the quarters.\n\nIn recent tournaments, the USMNT has had mixed results: round of 16 in South Africa 2010, group stage elimination in Brazil 2014, and the traumatic failure to qualify for Russia 2018. In Qatar 2022 they reached the round of 16 but fell to the Netherlands. The current generation is the most talented in decades, and expectations for 2026 are the highest in US football history."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Christian Pulisic",
+              "position": { "es": "Extremo / Mediapunta", "en": "Winger / Attacking Midfielder" },
+              "club": "AC Milan",
+              "note": {
+                "es": "El capitan y emblema de la seleccion estadounidense. Pulisic es el primer jugador de EEUU en ganar la Champions League y el jugador americano mas completo de su generacion. Su liderazgo y talento son fundamentales para cualquier exito en 2026.",
+                "en": "The captain and symbol of the American team. Pulisic is the first US player to win the Champions League and the most complete American player of his generation. His leadership and talent are fundamental to any success in 2026."
+              }
+            },
+            {
+              "name": "Tyler Adams",
+              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "club": "AFC Bournemouth",
+              "note": {
+                "es": "El cerebro del mediocampo de la USMNT. Adams combina una capacidad defensiva elite con una vision de juego excepcional, siendo el jugador mas importante del sistema tactico de los Estados Unidos.",
+                "en": "The brain of the USMNT midfield. Adams combines elite defensive ability with exceptional vision, making him the most important player in the US tactical system."
+              }
+            },
+            {
+              "name": "Weston McKennie",
+              "position": { "es": "Mediocampista", "en": "Midfielder" },
+              "club": "Leeds United",
+              "note": {
+                "es": "Un mediocampista completo con capacidad goleadora. McKennie aporta dinamismo, intensidad y llegada al area, cualidades clave para desestabilizar defensa rivales en el Mundial.",
+                "en": "A complete midfielder with goalscoring ability. McKennie brings dynamism, intensity, and box-to-box qualities that are key to destabilizing rival defenses at the World Cup."
+              }
+            },
+            {
+              "name": "Gio Reyna",
+              "position": { "es": "Mediapunta / Extremo", "en": "Attacking Midfielder / Winger" },
+              "club": "Nottingham Forest",
+              "note": {
+                "es": "El hijo del legendario Tab Reyna es una de las mayores promesas del futbol americano. Cuando esta en plena forma, Reyna tiene la calidad tecnica para marcar diferencias a nivel mundial.",
+                "en": "The son of legendary Tab Reyna is one of American football's greatest prospects. When fully fit, Reyna has the technical quality to make a difference at world level."
+              }
+            },
+            {
+              "name": "Ricardo Pepi",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "PSV Eindhoven",
+              "note": {
+                "es": "El goleador del equipo, con raices mexicano-americanas que le generaron gran atencion mediatica. Pepi se ha consolidado en Europa y se espera que sea el '9' titular de Estados Unidos en el Mundial en casa.",
+                "en": "The team's striker, with Mexican-American roots that generated great media attention. Pepi has established himself in Europe and is expected to be the starting '9' for the US at the home World Cup."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Estados Unidos clasifica automaticamente al Mundial 2026 como nacion co-anfitriona, junto con Mexico y Canada. La FIFA otorga plazas directas a todos los paises organizadores del torneo, lo que exime a la USMNT de disputar la fase de clasificacion de la CONCACAF.\n\nEsta clasificacion automatica llega en un momento ideal para el futbol estadounidense. La MLS ha crecido exponencialmente como liga, la infraestructura futbolistica del pais ha mejorado notablemente, y la generacion actual de jugadores europeos es la mas fuerte en la historia de la seleccion.",
+            "en": "The United States qualifies automatically for the 2026 World Cup as a co-host nation, alongside Mexico and Canada. FIFA grants direct berths to all tournament host countries, exempting the USMNT from CONCACAF qualifying.\n\nThis automatic qualification comes at an ideal moment for American football. MLS has grown exponentially as a league, the country's football infrastructure has improved notably, and the current generation of European-based players is the strongest in the team's history."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Estados Unidos en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "The matches for the United States at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿En que grupo estan Estados Unidos en el Mundial 2026?", "en": "What group is the United States in at the 2026 World Cup?" },
+            "answer": { "es": "Los grupos del Mundial 2026 aun no han sido definidos oficialmente. Una vez que se realice el sorteo, aqui encontraras el grupo de la USMNT y sus rivales.", "en": "The 2026 World Cup groups have not yet been officially determined. Once the draw takes place, you will find the USMNT's group and rivals here." }
+          },
+          {
+            "question": { "es": "¿Cual es el mejor resultado de Estados Unidos en un Mundial?", "en": "What is the United States' best result at a World Cup?" },
+            "answer": { "es": "El mejor resultado de Estados Unidos fue el tercer lugar en el primer Mundial de la historia, Uruguay 1930. En la era moderna, su mejor resultado fue el cuarto lugar en Corea/Japon 2002, donde eliminaron a Portugal y Mexico antes de caer ante Alemania en cuartos de final.", "en": "The United States' best result was third place at the first World Cup in history, Uruguay 1930. In the modern era, their best result was fourth place at Korea/Japan 2002, where they eliminated Portugal and Mexico before losing to Germany in the quarterfinals." }
+          },
+          {
+            "question": { "es": "¿Es Christian Pulisic el mejor jugador de Estados Unidos?", "en": "Is Christian Pulisic the best player in the United States?" },
+            "answer": { "es": "Christian Pulisic es ampliamente considerado el mejor jugador de la historia de la seleccion estadounidense. Actualmente en el AC Milan, Pulisic fue el primer jugador americano en ganar la UEFA Champions League con el Chelsea en 2021 y es el capitan indiscutible de la USMNT.", "en": "Christian Pulisic is widely considered the best player in US national team history. Currently at AC Milan, Pulisic was the first American player to win the UEFA Champions League with Chelsea in 2021 and is the undisputed captain of the USMNT." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "US Soccer Federation", "url": "https://www.ussoccer.com/" }
+        ]
+      }
     },
     {
       "id": "canada",
@@ -31,7 +225,102 @@
         "es": "Seleccion anfitriona que vive un resurgimiento historico en el futbol internacional.",
         "en": "Host nation experiencing a historic resurgence in international football."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Canada es uno de los tres paises anfitriones del Mundial FIFA 2026 y vive el momento mas emocionante de su historia futbolistica. Tras su unica participacion anterior (Mexico 1986, donde no marcaron ni un gol), los canadienses clasificaron brillantemente para Qatar 2022 como lideres de la eliminatoria CONCACAF. Ahora, como anfitriones, llegan a 2026 con la generacion mas talentosa de su historia. La asignacion de grupo esta pendiente del sorteo oficial.\n\nEl secreto del resurgimiento canadiense tiene nombre propio: Alphonso Davies. El extremo del Bayern Munich se ha convertido en uno de los mejores laterales del mundo y el rostro de una nueva generacion que incluye al goleador Jonathan David, al extremo Tajon Buchanan y al delantero Cyle Larin. Este Canada ya no es un participante decorativo: es una seleccion con hambre de hacer historia.\n\nJugar como anfitrion en el BMO Field de Toronto y en otros estadios canadienses le dara a la seleccion una ventaja emocional enorme. La comunidad futbolistica de Canada, cada vez mas diversa y apasionada, estara detras del equipo en cada minuto.",
+          "en": "Canada is one of three FIFA World Cup 2026 host nations and is experiencing the most exciting moment in its football history. After their only previous appearance (Mexico 1986, where they failed to score a goal), the Canadians qualified brilliantly for Qatar 2022 as CONCACAF qualifying leaders. Now, as hosts, they arrive at 2026 with the most talented generation in their history. Group assignment is pending the official FIFA draw.\n\nThe secret of Canada's resurgence has a name: Alphonso Davies. The Bayern Munich winger has become one of the world's best fullbacks and the face of a new generation that includes top scorer Jonathan David, winger Tajon Buchanan, and striker Cyle Larin. This Canada is no longer a decorative participant: they are a team hungry to make history.\n\nPlaying as hosts at BMO Field in Toronto and other Canadian stadiums will give the team an enormous emotional advantage. Canada's growing, diverse, and passionate football community will be behind the team every minute."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Canada participó por primera vez en una Copa del Mundo en Mexico 1986, donde quedó eliminado en la primera fase sin marcar un solo gol en tres partidos (perdio ante Francia, Hungría y la Unión Soviética). Fue la unica participacion hasta Qatar 2022, donde Canada clasifico como lider invicto de la eliminatoria CONCACAF, una hazana historica.\n\nEn Qatar 2022, Canada fue eliminado en la fase de grupos (perdio ante Belgica y Croacia, y empataron ante Marruecos), pero la actuacion fue prometedora para una seleccion en construccion. En 2026, jugando como anfitrion, la seleccion canadiense busca superar la primera ronda por primera vez en su historia.",
+            "en": "Canada appeared in their first World Cup at Mexico 1986, where they were eliminated in the group stage without scoring a single goal in three matches (losses to France, Hungary, and the Soviet Union). That remained their only appearance until Qatar 2022, when Canada qualified as the unbeaten CONCACAF qualifying leader — a historic achievement.\n\nAt Qatar 2022, Canada was eliminated in the group stage (losses to Belgium and Croatia, draw against Morocco), but the performance was promising for a team under construction. In 2026, playing as hosts, the Canadian team seeks to advance past the group stage for the first time in their history."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Alphonso Davies",
+              "position": { "es": "Lateral Izquierdo / Extremo", "en": "Left Back / Winger" },
+              "club": "Bayern Munich",
+              "note": {
+                "es": "Phonzy Davies es el mejor jugador en la historia del futbol canadiense. Su velocidad devastadora, su capacidad ofensiva y su experiencia ganando Champions League con el Bayern lo convierten en una amenaza constante para cualquier rival.",
+                "en": "Phonzy Davies is the greatest player in Canadian football history. His devastating pace, offensive ability, and experience winning the Champions League with Bayern make him a constant threat to any opponent."
+              }
+            },
+            {
+              "name": "Jonathan David",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "LOSC Lille",
+              "note": {
+                "es": "Uno de los goleadores mas prolíficos de la Ligue 1 en los ultimos anos. Jonathan David aporta la contundencia ofensiva que Canada necesita para competir con las mejores selecciones del mundo.",
+                "en": "One of the most prolific scorers in Ligue 1 in recent years. Jonathan David provides the offensive punch Canada needs to compete with the world's best teams."
+              }
+            },
+            {
+              "name": "Tajon Buchanan",
+              "position": { "es": "Extremo", "en": "Winger" },
+              "club": "Inter de Milan",
+              "note": {
+                "es": "El extremo del Inter de Milan es una de las revelaciones del futbol canadiense. Con su velocidad y capacidad para el uno contra uno, Buchanan puede generar peligro por cualquier banda.",
+                "en": "The Inter Milan winger is one of Canadian football's breakout stars. With his pace and one-on-one ability, Buchanan can create danger on either flank."
+              }
+            },
+            {
+              "name": "Cyle Larin",
+              "position": { "es": "Delantero", "en": "Forward" },
+              "club": "Club Brugge",
+              "note": {
+                "es": "El maximo goleador historico de la seleccion canadiense. Larin aporta experiencia y contundencia en el area, siendo una pieza fundamental del ataque en momentos decisivos.",
+                "en": "The all-time top scorer for the Canadian national team. Larin brings experience and clinical finishing in the box, being a key piece of the attack in decisive moments."
+              }
+            },
+            {
+              "name": "Maxime Crepeau",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "LA Galaxy",
+              "note": {
+                "es": "El guardameta titular de Canada se ha ganado su lugar a pulso. Seguro bajo los palos y con reflejos excepcionales, Crepeau es el ancla defensiva de la seleccion canadiense.",
+                "en": "Canada's first-choice goalkeeper has earned his spot on merit. Secure under pressure and with exceptional reflexes, Crepeau is the defensive anchor of the Canadian team."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Canada clasifica automaticamente al Mundial 2026 como nacion co-anfitriona, junto con Mexico y Estados Unidos. Sin embargo, el camino que ha vivido la seleccion canadiense en los ultimos anos ha sido igualmente impresionante: en la eliminatoria de la CONCACAF para Qatar 2022, Canada termino como lider invicto, por encima de Mexico y Estados Unidos, por primera vez en su historia.\n\nEsta calidad clasificatoria demuestra que la seleccion canadiense ya no es un participante de relleno. El sistema de formacion futbolistica del pais, combinado con la exportacion de talentos a ligas europeas de primer nivel, ha creado una seleccion capaz de competir con cualquiera en el mundo.",
+            "en": "Canada qualifies automatically for the 2026 World Cup as a co-host nation alongside Mexico and the United States. However, the journey the Canadian team has experienced in recent years has been equally impressive: in the CONCACAF qualifying for Qatar 2022, Canada finished as unbeaten leaders, above Mexico and the United States, for the first time in their history.\n\nThis qualifying quality demonstrates that the Canadian team is no longer a filler participant. The country's football development system, combined with the export of talents to top European leagues, has created a team capable of competing with anyone in the world."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Canada en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Se espera que el equipo juegue en el BMO Field de Toronto y en otras sedes canadienses. Vuelve pronto para ver el calendario completo.",
+            "en": "Canada's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. The team is expected to play at BMO Field in Toronto and other Canadian venues. Check back soon for the complete schedule."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantas veces ha participado Canada en un Mundial de futbol?", "en": "How many times has Canada participated in a football World Cup?" },
+            "answer": { "es": "Canada ha participado en dos Copas del Mundo: Mexico 1986 (sin ganar ni marcar) y Qatar 2022 (eliminados en primera fase). El Mundial 2026, como anfitriones, sera su tercera participacion y la primera con verdaderas aspiraciones de avanzar a la fase eliminatoria.", "en": "Canada has participated in two World Cups: Mexico 1986 (without winning or scoring) and Qatar 2022 (eliminated in the group stage). The 2026 World Cup, as hosts, will be their third appearance and the first with genuine aspirations of advancing to the knockout stage." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de Canada?", "en": "Who is Canada's best player?" },
+            "answer": { "es": "Alphonso Davies, lateral izquierdo del Bayern Munich, es ampliamente considerado el mejor jugador en la historia del futbol canadiense. Su velocidad, su capacidad tecnica y su palmarés a nivel de clubes (incluyendo la Champions League) lo posicionan entre los mejores jugadores de su posicion en el mundo.", "en": "Alphonso Davies, left back at Bayern Munich, is widely considered the greatest player in Canadian football history. His pace, technical ability, and club trophy haul (including the Champions League) position him among the best players in his position in the world." }
+          },
+          {
+            "question": { "es": "¿Como clasifico Canada al Mundial 2026?", "en": "How did Canada qualify for the 2026 World Cup?" },
+            "answer": { "es": "Canada clasifica automaticamente al Mundial 2026 como nacion co-anfitriona junto con Mexico y Estados Unidos. En la eliminatoria previa para Qatar 2022, Canada demostro su nivel al terminar como lider invicto de la CONCACAF.", "en": "Canada qualifies automatically for the 2026 World Cup as a co-host nation alongside Mexico and the United States. In the previous qualifying campaign for Qatar 2022, Canada demonstrated their level by finishing as unbeaten CONCACAF leaders." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "Canada Soccer", "url": "https://www.canadasoccer.com/" }
+        ]
+      }
     },
     {
       "id": "jamaica",
@@ -42,7 +331,102 @@
         "es": "Los Reggae Boyz buscan su segunda participacion en una Copa del Mundo.",
         "en": "The Reggae Boyz seek their second appearance in a World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Jamaica, conocida en el futbol mundial como los 'Reggae Boyz', llega al Mundial 2026 en lo que seria su segunda participacion historica, tras el debut en Francia 1998. Esta generacion jamaicana es la mas talentosa de la historia del pais, con jugadores establecidos en las principales ligas europeas como Leon Bailey, Michail Antonio y Demarai Gray. La asignacion de grupo esta pendiente del sorteo oficial.\n\nLa historia de Jamaica en el futbol es una historia de persistencia y renacimiento. Tras la memorable participacion de 1998, pasaron decadas sin lograr clasificar. Pero una nueva generacion de jamaicanos de la diaspora —criados en Inglaterra— ha revolucionado la seleccion, aportando calidad de Premier League y Championship a un equipo con el corazon caribeno.\n\nLos Reggae Boyz traen consigo la energia inimitable del Caribe. Su estilo de juego es rapido, directo y lleno de creatividad individual. Para los aficionados latinoamericanos, Jamaica representa el espiritu del underdog, la nacion que no renuncia a sus suenos por mas grande que sea el rival.",
+          "en": "Jamaica, known in world football as the 'Reggae Boyz', arrives at the 2026 World Cup in what would be their second historic appearance, following their debut at France 1998. This Jamaican generation is the most talented in the country's history, with players established in Europe's top leagues like Leon Bailey, Michail Antonio, and Demarai Gray. Group assignment is pending the official FIFA draw.\n\nJamaica's football story is one of persistence and rebirth. After the memorable 1998 appearance, decades passed without qualifying. But a new generation of diaspora Jamaicans — raised in England — has revolutionized the team, bringing Premier League and Championship quality to a side with a Caribbean heart.\n\nThe Reggae Boyz bring the inimitable energy of the Caribbean. Their playing style is fast, direct, and full of individual creativity. For Latin American fans, Jamaica represents the underdog spirit — the nation that refuses to abandon its dreams no matter how big the opponent."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Jamaica hizo su debut mundialista en Francia 1998, convirtiendose en la primera seleccion del Caribe anglofono en clasificar a una Copa del Mundo. Aunque perdieron los tres partidos del grupo (ante Croacia, Argentina y Japon), la participacion fue historica y genero un enorme orgullo nacional e internacional.\n\nTras ese debut, Jamaica lucho durante decadas para volver a clasificar. El equipo de 2026 representa la culminacion de un largo proceso de desarrollo, con una nueva generacion de jugadores de alta calidad que finalmente ha devuelto a los Reggae Boyz al escenario mundial.",
+            "en": "Jamaica made their World Cup debut at France 1998, becoming the first English-speaking Caribbean nation to qualify for a World Cup. Although they lost all three group matches (against Croatia, Argentina, and Japan), the participation was historic and generated enormous national and international pride.\n\nAfter that debut, Jamaica struggled for decades to qualify again. The 2026 team represents the culmination of a long development process, with a new generation of high-quality players who have finally brought the Reggae Boyz back to the world stage."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Leon Bailey",
+              "position": { "es": "Extremo Derecho", "en": "Right Winger" },
+              "club": "Aston Villa",
+              "note": {
+                "es": "La estrella mas brillante de Jamaica. Bailey es un extremo desequilibrante, con una velocidad y un regate que le han ganado un lugar en el Aston Villa de la Premier League. Es el jugador mas peligroso de los Reggae Boyz.",
+                "en": "Jamaica's brightest star. Bailey is an unbalancing winger with pace and dribbling that have earned him a place at Aston Villa in the Premier League. He is the Reggae Boyz's most dangerous player."
+              }
+            },
+            {
+              "name": "Michail Antonio",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "West Ham United",
+              "note": {
+                "es": "El delantero jamaicano-ingles es un jugador fisico y experimentado en la Premier League. Su capacidad para retener el balon, su presencia aerea y su experiencia son vitales para el ataque de Jamaica.",
+                "en": "The Jamaican-English striker is a physical and experienced Premier League player. His ability to hold up the ball, aerial presence, and experience are vital for Jamaica's attack."
+              }
+            },
+            {
+              "name": "Demarai Gray",
+              "position": { "es": "Extremo", "en": "Winger" },
+              "club": "Al-Ettifaq",
+              "note": {
+                "es": "Un extremo rapido y tecnico con experiencia en la Premier League. Gray aporta velocidad y desequilibrio por las bandas, siendo una opcion peligrosa en el ataque jamaicano.",
+                "en": "A fast and technical winger with Premier League experience. Gray provides pace and imbalance on the flanks, being a dangerous option in Jamaica's attack."
+              }
+            },
+            {
+              "name": "Bobby Reid",
+              "position": { "es": "Mediapunta / Extremo", "en": "Attacking Midfielder / Winger" },
+              "club": "AFC Bournemouth",
+              "note": {
+                "es": "Un jugador versatil con capacidad creativa y goleadora. Reid aporta presencia tecnica al mediocampo ofensivo de Jamaica y es importante en la transicion entre defensa y ataque.",
+                "en": "A versatile player with creative and goalscoring ability. Reid provides technical presence to Jamaica's attacking midfield and is important in transition between defense and attack."
+              }
+            },
+            {
+              "name": "Andre Blake",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Philadelphia Union",
+              "note": {
+                "es": "Uno de los mejores porteros de la MLS y guardameta titular de Jamaica. Blake es conocido por sus paradas espectaculares y su presencia imponente bajo los palos, siendo fundamental para mantener al equipo competitivo.",
+                "en": "One of the best goalkeepers in MLS and Jamaica's starting goalkeeper. Blake is known for his spectacular saves and imposing presence in goal, being fundamental to keeping the team competitive."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Jamaica clasifico al Mundial 2026 a traves del proceso de clasificacion de la CONCACAF, que incluye la CONCACAF Nations League y la fase final de eliminatorias. Jamaica navego competentemente por el proceso, aprovechando el talento de su generacion de la diaspora britanica para asegurar el boleto.\n\nLa clasificacion representa un logro historico para el futbol jamaicano. El pais ha invertido en el desarrollo del futbol a nivel base y ha trabajado activamente para convencer a jugadores con doble nacionalidad jamaicana-britanica de elegir representar a los Reggae Boyz.",
+            "en": "Jamaica qualified for the 2026 World Cup through the CONCACAF qualifying process, which includes the CONCACAF Nations League and the final qualifying phase. Jamaica navigated the process competently, leveraging the talent of their British diaspora generation to secure the ticket.\n\nQualification represents a historic achievement for Jamaican football. The country has invested in grassroots football development and actively worked to convince players with dual Jamaican-British nationality to represent the Reggae Boyz."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Jamaica en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Jamaica's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantas veces ha participado Jamaica en un Mundial?", "en": "How many times has Jamaica participated in a World Cup?" },
+            "answer": { "es": "Jamaica ha participado en una Copa del Mundo anteriormente, en Francia 1998, donde se convirtieron en la primera seleccion del Caribe anglofono en clasificar a un Mundial. El 2026 sera su segunda participacion historica.", "en": "Jamaica has previously participated in one World Cup, at France 1998, where they became the first English-speaking Caribbean nation to qualify for a World Cup. 2026 will be their second historic appearance." }
+          },
+          {
+            "question": { "es": "¿Cual es el mejor jugador de Jamaica?", "en": "Who is Jamaica's best player?" },
+            "answer": { "es": "Leon Bailey del Aston Villa es considerado el mejor jugador de la seleccion jamaicana actual. Su velocidad, capacidad de desborde y calidad tecnica lo posicionan como uno de los extremos mas peligrosos de la CONCACAF.", "en": "Leon Bailey of Aston Villa is considered Jamaica's current best player. His pace, dribbling ability, and technical quality position him as one of CONCACAF's most dangerous wingers." }
+          },
+          {
+            "question": { "es": "¿Por que se llaman los Reggae Boyz?", "en": "Why are they called the Reggae Boyz?" },
+            "answer": { "es": "El apodo 'Reggae Boyz' fue adoptado por la seleccion jamaicana en honor a la musica reggae, que es uno de los simbolos culturales mas importantes de Jamaica en el mundo. El reggae, asociado con Bob Marley y la identidad jamaicana, representa la alegria, la resistencia y el espiritu unico del pais caribeno.", "en": "The nickname 'Reggae Boyz' was adopted by the Jamaican national team in honor of reggae music, which is one of Jamaica's most important cultural symbols in the world. Reggae, associated with Bob Marley and Jamaican identity, represents the joy, resilience, and unique spirit of the Caribbean nation." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "Jamaica Football Federation", "url": "https://www.jamaicafootballfederation.com/" }
+        ]
+      }
     },
     {
       "id": "honduras",
@@ -53,7 +437,102 @@
         "es": "Seleccion centroamericana con una apasionada aficion futbolera.",
         "en": "Central American team with a passionate football fanbase."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Honduras, conocida como La Bicolor o La H, llega al Mundial 2026 con una generacion de jugadores forjados en ligas europeas y una aficion que vive el futbol con una intensidad inigualable en Centroamerica. Con cuatro participaciones mundialistas (1982, 2010, 2014 y se espera que 2026 sea la cuarta), Los Catrachos regresan a la Copa del Mundo buscando superar por primera vez la primera ronda del torneo. La asignacion de grupo esta pendiente del sorteo oficial.\n\nAlberth Elis y Romell Quioto son los referentes de un nuevo Honduras mas tecnico y mas rapido que las generaciones anteriores. La aficion hondurena es famosa por su pasion y su presencia en todo el continente, con una gran comunidad en Estados Unidos que estara presente en los estadios norteamericanos.\n\nPara Honduras, cada clasificacion a un Mundial es una hazana de voluntad y sacrificio. En un pais donde los recursos son limitados y los desafios sociales son enormes, el futbol es una fuente de identidad y orgullo colectivo que une a toda la nacion.",
+          "en": "Honduras, known as La Bicolor or La H, arrives at the 2026 World Cup with a generation of players forged in European leagues and a fanbase that lives football with unmatched intensity in Central America. With four World Cup appearances (1982, 2010, 2014, and 2026 expected to be the fourth), Los Catrachos return to the World Cup seeking to advance past the group stage for the first time. Group assignment is pending the official FIFA draw.\n\nAlberth Elis and Romell Quioto are the reference points of a new, more technical and faster Honduras than previous generations. Honduras's fanbase is famous for its passion and presence throughout the continent, with a large community in the United States that will be present at North American stadiums.\n\nFor Honduras, every World Cup qualification is an achievement of will and sacrifice. In a country where resources are limited and social challenges are enormous, football is a source of identity and collective pride that unites the entire nation."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Honduras ha participado en tres Copas del Mundo: Espana 1982, Sudafrica 2010 y Brasil 2014. En todas las ocasiones, el equipo fue eliminado en la primera fase. En 1982, clasificaron por primera vez y empataron con España 1-1. En 2010 y 2014, fueron parte de grupos difíciles donde lucharon pero no lograron avanzar.\n\nEl momento mas memorable en la historia mundialista hondurena fue la clasificacion para 1982, que represento un logro enorme para el futbol centroamericano. El objetivo de 2026 es claro: por primera vez en la historia, Honduras quiere pasar de la primera ronda y escribir una pagina nueva en su historia.",
+            "en": "Honduras has appeared in three World Cups: Spain 1982, South Africa 2010, and Brazil 2014. On all occasions, the team was eliminated in the group stage. In 1982, they qualified for the first time and drew 1-1 with Spain. In 2010 and 2014, they were placed in difficult groups where they fought but could not advance.\n\nThe most memorable moment in Honduran World Cup history was qualifying for 1982, which represented an enormous achievement for Central American football. The 2026 objective is clear: for the first time in history, Honduras wants to advance past the group stage and write a new page in their history."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Alberth Elis",
+              "position": { "es": "Extremo Derecho", "en": "Right Winger" },
+              "club": "Girondins Bordeaux",
+              "note": {
+                "es": "El jugador mas peligroso de Honduras. Elis combina una velocidad devastadora con un instinto goleador que lo ha llevado a brillar en ligas europeas. Es el referente ofensivo y el talento mas reconocible de La Bicolor.",
+                "en": "Honduras's most dangerous player. Elis combines devastating pace with a goalscoring instinct that has allowed him to shine in European leagues. He is the offensive reference and most recognizable talent of La Bicolor."
+              }
+            },
+            {
+              "name": "Romell Quioto",
+              "position": { "es": "Extremo / Mediapunta", "en": "Winger / Attacking Midfielder" },
+              "club": "CF Montreal",
+              "note": {
+                "es": "Un extremo tecnico y veloz con capacidad de marcar diferencias. Quioto aporta creatividad y la capacidad de dar el pase de gol en momentos decisivos, siendo clave en el sistema ofensivo de Honduras.",
+                "en": "A technical and fast winger with the ability to make a difference. Quioto brings creativity and the ability to deliver the key pass in decisive moments, being central to Honduras's offensive system."
+              }
+            },
+            {
+              "name": "Antony Lozano",
+              "position": { "es": "Extremo / Delantero", "en": "Winger / Forward" },
+              "club": "Cadiz CF",
+              "note": {
+                "es": "Un extremo versátil con experiencia en la Segunda Division espanola. Lozano aporta profundidad y gol al ataque hondureno, siendo una opcion peligrosa tanto por banda como por el centro.",
+                "en": "A versatile winger with experience in Spain's Segunda División. Lozano adds depth and goals to the Honduran attack, being a dangerous option both on the wing and through the center."
+              }
+            },
+            {
+              "name": "Rigoberto Rivas",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Nottingham Forest",
+              "note": {
+                "es": "Un delantero joven y prometedor con experiencia en la Premier League. Rivas tiene el fisico y el hambre de gol para representar el futuro del ataque hondureno a nivel mundial.",
+                "en": "A young and promising striker with Premier League experience. Rivas has the physique and hunger for goals to represent the future of Honduras's attack at world level."
+              }
+            },
+            {
+              "name": "Jose Mario Pinto",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Olimpia",
+              "note": {
+                "es": "El guardameta de la Liga Nacional hondurena ha demostrado ser un portero seguro y experimentado en el plano internacional. Su conocimiento del sistema defensivo es fundamental para la organizacion del equipo.",
+                "en": "The Liga Nacional goalkeeper has proven to be a reliable and experienced shot-stopper at international level. His understanding of the defensive system is fundamental to the team's organization."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Honduras clasifico al Mundial 2026 a traves del proceso de clasificacion de la CONCACAF, que incluye la Liga de Naciones y la fase final de eliminatorias. Honduras navego un proceso competitivo enfrentando a selecciones como Mexico, Costa Rica, Panama y El Salvador, demostrando el caracter y la calidad de su nuevo grupo de jugadores.\n\nLa clasificacion de Honduras siempre es una hazana especial porque el pais enfrenta limitaciones de infraestructura y recursos que hacen que cada boleto al Mundial sea el resultado de un esfuerzo colectivo enorme de jugadores, cuerpo tecnico y aficion.",
+            "en": "Honduras qualified for the 2026 World Cup through the CONCACAF qualifying process, which includes the Nations League and the final qualifying phase. Honduras navigated a competitive process facing teams like Mexico, Costa Rica, Panama, and El Salvador, demonstrating the character and quality of their new group of players.\n\nHonduras qualifying is always a special achievement because the country faces infrastructure and resource limitations that make every World Cup ticket the result of an enormous collective effort from players, coaching staff, and fans."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Honduras en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Honduras's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantas veces ha clasificado Honduras a un Mundial?", "en": "How many times has Honduras qualified for a World Cup?" },
+            "answer": { "es": "Honduras ha clasificado a tres Mundiales anteriores: Espana 1982, Sudafrica 2010 y Brasil 2014. El Mundial 2026 sera su cuarta participacion en una Copa del Mundo, y la primera con una generacion de jugadores establecidos en ligas europeas de alto nivel.", "en": "Honduras has qualified for three previous World Cups: Spain 1982, South Africa 2010, and Brazil 2014. The 2026 World Cup will be their fourth World Cup appearance, and the first with a generation of players established in high-level European leagues." }
+          },
+          {
+            "question": { "es": "¿Cual es el mejor resultado de Honduras en un Mundial?", "en": "What is Honduras's best result at a World Cup?" },
+            "answer": { "es": "Honduras ha sido eliminada en la primera fase en todos sus Mundiales (1982, 2010, 2014). En 1982 lograron un empate memorable contra España. El objetivo de 2026 es avanzar a la segunda ronda por primera vez en la historia del futbol hondureno.", "en": "Honduras has been eliminated in the group stage at all their World Cups (1982, 2010, 2014). In 1982 they achieved a memorable draw against Spain. The 2026 objective is to advance to the second round for the first time in Honduran football history." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de Honduras?", "en": "Who is Honduras's best player?" },
+            "answer": { "es": "Alberth Elis es considerado el mejor jugador de la seleccion hondurena actual. Su velocidad, tecnica y capacidad goleadora le han valido actuaciones en ligas europeas y lo posicionan como el mayor talento del futbol hondureno contemporaneo.", "en": "Alberth Elis is considered Honduras's current best player. His pace, technique, and goalscoring ability have earned him appearances in European leagues and position him as the greatest talent in contemporary Honduran football." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "Fenafuth Honduras", "url": "https://www.fenafuth.hn/" }
+        ]
+      }
     },
     {
       "id": "costa-rica",
@@ -64,7 +543,102 @@
         "es": "Los Ticos buscan repetir su historica actuacion de cuartos de final en Brasil 2014.",
         "en": "Los Ticos seek to repeat their historic quarterfinal run from Brazil 2014."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Costa Rica, conocida como Los Ticos, es la seleccion centroamericana con mayor exito historico en los Mundiales y una de las sorpresas mas grandes del futbol reciente. Con seis participaciones mundialistas y el historico cuarto de final en Brasil 2014, Los Ticos llegan al Mundial 2026 buscando escribir un nuevo capitulo en su historia dorada. La asignacion de grupo esta pendiente del sorteo oficial.\n\nKeylor Navas es la leyenda viva del futbol costarricense, aunque posiblemente el 2026 marque el final de su etapa con la seleccion. Una nueva generacion, liderada por Anthony Contreras y Gerson Torres, tiene el reto de mantener el nivel de competitividad que hizo famoso a Costa Rica en 2014.\n\nEl secreto de Costa Rica siempre ha sido la unidad del equipo y la solidez defensiva. No tienen las estrellas individuales de Brasil o Argentina, pero cuando funcionan como bloque compacto, pueden complicar la vida a cualquier rival del mundo.",
+          "en": "Costa Rica, known as Los Ticos, is Central America's most historically successful team in World Cups and one of recent football's greatest surprises. With six World Cup appearances and the historic quarterfinal at Brazil 2014, Los Ticos arrive at the 2026 World Cup seeking to write a new chapter in their golden history. Group assignment is pending the official FIFA draw.\n\nKeylor Navas is Costa Rican football's living legend, though 2026 could potentially mark the end of his national team era. A new generation, led by Anthony Contreras and Gerson Torres, faces the challenge of maintaining the competitive level that made Costa Rica famous in 2014.\n\nCosta Rica's secret has always been team unity and defensive solidity. They don't have the individual stars of Brazil or Argentina, but when they function as a compact block, they can make life difficult for any rival in the world."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Costa Rica ha participado en seis Copas del Mundo: Italia 1990, USA 1994, Alemania 2006, Brasil 2010, Qatar 2022, y se espera que 2026 sea la septima. Su hazana mas grande fue Brasil 2014, donde bajo la direccion de Jorge Luis Pinto, ganaron el Grupo D que incluia a Uruguay, Italia y Inglaterra, luego eliminaron a Grecia en penales en octavos, antes de caer ante Holanda en cuartos de final tambien en penales.\n\nEsa actuacion de 2014 colocó a Costa Rica en el mapa del futbol mundial para siempre. En Qatar 2022, eliminaron a Japon en la segunda jornada del grupo pero no avanzaron a la segunda ronda. El recuerdo de 2014 sigue siendo la vara con la que se mide a Los Ticos.",
+            "en": "Costa Rica has participated in six World Cups: Italy 1990, USA 1994, Germany 2006, Brazil 2010, Qatar 2022, and 2026 is expected to be the seventh. Their greatest achievement was Brazil 2014, where under Jorge Luis Pinto, they won Group D which included Uruguay, Italy, and England, then eliminated Greece on penalties in the Round of 16, before falling to the Netherlands in the quarterfinals also on penalties.\n\nThat 2014 performance placed Costa Rica on the world football map forever. At Qatar 2022, they eliminated Japan in the second group match but did not advance to the second round. The memory of 2014 remains the benchmark by which Los Ticos are measured."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Keylor Navas",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Newell's Old Boys",
+              "note": {
+                "es": "Leyenda del futbol costarricense y tres veces campeon de la Champions League con el Real Madrid. Navas es el portero mas exitoso de la historia de Centroamerica, y su participacion en 2026 seria una despedida con honores para el mas grande.",
+                "en": "Costa Rican football legend and three-time Champions League winner with Real Madrid. Navas is the most successful goalkeeper in Central American history, and his participation in 2026 would be an honorable farewell for the greatest."
+              }
+            },
+            {
+              "name": "Anthony Contreras",
+              "position": { "es": "Delantero / Extremo", "en": "Forward / Winger" },
+              "club": "Alajuelense",
+              "note": {
+                "es": "La nueva promesa del ataque costarricense. Contreras aporta velocidad y verticalidad al juego de Los Ticos, siendo uno de los jugadores mas desequilibrantes de la nueva generacion costarricense.",
+                "en": "The new promise of the Costa Rican attack. Contreras brings pace and directness to Los Ticos' play, being one of the most unbalancing players of the new Costa Rican generation."
+              }
+            },
+            {
+              "name": "Gerson Torres",
+              "position": { "es": "Extremo / Mediapunta", "en": "Winger / Attacking Midfielder" },
+              "club": "Herediano",
+              "note": {
+                "es": "Un extremo tecnico y creativo que representa la nueva cara del futbol costarricense. Torres tiene la calidad para hacer la diferencia con el balon en los pies en momentos clave del partido.",
+                "en": "A technical and creative winger who represents the new face of Costa Rican football. Torres has the quality to make a difference with the ball at his feet at key moments in the match."
+              }
+            },
+            {
+              "name": "Yeltsin Tejeda",
+              "position": { "es": "Mediocampista Defensivo", "en": "Defensive Midfielder" },
+              "club": "Pumas UNAM",
+              "note": {
+                "es": "El veterano mediocampista defensive ha sido el escudo de Costa Rica durante anos. Tejeda aporta experiencia, intensidad y el conocimiento del sistema que hace funcionar al equipo como una unidad cohesionada.",
+                "en": "The veteran defensive midfielder has been Costa Rica's shield for years. Tejeda brings experience, intensity, and system knowledge that makes the team function as a cohesive unit."
+              }
+            },
+            {
+              "name": "Joel Campbell",
+              "position": { "es": "Extremo / Delantero", "en": "Winger / Forward" },
+              "club": "Club Sport Herediano",
+              "note": {
+                "es": "Veterano del memorable Brasil 2014, donde fue una de las figuras del historico equipo costarricense. Si esta en convocatoria, Campbell aporta la experiencia mundialista que puede marcar la diferencia para los jugadores mas jovenes.",
+                "en": "Veteran of the memorable Brazil 2014, where he was one of the figures of the historic Costa Rican team. If called up, Campbell brings World Cup experience that can make a difference for younger players."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Costa Rica clasifico al Mundial 2026 a traves del proceso de clasificacion de la CONCACAF. La seleccion tica ha demostrado una capacidad clasificatoria consistente en los ultimos ciclos, aunque en cada ocasion la competencia con Mexico, Estados Unidos, Honduras y Panama hace que el boleto no llegue sin un esfuerzo enorme.\n\nCosta Rica siempre basa su clasificacion en una defensa solida y en las actuaciones claves de sus porteros, especialmente Keylor Navas cuando esta disponible. Su estilo es mas conservador que los equipos atacantes de la region, pero ha demostrado ser efectivo para conseguir los puntos necesarios.",
+            "en": "Costa Rica qualified for the 2026 World Cup through the CONCACAF qualifying process. The Tico team has demonstrated consistent qualifying ability in recent cycles, though each time the competition with Mexico, the United States, Honduras, and Panama means the ticket doesn't come without enormous effort.\n\nCosta Rica always bases its qualification on solid defense and the key performances of its goalkeepers, especially Keylor Navas when available. Their style is more conservative than the attacking teams in the region, but has proven effective in securing the necessary points."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Costa Rica en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Costa Rica's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cual es el mejor resultado de Costa Rica en un Mundial?", "en": "What is Costa Rica's best result at a World Cup?" },
+            "answer": { "es": "El mejor resultado de Costa Rica fue el cuarto de final en Brasil 2014, donde ganaron el grupo con Uruguay, Italia e Inglaterra, eliminaron a Grecia en penales en octavos, y cayeron ante Holanda tambien en penales en cuartos. Fue la mayor hazana de la historia del futbol centroamericano.", "en": "Costa Rica's best result was the quarterfinal at Brazil 2014, where they topped the group with Uruguay, Italy, and England, eliminated Greece on penalties in the Round of 16, and fell to the Netherlands also on penalties in the quarterfinals. It was the greatest achievement in Central American football history." }
+          },
+          {
+            "question": { "es": "¿Es Keylor Navas el mejor jugador de la historia de Costa Rica?", "en": "Is Keylor Navas the greatest player in Costa Rica's history?" },
+            "answer": { "es": "Si, Keylor Navas es ampliamente considerado el mejor jugador de la historia del futbol costarricense. Su carrera en el Real Madrid, donde gano tres Champions League consecutivas (2016, 2017, 2018), lo convierte en el costarricense mas exitoso en la historia del futbol europeo de clubes.", "en": "Yes, Keylor Navas is widely considered the greatest player in Costa Rican football history. His career at Real Madrid, where he won three consecutive Champions League titles (2016, 2017, 2018), makes him the most successful Costa Rican in European club football history." }
+          },
+          {
+            "question": { "es": "¿Cuantas veces ha participado Costa Rica en un Mundial?", "en": "How many times has Costa Rica participated in a World Cup?" },
+            "answer": { "es": "Costa Rica ha participado en seis Copas del Mundo: Italia 1990, USA 1994, Alemania 2006, Brasil 2010 (aunque aqui los seis torneos son iteraciones), Brasil 2014 y Qatar 2022. El 2026 seria su septima participacion historica.", "en": "Costa Rica has participated in six World Cups: Italy 1990, USA 1994, Germany 2006, Brazil 2010, Brazil 2014, and Qatar 2022. 2026 would be their seventh historic appearance." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "Federacion Costarricense de Futbol", "url": "https://www.fedefutbol.com/" }
+        ]
+      }
     },
     {
       "id": "panama",
@@ -75,7 +649,102 @@
         "es": "Seleccion canalera que hizo su debut mundialista en Rusia 2018.",
         "en": "The Canal team that made their World Cup debut in Russia 2018."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Panama, conocida como Los Canaleros, es una de las historias mas bonitas del futbol centroamericano. Tras hacer su debut mundial en Rusia 2018 —la primera clasificacion de un pais con apenas 4 millones de habitantes— Panama regresa al Mundial 2026 con experiencia y hambre de demostrar que no fue un accidente. La asignacion de grupo esta pendiente del sorteo oficial.\n\nRolando Blackburn e Ismael Diaz son las puntas de un equipo que ha encontrado un estilo de juego solido bajo la direccion tecnica moderna. Panama juga con una intensidad y un orgullo que va mas alla del futbol: representan a un pais que ha demostrado al mundo que el tamano no define los limites de lo que se puede lograr.\n\nLa clasificacion de Panama al Mundial 2018 fue tan emotiva que el jugador y la celebracion se convirtieron en virales. Roman Torres, quien marco el gol de la clasificacion historica ante Costa Rica, lloro en el campo, y con el lloro toda una nacion. En 2026, el objetivo es ir mas lejos.",
+          "en": "Panama, known as Los Canaleros, is one of Central American football's most beautiful stories. After making their World Cup debut at Russia 2018 — the first qualification for a country of just 4 million inhabitants — Panama returns to the 2026 World Cup with experience and hunger to prove it was no accident. Group assignment is pending the official FIFA draw.\n\nRolando Blackburn and Ismael Diaz are the spearheads of a team that has found a solid playing style under modern technical direction. Panama plays with an intensity and pride that goes beyond football: they represent a country that has shown the world that size doesn't define the limits of what can be achieved.\n\nPanama's qualification for the 2018 World Cup was so emotional that the moment became viral. Roman Torres, who scored the historic qualifying goal against Costa Rica, cried on the pitch, and with him cried an entire nation. In 2026, the objective is to go further."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Panama hizo su debut mundialista en Rusia 2018 tras una clasificacion historica que genero escenas de celebracion masiva en el pais. En el torneo, Panama fue eliminada en la primera fase, perdiendo ante Belgica (3-0), Inglaterra (6-1) y Tunez (2-1), marcando sin embargo su primer gol mundialista por Roman Torres ante Inglaterra.\n\nA pesar de los resultados adversos, la participacion en Rusia 2018 fue una experiencia invaluable que el pais uso para construir una seleccion mas competitiva. Para el Mundial 2026, Panama llega con mas experiencia, una generacion consolidada y la ambicion de avanzar mas alla de la primera ronda.",
+            "en": "Panama made their World Cup debut at Russia 2018 following a historic qualification that sparked mass celebrations across the country. In the tournament, Panama was eliminated in the group stage, losing to Belgium (3-0), England (6-1), and Tunisia (2-1), but scoring their first ever World Cup goal through Roman Torres against England.\n\nDespite the adverse results, the Russia 2018 participation was an invaluable experience that the country used to build a more competitive team. For the 2026 World Cup, Panama arrives with more experience, a consolidated generation, and the ambition to advance beyond the group stage."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Rolando Blackburn",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Tigres UANL",
+              "note": {
+                "es": "El goleador referente de la seleccion panamena. Blackburn tiene la capacidad para finalizar con eficiencia y su presencia en el area es fundamental para el ataque de Los Canaleros.",
+                "en": "Panama's reference striker. Blackburn has the ability to finish efficiently, and his presence in the box is fundamental to Los Canaleros' attack."
+              }
+            },
+            {
+              "name": "Ismael Diaz",
+              "position": { "es": "Extremo / Delantero", "en": "Winger / Forward" },
+              "club": "Hajduk Split",
+              "note": {
+                "es": "Un extremo vertiginoso con capacidad de desborde y gol. Diaz representa la nueva cara de un Panama mas explosivo y directo, siendo una amenaza constante para las defensas rivales.",
+                "en": "A fast-paced winger with dribbling and goalscoring ability. Diaz represents the new face of a more explosive and direct Panama, being a constant threat to opposing defenses."
+              }
+            },
+            {
+              "name": "Adalberto Carrasquilla",
+              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "club": "Houston Dynamo",
+              "note": {
+                "es": "El cerebro del mediocampo panameno. Carrasquilla aporta organizacion, vision de juego y la capacidad de controlar el ritmo del partido, siendo el jugador mas tecnico del esquema nacional.",
+                "en": "The brain of Panama's midfield. Carrasquilla provides organization, vision, and the ability to control the pace of the game, being the most technical player in the national setup."
+              }
+            },
+            {
+              "name": "Jose Rodriguez",
+              "position": { "es": "Lateral / Mediocampista", "en": "Fullback / Midfielder" },
+              "club": "Orlando City",
+              "note": {
+                "es": "Un jugador versatil que puede actuar tanto de lateral como de mediocampista. Rodriguez aporta dinamismo y capacidad de subir al ataque, enriqueciendo el juego lateral de Panama.",
+                "en": "A versatile player who can act as both fullback and midfielder. Rodriguez brings dynamism and the ability to join attacks, enriching Panama's wide play."
+              }
+            },
+            {
+              "name": "Orlando Mosquera",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Independiente Santa Fe",
+              "note": {
+                "es": "Un portero joven y prometedor que ha tomado el relevo en el arco panameno. Mosquera ha demostrado reflejos rapidos y serenidad bajo presion, cualidades esenciales para competir a nivel mundial.",
+                "en": "A young and promising goalkeeper who has taken over in Panama's goal. Mosquera has demonstrated quick reflexes and composure under pressure, essential qualities for competing at world level."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Panama clasifico al Mundial 2026 a traves del proceso de clasificacion de la CONCACAF. La seleccion canalera ha demostrado una consistencia clasificatoria mayor que en decadas anteriores, aprovechando el desarrollo del futbol en el pais y la incorporacion de jugadores de la diaspora.\n\nDespues de su debut en 2018, Panama establecio que clasifica a los Mundiales para competir, no solo para participar. La experiencia acumulada en Rusia y el crecimiento individual de sus jugadores en ligas competitivas dan a Los Canaleros una base mas solida para enfrentar los desafios del Mundial 2026.",
+            "en": "Panama qualified for the 2026 World Cup through the CONCACAF qualifying process. The Canalero team has demonstrated greater qualifying consistency than in previous decades, leveraging football development in the country and the incorporation of diaspora players.\n\nAfter their 2018 debut, Panama established that they qualify for World Cups to compete, not just to participate. The experience accumulated in Russia and the individual growth of their players in competitive leagues give Los Canaleros a stronger foundation for facing the challenges of the 2026 World Cup."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Panama en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Panama's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantas veces ha participado Panama en un Mundial?", "en": "How many times has Panama participated in a World Cup?" },
+            "answer": { "es": "Panama ha participado una vez en un Mundial, en Rusia 2018, donde fue su debut historico. El 2026 sera su segunda participacion. En 2018, Panama perdio los tres partidos del grupo ante Belgica (3-0), Inglaterra (6-1) y Tunez (2-1), pero marco el primero gol mundialista de su historia ante Inglaterra.", "en": "Panama has participated once in a World Cup, at Russia 2018, where it was their historic debut. 2026 will be their second appearance. In 2018, Panama lost all three group matches against Belgium (3-0), England (6-1), and Tunisia (2-1), but scored the first World Cup goal in their history against England." }
+          },
+          {
+            "question": { "es": "¿Como clasifico Panama al Mundial 2018 por primera vez?", "en": "How did Panama qualify for the 2018 World Cup for the first time?" },
+            "answer": { "es": "Panama clasifico al Mundial 2018 de manera dramatica: Roman Torres marco el gol de la clasificacion ante Costa Rica en el ultimo partido de las eliminatorias CONCACAF, en un resultado que dependia de multiples resultados simultaneos. La celebracion fue tan masiva que el gobierno declaro dia festivo nacional.", "en": "Panama qualified for the 2018 World Cup dramatically: Roman Torres scored the qualifying goal against Costa Rica in the final CONCACAF qualifying match, in a result that depended on multiple simultaneous results. The celebration was so massive that the government declared a national holiday." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de Panama?", "en": "Who is Panama's best player?" },
+            "answer": { "es": "Adalberto Carrasquilla es generalmente considerado el jugador mas tecnico de Panama, mientras que Rolando Blackburn es el maximo goleador de la seleccion actual. Roman Torres, quien marco el historico gol de la clasificacion en 2017, es la leyenda mas grande del futbol panameno.", "en": "Adalberto Carrasquilla is generally considered Panama's most technical player, while Rolando Blackburn is the current team's top scorer. Roman Torres, who scored the historic qualifying goal in 2017, is the greatest legend in Panamanian football." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "FEPAFUT Panama", "url": "https://www.fepafut.com/" }
+        ]
+      }
     },
     {
       "id": "el-salvador",
@@ -86,7 +755,102 @@
         "es": "La Selecta busca regresar a un Mundial despues de mas de cuatro decadas.",
         "en": "La Selecta seeks to return to a World Cup after more than four decades."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "El Salvador, conocida como La Selecta o La Azul y Blanco, llega al Mundial 2026 en lo que es uno de los regresos mas emotivos del futbol centroamericano. La ultima vez que El Salvador participo en una Copa del Mundo fue en Argentina 1982, hace 44 anos. Esta nueva generacion de salvadorenos —muchos con doble nacionalidad y formados en ligas europeas y norteamericanas— lleva el peso y el orgullo de toda una nacion hambrienta de futbol mundial. La asignacion de grupo esta pendiente del sorteo oficial.\n\nBryan Tamacas, Nelson Bonilla y el portero Mario Gonzalez forman el nucleo de una seleccion que ha crecido enormemente en calidad tecnica. La comunidad salvadorena es una de las mas grandes de Centroamerica en Estados Unidos, y su presencia en los estadios norteamericanos sera masiva y apasionada.\n\nLa historia de El Salvador en el futbol tiene momentos epicos: el pais participo en Mundiales en 1970 y 1982, y en 1982 recibio la derrota mas grande de la historia del torneo (10-1 ante Hungria). Pero tambien tiene la gloria de haber clasificado, y en 2026, La Selecta busca escribir una historia completamente nueva.",
+          "en": "El Salvador, known as La Selecta or La Azul y Blanco, arrives at the 2026 World Cup in one of Central American football's most emotional returns. The last time El Salvador participated in a World Cup was Argentina 1982, 44 years ago. This new generation of Salvadorans — many with dual nationality and trained in European and North American leagues — carries the weight and pride of an entire nation hungry for world-stage football. Group assignment is pending the official FIFA draw.\n\nBryan Tamacas, Nelson Bonilla, and goalkeeper Mario Gonzalez form the core of a team that has grown enormously in technical quality. The Salvadoran community is one of the largest from Central America in the United States, and their presence at North American stadiums will be massive and passionate.\n\nEl Salvador's football history has epic moments: the country participated in World Cups in 1970 and 1982, and in 1982 suffered the largest defeat in tournament history (10-1 against Hungary). But it also has the glory of having qualified, and in 2026, La Selecta seeks to write a completely new story."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "El Salvador ha participado en dos Copas del Mundo: Mexico 1970 y Argentina 1982. En 1970, fueron eliminados en la primera fase perdiendo los tres partidos. En 1982, protagonizaron la mayor derrota de la historia de los Mundiales cuando fueron goleados 10-1 por Hungria; sin embargo, esa participacion sigue siendo un hito de orgullo nacional porque clasificaron en dos torneos seguidos.\n\nDespues de 1982, El Salvador no volvio a clasificar a un Mundial durante 44 anos. La clasificacion para 2026 representa el fin de uno de los periodos de ausencia mas largos de la historia mundialista y el inicio de una nueva era para el futbol salvadoreno.",
+            "en": "El Salvador has participated in two World Cups: Mexico 1970 and Argentina 1982. In 1970, they were eliminated in the group stage losing all three matches. In 1982, they suffered the largest defeat in World Cup history when they were beaten 10-1 by Hungary; however, that participation remains a national pride milestone because they qualified in two consecutive tournaments.\n\nAfter 1982, El Salvador did not qualify for a World Cup for 44 years. Qualification for 2026 represents the end of one of the longest absences in World Cup history and the beginning of a new era for Salvadoran football."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Bryan Tamacas",
+              "position": { "es": "Mediapunta / Extremo", "en": "Attacking Midfielder / Winger" },
+              "club": "New England Revolution",
+              "note": {
+                "es": "El jugador mas creativo de La Selecta. Tamacas tiene la vision de juego y la calidad tecnica para desestabilizar defensas y crear oportunidades para sus companeros en el ataque salvadoreno.",
+                "en": "La Selecta's most creative player. Tamacas has the vision and technical quality to destabilize defenses and create opportunities for his teammates in the Salvadoran attack."
+              }
+            },
+            {
+              "name": "Nelson Bonilla",
+              "position": { "es": "Delantero / Extremo", "en": "Forward / Winger" },
+              "club": "Alajuelense",
+              "note": {
+                "es": "Uno de los jugadores mas experimentados de la seleccion. Bonilla aporta gol, experiencia y liderazgo a un equipo en construccion, siendo el referente ofensivo de La Selecta en momentos importantes.",
+                "en": "One of the national team's most experienced players. Bonilla brings goals, experience, and leadership to a team under construction, being La Selecta's offensive reference in important moments."
+              }
+            },
+            {
+              "name": "Enrico Dubordieu",
+              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "club": "Nacional de Uruguay",
+              "note": {
+                "es": "Un mediocampista con formacion sudamericana que aporta calidad tecnica y organizacion al mediocampo salvadoreno. Dubordieu es clave para el control del juego y la distribucion del balon.",
+                "en": "A midfielder with South American training who brings technical quality and organization to El Salvador's midfield. Dubordieu is key for game control and ball distribution."
+              }
+            },
+            {
+              "name": "Kevin Reyes",
+              "position": { "es": "Extremo Derecho", "en": "Right Winger" },
+              "club": "New England Revolution",
+              "note": {
+                "es": "Un extremo velocista con capacidad de desborde. Reyes aporta la profundidad y el peligro por banda que necesita El Salvador para competir con los mejores equipos de la CONCACAF.",
+                "en": "A pacey winger with dribbling ability. Reyes provides the width and danger on the flank that El Salvador needs to compete with CONCACAF's best teams."
+              }
+            },
+            {
+              "name": "Mario Gonzalez",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Tigres UANL",
+              "note": {
+                "es": "El guardameta titular de El Salvador, con experiencia en la Liga MX de Mexico. Gonzalez ha sido un pilar fundamental en la clasificacion de La Selecta, con actuaciones solidas bajo los palos que han dado confianza al equipo.",
+                "en": "El Salvador's starting goalkeeper, with experience in Mexico's Liga MX. Gonzalez has been a fundamental pillar in La Selecta's qualification, with solid performances in goal that have given the team confidence."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "El Salvador clasifico al Mundial 2026 a traves del proceso de clasificacion de la CONCACAF tras 44 anos de ausencia. El camino de La Selecta fue uno de los mas emotivos de toda la zona, con una generacion que lleva el peso de terminar con la larga espera del futbol salvadoreno.\n\nLa clasificacion de El Salvador es un reflejo del crecimiento del futbol en el pais y del trabajo de una nueva generacion de jugadores que han optado por representar a la nacion de sus raices a pesar de tener opciones de jugar en otras selecciones. Su historia en la eliminatoria fue de constancia y determinacion.",
+            "en": "El Salvador qualified for the 2026 World Cup through the CONCACAF qualifying process after 44 years of absence. La Selecta's journey was one of the most emotional in the entire zone, with a generation carrying the weight of ending Salvadoran football's long wait.\n\nEl Salvador's qualification reflects the growth of football in the country and the work of a new generation of players who have chosen to represent the nation of their roots despite having options to play for other national teams. Their qualifying story was one of consistency and determination."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de El Salvador en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "El Salvador's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantos anos lleva El Salvador sin ir a un Mundial?", "en": "How many years has El Salvador gone without going to a World Cup?" },
+            "answer": { "es": "El Salvador no habia clasificado a un Mundial desde Argentina 1982, lo que representa 44 anos de ausencia. La clasificacion para 2026 es el regreso mas esperado del futbol centroamericano y un momento de celebracion enorme para toda la nacion salvadorena.", "en": "El Salvador had not qualified for a World Cup since Argentina 1982, representing 44 years of absence. Qualification for 2026 is the most awaited return in Central American football and a moment of enormous celebration for the entire Salvadoran nation." }
+          },
+          {
+            "question": { "es": "¿Cual fue el resultado mas famoso de El Salvador en un Mundial?", "en": "What was El Salvador's most famous result at a World Cup?" },
+            "answer": { "es": "El resultado mas famoso —aunque no el mas celebrado— fue la derrota 10-1 ante Hungria en Argentina 1982, que sigue siendo la mayor goleada en la historia de los Mundiales. Sin embargo, El Salvador tambien clasifico al Mundial de 1970, lo que significa que participaron en dos Mundiales consecutivos, algo que pocos paises de la region han logrado.", "en": "The most famous result — though not the most celebrated — was the 10-1 defeat against Hungary at Argentina 1982, which remains the biggest defeat in World Cup history. However, El Salvador also qualified for the 1970 World Cup, meaning they participated in two consecutive World Cups, something few countries in the region have achieved." }
+          },
+          {
+            "question": { "es": "¿Como se llama la seleccion de El Salvador?", "en": "What is El Salvador's national team called?" },
+            "answer": { "es": "La seleccion de El Salvador se conoce como 'La Selecta' o 'La Azul y Blanco' en referencia a los colores de su uniforme. Tambien se le conoce como 'Los Cuscatlecos', en honor a Cuscatlan, el nombre indigena del territorio que hoy es El Salvador.", "en": "El Salvador's national team is known as 'La Selecta' or 'La Azul y Blanco' in reference to the colors of their uniform. They are also known as 'Los Cuscatlecos', in honor of Cuscatlan, the indigenous name of the territory that is today El Salvador." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "FESFUT El Salvador", "url": "https://www.fesfut.org.sv/" }
+        ]
+      }
     },
     {
       "id": "brazil",
@@ -97,7 +861,102 @@
         "es": "La seleccion mas exitosa en la historia de los Mundiales con cinco titulos.",
         "en": "The most successful team in World Cup history with five titles."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Brasil es la unica seleccion en haber participado en todos y cada uno de los Mundiales de la FIFA desde el primero en 1930 hasta el presente. Con cinco titulos (1958, 1962, 1970, 1994, 2002), la Canarinha es, sin discusion, la seleccion mas exitosa de la historia del futbol. Para el Mundial 2026, Brasil busca su sexto titulo, el primero en 24 anos. La asignacion de grupo esta pendiente del sorteo oficial.\n\nLa nueva generacion brasilena es liderada por Vinicius Jr., el extremo del Real Madrid que se ha consolidado como uno de los dos o tres mejores jugadores del mundo. A su lado, Rodrygo, Endrick (quien jugaria su primer Mundial con 19 anos) y la veterania de Casemiro y Alisson conforman un equipo con equilibrio entre juventud y experiencia.\n\nBrasil lleva al torneo el peso y la magia de su historia futbolistica: el Jogo Bonito, el baile con el balon, la alegria inimitable del futbol carioca. Para cualquier aficionado latinoamericano, ver jugar a Brasil en su mejor version es una experiencia que trasciende el resultado.",
+          "en": "Brazil is the only team to have participated in every single FIFA World Cup since the first in 1930 to the present. With five titles (1958, 1962, 1970, 1994, 2002), the Canarinha is, without question, the most successful team in football history. For the 2026 World Cup, Brazil seeks their sixth title, the first in 24 years. Group assignment is pending the official FIFA draw.\n\nBrazil's new generation is led by Vinicius Jr., the Real Madrid winger who has established himself as one of the two or three best players in the world. Alongside him, Rodrygo, Endrick (who would play his first World Cup at 19), and the experience of Casemiro and Alisson form a team balancing youth and experience.\n\nBrazil brings to the tournament the weight and magic of its football history: the Jogo Bonito, the dance with the ball, the inimitable joy of carioca football. For any Latin American fan, watching Brazil play at their best is an experience that transcends the result."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Brasil es el unico pais del mundo que ha participado en todos los 22 Mundiales disputados hasta 2022. Sus cinco titulos: Suecia 1958 (con Pele de 17 anos), Chile 1962, Mexico 1970 (considerado el mejor equipo de la historia), Estados Unidos 1994, y Japon/Corea 2002 con Ronaldo goleador. Ademas de sus victorias, Brasil tiene una coleccion inigualable de momentos iconicos: el 'gol del siglo' de Carlos Alberto en 1970, las dribladas de Garrincha, los golazo de Ronaldo en 2002.\n\nEl momento mas doloroso fue el 'Mineirazo' de Brasil 2014, cuando Alemania les gano 7-1 en semifinales en Belo Horizonte, ante su propia aficion. En Qatar 2022, Brasil llego a cuartos de final pero fue eliminado por Croacia en penales. La sed de titulo es enorme.",
+            "en": "Brazil is the only country in the world to have participated in all 22 World Cups held through 2022. Their five titles: Sweden 1958 (with 17-year-old Pele), Chile 1962, Mexico 1970 (considered the greatest team in history), United States 1994, and Japan/Korea 2002 with Ronaldo as top scorer. Beyond their victories, Brazil has an unmatched collection of iconic moments: Carlos Alberto's 'goal of the century' in 1970, Garrincha's dribbles, and Ronaldo's goals in 2002.\n\nThe most painful moment was the 'Mineirazo' of Brazil 2014, when Germany beat them 7-1 in the semifinals in Belo Horizonte, in front of their own fans. In Qatar 2022, Brazil reached the quarterfinals but were eliminated by Croatia on penalties. The thirst for a title is enormous."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Vinicius Jr.",
+              "position": { "es": "Extremo Izquierdo", "en": "Left Winger" },
+              "club": "Real Madrid",
+              "note": {
+                "es": "Vinicius es el mejor jugador del mundo en su posicion y posiblemente el futbolista mas emocionante del planeta. Su velocidad, su descaro ante el gol y su carisma lo convierten en el gran referente de la seleccion brasilena rumbo al titulo en 2026.",
+                "en": "Vinicius is the best player in the world in his position and possibly the most exciting footballer on the planet. His pace, audacity in front of goal, and charisma make him the great reference of the Brazilian team in pursuit of the title in 2026."
+              }
+            },
+            {
+              "name": "Rodrygo",
+              "position": { "es": "Extremo / Mediapunta", "en": "Winger / Attacking Midfielder" },
+              "club": "Real Madrid",
+              "note": {
+                "es": "Companero de Vinicius en el Real Madrid y en la seleccion, Rodrygo es un jugador de big matches. Su capacidad para aparecer en momentos decisivos lo hace peligrosísimo en fases de eliminacion directa.",
+                "en": "Vinicius's teammate at Real Madrid and the national team, Rodrygo is a big-match player. His ability to appear in decisive moments makes him extremely dangerous in knockout phases."
+              }
+            },
+            {
+              "name": "Endrick",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Real Madrid",
+              "note": {
+                "es": "El prodigio brasileno que firmo con el Real Madrid siendo adolescente. Endrick podria ser el jugador mas joven de Brasil en un Mundial desde Pele. Su gol de chilena ante Uruguay en 2023 ya es legendario.",
+                "en": "The Brazilian prodigy who signed with Real Madrid as a teenager. Endrick could be Brazil's youngest World Cup player since Pele. His overhead kick goal against Uruguay in 2023 is already legendary."
+              }
+            },
+            {
+              "name": "Casemiro",
+              "position": { "es": "Mediocampista Defensivo", "en": "Defensive Midfielder" },
+              "club": "Manchester United",
+              "note": {
+                "es": "El guerrero del mediocampo brasileno. Casemiro aporta la solidez defensiva y el liderazgo que necesita el equipo. Su experiencia ganando titulos en Europa es invaluable para guiar a los jovenes.",
+                "en": "The warrior of Brazil's midfield. Casemiro provides the defensive solidity and leadership the team needs. His experience winning titles in Europe is invaluable for guiding the younger players."
+              }
+            },
+            {
+              "name": "Alisson",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Liverpool",
+              "note": {
+                "es": "Considerado por muchos el mejor portero del mundo. Alisson combina reflejos excepcionales con una capacidad con el balon y una presencia bajo los palos que le da seguridad a toda la defensa brasilena.",
+                "en": "Considered by many to be the best goalkeeper in the world. Alisson combines exceptional reflexes with ball-playing ability and a commanding presence that gives security to the entire Brazilian defense."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Brasil clasifica a traves de las Eliminatorias Sudamericanas de la CONMEBOL, el proceso clasificatorio mas competitivo del mundo donde diez selecciones disputan entre si en partidos de ida y vuelta durante casi dos anos. Brasil siempre es uno de los primeros en asegurar su boleto, aunque las eliminatorias del ciclo 2026 fueron mas disputadas de lo habitual.\n\nEl sistema de eliminatorias de la CONMEBOL clasifica directamente a seis selecciones y la septima disputa un repechaje intercontinental. Brasil, como potencia historica, habitualmente termina entre los primeros puestos, aunque cada partido ante rivales de la talla de Argentina, Uruguay y Colombia es una batalla de alto nivel.",
+            "en": "Brazil qualifies through the CONMEBOL South American Qualifiers, the most competitive qualifying process in the world where ten teams play each other home and away over nearly two years. Brazil always ranks among the first to secure their ticket, though the 2026 cycle qualifiers were more contested than usual.\n\nThe CONMEBOL qualifying system directly qualifies six teams and the seventh plays in an intercontinental playoff. Brazil, as a historic power, typically finishes in the top positions, though every match against rivals of the caliber of Argentina, Uruguay, and Colombia is a high-level battle."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Brasil en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Brazil's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantas veces ha ganado Brasil el Mundial?", "en": "How many times has Brazil won the World Cup?" },
+            "answer": { "es": "Brasil ha ganado el Mundial cinco veces: en Suecia 1958, Chile 1962, Mexico 1970, Estados Unidos 1994 y Corea/Japon 2002. Es el pais con mas titulos mundiales en la historia del futbol, seguido por Alemania e Italia con cuatro cada uno.", "en": "Brazil has won the World Cup five times: in Sweden 1958, Chile 1962, Mexico 1970, the United States 1994, and Korea/Japan 2002. They are the country with the most world titles in football history, followed by Germany and Italy with four each." }
+          },
+          {
+            "question": { "es": "¿Es Brasil el favorito para ganar el Mundial 2026?", "en": "Is Brazil the favorite to win the 2026 World Cup?" },
+            "answer": { "es": "Brasil siempre se cuenta entre los candidatos principales por su calidad de plantilla y su historial. Para 2026, la combinacion de Vinicius Jr., Rodrygo, Endrick y la solidez de Alisson los convierte en uno de los equipos mas completos del torneo, aunque Argentina como campeon vigente y las grandes potencias europeas tambien aspiran al titulo.", "en": "Brazil is always counted among the main candidates due to their squad quality and track record. For 2026, the combination of Vinicius Jr., Rodrygo, Endrick, and the solidity of Alisson makes them one of the most complete teams in the tournament, though defending champions Argentina and major European powers also aspire to the title." }
+          },
+          {
+            "question": { "es": "¿Quién es el maximo goleador historico de Brasil en Mundiales?", "en": "Who is Brazil's all-time top scorer at World Cups?" },
+            "answer": { "es": "Ronaldo Nazario es el maximo goleador de Brasil en Mundiales con 15 goles en cuatro torneos (1994, 1998, 2002, 2006). Su actuacion en 2002, donde marco 8 goles incluyendo un doblete en la final ante Alemania, es considerada una de las mejores actuaciones individuales en la historia del torneo.", "en": "Ronaldo Nazario is Brazil's all-time top scorer at World Cups with 15 goals across four tournaments (1994, 1998, 2002, 2006). His performance in 2002, where he scored 8 goals including a brace in the final against Germany, is considered one of the greatest individual performances in tournament history." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "CBF Brasil", "url": "https://www.cbf.com.br/" }
+        ]
+      }
     },
     {
       "id": "argentina",
@@ -108,7 +967,102 @@
         "es": "Campeonas defensoras del titulo tras su victoria en Qatar 2022.",
         "en": "Defending champions after their victory in Qatar 2022."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Argentina es el campeon vigente de la Copa del Mundo FIFA tras su coronacion en Qatar 2022. Con tres titulos mundiales (1978, 1986, 2022), la Albiceleste llega al Mundial 2026 para defender su corona y es una de las grandes favoritas del torneo. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl centro de todo es Lionel Messi, quien con 38 anos en el momento del torneo podria estar disputando lo que seria su sexto y ultimo Mundial. Ganar en Qatar 2022 completó su legado de leyenda absoluta del futbol, pero en 2026 Argentina tiene una nueva oportunidad de escribir historia: ninguna seleccion ha ganado Mundiales consecutivos desde Brasil en 1958 y 1962.\n\nMas alla de Messi, Argentina tiene una generacion brillante: Julian Alvarez, goleador en Qatar, Lautaro Martinez, artillero de clase mundial, y Rodrigo De Paul, el motor del mediocampo. Con Emiliano Martinez en el arco, la Albiceleste es un equipo completo en todas las lineas.",
+          "en": "Argentina is the reigning FIFA World Cup champion after their coronation at Qatar 2022. With three world titles (1978, 1986, 2022), the Albiceleste arrives at the 2026 World Cup to defend their crown and is one of the tournament's heavy favorites. Group assignment is pending the official FIFA draw.\n\nAt the center of everything is Lionel Messi, who at 38 years old during the tournament could be playing what would be his sixth and final World Cup. Winning in Qatar 2022 completed his legacy as football's absolute legend, but in 2026 Argentina has another chance to make history: no team has won consecutive World Cups since Brazil in 1958 and 1962.\n\nBeyond Messi, Argentina has a brilliant generation: Julian Alvarez, top scorer in Qatar, Lautaro Martinez, a world-class finisher, and Rodrigo De Paul, the engine of midfield. With Emiliano Martinez in goal, the Albiceleste is a complete team across all lines."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Argentina ha participado en 19 Copas del Mundo con un historial extraordinario: tres titulos (1978 como anfitrion con Mario Kempes, 1986 con Maradona y el partido contra Inglaterra incluyendo la 'Mano de Dios' y el 'Gol del Siglo', y 2022 con Messi en Qatar), subcampeon en 1930 y 1990, y tercer lugar en 1978 (aunque ese conteo esta incluido en el titulo). Han llegado a las semifinales en numerosas ocasiones.\n\nEl titulo en Qatar 2022 fue el mas emotivo de la era moderna: Argentina llego a la final tras eliminar a Holanda en cuartos y Croacia en semis, y vencio a Francia en una de las finales mas espectaculares de la historia del futbol. Messi marco dos goles en la final regular y convirtio en la tanda de penales.",
+            "en": "Argentina has participated in 19 World Cups with an extraordinary track record: three titles (1978 as hosts with Mario Kempes, 1986 with Maradona including the 'Hand of God' and 'Goal of the Century' against England, and 2022 with Messi in Qatar), runner-up in 1930 and 1990, and multiple semifinal appearances.\n\nThe 2022 Qatar title was the most emotional of the modern era: Argentina reached the final after eliminating the Netherlands in the quarters and Croatia in the semis, then defeating France in one of the most spectacular finals in football history. Messi scored two goals in regular time and converted in the penalty shootout."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Lionel Messi",
+              "position": { "es": "Mediapunta / Extremo Derecho", "en": "Attacking Midfielder / Right Winger" },
+              "club": "Inter Miami CF",
+              "note": {
+                "es": "El mejor jugador de la historia del futbol. Con 38 anos en el torneo, Messi podria estar disputando su ultimo Mundial, lo que convierte cada uno de sus momentos en algo historico. Capitan, idolo y referente absoluto de la Argentina.",
+                "en": "The greatest player in football history. At 38 years old during the tournament, Messi could be playing his last World Cup, making every one of his moments historic. Captain, idol, and absolute reference of Argentina."
+              }
+            },
+            {
+              "name": "Julian Alvarez",
+              "position": { "es": "Delantero / Extremo", "en": "Forward / Winger" },
+              "club": "Atletico de Madrid",
+              "note": {
+                "es": "El 'Arana' fue la gran revelacion de Qatar 2022, donde marco 4 goles incluyendo dos ante Croacia en semis. Con el Atletico de Madrid, Alvarez ha consolidado su nivel y se posiciona como la gran estrella argentina del futuro.",
+                "en": "The 'Spider' was the great revelation of Qatar 2022, scoring 4 goals including two against Croatia in the semis. With Atletico de Madrid, Alvarez has consolidated his level and positions himself as the great Argentine star of the future."
+              }
+            },
+            {
+              "name": "Lautaro Martinez",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Inter de Milan",
+              "note": {
+                "es": "El 'Toro' es un delantero completo, capaz de marcar en cualquier circunstancia. Su capacidad fisica, su remate y su pressing lo convierten en una pieza vital del sistema de Scaloni.",
+                "en": "The 'Bull' is a complete striker, capable of scoring in any circumstance. His physical ability, finishing, and pressing make him a vital piece of Scaloni's system."
+              }
+            },
+            {
+              "name": "Rodrigo De Paul",
+              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "club": "Atletico de Madrid",
+              "note": {
+                "es": "El motor del mediocampo argentino. De Paul combina intensidad, vision de juego y una capacidad de trabajo incansable que hace que Argentina funcione como equipo cohesionado.",
+                "en": "The engine of Argentina's midfield. De Paul combines intensity, vision, and relentless work rate that makes Argentina function as a cohesive team."
+              }
+            },
+            {
+              "name": "Emiliano Martinez",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Aston Villa",
+              "note": {
+                "es": "El 'Dibu' es famoso por sus actuaciones en tandas de penales, donde ha salvado a Argentina en momentos cruciales de Qatar 2022. Su presencia bajo los palos y su intensidad competitiva son unicos.",
+                "en": "The 'Dibu' is famous for his performances in penalty shootouts, where he saved Argentina at crucial moments in Qatar 2022. His presence in goal and competitive intensity are unique."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Argentina clasifica a traves de las Eliminatorias Sudamericanas de la CONMEBOL, donde disputa 18 partidos contra las otras nueve selecciones de Sudamerica en un sistema de liga de todos contra todos. Como campeon del mundo, Argentina llega con la presion y el privilegio de defender su titulo.\n\nEl proceso clasificatorio de la CONMEBOL es el mas exigente del mundo: no hay 'partidos faciles' cuando enfrentas a Brasil, Uruguay, Colombia o Ecuador. Argentina, bajo la direccion tecnica de Lionel Scaloni (el mismo entrenador del titulo de Qatar 2022), ha mantenido un nivel alto durante todo el proceso.",
+            "en": "Argentina qualifies through the CONMEBOL South American Qualifiers, playing 18 matches against the other nine South American teams in an all-play-all league system. As world champions, Argentina arrives with the pressure and privilege of defending their title.\n\nCONMEBOL's qualifying process is the most demanding in the world: there are no 'easy games' when facing Brazil, Uruguay, Colombia, or Ecuador. Argentina, under the technical direction of Lionel Scaloni (the same coach from the Qatar 2022 title), has maintained a high level throughout the process."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Argentina en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Argentina's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Jugara Messi en el Mundial 2026?", "en": "Will Messi play at the 2026 World Cup?" },
+            "answer": { "es": "Lionel Messi ha expresado su deseo de jugar el Mundial 2026 en casa de America del Norte. Con 38 anos durante el torneo, seria su sexto Mundial y potencialmente el ultimo de su carrera. Su nivel en el Inter Miami y con la seleccion argentina indica que es un candidato firme para estar en la convocatoria.", "en": "Lionel Messi has expressed his desire to play the 2026 World Cup in North America. At 38 years old during the tournament, it would be his sixth World Cup and potentially the last of his career. His level at Inter Miami and with the Argentine national team indicates he is a strong candidate to be in the squad." }
+          },
+          {
+            "question": { "es": "¿Puede Argentina ganar dos Mundiales consecutivos?", "en": "Can Argentina win back-to-back World Cups?" },
+            "answer": { "es": "Argentina podria convertirse en el primer equipo en ganar Mundiales consecutivos desde Brasil en 1958-1962 si repite en 2026. Con Messi, Julian Alvarez, Lautaro Martinez y el sistema probado de Scaloni, Argentina es uno de los maximos favoritos, aunque la competencia de Brasil, Francia y otras potencias europeas es enorme.", "en": "Argentina could become the first team to win back-to-back World Cups since Brazil in 1958-1962 if they repeat in 2026. With Messi, Julian Alvarez, Lautaro Martinez, and Scaloni's proven system, Argentina is one of the top favorites, though competition from Brazil, France, and other European powers is enormous." }
+          },
+          {
+            "question": { "es": "¿Cuantos titulos mundiales tiene Argentina?", "en": "How many world titles does Argentina have?" },
+            "answer": { "es": "Argentina ha ganado la Copa del Mundo tres veces: en 1978 (como anfitrion, con Mario Kempes), en 1986 (con Diego Maradona en Mexico, en el icónico torneo que incluyó la 'Mano de Dios') y en 2022 (con Lionel Messi en Qatar). Es el tercer pais con mas titulos mundiales junto a Francia.", "en": "Argentina has won the World Cup three times: in 1978 (as hosts, with Mario Kempes), in 1986 (with Diego Maradona in Mexico, in the iconic tournament that included the 'Hand of God'), and in 2022 (with Lionel Messi in Qatar). They are the joint-third most successful country with France." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "AFA Argentina", "url": "https://www.afa.com.ar/" }
+        ]
+      }
     },
     {
       "id": "uruguay",
@@ -119,7 +1073,102 @@
         "es": "Dos veces campeon del mundo con una tradicion futbolera que supera su tamano.",
         "en": "Two-time world champion with a football tradition that exceeds its size."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Uruguay es una de las grandes historias del futbol mundial: un pais de apenas 3.5 millones de habitantes que ha ganado la Copa del Mundo dos veces (1930 y 1950) y ha competido consistentemente entre los mejores del planeta durante casi un siglo. Los Charruas llegan al Mundial 2026 con una nueva generacion de estrellas que buscan honrar ese legado. La asignacion de grupo esta pendiente del sorteo oficial.\n\nDarwin Nunez, el explosivo delantero del Liverpool, y Federico Valverde, el incansable mediocampista del Real Madrid, lideran una seleccion que combina el poder fisico tradicional uruguayo con un futbol tecnico de primer nivel europeo. Rodrigo Bentancur en el mediocampo y Sergio Rochet en el arco completan una estructura solida.\n\nUruguay ha sido historicamente la seleccion que mas ha logrado en relacion a su poblacion en el futbol mundial. Esa mentalidad de galpense, de que el tamano no importa cuando hay caracter y calidad, es el ADN que llevan a cada partido.",
+          "en": "Uruguay is one of football's great stories: a country of barely 3.5 million inhabitants that has won the World Cup twice (1930 and 1950) and competed consistently among the world's best for nearly a century. The Charruas arrive at the 2026 World Cup with a new generation of stars seeking to honor that legacy. Group assignment is pending the official FIFA draw.\n\nDarwin Nunez, Liverpool's explosive striker, and Federico Valverde, Real Madrid's tireless midfielder, lead a team that combines traditional Uruguayan physical strength with European-level technical football. Rodrigo Bentancur in midfield and Sergio Rochet in goal complete a solid structure.\n\nUruguay has historically been the team that has achieved the most relative to its population in world football. That galpense mentality — that size doesn't matter when you have character and quality — is the DNA they carry into every match."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Uruguay tiene un historial mundialista que ninguna seleccion de su tamano puede igualar. Organizaron y ganaron el primer Mundial de la historia en 1930, venciendo a Argentina 4-2 en la final en el Estadio Centenario de Montevideo. En 1950, protagonizaron el 'Maracanazo', considerado la mayor sorpresa en la historia del futbol: ganaron el titulo en el estadio Maracana de Rio de Janeiro ante 200.000 aficionados brasilenoss, venciendo 2-1 a Brasil.\n\nUruguay fue cuarto en 2010 (Sudafrica), donde llegaron a semifinales con un equipo liderado por Diego Forlan (Balon de Oro del torneo). En Qatar 2022 fueron eliminados en la fase de grupos de forma dramatica. Con 14 participaciones mundialistas, la Celeste busca volver a las instancias finales del torneo en 2026.",
+            "en": "Uruguay has a World Cup record that no team of their size can match. They organized and won the first World Cup in history in 1930, defeating Argentina 4-2 in the final at Estadio Centenario in Montevideo. In 1950, they produced the 'Maracanazo', considered the greatest upset in football history: they won the title at Maracana stadium in Rio de Janeiro before 200,000 Brazilian fans, defeating Brazil 2-1.\n\nUruguay finished fourth in 2010 (South Africa), reaching the semifinals with a team led by Diego Forlan (tournament Golden Ball winner). In Qatar 2022 they were dramatically eliminated in the group stage. With 14 World Cup appearances, La Celeste seeks to return to the final stages of the tournament in 2026."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Darwin Nunez",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Liverpool",
+              "note": {
+                "es": "Uno de los delanteros mas explosivos del mundo. Darwin Nunez tiene la velocidad, el poder fisico y el olfato goleador que lo convierten en una pesadilla para cualquier defensa. Es el referente ofensivo principal de Uruguay.",
+                "en": "One of the most explosive strikers in the world. Darwin Nunez has the pace, physical power, and goalscoring instinct that make him a nightmare for any defense. He is Uruguay's main offensive reference."
+              }
+            },
+            {
+              "name": "Federico Valverde",
+              "position": { "es": "Mediocampista Central / Extremo", "en": "Central Midfielder / Winger" },
+              "club": "Real Madrid",
+              "note": {
+                "es": "Fede Valverde es uno de los mediocampistas mas completos del mundo. Su capacidad de recorrer el campo de area a area, su potencia de disparo y su inteligencia tactica lo convierten en el corazon del juego uruguayo.",
+                "en": "Fede Valverde is one of the most complete midfielders in the world. His ability to cover ground from box to box, his shooting power, and tactical intelligence make him the heart of Uruguay's game."
+              }
+            },
+            {
+              "name": "Rodrigo Bentancur",
+              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "club": "Tottenham Hotspur",
+              "note": {
+                "es": "Un mediocampista elegante con una vision de juego excepcional. Bentancur aporta creatividad y precision al mediocampo uruguayo, siendo el creador de juego que activa a Valverde y los delanteros.",
+                "en": "An elegant midfielder with exceptional vision. Bentancur brings creativity and precision to Uruguay's midfield, being the playmaker who activates Valverde and the forwards."
+              }
+            },
+            {
+              "name": "Sergio Rochet",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Independiente",
+              "note": {
+                "es": "El portero titular de Uruguay es un guardameta seguro y experimentado. Su solidez bajo los palos ha sido fundamental para que la seleccion celeste mantenga la organizacion defensiva que la caracteriza.",
+                "en": "Uruguay's first-choice goalkeeper is a reliable and experienced shot-stopper. His solidity in goal has been fundamental in maintaining the defensive organization that characterizes the Celeste."
+              }
+            },
+            {
+              "name": "Luis Suarez",
+              "position": { "es": "Delantero", "en": "Forward" },
+              "club": "River Plate",
+              "note": {
+                "es": "El maximo goleador historico de la seleccion uruguaya. Aunque en el ocaso de su carrera, Suarez conserva su instinto goleador y su capacidad para aparecer en momentos clave. Su posible inclusion en el Mundial 2026 es candidata y depende de su nivel al momento de la convocatoria.",
+                "en": "Uruguay's all-time top scorer. Though in the twilight of his career, Suarez retains his goalscoring instinct and ability to appear at key moments. His possible inclusion in the 2026 World Cup squad depends on his level at the time of selection."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Uruguay clasifica a traves de las Eliminatorias Sudamericanas de la CONMEBOL, donde disputa 18 partidos en casa y fuera contra las otras nueve selecciones del continente. La Celeste siempre esta en la lucha por los puestos de clasificacion, aunque en algunos ciclos ha tenido que trabajar duro hasta la jornada final.\n\nUruguay ha clasificado a los ultimos Mundiales de manera consistente, demostrando que su sistema de formacion y la calidad de sus jugadores en ligas europeas de elite garantizan un nivel competitivo alto. El desafio en 2026 sera demostrar que la decepcion de Qatar 2022 es historia pasada.",
+            "en": "Uruguay qualifies through the CONMEBOL South American Qualifiers, playing 18 home and away matches against the other nine continental teams. La Celeste is always in the fight for qualifying spots, though in some cycles they have had to work hard until the final matchday.\n\nUruguay has consistently qualified for recent World Cups, demonstrating that their development system and the quality of their players in elite European leagues guarantees a high competitive level. The challenge in 2026 will be proving that the disappointment of Qatar 2022 is past history."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Uruguay en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Uruguay's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantos titulos mundiales tiene Uruguay?", "en": "How many world titles does Uruguay have?" },
+            "answer": { "es": "Uruguay ha ganado la Copa del Mundo dos veces: en 1930 (el primer Mundial de la historia, celebrado en Uruguay) y en 1950 (el famoso 'Maracanazo' en Brasil). Con solo 3.5 millones de habitantes, Uruguay tiene la mejor relacion de titulos mundiales per capita de cualquier pais en el mundo.", "en": "Uruguay has won the World Cup twice: in 1930 (the first World Cup in history, held in Uruguay) and in 1950 (the famous 'Maracanazo' in Brazil). With only 3.5 million inhabitants, Uruguay has the best ratio of world titles per capita of any country in the world." }
+          },
+          {
+            "question": { "es": "¿Que es el Maracanazo?", "en": "What is the Maracanazo?" },
+            "answer": { "es": "El 'Maracanazo' fue la victoria de Uruguay sobre Brasil el 16 de julio de 1950 en el estadio Maracana de Rio de Janeiro, ante aproximadamente 200.000 espectadores. Brasil necesitaba un empate para ganar el campeonato; Uruguay les gano 2-1. Es considerado el mayor upset en la historia del futbol mundial y una de las derrotas mas traumaticas para el futbol brasileno.", "en": "The 'Maracanazo' was Uruguay's victory over Brazil on July 16, 1950 at the Maracana stadium in Rio de Janeiro, before approximately 200,000 spectators. Brazil needed only a draw to win the championship; Uruguay beat them 2-1. It is considered the greatest upset in world football history and one of the most traumatic defeats for Brazilian football." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de la historia de Uruguay?", "en": "Who is the greatest player in Uruguay's history?" },
+            "answer": { "es": "Luis Suarez es el maximo goleador historico de la seleccion uruguaya y es considerado el mejor jugador uruguayo de la era moderna. Sin embargo, Diego Forlan, ganador del Balon de Oro en el Mundial 2010, y los legendarios jugadores del equipo de 1950 como Obdulio Varela tambien son candidatos a ese titulo historico.", "en": "Luis Suarez is Uruguay's all-time top scorer and is considered the greatest Uruguayan player of the modern era. However, Diego Forlan, Golden Ball winner at the 2010 World Cup, and the legendary players of the 1950 team like Obdulio Varela are also candidates for that historic title." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "AUF Uruguay", "url": "https://www.auf.org.uy/" }
+        ]
+      }
     },
     {
       "id": "colombia",
@@ -130,7 +1179,102 @@
         "es": "Los Cafeteros llegan con una generacion talentosa y una aficion vibrante.",
         "en": "Los Cafeteros arrive with a talented generation and a vibrant fanbase."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Colombia es Los Cafeteros, una seleccion con una de las aficiones mas vibrantes y apasionadas de America Latina. Con siete participaciones mundialistas y su mejor resultado en Brasil 2014 (cuartos de final), Colombia llega al Mundial 2026 con una nueva generacion que heredó la magia de James Rodriguez pero la lleva por su propio camino. La asignacion de grupo esta pendiente del sorteo oficial.\n\nLuis Diaz, el extremo del Liverpool con raices en la Guajira colombiana, es el estandarte de una nueva Colombia. A su lado, Jhon Duran emerge como una potencia del futbol moderno, y James Rodriguez —si su nivel lo permite— podria vivir su canto del cisne en el torneo americano. Los Cafeteros tienen la calidad para sorprender a cualquier rival.\n\nLa aficion colombiana es famosa por su energia y su capacidad de transformar cualquier estadio en una fiesta. Donde va Colombia, va el amarillo, el azul y el rojo; y con ellos, la musica, el baile y una pasion por el futbol que no tiene igual en el continente.",
+          "en": "Colombia is Los Cafeteros, a team with one of the most vibrant and passionate fanbases in Latin America. With seven World Cup appearances and their best result at Brazil 2014 (quarterfinals), Colombia arrives at the 2026 World Cup with a new generation that inherited James Rodriguez's magic but carries it in their own way. Group assignment is pending the official FIFA draw.\n\nLuis Diaz, Liverpool's winger with roots in Colombia's Guajira region, is the banner of a new Colombia. Alongside him, Jhon Duran emerges as a force of modern football, and James Rodriguez — if his level allows — could experience his swan song at the American tournament. Los Cafeteros have the quality to surprise any rival.\n\nColombia's fanbase is famous for its energy and ability to transform any stadium into a party. Where Colombia goes, the yellow, blue, and red go with them; and with them, music, dance, and a passion for football that has no equal on the continent."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Colombia ha participado en 7 Copas del Mundo (1962, 1990, 1994, 1998, 2014, 2018 y se espera que 2026 sea la octava). Su mejor resultado fue el cuarto de final en Brasil 2014, donde eliminaron a Uruguay con un James Rodriguez en estado de gracia (gano el Balon de Oro del torneo) y cayeron ante Brasil en cuartos.\n\nEl recuerdo mas icónico es la famosa celebracion de James Rodriguez al marcar un espectacular gol de volea ante Uruguay en 2014, reconocido como uno de los mejores goles de la historia del torneo. En Rusia 2018, Colombia cayo ante Inglaterra en octavos tras los penales. La generacion actual busca superar ese registro.",
+            "en": "Colombia has appeared in 7 World Cups (1962, 1990, 1994, 1998, 2014, 2018, and 2026 expected to be the eighth). Their best result was the quarterfinal at Brazil 2014, where they eliminated Uruguay with James Rodriguez in inspired form (he won the tournament's Golden Boot) before falling to Brazil in the quarters.\n\nThe most iconic memory is James Rodriguez's famous celebration after scoring a spectacular volley against Uruguay in 2014, recognized as one of the greatest goals in tournament history. At Russia 2018, Colombia fell to England in the round of 16 on penalties. The current generation seeks to surpass that record."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Luis Diaz",
+              "position": { "es": "Extremo Izquierdo", "en": "Left Winger" },
+              "club": "Liverpool",
+              "note": {
+                "es": "El hijo de La Guajira colombiana es uno de los extremos mas peligrosos del futbol mundial. Su velocidad, su capacidad de desborde y su gol le han ganado un lugar en el Liverpool y en el corazon de toda Colombia.",
+                "en": "The son of Colombia's Guajira region is one of the most dangerous wingers in world football. His pace, dribbling ability, and goals have earned him a place at Liverpool and in the heart of all Colombia."
+              }
+            },
+            {
+              "name": "James Rodriguez",
+              "position": { "es": "Mediapunta / Extremo", "en": "Attacking Midfielder / Winger" },
+              "club": "Rayo Vallecano",
+              "note": {
+                "es": "La leyenda viviente del futbol colombiano. James fue el mejor jugador del Mundial 2014 con 6 goles y una actuacion que hizo sonar su nombre en todo el mundo. Si llega en buen nivel, su calidad y experiencia pueden ser determinantes.",
+                "en": "The living legend of Colombian football. James was the best player at the 2014 World Cup with 6 goals and a performance that made his name known worldwide. If he arrives in good form, his quality and experience can be decisive."
+              }
+            },
+            {
+              "name": "Jhon Duran",
+              "position": { "es": "Delantero Centro", "en": "Centre Forward" },
+              "club": "Aston Villa",
+              "note": {
+                "es": "La gran promesa del ataque colombiano. Duran combina un fisico imponente con una destreza tecnica sorprendente para su edad. Se le considera uno de los delanteros mas prometedores del futbol sudamericano.",
+                "en": "The great promise of Colombia's attack. Duran combines an imposing physique with surprising technical skill for his age. He is considered one of the most promising forwards in South American football."
+              }
+            },
+            {
+              "name": "Daniel Munoz",
+              "position": { "es": "Lateral Derecho", "en": "Right Back" },
+              "club": "Crystal Palace",
+              "note": {
+                "es": "Uno de los laterales derechos mas ofensivos de la Premier League. Munoz aporta profundidad y dinamismo por la banda derecha, siendo uno de los jugadores mas en forma de la seleccion colombiana.",
+                "en": "One of the most attacking right backs in the Premier League. Munoz provides depth and dynamism on the right flank, being one of the most in-form players in the Colombian national team."
+              }
+            },
+            {
+              "name": "Camilo Vargas",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Atlas",
+              "note": {
+                "es": "El guardameta titular de Colombia ha mantenido la solidez defensiva del equipo en los ultimos anos. Confiable y experimentado, Vargas es el ancla de una defensa colombiana que ha mejorado notablemente.",
+                "en": "Colombia's starting goalkeeper has maintained the team's defensive solidity in recent years. Reliable and experienced, Vargas is the anchor of a Colombian defense that has improved notably."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Colombia clasifica a traves de las Eliminatorias Sudamericanas de la CONMEBOL. Los Cafeteros han demostrado en el ciclo 2026 una actuacion sólida, con una generacion hambre de regresar a la elite del futbol mundial tras quedar fuera del Mundial de Qatar 2022.\n\nEl proceso de clasificacion en la CONMEBOL es arduo: enfrentar a Brasil, Argentina, Uruguay y Ecuador en un sistema de todos contra todos exige un nivel alto sostenido durante casi dos anos. Colombia, con Lorenzo Fabian como entrenador, ha construido un sistema de juego ofensivo y atractivo que ha devuelto la esperanza a los aficionados cafeteros.",
+            "en": "Colombia qualifies through the CONMEBOL South American Qualifiers. Los Cafeteros have shown a solid performance in the 2026 cycle, with a generation hungry to return to the world football elite after missing the 2022 Qatar World Cup.\n\nThe qualifying process in CONMEBOL is demanding: facing Brazil, Argentina, Uruguay, and Ecuador in an all-play-all system requires a sustained high level over nearly two years. Colombia, with Fabian Lorenzo as coach, has built an offensive and attractive playing system that has restored hope to the cafetero fans."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Colombia en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Colombia's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cual es el mejor resultado de Colombia en un Mundial?", "en": "What is Colombia's best result at a World Cup?" },
+            "answer": { "es": "El mejor resultado de Colombia en un Mundial fue el cuarto de final en Brasil 2014, donde eliminaron a Uruguay y Grecia antes de caer ante Brasil. James Rodriguez fue el maximo goleador del torneo con 6 goles y gano el Balon de Oro.", "en": "Colombia's best result at a World Cup was the quarterfinal at Brazil 2014, where they eliminated Uruguay and Greece before falling to Brazil. James Rodriguez was the tournament's top scorer with 6 goals and won the Golden Boot." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de Colombia para el Mundial 2026?", "en": "Who is Colombia's best player for the 2026 World Cup?" },
+            "answer": { "es": "Luis Diaz del Liverpool es actualmente el mejor jugador colombiano y se espera que sea el referente ofensivo de Los Cafeteros en 2026. Sin embargo, si James Rodriguez llega en optimas condiciones, su experiencia y calidad podrian marcar la diferencia en momentos decisivos.", "en": "Luis Diaz of Liverpool is currently Colombia's best player and is expected to be Los Cafeteros' offensive reference in 2026. However, if James Rodriguez arrives in optimal condition, his experience and quality could make the difference in decisive moments." }
+          },
+          {
+            "question": { "es": "¿Como clasifico Colombia al Mundial 2026?", "en": "How did Colombia qualify for the 2026 World Cup?" },
+            "answer": { "es": "Colombia clasifico al Mundial 2026 a traves de las Eliminatorias Sudamericanas de la CONMEBOL. Tras no clasificar a Qatar 2022, los Cafeteros realizaron una campaña solida en el ciclo 2026, asegurando su boleto entre los seis equipos sudamericanos que clasifican directamente.", "en": "Colombia qualified for the 2026 World Cup through the CONMEBOL South American Qualifiers. After missing Qatar 2022, Los Cafeteros had a solid campaign in the 2026 cycle, securing their ticket among the six South American teams that qualify directly." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "FCF Colombia", "url": "https://fcf.com.co/" }
+        ]
+      }
     },
     {
       "id": "ecuador",
