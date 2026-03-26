@@ -15,7 +15,22 @@
     "title": "SuperFan Mundial 2026 - Guia Independiente",
     "description": "La guia mas completa en espanol sobre el Mundial de Futbol 2026 en Mexico, Estados Unidos y Canada. Ciudades sede, estadios, selecciones, vuelos y hospedaje.",
     "heading": "Tu guia independiente del Mundial 2026",
-    "subheading": "Todo lo que necesitas para vivir el Mundial en Mexico, Estados Unidos y Canada"
+    "subheading": "Todo lo que necesitas para vivir el Mundial en Mexico, Estados Unidos y Canada",
+    "heroCta": "Explorar ciudades sede",
+    "featuredCities": "Ciudades sede destacadas",
+    "featuredStadiums": "Estadios destacados",
+    "viewAllCities": "Ver las 16 ciudades sede",
+    "viewAllStadiums": "Ver los 16 estadios",
+    "countdownLabel": "Faltan para el inicio del Mundial",
+    "days": "dias",
+    "stadiumCapacity": "Capacidad",
+    "whySuperfan": "Por que SuperFan?",
+    "whyText": "Somos la guia independiente mas completa en espanol para el Mundial 2026. Informacion verificada, consejos practicos y contenido optimizado para que planifiques tu experiencia mundialista.",
+    "citiesCount": "16 ciudades sede",
+    "stadiumsCount": "16 estadios",
+    "countriesCount": "3 paises",
+    "comingSoon": "Proximamente",
+    "exploreMore": "Explorar mas"
   },
   "footer": {
     "disclaimer": "Este sitio no esta afiliado, respaldado ni conectado con la FIFA ni con ningun organismo oficial del Mundial.",

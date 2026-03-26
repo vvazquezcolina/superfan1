@@ -15,7 +15,22 @@
     "title": "SuperFan World Cup 2026 - Independent Guide",
     "description": "The most complete Spanish-language guide to the 2026 FIFA World Cup in Mexico, the United States, and Canada. Host cities, stadiums, teams, flights, and accommodation.",
     "heading": "Your independent guide to the 2026 World Cup",
-    "subheading": "Everything you need to experience the World Cup in Mexico, the United States, and Canada"
+    "subheading": "Everything you need to experience the World Cup in Mexico, the United States, and Canada",
+    "heroCta": "Explore host cities",
+    "featuredCities": "Featured Host Cities",
+    "featuredStadiums": "Featured Stadiums",
+    "viewAllCities": "View all 16 host cities",
+    "viewAllStadiums": "View all 16 stadiums",
+    "countdownLabel": "Until the World Cup kicks off",
+    "days": "days",
+    "stadiumCapacity": "Capacity",
+    "whySuperfan": "Why SuperFan?",
+    "whyText": "We are the most complete independent Spanish-language guide for the 2026 World Cup. Verified information, practical advice, and optimized content to help you plan your World Cup experience.",
+    "citiesCount": "16 host cities",
+    "stadiumsCount": "16 stadiums",
+    "countriesCount": "3 countries",
+    "comingSoon": "Coming soon",
+    "exploreMore": "Explore more"
   },
   "footer": {
     "disclaimer": "This site is not affiliated with, endorsed by, or connected to FIFA or any official World Cup organizing body.",
