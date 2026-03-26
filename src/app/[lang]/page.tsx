@@ -32,10 +32,23 @@ export default async function HomePage({
   if (!hasLocale(lang)) notFound()
   const dict = await getDictionary(lang)
 
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: dict.site.name,
+    url: `https://www.superfaninfo.com/${lang}`,
+    description: dict.home.description,
+    inLanguage: lang === 'es' ? 'es-419' : 'en',
+  }
+
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <h1>{dict.home.heading}</h1>
       <p>{dict.home.subheading}</p>
-    </div>
+    </>
   )
 }
