@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { MobileNav } from './MobileNav'
+import { SearchModal } from '@/components/engagement/SearchButton'
 
 interface HeaderProps {
   lang: string
@@ -12,6 +13,14 @@ interface HeaderProps {
       teams: string
       travel: string
       tools: string
+    }
+    search: {
+      label: string
+      placeholder: string
+      noResults: string
+      loading: string
+      notAvailableInDev: string
+      closeLabel: string
     }
   }
 }
@@ -67,9 +76,11 @@ export function Header({ lang, dict }: HeaderProps) {
           >
             {switchLang.toUpperCase()}
           </Link>
+          <SearchModal dict={dict.search} />
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2">
+          <SearchModal dict={dict.search} />
           <MobileNav lang={lang} dict={dict} />
         </div>
       </div>
