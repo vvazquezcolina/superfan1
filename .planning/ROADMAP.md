@@ -39,7 +39,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md -- Bootstrap Next.js 16 project with bilingual i18n routing, proxy, and English URL rewrites
-- [ ] 01-02-PLAN.md -- Zod schemas, content JSON files (16 cities, 16 stadiums, 48 teams), data loaders, and stub pages with SSG
+- [x] 01-02-PLAN.md -- Zod schemas, content JSON files (16 cities, 16 stadiums, 48 teams), data loaders, and stub pages with SSG
 **UI hint**: yes
 
 ### Phase 2: Base Layout & Technical SEO

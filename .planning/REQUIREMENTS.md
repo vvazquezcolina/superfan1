@@ -11,11 +11,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **INFRA-01**: Next.js 16 project with App Router, TypeScript, Tailwind v4 deployed on Vercel
 - [x] **INFRA-02**: Bilingual routing with `[lang]` segment — `/es/` (primary) and `/en/` prefixes with proper hreflang alternates
-- [ ] **INFRA-03**: Content data layer using typed JSON files with Zod schema validation at build time
-- [ ] **INFRA-04**: Data loader functions as single access point for all content (abstracted from storage)
+- [x] **INFRA-03**: Content data layer using typed JSON files with Zod schema validation at build time
+- [x] **INFRA-04**: Data loader functions as single access point for all content (abstracted from storage)
 - [ ] **INFRA-05**: Base layout with header, footer, navigation, breadcrumbs, and FIFA non-affiliation disclaimer
 - [x] **INFRA-06**: Middleware for locale detection and redirect
-- [ ] **INFRA-07**: `generateStaticParams` configured for SSG across both locales
+- [x] **INFRA-07**: `generateStaticParams` configured for SSG across both locales
 
 ### Content — Cities
 
@@ -142,11 +142,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | INFRA-01 | Phase 1 | Complete |
 | INFRA-02 | Phase 1 | Complete |
-| INFRA-03 | Phase 1 | Pending |
-| INFRA-04 | Phase 1 | Pending |
+| INFRA-03 | Phase 1 | Complete |
+| INFRA-04 | Phase 1 | Complete |
 | INFRA-05 | Phase 2 | Pending |
 | INFRA-06 | Phase 1 | Complete |
-| INFRA-07 | Phase 1 | Pending |
+| INFRA-07 | Phase 1 | Complete |
 | CITY-01 | Phase 3 | Pending |
 | CITY-02 | Phase 3 | Pending |
 | CITY-03 | Phase 3 | Pending |
