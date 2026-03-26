@@ -1,0 +1,29 @@
+{
+  "site": {
+    "name": "SuperFan Mundial 2026",
+    "tagline": "Tu guia independiente del Mundial 2026"
+  },
+  "nav": {
+    "home": "Inicio",
+    "cities": "Ciudades sede",
+    "stadiums": "Estadios",
+    "teams": "Selecciones",
+    "travel": "Viajes",
+    "tools": "Herramientas"
+  },
+  "home": {
+    "title": "SuperFan Mundial 2026 - Guia Independiente",
+    "description": "La guia mas completa en espanol sobre el Mundial de Futbol 2026 en Mexico, Estados Unidos y Canada. Ciudades sede, estadios, selecciones, vuelos y hospedaje.",
+    "heading": "Tu guia independiente del Mundial 2026",
+    "subheading": "Todo lo que necesitas para vivir el Mundial en Mexico, Estados Unidos y Canada"
+  },
+  "footer": {
+    "disclaimer": "Este sitio no esta afiliado, respaldado ni conectado con la FIFA ni con ningun organismo oficial del Mundial.",
+    "copyright": "SuperFan Mundial 2026. Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "Pagina no encontrada",
+    "description": "La pagina que buscas no existe.",
+    "backHome": "Volver al inicio"
+  }
+}
