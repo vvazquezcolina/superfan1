@@ -89,7 +89,11 @@ Plans:
   2. A stadium index page lists all 16 stadiums organized by city and country
   3. Each stadium page links to its host city guide
   4. The homepage features content sections, a countdown placeholder, and clear navigation to cities, stadiums, and all major sections
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md -- Extend StadiumSchema, stadium components, stadium index page, 8 stadiums full content (Mexico 3 + USA 5)
+- [ ] 04-02-PLAN.md -- Remaining 8 stadiums full content (USA 6 + Canada 2) and homepage with hero, featured sections, CTAs
 **UI hint**: yes
 
 ### Phase 5: LLM Optimization Layer
@@ -173,7 +177,7 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 1. Project Scaffold & Data Architecture | 2/2 | Complete | 2026-03-26 |
 | 2. Base Layout & Technical SEO | 0/3 | Planning complete | - |
 | 3. City Guides | 0/5 | Planning complete | - |
-| 4. Stadium Pages & Homepage | 0/TBD | Not started | - |
+| 4. Stadium Pages & Homepage | 0/2 | Planning complete | - |
 | 5. LLM Optimization Layer | 0/TBD | Not started | - |
 | 6. Monetization & Analytics | 0/TBD | Not started | - |
 | 7. Team Pages | 0/TBD | Not started | - |
