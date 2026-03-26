@@ -297,6 +297,10 @@ export default async function HomePage({
             </div>
           </div>
         </section>
+
+        <p className="mt-8 text-center text-sm text-muted">
+          {locale === 'es' ? 'Ultima actualizacion' : 'Last updated'}: {new Date().toISOString().split('T')[0]}
+        </p>
       </div>
     </>
   )

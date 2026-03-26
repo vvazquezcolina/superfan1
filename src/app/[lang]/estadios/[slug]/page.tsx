@@ -56,6 +56,14 @@ const sectionKeys = [
   'matchSchedule',
 ] as const
 
+const questionHeaders: Record<string, Record<string, string>> = {
+  gettingThere: { es: 'Como llegar al {stadiumName}?', en: 'How to get to {stadiumName}?' },
+  seatingGuide: { es: 'Como son los asientos en el {stadiumName}?', en: 'What are the seats like at {stadiumName}?' },
+  nearbyHotels: { es: 'Donde hospedarse cerca del {stadiumName}?', en: 'Where to stay near {stadiumName}?' },
+  accessibility: { es: 'Es accesible el {stadiumName}?', en: 'Is {stadiumName} accessible?' },
+  matchSchedule: { es: 'Que partidos se juegan en el {stadiumName}?', en: 'What matches are played at {stadiumName}?' },
+}
+
 export default async function StadiumPage({
   params,
 }: {
@@ -118,14 +126,37 @@ export default async function StadiumPage({
       <article className="mx-auto max-w-4xl space-y-12 py-6">
         <StadiumHero stadium={stadium} lang={locale} />
 
-        {sectionKeys.map((key) => (
-          <StadiumSection
-            key={key}
-            section={stadium.content[key]}
-            lang={locale}
-            id={sectionIds[key]}
-          />
-        ))}
+        <section className="mx-auto max-w-prose rounded-lg border-l-4 border-primary bg-primary/5 p-6">
+          <p className="text-lg font-medium leading-relaxed">
+            {stadium.content.overview[locale].split('\n\n')[0]}
+          </p>
+        </section>
+
+        <aside className="mx-auto max-w-prose rounded-lg bg-muted/10 p-4 text-sm">
+          <p className="font-semibold">{locale === 'es' ? 'Datos clave' : 'Key Facts'}</p>
+          <ul className="mt-2 list-disc pl-5 space-y-1">
+            <li>{locale === 'es' ? 'Capacidad' : 'Capacity'}: {stadium.capacity.toLocaleString()}</li>
+            <li>{locale === 'es' ? 'Ciudad sede' : 'Host city'}: {city?.name[locale]}</li>
+            <li>{locale === 'es' ? 'Ubicacion' : 'Location'}: {stadium.coordinates.lat.toFixed(2)}N, {Math.abs(stadium.coordinates.lng).toFixed(2)}W</li>
+          </ul>
+          <p className="mt-2 text-xs text-muted">
+            {locale === 'es' ? 'Fuente: FIFA.com, sitio oficial del estadio' : 'Source: FIFA.com, official stadium site'}
+          </p>
+        </aside>
+
+        {sectionKeys.map((key) => {
+          const qh = questionHeaders[key]
+          const titleOverride = qh ? qh[locale].replace('{stadiumName}', stadium.name[locale]) : undefined
+          return (
+            <StadiumSection
+              key={key}
+              section={stadium.content[key]}
+              lang={locale}
+              id={sectionIds[key]}
+              titleOverride={titleOverride}
+            />
+          )
+        })}
 
         <StadiumFAQ faqs={stadium.content.faq} lang={locale} />
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getCity, getCitySlugs } from '@/lib/content/cities'
+import { getStadiumById } from '@/lib/content/stadiums'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
 import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
@@ -58,6 +59,16 @@ const sectionKeys = [
   'weather',
   'culturalContext',
 ] as const
+
+const questionHeaders: Record<string, Record<string, string>> = {
+  gettingThere: { es: 'Como llegar a {cityName}?', en: 'How to get to {cityName}?' },
+  gettingAround: { es: 'Como moverse en {cityName}?', en: 'How to get around {cityName}?' },
+  neighborhoods: { es: 'Donde hospedarse en {cityName}?', en: 'Where to stay in {cityName}?' },
+  foodAndDrink: { es: 'Que comer y beber en {cityName}?', en: 'What to eat and drink in {cityName}?' },
+  safety: { es: 'Es seguro visitar {cityName}?', en: 'Is {cityName} safe to visit?' },
+  weather: { es: 'Como es el clima en {cityName} durante el Mundial?', en: 'What is the weather like in {cityName} during the World Cup?' },
+  culturalContext: { es: 'Que debe saber un fan latinoamericano sobre {cityName}?', en: 'What should a Latin American fan know about {cityName}?' },
+}
 
 export default async function CityPage({
   params,
@@ -119,14 +130,37 @@ export default async function CityPage({
       <article className="mx-auto max-w-4xl space-y-12 py-6">
         <CityHero city={city} lang={locale} />
 
-        {sectionKeys.map((key) => (
-          <CitySection
-            key={key}
-            section={city.content[key]}
-            lang={locale}
-            id={sectionIds[key]}
-          />
-        ))}
+        <section className="mx-auto max-w-prose rounded-lg border-l-4 border-primary bg-primary/5 p-6">
+          <p className="text-lg font-medium leading-relaxed">
+            {city.content.overview[locale].split('\n\n')[0]}
+          </p>
+        </section>
+
+        <aside className="mx-auto max-w-prose rounded-lg bg-muted/10 p-4 text-sm">
+          <p className="font-semibold">{locale === 'es' ? 'Datos clave' : 'Key Facts'}</p>
+          <ul className="mt-2 list-disc pl-5 space-y-1">
+            <li>{locale === 'es' ? 'Estadio sede' : 'Host stadium'}: {getStadiumById(city.stadium)?.name[locale] ?? city.stadium}</li>
+            <li>{locale === 'es' ? 'Pais' : 'Country'}: {locale === 'es' ? (city.country === 'mexico' ? 'Mexico' : city.country === 'usa' ? 'Estados Unidos' : 'Canada') : (city.country === 'mexico' ? 'Mexico' : city.country === 'usa' ? 'United States' : 'Canada')}</li>
+            <li>{locale === 'es' ? 'Ubicacion' : 'Location'}: {city.coordinates.lat.toFixed(2)}N, {Math.abs(city.coordinates.lng).toFixed(2)}W</li>
+          </ul>
+          <p className="mt-2 text-xs text-muted">
+            {locale === 'es' ? 'Fuente: FIFA.com, sitios oficiales de turismo' : 'Source: FIFA.com, official tourism sites'}
+          </p>
+        </aside>
+
+        {sectionKeys.map((key) => {
+          const qh = questionHeaders[key]
+          const titleOverride = qh ? qh[locale].replace('{cityName}', city.name[locale]) : undefined
+          return (
+            <CitySection
+              key={key}
+              section={city.content[key]}
+              lang={locale}
+              id={sectionIds[key]}
+              titleOverride={titleOverride}
+            />
+          )
+        })}
 
         <CityFAQ faqs={city.content.faq} lang={locale} />
 

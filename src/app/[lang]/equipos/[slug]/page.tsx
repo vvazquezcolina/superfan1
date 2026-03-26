@@ -64,13 +64,25 @@ export default async function TeamPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsTeamJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
-      <article>
-        <h1>{team.name[lang as Locale]}</h1>
-        <p>{team.description[lang as Locale]}</p>
-        <dl>
-          <dt>{lang === 'es' ? 'Confederacion' : 'Confederation'}</dt>
+      <article className="mx-auto max-w-4xl space-y-8 py-6">
+        <h1 className="text-3xl font-bold md:text-4xl">{team.name[lang as Locale]}</h1>
+
+        <section className="rounded-lg border-l-4 border-primary bg-primary/5 p-6">
+          <p className="text-lg font-medium leading-relaxed">
+            {team.description[lang as Locale]}
+          </p>
+        </section>
+
+        <dl className="space-y-2">
+          <dt className="font-semibold">{lang === 'es' ? 'Confederacion' : 'Confederation'}</dt>
           <dd>{team.confederation}</dd>
         </dl>
+
+        <footer className="mt-8 border-t border-border pt-4">
+          <p className="text-sm text-muted">
+            {lang === 'es' ? 'Ultima actualizacion' : 'Last updated'}: {team.lastUpdated}
+          </p>
+        </footer>
       </article>
     </>
   )
