@@ -1289,8 +1289,8 @@
       "lastUpdated": "2026-03-26",
       "content": {
         "overview": {
-          "es": "Atlanta, capital de Georgia, sera sede del Mundial 2026 en el espectacular Mercedes-Benz Stadium, reconocido por su techo retractil unico en el mundo. La ciudad del sureste estadounidense ha visto crecer su comunidad latina significativamente y ofrece una rica escena cultural y gastronomica. Contenido completo disponible pronto.",
-          "en": "Atlanta, capital of Georgia, will host the 2026 World Cup at the spectacular Mercedes-Benz Stadium, renowned for its unique retractable roof. This southeastern US city has seen its Latino community grow significantly and offers a rich cultural and food scene. Full content coming soon."
+          "es": "Atlanta es la capital de Georgia y el centro cultural y economico del sureste de Estados Unidos, con una area metropolitana de aproximadamente 6 millones de habitantes. El Mercedes-Benz Stadium — hogar del Atlanta United FC de la MLS y reconocido mundialmente por su espectacular techo retractil de 8 petalos — sera sede de partidos del Mundial 2026 con capacidad para 71,000 espectadores. Es uno de los estadios tecnologicamente mas avanzados del mundo y una obra maestra arquitectonica.\n\nAtlanta es una ciudad que sorprende. Es la cuna del movimiento por los derechos civiles en Estados Unidos (Martin Luther King Jr. nacio aqui), la capital mundial del hip-hop, y un centro de negocios con la sede de gigantes como Coca-Cola, Delta Air Lines y CNN. La comunidad hispana de Atlanta ha crecido rapidamente en las ultimas dos decadas — aproximadamente el 12% de la poblacion metropolitana es hispana, con comunidades significativas de mexicanos, guatemaltecos y colombianos concentradas en el corredor de Buford Highway.\n\nPara los aficionados latinoamericanos, Atlanta ofrece una combinacion unica: vuelos directos desde America Latina gracias al aeropuerto mas transitado del mundo (Hartsfield-Jackson), precios significativamente mas accesibles que ciudades como Nueva York o Los Angeles, una escena gastronomica internacional impresionante, y la hospitalidad surena genuina por la que Georgia es famosa. Ademas, el Mercedes-Benz Stadium es uno de los recintos mas accesibles por transporte publico en todo Estados Unidos — el MARTA lo conecta directamente con el aeropuerto.",
+          "en": "Atlanta is the capital of Georgia and the cultural and economic hub of the southeastern United States, with a metropolitan area of approximately 6 million residents. Mercedes-Benz Stadium — home of MLS's Atlanta United FC and globally recognized for its spectacular 8-petal retractable roof — will host 2026 World Cup matches with a capacity of 71,000 spectators. It is one of the most technologically advanced stadiums in the world and an architectural masterpiece.\n\nAtlanta is a city that surprises. It is the birthplace of the civil rights movement in the United States (Martin Luther King Jr. was born here), the world capital of hip-hop, and a business center housing the headquarters of giants like Coca-Cola, Delta Air Lines, and CNN. Atlanta's Hispanic community has grown rapidly over the past two decades — approximately 12% of the metropolitan population is Hispanic, with significant Mexican, Guatemalan, and Colombian communities concentrated along the Buford Highway corridor.\n\nFor Latin American fans, Atlanta offers a unique combination: direct flights from Latin America thanks to the busiest airport in the world (Hartsfield-Jackson), prices significantly more affordable than cities like New York or Los Angeles, an impressive international food scene, and the genuine Southern hospitality for which Georgia is famous. Additionally, Mercedes-Benz Stadium is one of the most transit-accessible venues in the entire United States — MARTA connects it directly with the airport."
         },
         "gettingThere": {
           "title": {
@@ -1298,8 +1298,8 @@
             "en": "Getting There"
           },
           "content": {
-            "es": "Informacion de transporte a Atlanta proximamente.",
-            "en": "Transport information for Atlanta coming soon."
+            "es": "El Aeropuerto Internacional Hartsfield-Jackson de Atlanta (ATL) es el aeropuerto mas transitado del MUNDO — no de Estados Unidos, del mundo entero. Esto es una ventaja enorme para los aficionados: hay vuelos directos desde Ciudad de Mexico, Bogota, Lima, y conexiones desde practicamente cualquier punto del planeta. Delta Air Lines, que tiene su hub principal aqui, opera la mayoria de las rutas internacionales. Desde la Ciudad de Mexico el vuelo toma aproximadamente 3.5 horas.\n\nLa gran ventaja de ATL es que esta conectado directamente al centro de Atlanta por el MARTA (Metropolitan Atlanta Rapid Transit Authority). El tren del MARTA va desde el aeropuerto hasta el centro en apenas 20 minutos por .50 USD — es rapido, limpio y eficiente. No necesitas taxi ni Uber para llegar del aeropuerto al centro.\n\nEl Mercedes-Benz Stadium esta ubicado en el centro de Atlanta (downtown), a poca distancia caminando de varias estaciones de MARTA. Las estaciones mas cercanas son Vine City y GWCC/CNN Center, ambas a 10-15 minutos caminando del estadio. Esta accesibilidad por transporte publico es una de las mejores entre todas las sedes del Mundial 2026.\n\nSi vienes por tierra, Amtrak opera la ruta Crescent que conecta Atlanta con Washington DC (aproximadamente 9 horas) y Nueva Orleans (11 horas). Autobuses Greyhound y Megabus conectan con Nashville (4 horas), Charlotte (4 horas) y Jacksonville (5.5 horas).",
+            "en": "Hartsfield-Jackson Atlanta International Airport (ATL) is the busiest airport in the WORLD — not in the United States, in the entire world. This is a huge advantage for fans: there are direct flights from Mexico City, Bogota, Lima, and connections from virtually anywhere on the planet. Delta Air Lines, which has its main hub here, operates most international routes. From Mexico City the flight takes approximately 3.5 hours.\n\nATL's great advantage is that it is connected directly to downtown Atlanta by MARTA (Metropolitan Atlanta Rapid Transit Authority). The MARTA train goes from the airport to downtown in just 20 minutes for $2.50 USD — it is fast, clean, and efficient. You do not need a taxi or Uber to get from the airport to downtown.\n\nMercedes-Benz Stadium is located in downtown Atlanta, within walking distance of several MARTA stations. The closest stations are Vine City and GWCC/CNN Center, both 10-15 minutes on foot from the stadium. This public transit accessibility is one of the best among all 2026 World Cup venues.\n\nIf coming by land, Amtrak operates the Crescent route connecting Atlanta with Washington DC (approximately 9 hours) and New Orleans (11 hours). Greyhound and Megabus buses connect to Nashville (4 hours), Charlotte (4 hours), and Jacksonville (5.5 hours)."
           }
         },
         "gettingAround": {
@@ -1308,8 +1308,8 @@
             "en": "Getting Around"
           },
           "content": {
-            "es": "Informacion de transporte local en Atlanta proximamente.",
-            "en": "Local transport information for Atlanta coming soon."
+            "es": "El MARTA es el sistema de transporte publico de Atlanta con 4 lineas de tren que cubren el centro, el aeropuerto, Buckhead (zona de compras y negocios al norte) y los principales corredores. El tren es limpio, seguro y funcional para moverte entre las zonas principales. El costo es de .50 USD por viaje con la tarjeta Breeze recargable.\n\nEl MARTA es especialmente util para los dias de partido: las estaciones Vine City y GWCC/CNN Center estan a poca distancia del Mercedes-Benz Stadium, y el servicio se extiende en horarios de eventos. Es la opcion mas inteligente para evitar el trafico y el estacionamiento caro del centro.\n\nEl Atlanta Streetcar es un tranvia gratuito que circula por el centro de la ciudad, conectando Centennial Olympic Park con el Martin Luther King Jr. National Historic Site. Es util para moverse dentro del downtown pero tiene una ruta limitada.\n\nUber y Lyft funcionan perfectamente en toda Atlanta y son esenciales para zonas no cubiertas por el MARTA. El corredor de Buford Highway — el paraiso gastronomico internacional — no tiene conexion directa de MARTA, asi que necesitaras rideshare o auto rentado para explorarlo.\n\nRentar un auto es util si quieres explorar mas alla del centro y Buckhead. Atlanta es una ciudad extendida y las distancias pueden ser significativas. El trafico en las autopistas (especialmente la I-285 y la I-85) puede ser terrible en horas pico — evita conducir entre 7-9 AM y 4-7 PM si puedes.",
+            "en": "MARTA is Atlanta's public transit system with 4 train lines covering downtown, the airport, Buckhead (shopping and business district to the north), and main corridors. The train is clean, safe, and functional for getting between the main areas. The cost is $2.50 USD per ride with the rechargeable Breeze card.\n\nMARTA is especially useful on match days: Vine City and GWCC/CNN Center stations are within walking distance of Mercedes-Benz Stadium, and service hours are extended during events. It is the smartest option to avoid traffic and expensive downtown parking.\n\nThe Atlanta Streetcar is a free trolley that runs through downtown, connecting Centennial Olympic Park with the Martin Luther King Jr. National Historic Site. It is useful for getting around within downtown but has a limited route.\n\nUber and Lyft work perfectly throughout Atlanta and are essential for areas not covered by MARTA. The Buford Highway corridor — the international food paradise — has no direct MARTA connection, so you will need rideshare or a rental car to explore it.\n\nRenting a car is useful if you want to explore beyond downtown and Buckhead. Atlanta is a sprawling city and distances can be significant. Highway traffic (especially I-285 and I-85) can be terrible during rush hour — avoid driving between 7-9 AM and 4-7 PM if possible."
           }
         },
         "neighborhoods": {
@@ -1318,8 +1318,8 @@
             "en": "Where to Stay"
           },
           "content": {
-            "es": "Informacion de hospedaje en Atlanta proximamente.",
-            "en": "Accommodation information for Atlanta coming soon."
+            "es": "Downtown Atlanta es la opcion mas conveniente para asistentes al Mundial. Estas a distancia caminable del Mercedes-Benz Stadium, del Centennial Olympic Park, del Georgia Aquarium y del World of Coca-Cola. Los hoteles de cadena (Marriott, Hilton, Hyatt) dominan la zona con precios entre  y  USD por noche. La estacion de MARTA Five Points te conecta con toda la red.\n\nMidtown es la zona mas vibrante de Atlanta: Piedmont Park (el Central Park de Atlanta), el High Museum of Art, teatros, restaurantes y una escena nocturna activa. Es mas caminable que muchas zonas de Atlanta y tiene buena conexion de MARTA. Hoteles y Airbnbs entre  y  USD por noche. Ideal para quienes buscan cultura y entretenimiento mas alla del futbol.\n\nBuckhead es la zona premium del norte de Atlanta: centros comerciales de lujo (Lenox Square, Phipps Plaza), restaurantes de alta cocina y hoteles cinco estrellas. Precios mas altos (-250 USD por noche) pero con un nivel de confort superior. Tiene estacion de MARTA.\n\nEl corredor de Buford Highway (Chamblee/Doraville) es el secreto mejor guardado de Atlanta: una franja de mas de 10 millas con restaurantes de todos los paises imaginables, supermercados internacionales y la plaza comercial Plaza Fiesta (un centro comercial al estilo mexicano). Los hoteles son los mas economicos de la zona (-80 USD por noche). No es glamoroso, pero es autentico e increiblemente diverso. Decatur es un suburbio encantador al este con restaurantes excelentes, un ambiente de pueblo y conexion de MARTA.",
+            "en": "Downtown Atlanta is the most convenient option for World Cup attendees. You are within walking distance of Mercedes-Benz Stadium, Centennial Olympic Park, the Georgia Aquarium, and the World of Coca-Cola. Chain hotels (Marriott, Hilton, Hyatt) dominate the area with prices between $80 and $180 USD per night. The Five Points MARTA station connects you to the entire network.\n\nMidtown is Atlanta's most vibrant area: Piedmont Park (Atlanta's Central Park), the High Museum of Art, theaters, restaurants, and an active nightlife scene. It is more walkable than many Atlanta neighborhoods and has good MARTA connections. Hotels and Airbnbs between $80 and $150 USD per night. Ideal for those seeking culture and entertainment beyond football.\n\nBuckhead is the premium zone in north Atlanta: luxury shopping centers (Lenox Square, Phipps Plaza), fine dining restaurants, and five-star hotels. Higher prices ($120-250 USD per night) but with superior comfort. Has a MARTA station.\n\nThe Buford Highway corridor (Chamblee/Doraville) is Atlanta's best-kept secret: a strip of over 10 miles with restaurants from every imaginable country, international supermarkets, and the Plaza Fiesta shopping center (a Mexican-style mall). Hotels are the most affordable in the area ($50-80 USD per night). It is not glamorous, but it is authentic and incredibly diverse. Decatur is a charming suburb to the east with excellent restaurants, a small-town feel, and MARTA access."
           }
         },
         "foodAndDrink": {
@@ -1328,8 +1328,8 @@
             "en": "Food & Drink"
           },
           "content": {
-            "es": "Informacion gastronomica de Atlanta proximamente.",
-            "en": "Food and drink information for Atlanta coming soon."
+            "es": "La gastronomia de Atlanta es una fusion fascinante de comida surena tradicional con la diversidad internacional que trae el aeropuerto mas conectado del mundo. El resultado es una escena culinaria que sorprende a quienes esperan solo pollo frito y grits.\n\nLa comida surena es el corazon de Atlanta: pollo frito crujiente (Busy Bee Cafe lleva sirviendo desde 1947), biscuits con gravy (masa de pan con salsa cremosa — suena extrano, sabe increible), peach cobbler (postre de durazno horneado, Georgia es el estado del durazno), y grits (maiz molido, se sirve con mantequilla o camarones). El soul food es la variante afroamericana de la cocina surena y es una experiencia cultural esencial.\n\nBuford Highway es la joya de la corona gastronomica de Atlanta — mas de 10 millas de restaurantes de absolutamente todos los paises: coreano, vietnamita, etiope, colombiano, mexicano, guatemalteco, chino, indio, y mucho mas. Plaza Fiesta es un centro comercial con vendedores de comida mexicana, panaderia, dulces y artesanias. Para tacos y comida mexicana autentica, el corredor de Buford Highway tiene opciones que rivalizan con cualquier ciudad fronteriza.\n\nPonce City Market es el food hall de moda de Atlanta — un antiguo edificio industrial reconvertido en mercado gastronomico con puestos de todo tipo. Waffle House es una institucion de Georgia: abierto 24/7, barato (-8 USD por un desayuno completo) y presente en cada esquina. No es gourmet, pero es una experiencia genuinamente surena.\n\nPresupuesto: comida casual (tacos, pollo frito, waffle house) cuesta -12 USD. Un restaurante con servicio completo ronda los -40 USD.",
+            "en": "Atlanta's food scene is a fascinating fusion of traditional Southern cuisine with the international diversity brought by the world's most connected airport. The result is a culinary scene that surprises those who expect only fried chicken and grits.\n\nSouthern food is Atlanta's heart: crispy fried chicken (Busy Bee Cafe has been serving since 1947), biscuits with gravy (bread dough with creamy sauce — sounds strange, tastes incredible), peach cobbler (baked peach dessert, Georgia is the Peach State), and grits (ground corn, served with butter or shrimp). Soul food is the African-American variant of Southern cuisine and is an essential cultural experience.\n\nBuford Highway is Atlanta's culinary crown jewel — over 10 miles of restaurants from absolutely every country: Korean, Vietnamese, Ethiopian, Colombian, Mexican, Guatemalan, Chinese, Indian, and much more. Plaza Fiesta is a shopping center with Mexican food vendors, bakery, sweets, and crafts. For tacos and authentic Mexican food, the Buford Highway corridor has options that rival any border city.\n\nPonce City Market is Atlanta's trendy food hall — a former industrial building converted into a food market with stalls of all types. Waffle House is a Georgia institution: open 24/7, cheap ($5-8 USD for a full breakfast), and present on every corner. It is not gourmet, but it is a genuinely Southern experience.\n\nBudget: casual food (tacos, fried chicken, Waffle House) costs $7-12 USD. A full-service restaurant runs about $18-40 USD."
           }
         },
         "safety": {
@@ -1338,8 +1338,8 @@
             "en": "Safety"
           },
           "content": {
-            "es": "Informacion de seguridad en Atlanta proximamente.",
-            "en": "Safety information for Atlanta coming soon."
+            "es": "Atlanta es segura en las zonas turisticas y comerciales. Downtown, Midtown, Buckhead y el corredor de Buford Highway son zonas seguras para visitantes durante el dia y las primeras horas de la noche. El Centennial Olympic Park y el area alrededor del Mercedes-Benz Stadium tienen vigilancia constante y presencia policial.\n\nSe recomienda precaucion estandar en las zonas al oeste del downtown (West End, Vine City fuera de las inmediaciones del estadio) despues del anochecer. Como en cualquier gran ciudad estadounidense, usa el sentido comun: no camines solo por zonas aisladas de noche y usa Uber o Lyft para trayectos nocturnos.\n\nEl MARTA es generalmente seguro, pero conviene estar atento en trenes de noche (despues de las 10 PM). Las estaciones principales (Five Points, Midtown, Buckhead, Airport) tienen presencia de seguridad. En dias de partido en el Mercedes-Benz Stadium, el area del estadio tendra fuerte presencia de seguridad con controles de acceso, policia local y personal privado.\n\nEmergencias: marca 911. Los hospitales Grady Memorial (centro) y Emory University Hospital ofrecen atencion medica de alta calidad. Las farmacias CVS y Walgreens tienen sucursales abiertas las 24 horas en varias ubicaciones.",
+            "en": "Atlanta is safe in tourist and commercial areas. Downtown, Midtown, Buckhead, and the Buford Highway corridor are safe areas for visitors during the day and early evening. Centennial Olympic Park and the area around Mercedes-Benz Stadium have constant surveillance and police presence.\n\nStandard caution is recommended in areas west of downtown (West End, Vine City outside the stadium's immediate vicinity) after dark. As in any large American city, use common sense: do not walk alone through isolated areas at night and use Uber or Lyft for nighttime trips.\n\nMARTA is generally safe, but it pays to be aware on late-night trains (after 10 PM). Main stations (Five Points, Midtown, Buckhead, Airport) have security presence. On Mercedes-Benz Stadium match days, the stadium area will have strong security presence with access controls, local police, and private personnel.\n\nEmergencies: dial 911. Grady Memorial Hospital (downtown) and Emory University Hospital offer high-quality medical care. CVS and Walgreens pharmacies have 24-hour locations at several spots."
           }
         },
         "weather": {
@@ -1348,8 +1348,8 @@
             "en": "Weather"
           },
           "content": {
-            "es": "Informacion climatica de Atlanta proximamente.",
-            "en": "Weather information for Atlanta coming soon."
+            "es": "Atlanta en junio y julio es calurosa y humeda, aunque no tan extrema como Houston o Dallas. Las temperaturas oscilan entre 25 y 35 grados centigrados (77-95 Fahrenheit) con alta humedad. La sensacion termica puede superar los 38 grados en los dias mas calientes. Es un calor pegajoso que puede ser incomodo para quienes vienen de climas secos o templados.\n\nLas tormentas electricas de la tarde son muy comunes en el verano de Georgia — aparecen rapidamente, descargan con lluvia intensa y rayos durante 30-60 minutos, y luego pasan. Lleva siempre un paraguas compacto. Estas tormentas pueden refrescar temporalmente la temperatura pero aumentan la humedad.\n\nLa gran ventaja: el Mercedes-Benz Stadium tiene un techo retractil espectacular con aire acondicionado. Dentro del estadio estaras protegido tanto del calor como de la lluvia. Pero el trayecto desde las estaciones de MARTA o el estacionamiento hasta el estadio sera al aire libre — preparate.\n\nQue empacar: ropa ligera y transpirable, zapatos comodos (Atlanta tiene colinas), protector solar, lentes de sol, paraguas compacto y una botella de agua reutilizable. Las noches son mas frescas que el dia pero siguen siendo calidas. El aire acondicionado en interiores es fuerte — una chamarra ligera para restaurantes no esta de mas.",
+            "en": "Atlanta in June and July is hot and humid, though not as extreme as Houston or Dallas. Temperatures range from 25 to 35 degrees Celsius (77-95 Fahrenheit) with high humidity. The heat index can exceed 38 degrees on the hottest days. It is a sticky heat that can be uncomfortable for those coming from dry or mild climates.\n\nAfternoon thunderstorms are very common in Georgia summers — they appear quickly, dump heavy rain and lightning for 30-60 minutes, and then pass. Always carry a compact umbrella. These storms can temporarily cool the temperature but increase humidity.\n\nThe great advantage: Mercedes-Benz Stadium has a spectacular retractable roof with air conditioning. Inside the stadium you will be protected from both heat and rain. But the walk from MARTA stations or parking to the stadium will be outdoors — be prepared.\n\nWhat to pack: light and breathable clothing, comfortable shoes (Atlanta has hills), sunscreen, sunglasses, compact umbrella, and a reusable water bottle. Evenings are cooler than daytime but still warm. Indoor air conditioning is strong — a light jacket for restaurants is not a bad idea."
           }
         },
         "culturalContext": {
@@ -1358,43 +1358,65 @@
             "en": "Cultural Context for Latin American Fans"
           },
           "content": {
-            "es": "Informacion cultural para fans latinos en Atlanta proximamente.",
-            "en": "Cultural context for Latin American fans in Atlanta coming soon."
+            "es": "La comunidad latina de Atlanta se concentra principalmente a lo largo del corredor de Buford Highway, en los municipios de Chamblee y Doraville al noreste de la ciudad. Esta franja es un mundo aparte: supermercados latinos, panaderias mexicanas, restaurantes guatemaltecos, tiendas de envio de dinero, y la Plaza Fiesta — un centro comercial al estilo de los mercados mexicanos con tiendas de ropa, joyeria, comida y servicios en espanol.\n\nLas comunidades hispanas mas grandes de Atlanta son mexicana, guatemalteca y colombiana. Las iglesias catolicas con misas en espanol son numerosas en el area metropolitana. El Consulado de Mexico y el Consulado de Guatemala estan ubicados en la ciudad. Las emisoras de radio en espanol tienen buena cobertura.\n\nAtlanta United FC tiene una de las bases de aficionados mas apasionadas de la MLS, y la presencia latina es significativa. Los grupos de apoyo Resurgence y Terminus Legion incluyen muchos miembros latinos. El ambiente en el Mercedes-Benz Stadium durante los partidos de Atlanta United es electrico — la cultura de barra y canticos tiene influencia suramericana. Durante el Mundial, espera que esta aficion se multiplique.\n\nLa hospitalidad surena es real y se extiende a los visitantes internacionales. Los atlantenses son generalmente amigables, conversadores y genuinamente interesados en hacer sentir bienvenidos a los visitantes. \"Southern hospitality\" no es un cliche — es una norma cultural en Georgia.\n\nLa propina en restaurantes es del 18-20%. El impuesto sobre ventas en Georgia es del 8.9% (Atlanta) y no esta incluido en los precios. El espanol es cada vez mas comun pero no tan extendido como en Texas o Florida — en las zonas turisticas del centro, el ingles domina.",
+            "en": "Atlanta's Latino community is concentrated primarily along the Buford Highway corridor, in the municipalities of Chamblee and Doraville northeast of the city. This strip is a world apart: Latino supermarkets, Mexican bakeries, Guatemalan restaurants, money transfer shops, and Plaza Fiesta — a shopping center styled after Mexican markets with clothing stores, jewelry, food, and services in Spanish.\n\nAtlanta's largest Hispanic communities are Mexican, Guatemalan, and Colombian. Catholic churches with Spanish-language mass are numerous in the metropolitan area. The Mexican Consulate and Guatemalan Consulate are located in the city. Spanish-language radio stations have good coverage.\n\nAtlanta United FC has one of the most passionate fan bases in MLS, and the Latino presence is significant. Supporters groups Resurgence and Terminus Legion include many Latino members. The atmosphere at Mercedes-Benz Stadium during Atlanta United matches is electric — the barra culture and chanting has South American influence. During the World Cup, expect this fandom to multiply.\n\nSouthern hospitality is real and extends to international visitors. Atlantans are generally friendly, conversational, and genuinely interested in making visitors feel welcome. \"Southern hospitality\" is not a cliche — it is a cultural norm in Georgia.\n\nTipping in restaurants is 18-20%. Sales tax in Georgia is 8.9% (Atlanta) and is not included in displayed prices. Spanish is increasingly common but not as widespread as in Texas or Florida — in downtown tourist areas, English dominates."
           }
         },
         "faq": [
           {
             "question": {
-              "es": "Como es el clima en Atlanta en verano?",
+              "es": "Como llego al Mercedes-Benz Stadium?",
+              "en": "How do I get to Mercedes-Benz Stadium?"
+            },
+            "answer": {
+              "es": "El MARTA (metro de Atlanta) es la mejor opcion. Las estaciones Vine City y GWCC/CNN Center estan a 10-15 minutos caminando del estadio. El trayecto desde el aeropuerto hasta estas estaciones toma unos 20-25 minutos y cuesta .50 USD. En dias de partido, el MARTA extiende sus horarios. Uber y Lyft tambien funcionan, pero el trafico y el estacionamiento en el centro son problematicos en dias de evento.",
+              "en": "MARTA (Atlanta's metro) is the best option. Vine City and GWCC/CNN Center stations are 10-15 minutes walking from the stadium. The trip from the airport to these stations takes about 20-25 minutes and costs $2.50 USD. On match days, MARTA extends its hours. Uber and Lyft also work, but traffic and downtown parking are problematic on event days."
+            }
+          },
+          {
+            "question": {
+              "es": "Es seguro y conveniente el MARTA?",
+              "en": "Is MARTA safe and convenient?"
+            },
+            "answer": {
+              "es": "Si, el MARTA es seguro y conveniente para las rutas principales (aeropuerto-centro-Buckhead). Las estaciones principales tienen presencia de seguridad y el servicio es frecuente. Es la forma mas practica de moverse entre el aeropuerto, el centro y el estadio. Para zonas fuera del corredor del MARTA (como Buford Highway), necesitaras Uber o auto rentado.",
+              "en": "Yes, MARTA is safe and convenient for the main routes (airport-downtown-Buckhead). Main stations have security presence and service is frequent. It is the most practical way to move between the airport, downtown, and the stadium. For areas outside the MARTA corridor (like Buford Highway), you will need Uber or a rental car."
+            }
+          },
+          {
+            "question": {
+              "es": "Donde puedo encontrar comida latinoamericana en Atlanta?",
+              "en": "Where can I find Latin American food in Atlanta?"
+            },
+            "answer": {
+              "es": "Buford Highway es el destino numero uno: mas de 10 millas de restaurantes de toda America Latina, Asia y Africa. Plaza Fiesta en Buford Highway tiene vendedores de comida mexicana y un ambiente familiar. Tambien encontraras restaurantes latinos en Doraville y Chamblee. En el centro, las opciones latinas son mas limitadas pero Ponce City Market tiene variedad internacional.",
+              "en": "Buford Highway is the number one destination: over 10 miles of restaurants from all of Latin America, Asia, and Africa. Plaza Fiesta on Buford Highway has Mexican food vendors and a family-friendly atmosphere. You will also find Latino restaurants in Doraville and Chamblee. Downtown, Latin options are more limited but Ponce City Market has international variety."
+            }
+          },
+          {
+            "question": {
+              "es": "Como es el clima de Atlanta en verano?",
               "en": "What is the weather like in Atlanta in summer?"
             },
             "answer": {
-              "es": "Caluroso y humedo, con temperaturas entre 25 y 35 grados centigrados. Las tormentas de la tarde son comunes.",
-              "en": "Hot and humid, with temperatures between 25 and 35 degrees Celsius. Afternoon thunderstorms are common."
-            }
-          },
-          {
-            "question": {
-              "es": "Es facil llegar al Mercedes-Benz Stadium?",
-              "en": "Is it easy to get to Mercedes-Benz Stadium?"
-            },
-            "answer": {
-              "es": "Si, el MARTA (metro de Atlanta) tiene paradas cercanas al estadio. La estacion Vine City/GWCC es la mas conveniente.",
-              "en": "Yes, MARTA (Atlanta's metro) has stops near the stadium. The Vine City/GWCC station is the most convenient."
-            }
-          },
-          {
-            "question": {
-              "es": "Hay comunidad latina en Atlanta?",
-              "en": "Is there a Latino community in Atlanta?"
-            },
-            "answer": {
-              "es": "Si, la comunidad latina ha crecido mucho. Buford Highway es conocida como el corredor internacional con restaurantes latinoamericanos.",
-              "en": "Yes, the Latino community has grown significantly. Buford Highway is known as the international corridor with Latin American restaurants."
+              "es": "Caluroso y humedo, con temperaturas entre 25 y 35 grados centigrados. Las tormentas electricas de la tarde son muy comunes pero suelen durar poco. El Mercedes-Benz Stadium tiene techo retractil y aire acondicionado, asi que dentro del estadio estaras comodo. Lleva ropa ligera, protector solar, paraguas y mantente hidratado.",
+              "en": "Hot and humid, with temperatures between 25 and 35 degrees Celsius. Afternoon thunderstorms are very common but usually brief. Mercedes-Benz Stadium has a retractable roof and air conditioning, so inside the stadium you will be comfortable. Wear light clothing, sunscreen, an umbrella, and stay hydrated."
             }
           }
         ],
         "sources": [
+          {
+            "name": "Discover Atlanta (portal oficial de turismo)",
+            "url": "https://discoveratlanta.com/"
+          },
+          {
+            "name": "MARTA - Metropolitan Atlanta Rapid Transit",
+            "url": "https://www.itsmarta.com/"
+          },
+          {
+            "name": "Mercedes-Benz Stadium",
+            "url": "https://mercedesbenzstadium.com/"
+          },
           {
             "name": "FIFA.com - Sedes del Mundial 2026",
             "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
@@ -1425,8 +1447,8 @@
       "lastUpdated": "2026-03-26",
       "content": {
         "overview": {
-          "es": "Filadelfia, cuna de la independencia de Estados Unidos, sera sede del Mundial 2026 en el Lincoln Financial Field. Con una rica historia, una escena gastronomica en auge y una creciente comunidad latina, Filadelfia ofrece una experiencia mundialista que combina patrimonio historico con energia deportiva apasionada. Contenido completo disponible pronto.",
-          "en": "Philadelphia, birthplace of American independence, will host the 2026 World Cup at Lincoln Financial Field. With a rich history, a booming food scene, and a growing Latino community, Philadelphia offers a World Cup experience that combines historic heritage with passionate sports energy. Full content coming soon."
+          "es": "Filadelfia es la sexta ciudad mas grande de Estados Unidos con 1.6 millones de habitantes (6.2 millones en el area metropolitana) y es, literalmente, la cuna de la nacion estadounidense — aqui se firmo la Declaracion de Independencia en 1776 y se redacto la Constitucion. El Lincoln Financial Field, hogar de los Philadelphia Eagles de la NFL con capacidad para 69,000 espectadores, sera sede de partidos del Mundial 2026. Para los aficionados latinoamericanos, Filadelfia ofrece algo que pocas ciudades estadounidenses pueden igualar: autenticidad.\n\nFiladelfia no es glamorosa como Nueva York ni soleada como Miami, pero tiene una personalidad genuina, sin pretensiones, y una energia deportiva que es legendaria. Los fans de Philadelphia son considerados los mas apasionados (y temidos) de Estados Unidos — y eso se aplica a cualquier deporte. La comunidad latina de Filadelfia ha crecido significativamente: aproximadamente el 15% de la ciudad es hispana, con una fuerte presencia puertorriquena en el norte de Filadelfia y una creciente comunidad mexicana en el sur.\n\nLa ubicacion de Filadelfia es estrategica: esta a mitad de camino entre Nueva York (1.5 horas en tren) y Washington DC (2 horas), lo que la convierte en una base ideal para fans que quieran visitar varias ciudades. Los precios son significativamente mas bajos que Nueva York — el hospedaje, la comida y el transporte cuestan entre un 30% y un 50% menos. Y el cheesesteak, por supuesto, es obligatorio.",
+          "en": "Philadelphia is the sixth-largest city in the United States with 1.6 million residents (6.2 million in the metropolitan area) and is, literally, the birthplace of the American nation — the Declaration of Independence was signed here in 1776 and the Constitution was drafted here. Lincoln Financial Field, home of the NFL's Philadelphia Eagles with a capacity of 69,000 spectators, will host 2026 World Cup matches. For Latin American fans, Philadelphia offers something few American cities can match: authenticity.\n\nPhiladelphia is not glamorous like New York or sunny like Miami, but it has a genuine, unpretentious personality and a sports energy that is legendary. Philadelphia fans are considered the most passionate (and feared) in the United States — and that applies to any sport. Philadelphia's Latino community has grown significantly: approximately 15% of the city is Hispanic, with a strong Puerto Rican presence in North Philadelphia and a growing Mexican community in the south.\n\nPhiladelphia's location is strategic: it sits midway between New York (1.5 hours by train) and Washington DC (2 hours), making it an ideal base for fans who want to visit multiple cities. Prices are significantly lower than New York — accommodation, food, and transport cost between 30% and 50% less. And the cheesesteak, of course, is mandatory."
         },
         "gettingThere": {
           "title": {
@@ -1434,8 +1456,8 @@
             "en": "Getting There"
           },
           "content": {
-            "es": "Informacion de transporte a Filadelfia proximamente.",
-            "en": "Transport information for Philadelphia coming soon."
+            "es": "El Aeropuerto Internacional de Filadelfia (PHL) recibe vuelos directos desde algunas ciudades latinoamericanas (Cancun, y rutas estacionales a otros destinos) y excelentes conexiones domesticas. American Airlines tiene un hub importante aqui. Si necesitas mas opciones internacionales, el aeropuerto de Newark (EWR), hub de United Airlines con vuelos directos desde Ciudad de Mexico, Bogota y otras capitales latinoamericanas, esta a 1.5 horas en auto.\n\nPero la verdadera joya de Filadelfia es su conectividad por tren. Amtrak Northeast Regional conecta Filadelfia con Nueva York (Penn Station) en apenas 1.5 horas por -60 USD, y con Washington DC en 2 horas por -70 USD. Los trenes salen cada 30-60 minutos durante el dia — es mas rapido y comodo que volar entre estas ciudades. La estacion 30th Street Station de Filadelfia es una de las mas hermosas de Estados Unidos.\n\nMegabus y FlixBus ofrecen opciones economicas desde Nueva York (-25 USD, 2 horas) y Washington DC (-30 USD, 3 horas). Si vienes desde otras sedes del Mundial como Boston (5 horas en Amtrak) o Atlanta (tren o avion), Filadelfia esta bien conectada.\n\nEl Lincoln Financial Field esta en el South Philadelphia Sports Complex, al sur del centro. La Broad Street Line del SEPTA (metro de Filadelfia) conecta Center City con el complejo deportivo en apenas 15 minutos por .50 USD — la parada se llama NRG/AT&T Station (junto al estadio).",
+            "en": "Philadelphia International Airport (PHL) receives direct flights from some Latin American cities (Cancun, and seasonal routes to other destinations) and excellent domestic connections. American Airlines has a major hub here. If you need more international options, Newark Airport (EWR), a United Airlines hub with direct flights from Mexico City, Bogota, and other Latin American capitals, is 1.5 hours by car.\n\nBut Philadelphia's real gem is its train connectivity. Amtrak Northeast Regional connects Philadelphia to New York (Penn Station) in just 1.5 hours for $30-60 USD, and to Washington DC in 2 hours for $40-70 USD. Trains depart every 30-60 minutes during the day — it is faster and more comfortable than flying between these cities. Philadelphia's 30th Street Station is one of the most beautiful in the United States.\n\nMegabus and FlixBus offer budget options from New York ($10-25 USD, 2 hours) and Washington DC ($15-30 USD, 3 hours). If coming from other World Cup venues like Boston (5 hours on Amtrak) or Atlanta (train or plane), Philadelphia is well connected.\n\nLincoln Financial Field is in the South Philadelphia Sports Complex, south of downtown. SEPTA's Broad Street Line (Philadelphia's subway) connects Center City to the sports complex in just 15 minutes for $2.50 USD — the stop is called NRG/AT&T Station (next to the stadium)."
           }
         },
         "gettingAround": {
@@ -1444,8 +1466,8 @@
             "en": "Getting Around"
           },
           "content": {
-            "es": "Informacion de transporte local en Filadelfia proximamente.",
-            "en": "Local transport information for Philadelphia coming soon."
+            "es": "El SEPTA (Southeastern Pennsylvania Transportation Authority) opera el metro, autobuses y tranvias de Filadelfia. Las dos lineas principales de metro son la Broad Street Line (norte-sur, conecta Center City con el complejo deportivo) y la Market-Frankford Line (este-oeste). La Broad Street Line es clave para los dias de partido: la estacion NRG/AT&T esta justo al lado del Lincoln Financial Field.\n\nCenter City, el corazon de Filadelfia, es una de las zonas mas caminables de cualquier gran ciudad estadounidense. Desde Rittenhouse Square hasta Old City (el barrio historico con Independence Hall), la mayoria de los puntos de interes estan a distancia caminable. Es compacto, arbolado y perfecto para explorar a pie.\n\nUber y Lyft funcionan bien en toda Filadelfia. Para la mayoria de los visitantes que se queden en Center City, el metro y caminar seran suficientes — rentar auto es innecesario y el estacionamiento en Center City es caro.\n\nIndego es el sistema de bicicletas compartidas de Filadelfia con estaciones en todo Center City y los barrios circundantes. Es una forma divertida y economica de moverse en dias de buen clima.\n\nPara llegar al Lincoln Financial Field: la Broad Street Line (linea naranja del SEPTA) va directamente desde Center City hasta la estacion NRG/AT&T en el complejo deportivo. Es la forma mas rapida y economica (.50 USD). En dias de partido, el SEPTA aumenta la frecuencia del servicio.",
+            "en": "SEPTA (Southeastern Pennsylvania Transportation Authority) operates Philadelphia's subway, buses, and trolleys. The two main subway lines are the Broad Street Line (north-south, connecting Center City with the sports complex) and the Market-Frankford Line (east-west). The Broad Street Line is key for match days: the NRG/AT&T station is right next to Lincoln Financial Field.\n\nCenter City, Philadelphia's heart, is one of the most walkable areas in any major American city. From Rittenhouse Square to Old City (the historic district with Independence Hall), most points of interest are within walking distance. It is compact, tree-lined, and perfect for exploring on foot.\n\nUber and Lyft work well throughout Philadelphia. For most visitors staying in Center City, the subway and walking will be sufficient — renting a car is unnecessary and Center City parking is expensive.\n\nIndego is Philadelphia's bike-sharing system with stations throughout Center City and surrounding neighborhoods. It is a fun and affordable way to get around on nice-weather days.\n\nTo get to Lincoln Financial Field: the Broad Street Line (SEPTA's orange line) goes directly from Center City to the NRG/AT&T station at the sports complex. It is the fastest and most affordable way ($2.50 USD). On match days, SEPTA increases service frequency."
           }
         },
         "neighborhoods": {
@@ -1454,8 +1476,8 @@
             "en": "Where to Stay"
           },
           "content": {
-            "es": "Informacion de hospedaje en Filadelfia proximamente.",
-            "en": "Accommodation information for Philadelphia coming soon."
+            "es": "Center City es el lugar ideal para hospedarse en Filadelfia. Es compacto, caminable y concentra la mayoria de los atractivos turisticos, restaurantes y la conexion de metro al estadio. Rittenhouse Square es la zona mas elegante, con parques, cafes y boutiques — hoteles entre  y  USD por noche. La zona alrededor de la estacion 30th Street es conveniente si llegas en tren. El Old City (barrio historico) combina edificios coloniales con restaurantes modernos y una vida nocturna animada — hoteles y Airbnbs entre  y  USD por noche.\n\nSouth Philadelphia es el barrio mas cercano al estadio. El Italian Market en la calle 9 es un mercado al aire libre con decadas de historia, y es aqui donde nacio la cultura del cheesesteak. La zona es residencial, autentica y mas economica que Center City (-100 USD por noche). Es perfecta si quieres estar cerca del Lincoln Financial Field.\n\nNorth Philadelphia y Kensington albergan las comunidades latinas mas grandes de la ciudad, con una fuerte presencia puertorriquena y mexicana. El Bloque de Oro en la calle North 5th es el corazon cultural boricua de Filadelfia. Encontraras comida autentica y precios muy accesibles, pero algunas zonas de North Philly y Kensington requieren precaucion — informe antes de reservar.\n\nUniversity City (cerca de la Universidad de Penn y Drexel) es una opcion de presupuesto con ambiente universitario, restaurantes variados y buena conexion de transporte (-90 USD por noche).",
+            "en": "Center City is the ideal place to stay in Philadelphia. It is compact, walkable, and concentrates most tourist attractions, restaurants, and the subway connection to the stadium. Rittenhouse Square is the most elegant area, with parks, cafes, and boutiques — hotels between $120 and $220 USD per night. The area around 30th Street Station is convenient if arriving by train. Old City (historic district) combines colonial buildings with modern restaurants and lively nightlife — hotels and Airbnbs between $100 and $180 USD per night.\n\nSouth Philadelphia is the neighborhood closest to the stadium. The Italian Market on 9th Street is an open-air market with decades of history, and it is where cheesesteak culture was born. The area is residential, authentic, and more affordable than Center City ($60-100 USD per night). It is perfect if you want to be close to Lincoln Financial Field.\n\nNorth Philadelphia and Kensington house the city's largest Latino communities, with a strong Puerto Rican and Mexican presence. El Bloque de Oro on North 5th Street is the cultural heart of Philadelphia's Puerto Rican community. You will find authentic food and very affordable prices, but some areas of North Philly and Kensington require caution — research before booking.\n\nUniversity City (near the University of Pennsylvania and Drexel) is a budget option with a university vibe, varied restaurants, and good transport connections ($50-90 USD per night)."
           }
         },
         "foodAndDrink": {
@@ -1464,8 +1486,8 @@
             "en": "Food & Drink"
           },
           "content": {
-            "es": "Informacion gastronomica de Filadelfia proximamente.",
-            "en": "Food and drink information for Philadelphia coming soon."
+            "es": "El cheesesteak es el plato mas iconico de Filadelfia y es absolutamente obligatorio probarlo. Es un sandwich de carne de res finamente cortada, cocida en plancha, con queso derretido (Cheez Whiz, provolone o American) en un pan largo italiano. El debate eterno entre Pat's King of Steaks y Geno's Steaks (ambos en la esquina de 9th y Passyunk, abiertos 24/7) es parte del folclore local — pero los locales te diran que vayas a Jim's en South Street o a John's Roast Pork para la mejor experiencia.\n\nReading Terminal Market es imperdible — uno de los mejores food halls de America. Un mercado cubierto historico con mas de 80 vendedores que ofrecen de todo: desde comida Amish hasta tacos, desde donuts hasta comida etiope. Abre de lunes a sabado y es el lugar perfecto para un almuerzo exploratorio.\n\nEl Italian Market en la calle 9 (sur de Filadelfia) es el mercado al aire libre mas antiguo de Estados Unidos. Carniceros, quesos importados, panaderias italianas, y en los ultimos anos, taquerias y restaurantes mexicanos que reflejan la comunidad cambiante del barrio.\n\nNorth Philly tiene excelente comida puertorriquena (mofongo, pernil, pasteles) y taquerias mexicanas con tacos autenticos. Los soft pretzels son otro clasico de Filadelfia — masa suave con mostaza, vendidos en carritos por toda la ciudad. El water ice (helado italiano, similar a la nieve mexicana) es el postre de verano omnipresente.\n\nPresupuesto: comida casual (cheesesteak, pretzels, tacos) cuesta -12 USD. Un restaurante con servicio completo ronda los -40 USD.",
+            "en": "The cheesesteak is Philadelphia's most iconic dish and it is absolutely mandatory to try. It is a sandwich of thinly sliced beef, cooked on a griddle, with melted cheese (Cheez Whiz, provolone, or American) on a long Italian roll. The eternal debate between Pat's King of Steaks and Geno's Steaks (both at the corner of 9th and Passyunk, open 24/7) is part of local folklore — but locals will tell you to go to Jim's on South Street or John's Roast Pork for the best experience.\n\nReading Terminal Market is unmissable — one of the best food halls in America. A historic covered market with over 80 vendors offering everything from Amish food to tacos, from donuts to Ethiopian food. It is open Monday through Saturday and is the perfect place for an exploratory lunch.\n\nThe Italian Market on 9th Street (South Philadelphia) is the oldest outdoor market in the United States. Butchers, imported cheeses, Italian bakeries, and in recent years, taquerias and Mexican restaurants reflecting the neighborhood's changing community.\n\nNorth Philly has excellent Puerto Rican food (mofongo, pernil, pasteles) and Mexican taquerias with authentic tacos. Soft pretzels are another Philadelphia classic — soft dough with mustard, sold from carts throughout the city. Water ice (Italian ice, similar to Mexican nieve) is the ubiquitous summer dessert.\n\nBudget: casual food (cheesesteak, pretzels, tacos) costs $6-12 USD. A full-service restaurant runs about $18-40 USD."
           }
         },
         "safety": {
@@ -1474,8 +1496,8 @@
             "en": "Safety"
           },
           "content": {
-            "es": "Informacion de seguridad en Filadelfia proximamente.",
-            "en": "Safety information for Philadelphia coming soon."
+            "es": "Center City y las zonas turisticas de Filadelfia son seguras. Old City, Rittenhouse Square, el Museum District, South Street y University City son areas transitadas y seguras para visitantes de dia y de noche. South Philadelphia cerca del estadio es un barrio residencial tranquilo y seguro.\n\nSe recomienda precaucion en partes de North Philadelphia y Kensington, que han sido afectadas por problemas de drogas y tienen mayores tasas de criminalidad. Si visitas las zonas latinas de North Philly, hazlo durante el dia y en las calles principales.\n\nEl SEPTA es generalmente seguro, especialmente en las estaciones principales y durante los horarios de servicio regular. En dias de partido en el Lincoln Financial Field, la zona del South Philadelphia Sports Complex tiene fuerte presencia policial y seguridad privada.\n\nFiladelfia tiene una reputacion mas dura de la que merece — las zonas turisticas son muy seguras. Los fans de deportes de Philly son famosos por su intensidad, pero eso es pasion deportiva, no violencia hacia visitantes. Emergencias: marca 911. Los hospitales Thomas Jefferson University Hospital y Penn Medicine ofrecen atencion de primer nivel.",
+            "en": "Center City and Philadelphia's tourist areas are safe. Old City, Rittenhouse Square, the Museum District, South Street, and University City are well-trafficked and safe areas for visitors day and night. South Philadelphia near the stadium is a quiet and safe residential neighborhood.\n\nCaution is recommended in parts of North Philadelphia and Kensington, which have been affected by drug problems and have higher crime rates. If visiting the Latino areas of North Philly, do so during the day and on main streets.\n\nSEPTA is generally safe, especially at main stations and during regular service hours. On Lincoln Financial Field match days, the South Philadelphia Sports Complex area has strong police presence and private security.\n\nPhiladelphia has a tougher reputation than it deserves — the tourist areas are very safe. Philly sports fans are famous for their intensity, but that is sports passion, not violence toward visitors. Emergencies: dial 911. Thomas Jefferson University Hospital and Penn Medicine offer top-tier medical care."
           }
         },
         "weather": {
@@ -1484,8 +1506,8 @@
             "en": "Weather"
           },
           "content": {
-            "es": "Informacion climatica de Filadelfia proximamente.",
-            "en": "Weather information for Philadelphia coming soon."
+            "es": "Filadelfia en junio y julio es calida y humeda, pero notablemente mas moderada que las sedes texanas. Las temperaturas oscilan entre 23 y 32 grados centigrados (73-90 Fahrenheit), con dias ocasionales que pueden superar los 35 grados durante olas de calor. La humedad es moderada a alta pero no tan opresiva como en Houston o Atlanta.\n\nLas lluvias de verano son posibles — pueden aparecer tormentas breves por la tarde, pero no son tan frecuentes ni intensas como en las ciudades del sur. Lleva un paraguas o poncho ligero por si acaso.\n\nEl Lincoln Financial Field es un estadio al aire libre sin techo — esto significa que estaras expuesto al sol, al calor y a cualquier lluvia durante los partidos. Lleva protector solar, sombrero, y considera un poncho impermeable para estar preparado. Las noches de verano en Filadelfia pueden ser agradables, especialmente despues del atardecer.\n\nQue empacar: ropa ligera para el dia, una chamarra ligera o sudadera para las noches (que son mas frescas que en el sur), protector solar, sombrero, zapatos comodos para caminar (Center City se explora mejor a pie), y un paraguas o poncho compacto. Filadelfia es mas templada que Dallas, Houston o Atlanta — es una de las sedes mas agradables climaticamente en verano.",
+            "en": "Philadelphia in June and July is warm and humid, but notably more moderate than the Texas venues. Temperatures range from 23 to 32 degrees Celsius (73-90 Fahrenheit), with occasional days that can exceed 35 degrees during heat waves. Humidity is moderate to high but not as oppressive as Houston or Atlanta.\n\nSummer rains are possible — brief afternoon storms can appear, but they are not as frequent or intense as in southern cities. Carry an umbrella or light poncho just in case.\n\nLincoln Financial Field is an open-air stadium with no roof — this means you will be exposed to sun, heat, and any rain during matches. Bring sunscreen, a hat, and consider a rain poncho to be prepared. Summer evenings in Philadelphia can be pleasant, especially after sunset.\n\nWhat to pack: light clothing for the day, a light jacket or hoodie for evenings (which are cooler than in the south), sunscreen, hat, comfortable walking shoes (Center City is best explored on foot), and a compact umbrella or poncho. Philadelphia is milder than Dallas, Houston, or Atlanta — it is one of the most climatically pleasant venues in summer."
           }
         },
         "culturalContext": {
@@ -1494,8 +1516,8 @@
             "en": "Cultural Context for Latin American Fans"
           },
           "content": {
-            "es": "Informacion cultural para fans latinos en Filadelfia proximamente.",
-            "en": "Cultural context for Latin American fans in Philadelphia coming soon."
+            "es": "Filadelfia tiene una de las comunidades puertorriquenas mas grandes de Estados Unidos, concentrada en North Philadelphia. El Bloque de Oro en la calle North 5th es el epicentro cultural boricua de la ciudad — aqui encontraras restaurantes puertorriquenos, murales que celebran la herencia caribena, tiendas de musica y negocios en espanol. La Feria del Barrio es un festival cultural latino anual que celebra la musica, comida y tradiciones de la comunidad hispana.\n\nLa comunidad mexicana ha crecido significativamente en South Philadelphia, donde las taquerias y restaurantes mexicanos se han sumado al paisaje tradicionalmente italiano del barrio. Esta fusion de culturas italiana y mexicana en South Philly es fascinante y se traduce en opciones gastronomicas increibles.\n\nEl Consulado de Mexico se encuentra en Center City. Los servicios en espanol estan disponibles en hospitales y oficinas de gobierno de la ciudad. Las emisoras de radio en espanol tienen presencia en el area metropolitana.\n\nEl Philadelphia Union, el equipo de la MLS, juega en Chester (un suburbio al sur) y tiene aficionados latinos activos. Pero los verdaderos reyes del deporte en Filadelfia son los Eagles de la NFL — la ciudad respira futbol americano, y la pasion deportiva de los \"Philly fans\" es legendaria. Durante el Mundial de futbol (soccer), espera que esa misma energia se canalice hacia el deporte rey.\n\nLa propina en restaurantes es del 18-20%. El impuesto sobre ventas en Filadelfia es del 8% (pero la comida preparada en restaurantes no tiene impuesto en Pensilvania — una ventaja). Filadelfia es una ciudad directa y sin pretensiones — los locales son amigables pero no tan expresivos como en el sur. Es una ciudad real con gente real.",
+            "en": "Philadelphia has one of the largest Puerto Rican communities in the United States, concentrated in North Philadelphia. El Bloque de Oro on North 5th Street is the city's Puerto Rican cultural epicenter — here you will find Puerto Rican restaurants, murals celebrating Caribbean heritage, music shops, and businesses in Spanish. The Feria del Barrio is an annual Latino cultural festival celebrating the music, food, and traditions of the Hispanic community.\n\nThe Mexican community has grown significantly in South Philadelphia, where taquerias and Mexican restaurants have joined the traditionally Italian landscape of the neighborhood. This fusion of Italian and Mexican cultures in South Philly is fascinating and translates into incredible food options.\n\nThe Mexican Consulate is located in Center City. Spanish-language services are available at hospitals and city government offices. Spanish-language radio stations have presence in the metropolitan area.\n\nThe Philadelphia Union, the MLS team, plays in Chester (a suburb to the south) and has active Latino fans. But the true kings of sports in Philadelphia are the NFL's Eagles — the city breathes American football, and the sports passion of \"Philly fans\" is legendary. During the football (soccer) World Cup, expect that same energy to channel into the beautiful game.\n\nTipping in restaurants is 18-20%. Sales tax in Philadelphia is 8% (but prepared food in restaurants is not taxed in Pennsylvania — an advantage). Philadelphia is a direct and unpretentious city — locals are friendly but not as expressive as in the South. It is a real city with real people."
           }
         },
         "faq": [
@@ -1505,32 +1527,54 @@
               "en": "How do I get to Lincoln Financial Field?"
             },
             "answer": {
-              "es": "La linea Broad Street del SEPTA (metro de Filadelfia) tiene la estacion NRG/AT&T junto al estadio. Tambien se puede llegar en Uber.",
-              "en": "SEPTA's Broad Street Line (Philadelphia's subway) has the NRG/AT&T station next to the stadium. You can also get there by Uber."
+              "es": "La Broad Street Line del SEPTA (metro de Filadelfia) es la mejor opcion. La estacion NRG/AT&T esta justo al lado del estadio. Desde Center City el trayecto toma 15 minutos y cuesta .50 USD. En dias de partido, el SEPTA aumenta la frecuencia. Uber y Lyft tambien funcionan, pero el metro es mas rapido y evita el trafico. No necesitas auto para llegar al estadio.",
+              "en": "SEPTA's Broad Street Line (Philadelphia's subway) is the best option. The NRG/AT&T station is right next to the stadium. From Center City the trip takes 15 minutes and costs $2.50 USD. On match days, SEPTA increases frequency. Uber and Lyft also work, but the subway is faster and avoids traffic. You do not need a car to get to the stadium."
             }
           },
           {
             "question": {
-              "es": "Que debo comer en Filadelfia?",
-              "en": "What should I eat in Philadelphia?"
+              "es": "Cual es la diferencia entre Pat's y Geno's cheesesteaks?",
+              "en": "What is the difference between Pat's and Geno's cheesesteaks?"
             },
             "answer": {
-              "es": "El famoso cheesesteak es obligatorio. Tambien prueba los soft pretzels y visita el Reading Terminal Market para comida diversa.",
-              "en": "The famous cheesesteak is a must. Also try the soft pretzels and visit Reading Terminal Market for diverse food options."
+              "es": "Pat's King of Steaks (fundado en 1930) es el \"inventor\" original del cheesesteak. Geno's Steaks abrio enfrente en 1966, creando una rivalidad legendaria. Ambos sirven cheesesteaks 24/7 en la esquina de 9th y Passyunk en South Philly. La diferencia principal es de estilo: Pat's es mas clasico con carne mas picada; Geno's tiene carne en tiras mas visibles. Los locales de Filadelfia a menudo prefieren Jim's South Street o John's Roast Pork por encima de ambos.",
+              "en": "Pat's King of Steaks (founded 1930) is the original cheesesteak \"inventor.\" Geno's Steaks opened across the street in 1966, creating a legendary rivalry. Both serve cheesesteaks 24/7 at the corner of 9th and Passyunk in South Philly. The main difference is style: Pat's is more classic with more chopped meat; Geno's has more visible meat strips. Philadelphia locals often prefer Jim's South Street or John's Roast Pork over both."
             }
           },
           {
             "question": {
-              "es": "Donde esta la comunidad latina en Filadelfia?",
-              "en": "Where is the Latino community in Philadelphia?"
+              "es": "Es segura Filadelfia?",
+              "en": "Is Philadelphia safe?"
             },
             "answer": {
-              "es": "El barrio del Norte de Filadelfia y Kensington tienen grandes comunidades puertorriquenas y mexicanas con restaurantes y mercados latinos.",
-              "en": "North Philadelphia and Kensington have large Puerto Rican and Mexican communities with Latino restaurants and markets."
+              "es": "Las zonas turisticas (Center City, Old City, South Philly, University City) son seguras. Filadelfia tiene una reputacion mas dura de la que merece en las areas que visitan los turistas. Se recomienda precaucion en partes de North Philadelphia y Kensington. Usa el sentido comun, camina por calles principales y usa Uber de noche como en cualquier gran ciudad.",
+              "en": "The tourist areas (Center City, Old City, South Philly, University City) are safe. Philadelphia has a tougher reputation than it deserves in the areas tourists visit. Caution is recommended in parts of North Philadelphia and Kensington. Use common sense, stick to main streets, and use Uber at night as in any large city."
+            }
+          },
+          {
+            "question": {
+              "es": "Que tan lejos esta Filadelfia de Nueva York?",
+              "en": "How far is Philadelphia from New York?"
+            },
+            "answer": {
+              "es": "Solo 1.5 horas en tren Amtrak Northeast Regional (-60 USD) o 2 horas en autobus Megabus/FlixBus (-25 USD). Es perfectamente viable visitar ambas ciudades durante el Mundial. Washington DC tambien esta a solo 2 horas en tren (-70 USD). La posicion de Filadelfia entre ambas ciudades la convierte en una base estrategica ideal.",
+              "en": "Just 1.5 hours by Amtrak Northeast Regional train ($30-60 USD) or 2 hours by Megabus/FlixBus ($10-25 USD). It is perfectly feasible to visit both cities during the World Cup. Washington DC is also just 2 hours by train ($40-70 USD). Philadelphia's position between both cities makes it an ideal strategic base."
             }
           }
         ],
         "sources": [
+          {
+            "name": "Visit Philadelphia (portal oficial de turismo)",
+            "url": "https://www.visitphilly.com/"
+          },
+          {
+            "name": "SEPTA - Southeastern Pennsylvania Transportation",
+            "url": "https://www.septa.org/"
+          },
+          {
+            "name": "Independence Visitor Center",
+            "url": "https://www.phlvisitorcenter.com/"
+          },
           {
             "name": "FIFA.com - Sedes del Mundial 2026",
             "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
