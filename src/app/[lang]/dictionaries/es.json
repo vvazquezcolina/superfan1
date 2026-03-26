@@ -113,5 +113,31 @@
     "disclosureDescription": "Informacion sobre enlaces de afiliados y como nos financiamos.",
     "aboutTitle": "Acerca de SuperFan",
     "aboutDescription": "Sobre SuperFan Mundial 2026: nuestra mision, independencia editorial y equipo."
+  },
+  "newsletter": {
+    "heading": "Recibe actualizaciones del Mundial",
+    "subheading": "Noticias, guias de ciudades y consejos de viaje directamente en tu correo.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tu@correo.com",
+    "submitButton": "Suscribirme",
+    "successMessage": "Gracias por suscribirte! Pronto recibiras noticias del Mundial.",
+    "dismissLabel": "Cerrar",
+    "privacyNote": "Sin spam. Solo contenido mundialista."
+  },
+  "countdown": {
+    "days": "dias",
+    "hours": "horas",
+    "minutes": "minutos",
+    "seconds": "segundos",
+    "label": "para el inicio del Mundial",
+    "started": "El Mundial ha comenzado!"
+  },
+  "search": {
+    "label": "Buscar",
+    "placeholder": "Buscar ciudades, estadios, guias...",
+    "noResults": "Sin resultados para",
+    "loading": "Buscando...",
+    "notAvailableInDev": "Busqueda no disponible en desarrollo. Ejecuta `npm run build` primero.",
+    "closeLabel": "Cerrar busqueda"
   }
 }

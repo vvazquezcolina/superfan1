@@ -113,5 +113,31 @@
     "disclosureDescription": "Information about affiliate links and how we fund this site.",
     "aboutTitle": "About SuperFan",
     "aboutDescription": "About SuperFan World Cup 2026: our mission, editorial independence, and team."
+  },
+  "newsletter": {
+    "heading": "Get World Cup Updates",
+    "subheading": "City guides, travel tips, and news delivered to your inbox.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@email.com",
+    "submitButton": "Subscribe",
+    "successMessage": "Thanks for subscribing! World Cup updates coming your way.",
+    "dismissLabel": "Close",
+    "privacyNote": "No spam. World Cup content only."
+  },
+  "countdown": {
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "label": "until the World Cup kicks off",
+    "started": "The World Cup has started!"
+  },
+  "search": {
+    "label": "Search",
+    "placeholder": "Search cities, stadiums, guides...",
+    "noResults": "No results for",
+    "loading": "Searching...",
+    "notAvailableInDev": "Search not available in dev. Run `npm run build` first.",
+    "closeLabel": "Close search"
   }
 }
