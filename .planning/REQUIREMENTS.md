@@ -144,62 +144,62 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-02 | Phase 1 | Pending |
 | INFRA-03 | Phase 1 | Pending |
 | INFRA-04 | Phase 1 | Pending |
-| INFRA-05 | Phase 1 | Pending |
+| INFRA-05 | Phase 2 | Pending |
 | INFRA-06 | Phase 1 | Pending |
 | INFRA-07 | Phase 1 | Pending |
-| CITY-01 | Phase 2 | Pending |
-| CITY-02 | Phase 2 | Pending |
-| CITY-03 | Phase 2 | Pending |
-| CITY-04 | Phase 2 | Pending |
-| STAD-01 | Phase 2 | Pending |
-| STAD-02 | Phase 2 | Pending |
-| STAD-03 | Phase 2 | Pending |
-| SEO-01 | Phase 3 | Pending |
-| SEO-02 | Phase 3 | Pending |
-| SEO-03 | Phase 3 | Pending |
-| SEO-04 | Phase 3 | Pending |
-| SEO-05 | Phase 3 | Pending |
-| SEO-06 | Phase 3 | Pending |
-| LLM-01 | Phase 4 | Pending |
-| LLM-02 | Phase 4 | Pending |
-| LLM-03 | Phase 4 | Pending |
-| LLM-04 | Phase 4 | Pending |
-| LLM-05 | Phase 4 | Pending |
-| LLM-06 | Phase 4 | Pending |
-| LLM-07 | Phase 4 | Pending |
-| MON-01 | Phase 5 | Pending |
-| MON-02 | Phase 5 | Pending |
-| MON-03 | Phase 5 | Pending |
-| MON-04 | Phase 5 | Pending |
-| MON-05 | Phase 5 | Pending |
-| MON-06 | Phase 5 | Pending |
-| MON-07 | Phase 5 | Pending |
-| MON-08 | Phase 5 | Pending |
-| TEAM-01 | Phase 6 | Pending |
-| TEAM-02 | Phase 6 | Pending |
-| TEAM-03 | Phase 6 | Pending |
-| TRVL-01 | Phase 6 | Pending |
-| TRVL-02 | Phase 6 | Pending |
-| TRVL-03 | Phase 6 | Pending |
-| TRVL-04 | Phase 6 | Pending |
-| TRVL-05 | Phase 6 | Pending |
-| TRVL-06 | Phase 6 | Pending |
-| TRVL-07 | Phase 6 | Pending |
-| LEAD-01 | Phase 7 | Pending |
-| LEAD-02 | Phase 7 | Pending |
-| LEAD-03 | Phase 7 | Pending |
-| TOOL-01 | Phase 8 | Pending |
-| TOOL-02 | Phase 8 | Pending |
-| TOOL-03 | Phase 2 | Pending |
-| LEGAL-01 | Phase 1 | Pending |
-| LEGAL-02 | Phase 5 | Pending |
-| LEGAL-03 | Phase 2 | Pending |
+| CITY-01 | Phase 3 | Pending |
+| CITY-02 | Phase 3 | Pending |
+| CITY-03 | Phase 3 | Pending |
+| CITY-04 | Phase 3 | Pending |
+| STAD-01 | Phase 4 | Pending |
+| STAD-02 | Phase 4 | Pending |
+| STAD-03 | Phase 4 | Pending |
+| TEAM-01 | Phase 7 | Pending |
+| TEAM-02 | Phase 7 | Pending |
+| TEAM-03 | Phase 7 | Pending |
+| TRVL-01 | Phase 8 | Pending |
+| TRVL-02 | Phase 8 | Pending |
+| TRVL-03 | Phase 8 | Pending |
+| TRVL-04 | Phase 8 | Pending |
+| TRVL-05 | Phase 8 | Pending |
+| TRVL-06 | Phase 8 | Pending |
+| TRVL-07 | Phase 8 | Pending |
+| SEO-01 | Phase 2 | Pending |
+| SEO-02 | Phase 2 | Pending |
+| SEO-03 | Phase 2 | Pending |
+| SEO-04 | Phase 2 | Pending |
+| SEO-05 | Phase 2 | Pending |
+| SEO-06 | Phase 2 | Pending |
+| LLM-01 | Phase 5 | Pending |
+| LLM-02 | Phase 5 | Pending |
+| LLM-03 | Phase 5 | Pending |
+| LLM-04 | Phase 5 | Pending |
+| LLM-05 | Phase 5 | Pending |
+| LLM-06 | Phase 5 | Pending |
+| LLM-07 | Phase 5 | Pending |
+| MON-01 | Phase 6 | Pending |
+| MON-02 | Phase 6 | Pending |
+| MON-03 | Phase 6 | Pending |
+| MON-04 | Phase 6 | Pending |
+| MON-05 | Phase 6 | Pending |
+| MON-06 | Phase 6 | Pending |
+| MON-07 | Phase 6 | Pending |
+| MON-08 | Phase 6 | Pending |
+| LEAD-01 | Phase 9 | Pending |
+| LEAD-02 | Phase 9 | Pending |
+| LEAD-03 | Phase 9 | Pending |
+| TOOL-01 | Phase 10 | Pending |
+| TOOL-02 | Phase 10 | Pending |
+| TOOL-03 | Phase 4 | Pending |
+| LEGAL-01 | Phase 2 | Pending |
+| LEGAL-02 | Phase 6 | Pending |
+| LEGAL-03 | Phase 3 | Pending |
 
 **Coverage:**
-- v1 requirements: 52 total
-- Mapped to phases: 52
-- Unmapped: 0 ✓
+- v1 requirements: 54 total
+- Mapped to phases: 54
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-26*
-*Last updated: 2026-03-26 after initial definition*
+*Last updated: 2026-03-26 after roadmap creation*
