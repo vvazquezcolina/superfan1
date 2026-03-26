@@ -78,6 +78,14 @@
     "hostCity": "Ciudad sede",
     "lastUpdated": "Ultima actualizacion"
   },
+  "affiliate": {
+    "hotelsNear": "Hoteles cerca de",
+    "searchHotels": "Buscar hoteles en",
+    "fromPerNight": "desde",
+    "bookNow": "Reservar ahora",
+    "disclosure": "Enlace de afiliado - podemos recibir una comision",
+    "poweredBy": "Resultados de Booking.com"
+  },
   "city": {
     "gettingThere": "Como llegar",
     "gettingAround": "Como moverse",

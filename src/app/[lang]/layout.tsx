@@ -4,6 +4,7 @@ import { getDictionary, hasLocale } from './dictionaries'
 import { buildHomeAlternates, SITE_URL } from '@/lib/i18n'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
 import '@/app/globals.css'
 
 export async function generateStaticParams() {
@@ -49,6 +50,7 @@ export default async function LangLayout({
           {children}
         </main>
         <Footer lang={lang} dict={dict} />
+        <GoogleAnalytics />
       </body>
     </html>
   )

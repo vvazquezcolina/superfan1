@@ -78,6 +78,14 @@
     "hostCity": "Host City",
     "lastUpdated": "Last updated"
   },
+  "affiliate": {
+    "hotelsNear": "Hotels near",
+    "searchHotels": "Search hotels in",
+    "fromPerNight": "from",
+    "bookNow": "Book now",
+    "disclosure": "Affiliate link - we may earn a commission",
+    "poweredBy": "Results by Booking.com"
+  },
   "city": {
     "gettingThere": "Getting There",
     "gettingAround": "Getting Around",

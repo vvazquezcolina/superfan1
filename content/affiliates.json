@@ -1,0 +1,16 @@
+{
+  "partners": [
+    {
+      "id": "booking",
+      "name": "Booking.com",
+      "baseUrl": "https://www.booking.com",
+      "searchUrlTemplate": "https://www.booking.com/searchresults.html?ss={city}&checkin={checkin}&checkout={checkout}&lang={lang}&aid={aid}",
+      "aid": "304142",
+      "disclosure": {
+        "es": "Enlace de afiliado - podemos recibir una comision si reservas a traves de este enlace, sin costo adicional para ti.",
+        "en": "Affiliate link - we may earn a commission if you book through this link, at no additional cost to you."
+      },
+      "active": true
+    }
+  ]
+}
