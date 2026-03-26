@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getStadium, getStadiumSlugs } from '@/lib/content/stadiums'
 import { hasLocale } from '@/app/[lang]/dictionaries'
-import { buildAlternates, SITE_URL } from '@/lib/i18n'
+import { buildAlternates } from '@/lib/i18n'
+import { buildPageMetadata } from '@/lib/seo'
 import type { Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -19,16 +20,14 @@ export async function generateMetadata({
   const stadium = getStadium(slug, lang as Locale)
   if (!stadium) return {}
 
-  const alternates = buildAlternates('estadios', stadium.slugs)
-
-  return {
+  const section = lang === 'es' ? 'estadios' : 'stadiums'
+  return buildPageMetadata({
     title: stadium.name[lang as Locale],
     description: stadium.description[lang as Locale],
-    alternates: {
-      ...alternates,
-      canonical: `${SITE_URL}/${lang}/${lang === 'es' ? 'estadios' : 'stadiums'}/${slug}`,
-    },
-  }
+    lang: lang as Locale,
+    path: `/${lang}/${section}/${slug}`,
+    alternates: buildAlternates('estadios', stadium.slugs),
+  })
 }
 
 export default async function StadiumPage({

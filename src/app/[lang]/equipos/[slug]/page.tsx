@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getTeam, getTeamSlugs } from '@/lib/content/teams'
 import { hasLocale } from '@/app/[lang]/dictionaries'
-import { buildAlternates, SITE_URL } from '@/lib/i18n'
+import { buildAlternates } from '@/lib/i18n'
+import { buildPageMetadata } from '@/lib/seo'
 import type { Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -19,16 +20,14 @@ export async function generateMetadata({
   const team = getTeam(slug, lang as Locale)
   if (!team) return {}
 
-  const alternates = buildAlternates('equipos', team.slugs)
-
-  return {
+  const section = lang === 'es' ? 'equipos' : 'teams'
+  return buildPageMetadata({
     title: team.name[lang as Locale],
     description: team.description[lang as Locale],
-    alternates: {
-      ...alternates,
-      canonical: `${SITE_URL}/${lang}/${lang === 'es' ? 'equipos' : 'teams'}/${slug}`,
-    },
-  }
+    lang: lang as Locale,
+    path: `/${lang}/${section}/${slug}`,
+    alternates: buildAlternates('equipos', team.slugs),
+  })
 }
 
 export default async function TeamPage({

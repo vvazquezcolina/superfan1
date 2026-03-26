@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getCity, getCitySlugs } from '@/lib/content/cities'
 import { hasLocale } from '@/app/[lang]/dictionaries'
-import { buildAlternates, SITE_URL } from '@/lib/i18n'
+import { buildAlternates } from '@/lib/i18n'
+import { buildPageMetadata } from '@/lib/seo'
 import type { Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -19,16 +20,14 @@ export async function generateMetadata({
   const city = getCity(slug, lang as Locale)
   if (!city) return {}
 
-  const alternates = buildAlternates('ciudades', city.slugs)
-
-  return {
+  const section = lang === 'es' ? 'ciudades' : 'cities'
+  return buildPageMetadata({
     title: city.name[lang as Locale],
     description: city.description[lang as Locale],
-    alternates: {
-      ...alternates,
-      canonical: `${SITE_URL}/${lang}/${lang === 'es' ? 'ciudades' : 'cities'}/${slug}`,
-    },
-  }
+    lang: lang as Locale,
+    path: `/${lang}/${section}/${slug}`,
+    alternates: buildAlternates('ciudades', city.slugs),
+  })
 }
 
 export default async function CityPage({
