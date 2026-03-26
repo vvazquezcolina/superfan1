@@ -5,6 +5,7 @@ import { buildHomeAlternates, SITE_URL } from '@/lib/i18n'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
+import { CookieConsent } from '@/components/analytics/CookieConsent'
 import '@/app/globals.css'
 
 export async function generateStaticParams() {
@@ -50,6 +51,7 @@ export default async function LangLayout({
           {children}
         </main>
         <Footer lang={lang} dict={dict} />
+        <CookieConsent lang={lang} />
         <GoogleAnalytics />
       </body>
     </html>

@@ -34,6 +34,15 @@ function getNavPath(lang: string, section: string): string {
   return `/${lang}/${paths[section]?.[langKey] ?? section}`
 }
 
+function getLegalPath(lang: string, page: string): string {
+  const paths: Record<string, Record<string, string>> = {
+    about: { es: 'acerca', en: 'about' },
+    privacy: { es: 'privacidad', en: 'privacy' },
+    disclosure: { es: 'divulgacion', en: 'disclosure' },
+  }
+  return `/${lang}/${paths[page]?.[lang] ?? page}`
+}
+
 export function Footer({ lang, dict }: FooterProps) {
   const switchLang = lang === 'es' ? 'en' : 'es'
 
@@ -98,7 +107,7 @@ export function Footer({ lang, dict }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/about`}
+                  href={getLegalPath(lang, 'about')}
                   className="text-white/80 hover:text-white transition-colors text-sm"
                 >
                   {dict.footer.links.about}
@@ -115,7 +124,7 @@ export function Footer({ lang, dict }: FooterProps) {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href={`/${lang}/privacy`}
+                  href={getLegalPath(lang, 'privacy')}
                   className="text-white/80 hover:text-white transition-colors text-sm"
                 >
                   {dict.footer.links.privacy}
@@ -123,7 +132,7 @@ export function Footer({ lang, dict }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/disclosure`}
+                  href={getLegalPath(lang, 'disclosure')}
                   className="text-white/80 hover:text-white transition-colors text-sm"
                 >
                   {dict.footer.links.disclosure}
