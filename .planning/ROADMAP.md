@@ -70,7 +70,14 @@ Plans:
   3. A city index page at /es/ciudades/ lists all 16 cities organized by country (Mexico, USA, Canada)
   4. Content is native Spanish (not translated) with English versions available at /en/cities/
   5. Content cites official tourism sites, FIFA.com, and named sources where applicable
-**Plans**: TBD
+**Plans:** 5 plans
+
+Plans:
+- [ ] 03-01-PLAN.md -- Extend CitySchema with rich content fields, city components, city index page, Ciudad de Mexico full content
+- [ ] 03-02-PLAN.md -- Full content for Monterrey, Guadalajara, New York/New Jersey, Los Angeles
+- [ ] 03-03-PLAN.md -- Full content for Dallas, Houston, Atlanta, Philadelphia
+- [ ] 03-04-PLAN.md -- Full content for Miami, Seattle, San Francisco, Boston, Kansas City
+- [ ] 03-05-PLAN.md -- Full content for Toronto, Vancouver (completes all 16 cities)
 **UI hint**: yes
 
 ### Phase 4: Stadium Pages & Homepage
@@ -165,7 +172,7 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 |-------|----------------|--------|-----------|
 | 1. Project Scaffold & Data Architecture | 2/2 | Complete | 2026-03-26 |
 | 2. Base Layout & Technical SEO | 0/3 | Planning complete | - |
-| 3. City Guides | 0/TBD | Not started | - |
+| 3. City Guides | 0/5 | Planning complete | - |
 | 4. Stadium Pages & Homepage | 0/TBD | Not started | - |
 | 5. LLM Optimization Layer | 0/TBD | Not started | - |
 | 6. Monetization & Analytics | 0/TBD | Not started | - |
