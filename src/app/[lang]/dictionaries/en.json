@@ -105,5 +105,13 @@
     "countryMexico": "Mexico",
     "countryUSA": "United States",
     "countryCanada": "Canada"
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "privacyDescription": "SuperFan World Cup 2026 privacy policy. How we collect, use, and protect your data.",
+    "disclosureTitle": "Affiliate Disclosure",
+    "disclosureDescription": "Information about affiliate links and how we fund this site.",
+    "aboutTitle": "About SuperFan",
+    "aboutDescription": "About SuperFan World Cup 2026: our mission, editorial independence, and team."
   }
 }

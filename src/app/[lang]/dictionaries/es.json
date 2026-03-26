@@ -105,5 +105,13 @@
     "countryMexico": "Mexico",
     "countryUSA": "Estados Unidos",
     "countryCanada": "Canada"
+  },
+  "legal": {
+    "privacyTitle": "Politica de Privacidad",
+    "privacyDescription": "Politica de privacidad de SuperFan Mundial 2026. Como recopilamos, usamos y protegemos tus datos.",
+    "disclosureTitle": "Divulgacion de Afiliados",
+    "disclosureDescription": "Informacion sobre enlaces de afiliados y como nos financiamos.",
+    "aboutTitle": "Acerca de SuperFan",
+    "aboutDescription": "Sobre SuperFan Mundial 2026: nuestra mision, independencia editorial y equipo."
   }
 }
