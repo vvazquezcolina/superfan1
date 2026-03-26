@@ -40,6 +40,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   )
 
+  // City index pages -- high priority
+  entries.push(
+    {
+      url: `${SITE_URL}/es/ciudades`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          'es-419': `${SITE_URL}/es/ciudades`,
+          en: `${SITE_URL}/en/cities`,
+        },
+      },
+    },
+    {
+      url: `${SITE_URL}/en/cities`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          'es-419': `${SITE_URL}/es/ciudades`,
+          en: `${SITE_URL}/en/cities`,
+        },
+      },
+    }
+  )
+
   // City pages -- high priority (main content)
   for (const city of cities) {
     entries.push(

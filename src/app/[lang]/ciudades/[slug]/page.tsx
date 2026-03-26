@@ -6,6 +6,9 @@ import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
+import { CityHero } from '@/components/city/CityHero'
+import { CitySection } from '@/components/city/CitySection'
+import { CityFAQ } from '@/components/city/CityFAQ'
 import type { Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -22,15 +25,38 @@ export async function generateMetadata({
   const city = getCity(slug, lang as Locale)
   if (!city) return {}
 
+  const overview = city.content.overview[lang as Locale]
+  const description = overview.length > 155 ? overview.slice(0, 152) + '...' : overview
+
   const section = lang === 'es' ? 'ciudades' : 'cities'
   return buildPageMetadata({
     title: city.name[lang as Locale],
-    description: city.description[lang as Locale],
+    description,
     lang: lang as Locale,
     path: `/${lang}/${section}/${slug}`,
     alternates: buildAlternates('ciudades', city.slugs),
   })
 }
+
+const sectionIds: Record<string, string> = {
+  gettingThere: 'como-llegar',
+  gettingAround: 'como-moverse',
+  neighborhoods: 'donde-hospedarse',
+  foodAndDrink: 'comida-y-bebida',
+  safety: 'seguridad',
+  weather: 'clima',
+  culturalContext: 'contexto-cultural',
+}
+
+const sectionKeys = [
+  'gettingThere',
+  'gettingAround',
+  'neighborhoods',
+  'foodAndDrink',
+  'safety',
+  'weather',
+  'culturalContext',
+] as const
 
 export default async function CityPage({
   params,
@@ -42,14 +68,20 @@ export default async function CityPage({
   const city = getCity(slug, lang as Locale)
   if (!city) notFound()
 
-  const dict = await getDictionary(lang as Locale)
+  const locale = lang as Locale
+  const dict = await getDictionary(locale)
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/ciudades/${slug}`,
-    lang as Locale,
+    locale,
     dict.breadcrumbs,
-    city.name[lang as Locale],
+    city.name[locale],
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
+
+  const sourcesLabel = locale === 'es' ? 'Fuentes' : 'Sources'
+  const backLabel = locale === 'es' ? 'Ver todas las ciudades' : 'View all cities'
+  const indexPath = locale === 'es' ? `/${lang}/ciudades` : `/${lang}/cities`
+  const lastUpdatedLabel = locale === 'es' ? 'Ultima actualizacion' : 'Last updated'
 
   return (
     <>
@@ -58,15 +90,50 @@ export default async function CityPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
-      <article>
-        <h1>{city.name[lang as Locale]}</h1>
-        <p>{city.description[lang as Locale]}</p>
-        <dl>
-          <dt>{lang === 'es' ? 'Pais' : 'Country'}</dt>
-          <dd>{city.country}</dd>
-          <dt>{lang === 'es' ? 'Estadio' : 'Stadium'}</dt>
-          <dd>{city.stadium}</dd>
-        </dl>
+
+      <article className="mx-auto max-w-4xl space-y-12 py-6">
+        <CityHero city={city} lang={locale} />
+
+        {sectionKeys.map((key) => (
+          <CitySection
+            key={key}
+            section={city.content[key]}
+            lang={locale}
+            id={sectionIds[key]}
+          />
+        ))}
+
+        <CityFAQ faqs={city.content.faq} lang={locale} />
+
+        <section className="mx-auto max-w-prose">
+          <h2 className="text-2xl font-bold md:text-3xl">{sourcesLabel}</h2>
+          <ul className="mt-4 list-disc space-y-2 pl-6">
+            {city.content.sources.map((source) => (
+              <li key={source.url}>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline hover:text-primary/80"
+                >
+                  {source.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <footer className="mx-auto max-w-prose border-t border-border pt-6">
+          <p className="text-sm text-muted">
+            {lastUpdatedLabel}: {city.lastUpdated}
+          </p>
+          <a
+            href={indexPath}
+            className="mt-4 inline-block text-primary underline hover:text-primary/80"
+          >
+            {backLabel}
+          </a>
+        </footer>
       </article>
     </>
   )

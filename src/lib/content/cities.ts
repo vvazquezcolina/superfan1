@@ -17,6 +17,17 @@ export function getCityById(id: string): City | undefined {
 }
 
 /**
+ * Returns cities grouped by country for index page rendering.
+ */
+export function getCitiesByCountry(): Record<string, City[]> {
+  const grouped: Record<string, City[]> = { mexico: [], usa: [], canada: [] }
+  for (const city of cities) {
+    grouped[city.country].push(city)
+  }
+  return grouped
+}
+
+/**
  * Returns all slug + lang combinations for generateStaticParams.
  * Output: [{ lang: 'es', slug: 'ciudad-de-mexico' }, { lang: 'en', slug: 'mexico-city' }, ...]
  */
