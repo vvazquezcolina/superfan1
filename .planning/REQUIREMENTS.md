@@ -13,7 +13,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **INFRA-02**: Bilingual routing with `[lang]` segment — `/es/` (primary) and `/en/` prefixes with proper hreflang alternates
 - [x] **INFRA-03**: Content data layer using typed JSON files with Zod schema validation at build time
 - [x] **INFRA-04**: Data loader functions as single access point for all content (abstracted from storage)
-- [ ] **INFRA-05**: Base layout with header, footer, navigation, breadcrumbs, and FIFA non-affiliation disclaimer
+- [x] **INFRA-05**: Base layout with header, footer, navigation, breadcrumbs, and FIFA non-affiliation disclaimer
 - [x] **INFRA-06**: Middleware for locale detection and redirect
 - [x] **INFRA-07**: `generateStaticParams` configured for SSG across both locales
 
@@ -50,10 +50,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **SEO-01**: Programmatic sitemap.ts and robots.ts with proper priority levels and change frequencies
 - [ ] **SEO-02**: Canonical URLs, Open Graph tags, and Twitter Cards on every page via `generateMetadata()`
-- [ ] **SEO-03**: Proper heading hierarchy (single H1, structured H2/H3) on every page
+- [x] **SEO-03**: Proper heading hierarchy (single H1, structured H2/H3) on every page
 - [ ] **SEO-04**: Alt text on all images, lazy loading, responsive images via next/image
 - [ ] **SEO-05**: BreadcrumbList JSON-LD schema on every page
-- [ ] **SEO-06**: Mobile-first responsive design with touch-friendly navigation
+- [x] **SEO-06**: Mobile-first responsive design with touch-friendly navigation
 
 ### LLM Optimization
 
@@ -90,7 +90,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Legal & Trust
 
-- [ ] **LEGAL-01**: FIFA non-affiliation disclaimer visible in site footer on every page
+- [x] **LEGAL-01**: FIFA non-affiliation disclaimer visible in site footer on every page
 - [ ] **LEGAL-02**: About page with project description, editorial independence statement, and contact info
 - [ ] **LEGAL-03**: Content attribution — cite FIFA.com, official tourism sites, and official sources where applicable
 
@@ -144,7 +144,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-02 | Phase 1 | Complete |
 | INFRA-03 | Phase 1 | Complete |
 | INFRA-04 | Phase 1 | Complete |
-| INFRA-05 | Phase 2 | Pending |
+| INFRA-05 | Phase 2 | Complete |
 | INFRA-06 | Phase 1 | Complete |
 | INFRA-07 | Phase 1 | Complete |
 | CITY-01 | Phase 3 | Pending |
@@ -166,10 +166,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TRVL-07 | Phase 8 | Pending |
 | SEO-01 | Phase 2 | Pending |
 | SEO-02 | Phase 2 | Pending |
-| SEO-03 | Phase 2 | Pending |
+| SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 2 | Pending |
 | SEO-05 | Phase 2 | Pending |
-| SEO-06 | Phase 2 | Pending |
+| SEO-06 | Phase 2 | Complete |
 | LLM-01 | Phase 5 | Pending |
 | LLM-02 | Phase 5 | Pending |
 | LLM-03 | Phase 5 | Pending |
@@ -191,7 +191,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TOOL-01 | Phase 10 | Pending |
 | TOOL-02 | Phase 10 | Pending |
 | TOOL-03 | Phase 4 | Pending |
-| LEGAL-01 | Phase 2 | Pending |
+| LEGAL-01 | Phase 2 | Complete |
 | LEGAL-02 | Phase 6 | Pending |
 | LEGAL-03 | Phase 3 | Pending |
 
