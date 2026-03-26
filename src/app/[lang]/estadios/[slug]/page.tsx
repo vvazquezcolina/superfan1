@@ -7,6 +7,7 @@ import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
+import { buildStadiumJsonLd, buildFAQPageJsonLd, buildArticleJsonLd } from '@/lib/jsonld'
 import { StadiumHero } from '@/components/stadium/StadiumHero'
 import { StadiumSection } from '@/components/stadium/StadiumSection'
 import { StadiumFAQ } from '@/components/stadium/StadiumFAQ'
@@ -76,6 +77,19 @@ export default async function StadiumPage({
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const city = getCityById(stadium.city)
+
+  const section = locale === 'es' ? 'estadios' : 'stadiums'
+  const canonicalUrl = `https://www.superfaninfo.com/${lang}/${section}/${slug}`
+  const stadiumJsonLd = buildStadiumJsonLd(stadium, city?.name[locale] ?? '', locale)
+  const faqJsonLd = buildFAQPageJsonLd(stadium.content.faq, locale)
+  const articleJsonLd = buildArticleJsonLd({
+    headline: stadium.name[locale],
+    description: stadium.content.overview[locale],
+    url: canonicalUrl,
+    dateModified: stadium.lastUpdated,
+    lang: locale,
+  })
+
   const sourcesLabel = dict.stadium.sources
   const backLabel = dict.stadium.backToIndex
   const indexPath = locale === 'es' ? `/${lang}/estadios` : `/${lang}/stadiums`
@@ -86,6 +100,18 @@ export default async function StadiumPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(stadiumJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
 

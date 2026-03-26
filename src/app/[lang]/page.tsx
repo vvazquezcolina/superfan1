@@ -6,6 +6,7 @@ import { buildHomeAlternates } from '@/lib/i18n'
 import { getCities } from '@/lib/content/cities'
 import { getStadiums } from '@/lib/content/stadiums'
 import { getCityById } from '@/lib/content/cities'
+import { buildOrganizationJsonLd, buildItemListJsonLd } from '@/lib/jsonld'
 import type { Locale, City, Stadium } from '@/lib/content/schemas'
 
 export async function generateMetadata({
@@ -135,6 +136,20 @@ export default async function HomePage({
     .map((id) => stadiums.find((s) => s.id === id))
     .filter((s): s is Stadium => s !== undefined)
 
+  // Organization + ItemList JSON-LD
+  const organizationJsonLd = buildOrganizationJsonLd(locale)
+  const itemListItems = [
+    ...featuredCities.map((city) => ({
+      name: city.name[locale],
+      url: `https://www.superfaninfo.com/${lang}/${lang === 'es' ? 'ciudades' : 'cities'}/${city.slugs[locale]}`,
+    })),
+    ...featuredStadiums.map((stadium) => ({
+      name: stadium.name[locale],
+      url: `https://www.superfaninfo.com/${lang}/${lang === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[locale]}`,
+    })),
+  ]
+  const itemListJsonLd = buildItemListJsonLd(itemListItems, locale)
+
   // Section paths
   const citiesPath = lang === 'es' ? 'ciudades' : 'cities'
   const stadiumsPath = lang === 'es' ? 'estadios' : 'stadiums'
@@ -144,6 +159,14 @@ export default async function HomePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       <div className="mx-auto max-w-6xl py-6">

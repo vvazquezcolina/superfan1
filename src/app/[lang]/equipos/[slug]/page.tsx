@@ -6,6 +6,7 @@ import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
+import { buildSportsTeamJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -50,12 +51,17 @@ export default async function TeamPage({
     team.name[lang as Locale],
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
+  const sportsTeamJsonLd = buildSportsTeamJsonLd(team, lang as Locale)
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsTeamJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
       <article>

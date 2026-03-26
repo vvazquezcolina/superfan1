@@ -6,6 +6,7 @@ import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
+import { buildPlaceJsonLd, buildFAQPageJsonLd, buildArticleJsonLd } from '@/lib/jsonld'
 import { CityHero } from '@/components/city/CityHero'
 import { CitySection } from '@/components/city/CitySection'
 import { CityFAQ } from '@/components/city/CityFAQ'
@@ -78,6 +79,18 @@ export default async function CityPage({
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
+  const section = locale === 'es' ? 'ciudades' : 'cities'
+  const canonicalUrl = `https://www.superfaninfo.com/${lang}/${section}/${slug}`
+  const placeJsonLd = buildPlaceJsonLd(city, locale)
+  const faqJsonLd = buildFAQPageJsonLd(city.content.faq, locale)
+  const articleJsonLd = buildArticleJsonLd({
+    headline: city.name[locale],
+    description: city.content.overview[locale],
+    url: canonicalUrl,
+    dateModified: city.lastUpdated,
+    lang: locale,
+  })
+
   const sourcesLabel = locale === 'es' ? 'Fuentes' : 'Sources'
   const backLabel = locale === 'es' ? 'Ver todas las ciudades' : 'View all cities'
   const indexPath = locale === 'es' ? `/${lang}/ciudades` : `/${lang}/cities`
@@ -88,6 +101,18 @@ export default async function CityPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
 

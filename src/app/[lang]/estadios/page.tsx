@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getStadiumsByCountry } from '@/lib/content/stadiums'
+import { getStadiums, getStadiumsByCountry } from '@/lib/content/stadiums'
 import { getCityById } from '@/lib/content/cities'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
 import { buildIndexAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
+import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { Stadium, Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -79,7 +80,15 @@ export default async function StadiumIndexPage({
   if (!hasLocale(lang)) notFound()
   const locale = lang as Locale
   const dict = await getDictionary(locale)
+  const allStadiums = getStadiums()
   const stadiumsByCountry = getStadiumsByCountry()
+
+  const section = locale === 'es' ? 'estadios' : 'stadiums'
+  const stadiumListItems = allStadiums.map((stadium) => ({
+    name: stadium.name[locale],
+    url: `https://www.superfaninfo.com/${lang}/${section}/${stadium.slugs[locale]}`,
+  }))
+  const itemListJsonLd = buildItemListJsonLd(stadiumListItems, locale)
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/estadios`,
@@ -103,6 +112,10 @@ export default async function StadiumIndexPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
 

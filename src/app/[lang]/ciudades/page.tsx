@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getCitiesByCountry } from '@/lib/content/cities'
+import { getCities, getCitiesByCountry } from '@/lib/content/cities'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
 import { buildIndexAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
+import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { City, Locale } from '@/lib/content/schemas'
 
 export async function generateStaticParams() {
@@ -75,7 +76,15 @@ export default async function CityIndexPage({
   if (!hasLocale(lang)) notFound()
   const locale = lang as Locale
   const dict = await getDictionary(locale)
+  const allCities = getCities()
   const citiesByCountry = getCitiesByCountry()
+
+  const section = locale === 'es' ? 'ciudades' : 'cities'
+  const cityListItems = allCities.map((city) => ({
+    name: city.name[locale],
+    url: `https://www.superfaninfo.com/${lang}/${section}/${city.slugs[locale]}`,
+  }))
+  const itemListJsonLd = buildItemListJsonLd(cityListItems, locale)
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/ciudades`,
@@ -99,6 +108,10 @@ export default async function CityIndexPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
       <Breadcrumbs items={breadcrumbs} />
 
