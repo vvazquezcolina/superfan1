@@ -8,6 +8,9 @@ import { getStadiums } from '@/lib/content/stadiums'
 import { getCityById } from '@/lib/content/cities'
 import { buildOrganizationJsonLd, buildItemListJsonLd } from '@/lib/jsonld'
 import type { Locale, City, Stadium } from '@/lib/content/schemas'
+import { CountdownTimer } from '@/components/engagement/CountdownTimer'
+import { NewsletterSignup } from '@/components/engagement/NewsletterSignup'
+import { ExitIntentWrapper } from '@/components/engagement/ExitIntentWrapper'
 
 export async function generateMetadata({
   params,
@@ -180,12 +183,11 @@ export default async function HomePage({
           </p>
 
           {/* Countdown */}
-          {daysUntil > 0 && (
-            <p className="mt-6 text-2xl font-bold text-primary md:text-3xl">
-              {daysUntil} {dict.home.days}
-            </p>
-          )}
-          <p className="mt-1 text-sm text-muted">{dict.home.countdownLabel}</p>
+          <CountdownTimer
+            targetDate="2026-06-11T00:00:00Z"
+            initialDays={daysUntil}
+            dict={dict.countdown}
+          />
 
           {/* Hero CTA */}
           <a
@@ -261,6 +263,11 @@ export default async function HomePage({
           </p>
         </section>
 
+        {/* Newsletter Signup */}
+        <section className="mt-12">
+          <NewsletterSignup dict={dict.newsletter} variant="inline" />
+        </section>
+
         {/* CTA Links Section */}
         <section className="mt-12">
           <h2 className="sr-only">{dict.home.exploreMore}</h2>
@@ -302,6 +309,8 @@ export default async function HomePage({
           {locale === 'es' ? 'Ultima actualizacion' : 'Last updated'}: {new Date().toISOString().split('T')[0]}
         </p>
       </div>
+
+      <ExitIntentWrapper dict={dict.newsletter} />
     </>
   )
 }
