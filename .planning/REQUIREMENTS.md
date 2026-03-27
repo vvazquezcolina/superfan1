@@ -84,8 +84,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Interactive Tools
 
-- [ ] **TOOL-01**: World Cup budget calculator — inputs: origin, destination, days, hotel tier, meals; outputs: estimated total with affiliate links
-- [ ] **TOOL-02**: Interactive host city map with all 16 stadiums, pop-up cards linking to city/stadium pages
+- [x] **TOOL-01**: World Cup budget calculator — inputs: origin, destination, days, hotel tier, meals; outputs: estimated total with affiliate links
+- [x] **TOOL-02**: Interactive host city map with all 16 stadiums, pop-up cards linking to city/stadium pages
 - [x] **TOOL-03**: Homepage with featured content sections, countdown, and clear navigation to all major sections
 
 ### Legal & Trust
@@ -188,8 +188,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LEAD-01 | Phase 9 | Complete |
 | LEAD-02 | Phase 9 | Complete |
 | LEAD-03 | Phase 9 | Complete |
-| TOOL-01 | Phase 10 | Pending |
-| TOOL-02 | Phase 10 | Pending |
+| TOOL-01 | Phase 10 | Complete |
+| TOOL-02 | Phase 10 | Complete |
 | TOOL-03 | Phase 4 | Complete |
 | LEGAL-01 | Phase 2 | Complete |
 | LEGAL-02 | Phase 6 | Complete |

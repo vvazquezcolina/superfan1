@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Phase complete — ready for verification
-stopped_at: Completed 08-02-PLAN.md — fan experience pages and match calendar complete
-last_updated: "2026-03-27T00:47:24.980Z"
+stopped_at: Completed 10-01-PLAN.md — budget calculator and interactive Leaflet map complete
+last_updated: "2026-03-27T01:00:28.533Z"
 progress:
   total_phases: 10
-  completed_phases: 9
-  total_plans: 23
-  completed_plans: 23
+  completed_phases: 10
+  total_plans: 24
+  completed_plans: 24
 ---
 
 # Project State
@@ -69,6 +69,7 @@ Plan: 4 of 4
 | Phase 08-travel-fan-experience-guides P01 | 11min | 3 tasks | 11 files |
 | Phase 07 P04 | 45 | 2 tasks | 2 files |
 | Phase 08-travel-fan-experience-guides P02 | 8min | 3 tasks | 8 files |
+| Phase 10-interactive-tools-final-polish P01 | 4min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -152,6 +153,9 @@ Recent decisions affecting current work:
 - [Phase 08-02]: MatchCalendar uses 'use client' with useMemo filtering; page shell is server component for SEO and ISR
 - [Phase 08-02]: Match schedule uses revalidate=3600 (hourly ISR) to pick up FIFA team assignments when released
 - [Phase 08-02]: Ticket page has no AffiliateLink — e-commerce/direct ticket sales out of scope per PROJECT.md
+- [Phase 10-interactive-tools-final-polish]: Leaflet CSS loaded from unpkg CDN in useEffect link injection to avoid SSR window errors and CSS bundling complexity
+- [Phase 10-interactive-tools-final-polish]: BudgetCalculator uses useState controlled inputs instead of react-hook-form — 5 fields is too simple for RHF overhead
+- [Phase 10-interactive-tools-final-polish]: Travelpayouts affiliate marker 9a350c3ebd492165ade7135359165af9 used for hotel (Booking.com) and flight (Aviasales) deep links in budget calculator CTAs
 
 ### Pending Todos
 
@@ -166,6 +170,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T00:47:24.978Z
-Stopped at: Completed 08-02-PLAN.md — fan experience pages and match calendar complete
+Last session: 2026-03-27T01:00:28.530Z
+Stopped at: Completed 10-01-PLAN.md — budget calculator and interactive Leaflet map complete
 Resume file: None

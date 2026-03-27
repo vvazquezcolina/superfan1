@@ -21,7 +21,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 7: Team Pages** - 48 team pages with group assignments, history, and team index (completed 2026-03-27)
 - [x] **Phase 8: Travel & Fan Experience Guides** - Flight, hotel, transport, visa, ticket, safety guides, and match schedule calendar (completed 2026-03-27)
 - [x] **Phase 9: Lead Capture & Engagement** - Newsletter signup, countdown timer, and site-wide search (completed 2026-03-26)
-- [ ] **Phase 10: Interactive Tools & Final Polish** - Budget calculator, interactive host city map, and content attribution audit
+- [x] **Phase 10: Interactive Tools & Final Polish** - Budget calculator, interactive host city map, and content attribution audit (completed 2026-03-27)
 
 ## Phase Details
 
@@ -184,10 +184,10 @@ Plans:
   1. The budget calculator accepts origin, destination, days, hotel tier, and meals -- outputs an estimated total with contextual affiliate links
   2. An interactive map displays all 16 stadiums with pop-up cards linking to city and stadium pages
   3. Both tools track usage events in GA4
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
-- [ ] 10-01-PLAN.md -- BudgetCalculator component + /herramientas/presupuesto/ page (TOOL-01), InteractiveMap component with Leaflet + /herramientas/mapa/ page (TOOL-02)
+- [x] 10-01-PLAN.md -- BudgetCalculator component + /herramientas/presupuesto/ page (TOOL-01), InteractiveMap component with Leaflet + /herramientas/mapa/ page (TOOL-02)
 **UI hint**: yes
 
 ## Progress
@@ -207,4 +207,4 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 7. Team Pages | 4/4 | Complete   | 2026-03-27 |
 | 8. Travel & Fan Experience Guides | 2/2 | Complete   | 2026-03-27 |
 | 9. Lead Capture & Engagement | 1/1 | Complete   | 2026-03-26 |
-| 10. Interactive Tools & Final Polish | 0/1 | Planning complete | - |
+| 10. Interactive Tools & Final Polish | 1/1 | Complete   | 2026-03-27 |
