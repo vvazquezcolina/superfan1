@@ -8,6 +8,7 @@ const WidgetConfigSchema = z.object({
   flightWidgetId: z.string().min(1),
   currency: z.string().min(1),
   locale: z.record(z.string()),
+  embedType: z.enum(['script', 'iframe']).optional(),
 })
 
 // Zod schema for affiliate partner configuration

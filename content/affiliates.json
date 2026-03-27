@@ -34,7 +34,7 @@
         "es": "Enlace de afiliado (Travelpayouts) - podemos recibir una comision si reservas a traves de este enlace, sin costo adicional para ti.",
         "en": "Affiliate link (Travelpayouts) - we may earn a commission if you book through this link, at no additional cost to you."
       },
-      "active": false
+      "active": true
     }
   ]
 }
