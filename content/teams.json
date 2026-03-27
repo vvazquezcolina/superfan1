@@ -3735,7 +3735,103 @@
         "es": "Seleccion multicultural y consistente que ha crecido como potencia europea.",
         "en": "Multicultural and consistent team that has grown as a European force."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Suiza es uno de los mejores ejemplos de como el futbol moderno es un fenomeno global. La seleccion helvetica es un mosaico cultural extraordinario: Granit Xhaka (origen albanes), Xherdan Shaqiri (origen kosovaro), Breel Embolo (nacido en Camerun), y muchos otros jugadores con raices africanas, balcanicas y del sur de Europa. Esa diversidad es la mayor fortaleza de un equipo que llega al Mundial 2026 con vocacion de sorprender. La asignacion de grupo esta pendiente del sorteo oficial.\n\nSuiza ha sido una de las selecciones mas consistentes de la ultima decada: clasifico a todos los Mundiales (2006, 2010, 2014, 2018, 2022) y ha llegado a cuartos de final por primera vez en su historia en Qatar 2022, donde elimino a Serbia y fue eliminada por Portugal en cuartos de una manera muy competitiva. Esta Suiza ya no es un equipo de relleno: es un contendiente serio.\n\nPara los aficionados latinoamericanos, Suiza es el ejemplo perfecto de que el talento no tiene pasaporte. Jugadores como Embolo, nacido en Camerun y criado en Suiza, representan la belleza de un futbol sin fronteras que une a personas de todas las culturas bajo una misma bandera.",
+          "en": "Switzerland is one of the best examples of how modern football is a global phenomenon. The Swiss national team is an extraordinary cultural mosaic: Granit Xhaka (Albanian origin), Xherdan Shaqiri (Kosovar origin), Breel Embolo (born in Cameroon), and many other players with African, Balkan, and Southern European roots. That diversity is the greatest strength of a team arriving at the 2026 World Cup with aspirations to surprise. Group assignment is pending the official FIFA draw.\n\nSwitzerland has been one of the most consistent teams of the last decade: qualifying for every World Cup (2006, 2010, 2014, 2018, 2022) and reaching the quarterfinals for the first time in their history at Qatar 2022, where they eliminated Serbia and were eliminated by Portugal in the quarterfinals in a very competitive manner. This Switzerland is no longer a filler team: they are a serious contender.\n\nFor Latin American fans, Switzerland is the perfect example that talent has no passport. Players like Embolo, born in Cameroon and raised in Switzerland, represent the beauty of a football without borders that unites people from all cultures under the same flag."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Suiza tiene 12 participaciones mundialistas. Su mejor resultado historico fue el cuarto puesto en 1954 (cuando organizaron el torneo), y en la era moderna han llegado a cuartos de final por primera vez en Qatar 2022. En la Eurocopa de 2021, llegaron tambien a cuartos de final, derrotando a Francia en la tanda de penales en una de las mayores sorpresas del torneo.\n\nLa consistencia clasificatoria de Suiza es notable: desde 2006 han clasificado a todos los Mundiales. En Qatar 2022, Suiza elimino a Serbia en la fase de grupos con una actuacion de alto nivel, y luego cayo ante Portugal en cuartos 6-1, en un resultado que no reflejo del todo el desarrollo del partido. La tendencia de esta seleccion es claramente ascendente.",
+            "en": "Switzerland has 12 World Cup appearances. Their best historical result was fourth place in 1954 (when they hosted the tournament), and in the modern era they reached the quarterfinals for the first time at Qatar 2022. At Euro 2021, they also reached the quarterfinals, defeating France in a penalty shootout in one of the tournament's biggest upsets.\n\nSwitzerland's qualifying consistency is notable: since 2006 they have qualified for every World Cup. At Qatar 2022, Switzerland eliminated Serbia in the group stage with a high-level performance, and then fell to Portugal in the quarterfinals 6-1, in a result that didn't fully reflect the match's development. This team's trend is clearly upward."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "Granit Xhaka",
+              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "club": "Bayer Leverkusen",
+              "note": {
+                "es": "El capitan y corazon de Suiza. Xhaka es un mediocampista de box-to-box con liderazgo, experiencia y un tiro de larga distancia potente. En el Leverkusen que gano la Bundesliga invicto en 2024 fue una pieza clave. Su hermano Taulant juega para Albania, haciendo de los partidos Albania-Suiza duelos familiares unicos en el mundo.",
+                "en": "Switzerland's captain and heart. Xhaka is a box-to-box midfielder with leadership, experience, and a powerful long-range shot. He was a key piece in the Leverkusen team that won the Bundesliga unbeaten in 2024. His brother Taulant plays for Albania, making Albania-Switzerland matches unique family duels in world football."
+              }
+            },
+            {
+              "name": "Breel Embolo",
+              "position": { "es": "Delantero Centro / Extremo", "en": "Centre Forward / Winger" },
+              "club": "AS Monaco",
+              "note": {
+                "es": "El delantero nato de Suiza. Embolo, nacido en Camerun y criado en Suiza, es un delantero fisico y potente con capacidad de marcar goles importantes. Marco el unico gol de Suiza en la victoria ante Camerun en el Mundial 2022, en un partido cargado de simbolismo para el jugador.",
+                "en": "Switzerland's natural striker. Embolo, born in Cameroon and raised in Switzerland, is a physical and powerful striker capable of scoring important goals. He scored Switzerland's only goal in their victory against Cameroon at the 2022 World Cup, in a match loaded with symbolism for the player."
+              }
+            },
+            {
+              "name": "Manuel Akanji",
+              "position": { "es": "Defensa Central", "en": "Centre Back" },
+              "club": "Manchester City",
+              "note": {
+                "es": "El defensa central mas completo de Suiza y uno de los mejores de la Premier League. Akanji combina una lectura del juego excelente con una solidez fisica que lo hace muy dificil de superar. En el Manchester City ha ganado la Champions League y la Premier League, siendo un jugador de primer nivel mundial.",
+                "en": "Switzerland's most complete centre-back and one of the Premier League's best. Akanji combines excellent game reading with physical solidity that makes him very difficult to overcome. At Manchester City he has won the Champions League and Premier League, being a player of the highest world level."
+              }
+            },
+            {
+              "name": "Yann Sommer",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Inter de Milan",
+              "note": {
+                "es": "Uno de los mejores porteros de Europa y el titular indiscutible de Suiza. Sommer es conocido por sus paradas imposibles, incluyendo la memorable parada ante el penal de Mbappe en el Mundial de Qatar 2022. Su experiencia en el Bayern Munich y el Inter de Milan confirma su estatus de portero de elite.",
+                "en": "One of Europe's best goalkeepers and Switzerland's undisputed starter. Sommer is known for his impossible saves, including the memorable save on Mbappe's penalty at the Qatar 2022 World Cup. His experience at Bayern Munich and Inter Milan confirms his status as an elite goalkeeper."
+              }
+            },
+            {
+              "name": "Remo Freuler",
+              "position": { "es": "Mediocampista Central / Defensivo", "en": "Central / Defensive Midfielder" },
+              "club": "Nottingham Forest",
+              "note": {
+                "es": "El mediocampista box-to-box que da el equilibrio al equipo suizo. Freuler aporta intensidad, recuperacion y salida limpia del balon, siendo el jugador que permite a Xhaka y compania jugar con mas libertad. Es fundamental para la solidez tactica del equipo suizo.",
+                "en": "The box-to-box midfielder who gives balance to the Swiss team. Freuler brings intensity, ball recovery, and clean distribution, being the player who allows Xhaka and company to play with more freedom. He is fundamental to the Swiss team's tactical solidity."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Suiza clasifico al Mundial 2026 a traves de la UEFA Nations League y las eliminatorias europeas. Los suizos son uno de los equipos europeos mas consistentes en la clasificacion: desde 2006 no han fallado un solo Mundial. La Nations League es un torneo donde Suiza ha brillado, habiendo ganado la Liga C en 2019 y ascendido a la Liga A.\n\nEl proceso clasificatorio de Suiza confirma que el equipo tiene un sistema y una cultura futbolistica que van mas alla de los jugadores individuales. La combinacion de talentos con origenes multiculturales bajo el sistema de formacion suizo ha creado una seleccion con una identidad clara y una mentalidad competitiva muy desarrollada.",
+            "en": "Switzerland qualified for the 2026 World Cup through the UEFA Nations League and European qualifiers. The Swiss are one of Europe's most consistent qualifying teams: since 2006 they have not missed a single World Cup. The Nations League is a tournament where Switzerland has excelled, having won League C in 2019 and been promoted to League A.\n\nSwitzerland's qualifying process confirms the team has a system and football culture that goes beyond individual players. The combination of talents with multicultural origins under the Swiss development system has created a team with a clear identity and a highly developed competitive mentality."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Suiza en el Mundial 2026 seran confirmados por la FIFA. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Switzerland's matches at the 2026 World Cup will be confirmed by FIFA. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Por que Suiza tiene tantos jugadores de origen extranjero?", "en": "Why does Switzerland have so many players of foreign origin?" },
+            "answer": { "es": "Suiza tiene uno de los mayores porcentajes de inmigrantes de Europa (mas del 25% de su poblacion). Los hijos de inmigrantes de Albania, Kosovo, Africa y otros paises que crecen en Suiza pueden elegir jugar para la seleccion suiza. Esta politica inclusiva ha enriquecido enormemente al equipo nacional, con jugadores como Xhaka (albanokosovaro), Embolo (camerunes), Shaqiri (kosovaro) y muchos otros.", "en": "Switzerland has one of the highest percentages of immigrants in Europe (over 25% of its population). The children of immigrants from Albania, Kosovo, Africa, and other countries who grow up in Switzerland can choose to play for the Swiss team. This inclusive policy has enormously enriched the national team, with players like Xhaka (Albanian-Kosovar), Embolo (Cameroonian), Shaqiri (Kosovar), and many others." }
+          },
+          {
+            "question": { "es": "¿Cual es el mejor resultado de Suiza en un Mundial?", "en": "What is Switzerland's best result at a World Cup?" },
+            "answer": { "es": "El mejor resultado de Suiza fue el cuarto puesto en 1954, cuando organizaron el torneo. En la era moderna, llegaron a cuartos de final por primera vez en Qatar 2022, donde fueron eliminados por Portugal 6-1. Tambien llegaron a cuartos en la Eurocopa 2021, donde eliminaron a Francia en penales en una de las mayores sorpresas del torneo.", "en": "Switzerland's best result was fourth place in 1954, when they hosted the tournament. In the modern era, they reached the quarterfinals for the first time at Qatar 2022, where they were eliminated by Portugal 6-1. They also reached the Euro 2021 quarterfinals, where they eliminated France on penalties in one of the tournament's biggest upsets." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de Suiza?", "en": "Who is Switzerland's best player?" },
+            "answer": { "es": "Granit Xhaka es el capitan y el jugador mas representativo de la seleccion suiza. Sin embargo, el portero Yann Sommer tambien merece el titulo de mejor jugador, gracias a sus actuaciones extraordinarias en el Inter de Milan y en varios Mundiales. Breel Embolo es el referente ofensivo del equipo.", "en": "Granit Xhaka is the captain and most representative player of the Swiss team. However, goalkeeper Yann Sommer also deserves the title of best player, thanks to his extraordinary performances at Inter Milan and in several World Cups. Breel Embolo is the team's offensive reference point." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "UEFA.com", "url": "https://www.uefa.com" },
+          { "name": "SFV Oficial", "url": "https://www.football.ch/" }
+        ]
+      }
     },
     {
       "id": "austria",
@@ -3752,7 +3848,103 @@
         "es": "Seleccion centroeuropea en ascenso que busca dejar huella en el escenario mundial.",
         "en": "Rising Central European team looking to make their mark on the world stage."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Austria es una de las historias de resurgimiento mas emocionantes del futbol europeo reciente. El pais que no aparecia en un Mundial desde Francia 1998 llega al Mundial 2026 con una generacion nueva, talentosa y hambrienta, liderada por David Alaba y Marcel Sabitzer. Durante casi tres decadas de ausencia, el futbol austriaco tuvo que reconstruirse desde abajo, y el resultado de ese trabajo es visible hoy: Austria compite con las mejores selecciones de Europa en la Nations League y en las eliminatorias. La asignacion de grupo esta pendiente del sorteo oficial.\n\nDavid Alaba es la mayor estrella de la historia del futbol austriaco. El defensa central del Real Madrid, que fue lateral izquierdo durante anos, tiene en su palmarés Champions League, Bundesliga, La Liga y Copa del Rey. Junto a el, Konrad Laimer y Marcel Sabitzer aportan dinamismo e intensidad desde el mediocampo, mientras Marko Arnautovic lidera el ataque con experiencia y garra.\n\nPara los aficionados latinoamericanos, Austria puede ser una de las sorpresas del torneo. Un equipo que lleva casi 30 anos sin aparecer en un Mundial, que viene con la motiva cion de demostrar que han vuelto para quedarse, puede complicar la vida a selecciones mucho mas conocidas. En el futbol, el hambre de gloria es un combustible poderoso.",
+          "en": "Austria is one of the most exciting resurgence stories in recent European football. The country absent from a World Cup since France 1998 arrives at the 2026 World Cup with a new, talented, and hungry generation led by David Alaba and Marcel Sabitzer. After nearly three decades of absence, Austrian football had to rebuild from the ground up, and the result of that work is visible today: Austria competes with Europe's best teams in the Nations League and qualifiers. Group assignment is pending the official FIFA draw.\n\nDavid Alaba is the greatest star in Austrian football history. The Real Madrid centre-back, who was a left back for years, has Champions League, Bundesliga, La Liga, and Copa del Rey titles on his resume. Alongside him, Konrad Laimer and Marcel Sabitzer bring dynamism and intensity from midfield, while Marko Arnautovic leads the attack with experience and determination.\n\nFor Latin American fans, Austria could be one of the tournament's surprises. A team absent from a World Cup for nearly 30 years, coming in with the motivation to prove they have returned to stay, can complicate matters for far more well-known teams. In football, hunger for glory is a powerful fuel."
+        },
+        "worldCupHistory": {
+          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "content": {
+            "es": "Austria tiene 7 participaciones mundialistas. Su periodo mas glorioso fue en los anos 50 y 60, cuando fue considerada una de las grandes selecciones de Europa. Su mejor resultado fue el tercer puesto en Suiza 1954. En Espana 1982, Austria participo junto a Alemania Occidental en la infame noche de Gijon (el 'Schmutzige Spiel' o 'Partido de la Vergüenza'), donde ambas selecciones empataron 1-0 para eliminar a Argelia en un partido que a dia de hoy sigue siendo considerado uno de los mas escandalosos de la historia mundialista.\n\nLa ultima participacion de Austria fue en Francia 1998, donde fueron eliminados en primera ronda. Las 28 anos de ausencia hasta el Mundial 2026 es el mayor ayuno de la historia mundialista austriaca. El regreso de los Equipo Nacional Austriaco al escenario mundial es una noticia enorme para el futbol centroeuropeo.",
+            "en": "Austria has 7 World Cup appearances. Their most glorious period was in the 1950s and 1960s, when they were considered one of Europe's great teams. Their best result was third place at Switzerland 1954. At Spain 1982, Austria participated alongside West Germany in the infamous 'Disgrace of Gijon' (the 'Schmutzige Spiel'), where both teams drew 1-0 to eliminate Algeria in a match still considered one of the most scandalous in World Cup history.\n\nAustria's last participation was at France 1998, where they were eliminated in the group stage. The 28 years of absence until the 2026 World Cup is the longest gap in Austrian World Cup history. The return of the Austrian National Team to the world stage is huge news for Central European football."
+          }
+        },
+        "keyPlayers": {
+          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "players": [
+            {
+              "name": "David Alaba",
+              "position": { "es": "Defensa Central / Lateral Izquierdo", "en": "Centre Back / Left Back" },
+              "club": "Real Madrid",
+              "note": {
+                "es": "El mejor jugador en la historia del futbol austriaco y una de las figuras del Real Madrid. Alaba ha ganado practicamente todo lo que se puede ganar en el futbol: Champions League (varias veces), Bundesliga, La Liga. Su capacidad como defensa central moderno, con salida del balon y liderazgo defensivo, lo hace un jugador de nivel mundial.",
+                "en": "The greatest player in Austrian football history and one of Real Madrid's key figures. Alaba has won practically everything there is to win in football: Champions League (multiple times), Bundesliga, La Liga. His ability as a modern central defender, with ball distribution and defensive leadership, makes him a world-class player."
+              }
+            },
+            {
+              "name": "Marcel Sabitzer",
+              "position": { "es": "Mediocampista Central / Mediapunta", "en": "Central / Attacking Midfielder" },
+              "club": "Borussia Dortmund",
+              "note": {
+                "es": "El dinamismo personificado en el mediocampo austriaco. Sabitzer es un mediocampista de alta intensidad, con llegada al area, gol y una presion constante que complementa perfecto el juego de Austria. En el Borussia Dortmund ha demostrado que puede competir al mas alto nivel europeo.",
+                "en": "Dynamism personified in Austria's midfield. Sabitzer is a high-intensity midfielder with late runs, goalscoring ability, and constant pressing that perfectly complements Austria's game. At Borussia Dortmund he has shown he can compete at the highest European level."
+              }
+            },
+            {
+              "name": "Konrad Laimer",
+              "position": { "es": "Mediocampista Defensivo / Central", "en": "Defensive / Central Midfielder" },
+              "club": "Bayern Munich",
+              "note": {
+                "es": "El motor fisico del mediocampo austriaco. Laimer es uno de los mediocampistas con mas kilometros recorridos por partido en Europa, combinando una capacidad defensiva elite con una transicion ofensiva rapida. En el Bayern Munich ha demostrado que puede jugar en el mas alto nivel europeo.",
+                "en": "Austria's midfield physical engine. Laimer is one of Europe's midfielders with the most kilometers covered per match, combining elite defensive ability with fast offensive transition. At Bayern Munich he has shown he can play at the highest European level."
+              }
+            },
+            {
+              "name": "Marko Arnautovic",
+              "position": { "es": "Delantero Centro / Extremo", "en": "Centre Forward / Winger" },
+              "club": "Inter de Milan",
+              "note": {
+                "es": "El veterano del ataque austriaco y el jugador con mas personalidad del equipo. Arnautovic es un delantero fisico, con llegada, gol y una capacidad de retener el balon que es fundamental para el juego de Austria. Su experiencia en el Inter de Milan y la Premier League lo convierten en el referente ofensivo del equipo.",
+                "en": "Austria's veteran attacker and the team's most personality-filled player. Arnautovic is a physical striker with late runs, goalscoring ability, and ball retention capacity fundamental to Austria's game. His experience at Inter Milan and in the Premier League makes him the team's offensive reference point."
+              }
+            },
+            {
+              "name": "Patrick Pentz",
+              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "club": "Girondins Bordeaux",
+              "note": {
+                "es": "El portero emergente de la seleccion austriaca. Pentz ha sido uno de los mejores porteros de la Bundesliga en los ultimos anos con el Bayer Leverkusen, y es el candidato mas firme para ser el titular de Austria en el Mundial 2026. Su altura (1.94m) y sus reflejos le dan una presencia imponente bajo los palos.",
+                "en": "Austria's emerging goalkeeper. Pentz has been one of the Bundesliga's best goalkeepers in recent years with Bayer Leverkusen, and is the strongest candidate to be Austria's starter at the 2026 World Cup. His height (1.94m) and reflexes give him an imposing presence in goal."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "content": {
+            "es": "Austria clasifico al Mundial 2026 a traves de la UEFA Nations League y las eliminatorias europeas, cerrando 28 anos de ausencia en las Copas del Mundo. La Nations League ha sido el torneo donde Austria ha brillado mas en los ultimos anos, llegando a la Liga A y demostrando que puede competir con las mejores selecciones europeas.\n\nEl proceso clasificatorio de Austria es el resultado de anos de trabajo en el desarrollo de jugadores. La combinacion de jugadores formados en las academias alemanas (Laimer, Sabitzer, Seiwald) con la experiencia internacional de Alaba y Arnautovic ha creado una seleccion equilibrada que tiene argumentos para sorprender en el Mundial 2026.",
+            "en": "Austria qualified for the 2026 World Cup through the UEFA Nations League and European qualifiers, ending 28 years of World Cup absence. The Nations League has been the tournament where Austria has shone most in recent years, reaching League A and demonstrating they can compete with Europe's best teams.\n\nAustria's qualifying process is the result of years of player development work. The combination of players trained in German academies (Laimer, Sabitzer, Seiwald) with the international experience of Alaba and Arnautovic has created a balanced team that has arguments to surprise at the 2026 World Cup."
+          }
+        },
+        "matchSchedule": {
+          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "content": {
+            "es": "Los partidos de Austria en el Mundial 2026 seran confirmados por la FIFA. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Austria's matches at the 2026 World Cup will be confirmed by FIFA. Check back soon for the complete schedule with dates, venues, and times."
+          }
+        },
+        "faq": [
+          {
+            "question": { "es": "¿Cuantas veces ha participado Austria en un Mundial?", "en": "How many times has Austria participated in a World Cup?" },
+            "answer": { "es": "Austria ha participado en 7 Copas del Mundo: 1934, 1954, 1958, 1978, 1982, 1990 y 1998. El Mundial 2026 sera su octava participacion historica, la primera en 28 anos tras la ausencia desde Francia 1998. Su mejor resultado fue el tercer puesto en Suiza 1954.", "en": "Austria has participated in 7 World Cups: 1934, 1954, 1958, 1978, 1982, 1990, and 1998. The 2026 World Cup will be their eighth historic appearance, the first in 28 years after their absence since France 1998. Their best result was third place at Switzerland 1954." }
+          },
+          {
+            "question": { "es": "¿Quien es el mejor jugador de la historia de Austria?", "en": "Who is the greatest player in Austrian football history?" },
+            "answer": { "es": "David Alaba es ampliamente considerado el mejor jugador de la historia del futbol austriaco. El defensa central del Real Madrid ha ganado Champions League, Bundesliga y La Liga, y ha sido uno de los mejores defensas del mundo durante mas de una decada. Antes de Alaba, la leyenda del futbol austriaco era Hans Krankl, goleador del Barcelona en los anos 70 y 80.", "en": "David Alaba is widely considered the greatest player in Austrian football history. The Real Madrid centre-back has won the Champions League, Bundesliga, and La Liga, and has been one of the world's best defenders for more than a decade. Before Alaba, Austrian football's legend was Hans Krankl, Barcelona's top scorer in the 1970s and 80s." }
+          },
+          {
+            "question": { "es": "¿Por que Austria no estuvo en Mundiales durante 28 anos?", "en": "Why was Austria absent from World Cups for 28 years?" },
+            "answer": { "es": "Austria no clasifico a los Mundiales de 2002, 2006, 2010, 2014, 2018 y 2022, una racha de ausencias que se extendio de 1998 a 2026. Las razones incluyen una decada de inversion insuficiente en el futbol base, una liga domestica menos competitiva que las grandes ligas europeas, y la fuerte competencia en las eliminatorias europeas. La renovacion liderada por Alaba y una nueva generacion de jugadores de alto nivel ha cambiado ese panorama.", "en": "Austria failed to qualify for the 2002, 2006, 2010, 2014, 2018, and 2022 World Cups, a streak of absences extending from 1998 to 2026. The reasons include a decade of insufficient investment in youth football, a domestic league less competitive than major European leagues, and strong competition in European qualifiers. The renewal led by Alaba and a new generation of high-level players has changed that landscape." }
+          }
+        ],
+        "sources": [
+          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
+          { "name": "UEFA.com", "url": "https://www.uefa.com" },
+          { "name": "OEFB Oficial", "url": "https://www.oefb.at/" }
+        ]
+      }
     },
     {
       "id": "serbia",
