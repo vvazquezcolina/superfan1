@@ -1,0 +1,6 @@
+Contact: mailto:security@superfaninfo.com
+Canonical: https://www.superfaninfo.com/.well-known/security.txt
+Preferred-Languages: es, en
+Expires: 2027-03-26T00:00:00Z
+Policy: https://www.superfaninfo.com/privacidad
+Acknowledgments: https://www.superfaninfo.com/acerca
