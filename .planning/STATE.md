@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Phase complete — ready for verification
-stopped_at: Completed 07-04-PLAN.md — Phase 7 fully complete, all 48 teams have content
-last_updated: "2026-03-27T00:37:31.314Z"
+stopped_at: Completed 08-02-PLAN.md — fan experience pages and match calendar complete
+last_updated: "2026-03-27T00:47:24.980Z"
 progress:
   total_phases: 10
-  completed_phases: 8
+  completed_phases: 9
   total_plans: 23
-  completed_plans: 22
+  completed_plans: 23
 ---
 
 # Project State
@@ -68,6 +68,7 @@ Plan: 4 of 4
 | Phase 07 P03 | 20 | 3 tasks | 1 files |
 | Phase 08-travel-fan-experience-guides P01 | 11min | 3 tasks | 11 files |
 | Phase 07 P04 | 45 | 2 tasks | 2 files |
+| Phase 08-travel-fan-experience-guides P02 | 8min | 3 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -147,6 +148,10 @@ Recent decisions affecting current work:
 - [Phase 07]: Phase 07-04: Japan dressing room Arigato story used as primary hook — transcends football
 - [Phase 07]: Phase 07-04: Iran Qatar 2022 anthem refusal documented factually as important political context
 - [Phase 07]: Phase 07-04: pagefind added to .gitignore — generated search index, rebuilt on each deploy
+- [Phase 08-02]: guides.ts merges travel.json and fan.json via allGuides array so getGuide() resolves all guide IDs across both files
+- [Phase 08-02]: MatchCalendar uses 'use client' with useMemo filtering; page shell is server component for SEO and ISR
+- [Phase 08-02]: Match schedule uses revalidate=3600 (hourly ISR) to pick up FIFA team assignments when released
+- [Phase 08-02]: Ticket page has no AffiliateLink — e-commerce/direct ticket sales out of scope per PROJECT.md
 
 ### Pending Todos
 
@@ -161,6 +166,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T00:37:31.311Z
-Stopped at: Completed 07-04-PLAN.md — Phase 7 fully complete, all 48 teams have content
+Last session: 2026-03-27T00:47:24.978Z
+Stopped at: Completed 08-02-PLAN.md — fan experience pages and match calendar complete
 Resume file: None

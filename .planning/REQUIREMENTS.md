@@ -42,9 +42,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **TRVL-02**: Accommodation guide pages (general + by city) with neighborhood recommendations and price ranges
 - [x] **TRVL-03**: Transport between cities guide with practical options (flights, buses, trains, rental cars)
 - [x] **TRVL-04**: Visa and entry requirements guide covering USA ESTA/visa, Mexico FMM, Canada eTA by nationality
-- [ ] **TRVL-05**: Ticket buying guide with safety advice, categories, pricing tiers, scam warnings, official links
-- [ ] **TRVL-06**: Safety and travel insurance guide with practical recommendations
-- [ ] **TRVL-07**: Match schedule/calendar page filterable by city, team, group, and date (ISR for updates)
+- [x] **TRVL-05**: Ticket buying guide with safety advice, categories, pricing tiers, scam warnings, official links
+- [x] **TRVL-06**: Safety and travel insurance guide with practical recommendations
+- [x] **TRVL-07**: Match schedule/calendar page filterable by city, team, group, and date (ISR for updates)
 
 ### SEO & Technical
 
@@ -161,9 +161,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TRVL-02 | Phase 8 | Complete |
 | TRVL-03 | Phase 8 | Complete |
 | TRVL-04 | Phase 8 | Complete |
-| TRVL-05 | Phase 8 | Pending |
-| TRVL-06 | Phase 8 | Pending |
-| TRVL-07 | Phase 8 | Pending |
+| TRVL-05 | Phase 8 | Complete |
+| TRVL-06 | Phase 8 | Complete |
+| TRVL-07 | Phase 8 | Complete |
 | SEO-01 | Phase 2 | Complete |
 | SEO-02 | Phase 2 | Complete |
 | SEO-03 | Phase 2 | Complete |
