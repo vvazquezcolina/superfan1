@@ -1,5 +1,6 @@
 import type { WithContext, Place, StadiumOrArena, SportsTeam, FAQPage, Article, Organization, ItemList, SiteNavigationElement } from 'schema-dts'
 import type { City, Stadium, Team, CityFAQ, Locale } from '@/lib/content/schemas'
+import { pathTranslations } from '@/lib/i18n'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 const ORG_NAME = 'SuperFan Mundial 2026'
@@ -16,7 +17,7 @@ function truncate(text: string, maxLength: number): string {
 }
 
 export function buildPlaceJsonLd(city: City, lang: Locale): WithContext<Place> {
-  const section = lang === 'es' ? 'ciudades' : 'cities'
+  const section = pathTranslations.ciudades[lang] ?? pathTranslations.ciudades.es
   return {
     '@context': 'https://schema.org',
     '@type': 'Place',
@@ -40,7 +41,7 @@ export function buildStadiumJsonLd(
   cityName: string,
   lang: Locale,
 ): WithContext<StadiumOrArena> {
-  const section = lang === 'es' ? 'estadios' : 'stadiums'
+  const section = pathTranslations.estadios[lang] ?? pathTranslations.estadios.es
   return {
     '@context': 'https://schema.org',
     '@type': 'StadiumOrArena',
@@ -70,7 +71,7 @@ export function buildSportsTeamJsonLd(
   team: Team,
   lang: Locale,
 ): WithContext<SportsTeam> {
-  const section = lang === 'es' ? 'equipos' : 'teams'
+  const section = pathTranslations.equipos[lang] ?? pathTranslations.equipos.es
   return {
     '@context': 'https://schema.org',
     '@type': 'SportsTeam',
