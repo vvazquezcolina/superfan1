@@ -1,17 +1,24 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getDictionary, hasLocale } from './dictionaries'
-import { buildHomeAlternates, SITE_URL } from '@/lib/i18n'
+import { buildHomeAlternates, SITE_URL, hreflangMap, localeDirection } from '@/lib/i18n'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
 import { CookieConsent } from '@/components/analytics/CookieConsent'
 import { buildOrganizationJsonLd } from '@/lib/jsonld'
-import type { Locale } from '@/lib/content/schemas'
+import type { Locale } from '@/app/[lang]/dictionaries'
 import '@/app/globals.css'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -47,12 +54,17 @@ export default async function LangLayout({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const dict = await getDictionary(lang)
   const locale = lang as Locale
-  const orgJsonLd = buildOrganizationJsonLd(locale)
+  const dict = await getDictionary(locale)
+  const orgJsonLd = buildOrganizationJsonLd(locale as import('@/lib/content/schemas').Locale)
+
+  // Use BCP-47 hreflang code as the HTML lang attribute value
+  const htmlLang = hreflangMap[locale]
+  // Arabic uses RTL text direction; all other locales are LTR
+  const dir = localeDirection[locale]
 
   return (
-    <html lang={lang === 'es' ? 'es-419' : 'en'}>
+    <html lang={htmlLang} dir={dir}>
       <head>
         {/* Preconnect to external origins for performance */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
