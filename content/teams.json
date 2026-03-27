@@ -3742,18 +3742,27 @@
           "en": "Switzerland is one of the best examples of how modern football is a global phenomenon. The Swiss national team is an extraordinary cultural mosaic: Granit Xhaka (Albanian origin), Xherdan Shaqiri (Kosovar origin), Breel Embolo (born in Cameroon), and many other players with African, Balkan, and Southern European roots. That diversity is the greatest strength of a team arriving at the 2026 World Cup with aspirations to surprise. Group assignment is pending the official FIFA draw.\n\nSwitzerland has been one of the most consistent teams of the last decade: qualifying for every World Cup (2006, 2010, 2014, 2018, 2022) and reaching the quarterfinals for the first time in their history at Qatar 2022, where they eliminated Serbia and were eliminated by Portugal in the quarterfinals in a very competitive manner. This Switzerland is no longer a filler team: they are a serious contender.\n\nFor Latin American fans, Switzerland is the perfect example that talent has no passport. Players like Embolo, born in Cameroon and raised in Switzerland, represent the beauty of a football without borders that unites people from all cultures under the same flag."
         },
         "worldCupHistory": {
-          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
           "content": {
             "es": "Suiza tiene 12 participaciones mundialistas. Su mejor resultado historico fue el cuarto puesto en 1954 (cuando organizaron el torneo), y en la era moderna han llegado a cuartos de final por primera vez en Qatar 2022. En la Eurocopa de 2021, llegaron tambien a cuartos de final, derrotando a Francia en la tanda de penales en una de las mayores sorpresas del torneo.\n\nLa consistencia clasificatoria de Suiza es notable: desde 2006 han clasificado a todos los Mundiales. En Qatar 2022, Suiza elimino a Serbia en la fase de grupos con una actuacion de alto nivel, y luego cayo ante Portugal en cuartos 6-1, en un resultado que no reflejo del todo el desarrollo del partido. La tendencia de esta seleccion es claramente ascendente.",
             "en": "Switzerland has 12 World Cup appearances. Their best historical result was fourth place in 1954 (when they hosted the tournament), and in the modern era they reached the quarterfinals for the first time at Qatar 2022. At Euro 2021, they also reached the quarterfinals, defeating France in a penalty shootout in one of the tournament's biggest upsets.\n\nSwitzerland's qualifying consistency is notable: since 2006 they have qualified for every World Cup. At Qatar 2022, Switzerland eliminated Serbia in the group stage with a high-level performance, and then fell to Portugal in the quarterfinals 6-1, in a result that didn't fully reflect the match's development. This team's trend is clearly upward."
           }
         },
         "keyPlayers": {
-          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
           "players": [
             {
               "name": "Granit Xhaka",
-              "position": { "es": "Mediocampista Central", "en": "Central Midfielder" },
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
               "club": "Bayer Leverkusen",
               "note": {
                 "es": "El capitan y corazon de Suiza. Xhaka es un mediocampista de box-to-box con liderazgo, experiencia y un tiro de larga distancia potente. En el Leverkusen que gano la Bundesliga invicto en 2024 fue una pieza clave. Su hermano Taulant juega para Albania, haciendo de los partidos Albania-Suiza duelos familiares unicos en el mundo.",
@@ -3762,7 +3771,10 @@
             },
             {
               "name": "Breel Embolo",
-              "position": { "es": "Delantero Centro / Extremo", "en": "Centre Forward / Winger" },
+              "position": {
+                "es": "Delantero Centro / Extremo",
+                "en": "Centre Forward / Winger"
+              },
               "club": "AS Monaco",
               "note": {
                 "es": "El delantero nato de Suiza. Embolo, nacido en Camerun y criado en Suiza, es un delantero fisico y potente con capacidad de marcar goles importantes. Marco el unico gol de Suiza en la victoria ante Camerun en el Mundial 2022, en un partido cargado de simbolismo para el jugador.",
@@ -3771,7 +3783,10 @@
             },
             {
               "name": "Manuel Akanji",
-              "position": { "es": "Defensa Central", "en": "Centre Back" },
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre Back"
+              },
               "club": "Manchester City",
               "note": {
                 "es": "El defensa central mas completo de Suiza y uno de los mejores de la Premier League. Akanji combina una lectura del juego excelente con una solidez fisica que lo hace muy dificil de superar. En el Manchester City ha ganado la Champions League y la Premier League, siendo un jugador de primer nivel mundial.",
@@ -3780,7 +3795,10 @@
             },
             {
               "name": "Yann Sommer",
-              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
               "club": "Inter de Milan",
               "note": {
                 "es": "Uno de los mejores porteros de Europa y el titular indiscutible de Suiza. Sommer es conocido por sus paradas imposibles, incluyendo la memorable parada ante el penal de Mbappe en el Mundial de Qatar 2022. Su experiencia en el Bayern Munich y el Inter de Milan confirma su estatus de portero de elite.",
@@ -3789,7 +3807,10 @@
             },
             {
               "name": "Remo Freuler",
-              "position": { "es": "Mediocampista Central / Defensivo", "en": "Central / Defensive Midfielder" },
+              "position": {
+                "es": "Mediocampista Central / Defensivo",
+                "en": "Central / Defensive Midfielder"
+              },
               "club": "Nottingham Forest",
               "note": {
                 "es": "El mediocampista box-to-box que da el equilibrio al equipo suizo. Freuler aporta intensidad, recuperacion y salida limpia del balon, siendo el jugador que permite a Xhaka y compania jugar con mas libertad. Es fundamental para la solidez tactica del equipo suizo.",
@@ -3799,14 +3820,20 @@
           ]
         },
         "qualifyingPath": {
-          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
           "content": {
             "es": "Suiza clasifico al Mundial 2026 a traves de la UEFA Nations League y las eliminatorias europeas. Los suizos son uno de los equipos europeos mas consistentes en la clasificacion: desde 2006 no han fallado un solo Mundial. La Nations League es un torneo donde Suiza ha brillado, habiendo ganado la Liga C en 2019 y ascendido a la Liga A.\n\nEl proceso clasificatorio de Suiza confirma que el equipo tiene un sistema y una cultura futbolistica que van mas alla de los jugadores individuales. La combinacion de talentos con origenes multiculturales bajo el sistema de formacion suizo ha creado una seleccion con una identidad clara y una mentalidad competitiva muy desarrollada.",
             "en": "Switzerland qualified for the 2026 World Cup through the UEFA Nations League and European qualifiers. The Swiss are one of Europe's most consistent qualifying teams: since 2006 they have not missed a single World Cup. The Nations League is a tournament where Switzerland has excelled, having won League C in 2019 and been promoted to League A.\n\nSwitzerland's qualifying process confirms the team has a system and football culture that goes beyond individual players. The combination of talents with multicultural origins under the Swiss development system has created a team with a clear identity and a highly developed competitive mentality."
           }
         },
         "matchSchedule": {
-          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
           "content": {
             "es": "Los partidos de Suiza en el Mundial 2026 seran confirmados por la FIFA. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
             "en": "Switzerland's matches at the 2026 World Cup will be confirmed by FIFA. Check back soon for the complete schedule with dates, venues, and times."
@@ -3814,22 +3841,49 @@
         },
         "faq": [
           {
-            "question": { "es": "¿Por que Suiza tiene tantos jugadores de origen extranjero?", "en": "Why does Switzerland have so many players of foreign origin?" },
-            "answer": { "es": "Suiza tiene uno de los mayores porcentajes de inmigrantes de Europa (mas del 25% de su poblacion). Los hijos de inmigrantes de Albania, Kosovo, Africa y otros paises que crecen en Suiza pueden elegir jugar para la seleccion suiza. Esta politica inclusiva ha enriquecido enormemente al equipo nacional, con jugadores como Xhaka (albanokosovaro), Embolo (camerunes), Shaqiri (kosovaro) y muchos otros.", "en": "Switzerland has one of the highest percentages of immigrants in Europe (over 25% of its population). The children of immigrants from Albania, Kosovo, Africa, and other countries who grow up in Switzerland can choose to play for the Swiss team. This inclusive policy has enormously enriched the national team, with players like Xhaka (Albanian-Kosovar), Embolo (Cameroonian), Shaqiri (Kosovar), and many others." }
+            "question": {
+              "es": "¿Por que Suiza tiene tantos jugadores de origen extranjero?",
+              "en": "Why does Switzerland have so many players of foreign origin?"
+            },
+            "answer": {
+              "es": "Suiza tiene uno de los mayores porcentajes de inmigrantes de Europa (mas del 25% de su poblacion). Los hijos de inmigrantes de Albania, Kosovo, Africa y otros paises que crecen en Suiza pueden elegir jugar para la seleccion suiza. Esta politica inclusiva ha enriquecido enormemente al equipo nacional, con jugadores como Xhaka (albanokosovaro), Embolo (camerunes), Shaqiri (kosovaro) y muchos otros.",
+              "en": "Switzerland has one of the highest percentages of immigrants in Europe (over 25% of its population). The children of immigrants from Albania, Kosovo, Africa, and other countries who grow up in Switzerland can choose to play for the Swiss team. This inclusive policy has enormously enriched the national team, with players like Xhaka (Albanian-Kosovar), Embolo (Cameroonian), Shaqiri (Kosovar), and many others."
+            }
           },
           {
-            "question": { "es": "¿Cual es el mejor resultado de Suiza en un Mundial?", "en": "What is Switzerland's best result at a World Cup?" },
-            "answer": { "es": "El mejor resultado de Suiza fue el cuarto puesto en 1954, cuando organizaron el torneo. En la era moderna, llegaron a cuartos de final por primera vez en Qatar 2022, donde fueron eliminados por Portugal 6-1. Tambien llegaron a cuartos en la Eurocopa 2021, donde eliminaron a Francia en penales en una de las mayores sorpresas del torneo.", "en": "Switzerland's best result was fourth place in 1954, when they hosted the tournament. In the modern era, they reached the quarterfinals for the first time at Qatar 2022, where they were eliminated by Portugal 6-1. They also reached the Euro 2021 quarterfinals, where they eliminated France on penalties in one of the tournament's biggest upsets." }
+            "question": {
+              "es": "¿Cual es el mejor resultado de Suiza en un Mundial?",
+              "en": "What is Switzerland's best result at a World Cup?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Suiza fue el cuarto puesto en 1954, cuando organizaron el torneo. En la era moderna, llegaron a cuartos de final por primera vez en Qatar 2022, donde fueron eliminados por Portugal 6-1. Tambien llegaron a cuartos en la Eurocopa 2021, donde eliminaron a Francia en penales en una de las mayores sorpresas del torneo.",
+              "en": "Switzerland's best result was fourth place in 1954, when they hosted the tournament. In the modern era, they reached the quarterfinals for the first time at Qatar 2022, where they were eliminated by Portugal 6-1. They also reached the Euro 2021 quarterfinals, where they eliminated France on penalties in one of the tournament's biggest upsets."
+            }
           },
           {
-            "question": { "es": "¿Quien es el mejor jugador de Suiza?", "en": "Who is Switzerland's best player?" },
-            "answer": { "es": "Granit Xhaka es el capitan y el jugador mas representativo de la seleccion suiza. Sin embargo, el portero Yann Sommer tambien merece el titulo de mejor jugador, gracias a sus actuaciones extraordinarias en el Inter de Milan y en varios Mundiales. Breel Embolo es el referente ofensivo del equipo.", "en": "Granit Xhaka is the captain and most representative player of the Swiss team. However, goalkeeper Yann Sommer also deserves the title of best player, thanks to his extraordinary performances at Inter Milan and in several World Cups. Breel Embolo is the team's offensive reference point." }
+            "question": {
+              "es": "¿Quien es el mejor jugador de Suiza?",
+              "en": "Who is Switzerland's best player?"
+            },
+            "answer": {
+              "es": "Granit Xhaka es el capitan y el jugador mas representativo de la seleccion suiza. Sin embargo, el portero Yann Sommer tambien merece el titulo de mejor jugador, gracias a sus actuaciones extraordinarias en el Inter de Milan y en varios Mundiales. Breel Embolo es el referente ofensivo del equipo.",
+              "en": "Granit Xhaka is the captain and most representative player of the Swiss team. However, goalkeeper Yann Sommer also deserves the title of best player, thanks to his extraordinary performances at Inter Milan and in several World Cups. Breel Embolo is the team's offensive reference point."
+            }
           }
         ],
         "sources": [
-          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
-          { "name": "UEFA.com", "url": "https://www.uefa.com" },
-          { "name": "SFV Oficial", "url": "https://www.football.ch/" }
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "UEFA.com",
+            "url": "https://www.uefa.com"
+          },
+          {
+            "name": "SFV Oficial",
+            "url": "https://www.football.ch/"
+          }
         ]
       }
     },
@@ -3855,18 +3909,27 @@
           "en": "Austria is one of the most exciting resurgence stories in recent European football. The country absent from a World Cup since France 1998 arrives at the 2026 World Cup with a new, talented, and hungry generation led by David Alaba and Marcel Sabitzer. After nearly three decades of absence, Austrian football had to rebuild from the ground up, and the result of that work is visible today: Austria competes with Europe's best teams in the Nations League and qualifiers. Group assignment is pending the official FIFA draw.\n\nDavid Alaba is the greatest star in Austrian football history. The Real Madrid centre-back, who was a left back for years, has Champions League, Bundesliga, La Liga, and Copa del Rey titles on his resume. Alongside him, Konrad Laimer and Marcel Sabitzer bring dynamism and intensity from midfield, while Marko Arnautovic leads the attack with experience and determination.\n\nFor Latin American fans, Austria could be one of the tournament's surprises. A team absent from a World Cup for nearly 30 years, coming in with the motivation to prove they have returned to stay, can complicate matters for far more well-known teams. In football, hunger for glory is a powerful fuel."
         },
         "worldCupHistory": {
-          "title": { "es": "Historia en los Mundiales", "en": "World Cup History" },
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
           "content": {
             "es": "Austria tiene 7 participaciones mundialistas. Su periodo mas glorioso fue en los anos 50 y 60, cuando fue considerada una de las grandes selecciones de Europa. Su mejor resultado fue el tercer puesto en Suiza 1954. En Espana 1982, Austria participo junto a Alemania Occidental en la infame noche de Gijon (el 'Schmutzige Spiel' o 'Partido de la Vergüenza'), donde ambas selecciones empataron 1-0 para eliminar a Argelia en un partido que a dia de hoy sigue siendo considerado uno de los mas escandalosos de la historia mundialista.\n\nLa ultima participacion de Austria fue en Francia 1998, donde fueron eliminados en primera ronda. Las 28 anos de ausencia hasta el Mundial 2026 es el mayor ayuno de la historia mundialista austriaca. El regreso de los Equipo Nacional Austriaco al escenario mundial es una noticia enorme para el futbol centroeuropeo.",
             "en": "Austria has 7 World Cup appearances. Their most glorious period was in the 1950s and 1960s, when they were considered one of Europe's great teams. Their best result was third place at Switzerland 1954. At Spain 1982, Austria participated alongside West Germany in the infamous 'Disgrace of Gijon' (the 'Schmutzige Spiel'), where both teams drew 1-0 to eliminate Algeria in a match still considered one of the most scandalous in World Cup history.\n\nAustria's last participation was at France 1998, where they were eliminated in the group stage. The 28 years of absence until the 2026 World Cup is the longest gap in Austrian World Cup history. The return of the Austrian National Team to the world stage is huge news for Central European football."
           }
         },
         "keyPlayers": {
-          "title": { "es": "Jugadores Clave", "en": "Key Players" },
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
           "players": [
             {
               "name": "David Alaba",
-              "position": { "es": "Defensa Central / Lateral Izquierdo", "en": "Centre Back / Left Back" },
+              "position": {
+                "es": "Defensa Central / Lateral Izquierdo",
+                "en": "Centre Back / Left Back"
+              },
               "club": "Real Madrid",
               "note": {
                 "es": "El mejor jugador en la historia del futbol austriaco y una de las figuras del Real Madrid. Alaba ha ganado practicamente todo lo que se puede ganar en el futbol: Champions League (varias veces), Bundesliga, La Liga. Su capacidad como defensa central moderno, con salida del balon y liderazgo defensivo, lo hace un jugador de nivel mundial.",
@@ -3875,7 +3938,10 @@
             },
             {
               "name": "Marcel Sabitzer",
-              "position": { "es": "Mediocampista Central / Mediapunta", "en": "Central / Attacking Midfielder" },
+              "position": {
+                "es": "Mediocampista Central / Mediapunta",
+                "en": "Central / Attacking Midfielder"
+              },
               "club": "Borussia Dortmund",
               "note": {
                 "es": "El dinamismo personificado en el mediocampo austriaco. Sabitzer es un mediocampista de alta intensidad, con llegada al area, gol y una presion constante que complementa perfecto el juego de Austria. En el Borussia Dortmund ha demostrado que puede competir al mas alto nivel europeo.",
@@ -3884,7 +3950,10 @@
             },
             {
               "name": "Konrad Laimer",
-              "position": { "es": "Mediocampista Defensivo / Central", "en": "Defensive / Central Midfielder" },
+              "position": {
+                "es": "Mediocampista Defensivo / Central",
+                "en": "Defensive / Central Midfielder"
+              },
               "club": "Bayern Munich",
               "note": {
                 "es": "El motor fisico del mediocampo austriaco. Laimer es uno de los mediocampistas con mas kilometros recorridos por partido en Europa, combinando una capacidad defensiva elite con una transicion ofensiva rapida. En el Bayern Munich ha demostrado que puede jugar en el mas alto nivel europeo.",
@@ -3893,7 +3962,10 @@
             },
             {
               "name": "Marko Arnautovic",
-              "position": { "es": "Delantero Centro / Extremo", "en": "Centre Forward / Winger" },
+              "position": {
+                "es": "Delantero Centro / Extremo",
+                "en": "Centre Forward / Winger"
+              },
               "club": "Inter de Milan",
               "note": {
                 "es": "El veterano del ataque austriaco y el jugador con mas personalidad del equipo. Arnautovic es un delantero fisico, con llegada, gol y una capacidad de retener el balon que es fundamental para el juego de Austria. Su experiencia en el Inter de Milan y la Premier League lo convierten en el referente ofensivo del equipo.",
@@ -3902,7 +3974,10 @@
             },
             {
               "name": "Patrick Pentz",
-              "position": { "es": "Portero", "en": "Goalkeeper" },
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
               "club": "Girondins Bordeaux",
               "note": {
                 "es": "El portero emergente de la seleccion austriaca. Pentz ha sido uno de los mejores porteros de la Bundesliga en los ultimos anos con el Bayer Leverkusen, y es el candidato mas firme para ser el titular de Austria en el Mundial 2026. Su altura (1.94m) y sus reflejos le dan una presencia imponente bajo los palos.",
@@ -3912,14 +3987,20 @@
           ]
         },
         "qualifyingPath": {
-          "title": { "es": "Camino a la Clasificacion", "en": "Path to Qualification" },
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
           "content": {
             "es": "Austria clasifico al Mundial 2026 a traves de la UEFA Nations League y las eliminatorias europeas, cerrando 28 anos de ausencia en las Copas del Mundo. La Nations League ha sido el torneo donde Austria ha brillado mas en los ultimos anos, llegando a la Liga A y demostrando que puede competir con las mejores selecciones europeas.\n\nEl proceso clasificatorio de Austria es el resultado de anos de trabajo en el desarrollo de jugadores. La combinacion de jugadores formados en las academias alemanas (Laimer, Sabitzer, Seiwald) con la experiencia internacional de Alaba y Arnautovic ha creado una seleccion equilibrada que tiene argumentos para sorprender en el Mundial 2026.",
             "en": "Austria qualified for the 2026 World Cup through the UEFA Nations League and European qualifiers, ending 28 years of World Cup absence. The Nations League has been the tournament where Austria has shone most in recent years, reaching League A and demonstrating they can compete with Europe's best teams.\n\nAustria's qualifying process is the result of years of player development work. The combination of players trained in German academies (Laimer, Sabitzer, Seiwald) with the international experience of Alaba and Arnautovic has created a balanced team that has arguments to surprise at the 2026 World Cup."
           }
         },
         "matchSchedule": {
-          "title": { "es": "Calendario de Partidos", "en": "Match Schedule" },
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
           "content": {
             "es": "Los partidos de Austria en el Mundial 2026 seran confirmados por la FIFA. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
             "en": "Austria's matches at the 2026 World Cup will be confirmed by FIFA. Check back soon for the complete schedule with dates, venues, and times."
@@ -3927,22 +4008,49 @@
         },
         "faq": [
           {
-            "question": { "es": "¿Cuantas veces ha participado Austria en un Mundial?", "en": "How many times has Austria participated in a World Cup?" },
-            "answer": { "es": "Austria ha participado en 7 Copas del Mundo: 1934, 1954, 1958, 1978, 1982, 1990 y 1998. El Mundial 2026 sera su octava participacion historica, la primera en 28 anos tras la ausencia desde Francia 1998. Su mejor resultado fue el tercer puesto en Suiza 1954.", "en": "Austria has participated in 7 World Cups: 1934, 1954, 1958, 1978, 1982, 1990, and 1998. The 2026 World Cup will be their eighth historic appearance, the first in 28 years after their absence since France 1998. Their best result was third place at Switzerland 1954." }
+            "question": {
+              "es": "¿Cuantas veces ha participado Austria en un Mundial?",
+              "en": "How many times has Austria participated in a World Cup?"
+            },
+            "answer": {
+              "es": "Austria ha participado en 7 Copas del Mundo: 1934, 1954, 1958, 1978, 1982, 1990 y 1998. El Mundial 2026 sera su octava participacion historica, la primera en 28 anos tras la ausencia desde Francia 1998. Su mejor resultado fue el tercer puesto en Suiza 1954.",
+              "en": "Austria has participated in 7 World Cups: 1934, 1954, 1958, 1978, 1982, 1990, and 1998. The 2026 World Cup will be their eighth historic appearance, the first in 28 years after their absence since France 1998. Their best result was third place at Switzerland 1954."
+            }
           },
           {
-            "question": { "es": "¿Quien es el mejor jugador de la historia de Austria?", "en": "Who is the greatest player in Austrian football history?" },
-            "answer": { "es": "David Alaba es ampliamente considerado el mejor jugador de la historia del futbol austriaco. El defensa central del Real Madrid ha ganado Champions League, Bundesliga y La Liga, y ha sido uno de los mejores defensas del mundo durante mas de una decada. Antes de Alaba, la leyenda del futbol austriaco era Hans Krankl, goleador del Barcelona en los anos 70 y 80.", "en": "David Alaba is widely considered the greatest player in Austrian football history. The Real Madrid centre-back has won the Champions League, Bundesliga, and La Liga, and has been one of the world's best defenders for more than a decade. Before Alaba, Austrian football's legend was Hans Krankl, Barcelona's top scorer in the 1970s and 80s." }
+            "question": {
+              "es": "¿Quien es el mejor jugador de la historia de Austria?",
+              "en": "Who is the greatest player in Austrian football history?"
+            },
+            "answer": {
+              "es": "David Alaba es ampliamente considerado el mejor jugador de la historia del futbol austriaco. El defensa central del Real Madrid ha ganado Champions League, Bundesliga y La Liga, y ha sido uno de los mejores defensas del mundo durante mas de una decada. Antes de Alaba, la leyenda del futbol austriaco era Hans Krankl, goleador del Barcelona en los anos 70 y 80.",
+              "en": "David Alaba is widely considered the greatest player in Austrian football history. The Real Madrid centre-back has won the Champions League, Bundesliga, and La Liga, and has been one of the world's best defenders for more than a decade. Before Alaba, Austrian football's legend was Hans Krankl, Barcelona's top scorer in the 1970s and 80s."
+            }
           },
           {
-            "question": { "es": "¿Por que Austria no estuvo en Mundiales durante 28 anos?", "en": "Why was Austria absent from World Cups for 28 years?" },
-            "answer": { "es": "Austria no clasifico a los Mundiales de 2002, 2006, 2010, 2014, 2018 y 2022, una racha de ausencias que se extendio de 1998 a 2026. Las razones incluyen una decada de inversion insuficiente en el futbol base, una liga domestica menos competitiva que las grandes ligas europeas, y la fuerte competencia en las eliminatorias europeas. La renovacion liderada por Alaba y una nueva generacion de jugadores de alto nivel ha cambiado ese panorama.", "en": "Austria failed to qualify for the 2002, 2006, 2010, 2014, 2018, and 2022 World Cups, a streak of absences extending from 1998 to 2026. The reasons include a decade of insufficient investment in youth football, a domestic league less competitive than major European leagues, and strong competition in European qualifiers. The renewal led by Alaba and a new generation of high-level players has changed that landscape." }
+            "question": {
+              "es": "¿Por que Austria no estuvo en Mundiales durante 28 anos?",
+              "en": "Why was Austria absent from World Cups for 28 years?"
+            },
+            "answer": {
+              "es": "Austria no clasifico a los Mundiales de 2002, 2006, 2010, 2014, 2018 y 2022, una racha de ausencias que se extendio de 1998 a 2026. Las razones incluyen una decada de inversion insuficiente en el futbol base, una liga domestica menos competitiva que las grandes ligas europeas, y la fuerte competencia en las eliminatorias europeas. La renovacion liderada por Alaba y una nueva generacion de jugadores de alto nivel ha cambiado ese panorama.",
+              "en": "Austria failed to qualify for the 2002, 2006, 2010, 2014, 2018, and 2022 World Cups, a streak of absences extending from 1998 to 2026. The reasons include a decade of insufficient investment in youth football, a domestic league less competitive than major European leagues, and strong competition in European qualifiers. The renewal led by Alaba and a new generation of high-level players has changed that landscape."
+            }
           }
         ],
         "sources": [
-          { "name": "FIFA.com", "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup" },
-          { "name": "UEFA.com", "url": "https://www.uefa.com" },
-          { "name": "OEFB Oficial", "url": "https://www.oefb.at/" }
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "UEFA.com",
+            "url": "https://www.uefa.com"
+          },
+          {
+            "name": "OEFB Oficial",
+            "url": "https://www.oefb.at/"
+          }
         ]
       }
     },
@@ -4653,7 +4761,163 @@
         "es": "Historico semifinalista en Qatar 2022, la primera seleccion africana en llegar tan lejos en un Mundial.",
         "en": "Historic semifinalist in Qatar 2022, the first African team to go that far in a World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Marruecos escribio una de las paginas mas gloriosas de la historia del futbol africano en el Mundial de Qatar 2022. Los Leones del Atlas se convirtieron en la primera seleccion africana y arabe en llegar a las semifinales de una Copa del Mundo, eliminando a Belgica, Espana y Portugal en el camino, antes de perder ante Francia. Aquel torneo no solo fue historico, sino que unio a todo el mundo arabe y africano en una explosion de orgullo y euforia.\n\nLa generacion que protagonizo ese hito sigue en activo: Achraf Hakimi del Paris Saint-Germain es uno de los mejores laterales del mundo, Hakim Ziyech aporta creatividad y golpe de balon, y Bono (Yassine Bounou) es uno de los mejores porteros de Europa. Para 2026, Marruecos llega no solo con la ilucion de repetir la gesta de Qatar, sino con la ambicion de llegar aun mas lejos. El grupo no ha sido asignado.\n\nLa aficion marroqui, tanto la que viaja desde el reino como la numerosa diaspora en Francia, Belgica y otros paises europeos, es reconocida por su volumen, sus colores y su pasion desbordante. En 2026, los Leones del Atlas tendran a millones de personas animando en cada partido.",
+          "en": "Morocco wrote one of the most glorious pages in African football history at the Qatar 2022 World Cup. The Atlas Lions became the first African and Arab nation to reach the semifinals of a World Cup, eliminating Belgium, Spain, and Portugal along the way before falling to France. That tournament was not only historic but united the entire Arab and African world in an explosion of pride and euphoria.\n\nThe generation that achieved that milestone is still active: Paris Saint-Germain's Achraf Hakimi is one of the world's best fullbacks, Hakim Ziyech brings creativity and a powerful shot, and Bono (Yassine Bounou) is one of Europe's top goalkeepers. For 2026, Morocco arrives not just with the dream of repeating Qatar's feat, but with the ambition to go even further. Group assignment is still pending.\n\nMoroccan fans, both those traveling from the kingdom and the large diaspora in France, Belgium, and other European countries, are recognized for their volume, colors, and overflowing passion. In 2026, the Atlas Lions will have millions of people cheering at every match."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Marruecos tiene 9 participaciones mundialistas (1970, 1986, 1994, 1998, 2002, 2006, 2018, 2022) y llega a 2026 con su mayor logro como punto de partida. En Mexico 1986, Marruecos fue el primer equipo africano en superar la fase de grupos de un Mundial. Pero fue en Qatar 2022 donde la historia alcanzo su maximo esplendor.\n\nEn Qatar, los Leones del Atlas vencieron a Belgica (2-0), empataron con Croacia (0-0) y derrotaron a Canada (2-1) para pasar como lideres de grupo. En octavos, Marruecos elimino a Espana en penaltis. En cuartos, otra victoria por penaltis ante Portugal. En semifinales, cayeron ante Francia 0-2. En el partido por el tercer puesto, perdieron 1-2 ante Croacia. Una actuacion que cambio la historia del futbol africano.",
+            "en": "Morocco has 9 World Cup appearances (1970, 1986, 1994, 1998, 2002, 2006, 2018, 2022) and arrives at 2026 with their greatest achievement as a starting point. In Mexico 1986, Morocco became the first African team to advance from a World Cup group stage. But it was in Qatar 2022 where history reached its highest point.\n\nIn Qatar, the Atlas Lions defeated Belgium (2-0), drew with Croatia (0-0), and beat Canada (2-1) to advance as group leaders. In the Round of 16, Morocco eliminated Spain on penalties. In the quarterfinals, another penalty victory over Portugal. In the semifinals, they fell to France 0-2. In the third-place match, they lost 1-2 to Croatia. A performance that changed the history of African football."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Achraf Hakimi",
+              "position": {
+                "es": "Lateral Derecho",
+                "en": "Right Back"
+              },
+              "club": "Paris Saint-Germain",
+              "note": {
+                "es": "El capitan de Marruecos y uno de los mejores laterales derechos del mundo. Hakimi es un jugador explosivo con una capacidad ofensiva extraordinaria: su velocidad, sus centros y su capacidad goleadora lo convierten en una amenaza constante. Criado en la cantera del Real Madrid, ha brillado en el Inter y ahora en el PSG.",
+                "en": "Morocco's captain and one of the world's best right backs. Hakimi is an explosive player with extraordinary attacking ability: his pace, crosses, and scoring ability make him a constant threat. Raised in Real Madrid's academy, he has shone at Inter and now at PSG."
+              }
+            },
+            {
+              "name": "Hakim Ziyech",
+              "position": {
+                "es": "Extremo Derecho / Mediapunta",
+                "en": "Right Winger / Attacking Midfielder"
+              },
+              "club": "Galatasaray",
+              "note": {
+                "es": "El cerebro creativo de Marruecos, Ziyech es un jugador con una pierna izquierda prodigiosa y una vision de juego especial. Tiene una trayectoria en el Ajax, Chelsea y ahora el Galatasaray. Pese a su relacion a veces tensa con la federacion marroqui, su talento es indiscutible e imprescindible para el equipo.",
+                "en": "Morocco's creative brain, Ziyech is a player with a prodigious left foot and special vision of play. He has a career spanning Ajax, Chelsea, and now Galatasaray. Despite his sometimes tense relationship with the Moroccan federation, his talent is undeniable and indispensable for the team."
+              }
+            },
+            {
+              "name": "Youssef En-Nesyri",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Fenerbahce",
+              "note": {
+                "es": "El '9' titular de Marruecos es un delantero con una habilidad excepcional en el juego aereo. En Qatar 2022 marco goles cruciales para los Leones del Atlas, incluyendo el tanto ante Portugal en cuartos de final. Su remate de cabeza y su instinto goleador son letales.",
+                "en": "Morocco's first-choice striker is a forward with exceptional aerial ability. In Qatar 2022 he scored crucial goals for the Atlas Lions, including the goal against Portugal in the quarterfinals. His heading ability and goalscoring instinct are lethal."
+              }
+            },
+            {
+              "name": "Sofyan Amrabat",
+              "position": {
+                "es": "Mediocampista Defensivo",
+                "en": "Defensive Midfielder"
+              },
+              "club": "Al-Batae",
+              "note": {
+                "es": "El motor defensivo de Marruecos en Qatar 2022, Amrabat fue considerado por muchos el mejor mediocampista defensivo del torneo. Su capacidad para recuperar balones, su resistencia fisica y su inteligencia tactica fueron fundamentales en el historico recorrido de Marruecos hasta las semifinales.",
+                "en": "Morocco's defensive engine at Qatar 2022, Amrabat was considered by many the best defensive midfielder of the tournament. His ball-winning ability, physical endurance, and tactical intelligence were fundamental to Morocco's historic run to the semifinals."
+              }
+            },
+            {
+              "name": "Bono (Yassine Bounou)",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Al-Hilal",
+              "note": {
+                "es": "El mejor portero de la historia reciente de Marruecos, Bono fue uno de los heroes de Qatar 2022 con sus paradas ante Espana y Portugal en los penaltis. Ganador del Trofeo Zamora con el Sevilla en 2022-23, es un portero de clase mundial reconocido en todo Europa.",
+                "en": "The best goalkeeper in Morocco's recent history, Bono was one of the heroes of Qatar 2022 with his saves against Spain and Portugal in penalty shootouts. Winner of the Zamora Trophy with Sevilla in 2022-23, he is a world-class goalkeeper recognized throughout Europe."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Marruecos clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF (Confederacion Africana de Futbol). La CAF distribuye 9 plazas mundialistas entre sus 54 miembros a traves de una fase de grupos con los mejores equipos clasificando directamente. Marruecos, como uno de los equipos africanos de mayor nivel, ha sido consistente en las eliminatorias continentales.\n\nLa clasificacion para 2026 refuerza el estatus de Marruecos como la principal potencia del futbol africano actual. Con el apoyo de su numerosa diaspora en Europa y el entusiasmo generado por Qatar 2022, Marruecos llega al torneo con la ambicion y la experiencia de quien ya ha demostrado poder competir contra cualquier rival del mundo.",
+            "en": "Morocco qualified for the 2026 World Cup through the CAF (Confederation of African Football) qualification process. CAF distributes 9 World Cup places among its 54 members through a group stage format with the best teams qualifying directly. Morocco, as one of Africa's highest-level teams, has been consistent in continental qualifying.\n\nQualification for 2026 reinforces Morocco's status as African football's current top power. With the support of their large European diaspora and the enthusiasm generated by Qatar 2022, Morocco arrives at the tournament with the ambition and experience of a team that has already proven it can compete against any opponent in the world."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Marruecos en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Morocco's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Hasta donde llego Marruecos en Qatar 2022?",
+              "en": "How far did Morocco go at Qatar 2022?"
+            },
+            "answer": {
+              "es": "Marruecos llego hasta las semifinales del Mundial de Qatar 2022, convirtiendose en la primera seleccion africana y arabe en alcanzar esa ronda en la historia de los Mundiales. Por el camino eliminaron a Belgica (2-0), Espana (penaltis) y Portugal (1-0) antes de caer ante Francia (0-2) en semifinales.",
+              "en": "Morocco reached the semifinals of the Qatar 2022 World Cup, becoming the first African and Arab nation to reach that stage in World Cup history. Along the way they eliminated Belgium (2-0), Spain (penalties), and Portugal (1-0) before falling to France (0-2) in the semifinals."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quien es el capitan de Marruecos?",
+              "en": "Who is Morocco's captain?"
+            },
+            "answer": {
+              "es": "Achraf Hakimi es el capitan de Marruecos. El lateral derecho del Paris Saint-Germain es considerado uno de los mejores jugadores del mundo en su posicion y el lider indiscutible de los Leones del Atlas. Criado en las categorias inferiores del Real Madrid, Hakimi encarna la nueva generacion del futbol africano.",
+              "en": "Achraf Hakimi is Morocco's captain. The Paris Saint-Germain right back is considered one of the world's best players in his position and the undisputed leader of the Atlas Lions. Raised in Real Madrid's academy, Hakimi embodies the new generation of African football."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Por que fue tan especial el Mundial de Qatar 2022 para Marruecos?",
+              "en": "Why was the Qatar 2022 World Cup so special for Morocco?"
+            },
+            "answer": {
+              "es": "Qatar 2022 fue historico para Marruecos porque fueron la primera seleccion africana y arabe en alcanzar unas semifinales mundialistas. Su campaña unio a todo el mundo arabe y africano, con fans en las calles de Casablanca, Dakar, Bagdad y las diaspora europeas celebrando cada victoria. Fue un momento de orgullo colectivo sin precedentes para el mundo arabe y africano.",
+              "en": "Qatar 2022 was historic for Morocco because they became the first African and Arab nation to reach World Cup semifinals. Their campaign united the entire Arab and African world, with fans celebrating in the streets of Casablanca, Dakar, Baghdad, and European diasporas. It was an unprecedented moment of collective pride for the Arab and African world."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Marruecos al Mundial 2026?",
+              "en": "How did Morocco qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Marruecos clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF (Confederacion Africana de Futbol), que distribuye 9 plazas mundialistas entre sus 54 miembros. Marruecos es uno de los equipos africanos mas consistentes en las eliminatorias continentales.",
+              "en": "Morocco qualified for the 2026 World Cup through the CAF (Confederation of African Football) qualification process, which distributes 9 World Cup places among its 54 members. Morocco is one of the most consistent African teams in continental qualifying."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "senegal",
@@ -4670,7 +4934,159 @@
         "es": "Campeon de Africa y una de las selecciones mas fuertes del continente.",
         "en": "African champion and one of the strongest teams on the continent."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Senegal es el equipo africano mas en forma de los ultimos cuatro anos: campeon de la Copa Africa (AFCON) en 2021 y 2023, los Leones de Teranga han demostrado ser la seleccion africana dominante de la era contemporanea. Liderados por Sadio Mane, ganador del Balon de Oro africano en multiples ocasiones, Senegal combina calidad individual con un colectivo bien organizado.\n\nLa actual generacion de Senegal es la mas talentosa de su historia. Ademas de Mane, cuentan con Edouard Mendy como portero, Kalidou Koulibaly como baluarte defensivo y una serie de jugadores de nivel Premier League y La Liga. Para 2026, Senegal llega con la experiencia de dos AFCON ganados y la ambicion de superar los cuartos de final de Corea 2002. El grupo no ha sido asignado aun.\n\nSenegal tiene uno de los ambientes futbolisticos mas vibrantes de Africa. El Estadio Leopold Sedar Senghor de Dakar es conocido por su atmosfera electrizante, y la pasion de la aficion senegalesa se exporta a todos los paises donde hay diasporas senegalesas, especialmente en Francia.",
+          "en": "Senegal is the most in-form African team of the last four years: African Cup of Nations (AFCON) champions in 2021 and 2023, the Teranga Lions have proven themselves to be the dominant African team of the contemporary era. Led by Sadio Mane, multiple African Ballon d'Or winner, Senegal combines individual quality with a well-organized collective.\n\nSenegal's current generation is the most talented in their history. In addition to Mane, they have Edouard Mendy as goalkeeper, Kalidou Koulibaly as defensive stalwart, and a series of Premier League and La Liga-level players. For 2026, Senegal arrives with the experience of two AFCON titles and the ambition to surpass the Qatar 2022 round of 16 elimination. Group assignment is still pending.\n\nSenegal has one of Africa's most vibrant football atmospheres. Dakar's Leopold Sedar Senghor Stadium is known for its electrifying atmosphere, and the passion of Senegalese fans extends to all countries with Senegalese diaspora communities, especially in France."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Senegal debuto en los Mundiales en Corea y Japon 2002 con uno de los debuts mas explosivos de la historia: eliminaron al campeon defensor Francia (1-0) y llegaron a cuartos de final en su primer torneo, perdiendo ante Turquia en el tiempo suplementario. Ese debut sigue siendo el mejor resultado de Senegal en un Mundial.\n\nEn Qatar 2022, Senegal clasifico pese a la grave lesion de Sadio Mane, quien finalmente no pudo jugar. En octavos de final, cayeron ante Inglaterra (0-3). Para 2026, la esperanza es que Mane pueda estar al 100% y liderar al equipo africano mas regular de los ultimos anos hacia nuevas cotas historicas.",
+            "en": "Senegal debuted at World Cups at Korea/Japan 2002 with one of the most explosive first appearances in history: they eliminated defending champions France (1-0) and reached the quarterfinals in their very first tournament, losing to Turkey in extra time. That debut remains Senegal's best World Cup result.\n\nAt Qatar 2022, Senegal qualified despite Sadio Mane's serious injury, which ultimately prevented him from playing. In the round of 16, they fell to England (0-3). For 2026, the hope is that Mane can be at 100% and lead Africa's most consistent team of recent years to new historic heights."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Sadio Mane",
+              "position": {
+                "es": "Extremo / Delantero",
+                "en": "Winger / Forward"
+              },
+              "club": "Al-Nassr",
+              "note": {
+                "es": "El lider indiscutible de Senegal, Mane es uno de los mejores jugadores africanos de la historia. Ganador de la Champions League con el Liverpool, campeon de Africa en 2021 y 2023, ha llevado a Senegal a cotas sin precedentes. Su velocidad, su definicion y su liderazgo son la base del equipo senegalés.",
+                "en": "Senegal's undisputed leader, Mane is one of the greatest African players in history. Champions League winner with Liverpool, African champion in 2021 and 2023, he has taken Senegal to unprecedented heights. His pace, clinical finishing, and leadership are the foundation of the Senegalese team."
+              }
+            },
+            {
+              "name": "Edouard Mendy",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Al-Ahli",
+              "note": {
+                "es": "El mejor portero africano de los ultimos anos, Mendy fue campeon de la Champions League con el Chelsea en 2021 y fue elegido el mejor portero del mundo ese mismo ano por la FIFA. Su presencia bajo los tres palos da una enorme confianza al equipo senegalés.",
+                "en": "The best African goalkeeper in recent years, Mendy won the Champions League with Chelsea in 2021 and was voted the world's best goalkeeper that same year by FIFA. His presence between the posts gives enormous confidence to the Senegalese team."
+              }
+            },
+            {
+              "name": "Kalidou Koulibaly",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre Back"
+              },
+              "club": "Al-Hilal"
+            },
+            {
+              "name": "Ismaila Sarr",
+              "position": {
+                "es": "Extremo Derecho",
+                "en": "Right Winger"
+              },
+              "club": "Marsella",
+              "note": {
+                "es": "Sarr es uno de los extremos mas veloces y verticales del futbol africano. Con su capacidad para desbordar por la banda, sus centros precisos y su capacidad goleadora, es un jugador que puede desequilibrar partidos en cualquier momento. Ha brillado en la Premier League y en la Ligue 1 francesa.",
+                "en": "Sarr is one of the fastest and most direct wingers in African football. With his ability to beat defenders down the flank, precise crosses, and scoring ability, he is a player who can unbalance matches at any moment. He has shone in the Premier League and in the French Ligue 1."
+              }
+            },
+            {
+              "name": "Lamine Camara",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Monaco",
+              "note": {
+                "es": "La nueva joya del mediocampo senegalés, Camara es un mediocampista dinamico y combativo que ha despuntado en la Ligue 1 con el Monaco. Su energia, su capacidad para recuperar balones y su llegada al area hacen de el uno de los talentos mas prometedores del futbol africano joven.",
+                "en": "The new jewel of Senegalese midfield, Camara is a dynamic and combative midfielder who has stood out in Ligue 1 with Monaco. His energy, ball-winning ability, and late runs into the box make him one of young African football's most promising talents."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Senegal clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Como campeon africano en activo (AFCON 2021 y 2023), Senegal es considerado el equipo a batir en el continente y ha sido consistente en las eliminatorias mundialistas.\n\nLa clasificacion para 2026 marca la continuacion del proyecto liderado por el seleccionador Aliou Cisse, quien lleva anos transformando a Senegal en una potencia continental. Con dos titulos de Africa consecutivos y una generacion de jugadores de nivel europeo de elite, Senegal busca su primer cuarto de final desde el debut historico de 2002.",
+            "en": "Senegal qualified for the 2026 World Cup through the CAF qualification process. As the reigning African champions (AFCON 2021 and 2023), Senegal is considered the team to beat on the continent and has been consistent in World Cup qualifying.\n\nQualification for 2026 marks the continuation of the project led by coach Aliou Cisse, who has spent years transforming Senegal into a continental power. With two consecutive African titles and a generation of elite European-level players, Senegal seeks their first quarterfinal since the historic 2002 debut."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Senegal en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Senegal's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cuantas veces ha ganado Senegal la Copa Africa?",
+              "en": "How many times has Senegal won the Africa Cup of Nations?"
+            },
+            "answer": {
+              "es": "Senegal ha ganado la Copa Africa (AFCON) en dos ocasiones: en 2021 (jugada en 2022 por la pandemia) y en 2023, ambas veces liderado por Sadio Mane. Estos dos titulos consecutivos confirman a Senegal como la seleccion africana dominante de la era contemporanea.",
+              "en": "Senegal has won the Africa Cup of Nations (AFCON) on two occasions: in 2021 (played in 2022 due to the pandemic) and in 2023, both times led by Sadio Mane. These two consecutive titles confirm Senegal as the dominant African team of the contemporary era."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Senegal en un Mundial?",
+              "en": "What is Senegal's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Senegal en un Mundial es los cuartos de final en su debut, Corea y Japon 2002, donde eliminaron al campeon defensor Francia en la fase de grupos antes de caer ante Turquia en cuartos. En Qatar 2022, sin Mane lesionado, fueron eliminados en octavos por Inglaterra (0-3).",
+              "en": "Senegal's best World Cup result is reaching the quarterfinals in their debut at Korea/Japan 2002, where they eliminated defending champions France in the group stage before falling to Turkey in the quarters. At Qatar 2022, without injured Mane, they were eliminated in the round of 16 by England (0-3)."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Por que no jugo Mane en Qatar 2022?",
+              "en": "Why did Mane not play at Qatar 2022?"
+            },
+            "answer": {
+              "es": "Sadio Mane sufrio una lesion en el peroné durante un partido de Bundesliga con el Bayern Munich semanas antes del inicio del Mundial de Qatar 2022. Aunque viajo con la seleccion e intento recuperarse, finalmente no pudo participar en ningun partido del torneo, una baja que condicionó enormemente el rendimiento de Senegal.",
+              "en": "Sadio Mane suffered a fibula injury during a Bundesliga match with Bayern Munich weeks before the start of Qatar 2022. Although he traveled with the squad and attempted to recover, he ultimately could not participate in any tournament match, an absence that significantly impacted Senegal's performance."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Senegal al Mundial 2026?",
+              "en": "How did Senegal qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Senegal clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF, que otorga 9 plazas mundialistas a las selecciones africanas. Como campeon africano vigente y equipo de primer nivel continental, Senegal fue uno de los primeros en asegurar su clasificacion.",
+              "en": "Senegal qualified for the 2026 World Cup through the CAF qualification process, which awards 9 World Cup places to African teams. As the reigning African champions and a top continental team, Senegal was one of the first to secure qualification."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "nigeria",
@@ -4687,7 +5103,163 @@
         "es": "Las Super Aguilas son una de las selecciones africanas mas exitosas en Mundiales.",
         "en": "The Super Eagles are one of the most successful African teams in World Cup history."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Nigeria, las Super Aguilas, es una de las selecciones africanas con mayor historia y seguimiento mundial. Con 7 participaciones en Mundiales, Nigeria ha demostrado ser un equipo capaz de sorprender a cualquier rival y ha producido algunos de los jugadores mas talentosos del continente africano. El pais mas poblado de Africa vive el futbol con una intensidad especial.\n\nLa generacion actual tiene en Victor Osimhen a su jugador mas deseado: el delantero del Napoles es uno de los mejores '9' del mundo, con una velocidad, potencia y finalizacion que lo convierten en una pesadilla para cualquier defensa. Con Alex Iwobi y Wilfred Ndidi en el mediocampo, Nigeria tiene calidad para competir. El grupo no ha sido asignado.\n\nNigeria tiene una de las aficiones mas apasionadas de Africa. El estadio de Lagos puede albergar 60.000 personas y cuando Nigeria juega, las calles del pais se detienen. La diaspora nigeriana en todo el mundo, especialmente en Reino Unido y EEUU, es una de las mas numerosas y activas en el seguimiento del futbol.",
+          "en": "Nigeria, the Super Eagles, is one of Africa's most historically significant and globally followed national teams. With 7 World Cup appearances, Nigeria has proven to be a team capable of surprising any opponent and has produced some of the most talented players the African continent has ever seen. The most populated country in Africa lives football with special intensity.\n\nThe current generation has in Victor Osimhen their most sought-after player: the Napoli striker is one of the world's best number nines, with pace, power, and finishing that make him a nightmare for any defense. With Alex Iwobi and Wilfred Ndidi in midfield, Nigeria has quality to compete. Group assignment is still pending.\n\nNigeria has one of Africa's most passionate fan bases. Lagos stadium can hold 60,000 people and when Nigeria plays, the country's streets come to a standstill. The Nigerian diaspora worldwide, especially in the UK and USA, is one of the most numerous and active in following football."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Nigeria debuto en los Mundiales en USA 1994 y desde entonces ha participado en 7 torneos: 1994, 1998, 2002, 2010, 2014, 2018 y 2022. Su mejor resultado historico es los octavos de final, alcanzados en 1994, 1998 y 2014. En Francia 1998, las Super Aguilas protagonizaron uno de los momentos mas emotivos: marcaron en el minuto 90 para igualar con España y clasificarse en una noche legendaria.\n\nEn Brasil 2014, Nigeria clasifico en octavos pero cayo ante Francia 0-2. En los Mundiales de 2002, 2010 y 2018 quedaron eliminados en la fase de grupos. En Qatar 2022, Nigeria no clasifico. El regreso en 2026 con una nueva generacion liderada por Osimhen despierta grandes expectativas.",
+            "en": "Nigeria debuted at World Cups at USA 1994 and has since appeared in 7 tournaments: 1994, 1998, 2002, 2010, 2014, 2018, and 2022. Their best historical result is the round of 16, reached in 1994, 1998, and 2014. In France 1998, the Super Eagles produced one of the most emotional moments: they scored in the 90th minute to draw with Spain and qualify in a legendary night.\n\nIn Brazil 2014, Nigeria reached the round of 16 but fell to France 0-2. In the 2002, 2010, and 2018 World Cups they were eliminated in the group stage. At Qatar 2022, Nigeria did not qualify. The return in 2026 with a new generation led by Osimhen raises great expectations."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Victor Osimhen",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Galatasaray",
+              "note": {
+                "es": "El jugador africano mas cotizado de su generacion, Osimhen es un delantero imparable con velocidad explosiva, potencia fisica y una finalizacion letal. Su temporada 2022-23 con el Napoles (Scudetto, 26 goles en Serie A) lo consagro como uno de los mejores delanteros del mundo. Es la gran esperanza de Nigeria en 2026.",
+                "en": "The most sought-after African player of his generation, Osimhen is an unstoppable forward with explosive pace, physical power, and lethal finishing. His 2022-23 season with Napoli (Scudetto, 26 Serie A goals) established him as one of the world's best strikers. He is Nigeria's greatest hope in 2026."
+              }
+            },
+            {
+              "name": "Alex Iwobi",
+              "position": {
+                "es": "Mediocampista / Extremo",
+                "en": "Midfielder / Winger"
+              },
+              "club": "Fulham",
+              "note": {
+                "es": "Sobrino de la leyenda nigeriana Jay-Jay Okocha, Iwobi es uno de los jugadores mas experimentados y creativos de Nigeria. Con anos en el Arsenal y el Everton en la Premier League, su vision de juego y capacidad para conectar el mediocampo con el ataque son fundamentales.",
+                "en": "Nephew of Nigerian legend Jay-Jay Okocha, Iwobi is one of Nigeria's most experienced and creative players. With years at Arsenal and Everton in the Premier League, his vision of play and ability to connect midfield to attack are fundamental."
+              }
+            },
+            {
+              "name": "William Troost-Ekong",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre Back"
+              },
+              "club": "PAOK",
+              "note": {
+                "es": "El capitan de Nigeria, Troost-Ekong es un defensa central solido y experimentado. Con mas de 60 partidos internacionales, su liderazgo en la zaga nigeriana es clave para un equipo que busca la solidez defensiva necesaria para competir en un Mundial.",
+                "en": "Nigeria's captain, Troost-Ekong is a solid and experienced centre back. With over 60 international appearances, his leadership in Nigeria's backline is key for a team seeking the defensive solidity necessary to compete at a World Cup."
+              }
+            },
+            {
+              "name": "Wilfred Ndidi",
+              "position": {
+                "es": "Mediocampista Defensivo",
+                "en": "Defensive Midfielder"
+              },
+              "club": "Leicester City",
+              "note": {
+                "es": "Ndidi es el motor defensivo del mediocampo nigeriano. Con su capacidad para interceptar balones, recuperar la posesion y cubrir el espacio, es uno de los mediocampistas defensivos mas completos de la Premier League. Su presencia libera a los medios creativos para atacar con mayor libertad.",
+                "en": "Ndidi is the defensive engine of Nigeria's midfield. With his ability to intercept passes, win possession, and cover space, he is one of the most complete defensive midfielders in the Premier League. His presence frees creative midfielders to attack with greater freedom."
+              }
+            },
+            {
+              "name": "Stanley Nwabali",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Chippa United",
+              "note": {
+                "es": "El portero titular de Nigeria es conocido por sus intervenciones decisivas bajo presion. Fue el heroe de Nigeria en la Copa Africa 2024, donde su actuacion bajo los palos fue fundamental para que Nigeria llegara a la final del torneo. Su confianza y dominio del area son sus grandes virtudes.",
+                "en": "Nigeria's first-choice goalkeeper is known for his decisive interventions under pressure. He was Nigeria's hero at the Africa Cup of Nations 2024, where his performance between the posts was key to Nigeria reaching the tournament final. His confidence and command of the area are his great virtues."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Nigeria clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Tras no haber clasificado para Qatar 2022, el regreso de Nigeria al maximo escenario del futbol mundial en 2026 es una noticia celebrada por millones de aficionados en todo el mundo.\n\nCon Osimhen liderando el ataque y una generacion renovada, Nigeria llega con hambre de demostrar que las Super Aguilas han vuelto al nivel que merecen. El pais mas poblado de Africa, con mas de 200 millones de habitantes, merece un lugar permanente en el maximo escenario futbolistico.",
+            "en": "Nigeria qualified for the 2026 World Cup through the CAF qualification process. After failing to qualify for Qatar 2022, Nigeria's return to world football's greatest stage in 2026 is celebrated news for millions of fans worldwide.\n\nWith Osimhen leading the attack and a renewed generation, Nigeria arrives hungry to prove the Super Eagles have returned to the level they deserve. Africa's most populated country, with over 200 million inhabitants, deserves a permanent place on football's grandest stage."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Nigeria en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Nigeria's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cuantos Mundiales ha jugado Nigeria?",
+              "en": "How many World Cups has Nigeria played?"
+            },
+            "answer": {
+              "es": "Nigeria ha participado en 7 Mundiales: USA 1994, Francia 1998, Korea-Japon 2002, Sudafrica 2010, Brasil 2014, Rusia 2018. Nigeria no clasifico para Qatar 2022 pero regresa en 2026. Su mejor resultado son los octavos de final, logrado en tres ocasiones (1994, 1998 y 2014).",
+              "en": "Nigeria has appeared in 7 World Cups: USA 1994, France 1998, Korea-Japan 2002, South Africa 2010, Brazil 2014, Russia 2018. Nigeria did not qualify for Qatar 2022 but returns in 2026. Their best result is the round of 16, achieved three times (1994, 1998, and 2014)."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quien es Victor Osimhen?",
+              "en": "Who is Victor Osimhen?"
+            },
+            "answer": {
+              "es": "Victor Osimhen es el delantero centro de Nigeria y uno de los mejores atacantes del mundo. Con el Napoles gano la Serie A en 2022-23, siendo uno de los principales artistas del Scudetto del equipo italiano. Es conocido por su velocidad explosiva, potencia fisica y su finalizacion letal tanto con el pie derecho como con la cabeza.",
+              "en": "Victor Osimhen is Nigeria's centre forward and one of the world's best strikers. With Napoli he won Serie A in 2022-23, being one of the main architects of the Italian club's Scudetto. He is known for his explosive pace, physical power, and lethal finishing with both his right foot and his head."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Ha ganado Nigeria algun titulo africano?",
+              "en": "Has Nigeria ever won an African title?"
+            },
+            "answer": {
+              "es": "Si, Nigeria ha ganado la Copa Africa de Naciones (AFCON) en tres ocasiones: 1980 (como anfitrion), 1994 y 2013. Tambien ganaron el torneo de futbol olimpico en Atlanta 1996, una de las actuaciones mas celebradas en la historia del futbol africano.",
+              "en": "Yes, Nigeria has won the Africa Cup of Nations (AFCON) three times: 1980 (as hosts), 1994, and 2013. They also won the Olympic football tournament at Atlanta 1996, one of the most celebrated performances in African football history."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Nigeria al Mundial 2026?",
+              "en": "How did Nigeria qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Nigeria clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF, que otorga 9 plazas mundialistas a las selecciones africanas. Tras la ausencia en Qatar 2022, Nigeria volvio con fuerza para asegurar su plaza en el torneo de 2026.",
+              "en": "Nigeria qualified for the 2026 World Cup through the CAF qualification process, which awards 9 World Cup places to African teams. After the Qatar 2022 absence, Nigeria came back strongly to secure their place at the 2026 tournament."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "cameroon",
@@ -4704,7 +5276,163 @@
         "es": "Los Leones Indomables tienen una rica historia mundialista desde Italia 1990.",
         "en": "The Indomitable Lions have a rich World Cup history since Italy 1990."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Camerun, los Leones Indomables, tiene uno de los momentos mas icónicos de la historia del futbol africano: la victoria sobre la Argentina campeona del mundo en la apertura del Mundial de Italia 1990 (2-1, con gol de Omam-Biyik), protagonizada por un equipo irreverente liderado por Roger Milla, quien a sus 38 anos se convirtio en la estrella del torneo y el heroe de Africa. Aquella Copa del Mundo fue un punto de inflexion para el futbol africano.\n\nLa generacion actual tiene en Andre Onana a su jugador mas destacado: el portero del Manchester United es uno de los mejores del mundo en su posicion. Bryan Mbeumo del Brentford es una joya del ataque camerunés. Para 2026, Camerun llega con la ambicion de evocar la magia de 1990 y demostrar que Africa sigue produciendo equipos capaces de sorprender al mundo. El grupo no ha sido asignado.\n\nCamerun vive el futbol con una intensidad especial. Con dos idiomas oficiales (frances e inglés), el futbol es uno de los pocos elementos que une a toda la nacion. Los aficionados cameruneses son conocidos por su carnaval de colores, sus cantos y su capacidad para crear una atmosfera festiva en cualquier estadio del mundo.",
+          "en": "Cameroon, the Indomitable Lions, has one of the most iconic moments in African football history: the victory over defending world champions Argentina in the opening match of the 1990 Italy World Cup (2-1, with Omam-Biyik's goal), featuring an irreverent team led by Roger Milla, who at 38 became the tournament's star and Africa's hero. That World Cup was a turning point for African football.\n\nThe current generation has in Andre Onana their most prominent player: the Manchester United goalkeeper is one of the world's best in his position. Bryan Mbeumo at Brentford is a jewel in Cameroon's attack. For 2026, Cameroon arrives with the ambition to evoke the magic of 1990 and prove that Africa continues to produce teams capable of surprising the world. Group assignment is still pending.\n\nCameroon lives football with special intensity. With two official languages (French and English), football is one of the few elements that unites the entire nation. Cameroonian fans are known for their carnival of colors, chanting, and ability to create a festive atmosphere in any stadium worldwide."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Camerun tiene 8 participaciones mundialistas (1982, 1990, 1994, 1998, 2002, 2010, 2014, 2022). Su gesta mas recordada es el Mundial de Italia 1990: derrotaron a Argentina (campeones del mundo) en la apertura, Romania en grupos, y Colombia en octavos con dos goles de Roger Milla, antes de caer en cuartos ante England 2-3 con un gol en el ultimo minuto. Ese torneo consagro a Milla como el jugador mas viejo en marcar en un Mundial (record que fue superado despues por el mismo Milla en USA 1994 a los 42 anos).\n\nEn Qatar 2022, Camerun protagonizo otro momento épico: eliminaron a Brasil 1-0 (con gol en el ultimo minuto) en la fase de grupos, aunque no avanzaron por diferencia de goles. Son el unico equipo que ha vencido a Argentina y Brasil en Mundiales.",
+            "en": "Cameroon has 8 World Cup appearances (1982, 1990, 1994, 1998, 2002, 2010, 2014, 2022). Their most memorable achievement is the Italy 1990 World Cup: they defeated Argentina (world champions) in the opening match, Romania in the group stage, and Colombia in the round of 16 with two Roger Milla goals, before falling in the quarterfinals to England 2-3 with a last-minute goal. That tournament established Milla as the oldest player to score at a World Cup (a record he later broke himself at USA 1994 at age 42).\n\nAt Qatar 2022, Cameroon produced another epic moment: they eliminated Brazil 1-0 (with a last-minute goal) in the group stage, although they did not advance on goal difference. They are the only team to have beaten both Argentina and Brazil at World Cups."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Andre Onana",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Manchester United",
+              "note": {
+                "es": "El portero mas dominante de la historia reciente de Camerun, Onana es conocido por su estilo moderno de portero libero: sale al espacio, juega con los pies con una habilidad excepcional y dirige a la defensa como un autentico lider. Con el Inter gano la Serie A y llego a la final de la Champions en 2023.",
+                "en": "The most dominant goalkeeper in Cameroon's recent history, Onana is known for his modern sweeper-keeper style: he comes off his line, plays with his feet with exceptional ability, and directs the defense like a true leader. With Inter he won Serie A and reached the 2023 Champions League final."
+              }
+            },
+            {
+              "name": "Bryan Mbeumo",
+              "position": {
+                "es": "Extremo / Delantero",
+                "en": "Winger / Forward"
+              },
+              "club": "Brentford",
+              "note": {
+                "es": "La joya del ataque camerunés, Mbeumo es uno de los extremos mas peligrosos de la Premier League. Destaca por su velocidad, su habilidad para el uno contra uno y su capacidad goleadora. En la temporada 2023-24 fue uno de los maximos goleadores del Brentford y se consolido como referente del futbol camerunés.",
+                "en": "The jewel of Cameroon's attack, Mbeumo is one of the most dangerous wingers in the Premier League. He excels for his pace, one-on-one ability, and goal-scoring capacity. In the 2023-24 season he was one of Brentford's top scorers and consolidated himself as a key figure in Cameroonian football."
+              }
+            },
+            {
+              "name": "Karl Toko Ekambi",
+              "position": {
+                "es": "Extremo Izquierdo",
+                "en": "Left Winger"
+              },
+              "club": "Rennes",
+              "note": {
+                "es": "Toko Ekambi es uno de los delanteros mas experimentados de Camerun, con una larga trayectoria en la Ligue 1 francesa. Su velocidad, su capacidad para desbordar por la banda y su llegada al gol lo convierten en un jugador peligroso para cualquier defensa.",
+                "en": "Toko Ekambi is one of Cameroon's most experienced forwards, with a long career in French Ligue 1. His pace, ability to beat defenders down the flank, and goal-scoring runs make him a dangerous player for any defense."
+              }
+            },
+            {
+              "name": "Jean-Charles Castelletto",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre Back"
+              },
+              "club": "Nantes",
+              "note": {
+                "es": "Castelletto es el pilar defensivo de Camerun, un central solido y experimentado en la Ligue 1 francesa. Su capacidad aerea, su dureza en el duelo y su experiencia internacional hacen de el un defensa fiable en la zaga camerunesa.",
+                "en": "Castelletto is Cameroon's defensive pillar, a solid and experienced centre back in French Ligue 1. His aerial ability, toughness in duels, and international experience make him a reliable defender in Cameroon's backline."
+              }
+            },
+            {
+              "name": "Nicolas Nkoulou",
+              "position": {
+                "es": "Defensa Central / Lateral",
+                "en": "Centre Back / Fullback"
+              },
+              "club": "Esperance Sportive de Tunis",
+              "note": {
+                "es": "Uno de los defensas mas experimentados de Camerun, Nkoulou tiene una larga trayectoria internacional y experiencia en clubes europeos de primer nivel. Su veterania es un activo valioso para un equipo que necesita solidez en la retaguardia.",
+                "en": "One of Cameroon's most experienced defenders, Nkoulou has a long international career and experience at top European clubs. His veteran presence is a valuable asset for a team that needs solidity at the back."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Camerun clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Con una historia mundialista de 8 participaciones, los Leones Indomables tienen experiencia sobrada para navegar las eliminatorias africanas y asegurar su lugar en el torneo.\n\nLa clasificacion para 2026 representa una nueva oportunidad para que Camerun demuestre que el legado de 1990 no es solo historia, sino una motivacion constante. Con Onana bajo los palos y Mbeumo en el ataque, Camerun tiene potencial para ser uno de los equipos africanos mas interesantes del torneo.",
+            "en": "Cameroon qualified for the 2026 World Cup through the CAF qualification process. With a World Cup history of 8 appearances, the Indomitable Lions have ample experience to navigate African qualifying and secure their place in the tournament.\n\nQualification for 2026 represents a new opportunity for Cameroon to demonstrate that the legacy of 1990 is not just history but a constant motivation. With Onana between the posts and Mbeumo in attack, Cameroon has the potential to be one of the most interesting African teams in the tournament."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Camerun en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Cameroon's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Quien es Roger Milla?",
+              "en": "Who is Roger Milla?"
+            },
+            "answer": {
+              "es": "Roger Milla es la mayor leyenda del futbol camerunés. En el Mundial de Italia 1990, a los 38 anos, se convirtio en la estrella del torneo marcando 4 goles y liderando a Camerun a los cuartos de final, el mejor resultado de Africa en ese momento. Su celebracion bailando alrededor del banderín de córner es una de las imagenes mas icónicas de la historia del futbol.",
+              "en": "Roger Milla is Cameroon's greatest football legend. At the 1990 Italy World Cup, aged 38, he became the tournament's star by scoring 4 goals and leading Cameroon to the quarterfinals, Africa's best result at that time. His celebration dancing around the corner flag is one of the most iconic images in football history."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Camerun en un Mundial?",
+              "en": "What is Cameroon's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Camerun en un Mundial son los cuartos de final en Italia 1990, donde los Leones Indomables eliminaron a la Argentina campeona del mundo en el partido inaugural antes de llegar a los cuartos, donde cayeron ante England 2-3.",
+              "en": "Cameroon's best World Cup result is the quarterfinals at Italy 1990, where the Indomitable Lions eliminated defending world champions Argentina in the opening match before reaching the quarters, where they fell to England 2-3."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Es verdad que Camerun derroto a Brasil en Qatar 2022?",
+              "en": "Is it true that Cameroon defeated Brazil at Qatar 2022?"
+            },
+            "answer": {
+              "es": "Si, Camerun derroto a Brasil 1-0 en la ultima jornada de la fase de grupos de Qatar 2022, con un gol de Vincent Aboubakar en el tiempo anadido. Sin embargo, Camerun no avanzó a octavos por diferencia de goles. Camerun es el unico equipo que ha derrotado tanto a Argentina como a Brasil en la historia de los Mundiales.",
+              "en": "Yes, Cameroon defeated Brazil 1-0 in the final group stage match at Qatar 2022, with Vincent Aboubakar's goal in added time. However, Cameroon did not advance to the round of 16 on goal difference. Cameroon is the only team that has defeated both Argentina and Brazil in World Cup history."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Camerun al Mundial 2026?",
+              "en": "How did Cameroon qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Camerun clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF, que distribuye 9 plazas mundialistas entre las selecciones africanas. Con su extensa experiencia mundialista y la calidad de su generacion actual, los Leones Indomables aseguraron su clasificacion.",
+              "en": "Cameroon qualified for the 2026 World Cup through the CAF qualification process, which distributes 9 World Cup places among African national teams. With their extensive World Cup experience and the quality of their current generation, the Indomitable Lions secured their qualification."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "tunisia",
@@ -4721,7 +5449,163 @@
         "es": "Las Aguilas de Cartago representan al futbol norteafricano con experiencia mundialista.",
         "en": "The Eagles of Carthage represent North African football with World Cup experience."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Tunez, las Aguilas de Cartago, tiene un lugar especial en la historia del futbol africano: fue la primera seleccion del continente en ganar un partido en un Mundial, venciendo a Mexico 3-1 en Argentina 1978. Este hito historico convirtio a Tunez en pionero del futbol africano y sigue siendo motivo de orgullo nacional en el pais magrebí.\n\nTunez es un equipo consistente en el futbol africano con 6 participaciones mundialistas. Su juego es tecnico y organizado, apoyado en jugadores formados principalmente en ligas europeas, especialmente en Francia y Turquia. Para 2026, Tunez llega con la ambicion de superar por primera vez la fase de grupos en un Mundial. El grupo no ha sido asignado.\n\nEl futbol en Tunez tiene una cultura vibrante centrada en los clubs de Tunis como el Club Africain y el Esperance Sportive, dos potencias del futbol africano. La pasion de los aficionados tunecinos, con sus banderas rojo y blancas y sus cantos, acompana a la seleccion nacional en cada torneo.",
+          "en": "Tunisia, the Eagles of Carthage, holds a special place in African football history: they were the first team from the continent to win a match at a World Cup, defeating Mexico 3-1 in Argentina 1978. This historic milestone made Tunisia a pioneer of African football and remains a source of national pride in the Maghrebi country.\n\nTunisia is a consistent team in African football with 6 World Cup appearances. Their style is technical and organized, supported by players trained mainly in European leagues, especially in France and Turkey. For 2026, Tunisia arrives with the ambition to advance beyond the group stage at a World Cup for the first time. Group assignment is still pending.\n\nFootball in Tunisia has a vibrant culture centered on Tunis clubs like Club Africain and Esperance Sportive, two powers of African football. The passion of Tunisian fans, with their red and white flags and chanting, accompanies the national team at every tournament."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Tunez ha participado en 6 Mundiales: 1978, 1998, 2002, 2006, 2018 y 2022. En Argentina 1978, la primera participacion mundialista del pais, Tunez escribio la historia: primera victoria africana en un Mundial al vencer a Mexico 3-1 (3 de junio de 1978, un fecha que todo tunecino conoce). En ese mismo torneo, Tunez empato con la entonces potencia RFA (Alemania Occidental).\n\nEn Qatar 2022, Tunez llego a la ultima jornada de la fase de grupos con posibilidades de clasificarse, pero cayo ante Francia (0-1 en el ultimo minuto). La seleccion ha mostrado competitividad en todos sus mundiales pero nunca ha conseguido superar la fase de grupos. Para 2026, ese sigue siendo el objetivo historico.",
+            "en": "Tunisia has appeared in 6 World Cups: 1978, 1998, 2002, 2006, 2018, and 2022. In Argentina 1978, the country's first World Cup appearance, Tunisia made history: first African victory at a World Cup by defeating Mexico 3-1 (June 3, 1978, a date every Tunisian knows). In that same tournament, Tunisia drew with the then-powerful West Germany.\n\nAt Qatar 2022, Tunisia went into the final group stage match with a chance to qualify but fell to France (0-1 in the last minute). The team has shown competitiveness at every World Cup but has never managed to advance from the group stage. For 2026, that remains the historic objective."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Wahbi Khazri",
+              "position": {
+                "es": "Mediapunta / Delantero",
+                "en": "Attacking Midfielder / Forward"
+              },
+              "club": "Montpellier",
+              "note": {
+                "es": "El lider tecnico de Tunez, Khazri es el jugador mas creativo y peligroso del equipo. Con su experiencia en la Ligue 1 y en la Premier League (Sunderland), combina creatividad, gol y liderazgo. Es el jugador que mas partidos de clasificacion ha ganado para Tunez con sus contribuciones directas.",
+                "en": "Tunisia's technical leader, Khazri is the team's most creative and dangerous player. With his experience in Ligue 1 and the Premier League (Sunderland), he combines creativity, goals, and leadership. He is the player who has won most qualifying matches for Tunisia through direct contributions."
+              }
+            },
+            {
+              "name": "Youssef Msakni",
+              "position": {
+                "es": "Extremo Derecho",
+                "en": "Right Winger"
+              },
+              "club": "Espérance Sportive de Tunis",
+              "note": {
+                "es": "Msakni es la estrella historica de Tunez, un jugador que ha dedicado la mayor parte de su carrera al futbol tunecino y catari. Con su velocidad, habilidad tecnica y capacidad para el gol, es el jugador mas querido por la aficion tunecina y un referente de la seleccion nacional.",
+                "en": "Msakni is Tunisia's historic star, a player who has dedicated most of his career to Tunisian and Qatari football. With his pace, technical skill, and goal-scoring ability, he is the most beloved player by Tunisian fans and a reference for the national team."
+              }
+            },
+            {
+              "name": "Mohamed Ali Ben Romdhane",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Espérance Sportive de Tunis",
+              "note": {
+                "es": "Uno de los mediocampistas mas prometedores del futbol tunecino, Ben Romdhane combina intensidad defensiva con capacidad tecnica. Su juventud y hambre de triunfar lo convierten en uno de los jugadores que puede marcar la diferencia para Tunez en 2026.",
+                "en": "One of Tunisian football's most promising midfielders, Ben Romdhane combines defensive intensity with technical ability. His youth and hunger to succeed make him one of the players who can make a difference for Tunisia in 2026."
+              }
+            },
+            {
+              "name": "Aymen Dahmen",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Espérance Sportive de Tunis",
+              "note": {
+                "es": "El portero titular de Tunez, Dahmen es conocido por sus reflejos rapidos y su dominio del area. Ha sido una pieza clave en las eliminatorias africanas que llevaron a Tunez a clasificarse para 2026, con actuaciones solidas que dieron confianza al equipo.",
+                "en": "Tunisia's first-choice goalkeeper, Dahmen is known for his quick reflexes and command of the area. He has been a key piece in the African qualifying that led Tunisia to 2026, with solid performances that gave the team confidence."
+              }
+            },
+            {
+              "name": "Dylan Bronn",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre Back"
+              },
+              "club": "Salernitana",
+              "note": {
+                "es": "Bronn es el central mas solido de Tunez, con experiencia en la Serie A italiana. Su potencia fisica, su capacidad en el juego aereo y su lectura tactica hacen de el el lider defensivo del equipo. Su presencia en la retaguardia es fundamental para la solidez defensiva que necesita Tunez.",
+                "en": "Bronn is Tunisia's most solid centre back, with experience in Italian Serie A. His physical power, aerial ability, and tactical reading make him the team's defensive leader. His presence at the back is fundamental to the defensive solidity Tunisia needs."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Tunez clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Con 6 participaciones mundialistas previas, las Aguilas de Cartago tienen la experiencia y la calidad necesaria para superar los grupos africanos de clasificacion.\n\nLa clasificacion para 2026 refuerza el estatus de Tunez como una de las selecciones africanas mas regulares. El pais magrebí busca en este torneo lograr por primera vez el salto a la segunda ronda, un objetivo que llevan persiguiendo desde 1978.",
+            "en": "Tunisia qualified for the 2026 World Cup through the CAF qualification process. With 6 previous World Cup appearances, the Eagles of Carthage have the experience and quality needed to advance through African qualifying groups.\n\nQualification for 2026 reinforces Tunisia's status as one of the most consistent African national teams. The Maghrebi country seeks in this tournament to advance beyond the group stage for the first time, a goal they have been pursuing since 1978."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Tunez en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Tunisia's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Fue Tunez el primer equipo africano en ganar un partido mundialista?",
+              "en": "Was Tunisia the first African team to win a World Cup match?"
+            },
+            "answer": {
+              "es": "Si, Tunez fue la primera seleccion africana en ganar un partido en un Mundial. El 3 de junio de 1978, en Argentina, Tunez derroto a Mexico por 3-1 en la fase de grupos, escribiendo una pagina gloriosa en la historia del futbol africano. Esta victoria sigue siendo un momento de orgullo nacional en Tunez.",
+              "en": "Yes, Tunisia was the first African nation to win a match at a World Cup. On June 3, 1978, in Argentina, Tunisia defeated Mexico 3-1 in the group stage, writing a glorious page in African football history. This victory remains a moment of national pride in Tunisia."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Ha superado Tunez alguna vez la fase de grupos en un Mundial?",
+              "en": "Has Tunisia ever advanced beyond the group stage at a World Cup?"
+            },
+            "answer": {
+              "es": "No, Tunez nunca ha superado la fase de grupos en sus 6 participaciones mundialistas. En Qatar 2022, estuvieron muy cerca: necesitaban ganar el ultimo partido ante Francia y que se dieran otros resultados, pero perdieron 0-1. Para 2026, superar la primera ronda por primera vez sigue siendo el gran objetivo de la seleccion.",
+              "en": "No, Tunisia has never advanced beyond the group stage in their 6 World Cup appearances. At Qatar 2022, they came very close: they needed to win their last match against France and have other results go their way, but they lost 0-1. For 2026, advancing past the first round for the first time remains the team's great objective."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cuantas veces ha ganado Tunez la Copa Africa?",
+              "en": "How many times has Tunisia won the Africa Cup of Nations?"
+            },
+            "answer": {
+              "es": "Tunez ha ganado la Copa Africa (AFCON) en una ocasion: en 2004, como pais anfitron. Ese titulo sigue siendo el mayor logro internacional de la seleccion tunecina y fue celebrado con enorme euforia en todo el pais.",
+              "en": "Tunisia has won the Africa Cup of Nations (AFCON) once: in 2004, as host nation. That title remains Tunisian football's greatest international achievement and was celebrated with enormous euphoria throughout the country."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Tunez al Mundial 2026?",
+              "en": "How did Tunisia qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Tunez clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Con su experiencia acumulada en 6 Mundiales previos, las Aguilas de Cartago navegaron con solvencia las eliminatorias africanas para asegurar su plaza en el torneo.",
+              "en": "Tunisia qualified for the 2026 World Cup through the CAF qualification process. With their accumulated experience in 6 previous World Cups, the Eagles of Carthage navigated African qualifying with solidity to secure their place in the tournament."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "algeria",
@@ -4738,7 +5622,163 @@
         "es": "Los Zorros del Desierto buscan brillar nuevamente en el escenario mundial.",
         "en": "The Desert Foxes seek to shine again on the world stage."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Argelia, los Zorros del Desierto, es una seleccion con una de las paginas mas controversiales de la historia mundialista: el partido conocido como la 'Schande von Gijón' (la Vergüenza de Gijón) en Espana 1982, cuando la victoria calculada de Alemania Occidental sobre Austria por 1-0 en el ultimo partido de grupos elimino a Argelia, que habia ganado dos partidos en ese mismo torneo, incluyendo un historico triunfo sobre la misma Alemania Occidental 2-1 en el debut.\n\nAdemás de ese episodio, Argelia tiene otra pagina brillante: en Brasil 2014, fueron a octavos de final perdiendo ante Alemania 2-1 en el tiempo extra, en un partido de infarto donde el arquero Rais M'Bolhi fue figura. Riyad Mahrez, figura del Manchester City y campeon de Africa en 2019, sigue siendo el jugador mas completo de la historia reciente argelina. El grupo no ha sido asignado.\n\nArgelia tiene una cultura futbolistica apasionada, especialmente entre su numerosa diaspora en Francia, donde millones de argelofranceses siguen al equipo con fervor. La rivalidad con Marruecos en el Clasico del Maghreb es una de las mas intensas del futbol africano.",
+          "en": "Algeria, the Desert Foxes, is a national team with one of the most controversial pages in World Cup history: the match known as the 'Schande von Gijón' (the Disgrace of Gijón) at Spain 1982, when West Germany's calculated 1-0 victory over Austria in the final group match eliminated Algeria, who had won two matches in that same tournament, including a historic victory over West Germany themselves 2-1 in the opening match.\n\nBeyond that episode, Algeria has another brilliant page: at Brazil 2014, they reached the round of 16 losing to Germany 2-1 in extra time, in a heart-stopping match where goalkeeper Rais M'Bolhi was outstanding. Riyad Mahrez, Manchester City star and African champion in 2019, remains the most complete player in recent Algerian history. Group assignment is still pending.\n\nAlgeria has a passionate football culture, especially among their large diaspora in France, where millions of Franco-Algerians follow the team with fervor. The rivalry with Morocco in the Maghreb Classic is one of African football's most intense."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Argelia ha participado en 4 Mundiales: 1982, 1986, 2010 y 2014. En Espana 1982, Argelia sorprendio al mundo derrotando a la Alemania Occidental campeona en su debut (2-1), la primera victoria de un equipo africano sobre una seleccion europea en un Mundial. El partido final de grupos entre Alemania y Austria, donde una victoria por 1-0 clasificaba a ambas, genero el escandalo conocido como 'la Vergüenza de Gijón', un incidente que llevo a la FIFA a establecer la regla de los partidos simultaneos en la ultima jornada de grupos.\n\nEn Brasil 2014 fue el mayor logro moderno: Argelia elimino a Rusia y Corea del Sur en grupos antes de dar la gran batalla ante Alemania en octavos, perdiendo 2-1 en tiempo extra con dos goles tardios. Fue la mejor actuacion de Argelia desde 1982.",
+            "en": "Algeria has appeared in 4 World Cups: 1982, 1986, 2010, and 2014. In Spain 1982, Algeria surprised the world by defeating defending champion West Germany in their debut (2-1), the first African victory over a European team at a World Cup. The final group match between Germany and Austria, where a 1-0 victory would see both advance, generated the scandal known as 'the Disgrace of Gijón', an incident that led FIFA to establish the rule of simultaneous final group matches.\n\nBrazil 2014 was their greatest modern achievement: Algeria eliminated Russia and South Korea in the groups before giving Germany a major battle in the round of 16, losing 2-1 in extra time with two late goals. It was Algeria's best performance since 1982."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Riyad Mahrez",
+              "position": {
+                "es": "Extremo Derecho",
+                "en": "Right Winger"
+              },
+              "club": "Al-Ahli",
+              "note": {
+                "es": "La mayor estrella del futbol argelino, Mahrez es campeon de la Premier League y la Champions League con el Manchester City. Campeon africano con Argelia en 2019, su tecnica, vision de juego y capacidad goleadora lo convierten en uno de los extremos mas completos de su generacion. Es el capitan y lider indiscutible de los Zorros del Desierto.",
+                "en": "Algeria's greatest football star, Mahrez is a Premier League and Champions League champion with Manchester City. African champion with Algeria in 2019, his technique, vision of play, and goal-scoring ability make him one of the most complete wingers of his generation. He is the undisputed captain and leader of the Desert Foxes."
+              }
+            },
+            {
+              "name": "Ismael Bennacer",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "AC Milan",
+              "note": {
+                "es": "El cerebro del mediocampo argelino, Bennacer es uno de los mejores mediocampistas de la Serie A. Campeon de la Champions League con el AC Milan en 2023, su capacidad para controlar el ritmo del juego, recuperar el balon y distribuirlo con precision son fundamentales para Argelia.",
+                "en": "The brain of Algeria's midfield, Bennacer is one of the best midfielders in Serie A. Champions League winner with AC Milan in 2023, his ability to control the pace of play, win the ball, and distribute with precision are fundamental for Algeria."
+              }
+            },
+            {
+              "name": "Andy Delort",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "OGC Nice",
+              "note": {
+                "es": "El '9' de Argelia es un delantero fisico y combativo con buena llegada al gol. Con experiencia en la Ligue 1 francesa, Delort combina potencia, remate de cabeza y capacidad para jugar de espaldas al gol. Es el punto de referencia del ataque argelino.",
+                "en": "Algeria's number nine is a physical and combative striker with good goal-scoring instincts. With experience in French Ligue 1, Delort combines power, heading ability, and capacity to hold the ball up with his back to goal. He is the reference point of Algeria's attack."
+              }
+            },
+            {
+              "name": "Djamel Benlamri",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre Back"
+              },
+              "club": "Lyon",
+              "note": {
+                "es": "El lider defensivo de Argelia, Benlamri es un central experimentado con anos en la Ligue 1. Su dureza, presencia fisica y capacidad de liderazgo son los pilares de la defensa argelina. Es el capitan defensor que da estabilidad a la retaguardia.",
+                "en": "Algeria's defensive leader, Benlamri is an experienced centre back with years in Ligue 1. His toughness, physical presence, and leadership ability are the pillars of Algeria's defense. He is the defensive captain who gives stability to the backline."
+              }
+            },
+            {
+              "name": "Rais M'Bolhi",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "ES Setif",
+              "note": {
+                "es": "El heroe de Brasil 2014, M'Bolhi fue el mejor portero del torneo en la fase de grupos con sus actuaciones ante Alemania en octavos. Veterano experimentado, su trayectoria internacional con Argelia es un activo valioso para el equipo. En Qatar 2022, fue relegado por porteros mas jovenes pero su leyenda sigue viva.",
+                "en": "The hero of Brazil 2014, M'Bolhi was the standout goalkeeper of the tournament in the group stage with his performance against Germany in the round of 16. An experienced veteran, his international career with Algeria is a valuable asset for the team. At Qatar 2022 he was replaced by younger keepers but his legend lives on."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Argelia clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Con Mahrez y Bennacer como piezas clave, Argelia ha demostrado ser uno de los equipos africanos mas competitivos de los ultimos anos y ha navegado las eliminatorias con la calidad suficiente para asegurar su plaza.\n\nLa clasificacion para 2026 abre la posibilidad de que esta generacion, con el mayor nivel de jugadores internacionales en la historia argelina, pueda superar los octavos de final alcanzados en Brasil 2014 y escribir una nueva pagina de gloria para los Zorros del Desierto.",
+            "en": "Algeria qualified for the 2026 World Cup through the CAF qualification process. With Mahrez and Bennacer as key pieces, Algeria has proven to be one of the most competitive African teams in recent years and has navigated qualifying with sufficient quality to secure their place.\n\nQualification for 2026 opens the possibility that this generation, with the highest level of internationally-experienced players in Algerian history, can surpass the round of 16 reached in Brazil 2014 and write a new glorious page for the Desert Foxes."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Argelia en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Algeria's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Que fue la 'Schande von Gijón'?",
+              "en": "What was the 'Schande von Gijón'?"
+            },
+            "answer": {
+              "es": "La 'Schande von Gijón' (Vergüenza de Gijón) fue el partido entre Alemania Occidental y Austria en Espana 1982. Argelia lideraba el grupo tras vencer a Alemania 2-1 y a Chile, pero el resultado final de Alemania 1-0 Austria en el ultimo partido clasificaba a ambos europeos y eliminaba a Argelia. La FIFA cambio luego el formato para que los partidos finales de grupos se jueguen de forma simultanea.",
+              "en": "The 'Schande von Gijón' (Disgrace of Gijón) was the match between West Germany and Austria at Spain 1982. Algeria led the group after defeating Germany 2-1 and Chile, but the final result of Germany 1-0 Austria in the last match qualified both European sides and eliminated Algeria. FIFA later changed the format so final group matches are played simultaneously."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Argelia en un Mundial?",
+              "en": "What is Algeria's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Argelia en un Mundial es los octavos de final en Brasil 2014, donde perdieron ante la Alemania que seria campeon del mundo por 2-1 en tiempo extra. Ese partido, con Rais M'Bolhi como heroe bajo los palos, fue el mayor logro moderno del futbol argelino.",
+              "en": "Algeria's best World Cup result is the round of 16 at Brazil 2014, where they lost to eventual world champions Germany 2-1 in extra time. That match, with Rais M'Bolhi as the hero between the posts, was Algerian football's greatest modern achievement."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cuantas veces ha ganado Argelia la Copa Africa?",
+              "en": "How many times has Algeria won the Africa Cup of Nations?"
+            },
+            "answer": {
+              "es": "Argelia ha ganado la Copa Africa en dos ocasiones: en 1990 como anfitron y en 2019 en Egipto, con Riyad Mahrez como figura principal. El titulo de 2019 fue especialmente celebrado ya que Argelia llevaba 29 anos sin ganar la Copa Africa.",
+              "en": "Algeria has won the Africa Cup of Nations twice: in 1990 as hosts and in 2019 in Egypt, with Riyad Mahrez as the standout figure. The 2019 title was especially celebrated as Algeria had gone 29 years without winning the Africa Cup."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Argelia al Mundial 2026?",
+              "en": "How did Algeria qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Argelia clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF, que distribuye 9 plazas mundialistas entre las selecciones africanas. Con Mahrez y Bennacer como figuras de nivel europeo de primer nivel, Algeria aseguro su clasificacion para continuar su historia mundialista.",
+              "en": "Algeria qualified for the 2026 World Cup through the CAF qualification process, which distributes 9 World Cup places among African national teams. With Mahrez and Bennacer as top European-level figures, Algeria secured their qualification to continue their World Cup story."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "egypt",
@@ -4755,7 +5795,159 @@
         "es": "Los Faraones son la seleccion mas exitosa de Africa con siete titulos de la Copa Africana.",
         "en": "The Pharaohs are Africa's most successful team with seven African Cup titles."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Egipto, los Faraones, es la seleccion mas exitosa de la historia del futbol africano con 7 titulos de la Copa Africa (AFCON), mas que ningun otro pais del continente. Con una historia futbolistica que se remonta a los anos 20 del siglo XX, Egipto es una potencia regional con una tradicion futbolistica incomparable en el continente. Sin embargo, en los Mundiales, los Faraones no han logrado superar la primera ronda.\n\nEl presente de Egipto se resume en dos palabras: Mohamed Salah. El extremo del Liverpool es considerado uno de los mejores jugadores del mundo y el futbolista africano mas importante del momento. Su presencia en el Mundial 2026 es un evento global por derecho propio. Con Omar Marmoush consolidado en Europa y Mostafa Mohamed como delantero centro de referencia, Egipto tiene opciones. El grupo no ha sido asignado.\n\nEgipto tiene una de las culturas futbolisticas mas apasionadas del mundo arabe. La rivalidad entre Al-Ahly y Al-Zamalek, conocida como el Derbi del Cairo, es una de las mas intensas del futbol mundial. La aficion egipcia, con sus banderas rojo y blancas, llena estadios y crea ambientes electrizantes.",
+          "en": "Egypt, the Pharaohs, is the most successful nation in African football history with 7 Africa Cup of Nations (AFCON) titles, more than any other country on the continent. With a football history dating back to the 1920s, Egypt is a regional power with an unmatched footballing tradition in Africa. However, at World Cups, the Pharaohs have not managed to advance beyond the first round.\n\nEgypt's present can be summed up in two words: Mohamed Salah. The Liverpool winger is considered one of the world's best players and the most important African footballer of the moment. His presence at the 2026 World Cup is a global event in its own right. With Omar Marmoush established in Europe and Mostafa Mohamed as the reference centre forward, Egypt has options. Group assignment is still pending.\n\nEgypt has one of the most passionate football cultures in the Arab world. The rivalry between Al-Ahly and Al-Zamalek, known as the Cairo Derby, is one of the most intense in world football. Egyptian fans, with their red and white flags, fill stadiums and create electrifying atmospheres."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Egipto ha participado en 3 Mundiales: 1934 (Italia), 1990 (Italia) y 2018 (Rusia). En Italia 1934, Egipto fue el primer equipo africano en participar en un Mundial, perdiendo ante Hungria en su unico partido. En Italia 1990, cayeron en el grupo sin ganar ningun partido. En Rusia 2018, con Salah recuperandose de una lesion en la final de la Champions, Egipto quedo eliminado en grupos.\n\nLa deuda historica de Egipto con los Mundiales es enorme: 7 titulos africanos pero solo 3 participaciones mundialistas y ninguna victoria en la primera ronda. Para 2026, con Salah en plenitud (si su forma fisica lo permite) y una generacion de jugadores de nivel europeo, la esperanza es que los Faraones puedan por fin ganar un partido en una Copa del Mundo.",
+            "en": "Egypt has appeared in 3 World Cups: 1934 (Italy), 1990 (Italy), and 2018 (Russia). In Italy 1934, Egypt became the first African team to participate in a World Cup, losing to Hungary in their only match. In Italy 1990, they failed to win any group matches. In Russia 2018, with Salah recovering from a Champions League final injury, Egypt was eliminated in the groups.\n\nEgypt's historical debt with World Cups is enormous: 7 African titles but only 3 World Cup appearances and no victories in the first round. For 2026, with Salah in his prime (if his physical condition allows) and a generation of European-level players, the hope is that the Pharaohs can finally win a match at a World Cup."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Mohamed Salah",
+              "position": {
+                "es": "Extremo Derecho",
+                "en": "Right Winger"
+              },
+              "club": "Liverpool",
+              "note": {
+                "es": "El futbolista africano mas famoso del mundo y uno de los mejores de su generacion. Salah es doble campeon de la Champions League, ganador de la Premier League y multiple Bota de Oro. Para Egipto, es el jugador sin el cual el equipo no es el mismo: su presencia o ausencia puede ser determinante para el resultado de cualquier partido.",
+                "en": "The world's most famous African footballer and one of the best of his generation. Salah is a two-time Champions League winner, Premier League champion, and multiple Golden Boot winner. For Egypt, he is the player without whom the team is not the same: his presence or absence can be decisive for the outcome of any match."
+              }
+            },
+            {
+              "name": "Omar Marmoush",
+              "position": {
+                "es": "Extremo / Delantero",
+                "en": "Winger / Forward"
+              },
+              "club": "Manchester City",
+              "note": {
+                "es": "La nueva estrella del futbol egipcio, Marmoush tuvo una temporada 2024-25 espectacular con el Eintracht Frankfurt en la Bundesliga, siendo uno de los mejores jugadores de la liga. Su fichaje por el Manchester City confirma su nivel de clase mundial. Es el heredero natural del liderazgo de Salah en la seleccion.",
+                "en": "The new star of Egyptian football, Marmoush had a spectacular 2024-25 season with Eintracht Frankfurt in the Bundesliga, being one of the league's best players. His signing by Manchester City confirms his world-class level. He is the natural heir to Salah's leadership in the national team."
+              }
+            },
+            {
+              "name": "Mostafa Mohamed",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Nantes",
+              "note": {
+                "es": "El '9' de referencia de Egipto es un delantero con buen manejo tecnico y capacidad goleadora. Con experiencia en la Ligue 1 francesa, Mohamed ha consolidado su lugar como el delantero titular de los Faraones gracias a su consistencia y su capacidad para aprovechar las oportunidades.",
+                "en": "Egypt's reference number nine is a forward with good technical ability and goal-scoring capacity. With experience in French Ligue 1, Mohamed has consolidated his place as the Pharaohs' starting striker through his consistency and ability to take chances."
+              }
+            },
+            {
+              "name": "Ahmed El-Shenawy",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Al-Ahly"
+            },
+            {
+              "name": "Mahmoud Trezeguet",
+              "position": {
+                "es": "Extremo Izquierdo",
+                "en": "Left Winger"
+              },
+              "club": "Trabzonspor",
+              "note": {
+                "es": "Apodado 'Trezeguet' en honor al goleador frances, el egipcio es un extremo peligroso con capacidad para marcar goles importantes. Fue el heroe de Egipto en la AFCON 2019, donde marco el gol decisivo en la final. Su experiencia en la Premier League y en la Superliga turca lo convierte en un jugador rodado.",
+                "en": "Nicknamed 'Trezeguet' in honor of the French striker, the Egyptian is a dangerous winger with the ability to score important goals. He was Egypt's hero at AFCON 2019, where he scored the decisive goal in the final. His experience in the Premier League and the Turkish Superleague makes him a seasoned player."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Egipto clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. La presencia de Salah y Marmoush como atractivos de clase mundial ha facilitado la motivacion del equipo durante las eliminatorias, donde los Faraones han mostrado la calidad individual necesaria para superar la competencia africana.\n\nLa clasificacion para 2026 es la cuarta participacion mundial de Egipto y la primera desde Rusia 2018. Con la mejor generacion de jugadores internacionales en su historia y la estrella maxima del futbol africano en su plenitud, esta es la mejor oportunidad que ha tenido Egipto para escribir una nueva pagina en los Mundiales.",
+            "en": "Egypt qualified for the 2026 World Cup through the CAF qualification process. The presence of Salah and Marmoush as world-class attractions has facilitated team motivation during qualifying, where the Pharaohs have shown the individual quality needed to overcome African competition.\n\nQualification for 2026 is Egypt's fourth World Cup appearance and their first since Russia 2018. With the best generation of internationally-experienced players in their history and African football's greatest star in his prime, this is the best opportunity Egypt has had to write a new page at the World Cups."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Egipto en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Egypt's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cuantas Copas Africa ha ganado Egipto?",
+              "en": "How many Africa Cups has Egypt won?"
+            },
+            "answer": {
+              "es": "Egipto ha ganado la Copa Africa (AFCON) en 7 ocasiones (1957, 1959, 1986, 1998, 2006, 2008, 2010), mas que ninguna otra seleccion de Africa. Este record de titulos continentales contrasta con su escasa participacion en Mundiales (solo 3 veces) y la falta de victorias en los mismos.",
+              "en": "Egypt has won the Africa Cup of Nations (AFCON) 7 times (1957, 1959, 1986, 1998, 2006, 2008, 2010), more than any other African nation. This record of continental titles contrasts with their limited World Cup participation (only 3 times) and lack of victories in the tournament."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quien es Mohamed Salah?",
+              "en": "Who is Mohamed Salah?"
+            },
+            "answer": {
+              "es": "Mohamed Salah es el futbolista egipcio y africano mas famoso de la historia contemporanea. Con el Liverpool ha ganado la Premier League, la Champions League y la Copa del Mundo de Clubes. Es multiple Bota de Oro de la Premier League y es considerado por muchos el mejor jugador del mundo en sus momentos de maxima forma.",
+              "en": "Mohamed Salah is the most famous Egyptian and African footballer in contemporary history. With Liverpool he has won the Premier League, the Champions League, and the Club World Cup. He is a multiple Premier League Golden Boot winner and is considered by many to be the world's best player at his peak."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Fue Egipto el primer equipo africano en jugar un Mundial?",
+              "en": "Was Egypt the first African team to play at a World Cup?"
+            },
+            "answer": {
+              "es": "Si, Egipto fue la primera seleccion africana en participar en una Copa del Mundo. En Italia 1934, los Faraones jugaron su unico partido del torneo, perdiendo ante Hungria, pero su mera presencia en esa Copa del Mundo marco un hito historico para el futbol del continente africano.",
+              "en": "Yes, Egypt was the first African nation to participate in a World Cup. At Italy 1934, the Pharaohs played their only match of the tournament, losing to Hungary, but their mere presence at that World Cup marked a historic milestone for football on the African continent."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Egipto al Mundial 2026?",
+              "en": "How did Egypt qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Egipto clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Con Salah y Marmoush como figuras de clase mundial, los Faraones aseguraron su clasifacion para el torneo, volviendo a un Mundial por primera vez desde Rusia 2018.",
+              "en": "Egypt qualified for the 2026 World Cup through the CAF qualification process. With Salah and Marmoush as world-class figures, the Pharaohs secured their qualification for the tournament, returning to a World Cup for the first time since Russia 2018."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "ivory-coast",
@@ -4772,7 +5964,163 @@
         "es": "Los Elefantes son campeonas vigentes de la Copa Africana de Naciones.",
         "en": "The Elephants are the reigning African Cup of Nations champions."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Costa de Marfil, los Elefantes, tiene una de las historias mas emotivas del futbol africano reciente: la generacion de Didier Drogba, que en los anos 2000 y 2010 produjo uno de los equipos africanos mas talentosos de todos los tiempos. Drogba, goleador historico del Chelsea y de la historia marfileña, es idolo nacional y simbolo de la reconciliacion en un pais que salio de una guerra civil.\n\nLa generacion actual tiene en Sebastien Haller un simbolo de resiliencia: el delantero del Borussia Dortmund supero un cancer testicular en 2022, regreso a los campos y lidero a Costa de Marfil al titulo de la Copa Africa 2023 en casa. Esa victoria fue uno de los momentos mas emotivos del futbol africano reciente. Nicolas Pepe aporta peligro por la banda y Franck Kessie el control del mediocampo. El grupo no ha sido asignado.\n\nCosta de Marfil tiene una cultura futbolistica vibrante, con fans apasionados tanto en el pais como en la numerosa diaspora en Francia. La victoria en la AFCON 2023 ante Nigeria en la final, jugada ante su propia aficion en Abidjan, fue una explosion de alegria que el pais entero celebro durante dias.",
+          "en": "Ivory Coast, the Elephants, has one of the most emotional stories in recent African football: the generation of Didier Drogba, which in the 2000s and 2010s produced one of Africa's most talented teams of all time. Drogba, Chelsea's historical top scorer and Ivory Coast's all-time great, is a national icon and symbol of reconciliation in a country that emerged from civil war.\n\nThe current generation has in Sebastien Haller a symbol of resilience: the Borussia Dortmund striker overcame testicular cancer in 2022, returned to football, and led Ivory Coast to the Africa Cup of Nations 2023 title at home. That victory was one of the most emotional moments in recent African football. Nicolas Pepe brings danger on the flank and Franck Kessie controls the midfield. Group assignment is still pending.\n\nIvory Coast has a vibrant football culture, with passionate fans both in the country and in the large diaspora in France. The AFCON 2023 victory against Nigeria in the final, played in front of their home fans in Abidjan, was an explosion of joy that the entire country celebrated for days."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Costa de Marfil ha participado en 3 Mundiales: 2006 (Alemania), 2010 (Sudafrica) y 2014 (Brasil). En todos ellos, la generacion de Drogba llego con grandes expectativas pero quedo eliminada en la fase de grupos. El torneo de 2006 en Alemania fue especialmente dificil: el sorteo los metio en el 'Grupo de la Muerte' con Argentina, Holanda y Serbia, tres equipos de primer nivel europeo.\n\nEn Brasil 2014, Costa de Marfil logro su primer partido ganado en un Mundial, venciendo a Grecia 2-1 en la ultima jornada de grupos, pero ya no le alcanzo para clasificarse. Lleva 12 anos sin participar en un Mundial, y el regreso en 2026 genera enorme expectativa entre los aficionados marfileños.",
+            "en": "Ivory Coast has appeared in 3 World Cups: 2006 (Germany), 2010 (South Africa), and 2014 (Brazil). In all of them, the Drogba generation arrived with great expectations but was eliminated in the group stage. The 2006 tournament in Germany was particularly difficult: the draw put them in the 'Group of Death' with Argentina, Netherlands, and Serbia, three top European sides.\n\nIn Brazil 2014, Ivory Coast achieved their first World Cup win, defeating Greece 2-1 in the final group match, but it was not enough to advance. They have gone 12 years without a World Cup appearance, and the return in 2026 generates enormous excitement among Ivorian fans."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Sebastien Haller",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Borussia Dortmund",
+              "note": {
+                "es": "El capitan y heroe de Costa de Marfil. En 2022, Haller fue diagnosticado con un tumor testicular y tuvo que interrumpir su carrera para someterse a quimioterapia. En 2023, regreso al futbol y lidero a los Elefantes al titulo de la Copa Africa en su propio pais. Su historia es un simbolo de resiliencia que va mas alla del futbol.",
+                "en": "Ivory Coast's captain and hero. In 2022, Haller was diagnosed with a testicular tumor and had to interrupt his career for chemotherapy. In 2023, he returned to football and led the Elephants to the Africa Cup of Nations title in their home country. His story is a symbol of resilience that transcends football."
+              }
+            },
+            {
+              "name": "Nicolas Pepe",
+              "position": {
+                "es": "Extremo Derecho",
+                "en": "Right Winger"
+              },
+              "club": "OGC Nice",
+              "note": {
+                "es": "Pepe es uno de los extremos mas desequilibrantes del futbol africano. Con su velocidad explosiva, su regate y su potente disparo, es capaz de crear situaciones de peligro en cualquier momento. Tiene experiencia en la Premier League con el Arsenal, donde fue el fichaje mas caro de la historia del club.",
+                "en": "Pepe is one of African football's most unbalancing wingers. With his explosive pace, dribbling, and powerful shot, he is capable of creating dangerous situations at any moment. He has Premier League experience with Arsenal, where he was the club's most expensive signing in history."
+              }
+            },
+            {
+              "name": "Franck Kessie",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Al-Qadsiah",
+              "note": {
+                "es": "El 'Presidente', como es conocido por su apodo en el Milan, es el mediocampista mas completo de Costa de Marfil. Su fisico imponente, su capacidad de recuperacion y su llegada al gol hacen de el el motor del mediocampo marfileño. Ha ganado la Serie A con el AC Milan y la UEFA Champions League con el Barcelona.",
+                "en": "The 'President', as he was nicknamed at Milan, is Ivory Coast's most complete midfielder. His imposing physique, recovery ability, and goal-scoring runs make him the engine of Ivory Coast's midfield. He has won Serie A with AC Milan and has played for Barcelona."
+              }
+            },
+            {
+              "name": "Serge Aurier",
+              "position": {
+                "es": "Lateral Derecho",
+                "en": "Right Back"
+              },
+              "club": "Villarreal",
+              "note": {
+                "es": "Uno de los laterales derechos mas experimentados de Costa de Marfil, Aurier ha tenido una larga carrera en la Premier League con el Tottenham y en la Ligue 1 con el PSG. Su experiencia internacional y su capacidad ofensiva son un plus para la defensa marfileña.",
+                "en": "One of Ivory Coast's most experienced right backs, Aurier has had a long career in the Premier League with Tottenham and in Ligue 1 with PSG. His international experience and attacking ability are a plus for Ivory Coast's defense."
+              }
+            },
+            {
+              "name": "Badra Ali Sangare",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Espérance Sportive de Tunis",
+              "note": {
+                "es": "El portero titular de Costa de Marfil durante los ultimos anos, Sangare ha sido un baluarte entre los tres palos que ha ayudado al equipo a alcanzar grandes logros en la Copa Africa. Su solidez y experiencia son fundamentales para la estabilidad defensiva del equipo.",
+                "en": "Ivory Coast's first-choice goalkeeper for recent years, Sangare has been a stalwart between the posts who has helped the team achieve great success in the Africa Cup. His solidity and experience are fundamental to the team's defensive stability."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Costa de Marfil clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Tras 12 anos de ausencia en los Mundiales, el regreso de los Elefantes al maximo escenario del futbol mundial es una noticia celebrada por toda la aficion marfileña.\n\nLa clasificacion para 2026 llega en el mejor momento posible: Costa de Marfil es el campeon africano vigente (AFCON 2023) y llega con una generacion de jugadores con experiencia en los mejores clubes europeos. La oportunidad de superar la fase de grupos de un Mundial por primera vez en su historia es el objetivo maximo de este equipo.",
+            "en": "Ivory Coast qualified for the 2026 World Cup through the CAF qualification process. After 12 years of World Cup absences, the Elephants' return to world football's greatest stage is celebrated news for all Ivorian fans.\n\nQualification for 2026 comes at the best possible moment: Ivory Coast is the reigning African champion (AFCON 2023) and arrives with a generation of players with experience at Europe's top clubs. The opportunity to advance beyond the group stage at a World Cup for the first time in their history is this team's ultimate objective."
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Costa de Marfil en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios.",
+            "en": "Ivory Coast's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and kick-off times."
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Por que es especial la historia de Sebastien Haller?",
+              "en": "Why is Sebastien Haller's story so special?"
+            },
+            "answer": {
+              "es": "En agosto de 2022, poco despues de fichar por el Borussia Dortmund, Sebastien Haller fue diagnosticado con un tumor testicular. Tuvo que interrumpir su carrera durante meses para someterse a tratamiento. En 2023, regreso al futbol, recupero su nivel y lidero a Costa de Marfil al titulo de la Copa Africa jugada en casa. Su historia es un ejemplo extraordinario de resiliencia y determinacion.",
+              "en": "In August 2022, shortly after signing for Borussia Dortmund, Sebastien Haller was diagnosed with a testicular tumor. He had to interrupt his career for months to undergo treatment. In 2023, he returned to football, regained his level, and led Ivory Coast to the Africa Cup of Nations title played at home. His story is an extraordinary example of resilience and determination."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Costa de Marfil en un Mundial?",
+              "en": "What is Ivory Coast's best World Cup result?"
+            },
+            "answer": {
+              "es": "Costa de Marfil ha participado en 3 Mundiales (2006, 2010, 2014) sin superar nunca la fase de grupos. En Brasil 2014, ganaron su unico partido mundialista (vs Grecia 2-1) pero no fue suficiente para clasificarse. Para 2026, el objetivo es por primera vez avanzar a la segunda ronda.",
+              "en": "Ivory Coast has appeared in 3 World Cups (2006, 2010, 2014) without ever advancing from the group stage. In Brazil 2014, they won their only World Cup match (vs Greece 2-1) but it was not enough to advance. For 2026, the goal is to reach the second round for the first time."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quien fue Didier Drogba?",
+              "en": "Who was Didier Drogba?"
+            },
+            "answer": {
+              "es": "Didier Drogba es la mayor leyenda del futbol de Costa de Marfil. Fue el delantero centro del Chelsea (dos Champions League, cuatro Premier Leagues), maximo goleador de la historia del club ingles, y lider de la 'Generacion de Oro' marfileña que domino el futbol africano en los 2000 y 2010. Fuera del campo, Drogba fue instrumental en un alto el fuego durante la guerra civil de Costa de Marfil en 2005.",
+              "en": "Didier Drogba is Ivory Coast's greatest football legend. He was Chelsea's centre forward (two Champions Leagues, four Premier Leagues), the English club's all-time top scorer, and leader of the Ivorian 'Golden Generation' that dominated African football in the 2000s and 2010s. Off the pitch, Drogba was instrumental in a ceasefire during Ivory Coast's civil war in 2005."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Costa de Marfil al Mundial 2026?",
+              "en": "How did Ivory Coast qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Costa de Marfil clasifico al Mundial 2026 a traves del proceso de clasificacion de la CAF. Como campeon africano vigente y uno de los equipos mas valorados del continente, los Elefantes aseguraron su clasificacion para volver a un Mundial por primera vez desde Brasil 2014.",
+              "en": "Ivory Coast qualified for the 2026 World Cup through the CAF qualification process. As the reigning African champions and one of the continent's most respected teams, the Elephants secured their qualification to return to a World Cup for the first time since Brazil 2014."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CAF Oficial",
+            "url": "https://www.cafonline.com"
+          }
+        ]
+      }
     },
     {
       "id": "south-africa",
