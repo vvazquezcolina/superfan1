@@ -14,13 +14,24 @@ export function GoogleAnalytics() {
   const [consentGiven, setConsentGiven] = useState(false)
 
   useEffect(() => {
-    try {
-      const consent = localStorage.getItem('cookie-consent')
-      if (consent === 'accepted') {
-        setConsentGiven(true)
+    function checkConsent() {
+      try {
+        const consent = localStorage.getItem('cookie-consent')
+        if (consent === 'accepted') {
+          setConsentGiven(true)
+        }
+      } catch {
+        // localStorage not available (SSR, incognito restrictions)
       }
-    } catch {
-      // localStorage not available (SSR, incognito restrictions)
+    }
+
+    // Check on mount
+    checkConsent()
+
+    // Re-check whenever the user accepts consent on the same page
+    window.addEventListener('cookie-consent-changed', checkConsent)
+    return () => {
+      window.removeEventListener('cookie-consent-changed', checkConsent)
     }
   }, [])
 
