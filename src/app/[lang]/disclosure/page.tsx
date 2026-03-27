@@ -84,6 +84,23 @@ export default function DisclosurePage() {
               booking.com
             </a>
           </li>
+          <li className="rounded-lg border border-border p-4">
+            <h3 className="font-semibold">Travelpayouts</h3>
+            <p className="mt-1 text-sm leading-relaxed">
+              Travelpayouts affiliate network. When you book flights, hotels, or
+              other travel products through our Travelpayouts links, we may
+              receive a referral commission. Your price is identical to what you
+              would find on the partner&apos;s site directly.
+            </p>
+            <a
+              href="https://www.travelpayouts.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-sm text-primary underline"
+            >
+              travelpayouts.com
+            </a>
+          </li>
         </ul>
       </section>
 

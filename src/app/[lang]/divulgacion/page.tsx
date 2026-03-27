@@ -90,6 +90,24 @@ export default function DivulgacionPage() {
               booking.com
             </a>
           </li>
+          <li className="rounded-lg border border-border p-4">
+            <h3 className="font-semibold">Travelpayouts</h3>
+            <p className="mt-1 text-sm leading-relaxed">
+              Red de afiliados Travelpayouts. Cuando reservas vuelos, hoteles u
+              otros productos de viaje a traves de nuestros enlaces de
+              Travelpayouts, podemos recibir una comision por la referencia. Tu
+              precio es identico al que encontrarias directamente en el sitio
+              del socio.
+            </p>
+            <a
+              href="https://www.travelpayouts.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-sm text-primary underline"
+            >
+              travelpayouts.com
+            </a>
+          </li>
         </ul>
       </section>
 
