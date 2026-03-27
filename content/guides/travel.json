@@ -1,0 +1,802 @@
+{
+  "guides": [
+    {
+      "id": "vuelos-general",
+      "slugs": { "es": "vuelos", "en": "flights" },
+      "category": "viajes",
+      "title": {
+        "es": "Vuelos para el Mundial 2026: Guia completa de reservas",
+        "en": "Flights for the 2026 World Cup: Complete Booking Guide"
+      },
+      "description": {
+        "es": "Todo lo que necesitas saber para comprar vuelos al Mundial 2026 en Mexico, Estados Unidos y Canada. Aeropuertos, aerolineas, precios y consejos de reserva.",
+        "en": "Everything you need to know to book flights to the 2026 World Cup in Mexico, the US, and Canada. Airports, airlines, prices, and booking tips."
+      },
+      "overview": {
+        "es": "Comprar vuelos para el Mundial 2026 requiere planificacion anticipada. Con partidos en 16 ciudades de tres paises — Mexico, Estados Unidos y Canada — la estrategia correcta de reserva puede ahorrarte cientos de dolares y garantizarte los mejores asientos a precios razonables.\n\nLa regla de oro es reservar con 6 a 12 meses de anticipacion. Los vuelos internacionales hacia las sedes mexicanas (CDMX, Guadalajara, Monterrey) y las principales ciudades estadounidenses (Los Angeles, Nueva York, Miami, Dallas) se llenaran rapidamente una vez que FIFA anuncie el calendario oficial de partidos, previsto para finales de 2025.",
+        "en": "Booking flights for the 2026 World Cup requires careful advance planning. With matches in 16 cities across three countries — Mexico, the United States, and Canada — the right booking strategy can save you hundreds of dollars and secure comfortable travel at reasonable prices.\n\nThe golden rule is to book 6 to 12 months in advance. International flights to Mexican venues (Mexico City, Guadalajara, Monterrey) and major US cities (Los Angeles, New York, Miami, Dallas) will fill up quickly once FIFA announces the official match schedule, expected in late 2025."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Cuando comprar tus vuelos al Mundial",
+            "en": "When to Buy Your World Cup Flights"
+          },
+          "content": {
+            "es": "La ventana optima de reserva para vuelos internacionales al Mundial 2026 es entre 6 y 12 meses antes de tu viaje. Para fans latinoamericanos que vuelan desde Mexico o Sudamerica, esto significa comenzar a buscar vuelos en el segundo semestre de 2025, idealmente antes de que FIFA confirme el calendario completo.\n\nLos vuelos transatlanticos desde Europa tienden a alcanzar sus precios minimos entre 9 y 12 meses antes de la fecha de viaje. Para rutas domesticas dentro de Estados Unidos, reservar con 2 a 3 meses de anticipacion suele ser suficiente, aunque para las fechas de semifinales y la final (julio de 2026) conviene actuar antes.\n\nConfigura alertas de precio en Google Flights o Skyscanner con las fechas aproximadas de tus partidos. Una variacion de 1 o 2 dias en tu fecha de salida puede significar una diferencia de 200 a 400 USD en el precio total del boleto.",
+            "en": "The optimal booking window for international flights to the 2026 World Cup is 6 to 12 months before your trip. For Latin American fans flying from Mexico or South America, this means starting your search in the second half of 2025, ideally before FIFA confirms the complete schedule.\n\nTransatlantic flights from Europe typically hit their lowest prices 9 to 12 months before the travel date. For domestic routes within the United States, booking 2 to 3 months ahead is usually sufficient, though for semifinal and final dates (July 2026) acting earlier is advisable.\n\nSet up price alerts on Google Flights or Skyscanner with your approximate match dates. A 1 or 2-day shift in your departure date can make a difference of $200 to $400 in the total ticket price."
+          }
+        },
+        {
+          "title": {
+            "es": "Aerolineas recomendadas para el Mundial 2026",
+            "en": "Recommended Airlines for the 2026 World Cup"
+          },
+          "content": {
+            "es": "Para volar desde Mexico, las mejores opciones son LATAM, Aeromexico y United Airlines, que operan vuelos directos desde Ciudad de Mexico hacia las principales ciudades sede de Estados Unidos como Los Angeles, Dallas, Houston, Nueva York y Miami. American Airlines tambien ofrece excelente conectividad desde el Aeropuerto Internacional Benito Juarez (MEX).\n\nPara volar desde Latinoamerica (Colombia, Argentina, Brasil, Peru), LATAM y Avianca son las aereolineas con mayor frecuencia de vuelos hacia Miami, Houston y Nueva York, desde donde existen conexiones frecuentes hacia todas las ciudades sede. Copa Airlines opera un hub eficiente en Panama con conexiones a toda la region.\n\nDelta Air Lines, United y American dominan las rutas domesticas entre ciudades sede estadounidenses. Southwest es una opcion economica para vuelos dentro de Estados Unidos, especialmente en la costa este y hacia Dallas y Houston.",
+            "en": "For flying from Mexico, the best options are LATAM, Aeromexico, and United Airlines, which operate direct flights from Mexico City to major US host cities including Los Angeles, Dallas, Houston, New York, and Miami. American Airlines also offers excellent connectivity from Benito Juarez International Airport (MEX).\n\nFor fans from Latin America (Colombia, Argentina, Brazil, Peru), LATAM and Avianca have the highest frequency of flights to Miami, Houston, and New York, from where frequent connections exist to all host cities. Copa Airlines operates an efficient hub in Panama with connections across the region.\n\nDelta Air Lines, United, and American dominate domestic routes between US host cities. Southwest is an economical option for flights within the United States, especially on the East Coast and to Dallas and Houston."
+          }
+        },
+        {
+          "title": {
+            "es": "Aeropuertos sede del Mundial 2026",
+            "en": "World Cup 2026 Host City Airports"
+          },
+          "content": {
+            "es": "Conocer los codigos IATA de los aeropuertos sede te permite buscar vuelos con mayor precision. En Mexico: Ciudad de Mexico (MEX - Aeropuerto Internacional Benito Juarez o AIFA - Felipe Angeles), Guadalajara (GDL - Aeropuerto Miguel Hidalgo), Monterrey (MTY - Aeropuerto Internacional Mariano Escobedo).\n\nEn Estados Unidos: Los Angeles (LAX), San Francisco/Santa Clara (SFO o SJC), Seattle (SEA), Dallas (DFW o DAL), Houston (IAH o HOU), Kansas City (MCI), Atlanta (ATL), Miami (MIA), Nueva York/New Jersey (JFK, EWR o LGA), Boston (BOS), Philadelphia (PHL).\n\nEn Canada: Toronto (YYZ - Pearson International) y Vancouver (YVR - Vancouver International). Ambos aeropuertos canadienses ofrecen conexiones directas hacia todas las ciudades sede de los tres paises.",
+            "en": "Knowing the IATA codes of host airports helps you search flights more precisely. In Mexico: Mexico City (MEX - Benito Juarez International or AIFA - Felipe Angeles), Guadalajara (GDL - Miguel Hidalgo Airport), Monterrey (MTY - Mariano Escobedo International Airport).\n\nIn the United States: Los Angeles (LAX), San Francisco/Santa Clara (SFO or SJC), Seattle (SEA), Dallas (DFW or DAL), Houston (IAH or HOU), Kansas City (MCI), Atlanta (ATL), Miami (MIA), New York/New Jersey (JFK, EWR or LGA), Boston (BOS), Philadelphia (PHL).\n\nIn Canada: Toronto (YYZ - Pearson International) and Vancouver (YVR - Vancouver International). Both Canadian airports offer direct connections to all host cities in the three countries."
+          }
+        },
+        {
+          "title": {
+            "es": "Consejos para reservar vuelos al Mundial",
+            "en": "Tips for Booking World Cup Flights"
+          },
+          "content": {
+            "es": "El multi-city o vuelo de ida y vuelta abierto es ideal si piensas ver partidos en mas de una ciudad sede. En lugar de comprar vuelos separados, busca itinerarios que te permitan llegar a una ciudad y salir desde otra, lo que puede resultar mas economico y logisticamente conveniente.\n\nLas fechas flexibles son tu mejor aliada. Viajar un dia antes o despues de un partido puede reducir significativamente el costo del vuelo, especialmente para partidos de grupos en junio. Usa la funcion de busqueda por mes de Google Flights para visualizar el mapa de precios por fecha.\n\nReserva tu vuelo y hotel por separado para tener mayor flexibilidad de cancelacion. Muchos fans cometen el error de esperar a tener sus entradas antes de reservar vuelo y hotel, perdiendo los mejores precios. Reserva ahora con opciones de cancelacion gratuita y ajusta si es necesario cuando salgan los resultados del sorteo.",
+            "en": "A multi-city or open-jaw ticket is ideal if you plan to attend matches in more than one host city. Instead of buying separate flights, look for itineraries that allow you to arrive in one city and depart from another, which can be more economical and logistically convenient.\n\nFlexible dates are your best ally. Traveling one day before or after a match can significantly reduce flight costs, especially for group-stage matches in June. Use the calendar search feature in Google Flights to visualize the price map by date.\n\nBook your flight and hotel separately for greater cancellation flexibility. Many fans make the mistake of waiting for their tickets before booking flights and hotels, missing the best prices. Book now with free cancellation options and adjust if necessary when the draw results come out."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Con cuanta anticipacion debo comprar vuelos para el Mundial 2026?",
+            "en": "How far in advance should I buy flights for the 2026 World Cup?"
+          },
+          "answer": {
+            "es": "Lo ideal es reservar con 6 a 12 meses de anticipacion para vuelos internacionales. Para vuelos domesticos dentro de Estados Unidos, con 2 a 3 meses suele ser suficiente, aunque para semifinales y la final conviene reservar antes.",
+            "en": "Ideally, book 6 to 12 months in advance for international flights. For domestic flights within the United States, 2 to 3 months is usually sufficient, though for semifinals and the final it's best to book earlier."
+          }
+        },
+        {
+          "question": {
+            "es": "Cual es el aeropuerto principal para llegar a la final del Mundial 2026?",
+            "en": "What is the main airport to reach the 2026 World Cup final?"
+          },
+          "answer": {
+            "es": "La final se jugara en el MetLife Stadium en Nueva York/Nueva Jersey. Los aeropuertos mas cercanos son Newark (EWR), JFK y LaGuardia (LGA). EWR es el mas cercano al estadio con acceso directo en tren.",
+            "en": "The final will be played at MetLife Stadium in New York/New Jersey. The closest airports are Newark (EWR), JFK, and LaGuardia (LGA). EWR is closest to the stadium with direct train access."
+          }
+        },
+        {
+          "question": {
+            "es": "Es mejor volar directamente a la ciudad sede o a un hub y luego conectar?",
+            "en": "Is it better to fly directly to the host city or to a hub and then connect?"
+          },
+          "answer": {
+            "es": "Depende de tu origen. Desde Mexico y Latinoamerica, volar a Miami, Houston o Nueva York y conectar suele ser mas economico que volar directo a ciudades como Kansas City o Seattle. Compara ambas opciones en Google Flights.",
+            "en": "It depends on your origin. From Mexico and Latin America, flying to Miami, Houston, or New York and connecting is often cheaper than flying directly to cities like Kansas City or Seattle. Compare both options on Google Flights."
+          }
+        },
+        {
+          "question": {
+            "es": "Puedo usar puntos o millas de viajero frecuente para volar al Mundial?",
+            "en": "Can I use frequent flyer miles or points to fly to the World Cup?"
+          },
+          "answer": {
+            "es": "Si, pero la disponibilidad de asientos de premio sera muy limitada durante el Mundial. Si tienes millas acumuladas, redime con 9 a 12 meses de anticipacion antes de que los asientos de premio desaparezcan.",
+            "en": "Yes, but award seat availability will be very limited during the World Cup. If you have accumulated miles, redeem 9 to 12 months in advance before award seats disappear."
+          }
+        },
+        {
+          "question": {
+            "es": "Conviene contratar un seguro de viaje para vuelos al Mundial?",
+            "en": "Is it worth getting travel insurance for World Cup flights?"
+          },
+          "answer": {
+            "es": "Definitivamente si. Con partidos que pueden cancelarse o reagendarse y la posibilidad de no obtener entradas para ciertos juegos, un seguro con cobertura de cancelacion por 'cualquier razon' (CFAR) te protege la inversion.",
+            "en": "Definitely yes. With matches that may be cancelled or rescheduled and the possibility of not getting tickets to certain games, insurance with 'cancel for any reason' (CFAR) coverage protects your investment."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "FIFA.com - Mundial 2026", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" },
+        { "name": "Google Flights", "url": "https://www.google.com/flights" }
+      ]
+    },
+    {
+      "id": "vuelos-desde-mexico",
+      "slugs": { "es": "desde-mexico", "en": "from-mexico" },
+      "category": "viajes",
+      "title": {
+        "es": "Vuelos desde Mexico al Mundial 2026: Guia para fans mexicanos",
+        "en": "Flights from Mexico to the 2026 World Cup: Guide for Mexican Fans"
+      },
+      "description": {
+        "es": "Guia de vuelos desde Ciudad de Mexico, Monterrey y Guadalajara al Mundial 2026 en Estados Unidos. Rutas directas, precios estimados, requisitos de entrada y consejos de reserva.",
+        "en": "Flight guide from Mexico City, Monterrey, and Guadalajara to the 2026 World Cup in the US. Direct routes, estimated prices, entry requirements, and booking tips."
+      },
+      "overview": {
+        "es": "Los fans mexicanos tienen la ventaja de que Mexico es uno de los tres paises sede del Mundial 2026, lo que significa que podran ver partidos tanto en casa como cruzando la frontera hacia Estados Unidos. Los principales aeropuertos de origen son el Aeropuerto Internacional Benito Juarez (MEX) y el nuevo Aeropuerto Internacional Felipe Angeles (AIFA) en Ciudad de Mexico, el Aeropuerto Miguel Hidalgo de Guadalajara (GDL) y el Aeropuerto Mariano Escobedo de Monterrey (MTY).\n\nPara los partidos que se jueguen en suelo estadounidense, los fans mexicanos necesitaran una visa B1/B2 o, si son elegibles, una autorizacion ESTA. Esta gestion debe iniciarse con mucha anticipacion, idealmente desde principios de 2026 o antes.",
+        "en": "Mexican fans have the advantage that Mexico is one of the three host countries for the 2026 World Cup, meaning they can watch matches both at home and by crossing the border into the United States. The main departure airports are Benito Juarez International Airport (MEX) and the new Felipe Angeles International Airport (AIFA) in Mexico City, Miguel Hidalgo Airport in Guadalajara (GDL), and Mariano Escobedo Airport in Monterrey (MTY).\n\nFor matches played on US soil, Mexican fans will need a B1/B2 visa or, if eligible, an ESTA authorization. This process should be started well in advance, ideally from early 2026 or sooner."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Rutas directas desde Ciudad de Mexico a ciudades sede de USA",
+            "en": "Direct Routes from Mexico City to US Host Cities"
+          },
+          "content": {
+            "es": "Desde el aeropuerto MEX o AIFA, existen vuelos directos hacia la mayoria de las ciudades sede estadounidenses. Las rutas mas frecuentes son hacia Los Angeles (2h 50min), Dallas/Fort Worth (2h 30min), Houston (2h 15min), Miami (3h 40min) y Nueva York (5h 20min). Aeromexico, United y American Airlines dominan estas rutas con multiples frecuencias diarias.\n\nEl precio promedio de un vuelo de ida y vuelta desde CDMX a Los Angeles oscila entre 350 y 600 USD en temporada normal. Durante el Mundial, especialmente para las fechas en que Mexico juegue o en las rondas eliminatorias, los precios pueden duplicarse o triplicarse. Para ciudades como Seattle (SEA) o Kansas City (MCI), los vuelos generalmente requieren una escala en LA, Dallas o Houston, con tiempos totales de viaje de 6 a 9 horas.\n\nDesde Monterrey (MTY), los vuelos directos a Houston y Dallas son especialmente economicos, con precios que en temporada normal parten desde 150 USD. La cercania de Monterrey a la frontera tambien hace viable la combinacion de vuelo domestico MTY-Laredo/McAllen mas cruce terrestre.",
+            "en": "From MEX or AIFA airports, there are direct flights to most US host cities. The most frequent routes are to Los Angeles (2h 50min), Dallas/Fort Worth (2h 30min), Houston (2h 15min), Miami (3h 40min), and New York (5h 20min). Aeromexico, United, and American Airlines dominate these routes with multiple daily frequencies.\n\nThe average round-trip flight from Mexico City to Los Angeles ranges from $350 to $600 USD in normal season. During the World Cup, especially for dates when Mexico plays or in knockout rounds, prices can double or triple. For cities like Seattle (SEA) or Kansas City (MCI), flights generally require a stopover in LA, Dallas, or Houston, with total travel times of 6 to 9 hours.\n\nFrom Monterrey (MTY), direct flights to Houston and Dallas are especially economical, with normal-season prices starting from $150 USD. Monterrey's proximity to the border also makes the combination of domestic flight MTY-Laredo/McAllen plus land crossing viable."
+          }
+        },
+        {
+          "title": {
+            "es": "Requisitos de entrada a Estados Unidos para fans mexicanos",
+            "en": "US Entry Requirements for Mexican Fans"
+          },
+          "content": {
+            "es": "Para entrar a Estados Unidos, los ciudadanos mexicanos necesitan una visa de no inmigrante tipo B1/B2 (visitante de negocios o turismo). Esta visa no se puede tramitar en el aeropuerto: debe solicitarse con anticipacion en el consulado o embajada de Estados Unidos mas cercano.\n\nEl tiempo de procesamiento de la visa B1/B2 varia significativamente segun la demanda consular. En tiempos normales puede tomar de 3 a 6 meses incluyendo la entrevista. Durante el periodo previo al Mundial, la demanda aumentara considerablemente, por lo que se recomienda iniciar el tramite a mas tardar en el primer semestre de 2025.\n\nAlgunas personas con doble nacionalidad o residencia en paises del Programa de Exencion de Visa pueden ser elegibles para ESTA (Electronic System for Travel Authorization), que es mas rapido y economico ($21 USD, tramite en linea). Verifica tu elegibilidad en el sitio oficial esta.cbp.dhs.gov.",
+            "en": "To enter the United States, Mexican citizens need a B1/B2 non-immigrant visa (business or tourism visitor). This visa cannot be processed at the airport: it must be applied for in advance at the nearest US consulate or embassy.\n\nB1/B2 visa processing times vary significantly depending on consular demand. In normal times it can take 3 to 6 months including the interview. During the pre-World Cup period, demand will increase considerably, so it is recommended to start the process no later than the first half of 2025.\n\nSome people with dual nationality or residency in Visa Waiver Program countries may be eligible for ESTA (Electronic System for Travel Authorization), which is faster and more affordable ($21 USD, online process). Check your eligibility at the official site esta.cbp.dhs.gov."
+          }
+        },
+        {
+          "title": {
+            "es": "Vuelos desde Guadalajara (GDL) al Mundial",
+            "en": "Flights from Guadalajara (GDL) to the World Cup"
+          },
+          "content": {
+            "es": "El Aeropuerto Internacional Miguel Hidalgo de Guadalajara es el segundo aeropuerto mas importante de Mexico y ofrece vuelos directos a Los Angeles, Houston y Chicago. Para fans tapatios, LA es el destino mas accesible tanto en tiempo de vuelo (2h 30min) como en precio (desde 250 USD ida y vuelta en temporada baja).\n\nAeromexico y Volaris son las principales aereolineas desde GDL con conexiones a ciudades sede. Interjet y otras aerolineas de bajo costo complementan la oferta. Para ciudades del centro y este de Estados Unidos como Atlanta, Miami o Nueva York, la opcion mas practica suele ser hacer escala en la CDMX o volar via Houston.",
+            "en": "Guadalajara's Miguel Hidalgo International Airport is Mexico's second most important airport and offers direct flights to Los Angeles, Houston, and Chicago. For fans from Guadalajara, LA is the most accessible destination both in flight time (2h 30min) and price (from $250 USD round trip in low season).\n\nAeromexico and Volaris are the main airlines from GDL with connections to host cities. Low-cost carriers complement the offering. For cities in the central and eastern United States such as Atlanta, Miami, or New York, the most practical option is usually to make a stopover in Mexico City or fly via Houston."
+          }
+        },
+        {
+          "title": {
+            "es": "Consejos de reserva para fans mexicanos",
+            "en": "Booking Tips for Mexican Fans"
+          },
+          "content": {
+            "es": "La estrategia mas inteligente para fans mexicanos es reservar el vuelo y el hotel antes de confirmar las entradas. Una reserva con cancelacion gratuita te protege sin comprometer dinero. Si luego no obtienes entradas o Mexico no avanza a la siguiente ronda, puedes cancelar sin costo.\n\nConsidera la posibilidad de un boleto multi-destino si planeas ver partidos en mas de una ciudad. Por ejemplo, volar MEX-Dallas-Houston-MEX puede ser mas economico que comprar dos vuelos separados, y te permite cubrir dos sedes en un mismo viaje.\n\nPara grupos grandes de fans que viajan juntos desde Mexico, vale la pena comparar precios directamente en el sitio de Aeromexico para grupos (10+ personas), ya que a menudo ofrecen tarifas especiales no disponibles en buscadores de vuelos.",
+            "en": "The smartest strategy for Mexican fans is to book the flight and hotel before confirming tickets. A booking with free cancellation protects you without committing money. If you later don't get tickets or Mexico doesn't advance to the next round, you can cancel at no cost.\n\nConsider a multi-destination ticket if you plan to watch matches in more than one city. For example, flying MEX-Dallas-Houston-MEX can be cheaper than buying two separate flights, and lets you cover two venues in one trip.\n\nFor large groups of fans traveling together from Mexico, it's worth comparing prices directly on the Aeromexico group site (10+ people), as they often offer special rates not available on flight search engines."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Necesito visa para ir al Mundial 2026 en Estados Unidos si soy mexicano?",
+            "en": "Do I need a visa to attend the 2026 World Cup in the US if I'm Mexican?"
+          },
+          "answer": {
+            "es": "Si, los ciudadanos mexicanos necesitan una visa B1/B2 para entrar a Estados Unidos, a menos que tengan doble nacionalidad de un pais del Programa de Exencion de Visa. Tramita tu visa con al menos 6 meses de anticipacion.",
+            "en": "Yes, Mexican citizens need a B1/B2 visa to enter the United States, unless they hold dual nationality from a Visa Waiver Program country. Apply for your visa at least 6 months in advance."
+          }
+        },
+        {
+          "question": {
+            "es": "Cual es la ciudad sede estadounidense mas cercana a Mexico?",
+            "en": "Which US host city is closest to Mexico?"
+          },
+          "answer": {
+            "es": "Dallas/Fort Worth es la ciudad sede estadounidense mas cercana a la frontera con Mexico, con vuelos directos desde CDMX de aproximadamente 2 horas y 30 minutos. Houston tambien es muy accesible desde Monterrey y Ciudad de Mexico.",
+            "en": "Dallas/Fort Worth is the US host city closest to the Mexican border, with direct flights from Mexico City of approximately 2 hours and 30 minutes. Houston is also very accessible from Monterrey and Mexico City."
+          }
+        },
+        {
+          "question": {
+            "es": "Cuando es mejor comprar vuelos desde Mexico al Mundial 2026?",
+            "en": "When is the best time to buy flights from Mexico to the 2026 World Cup?"
+          },
+          "answer": {
+            "es": "Lo ideal es reservar entre enero y junio de 2025, es decir, entre 12 y 18 meses antes del evento. Una vez que FIFA anuncie el calendario definitivo (esperado para finales de 2025), los precios subiran drasticamente para las fechas de los partidos.",
+            "en": "Ideally, book between January and June 2025, that is, between 12 and 18 months before the event. Once FIFA announces the definitive schedule (expected for late 2025), prices will rise dramatically for match dates."
+          }
+        },
+        {
+          "question": {
+            "es": "Puedo entrar a Mexico desde USA durante el Mundial sin problemas?",
+            "en": "Can I return to Mexico from the US during the World Cup without issues?"
+          },
+          "answer": {
+            "es": "Si, los ciudadanos mexicanos pueden entrar y salir de Mexico libremente con su pasaporte mexicano vigente. Para regresar a Mexico por via aerea no necesitas ningun tramite especial, solo tu pasaporte.",
+            "en": "Yes, Mexican citizens can enter and exit Mexico freely with their valid Mexican passport. To return to Mexico by air you don't need any special procedure, just your passport."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "FIFA.com - Mundial 2026", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" },
+        { "name": "Google Flights", "url": "https://www.google.com/flights" },
+        { "name": "ESTA - CBP.DHS.GOV", "url": "https://esta.cbp.dhs.gov" }
+      ]
+    },
+    {
+      "id": "vuelos-desde-usa",
+      "slugs": { "es": "desde-usa", "en": "from-usa" },
+      "category": "viajes",
+      "title": {
+        "es": "Vuelos internos en USA para el Mundial 2026: Guia de movilidad",
+        "en": "Domestic Flights in the USA for the 2026 World Cup: Mobility Guide"
+      },
+      "description": {
+        "es": "Como moverse entre las ciudades sede del Mundial 2026 en Estados Unidos. Aerolineas domesticas, precios, alternativas al avion y estrategias de multi-sede para fans.",
+        "en": "How to travel between 2026 World Cup host cities in the United States. Domestic airlines, prices, non-flight alternatives, and multi-venue strategies for fans."
+      },
+      "overview": {
+        "es": "Con 11 ciudades sede en Estados Unidos distribuidas desde Seattle en el noroeste hasta Miami en el sureste y Nueva York en el noreste, los fans que planean ver partidos en multiples ciudades necesitan una estrategia de transporte bien pensada. Para la mayoria de las rutas largas (mas de 500 millas), el avion es la opcion mas rapida y generalmente mas economica en Estados Unidos.\n\nLas tres grandes aerolineas domesticas para el Mundial seran Delta, United y American Airlines. Southwest sigue siendo una alternativa muy popular para rutas de corto y medio alcance, especialmente entre ciudades de la costa este y el sur.",
+        "en": "With 11 host cities in the United States spread from Seattle in the northwest to Miami in the southeast and New York in the northeast, fans planning to attend matches in multiple cities need a well-thought-out transportation strategy. For most long routes (more than 500 miles), flying is the fastest and generally most economical option in the United States.\n\nThe three major domestic airlines for the World Cup will be Delta, United, and American Airlines. Southwest remains a very popular alternative for short and medium-range routes, especially between East Coast and Southern cities."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Aerolineas domesticas en USA para el Mundial",
+            "en": "Domestic Airlines in the USA for the World Cup"
+          },
+          "content": {
+            "es": "Delta Air Lines tiene su hub principal en Atlanta (ATL), lo que la convierte en la mejor opcion para volar hacia y desde Atlanta y para conectar hacia otras ciudades del sureste. United Airlines domina el hub de Houston (IAH) y tiene fuerte presencia en Nueva York (EWR) y Los Angeles (LAX). American Airlines es la opcion preferida desde Dallas (DFW) y Miami (MIA).\n\nSouthwest Airlines no cobra por equipaje adicional y tiene tarifas competitivas entre ciudades del sur y centro de Estados Unidos, incluyendo Dallas (DAL - Love Field), Houston (HOU - Hobby) y Kansas City (MCI). Una desventaja es que no aparece en buscadores de vuelos como Google Flights o Kayak, por lo que debes consultar directamente en southwest.com.\n\nJetBlue es excelente para rutas del noreste, especialmente desde y hacia Nueva York (JFK) y Boston (BOS). Spirit y Frontier ofrecen tarifas muy bajas pero con politicas de equipaje restrictivas — convenientes para fans que viajan ligero.",
+            "en": "Delta Air Lines has its main hub in Atlanta (ATL), making it the best option for flying to and from Atlanta and for connecting to other southeastern cities. United Airlines dominates the Houston hub (IAH) and has a strong presence in New York (EWR) and Los Angeles (LAX). American Airlines is the preferred option from Dallas (DFW) and Miami (MIA).\n\nSouthwest Airlines doesn't charge for additional luggage and has competitive fares between cities in the southern and central United States, including Dallas (DAL - Love Field), Houston (HOU - Hobby), and Kansas City (MCI). A disadvantage is that it doesn't appear on flight search engines like Google Flights or Kayak, so you must check directly at southwest.com.\n\nJetBlue is excellent for Northeast routes, especially to and from New York (JFK) and Boston (BOS). Spirit and Frontier offer very low fares but with restrictive baggage policies — convenient for fans traveling light."
+          }
+        },
+        {
+          "title": {
+            "es": "Estrategia multi-sede: Como planear vuelos entre varias ciudades",
+            "en": "Multi-Venue Strategy: How to Plan Flights Between Multiple Cities"
+          },
+          "content": {
+            "es": "Si planeas ver partidos en dos o mas ciudades sede, la estrategia mas eficiente es usar un vuelo de ida y vuelta abierto (open-jaw). Esto significa volar a una ciudad y regresar desde otra, evitando backtracking innecesario. Por ejemplo: volar de tu ciudad de origen a Los Angeles, ver partidos en LA y luego volar a Dallas para ver otro partido, y finalmente regresar a casa desde Dallas.\n\nEn promedio, los vuelos domesticos entre ciudades sede del Mundial cuestan entre 100 y 350 USD cada tramo en temporada regular. Para las semanas del torneo (junio-julio 2026), los precios pueden duplicarse. Los vuelos entre ciudades proximas como Dallas-Houston o Nueva York-Boston pueden encontrarse por menos de 100 USD con anticipacion.\n\nUna alternativa interesante para algunos tramos es Amtrak. La ruta Northeast Regional conecta Boston, Nueva York, Filadelfia y Washington D.C. con frecuencia y comodidad, siendo competitiva en tiempo y precio con el avion para estos destinos.",
+            "en": "If you plan to watch matches in two or more host cities, the most efficient strategy is to use an open-jaw flight. This means flying to one city and returning from another, avoiding unnecessary backtracking. For example: fly from your home city to Los Angeles, watch matches in LA, then fly to Dallas to watch another match, and finally return home from Dallas.\n\nOn average, domestic flights between World Cup host cities cost between $100 and $350 USD per leg in regular season. For the tournament weeks (June-July 2026), prices can double. Flights between nearby cities like Dallas-Houston or New York-Boston can be found for less than $100 USD with advance booking.\n\nAn interesting alternative for some segments is Amtrak. The Northeast Regional route connects Boston, New York, Philadelphia, and Washington D.C. frequently and comfortably, being competitive in time and price with flying for these destinations."
+          }
+        },
+        {
+          "title": {
+            "es": "Manejar vs volar entre ciudades sede",
+            "en": "Driving vs Flying Between Host Cities"
+          },
+          "content": {
+            "es": "Para rutas cortas (menos de 4 horas en auto), manejar puede ser mas conveniente que volar, especialmente considerando el tiempo de llegada al aeropuerto, controles de seguridad y posibles retrasos. Rutas manejables incluyen Dallas-Houston (4 horas), Los Angeles-San Francisco (6 horas con paradas), y Nueva York-Filadelfia (2 horas).\n\nRentar un auto en Estados Unidos es relativamente economico para ciudadanos latinoamericanos con licencia internacional. Las companias como Enterprise, Hertz y Budget ofrecen tarifas desde 40 USD por dia. Sin embargo, en la semana del Mundial, la disponibilidad de autos sera limitada y los precios subirán significativamente en las ciudades sede.\n\nPara grupos de 3 o mas personas, rentar un auto puede resultar mas economico que comprar multiples boletos de avion, ademas de ofrecer mayor flexibilidad de horarios. La desventaja es el cansancio de manejar largas distancias, especialmente si son tramos de 6 horas o mas.",
+            "en": "For short routes (less than 4 hours by car), driving can be more convenient than flying, especially considering airport arrival time, security checks, and possible delays. Manageable routes include Dallas-Houston (4 hours), Los Angeles-San Francisco (6 hours with stops), and New York-Philadelphia (2 hours).\n\nRenting a car in the United States is relatively inexpensive for Latin American citizens with an international license. Companies like Enterprise, Hertz, and Budget offer rates from $40 USD per day. However, during the World Cup week, car availability will be limited and prices will rise significantly in host cities.\n\nFor groups of 3 or more people, renting a car can be more economical than buying multiple plane tickets, and offers greater schedule flexibility. The downside is driving fatigue on long distances, especially for segments of 6 hours or more."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Cual es la aerolinea mas economica para volar entre ciudades del Mundial en USA?",
+            "en": "Which is the cheapest airline to fly between World Cup cities in the USA?"
+          },
+          "answer": {
+            "es": "Southwest, Spirit y Frontier suelen tener las tarifas mas bajas para vuelos domesticos. Southwest tiene la ventaja adicional de no cobrar equipaje adicional. Para rutas del noreste, JetBlue tambien ofrece precios competitivos.",
+            "en": "Southwest, Spirit, and Frontier usually have the lowest fares for domestic flights. Southwest has the additional advantage of not charging for additional luggage. For Northeast routes, JetBlue also offers competitive prices."
+          }
+        },
+        {
+          "question": {
+            "es": "Cuanto cuesta un vuelo de Los Angeles a Nueva York durante el Mundial?",
+            "en": "How much does a flight from Los Angeles to New York cost during the World Cup?"
+          },
+          "answer": {
+            "es": "En temporada normal, los vuelos LA-NYC cuestan entre 150 y 350 USD. Durante el Mundial (junio-julio 2026), especialmente cerca de las fechas de semifinales y final, los precios podrian superar los 500-800 USD. Reserva con al menos 3 meses de anticipacion.",
+            "en": "In normal season, LA-NYC flights cost between $150 and $350 USD. During the World Cup (June-July 2026), especially around semifinal and final dates, prices could exceed $500-800 USD. Book at least 3 months in advance."
+          }
+        },
+        {
+          "question": {
+            "es": "Es posible ir en tren entre las ciudades sede del Mundial en USA?",
+            "en": "Is it possible to travel by train between World Cup host cities in the USA?"
+          },
+          "answer": {
+            "es": "Si, Amtrak conecta varias ciudades sede, especialmente en el noreste: Boston, Nueva York, Filadelfia. Para el resto del pais, los trenes de Amtrak son lentos y poco frecuentes. Para distancias largas (LA-Dallas, Seattle-LA), el avion es la unica opcion practica.",
+            "en": "Yes, Amtrak connects several host cities, especially in the Northeast: Boston, New York, Philadelphia. For the rest of the country, Amtrak trains are slow and infrequent. For long distances (LA-Dallas, Seattle-LA), flying is the only practical option."
+          }
+        },
+        {
+          "question": {
+            "es": "Necesito algun documento especial para viajar en vuelos domesticos en USA?",
+            "en": "Do I need any special document to travel on domestic flights in the USA?"
+          },
+          "answer": {
+            "es": "Para volar en vuelos domesticos en Estados Unidos como visitante extranjero, necesitas tu pasaporte vigente o un documento de identidad aceptado por la TSA. A partir de mayo de 2025, los aeropuertos en muchos estados exigen REAL ID o pasaporte para abordar.",
+            "en": "To fly on domestic flights in the United States as a foreign visitor, you need your valid passport or a TSA-accepted identity document. As of May 2025, airports in many states require a REAL ID or passport to board."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "FIFA.com - Mundial 2026", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" },
+        { "name": "Google Flights", "url": "https://www.google.com/flights" },
+        { "name": "Southwest Airlines", "url": "https://www.southwest.com" }
+      ]
+    },
+    {
+      "id": "vuelos-desde-europa",
+      "slugs": { "es": "desde-europa", "en": "from-europe" },
+      "category": "viajes",
+      "title": {
+        "es": "Vuelos desde Europa al Mundial 2026: Guia para fans europeos",
+        "en": "Flights from Europe to the 2026 World Cup: Guide for European Fans"
+      },
+      "description": {
+        "es": "Guia de vuelos desde Espana, Reino Unido, Alemania y Francia al Mundial 2026 en Norteamerica. Hubs de conexion, tiempos de vuelo, mejor epoca de reserva y aeropuertos de entrada.",
+        "en": "Flight guide from Spain, the UK, Germany, and France to the 2026 World Cup in North America. Connection hubs, flight times, best booking window, and entry airports."
+      },
+      "overview": {
+        "es": "Los fans europeos que viajen al Mundial 2026 en Norteamerica se enfrentan a vuelos transatlanticos de entre 8 y 12 horas dependiendo del origen y destino. La buena noticia es que hay multiples hubs de conexion eficientes — Miami, Nueva York y Houston — desde donde se puede llegar a todas las ciudades sede en vuelos de 2 a 4 horas adicionales.\n\nLa ventana optima de reserva para vuelos desde Europa es de 9 a 12 meses antes del viaje. Los fans europeos que reserven entre julio y octubre de 2025 tendran acceso a las mejores tarifas transatlanticas, antes de que la demanda del Mundial eleve los precios considerablemente.",
+        "en": "European fans traveling to the 2026 World Cup in North America face transatlantic flights of 8 to 12 hours depending on origin and destination. The good news is that there are multiple efficient connection hubs — Miami, New York, and Houston — from where all host cities can be reached in additional flights of 2 to 4 hours.\n\nThe optimal booking window for flights from Europe is 9 to 12 months before the trip. European fans who book between July and October 2025 will have access to the best transatlantic fares, before World Cup demand raises prices considerably."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Vuelos desde Espana al Mundial 2026",
+            "en": "Flights from Spain to the 2026 World Cup"
+          },
+          "content": {
+            "es": "Desde Madrid (MAD) y Barcelona (BCN), Iberia y American Airlines operan vuelos directos hacia Miami (9h), Nueva York JFK (9h 30min) y Dallas (10h 30min). Iberia tiene la ventaja de vuelos directos Madrid-Miami y Madrid-Nueva York, que son los mejores puntos de entrada para el Mundial desde Espana.\n\nDesde Barcelona, las opciones de vuelo directo son mas limitadas — principalmente hacia Miami y Nueva York. Vueling y otras low-cost europeas ofrecen vuelos desde BCN a Madrid o Lisboa para conectar con vuelos transatlanticos. Air Europa tambien opera la ruta Madrid-Miami con buena frecuencia.\n\nEl precio medio de un vuelo de ida y vuelta Madrid-Miami oscila entre 600 y 900 EUR en temporada normal, pudiendo superar los 1.500 EUR en fechas de alta demanda. Reservar con 9 meses de anticipacion puede suponer un ahorro de 300 a 500 EUR por persona.",
+            "en": "From Madrid (MAD) and Barcelona (BCN), Iberia and American Airlines operate direct flights to Miami (9h), New York JFK (9h 30min), and Dallas (10h 30min). Iberia has the advantage of direct flights Madrid-Miami and Madrid-New York, which are the best entry points for the World Cup from Spain.\n\nFrom Barcelona, direct flight options are more limited — primarily to Miami and New York. Vueling and other European low-cost carriers offer flights from BCN to Madrid or Lisbon to connect with transatlantic flights. Air Europa also operates the Madrid-Miami route with good frequency.\n\nThe average round-trip flight price Madrid-Miami ranges between €600 and €900 EUR in normal season, potentially exceeding €1,500 EUR during high-demand dates. Booking 9 months in advance can mean savings of €300 to €500 EUR per person."
+          }
+        },
+        {
+          "title": {
+            "es": "Vuelos desde Reino Unido al Mundial 2026",
+            "en": "Flights from the United Kingdom to the 2026 World Cup"
+          },
+          "content": {
+            "es": "Desde Londres (LHR, LGW, STN), British Airways y Virgin Atlantic operan vuelos directos hacia Nueva York (7h 30min), Miami (9h), Los Angeles (10h 30min) y Houston (10h). British Airways tiene la mayor cantidad de frecuencias transatlanticas desde Heathrow, con hasta 10 vuelos diarios a Nueva York sola.\n\nVirginia Atlantic ofrece tarifas competitivas y un servicio de cabina bien valorado. Para fans ingleses que vayan a ver a su seleccion (si clasifica), la ruta Nueva York es la mas logica dado que el MetLife Stadium en Nueva Jersey sera sede de la final del torneo.\n\nDesde Edimburgo o Manchester, existen vuelos directos a Nueva York y Orlando (hub para Florida/Miami) con aereolineas como American y United. Para el resto de ciudades sede de Estados Unidos, lo mas eficiente es conectar en Londres o en el hub de llegada en la costa este.",
+            "en": "From London (LHR, LGW, STN), British Airways and Virgin Atlantic operate direct flights to New York (7h 30min), Miami (9h), Los Angeles (10h 30min), and Houston (10h). British Airways has the highest number of transatlantic frequencies from Heathrow, with up to 10 daily flights to New York alone.\n\nVirgin Atlantic offers competitive fares and a well-regarded cabin service. For English fans going to watch their national team (if they qualify), the New York route is most logical given that MetLife Stadium in New Jersey will host the tournament final.\n\nFrom Edinburgh or Manchester, there are direct flights to New York and Orlando (hub for Florida/Miami) with airlines like American and United. For other US host cities, the most efficient option is to connect in London or at the East Coast arrival hub."
+          }
+        },
+        {
+          "title": {
+            "es": "Vuelos desde Alemania y Francia al Mundial 2026",
+            "en": "Flights from Germany and France to the 2026 World Cup"
+          },
+          "content": {
+            "es": "Desde Frankfurt (FRA), Lufthansa opera vuelos directos a Nueva York JFK (9h), Miami (10h 30min), Houston (11h 30min) y Los Angeles (11h 45min). Lufthansa tiene hub de conexion en Frankfurt y Munich, siendo la opcion preferida para fans alemanes.\n\nDesde Paris Charles de Gaulle (CDG), Air France tiene vuelos directos a Nueva York (8h), Los Angeles (10h 45min) y Miami (9h 30min). CDG es uno de los grandes hubs europeos y desde el se puede conectar facilmente con vuelos transatlanticos de multiples aerolineas.\n\nLas aerolineas de bajo costo europeas como Ryanair, easyJet y Wizz Air no operan rutas transatlanticas, pero pueden ser utiles para llegar a un hub principal (Londres, Madrid, Paris, Amsterdam) desde ciudades menores en Europa central y oriental.",
+            "en": "From Frankfurt (FRA), Lufthansa operates direct flights to New York JFK (9h), Miami (10h 30min), Houston (11h 30min), and Los Angeles (11h 45min). Lufthansa has a connection hub in Frankfurt and Munich, being the preferred option for German fans.\n\nFrom Paris Charles de Gaulle (CDG), Air France has direct flights to New York (8h), Los Angeles (10h 45min), and Miami (9h 30min). CDG is one of the major European hubs and from there you can easily connect with transatlantic flights from multiple airlines.\n\nEuropean low-cost airlines like Ryanair, easyJet, and Wizz Air don't operate transatlantic routes, but can be useful for reaching a main hub (London, Madrid, Paris, Amsterdam) from smaller cities in central and eastern Europe."
+          }
+        },
+        {
+          "title": {
+            "es": "Hubs de conexion recomendados en Norteamerica",
+            "en": "Recommended Connection Hubs in North America"
+          },
+          "content": {
+            "es": "Miami (MIA) es el mejor hub de entrada para fans que vienen a ver partidos en la costa sureste de Estados Unidos, incluyendo Miami misma, Atlanta y cualquier ciudad de Florida. Desde MIA hay vuelos directos a todas las ciudades sede en menos de 4 horas.\n\nNueva York/Newark (JFK/EWR) es el hub ideal para fans que lleguen del Reino Unido y norte de Europa. Desde aqui se puede llegar a Boston, Filadelfia y directamente al MetLife Stadium (sede de la final) con facilidad. La conectividad domestica desde JFK y EWR es excelente.\n\nHouston (IAH) es el mejor hub para fans que lleguen desde Mexico y Latinoamerica, o para europeos que quieran acceder a las ciudades sede del sur y centro: Dallas, Kansas City y Los Angeles con escalas eficientes. United Airlines domina este hub con rutas frecuentes a todas las sedes.",
+            "en": "Miami (MIA) is the best entry hub for fans coming to watch matches on the southeastern coast of the United States, including Miami itself, Atlanta, and any city in Florida. From MIA there are direct flights to all host cities in less than 4 hours.\n\nNew York/Newark (JFK/EWR) is the ideal hub for fans arriving from the UK and northern Europe. From here you can easily reach Boston, Philadelphia, and directly MetLife Stadium (host of the final). Domestic connectivity from JFK and EWR is excellent.\n\nHouston (IAH) is the best hub for fans arriving from Mexico and Latin America, or for Europeans who want to access southern and central host cities: Dallas, Kansas City, and Los Angeles with efficient stopovers. United Airlines dominates this hub with frequent routes to all venues."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Cuanto tiempo de vuelo hay desde Europa al Mundial 2026?",
+            "en": "How long is the flight from Europe to the 2026 World Cup?"
+          },
+          "answer": {
+            "es": "Los vuelos directos desde Europa occidental (Espana, Francia, Alemania, UK) a la costa este de Estados Unidos duran entre 7h 30min y 10h 30min. Para ciudades del centro y oeste como Dallas, Houston o Los Angeles, suma 2 a 4 horas adicionales de vuelo interno.",
+            "en": "Direct flights from western Europe (Spain, France, Germany, UK) to the US East Coast take between 7h 30min and 10h 30min. For central and western cities like Dallas, Houston, or Los Angeles, add 2 to 4 additional hours of domestic flight."
+          }
+        },
+        {
+          "question": {
+            "es": "Necesito ESTA o visa para entrar a USA desde Europa?",
+            "en": "Do I need an ESTA or visa to enter the USA from Europe?"
+          },
+          "answer": {
+            "es": "La mayoria de ciudadanos de paises europeos occidentales pueden entrar a Estados Unidos bajo el Programa de Exencion de Visa usando ESTA. El ESTA cuesta $21 USD, se tramita en linea en esta.cbp.dhs.gov y es valido por 2 anos.",
+            "en": "Most citizens of western European countries can enter the United States under the Visa Waiver Program using ESTA. ESTA costs $21 USD, is processed online at esta.cbp.dhs.gov, and is valid for 2 years."
+          }
+        },
+        {
+          "question": {
+            "es": "Cuando es el mejor momento para comprar vuelos desde Europa al Mundial?",
+            "en": "When is the best time to buy flights from Europe to the World Cup?"
+          },
+          "answer": {
+            "es": "El mejor momento para comprar vuelos transatlanticos al Mundial 2026 es entre julio y octubre de 2025, es decir, 9 a 12 meses antes del torneo. Despues de que FIFA confirme el calendario (previsto para finales de 2025), los precios subirán rapidamente.",
+            "en": "The best time to buy transatlantic flights to the 2026 World Cup is between July and October 2025, that is, 9 to 12 months before the tournament. After FIFA confirms the schedule (expected for late 2025), prices will rise quickly."
+          }
+        },
+        {
+          "question": {
+            "es": "Cual es el aeropuerto europeo con mas opciones de vuelos directos a USA?",
+            "en": "Which European airport has the most direct flight options to the USA?"
+          },
+          "answer": {
+            "es": "Londres Heathrow (LHR) tiene la mayor cantidad de vuelos directos a Estados Unidos, con conexiones a mas de 20 ciudades estadounidenses. Paris CDG, Frankfurt FRA y Amsterdam AMS son los siguientes hubs europeos con mas opciones transatlanticas.",
+            "en": "London Heathrow (LHR) has the most direct flights to the United States, with connections to more than 20 US cities. Paris CDG, Frankfurt FRA, and Amsterdam AMS are the next European hubs with the most transatlantic options."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "FIFA.com - Mundial 2026", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" },
+        { "name": "Google Flights", "url": "https://www.google.com/flights" },
+        { "name": "ESTA - CBP.DHS.GOV", "url": "https://esta.cbp.dhs.gov" }
+      ]
+    },
+    {
+      "id": "hospedaje-general",
+      "slugs": { "es": "hospedaje", "en": "accommodation" },
+      "category": "viajes",
+      "title": {
+        "es": "Hospedaje para el Mundial 2026: Donde alojarse en las ciudades sede",
+        "en": "Accommodation for the 2026 World Cup: Where to Stay in Host Cities"
+      },
+      "description": {
+        "es": "Guia completa de hospedaje para el Mundial 2026. Tipos de alojamiento, precios por categoria, consejos para reservar con tiempo y mejores zonas en cada ciudad sede.",
+        "en": "Complete accommodation guide for the 2026 World Cup. Types of lodging, prices by category, tips for booking in advance, and best areas in each host city."
+      },
+      "overview": {
+        "es": "El hospedaje es uno de los mayores desafios logisticos del Mundial 2026 para los fans visitantes. Con 16 ciudades sede distribuidas en tres paises y millones de aficionados desplazandose durante un mes, los hoteles en las ciudades mas populares — Nueva York, Los Angeles, Miami y Ciudad de Mexico — se llenaran meses antes del torneo.\n\nLa recomendacion mas importante es reservar con 6 a 12 meses de anticipacion, especialmente para las semanas de cuartos de final, semifinales y la gran final en julio de 2026. Prioriza las reservas con cancelacion gratuita para mantener flexibilidad si tus planes cambian cuando FIFA confirme el calendario.",
+        "en": "Accommodation is one of the biggest logistical challenges of the 2026 World Cup for visiting fans. With 16 host cities spread across three countries and millions of fans traveling over a month, hotels in the most popular cities — New York, Los Angeles, Miami, and Mexico City — will fill up months before the tournament.\n\nThe most important recommendation is to book 6 to 12 months in advance, especially for the weeks of quarterfinals, semifinals, and the grand final in July 2026. Prioritize bookings with free cancellation to maintain flexibility if your plans change when FIFA confirms the schedule."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Tipos de alojamiento para el Mundial 2026",
+            "en": "Types of Accommodation for the 2026 World Cup"
+          },
+          "content": {
+            "es": "Existen cuatro grandes categorias de alojamiento para los fans del Mundial:\n\nHoteles tradicionales: La opcion mas segura y predecible. Ofrecen recepcion 24h, servicio de limpieza y comodidades estandar. Precio promedio para una habitacion doble durante el Mundial: entre 150 y 400 USD por noche segun categoria y ciudad.\n\nAirbnb y apartamentos de alquiler vacacional: Ideales para grupos de amigos o familias. Pueden ser mas economicos por persona que un hotel, y ofrecen cocina y mas espacio. Sin embargo, la disponibilidad sera muy limitada cerca de los estadios en fechas de partido.\n\nHosteles y alojamientos compartidos: Para viajeros con presupuesto ajustado. Una cama en dormitorio comun puede costar entre 40 y 80 USD por noche en una ciudad sede. Ciudades con buena oferta de hostels: Seattle, San Francisco, Nueva York y Ciudad de Mexico.\n\nHome stays y alquileres locales: Algunos fans locales ofrecen cuartos en sus casas a traves de plataformas como VRBO o directamente en grupos de redes sociales mundialistas. Puede ser la opcion mas economica pero requiere mas investigacion y diligencia.",
+            "en": "There are four main categories of accommodation for World Cup fans:\n\nTraditional hotels: The safest and most predictable option. They offer 24-hour reception, housekeeping service, and standard amenities. Average price for a double room during the World Cup: between $150 and $400 USD per night depending on category and city.\n\nAirbnb and vacation rental apartments: Ideal for groups of friends or families. They can be more economical per person than a hotel, and offer a kitchen and more space. However, availability will be very limited near stadiums on match days.\n\nHostels and shared accommodations: For budget travelers. A bed in a shared dormitory can cost between $40 and $80 USD per night in a host city. Cities with good hostel supply: Seattle, San Francisco, New York, and Mexico City.\n\nHome stays and local rentals: Some local fans offer rooms in their homes through platforms like VRBO or directly in World Cup social media groups. This can be the most economical option but requires more research and due diligence."
+          }
+        },
+        {
+          "title": {
+            "es": "Precios de hoteles por categoria en ciudades sede",
+            "en": "Hotel Prices by Category in Host Cities"
+          },
+          "content": {
+            "es": "Los precios de hospedaje durante el Mundial 2026 variaran significativamente segun la ciudad y las fechas. Estimacion orientativa por noche para una habitacion doble estandar durante el torneo:\n\nPresupuesto economico (40-120 USD): Hosteles, moteles de carretera fuera del centro, Airbnb compartido. Adecuado para fans que priorizan el gasto en entradas y experiencias sobre el alojamiento.\n\nRango medio (150-250 USD): Hoteles de 3 estrellas bien ubicados, apartamentos de Airbnb independientes. La mejor relacion calidad-precio para la mayoria de los fans. Busca hoteles a 15-30 minutos del estadio con buenas opciones de transporte publico.\n\nRango superior (300-500 USD): Hoteles de 4 estrellas en buena ubicacion central, cerca de bares y zonas de fan fest. Costo razonable para parejas o fans que quieren mayor comodidad.\n\nLujo (500+ USD): Hoteles boutique y de 5 estrellas en ciudades como Nueva York, Miami y Los Angeles. Para grupos que quieren una experiencia mundialista premium con servicio completo.",
+            "en": "Accommodation prices during the 2026 World Cup will vary significantly by city and dates. Indicative estimate per night for a standard double room during the tournament:\n\nBudget (40-120 USD): Hostels, roadside motels outside the center, shared Airbnb. Suitable for fans who prioritize spending on tickets and experiences over accommodation.\n\nMid-range (150-250 USD): Well-located 3-star hotels, independent Airbnb apartments. The best value for most fans. Look for hotels 15-30 minutes from the stadium with good public transit options.\n\nUpper range (300-500 USD): 4-star hotels in a good central location, near bars and fan fest areas. Reasonable cost for couples or fans wanting more comfort.\n\nLuxury (500+ USD): Boutique and 5-star hotels in cities like New York, Miami, and Los Angeles. For groups wanting a premium World Cup experience with full service."
+          }
+        },
+        {
+          "title": {
+            "es": "Reservar con tiempo: La estrategia ganadora para el hospedaje",
+            "en": "Booking in Advance: The Winning Strategy for Accommodation"
+          },
+          "content": {
+            "es": "La estrategia de hospedaje mas inteligente para el Mundial 2026 es reservar ahora con cancelacion gratuita. Los hoteles con politica de cancelacion gratuita hasta 24-48 horas antes de la llegada te permiten asegurar el precio de hoy sin ninguna penalizacion si tus planes cambian.\n\nEn Booking.com puedes filtrar especificamente por hoteles con cancelacion gratuita. Reserva para las fechas en que tu seleccion podria jugar (grupos + octavos de final), y cancela si el sorteo no te favorece. Esta estrategia es especialmente util para los partidos de fase eliminatoria, cuyas fechas no se conoceran hasta que avance el torneo.\n\nOtra tecnica util es la doble reserva temporal: reservar el mismo hotel para dos o tres ventanas de fechas diferentes (por ejemplo, los tres periodos en que tu seleccion podria jugar un partido en esa ciudad), y cancelar las que no necesites una vez confirmado el calendario. Asegurate de verificar las politicas de cancelacion antes de hacer multiples reservas.",
+            "en": "The smartest accommodation strategy for the 2026 World Cup is to book now with free cancellation. Hotels with a free cancellation policy up to 24-48 hours before arrival allow you to lock in today's price without any penalty if your plans change.\n\nOn Booking.com you can specifically filter for hotels with free cancellation. Book for the dates your team might play (group stage + round of 16), and cancel if the draw doesn't favor you. This strategy is especially useful for knockout stage matches, whose dates won't be known until the tournament progresses.\n\nAnother useful technique is temporary double booking: reserve the same hotel for two or three different date windows (for example, the three periods in which your team could play a match in that city), and cancel the ones you don't need once the schedule is confirmed. Make sure to verify cancellation policies before making multiple bookings."
+          }
+        },
+        {
+          "title": {
+            "es": "Mejores zonas donde hospedarse en las ciudades sede",
+            "en": "Best Areas to Stay in Host Cities"
+          },
+          "content": {
+            "es": "La ubicacion del hospedaje tiene un impacto enorme en la experiencia del Mundial. La regla general es hospedarse cerca de una estacion de metro o tren que conecte directamente al estadio, en lugar de buscar el hotel mas cercano al estadio mismo (que suele ser el mas caro).\n\nEn Ciudad de Mexico, las zonas de Polanco, Condesa y Roma son las mas populares entre turistas extranjeros, con excelente conexion al Estadio Azteca via Metro. En Los Angeles, Downtown LA o Hollywood tienen buena conectividad al SoFi Stadium via metro. En Nueva York, Manhattan es la zona natural, con el MetLife Stadium accesible en bus o tren desde Port Authority.\n\nEvita hospedarte en zonas muy alejadas del centro o con transporte publico deficiente. Durante el Mundial, el trafico en las ciudades sede sera caótico los dias de partido, y manejar no sera una opcion practica. La proximidad al transporte publico vale mas que la cercania al estadio.",
+            "en": "The location of your accommodation has a huge impact on the World Cup experience. The general rule is to stay near a metro or train station that connects directly to the stadium, rather than looking for the hotel closest to the stadium itself (which is usually the most expensive).\n\nIn Mexico City, the areas of Polanco, Condesa, and Roma are most popular among foreign tourists, with excellent connection to the Azteca Stadium via Metro. In Los Angeles, Downtown LA or Hollywood have good connectivity to SoFi Stadium via metro. In New York, Manhattan is the natural area, with MetLife Stadium accessible by bus or train from Port Authority.\n\nAvoid staying in areas far from the center or with poor public transportation. During the World Cup, traffic in host cities will be chaotic on match days, and driving won't be a practical option. Proximity to public transportation is worth more than proximity to the stadium."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Cuando debo reservar el hotel para el Mundial 2026?",
+            "en": "When should I book my hotel for the 2026 World Cup?"
+          },
+          "answer": {
+            "es": "Lo antes posible, idealmente ahora mismo con cancelacion gratuita. Los hoteles en Nueva York, Miami, Los Angeles y Ciudad de Mexico para las fechas del Mundial se agotaran con mucha anticipacion. Prioriza hoteles con cancelacion flexible.",
+            "en": "As soon as possible, ideally right now with free cancellation. Hotels in New York, Miami, Los Angeles, and Mexico City for World Cup dates will sell out well in advance. Prioritize hotels with flexible cancellation."
+          }
+        },
+        {
+          "question": {
+            "es": "Cuanto cuesta un hotel cerca del estadio durante el Mundial?",
+            "en": "How much does a hotel near the stadium cost during the World Cup?"
+          },
+          "answer": {
+            "es": "Los hoteles directamente adyacentes a los estadios pueden costar 400 a 1000 USD por noche durante el Mundial. Una opcion mas economica es hospedarse en el centro de la ciudad (150-300 USD/noche) con buena conexion al estadio por transporte publico.",
+            "en": "Hotels directly adjacent to stadiums can cost $400 to $1,000 USD per night during the World Cup. A more economical option is to stay in the city center ($150-300 USD/night) with good public transportation connections to the stadium."
+          }
+        },
+        {
+          "question": {
+            "es": "Es mejor reservar en Airbnb o en hotel para el Mundial?",
+            "en": "Is it better to book Airbnb or a hotel for the World Cup?"
+          },
+          "answer": {
+            "es": "Depende del grupo y presupuesto. Para familias o grupos de 3+ personas, Airbnb suele ser mas economico por persona. Para viajeros solos o parejas, un hotel ofrece mayor seguridad y servicios. En ambos casos, prioriza cancelacion gratuita.",
+            "en": "It depends on the group and budget. For families or groups of 3+ people, Airbnb is usually cheaper per person. For solo travelers or couples, a hotel offers greater security and services. In both cases, prioritize free cancellation."
+          }
+        },
+        {
+          "question": {
+            "es": "Que pasa si no consigo entradas para un partido y ya reserve hotel?",
+            "en": "What happens if I don't get tickets to a match and I've already booked a hotel?"
+          },
+          "answer": {
+            "es": "Si reservaste con cancelacion gratuita, simplemente cancelas sin costo. Por eso siempre recomendamos reservar primero con politica de cancelacion flexible, y confirmar los detalles del viaje una vez que tengas las entradas aseguradas.",
+            "en": "If you booked with free cancellation, you simply cancel at no cost. That's why we always recommend booking first with a flexible cancellation policy, and confirming trip details once you have your tickets secured."
+          }
+        }
+      ],
+      "affiliateCTAs": [
+        {
+          "label": {
+            "es": "Buscar hoteles para el Mundial 2026 en Booking.com",
+            "en": "Search Hotels for the 2026 World Cup on Booking.com"
+          },
+          "url": "https://www.booking.com/searchresults.html?ss=FIFA+World+Cup+2026&checkin=2026-06-11&checkout=2026-06-18&aid=304142",
+          "partner": "booking",
+          "disclosure": {
+            "es": "Enlace de afiliado. Podemos ganar comision si reservas.",
+            "en": "Affiliate link. We may earn a commission if you book."
+          }
+        }
+      ],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "Booking.com", "url": "https://www.booking.com" },
+        { "name": "Airbnb", "url": "https://www.airbnb.com" },
+        { "name": "FIFA.com - Mundial 2026", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" }
+      ]
+    },
+    {
+      "id": "transporte-entre-ciudades",
+      "slugs": { "es": "transporte", "en": "transport" },
+      "category": "viajes",
+      "title": {
+        "es": "Transporte entre ciudades sede del Mundial 2026",
+        "en": "Transport Between 2026 World Cup Host Cities"
+      },
+      "description": {
+        "es": "Opciones de transporte entre las 16 ciudades sede del Mundial 2026: vuelos domesticos, autobuses, trenes Amtrak, renta de auto y grupos de fans. Costos y tiempos de viaje.",
+        "en": "Transportation options between the 16 host cities of the 2026 World Cup: domestic flights, buses, Amtrak trains, car rentals, and fan groups. Costs and travel times."
+      },
+      "overview": {
+        "es": "Moverse entre las ciudades sede del Mundial 2026 es uno de los mayores desafios logsticos para los fans que planean ver multiples partidos. Con 16 ciudades distribuidas en mas de 5,000 kilometros de distancia de costa a costa en Norteamerica, no existe una solucion unica que funcione para todos los trayectos.\n\nLa regla practica es simple: para distancias superiores a 800 km (500 millas), el avion es generalmente la opcion mas rapida y a menudo mas economica en Norteamerica. Para distancias cortas o corredores con buena infraestructura ferroviaria como el noreste de Estados Unidos, el tren puede ser competitivo.",
+        "en": "Moving between the host cities of the 2026 World Cup is one of the biggest logistical challenges for fans who plan to watch multiple matches. With 16 cities spread over more than 5,000 kilometers from coast to coast in North America, there is no single solution that works for all journeys.\n\nThe practical rule is simple: for distances over 800 km (500 miles), flying is generally the fastest and often most economical option in North America. For short distances or corridors with good rail infrastructure like the US Northeast, the train can be competitive."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Vuelos domesticos: La opcion principal para distancias largas",
+            "en": "Domestic Flights: The Main Option for Long Distances"
+          },
+          "content": {
+            "es": "Para la mayoria de los trayectos entre ciudades sede del Mundial, el avion es la opcion mas practica. Los vuelos domesticos en Estados Unidos son relativamente economicos con reserva anticipada, especialmente con aerolineas de bajo costo como Southwest, Spirit y Frontier.\n\nRutas de alta frecuencia entre ciudades sede incluyen: Los Angeles-Dallas (2h 45min, desde 89 USD), Dallas-Houston (1h 10min, desde 69 USD), Miami-Atlanta (1h 45min, desde 79 USD), Nueva York-Boston (1h 15min, desde 69 USD). Para las semanas del Mundial, estos precios se multiplicaran — reserva con 3 meses de anticipacion como minimo.\n\nLas rutas de larga distancia como Seattle-Miami (5h 30min) o Los Angeles-Nueva York (5h 20min) son las mas costosas y las que antes se agotan. Para estas rutas, reservar con 6 meses o mas de anticipacion es fundamental.",
+            "en": "For most journeys between World Cup host cities, flying is the most practical option. Domestic flights in the United States are relatively economical with advance booking, especially with low-cost airlines like Southwest, Spirit, and Frontier.\n\nHigh-frequency routes between host cities include: Los Angeles-Dallas (2h 45min, from $89 USD), Dallas-Houston (1h 10min, from $69 USD), Miami-Atlanta (1h 45min, from $79 USD), New York-Boston (1h 15min, from $69 USD). For World Cup weeks, these prices will multiply — book at least 3 months in advance.\n\nLong-distance routes like Seattle-Miami (5h 30min) or Los Angeles-New York (5h 20min) are the most expensive and sell out first. For these routes, booking 6 months or more in advance is essential."
+          }
+        },
+        {
+          "title": {
+            "es": "Autobus interurbano: Opcion economica para fans con presupuesto ajustado",
+            "en": "Intercity Bus: Economical Option for Budget-Conscious Fans"
+          },
+          "content": {
+            "es": "Greyhound es la principal compania de autobuses interurbanos de Estados Unidos, con rutas que conectan la mayoria de las ciudades sede del Mundial. Es la opcion mas economica para distancias medias (200-600 km), aunque con tiempos de viaje significativamente mas largos que el avion.\n\nFlixBus ha expandido agresivamente su red en Estados Unidos y Mexico, ofreciendo autobuses modernos con WiFi y enchufes a precios muy competitivos. Para la ruta Dallas-Houston, FlixBus puede encontrarse por 15-25 USD, comparado con 60-100 USD en vuelo.\n\nEn Mexico, ADO es la compania de autobuses premium de referencia. Conecta las tres sedes mexicanas — CDMX, Guadalajara y Monterrey — con servicio ejecutivo y de lujo. La ruta CDMX-Guadalajara en ADO Plus cuesta aproximadamente 700-900 pesos mexicanos (35-45 USD) y tarda unas 7 horas.",
+            "en": "Greyhound is the main intercity bus company in the United States, with routes connecting most World Cup host cities. It is the most economical option for medium distances (200-600 km), though with significantly longer travel times than flying.\n\nFlixBus has aggressively expanded its network in the United States and Mexico, offering modern buses with WiFi and outlets at very competitive prices. For the Dallas-Houston route, FlixBus can be found for $15-25 USD, compared to $60-100 USD by plane.\n\nIn Mexico, ADO is the premium reference bus company. It connects the three Mexican venues — Mexico City, Guadalajara, and Monterrey — with executive and luxury service. The Mexico City-Guadalajara route on ADO Plus costs approximately 700-900 Mexican pesos ($35-45 USD) and takes about 7 hours."
+          }
+        },
+        {
+          "title": {
+            "es": "Tren Amtrak: La mejor opcion en el noreste de Estados Unidos",
+            "en": "Amtrak Train: The Best Option in the US Northeast"
+          },
+          "content": {
+            "es": "Amtrak es el unico servicio de trenes de larga distancia en Estados Unidos. Para el Mundial 2026, el corredor mas util es el Northeast Regional y Acela Express, que conecta Boston (BOS), Nueva York (Penn Station), Filadelfia (30th Street) y Washington D.C. con alta frecuencia.\n\nEl Acela Express entre Nueva York y Washington D.C. tarda 2h 45min y cuesta entre 100 y 200 USD. El tren regional Boston-Nueva York tarda 3h 30min y puede costar entre 30 y 100 USD segun anticipacion. Ambas rutas son competitivas con el avion cuando se considera el tiempo de llegada al aeropuerto y los controles de seguridad.\n\nFuera del corredor noreste, Amtrak es significativamente mas lento y menos frecuente. La ruta Chicago-Nueva York dura 18 horas, y Chicago-Los Angeles tarda 40 horas. Para estas rutas, el tren es una opcion romantica y pintoresca, no una alternativa practica al avion durante el Mundial.",
+            "en": "Amtrak is the only long-distance train service in the United States. For the 2026 World Cup, the most useful corridor is the Northeast Regional and Acela Express, connecting Boston (BOS), New York (Penn Station), Philadelphia (30th Street), and Washington D.C. with high frequency.\n\nThe Acela Express between New York and Washington D.C. takes 2h 45min and costs between $100 and $200 USD. The regional Boston-New York train takes 3h 30min and can cost between $30 and $100 USD depending on advance booking. Both routes are competitive with flying when considering airport arrival time and security checks.\n\nOutside the Northeast corridor, Amtrak is significantly slower and less frequent. The Chicago-New York route takes 18 hours, and Chicago-Los Angeles takes 40 hours. For these routes, the train is a romantic and scenic option, not a practical alternative to flying during the World Cup."
+          }
+        },
+        {
+          "title": {
+            "es": "Renta de auto: Ideal para sedes mas alejadas",
+            "en": "Car Rental: Ideal for More Remote Venues"
+          },
+          "content": {
+            "es": "Algunas ciudades sede del Mundial tienen estadios mas alejados de los centros urbanos o con transporte publico limitado. Rentar un auto puede ser la opcion mas logica en estos casos. En Kansas City, el Arrowhead Stadium esta en los suburbios y el transporte publico es limitado. En Seattle, aunque el Lumen Field tiene buena conexion de metro, rentar auto da libertad para explorar la region.\n\nPara grupos de 4 o mas personas, el costo de renta se divide y puede ser comparable al avion. Las companias mas accesibles son Enterprise, Hertz, Budget y Alamo. Durante el Mundial, la disponibilidad de autos sera muy limitada — reserva con 6 meses de anticipacion.\n\nConsidera los costos adicionales: el seguro de auto en Estados Unidos es practicamente obligatorio (entre 15 y 40 USD por dia), los peajes en ciudades como Nueva York pueden sumar 50 USD por dia, y el estacionamiento cerca de los estadios durante partidos puede costar 50-100 USD. Estos costos adicionales a veces hacen que el taxi o Uber sea mas practico para desplazamientos cortos dentro de la ciudad.",
+            "en": "Some World Cup host cities have stadiums farther from urban centers or with limited public transportation. Renting a car can be the most logical option in these cases. In Kansas City, Arrowhead Stadium is in the suburbs and public transportation is limited. In Seattle, although Lumen Field has good metro connections, renting a car gives freedom to explore the region.\n\nFor groups of 4 or more people, rental costs are split and can be comparable to flying. The most accessible companies are Enterprise, Hertz, Budget, and Alamo. During the World Cup, car availability will be very limited — book 6 months in advance.\n\nConsider additional costs: car insurance in the United States is practically mandatory (between $15 and $40 USD per day), tolls in cities like New York can add up to $50 USD per day, and parking near stadiums during matches can cost $50-100 USD. These additional costs sometimes make taxi or Uber more practical for short trips within the city."
+          }
+        },
+        {
+          "title": {
+            "es": "Grupos de aficionados y viajes organizados",
+            "en": "Fan Groups and Organized Travel"
+          },
+          "content": {
+            "es": "Viajar con grupos de fans organizados es una alternativa cada vez mas popular para el Mundial. Las principales confederaciones y federaciones nacionales (FMF, AFA, CBF) suelen organizar paquetes oficiales de viaje que incluyen transporte, hospedaje y entradas garantizadas.\n\nTambien existen empresas especializadas en turismo de eventos deportivos como Sports Travel and Tours, ISE Adventures y Global Sports Travel que ofrecen paquetes World Cup 2026 con diferentes niveles de servicio. Aunque mas costosos que organizar el viaje de forma independiente, ofrecen la tranquilidad de tener todo resuelto.\n\nEn redes sociales (Facebook, Instagram, TikTok) se forman grupos de fans de cada pais que organizan viajes compartidos, van pooling entre ciudades sede y gestionan alojamientos colectivos. Busca grupos como 'Mexicanos en el Mundial 2026' o similares para tu seleccion — pueden ser fuentes valiosas de informacion y ahorro.",
+            "en": "Traveling with organized fan groups is an increasingly popular alternative for the World Cup. The main confederations and national federations (FMF, AFA, CBF) often organize official travel packages including transportation, accommodation, and guaranteed tickets.\n\nThere are also companies specialized in sports event tourism like Sports Travel and Tours, ISE Adventures, and Global Sports Travel that offer 2026 World Cup packages at different service levels. Although more expensive than organizing the trip independently, they offer the peace of mind of having everything arranged.\n\nOn social networks (Facebook, Instagram, TikTok), fan groups from each country form to organize shared trips, carpooling between host cities, and collective accommodations. Search for groups like 'Mexicanos en el Mundial 2026' or similar for your team — they can be valuable sources of information and savings."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Cuanto cuesta el transporte entre Ciudad de Mexico y Los Angeles?",
+            "en": "How much does transportation between Mexico City and Los Angeles cost?"
+          },
+          "answer": {
+            "es": "Un vuelo directo MEX-LAX cuesta entre 350 y 700 USD en temporada normal (ida y vuelta). Durante el Mundial, especialmente en fechas de partido, los precios pueden superar los 1,000 USD. No hay alternativa practica al avion para esta ruta de 2,800 km.",
+            "en": "A direct MEX-LAX flight costs between $350 and $700 USD in normal season (round trip). During the World Cup, especially on match days, prices can exceed $1,000 USD. There is no practical alternative to flying for this 2,800 km route."
+          }
+        },
+        {
+          "question": {
+            "es": "Es posible ir en tren de Nueva York a Filadelfia para el Mundial?",
+            "en": "Is it possible to take the train from New York to Philadelphia for the World Cup?"
+          },
+          "answer": {
+            "es": "Si, Amtrak conecta Nueva York Penn Station con Filadelfia 30th Street en aproximadamente 1 hora y 20 minutos. Es la opcion mas conveniente entre estas dos ciudades sede, con trenes cada 30-60 minutos y precios desde 30 USD.",
+            "en": "Yes, Amtrak connects New York Penn Station with Philadelphia 30th Street in approximately 1 hour and 20 minutes. It is the most convenient option between these two host cities, with trains every 30-60 minutes and prices from $30 USD."
+          }
+        },
+        {
+          "question": {
+            "es": "Como llegar de Guadalajara a Monterrey para ver partidos en ambas sedes?",
+            "en": "How to get from Guadalajara to Monterrey to watch matches at both venues?"
+          },
+          "answer": {
+            "es": "La opcion mas rapida es un vuelo directo GDL-MTY de aproximadamente 1 hora y 15 minutos (desde 1,200 pesos o 60 USD). Aeromexico, VivaAerobus y Volaris cubren esta ruta. El autobús ADO tambien conecta ambas ciudades en aproximadamente 12 horas.",
+            "en": "The fastest option is a direct GDL-MTY flight of approximately 1 hour and 15 minutes (from 1,200 pesos or $60 USD). Aeromexico, VivaAerobus, and Volaris cover this route. ADO bus also connects both cities in approximately 12 hours."
+          }
+        },
+        {
+          "question": {
+            "es": "Cual es la forma mas economica de moverse entre ciudades sede en USA?",
+            "en": "What is the cheapest way to move between host cities in the USA?"
+          },
+          "answer": {
+            "es": "Para distancias cortas (menos de 400 km), el autobus Greyhound o FlixBus es la opcion mas economica, con precios desde 15-25 USD. Para distancias largas, reservar vuelos con 3-6 meses de anticipacion con Southwest o Spirit suele ser mas economico y mucho mas rapido.",
+            "en": "For short distances (less than 400 km), Greyhound or FlixBus is the most economical option, with prices from $15-25 USD. For long distances, booking flights 3-6 months in advance with Southwest or Spirit is usually more economical and much faster."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "Amtrak", "url": "https://www.amtrak.com" },
+        { "name": "Greyhound", "url": "https://www.greyhound.com" },
+        { "name": "ADO Mexico", "url": "https://www.ado.com.mx" }
+      ]
+    },
+    {
+      "id": "visa-entrada",
+      "slugs": { "es": "visa", "en": "entry-requirements" },
+      "category": "viajes",
+      "title": {
+        "es": "Visa y requisitos de entrada al Mundial 2026 segun tu nacionalidad",
+        "en": "Visa and Entry Requirements for the 2026 World Cup by Nationality"
+      },
+      "description": {
+        "es": "Guia completa de requisitos de visa para el Mundial 2026 en Mexico, USA y Canada. ESTA, visa B1/B2, FMM, eTA canadiense y documentacion recomendada segun tu pais de origen.",
+        "en": "Complete visa requirements guide for the 2026 World Cup in Mexico, the US, and Canada. ESTA, B1/B2 visa, FMM, Canadian eTA, and recommended documentation by country of origin."
+      },
+      "overview": {
+        "es": "Los requisitos de visa para asistir al Mundial 2026 dependen de tu nacionalidad y del pais sede donde quieras ver los partidos. Los tres paises sede — Mexico, Estados Unidos y Canada — tienen diferentes sistemas de control de entrada y exenciones de visa para distintas nacionalidades.\n\nEn terminos generales: para entrar a Estados Unidos, la mayoria de latinoamericanos necesitan visa B1/B2. Para Canada, muchos paises latinoamericanos requieren eTA o visa. Para Mexico, la gran mayoria de las nacionalidades pueden entrar sin visa o con el tramite simplificado de la FMM (Forma Migratoria Multiple).",
+        "en": "Visa requirements for attending the 2026 World Cup depend on your nationality and the host country where you want to watch matches. The three host countries — Mexico, the United States, and Canada — have different entry control systems and visa exemptions for different nationalities.\n\nIn general terms: to enter the United States, most Latin Americans need a B1/B2 visa. For Canada, many Latin American countries require an eTA or visa. For Mexico, the vast majority of nationalities can enter without a visa or with the simplified FMM (Multiple Migration Form) process."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Fans de Mexico que van a partidos en Estados Unidos: ESTA vs Visa B1/B2",
+            "en": "Mexican Fans Attending Matches in the United States: ESTA vs B1/B2 Visa"
+          },
+          "content": {
+            "es": "Los ciudadanos mexicanos necesitan una visa para entrar a Estados Unidos. La visa de turismo B1/B2 es la adecuada para asistir al Mundial. El proceso de solicitud incluye: completar el formulario DS-160 en linea, pagar la tarifa de solicitud (185 USD en 2026), programar y asistir a una entrevista consular, y esperar la decision.\n\nEl tiempo de procesamiento de la visa B1/B2 para mexicanos varia segun la carga consular. En el Consulado de Ciudad de Mexico, los tiempos de espera para entrevista han oscilado entre 3 y 9 meses en periodos de alta demanda. Para el Mundial 2026, se espera que la demanda consular aumente significativamente, por lo que se recomienda iniciar el tramite no mas tarde de enero de 2025.\n\nAlgunos ciudadanos mexicanos con doble nacionalidad de un pais del Programa de Exencion de Visa (como Espana, Alemania, Reino Unido, etc.) pueden calificar para ESTA. El ESTA cuesta 21 USD, se tramita en linea en esta.cbp.dhs.gov y normalmente se aprueba en 72 horas o menos. Es valido por 2 anos y permite estadias de hasta 90 dias.",
+            "en": "Mexican citizens need a visa to enter the United States. The B1/B2 tourist visa is appropriate for attending the World Cup. The application process includes: completing form DS-160 online, paying the application fee ($185 USD in 2026), scheduling and attending a consular interview, and waiting for the decision.\n\nB1/B2 visa processing time for Mexicans varies by consular workload. At the Mexico City Consulate, interview waiting times have ranged from 3 to 9 months during high-demand periods. For the 2026 World Cup, consular demand is expected to increase significantly, so starting the process no later than January 2025 is recommended.\n\nSome Mexican citizens with dual nationality from a Visa Waiver Program country (such as Spain, Germany, the UK, etc.) may qualify for ESTA. ESTA costs $21 USD, is processed online at esta.cbp.dhs.gov, and is normally approved within 72 hours or less. It is valid for 2 years and allows stays of up to 90 days."
+          }
+        },
+        {
+          "title": {
+            "es": "Fans latinoamericanos que van a partidos en Estados Unidos: Visa B1/B2",
+            "en": "Latin American Fans Attending Matches in the United States: B1/B2 Visa"
+          },
+          "content": {
+            "es": "Para la gran mayoria de ciudadanos latinoamericanos (Colombia, Argentina, Peru, Chile, Ecuador, Bolivia, Paraguay, Uruguay, etc.), la visa B1/B2 es necesaria para entrar a Estados Unidos. El proceso es el mismo que para mexicanos: formulario DS-160, pago de tarifa, entrevista consular.\n\nAlgunos paises tienen tiempos de procesamiento especialmente largos. Para ciudadanos venezolanos, el tramite puede ser particularmente complejo dado el cierre de la Embajada de Estados Unidos en Venezuela. Se recomienda tramitar la visa en un tercer pais (Colombia, Peru, Panama). Para ciudadanos cubanos, el proceso consular tambien es mas restrictivo.\n\nColombia, Argentina, Chile y Brasil tienen tiempos de espera para entrevista que han oscilado entre 2 y 5 meses en sus respectivas capitales. Para el Mundial 2026, iniciar el tramite entre enero y junio de 2025 es la ventana recomendada. Si ya tienes visa vigente de 10 anos, verifica que siga valida — no necesitas renovarla si aun tiene tiempo.",
+            "en": "For the vast majority of Latin American citizens (Colombia, Argentina, Peru, Chile, Ecuador, Bolivia, Paraguay, Uruguay, etc.), a B1/B2 visa is required to enter the United States. The process is the same as for Mexicans: DS-160 form, fee payment, consular interview.\n\nSome countries have particularly long processing times. For Venezuelan citizens, the process can be particularly complex given the closure of the US Embassy in Venezuela. It is recommended to apply for the visa in a third country (Colombia, Peru, Panama). For Cuban citizens, the consular process is also more restrictive.\n\nColombia, Argentina, Chile, and Brazil have interview waiting times that have ranged from 2 to 5 months in their respective capitals. For the 2026 World Cup, starting the process between January and June 2025 is the recommended window. If you already have a valid 10-year visa, verify it's still valid — you don't need to renew it if it still has time remaining."
+          }
+        },
+        {
+          "title": {
+            "es": "Requisitos de entrada a Mexico: FMM para fans visitantes",
+            "en": "Entry Requirements for Mexico: FMM for Visiting Fans"
+          },
+          "content": {
+            "es": "Mexico tiene una politica de entrada bastante abierta para la mayoria de las nacionalidades. La mayoria de ciudadanos de paises latinoamericanos, europeos, estadounidenses y canadienses pueden entrar a Mexico sin visa de turismo para estadias de hasta 180 dias.\n\nLo que SI necesitan casi todos los visitantes que no son residentes es la Forma Migratoria Multiple (FMM). Esta es el documento migratorio de entrada a Mexico para turistas. Puede tramitarse de tres formas: en linea a traves del portal del INM (Instituto Nacional de Migracion), en el aeropuerto al llegar (hay quioscos o agentes migratorios), o en los puntos fronterizos terrestres.\n\nEl costo de la FMM para fans que lleguen por via aerea a Mexico generalmente esta incluido en el precio del boleto de avion (la aerolinea lo cobra y lo remite al gobierno). Para entradas terrestres o si tu aerolinea no lo incluye, el costo es de aproximadamente 35 USD. Guarda bien tu FMM porque la deberas presentar al salir de Mexico.",
+            "en": "Mexico has a fairly open entry policy for most nationalities. Most citizens of Latin American, European, US, and Canadian countries can enter Mexico without a tourist visa for stays of up to 180 days.\n\nWhat almost all non-resident visitors DO need is the FMM (Forma Migratoria Multiple / Multiple Migration Form). This is the migration entry document for tourists in Mexico. It can be processed in three ways: online through the INM (National Migration Institute) portal, at the airport upon arrival (there are kiosks or migration agents), or at land border crossings.\n\nThe cost of the FMM for fans arriving by air to Mexico is generally included in the plane ticket price (the airline charges it and remits it to the government). For land entries or if your airline doesn't include it, the cost is approximately $35 USD. Keep your FMM safe because you must present it when leaving Mexico."
+          }
+        },
+        {
+          "title": {
+            "es": "Requisitos de entrada a Canada: eTA para fans visitantes",
+            "en": "Entry Requirements for Canada: eTA for Visiting Fans"
+          },
+          "content": {
+            "es": "Para entrar a Canada, los ciudadanos de muchos paises (incluyendo la mayoria de paises europeos, Australia, Japon y otros) necesitan una eTA (Autorizacion de Viaje Electronica). La eTA canadiense cuesta CAD $7 (aproximadamente 5 USD), se tramita en linea en canada.ca y generalmente se aprueba en minutos, aunque puede tardar hasta varios dias en algunos casos.\n\nImportante: Los ciudadanos estadounidenses NO necesitan eTA para entrar a Canada. Los ciudadanos mexicanos y de la mayoria de paises latinoamericanos NO son elegibles para eTA y necesitan una visa de visitante completa para Canada, cuyo proceso es mas largo y costoso (CAN $100, tramite en linea o en consulado).\n\nPara los fans latinoamericanos que quieran ver partidos en Toronto (YYZ) o Vancouver (YVR), es fundamental verificar con mucha anticipacion si necesitan visa canadiense. El proceso puede tardar entre 2 y 8 semanas para la mayoria de los paises latinoamericanos, pero puede ser mucho mas largo dependiendo de la carga consular. Solicitar la visa canadiense antes de mediados de 2025 es lo recomendable.",
+            "en": "To enter Canada, citizens of many countries (including most European countries, Australia, Japan, and others) need an eTA (Electronic Travel Authorization). The Canadian eTA costs CAD $7 (approximately $5 USD), is processed online at canada.ca, and is generally approved within minutes, though it can take up to several days in some cases.\n\nImportant: US citizens do NOT need an eTA to enter Canada. Mexican citizens and those from most Latin American countries are NOT eligible for eTA and need a full visitor visa for Canada, whose process is longer and more expensive (CAD $100, online or at consulate).\n\nFor Latin American fans who want to watch matches in Toronto (YYZ) or Vancouver (YVR), it is essential to check well in advance whether they need a Canadian visa. The process can take between 2 and 8 weeks for most Latin American countries, but can be much longer depending on consular workload. Applying for the Canadian visa before mid-2025 is recommended."
+          }
+        },
+        {
+          "title": {
+            "es": "Documentos esenciales para el viaje al Mundial 2026",
+            "en": "Essential Documents for Traveling to the 2026 World Cup"
+          },
+          "content": {
+            "es": "Ademas de tu visa o ESTA/eTA correspondiente, estos son los documentos que todo fan debe llevar al Mundial 2026:\n\nPasaporte vigente con minimo 6 meses de validez despues de tu fecha de regreso. Muchos agentes migratorios rechazan pasaportes con menos de 6 meses de vigencia aunque tecnicamente sean validos.\n\nReservacion de hotel confirmada (con numero de confirmacion). Los agentes migratorios frecuentemente piden demostrar donde te hospedaras. Lleva la confirmacion impresa o en tu telefono.\n\nBoleto de regreso o comprobante de salida del pais. Debes poder demostrar que tienes intencion de salir del pais sede antes de que venza tu permiso de estadia.\n\nPrueba de solvencia economica: extracto bancario de los ultimos 3 meses mostrando fondos suficientes para tu estadia, tarjeta de credito internacional con limite visible.\n\nSeguro medico de viaje: aunque no es obligatorio para la entrada, es altamente recomendado dado los costos medicos en Estados Unidos (una visita a urgencias puede costar 1,000-5,000 USD sin seguro).",
+            "en": "In addition to your visa or ESTA/eTA, these are the documents every fan should carry to the 2026 World Cup:\n\nValid passport with at least 6 months of validity after your return date. Many immigration officers reject passports with less than 6 months of validity even if technically still valid.\n\nConfirmed hotel reservation (with confirmation number). Immigration officers frequently ask to prove where you'll be staying. Carry the confirmation printed or on your phone.\n\nReturn ticket or proof of departure from the country. You must be able to demonstrate that you intend to leave the host country before your permitted stay expires.\n\nProof of financial solvency: bank statement from the last 3 months showing sufficient funds for your stay, international credit card with visible limit.\n\nTravel medical insurance: while not mandatory for entry, it is highly recommended given medical costs in the United States (an emergency room visit can cost $1,000-$5,000 USD without insurance)."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "Necesito visa para ir al Mundial en USA si soy de Latinoamerica?",
+            "en": "Do I need a visa to attend the World Cup in the USA if I'm from Latin America?"
+          },
+          "answer": {
+            "es": "Si, la mayoria de ciudadanos latinoamericanos necesitan visa B1/B2 para entrar a Estados Unidos. Las excepciones son ciudadanos con doble nacionalidad de paises del Programa de Exencion de Visa, que pueden usar ESTA. Comienza el tramite con al menos 6 meses de anticipacion.",
+            "en": "Yes, most Latin American citizens need a B1/B2 visa to enter the United States. Exceptions are citizens with dual nationality from Visa Waiver Program countries, who can use ESTA. Start the process at least 6 months in advance."
+          }
+        },
+        {
+          "question": {
+            "es": "Que es el ESTA y cuanto cuesta para el Mundial 2026?",
+            "en": "What is ESTA and how much does it cost for the 2026 World Cup?"
+          },
+          "answer": {
+            "es": "ESTA (Electronic System for Travel Authorization) es la autorizacion electronica de viaje para ciudadanos de paises del Programa de Exencion de Visa (57 paises, principalmente Europa, Japon, Australia). Cuesta $21 USD, se tramita en esta.cbp.dhs.gov y es valido por 2 anos.",
+            "en": "ESTA (Electronic System for Travel Authorization) is the electronic travel authorization for citizens of Visa Waiver Program countries (57 countries, primarily Europe, Japan, Australia). It costs $21 USD, is processed at esta.cbp.dhs.gov, and is valid for 2 years."
+          }
+        },
+        {
+          "question": {
+            "es": "Los fans mexicanos necesitan visa para ver partidos en Mexico?",
+            "en": "Do Mexican fans need a visa to watch matches in Mexico?"
+          },
+          "answer": {
+            "es": "No, los ciudadanos mexicanos pueden obviamente ingresar y permanecer en Mexico sin restricciones. Para los partidos en suelo mexicano, los fans extranjeros de la mayoria de paises pueden entrar sin visa (solo con FMM o pasaporte segun el pais de origen).",
+            "en": "No, Mexican citizens can obviously enter and remain in Mexico without restrictions. For matches on Mexican soil, foreign fans from most countries can enter without a visa (only with FMM or passport depending on their country of origin)."
+          }
+        },
+        {
+          "question": {
+            "es": "Los fans latinoamericanos necesitan visa para ir a Canada al Mundial?",
+            "en": "Do Latin American fans need a visa to go to Canada for the World Cup?"
+          },
+          "answer": {
+            "es": "Si, la mayoria de ciudadanos latinoamericanos (incluyendo mexicanos) necesitan una visa de visitante completa para Canada, ya que no son elegibles para eTA. El tramite cuesta CAD $100 y puede tardar de 2 a 8 semanas. Solicita con varios meses de anticipacion.",
+            "en": "Yes, most Latin American citizens (including Mexicans) need a full visitor visa for Canada, as they are not eligible for eTA. The process costs CAD $100 and can take 2 to 8 weeks. Apply several months in advance."
+          }
+        },
+        {
+          "question": {
+            "es": "Puedo tramitar la visa de USA y Canada al mismo tiempo?",
+            "en": "Can I apply for US and Canadian visas at the same time?"
+          },
+          "answer": {
+            "es": "Si, son tramites independientes y puedes solicitarlos en paralelo. De hecho, tener visa americana vigente a veces facilita la aprobacion de visa canadiense, ya que demuestra que ya pasaste por un proceso riguroso de verificacion. Empieza antes con la visa americana ya que suele tardar mas.",
+            "en": "Yes, they are independent processes and you can apply for both in parallel. In fact, having a valid US visa sometimes facilitates Canadian visa approval, as it demonstrates you've already gone through a rigorous verification process. Start earlier with the US visa as it typically takes longer."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "lastUpdated": "2026-03-26",
+      "sources": [
+        { "name": "ESTA - CBP.DHS.GOV", "url": "https://esta.cbp.dhs.gov" },
+        { "name": "Canada eTA - IRCC", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html" },
+        { "name": "Consulado de Mexico en USA - SRE", "url": "https://consulmex.sre.gob.mx" }
+      ]
+    }
+  ]
+}

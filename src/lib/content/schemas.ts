@@ -146,3 +146,47 @@ export type TeamContent = z.infer<typeof TeamContentSchema>
 export type TeamPlayer = z.infer<typeof TeamPlayerSchema>
 export type TeamFAQ = z.infer<typeof TeamFAQSchema>
 export type Locale = 'es' | 'en'
+
+// ---------------------------------------------------------------------------
+// Guide page schemas -- used by travel guides and fan experience guides (Phase 8)
+// ---------------------------------------------------------------------------
+
+export const GuideSectionSchema = z.object({
+  title: LocalizedText,
+  content: LocalizedText, // paragraphs separated by \n\n, HTML-free
+})
+
+export const GuideFAQSchema = z.object({
+  question: LocalizedText,
+  answer: LocalizedText,
+})
+
+export const GuideAffiliateCTASchema = z.object({
+  label: LocalizedText,       // button/link label
+  url: z.string().url(),      // full affiliate URL
+  partner: z.string().min(1), // partner id for GA4 (e.g. 'booking')
+  disclosure: LocalizedText,  // FTC disclosure text
+})
+
+export const GuidePageSchema = z.object({
+  id: z.string().min(1),
+  slugs: LocalizedSlug,
+  category: z.enum(['viajes', 'fan']),  // determines URL prefix
+  title: LocalizedText,
+  description: LocalizedText,  // 120-155 chars, used as meta description
+  overview: LocalizedText,     // first 200 words -- direct answer to primary query
+  sections: z.array(GuideSectionSchema).min(1),
+  faq: z.array(GuideFAQSchema).min(3).max(7),
+  affiliateCTAs: z.array(GuideAffiliateCTASchema).default([]),
+  lastUpdated: z.string(),  // ISO date e.g. "2026-03-26"
+  sources: z.array(z.object({ name: z.string(), url: z.string().url() })).min(1),
+})
+
+export const GuidesFileSchema = z.object({
+  guides: z.array(GuidePageSchema).min(1),
+})
+
+export type GuidePage = z.infer<typeof GuidePageSchema>
+export type GuideSection = z.infer<typeof GuideSectionSchema>
+export type GuideFAQ = z.infer<typeof GuideFAQSchema>
+export type GuideAffiliateCTA = z.infer<typeof GuideAffiliateCTASchema>
