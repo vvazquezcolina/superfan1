@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { buildPageMetadata } from '@/lib/seo'
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 
 export async function generateStaticParams() {
   return [{ lang: 'es' }]
@@ -23,8 +25,21 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function DivulgacionPage() {
+  const breadcrumbs = generateBreadcrumbs('/es/divulgacion', 'es', {
+    home: 'Inicio',
+    divulgacion: 'Divulgación',
+  }, 'Divulgación de Afiliados')
+
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
+
   return (
-    <article className="mx-auto max-w-prose space-y-10 py-8">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <Breadcrumbs items={breadcrumbs} />
+      <article className="mx-auto max-w-prose space-y-10 py-8">
       <header>
         <h1 className="text-3xl font-bold md:text-4xl">
           Divulgacion de Afiliados
@@ -147,5 +162,6 @@ export default function DivulgacionPage() {
         </p>
       </section>
     </article>
+    </>
   )
 }
