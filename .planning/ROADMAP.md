@@ -141,7 +141,7 @@ Plans:
 Plans:
 - [x] 07-01-PLAN.md -- Extend TeamSchema, build team components (TeamHero/Section/FAQ), team index page, 12 priority teams (CONCACAF + top CONMEBOL)
 - [x] 07-02-PLAN.md -- 12 European powerhouses (Spain, France, Germany, England, Portugal, Netherlands, Belgium, Italy, Croatia, Denmark, Switzerland, Austria)
-- [ ] 07-03-PLAN.md -- 12 more teams (Serbia, Scotland, Poland, Turkey + 8 CAF: Morocco, Senegal, Nigeria, Cameroon, Tunisia, Algeria, Egypt, Ivory Coast)
+- [x] 07-03-PLAN.md -- 12 more teams (Serbia, Scotland, Poland, Turkey + 8 CAF: Morocco, Senegal, Nigeria, Cameroon, Tunisia, Algeria, Egypt, Ivory Coast)
 - [ ] 07-04-PLAN.md -- Final 12 teams (Ecuador, Paraguay, South Africa + all AFC 8 + New Zealand) + full build validation
 **UI hint**: yes
 
