@@ -8,66 +8,102 @@ import {
   getMatchDayGuides,
   getListicles,
 } from '@/lib/content/programmatic'
-import { locales, hreflangMap, pathTranslations } from '@/lib/i18n'
+import { hreflangMap } from '@/lib/i18n'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
 /**
- * Build the hreflang alternates object for a given section and per-locale slugs.
- * New locales (pt, fr, de, ar) use the es slug since content only has es/en slugs.
+ * All 6 locales supported by the site.
  */
-function buildSitemapAlternates(
-  section: string,
-  slugs: Record<string, string>,
+const locales = ['es', 'en', 'pt', 'fr', 'de', 'ar'] as const
+type Locale = (typeof locales)[number]
+
+/**
+ * Locales that have ONLY Spanish-named filesystem paths.
+ * en is excluded because it has rewrites (cities, stadiums, teams).
+ */
+const extraLocales: Locale[] = ['pt', 'fr', 'de', 'ar']
+
+/**
+ * Returns the actual URL path segment for the given section and locale.
+ *
+ * Rules:
+ * - es  → always the Spanish segment (ciudades, estadios, equipos)
+ * - en  → English segment (cities, stadiums, teams) — works via Next.js rewrites
+ * - pt/fr/de/ar → always the Spanish segment (actual filesystem path, no rewrites
+ *                 for these translated segments exist that are canonical)
+ */
+function getPathSegment(section: 'ciudades' | 'estadios' | 'equipos', locale: Locale): string {
+  if (locale === 'en') {
+    const enSegments = { ciudades: 'cities', estadios: 'stadiums', equipos: 'teams' }
+    return enSegments[section]
+  }
+  // es, pt, fr, de, ar — all use the Spanish filesystem segment
+  return section
+}
+
+/**
+ * Build hreflang alternates for city/stadium/team detail pages.
+ *
+ * - es  → /es/{section}/{esSlug}
+ * - en  → /en/{enSegment}/{enSlug}
+ * - pt/fr/de/ar → /{locale}/{section}/{esSlug}  (Spanish filesystem path)
+ */
+function buildDetailAlternates(
+  section: 'ciudades' | 'estadios' | 'equipos',
+  esSlug: string,
+  enSlug: string,
 ): Record<string, string> {
   const languages: Record<string, string> = {}
   for (const locale of locales) {
     const hreflang = hreflangMap[locale]
-    const pathSegment = pathTranslations[section]?.[locale] ?? section
-    const slug = slugs[locale] ?? slugs.es
-    languages[hreflang] = `${SITE_URL}/${locale}/${pathSegment}/${slug}`
+    const seg = getPathSegment(section, locale)
+    const slug = locale === 'en' ? enSlug : esSlug
+    languages[hreflang] = `${SITE_URL}/${locale}/${seg}/${slug}`
   }
+  languages['x-default'] = `${SITE_URL}/es/${section}/${esSlug}`
   return languages
 }
 
 /**
- * Build hreflang alternates for index pages (no slug).
+ * Build hreflang alternates for city/stadium/team index pages.
+ *
+ * - es  → /es/{section}
+ * - en  → /en/{enSegment}
+ * - pt/fr/de/ar → /{locale}/{section}  (Spanish filesystem path)
  */
-function buildSitemapIndexAlternates(section: string): Record<string, string> {
+function buildIndexAlternates(
+  section: 'ciudades' | 'estadios' | 'equipos',
+): Record<string, string> {
   const languages: Record<string, string> = {}
   for (const locale of locales) {
     const hreflang = hreflangMap[locale]
-    const pathSegment = pathTranslations[section]?.[locale] ?? section
-    languages[hreflang] = `${SITE_URL}/${locale}/${pathSegment}`
+    const seg = getPathSegment(section, locale)
+    languages[hreflang] = `${SITE_URL}/${locale}/${seg}`
   }
+  languages['x-default'] = `${SITE_URL}/es/${section}`
   return languages
 }
 
 /**
- * Build hreflang alternates for static pages that use the same path for all locales
- * (programmatic pages where the filesystem path is the Spanish name).
+ * Build hreflang alternates for programmatic pages that only exist for es + en.
+ * (comparar, como-llegar, dia-de-partido, mejores)
  */
-function buildProgrammaticAlternates(
-  fsPath: string,
-  slug: string,
-): Record<string, string> {
+function buildEsEnAlternates(fsPath: string, esSlug: string, enSlug?: string): Record<string, string> {
   return {
-    'es-419': `${SITE_URL}/es/${fsPath}/${slug}`,
-    en: `${SITE_URL}/en/${fsPath}/${slug}`,
-    'x-default': `${SITE_URL}/es/${fsPath}/${slug}`,
+    'es-419': `${SITE_URL}/es/${fsPath}/${esSlug}`,
+    en: `${SITE_URL}/en/${fsPath}/${enSlug ?? esSlug}`,
+    'x-default': `${SITE_URL}/es/${fsPath}/${esSlug}`,
   }
 }
 
 /**
- * Build hreflang alternates for static index pages using the same filesystem path for all locales.
+ * Build hreflang alternates for static es+en pages using identical paths.
  */
-function buildStaticIndexAlternates(
-  esPath: string,
-  enPath: string,
-): Record<string, string> {
+function buildStaticEsEnAlternates(esPath: string, enPath?: string): Record<string, string> {
   return {
     'es-419': `${SITE_URL}/es/${esPath}`,
-    en: `${SITE_URL}/en/${enPath}`,
+    en: `${SITE_URL}/en/${enPath ?? esPath}`,
     'x-default': `${SITE_URL}/es/${esPath}`,
   }
 }
@@ -83,11 +119,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const entries: MetadataRoute.Sitemap = []
 
-  // Homepage -- all 6 locales, highest priority
+  // ─── Homepages — all 6 locales ─────────────────────────────────────────────
   const homeAlternates: Record<string, string> = {}
   for (const locale of locales) {
     homeAlternates[hreflangMap[locale]] = `${SITE_URL}/${locale}`
   }
+  homeAlternates['x-default'] = `${SITE_URL}/es`
 
   for (const locale of locales) {
     entries.push({
@@ -99,94 +136,180 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // City index pages -- all 6 locales
-  const cityIndexAlternates = buildSitemapIndexAlternates('ciudades')
-  for (const locale of locales) {
-    const pathSegment = pathTranslations.ciudades[locale]
+  // ─── City index pages — all 6 locales ──────────────────────────────────────
+  const cityIndexAlts = buildIndexAlternates('ciudades')
+  // es + en
+  entries.push({
+    url: `${SITE_URL}/es/ciudades`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.9,
+    alternates: { languages: cityIndexAlts },
+  })
+  entries.push({
+    url: `${SITE_URL}/en/cities`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.9,
+    alternates: { languages: cityIndexAlts },
+  })
+  // pt, fr, de, ar → Spanish filesystem path
+  for (const locale of extraLocales) {
     entries.push({
-      url: `${SITE_URL}/${locale}/${pathSegment}`,
+      url: `${SITE_URL}/${locale}/ciudades`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
-      alternates: { languages: cityIndexAlternates },
+      alternates: { languages: cityIndexAlts },
     })
   }
 
-  // City pages -- all 6 locales
+  // ─── City detail pages — all 6 locales ─────────────────────────────────────
   for (const city of cities) {
-    const cityAlternates = buildSitemapAlternates('ciudades', city.slugs)
-    for (const locale of locales) {
-      const pathSegment = pathTranslations.ciudades[locale]
-      const slug = city.slugs[locale as keyof typeof city.slugs] ?? city.slugs.es
+    const esSlug = city.slugs.es
+    const enSlug = city.slugs.en ?? city.slugs.es
+    const cityAlts = buildDetailAlternates('ciudades', esSlug, enSlug)
+
+    entries.push({
+      url: `${SITE_URL}/es/ciudades/${esSlug}`,
+      lastModified: new Date(city.lastUpdated),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      alternates: { languages: cityAlts },
+    })
+    entries.push({
+      url: `${SITE_URL}/en/cities/${enSlug}`,
+      lastModified: new Date(city.lastUpdated),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      alternates: { languages: cityAlts },
+    })
+    for (const locale of extraLocales) {
       entries.push({
-        url: `${SITE_URL}/${locale}/${pathSegment}/${slug}`,
+        url: `${SITE_URL}/${locale}/ciudades/${esSlug}`,
         lastModified: new Date(city.lastUpdated),
         changeFrequency: 'weekly',
         priority: 0.9,
-        alternates: { languages: cityAlternates },
+        alternates: { languages: cityAlts },
       })
     }
   }
 
-  // Stadium index pages -- all 6 locales
-  const stadiumIndexAlternates = buildSitemapIndexAlternates('estadios')
-  for (const locale of locales) {
-    const pathSegment = pathTranslations.estadios[locale]
+  // ─── Stadium index pages — all 6 locales ───────────────────────────────────
+  const stadiumIndexAlts = buildIndexAlternates('estadios')
+  entries.push({
+    url: `${SITE_URL}/es/estadios`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: { languages: stadiumIndexAlts },
+  })
+  entries.push({
+    url: `${SITE_URL}/en/stadiums`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: { languages: stadiumIndexAlts },
+  })
+  for (const locale of extraLocales) {
     entries.push({
-      url: `${SITE_URL}/${locale}/${pathSegment}`,
+      url: `${SITE_URL}/${locale}/estadios`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
-      alternates: { languages: stadiumIndexAlternates },
+      alternates: { languages: stadiumIndexAlts },
     })
   }
 
-  // Stadium pages -- all 6 locales
+  // ─── Stadium detail pages — all 6 locales ──────────────────────────────────
   for (const stadium of stadiums) {
-    const stadiumAlternates = buildSitemapAlternates('estadios', stadium.slugs)
-    for (const locale of locales) {
-      const pathSegment = pathTranslations.estadios[locale]
-      const slug = stadium.slugs[locale as keyof typeof stadium.slugs] ?? stadium.slugs.es
+    const esSlug = stadium.slugs.es
+    const enSlug = stadium.slugs.en ?? stadium.slugs.es
+    const stadiumAlts = buildDetailAlternates('estadios', esSlug, enSlug)
+
+    entries.push({
+      url: `${SITE_URL}/es/estadios/${esSlug}`,
+      lastModified: new Date(stadium.lastUpdated),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: { languages: stadiumAlts },
+    })
+    entries.push({
+      url: `${SITE_URL}/en/stadiums/${enSlug}`,
+      lastModified: new Date(stadium.lastUpdated),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: { languages: stadiumAlts },
+    })
+    for (const locale of extraLocales) {
       entries.push({
-        url: `${SITE_URL}/${locale}/${pathSegment}/${slug}`,
+        url: `${SITE_URL}/${locale}/estadios/${esSlug}`,
         lastModified: new Date(stadium.lastUpdated),
         changeFrequency: 'weekly',
         priority: 0.8,
-        alternates: { languages: stadiumAlternates },
+        alternates: { languages: stadiumAlts },
       })
     }
   }
 
-  // Team index pages -- all 6 locales
-  const teamIndexAlternates = buildSitemapIndexAlternates('equipos')
-  for (const locale of locales) {
-    const pathSegment = pathTranslations.equipos[locale]
+  // ─── Team index pages — all 6 locales ──────────────────────────────────────
+  const teamIndexAlts = buildIndexAlternates('equipos')
+  entries.push({
+    url: `${SITE_URL}/es/equipos`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: { languages: teamIndexAlts },
+  })
+  entries.push({
+    url: `${SITE_URL}/en/teams`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: { languages: teamIndexAlts },
+  })
+  for (const locale of extraLocales) {
     entries.push({
-      url: `${SITE_URL}/${locale}/${pathSegment}`,
+      url: `${SITE_URL}/${locale}/equipos`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
-      alternates: { languages: teamIndexAlternates },
+      alternates: { languages: teamIndexAlts },
     })
   }
 
-  // Team pages -- all 6 locales
+  // ─── Team detail pages — all 6 locales ─────────────────────────────────────
   for (const team of teams) {
-    const teamAlternates = buildSitemapAlternates('equipos', team.slugs)
-    for (const locale of locales) {
-      const pathSegment = pathTranslations.equipos[locale]
-      const slug = team.slugs[locale as keyof typeof team.slugs] ?? team.slugs.es
+    const esSlug = team.slugs.es
+    const enSlug = team.slugs.en ?? team.slugs.es
+    const teamAlts = buildDetailAlternates('equipos', esSlug, enSlug)
+
+    entries.push({
+      url: `${SITE_URL}/es/equipos/${esSlug}`,
+      lastModified: new Date(team.lastUpdated),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: { languages: teamAlts },
+    })
+    entries.push({
+      url: `${SITE_URL}/en/teams/${enSlug}`,
+      lastModified: new Date(team.lastUpdated),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: { languages: teamAlts },
+    })
+    for (const locale of extraLocales) {
       entries.push({
-        url: `${SITE_URL}/${locale}/${pathSegment}/${slug}`,
+        url: `${SITE_URL}/${locale}/equipos/${esSlug}`,
         lastModified: new Date(team.lastUpdated),
         changeFrequency: 'monthly',
         priority: 0.7,
-        alternates: { languages: teamAlternates },
+        alternates: { languages: teamAlts },
       })
     }
   }
 
-  // Travel subpages (viajes/*) -- es and en only
+  // ─── Travel subpages (viajes/*) — es and en only ────────────────────────────
   const travelSubpages = [
     { path: 'viajes/vuelos', priority: 0.7 },
     { path: 'viajes/vuelos/desde-mexico', priority: 0.6 },
@@ -197,7 +320,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: 'viajes/visa', priority: 0.7 },
   ]
   for (const { path, priority } of travelSubpages) {
-    const alts = buildStaticIndexAlternates(path, path)
+    const alts = buildStaticEsEnAlternates(path)
     entries.push({
       url: `${SITE_URL}/es/${path}`,
       lastModified: new Date(),
@@ -214,13 +337,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // Fan guide pages (fan/*) -- es and en only
+  // ─── Fan guide pages (fan/*) — es and en only ───────────────────────────────
   const fanSubpages = [
     { path: 'fan/entradas', priority: 0.7 },
     { path: 'fan/seguridad', priority: 0.7 },
   ]
   for (const { path, priority } of fanSubpages) {
-    const alts = buildStaticIndexAlternates(path, path)
+    const alts = buildStaticEsEnAlternates(path)
     entries.push({
       url: `${SITE_URL}/es/${path}`,
       lastModified: new Date(),
@@ -237,7 +360,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // Tools index and subpages (herramientas/*) -- es and en only
+  // ─── Tools pages (herramientas/*) — es and en only ─────────────────────────
   const toolsPages = [
     { path: 'herramientas', priority: 0.7 },
     { path: 'herramientas/presupuesto', priority: 0.6 },
@@ -247,7 +370,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: 'herramientas/lista-equipaje', priority: 0.6 },
   ]
   for (const { path, priority } of toolsPages) {
-    const alts = buildStaticIndexAlternates(path, path)
+    const alts = buildStaticEsEnAlternates(path)
     entries.push({
       url: `${SITE_URL}/es/${path}`,
       lastModified: new Date(),
@@ -264,8 +387,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // Calendar page (calendario) -- es and en only
-  const calendarAlts = buildStaticIndexAlternates('calendario', 'calendario')
+  // ─── Calendar page (calendario) — es and en only ───────────────────────────
+  const calendarAlts = buildStaticEsEnAlternates('calendario')
   entries.push({
     url: `${SITE_URL}/es/calendario`,
     lastModified: new Date(),
@@ -281,95 +404,114 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: calendarAlts },
   })
 
-  // Legal/about pages -- all 6 locales
-  const legalSections = ['acerca', 'privacidad', 'divulgacion']
-  for (const section of legalSections) {
-    const legalAlternates = buildSitemapIndexAlternates(section)
-    for (const locale of locales) {
-      const pathSegment = pathTranslations[section]?.[locale] ?? section
-      entries.push({
-        url: `${SITE_URL}/${locale}/${pathSegment}`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.3,
-        alternates: { languages: legalAlternates },
-      })
-    }
+  // ─── Legal pages ────────────────────────────────────────────────────────────
+  // Spanish legal pages — es only
+  for (const path of ['acerca', 'privacidad', 'divulgacion']) {
+    entries.push({
+      url: `${SITE_URL}/es/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+      alternates: {
+        languages: {
+          'es-419': `${SITE_URL}/es/${path}`,
+          'x-default': `${SITE_URL}/es/${path}`,
+        },
+      },
+    })
+  }
+  // English legal pages — en only
+  for (const path of ['about', 'privacy', 'disclosure']) {
+    entries.push({
+      url: `${SITE_URL}/en/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+      alternates: {
+        languages: {
+          en: `${SITE_URL}/en/${path}`,
+        },
+      },
+    })
   }
 
-  // City comparison pages -- use ACTUAL filesystem paths (Spanish names for all locales)
+  // ─── City comparison pages (comparar) — es and en only ─────────────────────
   for (const comparison of comparisons) {
-    const comparisonAlternates = buildProgrammaticAlternates('comparar', comparison.slugs.es)
+    const esSlug = comparison.slugs.es
+    const enSlug = comparison.slugs.en ?? comparison.slugs.es
+    const alts = buildEsEnAlternates('comparar', esSlug, enSlug)
     entries.push({
-      url: `${SITE_URL}/es/comparar/${comparison.slugs.es}`,
+      url: `${SITE_URL}/es/comparar/${esSlug}`,
       lastModified: new Date(comparison.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
-      alternates: { languages: comparisonAlternates },
+      alternates: { languages: alts },
     })
     entries.push({
-      url: `${SITE_URL}/en/comparar/${comparison.slugs.es}`,
+      url: `${SITE_URL}/en/comparar/${enSlug}`,
       lastModified: new Date(comparison.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
-      alternates: { languages: comparisonAlternates },
+      alternates: { languages: alts },
     })
   }
 
-  // How-to-get (travel route) pages -- use ACTUAL filesystem paths (Spanish names)
+  // ─── How-to-get pages (como-llegar) — es and en only ───────────────────────
   for (const route of routes) {
-    const routeAlternates = buildProgrammaticAlternates('como-llegar', route.slugs.es)
+    const esSlug = route.slugs.es
+    const enSlug = route.slugs.en ?? route.slugs.es
+    const alts = buildEsEnAlternates('como-llegar', esSlug, enSlug)
     entries.push({
-      url: `${SITE_URL}/es/como-llegar/${route.slugs.es}`,
+      url: `${SITE_URL}/es/como-llegar/${esSlug}`,
       lastModified: new Date(route.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
-      alternates: { languages: routeAlternates },
+      alternates: { languages: alts },
     })
     entries.push({
-      url: `${SITE_URL}/en/como-llegar/${route.slugs.es}`,
+      url: `${SITE_URL}/en/como-llegar/${enSlug}`,
       lastModified: new Date(route.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
-      alternates: { languages: routeAlternates },
+      alternates: { languages: alts },
     })
   }
 
-  // Match day guide pages -- use ACTUAL filesystem paths (Spanish names)
+  // ─── Match day guide pages (dia-de-partido) — es and en only ───────────────
   for (const guide of matchDayGuides) {
-    const guideAlternates = buildProgrammaticAlternates('dia-de-partido', guide.slug)
+    const alts = buildEsEnAlternates('dia-de-partido', guide.slug)
     entries.push({
       url: `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
       lastModified: new Date(guide.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
-      alternates: { languages: guideAlternates },
+      alternates: { languages: alts },
     })
     entries.push({
       url: `${SITE_URL}/en/dia-de-partido/${guide.slug}`,
       lastModified: new Date(guide.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
-      alternates: { languages: guideAlternates },
+      alternates: { languages: alts },
     })
   }
 
-  // Best-of listicle pages -- use ACTUAL filesystem paths (Spanish names)
+  // ─── Best-of listicle pages (mejores) — es and en only ─────────────────────
   for (const listicle of listicles) {
-    const listicleAlternates = buildProgrammaticAlternates('mejores', listicle.slug)
+    const alts = buildEsEnAlternates('mejores', listicle.slug)
     entries.push({
       url: `${SITE_URL}/es/mejores/${listicle.slug}`,
       lastModified: new Date(listicle.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.7,
-      alternates: { languages: listicleAlternates },
+      alternates: { languages: alts },
     })
     entries.push({
       url: `${SITE_URL}/en/mejores/${listicle.slug}`,
       lastModified: new Date(listicle.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.7,
-      alternates: { languages: listicleAlternates },
+      alternates: { languages: alts },
     })
   }
 
