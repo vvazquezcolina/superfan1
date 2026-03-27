@@ -81,10 +81,16 @@
   "affiliate": {
     "hotelsNear": "Hotels near",
     "searchHotels": "Search hotels in",
+    "searchFlights": "Search flights to",
+    "flightsTo": "Flights to",
     "fromPerNight": "from",
     "bookNow": "Book now",
     "disclosure": "Affiliate link - we may earn a commission",
-    "poweredBy": "Results by Booking.com"
+    "disclosureTravelpayouts": "Affiliate link (Travelpayouts) - we may earn a commission if you book through this link, at no additional cost to you.",
+    "poweredBy": "Results by Booking.com",
+    "poweredByTravelpayouts": "Results via Travelpayouts (Booking.com / Agoda)",
+    "poweredByHotels": "Results via Travelpayouts (Booking.com / Agoda)",
+    "poweredByFlights": "Results via Travelpayouts (Kiwi.com / multiple airlines)"
   },
   "city": {
     "gettingThere": "Getting There",

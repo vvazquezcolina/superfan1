@@ -11,6 +11,29 @@
         "en": "Affiliate link - we may earn a commission if you book through this link, at no additional cost to you."
       },
       "active": true
+    },
+    {
+      "id": "travelpayouts",
+      "name": "Travelpayouts",
+      "baseUrl": "https://tp.media",
+      "searchUrlTemplate": "",
+      "aid": "9a350c3ebd492165ade7135359165af9",
+      "token": "9a350c3ebd492165ade7135359165af9",
+      "marker": "9a350c3ebd492165ade7135359165af9",
+      "widgetConfig": {
+        "hotelWidgetId": "35820",
+        "flightWidgetId": "26500",
+        "currency": "usd",
+        "locale": {
+          "es": "es",
+          "en": "en"
+        }
+      },
+      "disclosure": {
+        "es": "Enlace de afiliado (Travelpayouts) - podemos recibir una comision si reservas a traves de este enlace, sin costo adicional para ti.",
+        "en": "Affiliate link (Travelpayouts) - we may earn a commission if you book through this link, at no additional cost to you."
+      },
+      "active": true
     }
   ]
 }
