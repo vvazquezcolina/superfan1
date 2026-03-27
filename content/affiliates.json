@@ -21,19 +21,20 @@
       "token": "9a350c3ebd492165ade7135359165af9",
       "marker": "233922",
       "widgetConfig": {
-        "hotelWidgetId": "35820",
-        "flightWidgetId": "26500",
+        "hotelWidgetId": "4132",
+        "flightWidgetId": "4131",
         "currency": "usd",
         "locale": {
           "es": "es",
           "en": "en"
-        }
+        },
+        "embedType": "script"
       },
       "disclosure": {
         "es": "Enlace de afiliado (Travelpayouts) - podemos recibir una comision si reservas a traves de este enlace, sin costo adicional para ti.",
         "en": "Affiliate link (Travelpayouts) - we may earn a commission if you book through this link, at no additional cost to you."
       },
-      "active": true
+      "active": false
     }
   ]
 }
