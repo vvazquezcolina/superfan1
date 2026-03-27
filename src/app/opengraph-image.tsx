@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { OG_COLORS, OG_SIZE } from '@/lib/og-image'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 
 export const alt = 'SuperFan Mundial 2026 — Guía Completa de las 16 Sedes | Complete 16-City Host Guide'
 export const size = OG_SIZE

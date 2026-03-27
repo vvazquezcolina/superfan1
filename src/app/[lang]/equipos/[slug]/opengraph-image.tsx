@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { getTeam } from '@/lib/content/teams'
 import { OG_COLORS, OG_SIZE, CONFEDERATION_COLORS } from '@/lib/og-image'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 export const size = OG_SIZE
 export const contentType = 'image/png'
 

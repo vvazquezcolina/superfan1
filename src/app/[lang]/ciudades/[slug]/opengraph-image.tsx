@@ -3,7 +3,7 @@ import { getCity } from '@/lib/content/cities'
 import { getStadiumById } from '@/lib/content/stadiums'
 import { OG_COLORS, OG_SIZE, COUNTRY_FLAGS, COUNTRY_NAMES_EN, COUNTRY_NAMES_ES } from '@/lib/og-image'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 export const size = OG_SIZE
 export const contentType = 'image/png'
 
