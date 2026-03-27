@@ -85,7 +85,6 @@ export function buildTravelpayoutsHotelWidgetSrc(lang: Locale): string {
 
   return (
     `https://tp.media/content?currency=${currency}` +
-    `&trs=${marker}` +
     `&shmarker=${marker}` +
     `&locale=${locale}` +
     `&with_fallback=1` +
@@ -113,7 +112,6 @@ export function buildTravelpayoutsFlightWidgetSrc(lang: Locale): string {
 
   return (
     `https://tp.media/content?currency=${currency}` +
-    `&trs=${marker}` +
     `&shmarker=${marker}` +
     `&locale=${locale}` +
     `&with_fallback=1` +
