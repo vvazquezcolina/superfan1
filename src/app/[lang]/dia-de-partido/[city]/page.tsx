@@ -9,7 +9,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildFAQPageJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/lib/content/schemas'
-import { toContentLocale } from '@/lib/content/cities'
+import { toContentLocale } from '@/lib/content/locale'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 

@@ -8,7 +8,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { Team, Locale } from '@/lib/content/schemas'
-import { toContentLocale } from '@/lib/content/cities'
+import { toContentLocale } from '@/lib/content/locale'
 
 export async function generateStaticParams() {
   return [

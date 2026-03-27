@@ -12,7 +12,7 @@ import { StadiumHero } from '@/components/stadium/StadiumHero'
 import { StadiumSection } from '@/components/stadium/StadiumSection'
 import { StadiumFAQ } from '@/components/stadium/StadiumFAQ'
 import type { Locale } from '@/lib/content/schemas'
-import { toContentLocale } from '@/lib/content/cities'
+import { toContentLocale } from '@/lib/content/locale'
 
 export async function generateStaticParams() {
   return getStadiumSlugs().map(({ slug, lang }) => ({ lang, slug }))

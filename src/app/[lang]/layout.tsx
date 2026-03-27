@@ -56,7 +56,10 @@ export default async function LangLayout({
   if (!hasLocale(lang)) notFound()
   const locale = lang as Locale
   const dict = await getDictionary(locale)
-  const orgJsonLd = buildOrganizationJsonLd(locale as import('@/lib/content/schemas').Locale)
+  // buildOrganizationJsonLd only needs to distinguish es vs non-es for its description
+  const contentLocale: import('@/lib/content/schemas').Locale =
+    locale === 'es' ? 'es' : 'en'
+  const orgJsonLd = buildOrganizationJsonLd(contentLocale)
 
   // Use BCP-47 hreflang code as the HTML lang attribute value
   const htmlLang = hreflangMap[locale]

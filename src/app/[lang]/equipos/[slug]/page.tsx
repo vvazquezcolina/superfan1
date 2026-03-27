@@ -11,7 +11,7 @@ import { TeamHero } from '@/components/team/TeamHero'
 import { TeamSection } from '@/components/team/TeamSection'
 import { TeamFAQ } from '@/components/team/TeamFAQ'
 import type { Locale, TeamPlayer } from '@/lib/content/schemas'
-import { toContentLocale } from '@/lib/content/cities'
+import { toContentLocale } from '@/lib/content/locale'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 

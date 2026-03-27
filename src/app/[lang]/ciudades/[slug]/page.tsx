@@ -14,7 +14,7 @@ import { CitySection } from '@/components/city/CitySection'
 import { CityFAQ } from '@/components/city/CityFAQ'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import type { Locale } from '@/lib/content/schemas'
-import { toContentLocale } from '@/lib/content/cities'
+import { toContentLocale } from '@/lib/content/locale'
 
 export async function generateStaticParams() {
   return getCitySlugs().map(({ slug, lang }) => ({ lang, slug }))
