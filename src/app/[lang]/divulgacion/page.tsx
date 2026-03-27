@@ -139,10 +139,10 @@ export default function DivulgacionPage() {
           reportar un enlace que no esta debidamente marcado, puedes contactarnos
           en:{' '}
           <a
-            href="mailto:hola@superfaninfo.com"
+            href="mailto:info@superfaninfo.com"
             className="text-primary underline hover:text-primary/80"
           >
-            hola@superfaninfo.com
+            info@superfaninfo.com
           </a>
         </p>
       </section>

@@ -130,10 +130,10 @@ export default function DisclosurePage() {
           If you have questions about our affiliate policies or want to report a
           link that is not properly disclosed, you can contact us at:{' '}
           <a
-            href="mailto:hello@superfaninfo.com"
+            href="mailto:info@superfaninfo.com"
             className="text-primary underline hover:text-primary/80"
           >
-            hello@superfaninfo.com
+            info@superfaninfo.com
           </a>
         </p>
       </section>
