@@ -6,7 +6,7 @@ import { buildHomeAlternates } from '@/lib/i18n'
 import { getCities } from '@/lib/content/cities'
 import { getStadiums } from '@/lib/content/stadiums'
 import { getCityById } from '@/lib/content/cities'
-import { buildOrganizationJsonLd, buildItemListJsonLd, buildSiteNavigationJsonLd } from '@/lib/jsonld'
+import { buildOrganizationJsonLd, buildItemListJsonLd, buildSiteNavigationJsonLd, buildFAQPageJsonLd } from '@/lib/jsonld'
 import type { Locale, City, Stadium } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/cities'
 import { CountdownTimer } from '@/components/engagement/CountdownTimer'
@@ -164,6 +164,60 @@ export default async function HomePage({
   const itemListJsonLd = buildItemListJsonLd(itemListItems, contentLocale)
   const siteNavJsonLd = buildSiteNavigationJsonLd(contentLocale)
 
+  const homeFaqs = [
+    {
+      question: {
+        es: '¿Cuándo empieza el Mundial 2026?',
+        en: 'When does the 2026 World Cup start?',
+      },
+      answer: {
+        es: 'El Mundial FIFA 2026 comienza el 11 de junio de 2026 con el partido inaugural en la Ciudad de México.',
+        en: 'The FIFA World Cup 2026 starts on June 11, 2026 with the opening match in Mexico City.',
+      },
+    },
+    {
+      question: {
+        es: '¿Qué países organizan el Mundial 2026?',
+        en: 'Which countries host the 2026 World Cup?',
+      },
+      answer: {
+        es: 'El Mundial 2026 es organizado conjuntamente por México, Estados Unidos y Canadá. Es la primera Copa del Mundo con tres países anfitriones.',
+        en: 'The 2026 World Cup is jointly hosted by Mexico, the United States, and Canada. It is the first World Cup with three host nations.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cuántos equipos participan en el Mundial 2026?',
+        en: 'How many teams play in 2026?',
+      },
+      answer: {
+        es: 'El Mundial 2026 contará con 48 selecciones nacionales, ampliado desde los 32 equipos del formato anterior.',
+        en: 'The 2026 World Cup will feature 48 national teams, expanded from the previous 32-team format.',
+      },
+    },
+    {
+      question: {
+        es: '¿Cuántos estadios albergan partidos del Mundial 2026?',
+        en: 'How many stadiums host matches?',
+      },
+      answer: {
+        es: 'El Mundial 2026 se celebrará en 16 estadios distribuidos en 16 ciudades sede de México, Estados Unidos y Canadá.',
+        en: 'The 2026 World Cup will be held across 16 stadiums in 16 host cities spread across Mexico, the United States, and Canada.',
+      },
+    },
+    {
+      question: {
+        es: '¿Dónde es la final del Mundial 2026?',
+        en: 'Where is the World Cup 2026 final?',
+      },
+      answer: {
+        es: 'La final del Mundial FIFA 2026 se jugará en el MetLife Stadium en East Rutherford, Nueva Jersey, en el área metropolitana de Nueva York.',
+        en: 'The FIFA World Cup 2026 final will be played at MetLife Stadium in East Rutherford, New Jersey, in the New York/New Jersey metropolitan area.',
+      },
+    },
+  ]
+  const homeFaqJsonLd = buildFAQPageJsonLd(homeFaqs, contentLocale)
+
   return (
     <>
       <script
@@ -181,6 +235,10 @@ export default async function HomePage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(navItem) }}
         />
       ))}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
+      />
 
       <div className="mx-auto max-w-6xl py-6">
         {/* Hero Section */}
@@ -314,6 +372,21 @@ export default async function HomePage({
                 {dict.home.comingSoon}
               </span>
             </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="mt-12 mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold md:text-3xl">
+            {contentLocale === 'es' ? 'Preguntas frecuentes sobre el Mundial 2026' : 'Frequently Asked Questions About the 2026 World Cup'}
+          </h2>
+          <div className="mt-6 space-y-4">
+            {homeFaqs.map((faq, i) => (
+              <details key={i} className="rounded-lg border border-border p-4">
+                <summary className="cursor-pointer font-semibold">{faq.question[contentLocale]}</summary>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{faq.answer[contentLocale]}</p>
+              </details>
+            ))}
           </div>
         </section>
 
