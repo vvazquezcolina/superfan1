@@ -20,6 +20,15 @@ const SEGMENT_TO_DICT_KEY: Record<string, string> = {
   teams: 'teams',
   travel: 'travel',
   tools: 'tools',
+  // Programmatic section segments
+  comparar: 'compare',
+  compare: 'compare',
+  'como-llegar': 'howToGet',
+  'how-to-get': 'howToGet',
+  'dia-de-partido': 'matchDay',
+  'match-day': 'matchDay',
+  mejores: 'best',
+  best: 'best',
 }
 
 /**

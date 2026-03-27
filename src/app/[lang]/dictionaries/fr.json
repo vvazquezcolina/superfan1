@@ -52,7 +52,11 @@
     "stadiums": "Stades",
     "teams": "Equipes",
     "travel": "Voyages",
-    "tools": "Outils"
+    "tools": "Outils",
+    "compare": "Comparer les villes",
+    "howToGet": "Comment y aller",
+    "matchDay": "Jour de match",
+    "best": "Classements"
   },
   "notFound": {
     "title": "Page non trouvee",
