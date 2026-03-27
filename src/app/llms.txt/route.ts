@@ -42,11 +42,32 @@ ${stadiumLines}
 - 48 participating teams with group assignments and history
 - [Full team list](${SITE_URL}/es/equipos)
 
+### Match Schedule (Calendario)
+- [Calendario de Partidos](${SITE_URL}/es/calendario): Calendario completo del Mundial 2026 con todos los partidos de fase de grupos, octavos, cuartos, semifinales y final. Filtra por grupo, ciudad o fecha.
+
+### Travel Guides (Guias de Viaje)
+- [Guias de Viaje](${SITE_URL}/es/viajes): Hub de guias de viaje para el Mundial 2026
+- [Vuelos al Mundial 2026](${SITE_URL}/es/viajes/vuelos): Como llegar a las ciudades sede desde Latinoamerica, Europa y dentro de Norteamerica
+- [Vuelos desde Mexico](${SITE_URL}/es/viajes/vuelos/desde-mexico): Rutas aereas desde las principales ciudades de Mexico
+- [Vuelos desde USA](${SITE_URL}/es/viajes/vuelos/desde-usa): Conexiones domesticas e internacionales desde Estados Unidos
+- [Vuelos desde Europa](${SITE_URL}/es/viajes/vuelos/desde-europa): Vuelos transatlanticos desde Europa hacia las ciudades sede
+- [Hospedaje](${SITE_URL}/es/viajes/hospedaje): Guia de hoteles, Airbnb y alojamiento cerca de los estadios
+- [Transporte](${SITE_URL}/es/viajes/transporte): Metro, autobuses, taxis y movilidad en las ciudades sede
+- [Visa y Requisitos de Entrada](${SITE_URL}/es/viajes/visa): Requisitos de visa para ciudadanos latinoamericanos en Mexico, USA y Canada
+
+### Fan Guides (Guias para Aficionados)
+- [Entradas y Tickets](${SITE_URL}/es/fan/entradas): Como comprar entradas oficiales, precios, categorias y evitar fraudes
+- [Seguridad para Aficionados](${SITE_URL}/es/fan/seguridad): Consejos de seguridad, zonas seguras y contactos de emergencia en cada pais sede
+
+### Interactive Tools (Herramientas)
+- [Calculadora de Presupuesto](${SITE_URL}/es/herramientas/presupuesto): Calcula el costo total de tu viaje al Mundial 2026: vuelos, hospedaje, entradas, comida y transporte
+- [Mapa Interactivo](${SITE_URL}/es/herramientas/mapa): Mapa de las 16 ciudades sede con estadios, zonas de fans y puntos de interes
+
 ## Content Details
 - Languages: Spanish (primary), English
 - Updated: ${today}
-- Coverage: 16 host cities, 16 stadiums, 48 national teams
-- Topics: Travel, transport, food, safety, accommodation, cultural context
+- Coverage: 16 host cities, 16 stadiums, 48 national teams, full match schedule
+- Topics: Travel, transport, food, safety, accommodation, tickets, cultural context, interactive tools
 - Full content: ${SITE_URL}/llms-full.txt
 `
 

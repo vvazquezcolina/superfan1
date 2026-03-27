@@ -105,15 +105,45 @@ const nextConfig: NextConfig = {
 
   async rewrites() {
     return [
-      // English city routes -> Spanish filesystem paths
+      // English routes -> Spanish filesystem paths
       { source: '/en/cities', destination: '/en/ciudades' },
       { source: '/en/cities/:slug', destination: '/en/ciudades/:slug' },
-      // English stadium routes -> Spanish filesystem paths
       { source: '/en/stadiums', destination: '/en/estadios' },
       { source: '/en/stadiums/:slug', destination: '/en/estadios/:slug' },
-      // English team routes -> Spanish filesystem paths
       { source: '/en/teams', destination: '/en/equipos' },
       { source: '/en/teams/:slug', destination: '/en/equipos/:slug' },
+
+      // Portuguese routes -> Spanish filesystem paths
+      { source: '/pt/cidades', destination: '/pt/ciudades' },
+      { source: '/pt/cidades/:slug', destination: '/pt/ciudades/:slug' },
+      { source: '/pt/estadios', destination: '/pt/estadios' },
+      { source: '/pt/estadios/:slug', destination: '/pt/estadios/:slug' },
+      { source: '/pt/equipes', destination: '/pt/equipos' },
+      { source: '/pt/equipes/:slug', destination: '/pt/equipos/:slug' },
+
+      // French routes -> Spanish filesystem paths
+      { source: '/fr/villes', destination: '/fr/ciudades' },
+      { source: '/fr/villes/:slug', destination: '/fr/ciudades/:slug' },
+      { source: '/fr/stades', destination: '/fr/estadios' },
+      { source: '/fr/stades/:slug', destination: '/fr/estadios/:slug' },
+      { source: '/fr/equipes', destination: '/fr/equipos' },
+      { source: '/fr/equipes/:slug', destination: '/fr/equipos/:slug' },
+
+      // German routes -> Spanish filesystem paths
+      { source: '/de/staedte', destination: '/de/ciudades' },
+      { source: '/de/staedte/:slug', destination: '/de/ciudades/:slug' },
+      { source: '/de/stadien', destination: '/de/estadios' },
+      { source: '/de/stadien/:slug', destination: '/de/estadios/:slug' },
+      { source: '/de/teams', destination: '/de/equipos' },
+      { source: '/de/teams/:slug', destination: '/de/equipos/:slug' },
+
+      // Arabic routes -> Spanish filesystem paths (ASCII-safe transliterated paths)
+      { source: '/ar/cities', destination: '/ar/ciudades' },
+      { source: '/ar/cities/:slug', destination: '/ar/ciudades/:slug' },
+      { source: '/ar/stadiums', destination: '/ar/estadios' },
+      { source: '/ar/stadiums/:slug', destination: '/ar/estadios/:slug' },
+      { source: '/ar/teams', destination: '/ar/equipos' },
+      { source: '/ar/teams/:slug', destination: '/ar/equipos/:slug' },
     ]
   },
 
