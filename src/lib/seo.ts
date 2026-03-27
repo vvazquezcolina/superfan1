@@ -16,6 +16,15 @@ interface PageMetadataInput {
   imageAlt?: string // Alt text for OG image
 }
 
+const ogLocaleMap: Record<string, string> = {
+  es: 'es_419',
+  en: 'en_US',
+  pt: 'pt_BR',
+  fr: 'fr_FR',
+  de: 'de_DE',
+  ar: 'ar_AR',
+}
+
 export function buildPageMetadata(input: PageMetadataInput): Metadata {
   const { title, description, lang, path, alternates, imageAlt: _imageAlt } =
     input
@@ -38,7 +47,7 @@ export function buildPageMetadata(input: PageMetadataInput): Metadata {
       description: safeDescription,
       url: canonicalUrl,
       siteName,
-      locale: lang === 'es' ? 'es_419' : 'en_US',
+      locale: ogLocaleMap[lang] ?? 'en_US',
       type: 'website',
     },
     twitter: {
