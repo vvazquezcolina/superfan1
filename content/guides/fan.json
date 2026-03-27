@@ -1,0 +1,271 @@
+{
+  "guides": [
+    {
+      "id": "entradas-oficial",
+      "category": "fan",
+      "slugs": { "es": "entradas", "en": "tickets" },
+      "title": {
+        "es": "Guia de Entradas para el Mundial 2026",
+        "en": "FIFA World Cup 2026 Ticket Guide"
+      },
+      "description": {
+        "es": "Como comprar entradas oficiales para el Mundial 2026, categorias de precios, el sorteo FIFA y como evitar estafas de revendedores.",
+        "en": "How to buy official FIFA World Cup 2026 tickets, price categories, the FIFA ballot system, and how to avoid reseller scams."
+      },
+      "overview": {
+        "es": "Las entradas para el Mundial 2026 solo se venden oficialmente a traves de FIFA.com/tickets. No existe ninguna otra fuente oficial. El proceso incluye un periodo de registro, un sorteo o venta directa segun disponibilidad, y un periodo de pago. Cualquier otra web, revendedor o persona que ofrezca entradas es una fuente no oficial y puede ser una estafa.\n\nEl Mundial 2026 se celebra del 11 de junio al 19 de julio de 2026 en Mexico, Estados Unidos y Canada. Con 48 equipos y 104 partidos, hay mas entradas disponibles que en ediciones anteriores, pero la demanda es enorme para los partidos de los equipos anfitrones y el partido final.",
+        "en": "Tickets for the 2026 World Cup are only officially sold through FIFA.com/tickets. There is no other official source. The process involves a registration period, a ballot or direct sale depending on availability, and a payment window. Any other website, reseller, or individual offering tickets is an unofficial source and may be a scam.\n\nThe 2026 World Cup runs from June 11 to July 19, 2026 across Mexico, the United States, and Canada. With 48 teams and 104 matches, more tickets are available than in previous editions, but demand is enormous for matches involving host nation teams and the final."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Portal oficial FIFA: la unica fuente valida",
+            "en": "Official FIFA Portal: the only valid source"
+          },
+          "content": {
+            "es": "FIFA.com/tickets es el unico portal oficial para comprar entradas al Mundial 2026. No existe ninguna otra plataforma autorizada por FIFA para la venta primaria de entradas.\n\nLa reventa oficial entre fans se realiza exclusivamente a traves del portal oficial de reventa de FIFA, tambien accesible desde FIFA.com/tickets. Los boletos comprados por esta via incluyen verificacion FIFA y son transferibles de forma segura.\n\nCualquier sitio web que no sea FIFA.com/tickets y que afirme vender entradas directas no esta autorizado. Esto incluye sitios que imitan el diseno de FIFA, redes sociales, grupos de WhatsApp y cualquier persona que diga tener acceso especial a entradas.",
+            "en": "FIFA.com/tickets is the only official portal for purchasing 2026 World Cup tickets. There is no other FIFA-authorized platform for primary ticket sales.\n\nOfficial fan-to-fan resale takes place exclusively through FIFA's official resale portal, also accessible from FIFA.com/tickets. Tickets purchased through this channel include FIFA verification and are securely transferable.\n\nAny website other than FIFA.com/tickets claiming to sell direct tickets is not authorized. This includes sites that mimic FIFA's design, social media platforms, WhatsApp groups, and any individual claiming to have special access to tickets."
+          }
+        },
+        {
+          "title": {
+            "es": "Categorias de entrada y precios estimados",
+            "en": "Ticket categories and estimated prices"
+          },
+          "content": {
+            "es": "FIFA ofrece cuatro categorias de entradas con diferentes precios y ubicaciones en el estadio. Los precios siguientes son estimaciones orientativas — consulta siempre FIFA.com/tickets para precios oficiales y definitivos:\n\nCategoria 1 (Cat 1): Las mejores ubicaciones del estadio. Precio estimado entre $300 y $900 USD por partido de grupo. Precios mas altos en semifinales y final.\n\nCategoria 2 (Cat 2): Buenas ubicaciones en tribunas laterales. Precio estimado entre $150 y $400 USD por partido de grupo.\n\nCategoria 3 (Cat 3): Zonas de fondos y areas mas alejadas. Precio estimado entre $80 y $200 USD por partido de grupo. La opcion mas accesible economicamente.\n\nCategoria 4: Reservada exclusivamente para residentes de los paises anfitriones (Mexico, Estados Unidos y Canada). Precios especiales para facilitar el acceso de los aficionados locales.",
+            "en": "FIFA offers four ticket categories with different prices and stadium locations. The following prices are indicative estimates only — always check FIFA.com/tickets for official and definitive prices:\n\nCategory 1 (Cat 1): The best stadium locations. Estimated price between $300 and $900 USD per group match. Higher prices for semifinals and the final.\n\nCategory 2 (Cat 2): Good locations in side stands. Estimated price between $150 and $400 USD per group match.\n\nCategory 3 (Cat 3): End zones and more distant areas. Estimated price between $80 and $200 USD per group match. The most economically accessible option.\n\nCategory 4: Reserved exclusively for residents of the host countries (Mexico, United States, and Canada). Special prices to facilitate access for local fans."
+          }
+        },
+        {
+          "title": {
+            "es": "Como funciona el sorteo de entradas FIFA",
+            "en": "How the FIFA ticket ballot works"
+          },
+          "content": {
+            "es": "El proceso de entradas del Mundial 2026 sigue varias fases. Para la informacion mas actualizada sobre fechas, consulta FIFA.com/tickets ya que los plazos pueden variar:\n\nFase 1 - Registro: Los aficionados crean una cuenta en FIFA.com y se registran para el sorteo durante la ventana habilitada. El registro es gratuito y no garantiza entradas.\n\nFase 2 - Sorteo: FIFA realiza un sorteo aleatorio entre todos los registrados que solicitaron entradas para cada partido. El resultado es aleatorio e independiente del momento de registro dentro de la ventana.\n\nFase 3 - Pago: Los seleccionados en el sorteo reciben una notificacion y tienen una ventana de tiempo limitada para realizar el pago. Si no pagan en el plazo, pierden las entradas.\n\nFase 4 - Venta directa: Las entradas no reclamadas o devueltas se ponen a la venta directa en FIFA.com/tickets. Esta fase puede agotar existencias rapidamente.",
+            "en": "The 2026 World Cup ticketing process follows several phases. For the most up-to-date information on dates, check FIFA.com/tickets as deadlines may vary:\n\nPhase 1 - Registration: Fans create an account on FIFA.com and register for the ballot during the enabled window. Registration is free and does not guarantee tickets.\n\nPhase 2 - Ballot: FIFA conducts a random draw among all registrants who applied for tickets to each match. The outcome is random and independent of when you registered within the window.\n\nPhase 3 - Payment: Those selected in the ballot receive a notification and have a limited time window to make payment. Failure to pay within the deadline results in losing the tickets.\n\nPhase 4 - Direct sales: Unclaimed or returned tickets go on direct sale at FIFA.com/tickets. This phase can sell out quickly."
+          }
+        },
+        {
+          "title": {
+            "es": "Advertencias de estafas: como protegerte",
+            "en": "Scam warnings: how to protect yourself"
+          },
+          "content": {
+            "es": "Las estafas de entradas son frecuentes en grandes eventos deportivos. Reconoce estas senalas de alerta:\n\nSitios web que no son FIFA.com/tickets: Cualquier dominio diferente, aunque contenga las palabras 'FIFA', 'Mundial' o '2026', no es el portal oficial.\n\nVendedores en redes sociales: Facebook, Instagram, X (Twitter) y WhatsApp estan llenos de vendedores fraudulentos. No hay forma de verificar la autenticidad de una entrada antes de llegar al estadio.\n\nPrecios demasiado buenos para ser ciertos: Entradas muy por debajo del precio oficial son casi siempre falsas o invalidas.\n\nPresion para pagar con transferencia bancaria o criptomonedas: Metodos de pago irreversibles son la herramienta preferida de los estafadores.\n\n¿Que hacer si te han estafado? Presenta una denuncia ante FIFA a traves de FIFA.com, contacta a tu banco o emisor de tarjeta de credito para disputar el cargo, y reporta el fraude a las autoridades locales.",
+            "en": "Ticket scams are common at major sporting events. Recognize these warning signs:\n\nWebsites that are not FIFA.com/tickets: Any different domain, even if it contains the words 'FIFA', 'World Cup' or '2026', is not the official portal.\n\nSocial media sellers: Facebook, Instagram, X (Twitter) and WhatsApp are full of fraudulent sellers. There is no way to verify a ticket's authenticity before arriving at the stadium.\n\nPrices too good to be true: Tickets far below official price are almost always fake or invalid.\n\nPressure to pay via bank transfer or cryptocurrency: Irreversible payment methods are the preferred tool of scammers.\n\nWhat to do if you've been scammed? File a complaint with FIFA at FIFA.com, contact your bank or credit card issuer to dispute the charge, and report the fraud to local authorities."
+          }
+        },
+        {
+          "title": {
+            "es": "Reventa legal: opciones autorizadas",
+            "en": "Legal resale: authorized options"
+          },
+          "content": {
+            "es": "Si no consigues entradas en el portal oficial de FIFA, tienes algunas opciones legales y seguras:\n\nPortal oficial de reventa FIFA: FIFA.com/tickets tiene una seccion de reventa oficial entre aficionados. Las entradas estan verificadas y el precio esta regulado (no puede superar el precio original). Es la opcion mas segura despues de la compra directa.\n\nSocios de reventa autorizados: FIFA puede designar socios oficiales de reventa. Verifica en FIFA.com si hay socios autorizados para el Mundial 2026. Estos socios garantizan autenticidad pero los precios pueden ser superiores al original.\n\nEvita toda reventa no autorizada: Los revendedores no autorizados, aunque sean fisicos en los alrededores del estadio, venden entradas sin garantia de autenticidad. El riesgo de ser rechazado en los torniquetes es real.",
+            "en": "If you can't get tickets from the official FIFA portal, you have some legal and safe options:\n\nFIFA official resale portal: FIFA.com/tickets has an official fan-to-fan resale section. Tickets are verified and the price is regulated (cannot exceed the original price). This is the safest option after direct purchase.\n\nAuthorized resale partners: FIFA may designate official resale partners. Check FIFA.com for authorized partners for the 2026 World Cup. These partners guarantee authenticity but prices may be above the original.\n\nAvoid all unauthorized resale: Unauthorized resellers, even physical ones around the stadium, sell tickets with no guarantee of authenticity. The risk of being turned away at the turnstiles is real."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "¿Donde comprar entradas oficiales para el Mundial 2026?",
+            "en": "Where to buy official FIFA World Cup 2026 tickets?"
+          },
+          "answer": {
+            "es": "La unica fuente oficial de entradas para el Mundial 2026 es FIFA.com/tickets. Cualquier otro sitio web, revendedor no autorizado o vendedor en redes sociales no es oficial y puede ser una estafa.",
+            "en": "The only official source for 2026 World Cup tickets is FIFA.com/tickets. Any other website, unauthorized reseller, or social media seller is not official and may be a scam."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cuanto cuestan las entradas para el Mundial 2026?",
+            "en": "How much do FIFA World Cup 2026 tickets cost?"
+          },
+          "answer": {
+            "es": "Los precios varian segun la categoria: Cat 1 (mejores asientos) entre $300-$900 USD en fase de grupos, Cat 2 entre $150-$400, Cat 3 entre $80-$200. Los partidos eliminatorios y la final cuestan mas. Consulta FIFA.com/tickets para precios oficiales definitivos.",
+            "en": "Prices vary by category: Cat 1 (best seats) between $300-$900 USD in the group stage, Cat 2 between $150-$400, Cat 3 between $80-$200. Knockout matches and the final cost more. Check FIFA.com/tickets for official definitive prices."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Como evitar estafas de entradas para el Mundial?",
+            "en": "How to avoid World Cup ticket scams?"
+          },
+          "answer": {
+            "es": "Compra SOLO en FIFA.com/tickets. Desconfia de cualquier precio muy bajo, pago por transferencia bancaria o criptomonedas, y vendedores en redes sociales. Si algo parece demasiado bueno para ser cierto, es probablemente una estafa.",
+            "en": "Buy ONLY at FIFA.com/tickets. Be wary of any very low prices, payment via bank transfer or cryptocurrency, and social media sellers. If something seems too good to be true, it's probably a scam."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Que es el sorteo de entradas FIFA y como funciona?",
+            "en": "What is the FIFA ticket ballot and how does it work?"
+          },
+          "answer": {
+            "es": "El sorteo FIFA es un sistema de asignacion aleatoria para partidos con alta demanda. Te registras gratis en FIFA.com durante una ventana habilitada, y si resultas seleccionado en el sorteo, tienes una ventana de tiempo para pagar. No importa cuando te registres dentro de la ventana: todos tienen las mismas probabilidades.",
+            "en": "The FIFA ballot is a random allocation system for high-demand matches. You register for free on FIFA.com during an enabled window, and if you are selected in the ballot, you have a time window to pay. It doesn't matter when you register within the window: everyone has an equal chance."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Puedo revender mi entrada oficial si no puedo asistir?",
+            "en": "Can I resell my official ticket if I can't attend?"
+          },
+          "answer": {
+            "es": "Si, pero solo a traves del portal oficial de reventa de FIFA en FIFA.com/tickets. La reventa en otros canales viola los terminos de FIFA y puede resultar en la cancelacion de la entrada. El portal oficial protege tanto al vendedor como al comprador.",
+            "en": "Yes, but only through FIFA's official resale portal at FIFA.com/tickets. Reselling through other channels violates FIFA's terms and can result in ticket cancellation. The official portal protects both seller and buyer."
+          }
+        }
+      ],
+      "affiliateCTAs": [],
+      "sources": [
+        { "name": "FIFA.com - Entradas", "url": "https://www.fifa.com/tickets" },
+        { "name": "FIFA Ticket FAQ", "url": "https://www.fifa.com/tickets/faq" }
+      ],
+      "lastUpdated": "2026-03-26"
+    },
+    {
+      "id": "seguridad-viaje",
+      "category": "fan",
+      "slugs": { "es": "seguridad", "en": "safety" },
+      "title": {
+        "es": "Seguridad y Seguro de Viaje para el Mundial 2026",
+        "en": "Safety and Travel Insurance for the 2026 World Cup"
+      },
+      "description": {
+        "es": "Guia de seguridad practica para aficionados al Mundial 2026 en USA, Mexico y Canada: consejos por ciudad, numeros de emergencia y seguros de viaje recomendados.",
+        "en": "Practical safety guide for 2026 World Cup fans in the USA, Mexico, and Canada: city-specific tips, emergency numbers, and recommended travel insurance."
+      },
+      "overview": {
+        "es": "Asistir al Mundial 2026 en tres paises distintos requiere preparacion en materia de seguridad. En general, las sedes del torneo son zonas turisticas bien monitorizadas, pero cada pais y ciudad tiene sus particularidades. Tener un seguro de viaje con cobertura medica es esencial — un accidente o enfermedad sin seguro puede costar decenas de miles de dolares en Estados Unidos. El numero de emergencias es 911 en los tres paises anfitriones.\n\nEsta guia cubre los principales consejos de seguridad por pais y ciudad, que buscar en un seguro de viaje, y que documentos llevar siempre encima.",
+        "en": "Attending the 2026 World Cup across three different countries requires safety preparation. In general, tournament venues are well-monitored tourist areas, but each country and city has its particularities. Having travel insurance with medical coverage is essential — an accident or illness without insurance can cost tens of thousands of dollars in the United States. The emergency number is 911 in all three host countries.\n\nThis guide covers key safety tips by country and city, what to look for in travel insurance, and which documents to always carry with you."
+      },
+      "sections": [
+        {
+          "title": {
+            "es": "Seguridad en las sedes de Estados Unidos",
+            "en": "Safety at US host city venues"
+          },
+          "content": {
+            "es": "Las ciudades sede en Estados Unidos son Los Angeles, Dallas, Houston, Atlanta, Philadelphia, Miami, Seattle, San Francisco/Bay Area, Boston y Kansas City. En general son ciudades con fuerte presencia policial en zonas turisticas y alrededor de los estadios durante grandes eventos.\n\nLos Angeles: Evita el centro de Skid Row, especialmente de noche. Hollywood, Santa Monica y los alrededores de SoFi Stadium en Inglewood son zonas turisticamente seguras. El LAPD tiene operativos especiales en eventos masivos.\n\nDallas: El estadio AT&T esta en Arlington, suburbio seguro. El centro de Dallas y el barrio de Deep Ellum son seguros durante el dia; ten mas precaucion de noche.\n\nHouston: El NRG Stadium esta en un area bien policiada. El barrio de Midtown y Montrose son zonas seguras para turistas. El sistema METRORail Red Line conecta el estadio de forma segura.\n\nNumero de emergencias en todos los estados: 911.",
+            "en": "The US host cities are Los Angeles, Dallas, Houston, Atlanta, Philadelphia, Miami, Seattle, San Francisco/Bay Area, Boston, and Kansas City. In general these are cities with a strong police presence in tourist areas and around stadiums during major events.\n\nLos Angeles: Avoid the downtown Skid Row area, especially at night. Hollywood, Santa Monica, and the SoFi Stadium surroundings in Inglewood are tourist-safe zones. LAPD has special operations for mass events.\n\nDallas: AT&T Stadium is in Arlington, a safe suburb. Downtown Dallas and Deep Ellum neighborhood are safe during the day; be more cautious at night.\n\nHouston: NRG Stadium is in a well-policed area. The Midtown and Montrose neighborhoods are safe for tourists. The METRORail Red Line connects to the stadium safely.\n\nEmergency number in all US states: 911."
+          }
+        },
+        {
+          "title": {
+            "es": "Seguridad en las sedes de Mexico",
+            "en": "Safety at Mexico host city venues"
+          },
+          "content": {
+            "es": "Mexico tiene tres ciudades sede: Ciudad de Mexico, Monterrey y Guadalajara. Las tres son grandes metropolis con zonas de alta seguridad para turistas y zonas que conviene evitar.\n\nCiudad de Mexico (CDMX): Las colonias Polanco, Condesa, Roma Norte y el Centro Historico (de dia) son las zonas mas seguras y turisticas. El Estadio Azteca esta en Coyoacan; el area inmediata del estadio es segura durante partidos pero evita alejarte del perimetro de noche.\n\nMonterrey: El Estadio BBVA esta en San Nicolas de los Garza, un municipio generalmente seguro. El centro de Monterrey y el Barrio Antiguo son las zonas turisticas principales. Consulta avisos de viaje actualizados del gobierno de tu pais antes de viajar.\n\nGuadalajara: Una de las ciudades mexicanas con mejor reputacion para turistas. El centro historico, Tlaquepaque y Zapopan son las zonas mas visitadas. El Estadio Akron esta en Zapopan.\n\nConsejo importante: Descarga la app de tu embajada o consulado. Ten identificados los telefonos de tu consulado antes de llegar. Numero de emergencias en Mexico: 911. Policia turistica: 078.",
+            "en": "Mexico has three host cities: Mexico City, Monterrey, and Guadalajara. All three are large metropolises with high-security tourist zones and areas best avoided.\n\nMexico City (CDMX): The Polanco, Condesa, Roma Norte neighborhoods and the Historic Center (during the day) are the safest and most tourist-friendly zones. Estadio Azteca is in Coyoacan; the immediate area around the stadium is safe during matches but avoid straying from the perimeter at night.\n\nMonterrey: Estadio BBVA is in San Nicolas de los Garza, a generally safe municipality. Downtown Monterrey and Barrio Antiguo are the main tourist areas. Check updated travel advisories from your government before traveling.\n\nGuadalajara: One of the Mexican cities with the best reputation for tourists. The historic center, Tlaquepaque, and Zapopan are the most visited areas. Estadio Akron is in Zapopan.\n\nImportant tip: Download your embassy or consulate app. Identify your consulate's phone numbers before you arrive. Emergency number in Mexico: 911. Tourist police: 078."
+          }
+        },
+        {
+          "title": {
+            "es": "Seguridad en las sedes de Canada",
+            "en": "Safety at Canada host city venues"
+          },
+          "content": {
+            "es": "Canada tiene dos ciudades sede: Toronto y Vancouver. Canada es generalmente uno de los paises mas seguros del mundo para viajeros internacionales.\n\nToronto: BMO Field esta en el puerto de la ciudad, zona muy segura y turistica. El centro de Toronto, el barrio de Kensington Market y el Entertainment District son zonas seguras. DTES (Downtown Eastside) en el este de la ciudad tiene problemas de marginalidad pero no es una zona que los turistas del Mundial visitaran habitualmente.\n\nVancouver: BC Place esta en el centro de la ciudad, a pocos minutos a pie del transporte publico. El Downtown de Vancouver, Gastown y Granville Island son zonas muy seguras. El DTES de Vancouver (cerca de Main St y Hastings) tiene altas tasas de consumo de drogas; no es zona turistica.\n\nNumero de emergencias en Canada: 911.",
+            "en": "Canada has two host cities: Toronto and Vancouver. Canada is generally one of the safest countries in the world for international travelers.\n\nToronto: BMO Field is in the city's waterfront, a very safe and tourist-friendly area. Downtown Toronto, Kensington Market, and the Entertainment District are safe zones. DTES (Downtown Eastside) on the east side of the city has marginality issues but is not an area World Cup tourists will typically visit.\n\nVancouver: BC Place is in the heart of the city, a few minutes' walk from public transit. Downtown Vancouver, Gastown, and Granville Island are very safe areas. Vancouver's DTES (near Main St and Hastings) has high drug use rates; it is not a tourist area.\n\nEmergency number in Canada: 911."
+          }
+        },
+        {
+          "title": {
+            "es": "Seguro de viaje: por que es esencial",
+            "en": "Travel insurance: why it's essential"
+          },
+          "content": {
+            "es": "Un seguro de viaje con cobertura medica es imprescindible para asistir al Mundial 2026, especialmente si viajas a Estados Unidos.\n\nPor que en USA es critico: El sistema de salud estadounidense no tiene cobertura publica para visitantes. Una visita a urgencias puede costar entre $1,000 y $3,000 USD. Una hospitalizacion puede superar los $50,000 USD. Sin seguro, estos costos recaen directamente sobre ti.\n\nQue debe cubrir tu seguro:\n- Emergencias medicas y hospitalizacion (minimo $100,000 USD para viajes a USA)\n- Evacuacion medica (traslado a tu pais si es necesario)\n- Cancelacion de viaje por enfermedad o emergencia\n- Perdida o robo de equipaje\n- Responsabilidad civil\n\nProveedores recomendados para viajeros al Mundial:\nSafetyWing: Popular entre viajeros internacionales, cobertura flexible por dias, ideal para viajes multidestino.\nWorld Nomads: Buena cobertura para actividades deportivas y aventura, amplia red de asistencia.",
+            "en": "Travel insurance with medical coverage is essential for attending the 2026 World Cup, especially if you're traveling to the United States.\n\nWhy it's critical in the USA: The US healthcare system has no public coverage for visitors. An emergency room visit can cost between $1,000 and $3,000 USD. Hospitalization can exceed $50,000 USD. Without insurance, these costs fall directly on you.\n\nWhat your insurance should cover:\n- Medical emergencies and hospitalization (minimum $100,000 USD for trips to the USA)\n- Medical evacuation (transfer to your home country if necessary)\n- Trip cancellation due to illness or emergency\n- Luggage loss or theft\n- Liability coverage\n\nRecommended providers for World Cup travelers:\nSafetyWing: Popular with international travelers, flexible day-based coverage, ideal for multi-destination trips.\nWorld Nomads: Good coverage for sports and adventure activities, wide assistance network."
+          }
+        },
+        {
+          "title": {
+            "es": "Documentos importantes: que llevar siempre",
+            "en": "Important documents: what to always carry"
+          },
+          "content": {
+            "es": "Antes de salir de tu hotel o alojamiento, asegurate de llevar siempre:\n\n- Pasaporte original (o copia certificada si prefieres dejar el original en la caja fuerte del hotel)\n- Visa o ESTA si aplica a tu nacionalidad\n- Confirmacion de tu seguro de viaje (numero de poliza y telefono de emergencias 24h)\n- Confirmacion de hotel\n- Entradas del partido (digital o impresa como respaldo)\n- Efectivo local: tarjetas de credito funcionan en casi todos lados, pero ten siempre algo de efectivo\n- Numero de telefono de tu consulado o embajada en el pais\n\nGuarda copias digitales de todos tus documentos en el correo electronico o en la nube para acceder a ellos si pierdes los originales.\n\nEmbajadas y consulados: Busca los contactos de la embajada o consulado de tu pais en USA, Mexico y Canada antes de viajar. La mayoria de paises tiene representacion en las tres naciones.",
+            "en": "Before leaving your hotel or accommodation, always make sure you have:\n\n- Original passport (or certified copy if you prefer to leave the original in the hotel safe)\n- Visa or ESTA if applicable to your nationality\n- Travel insurance confirmation (policy number and 24h emergency phone)\n- Hotel confirmation\n- Match tickets (digital or printed as backup)\n- Local cash: credit cards work almost everywhere, but always have some cash\n- Phone number of your consulate or embassy in the country\n\nStore digital copies of all your documents in email or the cloud to access them if you lose the originals.\n\nEmbassies and consulates: Look up your country's embassy or consulate contacts in the USA, Mexico, and Canada before traveling. Most countries have representation in all three nations."
+          }
+        },
+        {
+          "title": {
+            "es": "Numeros de emergencia por pais",
+            "en": "Emergency numbers by country"
+          },
+          "content": {
+            "es": "Guarda estos numeros antes de viajar:\n\nEstados Unidos:\n- Emergencias (policia, bomberos, ambulancia): 911\n- Policia no urgente: varia por ciudad, busca el numero local\n- Linea de crisis: 988 (salud mental)\n\nMexico:\n- Emergencias generales: 911\n- Policia turistica (SECTUR): 078\n- Locatel (informacion y ayuda en CDMX): 55 5658-1111\n\nCanada:\n- Emergencias (policia, bomberos, ambulancia): 911\n- Victimas de delitos: 1-888-579-2888 (Canada-wide)\n\nRecuerda: Cuando llamas al 911 en cualquiera de estos tres paises, los operadores hablan espanol o pueden conectarte con un interprete en pocos segundos.",
+            "en": "Save these numbers before traveling:\n\nUnited States:\n- Emergencies (police, fire, ambulance): 911\n- Non-emergency police: varies by city, look up the local number\n- Crisis line: 988 (mental health)\n\nMexico:\n- General emergencies: 911\n- Tourist police (SECTUR): 078\n- Locatel (information and help in CDMX): 55 5658-1111\n\nCanada:\n- Emergencies (police, fire, ambulance): 911\n- Crime victims: 1-888-579-2888 (Canada-wide)\n\nRemember: When you call 911 in any of these three countries, operators speak Spanish or can connect you with an interpreter within seconds."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "question": {
+            "es": "¿Necesito seguro de viaje para el Mundial 2026?",
+            "en": "Do I need travel insurance for the 2026 World Cup?"
+          },
+          "answer": {
+            "es": "Si viajas a Estados Unidos, el seguro medico es practicamente obligatorio: sin el, una emergencia medica puede costarte decenas de miles de dolares. Para Mexico y Canada tambien es muy recomendable. Busca cobertura minima de $100,000 USD en gastos medicos y evacuacion.",
+            "en": "If you're traveling to the United States, medical insurance is practically mandatory: without it, a medical emergency can cost you tens of thousands of dollars. It is also highly recommended for Mexico and Canada. Look for minimum coverage of $100,000 USD for medical expenses and evacuation."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cuales son los numeros de emergencia en USA, Mexico y Canada?",
+            "en": "What are the emergency numbers in the USA, Mexico, and Canada?"
+          },
+          "answer": {
+            "es": "En los tres paises anfitriones del Mundial 2026, el numero de emergencias principal es el 911. En Mexico tambien puedes llamar al 078 para la policia turistica. En todos los casos, hay operadores que hablan espanol o pueden conectarte con un interprete.",
+            "en": "In all three host countries of the 2026 World Cup, the main emergency number is 911. In Mexico you can also call 078 for tourist police. In all cases, there are Spanish-speaking operators or interpreters available."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Es seguro viajar a Mexico para el Mundial?",
+            "en": "Is it safe to travel to Mexico for the World Cup?"
+          },
+          "answer": {
+            "es": "Las tres ciudades sede de Mexico (CDMX, Monterrey y Guadalajara) tienen zonas turisticas bien monitorizadas y seguras. Como en cualquier gran ciudad del mundo, hay zonas que conviene evitar. Consulta los avisos de viaje del gobierno de tu pais y sigue las recomendaciones de seguridad de esta guia.",
+            "en": "The three Mexican host cities (CDMX, Monterrey, and Guadalajara) have well-monitored and safe tourist areas. As in any major city in the world, there are areas best avoided. Check your government's travel advisories and follow the safety tips in this guide."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Que documentos debo llevar a los partidos del Mundial?",
+            "en": "What documents should I carry to World Cup matches?"
+          },
+          "answer": {
+            "es": "Lleva siempre: pasaporte o identificacion oficial, tu entrada al partido (en el movil y preferiblemente una copia impresa), confirmacion del seguro de viaje con el telefono de emergencias, y efectivo local. Guarda copias de todo en el correo electronico antes de viajar.",
+            "en": "Always carry: passport or official ID, your match ticket (on your phone and preferably a printed copy), travel insurance confirmation with emergency phone number, and local cash. Store copies of everything in your email before traveling."
+          }
+        }
+      ],
+      "affiliateCTAs": [
+        {
+          "label": {
+            "es": "Cotizar seguro de viaje con SafetyWing",
+            "en": "Get a travel insurance quote from SafetyWing"
+          },
+          "url": "https://safetywing.com/?referenceID=superfanmundial",
+          "partner": "safetywing",
+          "disclosure": {
+            "es": "Enlace de afiliado. Podemos ganar comision si compras.",
+            "en": "Affiliate link. We may earn a commission if you purchase."
+          }
+        }
+      ],
+      "sources": [
+        { "name": "SafetyWing", "url": "https://safetywing.com" },
+        { "name": "Embajada de Mexico en USA", "url": "https://consulmex.sre.gob.mx" }
+      ],
+      "lastUpdated": "2026-03-26"
+    }
+  ]
+}
