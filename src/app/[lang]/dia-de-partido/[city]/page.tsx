@@ -32,7 +32,6 @@ export async function generateMetadata({
   if (!cityData) return {}
 
   const cityName = cityData.name[contentLocale]
-  const section = contentLocale === 'es' ? 'dia-de-partido' : 'match-day'
 
   const title =
     contentLocale === 'es'
@@ -48,11 +47,11 @@ export async function generateMetadata({
     title,
     description,
     lang: contentLocale,
-    path: `/${lang}/${section}/${city}`,
+    path: `/${lang}/dia-de-partido/${city}`,
     alternates: {
       languages: {
         'es-419': `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
-        en: `${SITE_URL}/en/match-day/${guide.slug}`,
+        en: `${SITE_URL}/en/dia-de-partido/${guide.slug}`,
         'x-default': `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
       },
     },
@@ -76,7 +75,6 @@ export default async function MatchDayPage({
   if (!cityData) notFound()
 
   const dict = await getDictionary(locale)
-  const section = contentLocale === 'es' ? 'dia-de-partido' : 'match-day'
   const cityName = cityData.name[contentLocale]
   const stadiumName = stadium?.name[contentLocale] ?? guide.stadium
 
@@ -85,10 +83,10 @@ export default async function MatchDayPage({
       ? `Guia del dia de partido en ${cityName} — Mundial 2026`
       : `Match Day Guide for ${cityName} — World Cup 2026`
 
-  const canonicalUrl = `${SITE_URL}/${lang}/${section}/${guide.slug}`
+  const canonicalUrl = `${SITE_URL}/${lang}/dia-de-partido/${guide.slug}`
 
   const breadcrumbs = generateBreadcrumbs(
-    `/${lang}/${section}/${guide.slug}`,
+    `/${lang}/dia-de-partido/${guide.slug}`,
     contentLocale,
     dict.breadcrumbs,
     cityName,

@@ -28,17 +28,16 @@ export async function generateMetadata({
   if (!listicle) return {}
 
   const contentLocale: Locale = toContentLocale(lang)
-  const section = contentLocale === 'es' ? 'mejores' : 'best'
 
   return buildPageMetadata({
     title: listicle.title[contentLocale],
     description: listicle.description[contentLocale],
     lang: contentLocale,
-    path: `/${lang}/${section}/${topic}`,
+    path: `/${lang}/mejores/${topic}`,
     alternates: {
       languages: {
         'es-419': `${SITE_URL}/es/mejores/${listicle.slug}`,
-        en: `${SITE_URL}/en/best/${listicle.slug}`,
+        en: `${SITE_URL}/en/mejores/${listicle.slug}`,
         'x-default': `${SITE_URL}/es/mejores/${listicle.slug}`,
       },
     },
@@ -64,13 +63,12 @@ export default async function ListiclePage({
 
   const locale = lang as import('@/app/[lang]/dictionaries').Locale
   const contentLocale: Locale = toContentLocale(lang)
-  const section = contentLocale === 'es' ? 'mejores' : 'best'
 
   const dict = await getDictionary(locale)
-  const canonicalUrl = `${SITE_URL}/${lang}/${section}/${listicle.slug}`
+  const canonicalUrl = `${SITE_URL}/${lang}/mejores/${listicle.slug}`
 
   const breadcrumbs = generateBreadcrumbs(
-    `/${lang}/${section}/${listicle.slug}`,
+    `/${lang}/mejores/${listicle.slug}`,
     contentLocale,
     dict.breadcrumbs,
     listicle.title[contentLocale],

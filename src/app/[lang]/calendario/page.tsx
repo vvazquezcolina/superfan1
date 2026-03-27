@@ -33,7 +33,7 @@ export async function generateMetadata({
     locale === 'es'
       ? 'Calendario completo de partidos del Mundial 2026. Filtra por grupo, ciudad o fecha para encontrar los partidos que te interesan. 48 partidos de fase de grupos.'
       : 'Complete FIFA World Cup 2026 match schedule. Filter by group, city, or date to find the matches you care about. 48 group stage matches across 16 host cities.'
-  const path = locale === 'es' ? '/es/calendario' : '/en/calendar'
+  const path = `/${locale}/calendario`
 
   return buildPageMetadata({
     title,
@@ -43,7 +43,7 @@ export async function generateMetadata({
     alternates: {
       languages: {
         'es-419': `${SITE_URL}/es/calendario`,
-        en: `${SITE_URL}/en/calendar`,
+        en: `${SITE_URL}/en/calendario`,
         'x-default': `${SITE_URL}/es/calendario`,
       },
     },
@@ -60,7 +60,7 @@ export default async function CalendarioPage({
   const locale = lang as Locale
 
   const dict = await getDictionary(locale)
-  const path = locale === 'es' ? `/${lang}/calendario` : `/${lang}/calendar`
+  const path = `/${lang}/calendario`
   const canonicalUrl = `${SITE_URL}${path}`
 
   const title =

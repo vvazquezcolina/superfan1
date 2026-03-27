@@ -44,18 +44,17 @@ export async function generateMetadata({
       ? `Compara ${c1Name} y ${c2Name} para el Mundial 2026: costos, transporte, clima, gastronomia y seguridad. Todo lo que necesitas para elegir tu destino.`
       : `Compare ${c1Name} and ${c2Name} for the 2026 World Cup: costs, transport, weather, food and safety. Everything you need to choose your destination.`
 
-  const slug = comparison.slugs[locale]
-  const section = locale === 'es' ? 'comparar' : 'compare'
+  const slug = comparison.slugs.es
 
   return buildPageMetadata({
     title,
     description,
     lang: locale,
-    path: `/${lang}/${section}/${slug}`,
+    path: `/${lang}/comparar/${slug}`,
     alternates: {
       languages: {
         'es-419': `${SITE_URL}/es/comparar/${comparison.slugs.es}`,
-        en: `${SITE_URL}/en/compare/${comparison.slugs.en}`,
+        en: `${SITE_URL}/en/comparar/${comparison.slugs.es}`,
         'x-default': `${SITE_URL}/es/comparar/${comparison.slugs.es}`,
       },
     },
@@ -96,8 +95,7 @@ export default async function CityComparisonPage({
   if (!city1 || !city2) notFound()
 
   const dict = await getDictionary(locale)
-  const section = locale === 'es' ? 'comparar' : 'compare'
-  const slug = comparison.slugs[locale]
+  const slug = comparison.slugs.es
 
   const c1Name = city1.name[locale]
   const c2Name = city2.name[locale]
@@ -110,10 +108,10 @@ export default async function CityComparisonPage({
       ? `${c1Name} vs ${c2Name}: Comparacion completa para el Mundial 2026`
       : `${c1Name} vs ${c2Name}: Complete World Cup 2026 Comparison`
 
-  const canonicalUrl = `${SITE_URL}/${lang}/${section}/${slug}`
+  const canonicalUrl = `${SITE_URL}/${lang}/comparar/${slug}`
 
   const breadcrumbs = generateBreadcrumbs(
-    `/${lang}/${section}/${slug}`,
+    `/${lang}/comparar/${slug}`,
     locale,
     dict.breadcrumbs,
     `${c1Name} vs ${c2Name}`,

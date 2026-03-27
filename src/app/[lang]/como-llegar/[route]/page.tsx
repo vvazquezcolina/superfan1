@@ -32,8 +32,7 @@ export async function generateMetadata({
 
   const from = fromCity.name[locale]
   const to = toCity.name[locale]
-  const slug = routeData.slugs[locale]
-  const section = locale === 'es' ? 'como-llegar' : 'how-to-get'
+  const slug = routeData.slugs.es
 
   const title =
     locale === 'es'
@@ -49,11 +48,11 @@ export async function generateMetadata({
     title,
     description,
     lang: locale,
-    path: `/${lang}/${section}/${slug}`,
+    path: `/${lang}/como-llegar/${slug}`,
     alternates: {
       languages: {
         'es-419': `${SITE_URL}/es/como-llegar/${routeData.slugs.es}`,
-        en: `${SITE_URL}/en/how-to-get/${routeData.slugs.en}`,
+        en: `${SITE_URL}/en/como-llegar/${routeData.slugs.es}`,
         'x-default': `${SITE_URL}/es/como-llegar/${routeData.slugs.es}`,
       },
     },
@@ -88,8 +87,7 @@ export default async function HowToGetPage({
   if (!fromCity || !toCity) notFound()
 
   const dict = await getDictionary(locale)
-  const section = locale === 'es' ? 'como-llegar' : 'how-to-get'
-  const slug = routeData.slugs[locale]
+  const slug = routeData.slugs.es
   const from = fromCity.name[locale]
   const to = toCity.name[locale]
 
@@ -98,10 +96,10 @@ export default async function HowToGetPage({
       ? `Como llegar de ${from} a ${to} para el Mundial 2026`
       : `How to Get from ${from} to ${to} for the 2026 World Cup`
 
-  const canonicalUrl = `${SITE_URL}/${lang}/${section}/${slug}`
+  const canonicalUrl = `${SITE_URL}/${lang}/como-llegar/${slug}`
 
   const breadcrumbs = generateBreadcrumbs(
-    `/${lang}/${section}/${slug}`,
+    `/${lang}/como-llegar/${slug}`,
     locale,
     dict.breadcrumbs,
     `${from} → ${to}`,
@@ -381,7 +379,7 @@ export default async function HowToGetPage({
             </li>
             <li>
               <a
-                href={`/${lang}/${locale === 'es' ? 'dia-de-partido' : 'match-day'}/${toCity.slugs[locale]}`}
+                href={`/${lang}/dia-de-partido/${toCity.slugs.es}`}
                 className="text-primary underline"
               >
                 {locale === 'es' ? `Guia del dia de partido en ${to}` : `Match day guide for ${to}`}
