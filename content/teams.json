@@ -4986,7 +4986,11 @@
                 "es": "Defensa Central",
                 "en": "Centre Back"
               },
-              "club": "Al-Hilal"
+              "club": "Al-Hilal",
+              "note": {
+                "es": "El capitan defensivo de Senegal es uno de los centrales mas solidos del futbol mundial. Con anos en el Napoles de la Serie A y una carrera consolidada, Koulibaly es el lider en la zaga senegalesa, un defensa imponente por su fisico y su lectura del juego.",
+                "en": "Senegal's defensive captain is one of the most solid centre backs in world football. With years at Napoli in Serie A and a consolidated career, Koulibaly is the leader of Senegal's backline, an imposing defender in physicality and reading of the game."
+              }
             },
             {
               "name": "Ismaila Sarr",
@@ -5859,7 +5863,11 @@
                 "es": "Portero",
                 "en": "Goalkeeper"
               },
-              "club": "Al-Ahly"
+              "club": "Al-Ahly",
+              "note": {
+                "es": "El portero titular de Egipto es una de las figuras mas importantes del Al-Ahly, el club mas exitoso de Africa. Con reflejos rapidos y una gran presencia bajo los palos, El-Shenawy ha sido un guardameta confiable para los Faraones en las eliminatorias.",
+                "en": "Egypt's first-choice goalkeeper is one of the most important figures at Al-Ahly, Africa's most successful club. With quick reflexes and great presence between the posts, El-Shenawy has been a reliable keeper for the Pharaohs in qualifying."
+              }
             },
             {
               "name": "Mahmoud Trezeguet",
