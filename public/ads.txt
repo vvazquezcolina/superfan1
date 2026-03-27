@@ -1,0 +1,15 @@
+# ads.txt - SuperFan Mundial 2026
+# https://www.superfaninfo.com/ads.txt
+#
+# This file declares authorized digital sellers for this domain.
+# Prevents domain spoofing and unauthorized ad inventory claims.
+#
+# Format: <SSP/Exchange Domain>, <SellerID>, <InventoryType>, <CertID>
+#
+# No programmatic advertising is currently active.
+# This file prevents unauthorized spoofing of this domain.
+#
+# When ad partnerships are established, add entries like:
+# google.com, pub-XXXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+placeholder.example.com, 0, DIRECT
