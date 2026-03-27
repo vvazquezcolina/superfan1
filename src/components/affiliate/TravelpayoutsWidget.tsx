@@ -1,3 +1,4 @@
+import { Hotel, Plane, Info } from 'lucide-react'
 import {
   getAffiliatePartner,
   buildTravelpayoutsHotelWidgetSrc,
@@ -46,15 +47,20 @@ export function TravelpayoutsHotelWidget({
   const disclosure = partner.disclosure[lang]
 
   return (
-    <aside className="mx-auto max-w-prose my-8 rounded-lg border border-primary/20 bg-primary/5 p-6">
-      <h3 className="text-lg font-bold">
-        {dict.searchHotels} {cityName}
-      </h3>
-      <p className="mt-2 text-sm text-muted">
+    <aside className="mx-auto max-w-prose my-8 rounded-xl border border-amber-500/25 bg-gradient-to-br from-amber-500/8 to-amber-500/3 p-6 shadow-sm">
+      <div className="flex items-center gap-2.5 mb-1">
+        <div className="flex size-8 items-center justify-center rounded-lg bg-amber-500/15">
+          <Hotel className="size-4.5 text-amber-600" aria-hidden="true" />
+        </div>
+        <h3 className="text-lg font-bold">
+          {dict.searchHotels} {cityName}
+        </h3>
+      </div>
+      <p className="mt-2 text-sm text-muted pl-11">
         {dict.hotelsNear} {cityName}{' '}
         {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
       </p>
-      <div className="mt-4 overflow-hidden rounded-md">
+      <div className="mt-4 overflow-hidden rounded-lg border border-amber-500/15 shadow-sm">
         <iframe
           src={widgetSrc}
           width="100%"
@@ -65,8 +71,11 @@ export function TravelpayoutsHotelWidget({
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-      <p className="mt-3 text-xs text-muted italic">{disclosure}</p>
-      <p className="mt-1 text-xs text-muted">{dict.poweredByHotels}</p>
+      <div className="mt-3 flex items-start gap-1.5 text-xs text-muted">
+        <Info className="mt-px size-3 shrink-0 opacity-60" aria-hidden="true" />
+        <span className="italic">{disclosure}</span>
+      </div>
+      <p className="mt-1 pl-4.5 text-xs text-muted">{dict.poweredByHotels}</p>
     </aside>
   )
 }
@@ -89,15 +98,20 @@ export function TravelpayoutsFlightWidget({
   const disclosure = partner.disclosure[lang]
 
   return (
-    <aside className="mx-auto max-w-prose my-8 rounded-lg border border-blue-500/20 bg-blue-500/5 p-6">
-      <h3 className="text-lg font-bold">
-        {dict.searchFlights} {cityName}
-      </h3>
-      <p className="mt-2 text-sm text-muted">
+    <aside className="mx-auto max-w-prose my-8 rounded-xl border border-blue-500/25 bg-gradient-to-br from-blue-500/8 to-blue-500/3 p-6 shadow-sm">
+      <div className="flex items-center gap-2.5 mb-1">
+        <div className="flex size-8 items-center justify-center rounded-lg bg-blue-500/15">
+          <Plane className="size-4.5 text-blue-600" aria-hidden="true" />
+        </div>
+        <h3 className="text-lg font-bold">
+          {dict.searchFlights} {cityName}
+        </h3>
+      </div>
+      <p className="mt-2 text-sm text-muted pl-11">
         {dict.flightsTo} {cityName}{' '}
         {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
       </p>
-      <div className="mt-4 overflow-hidden rounded-md">
+      <div className="mt-4 overflow-hidden rounded-lg border border-blue-500/15 shadow-sm">
         <iframe
           src={widgetSrc}
           width="100%"
@@ -108,8 +122,11 @@ export function TravelpayoutsFlightWidget({
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-      <p className="mt-3 text-xs text-muted italic">{disclosure}</p>
-      <p className="mt-1 text-xs text-muted">{dict.poweredByFlights}</p>
+      <div className="mt-3 flex items-start gap-1.5 text-xs text-muted">
+        <Info className="mt-px size-3 shrink-0 opacity-60" aria-hidden="true" />
+        <span className="italic">{disclosure}</span>
+      </div>
+      <p className="mt-1 pl-4.5 text-xs text-muted">{dict.poweredByFlights}</p>
     </aside>
   )
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { Calendar } from 'lucide-react'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
 import { buildPageMetadata } from '@/lib/seo'
 import { buildArticleJsonLd, buildJsonLdScript } from '@/lib/jsonld'
@@ -15,7 +16,14 @@ export const revalidate = 3600
 const SITE_URL = 'https://www.superfaninfo.com'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -127,7 +135,12 @@ export default async function CalendarioPage({
 
       <div className="mx-auto max-w-4xl py-6">
         <header className="mb-8">
-          <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
+          <div className="flex items-center gap-3 mb-2">
+            <div className="rounded-full bg-primary/10 p-2">
+              <Calendar className="h-6 w-6 text-primary" />
+            </div>
+            <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
+          </div>
           <p className="mt-4 leading-relaxed text-muted max-w-prose">{directAnswerLabel}</p>
         </header>
 

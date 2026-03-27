@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getMatchDayGuide, getMatchDayGuideSlugs } from '@/lib/content/programmatic'
 import { getCityById } from '@/lib/content/cities'
@@ -223,12 +224,12 @@ export default async function MatchDayPage({
           <ul className="space-y-2 text-sm">
             <li>
               <span className="font-medium">{contentLocale === 'es' ? 'Estadio: ' : 'Stadium: '}</span>
-              <a
+              <Link
                 href={`/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}/${stadium?.slugs[contentLocale] ?? guide.stadium}`}
                 className="text-primary underline"
               >
                 {stadiumName}
-              </a>
+              </Link>
             </li>
             <li>
               <span className="font-medium">
@@ -273,21 +274,21 @@ export default async function MatchDayPage({
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a
+              <Link
                 href={`/${lang}/${contentLocale === 'es' ? 'ciudades' : 'cities'}/${cityData.slugs[contentLocale]}`}
                 className="text-primary underline"
               >
                 {contentLocale === 'es' ? `Guia completa de ${cityName}` : `Complete guide to ${cityName}`}
-              </a>
+              </Link>
             </li>
             {stadium && (
               <li>
-                <a
+                <Link
                   href={`/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[contentLocale]}`}
                   className="text-primary underline"
                 >
                   {contentLocale === 'es' ? `Guia del ${stadiumName}` : `${stadiumName} Guide`}
-                </a>
+                </Link>
               </li>
             )}
           </ul>

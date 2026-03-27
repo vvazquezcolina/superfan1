@@ -99,11 +99,15 @@ export function getCityComparison(slug: string): CityComparison | undefined {
   )
 }
 
-export function getComparisonSlugs(): Array<{ pair: string; lang: 'es' | 'en' }> {
-  return (comparisonsJson.comparisons as CityComparison[]).flatMap((c) => [
-    { pair: c.slugs.es, lang: 'es' as const },
-    { pair: c.slugs.en, lang: 'en' as const },
-  ])
+const ALL_LOCALES = ['es', 'en', 'pt', 'fr', 'de', 'ar'] as const
+
+export function getComparisonSlugs(): Array<{ pair: string; lang: string }> {
+  return (comparisonsJson.comparisons as CityComparison[]).flatMap((c) =>
+    ALL_LOCALES.map((lang) => ({
+      pair: lang === 'es' ? c.slugs.es : c.slugs.en,
+      lang,
+    })),
+  )
 }
 
 export function getRoutes(): Route[] {
@@ -116,11 +120,13 @@ export function getRoute(slug: string): Route | undefined {
   )
 }
 
-export function getRouteSlugs(): Array<{ route: string; lang: 'es' | 'en' }> {
-  return (routesJson.routes as Route[]).flatMap((r) => [
-    { route: r.slugs.es, lang: 'es' as const },
-    { route: r.slugs.en, lang: 'en' as const },
-  ])
+export function getRouteSlugs(): Array<{ route: string; lang: string }> {
+  return (routesJson.routes as Route[]).flatMap((r) =>
+    ALL_LOCALES.map((lang) => ({
+      route: lang === 'es' ? r.slugs.es : r.slugs.en,
+      lang,
+    })),
+  )
 }
 
 export function getMatchDayGuides(): MatchDayGuide[] {
@@ -131,11 +137,10 @@ export function getMatchDayGuide(slug: string): MatchDayGuide | undefined {
   return (matchDayJson.guides as MatchDayGuide[]).find((g) => g.slug === slug)
 }
 
-export function getMatchDayGuideSlugs(): Array<{ city: string; lang: 'es' | 'en' }> {
-  return (matchDayJson.guides as MatchDayGuide[]).flatMap((g) => [
-    { city: g.slug, lang: 'es' as const },
-    { city: g.slug, lang: 'en' as const },
-  ])
+export function getMatchDayGuideSlugs(): Array<{ city: string; lang: string }> {
+  return (matchDayJson.guides as MatchDayGuide[]).flatMap((g) =>
+    ALL_LOCALES.map((lang) => ({ city: g.slug, lang })),
+  )
 }
 
 export function getListicles(): Listicle[] {
@@ -146,9 +151,8 @@ export function getListicle(slug: string): Listicle | undefined {
   return (listiclesJson.listicles as Listicle[]).find((l) => l.slug === slug)
 }
 
-export function getListicleSlugs(): Array<{ topic: string; lang: 'es' | 'en' }> {
-  return (listiclesJson.listicles as Listicle[]).flatMap((l) => [
-    { topic: l.slug, lang: 'es' as const },
-    { topic: l.slug, lang: 'en' as const },
-  ])
+export function getListicleSlugs(): Array<{ topic: string; lang: string }> {
+  return (listiclesJson.listicles as Listicle[]).flatMap((l) =>
+    ALL_LOCALES.map((lang) => ({ topic: l.slug, lang })),
+  )
 }

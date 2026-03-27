@@ -539,6 +539,1680 @@
         "nightlife": "houston",
         "families": "monterrey"
       }
+    },
+    {
+      "id": "guadalajara-vs-nueva-york",
+      "city1": "guadalajara",
+      "city2": "nueva-york-nueva-jersey",
+      "slugs": {
+        "es": "guadalajara-vs-nueva-york",
+        "en": "guadalajara-vs-new-york"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 250 },
+        "metroBudgetMeal": { "city1": 4, "city2": 20 },
+        "altitude": { "city1": 1566, "city2": 10 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 9 },
+        "weatherJuneAvg": { "city1": 25, "city2": 25 },
+        "stadiumCapacity": { "city1": 49850, "city2": 82500 },
+        "airportCode": { "city1": "GDL", "city2": "EWR" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "empate",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "guadalajara"
+      }
+    },
+    {
+      "id": "monterrey-vs-nueva-york",
+      "city1": "monterrey",
+      "city2": "nueva-york-nueva-jersey",
+      "slugs": {
+        "es": "monterrey-vs-nueva-york",
+        "en": "monterrey-vs-new-york"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 75, "city2": 250 },
+        "metroBudgetMeal": { "city1": 5, "city2": 20 },
+        "altitude": { "city1": 537, "city2": 10 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 9 },
+        "weatherJuneAvg": { "city1": 32, "city2": 25 },
+        "stadiumCapacity": { "city1": 53500, "city2": 82500 },
+        "airportCode": { "city1": "MTY", "city2": "EWR" }
+      },
+      "recommendation": {
+        "budget": "monterrey",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "monterrey"
+      }
+    },
+    {
+      "id": "guadalajara-vs-dallas",
+      "city1": "guadalajara",
+      "city2": "dallas",
+      "slugs": {
+        "es": "guadalajara-vs-dallas",
+        "en": "guadalajara-vs-dallas"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 140 },
+        "metroBudgetMeal": { "city1": 4, "city2": 15 },
+        "altitude": { "city1": 1566, "city2": 139 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 6 },
+        "weatherJuneAvg": { "city1": 25, "city2": 34 },
+        "stadiumCapacity": { "city1": 49850, "city2": 80000 },
+        "airportCode": { "city1": "GDL", "city2": "DFW" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "guadalajara",
+        "weather": "guadalajara",
+        "nightlife": "dallas",
+        "families": "guadalajara"
+      }
+    },
+    {
+      "id": "guadalajara-vs-houston",
+      "city1": "guadalajara",
+      "city2": "houston",
+      "slugs": {
+        "es": "guadalajara-vs-houston",
+        "en": "guadalajara-vs-houston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 130 },
+        "metroBudgetMeal": { "city1": 4, "city2": 14 },
+        "altitude": { "city1": 1566, "city2": 15 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 6 },
+        "weatherJuneAvg": { "city1": 25, "city2": 33 },
+        "stadiumCapacity": { "city1": 49850, "city2": 72220 },
+        "airportCode": { "city1": "GDL", "city2": "IAH" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "guadalajara",
+        "weather": "guadalajara",
+        "nightlife": "houston",
+        "families": "guadalajara"
+      }
+    },
+    {
+      "id": "monterrey-vs-los-angeles",
+      "city1": "monterrey",
+      "city2": "los-angeles",
+      "slugs": {
+        "es": "monterrey-vs-los-angeles",
+        "en": "monterrey-vs-los-angeles"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 75, "city2": 180 },
+        "metroBudgetMeal": { "city1": 5, "city2": 18 },
+        "altitude": { "city1": 537, "city2": 86 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 6 },
+        "weatherJuneAvg": { "city1": 32, "city2": 26 },
+        "stadiumCapacity": { "city1": 53500, "city2": 70240 },
+        "airportCode": { "city1": "MTY", "city2": "LAX" }
+      },
+      "recommendation": {
+        "budget": "monterrey",
+        "transport": "monterrey",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "monterrey"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-atlanta",
+      "city1": "ciudad-de-mexico",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-atlanta",
+        "en": "mexico-city-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 130 },
+        "metroBudgetMeal": { "city1": 4, "city2": 14 },
+        "altitude": { "city1": 2240, "city2": 320 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 7 },
+        "weatherJuneAvg": { "city1": 22, "city2": 30 },
+        "stadiumCapacity": { "city1": 87523, "city2": 71000 },
+        "airportCode": { "city1": "MEX", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "ciudad-de-mexico",
+        "nightlife": "ciudad-de-mexico",
+        "families": "atlanta"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-filadelfia",
+      "city1": "ciudad-de-mexico",
+      "city2": "filadelfia",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-filadelfia",
+        "en": "mexico-city-vs-philadelphia"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 150 },
+        "metroBudgetMeal": { "city1": 4, "city2": 15 },
+        "altitude": { "city1": 2240, "city2": 12 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 7 },
+        "weatherJuneAvg": { "city1": 22, "city2": 27 },
+        "stadiumCapacity": { "city1": 87523, "city2": 69176 },
+        "airportCode": { "city1": "MEX", "city2": "PHL" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "ciudad-de-mexico",
+        "nightlife": "ciudad-de-mexico",
+        "families": "filadelfia"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-seattle",
+      "city1": "ciudad-de-mexico",
+      "city2": "seattle",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-seattle",
+        "en": "mexico-city-vs-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 160 },
+        "metroBudgetMeal": { "city1": 4, "city2": 16 },
+        "altitude": { "city1": 2240, "city2": 52 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 7 },
+        "weatherJuneAvg": { "city1": 22, "city2": 18 },
+        "stadiumCapacity": { "city1": 87523, "city2": 68740 },
+        "airportCode": { "city1": "MEX", "city2": "SEA" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "ciudad-de-mexico",
+        "nightlife": "ciudad-de-mexico",
+        "families": "seattle"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-san-francisco",
+      "city1": "ciudad-de-mexico",
+      "city2": "san-francisco",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-san-francisco",
+        "en": "mexico-city-vs-san-francisco"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 200 },
+        "metroBudgetMeal": { "city1": 4, "city2": 20 },
+        "altitude": { "city1": 2240, "city2": 52 },
+        "safetyIndex": { "city1": 6, "city2": 6 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 22, "city2": 17 },
+        "stadiumCapacity": { "city1": 87523, "city2": 68500 },
+        "airportCode": { "city1": "MEX", "city2": "SFO" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "ciudad-de-mexico",
+        "nightlife": "ciudad-de-mexico",
+        "families": "san-francisco"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-boston",
+      "city1": "ciudad-de-mexico",
+      "city2": "boston",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-boston",
+        "en": "mexico-city-vs-boston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 190 },
+        "metroBudgetMeal": { "city1": 4, "city2": 18 },
+        "altitude": { "city1": 2240, "city2": 14 },
+        "safetyIndex": { "city1": 6, "city2": 8 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 22, "city2": 23 },
+        "stadiumCapacity": { "city1": 87523, "city2": 65878 },
+        "airportCode": { "city1": "MEX", "city2": "BOS" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "empate",
+        "nightlife": "ciudad-de-mexico",
+        "families": "boston"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-kansas-city",
+      "city1": "ciudad-de-mexico",
+      "city2": "kansas-city",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-kansas-city",
+        "en": "mexico-city-vs-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 120 },
+        "metroBudgetMeal": { "city1": 4, "city2": 13 },
+        "altitude": { "city1": 2240, "city2": 270 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 6 },
+        "weatherJuneAvg": { "city1": 22, "city2": 29 },
+        "stadiumCapacity": { "city1": 87523, "city2": 76416 },
+        "airportCode": { "city1": "MEX", "city2": "MCI" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "ciudad-de-mexico",
+        "nightlife": "ciudad-de-mexico",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-vs-vancouver",
+      "city1": "ciudad-de-mexico",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "ciudad-de-mexico-vs-vancouver",
+        "en": "mexico-city-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 70, "city2": 160 },
+        "metroBudgetMeal": { "city1": 4, "city2": 16 },
+        "altitude": { "city1": 2240, "city2": 70 },
+        "safetyIndex": { "city1": 6, "city2": 8 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 22, "city2": 19 },
+        "stadiumCapacity": { "city1": 87523, "city2": 54500 },
+        "airportCode": { "city1": "MEX", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "ciudad-de-mexico",
+        "transport": "ciudad-de-mexico",
+        "weather": "ciudad-de-mexico",
+        "nightlife": "ciudad-de-mexico",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "guadalajara-vs-toronto",
+      "city1": "guadalajara",
+      "city2": "toronto",
+      "slugs": {
+        "es": "guadalajara-vs-toronto",
+        "en": "guadalajara-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 170 },
+        "metroBudgetMeal": { "city1": 4, "city2": 16 },
+        "altitude": { "city1": 1566, "city2": 76 },
+        "safetyIndex": { "city1": 6, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 23 },
+        "stadiumCapacity": { "city1": 49850, "city2": 30000 },
+        "airportCode": { "city1": "GDL", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "toronto",
+        "weather": "guadalajara",
+        "nightlife": "guadalajara",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "guadalajara-vs-vancouver",
+      "city1": "guadalajara",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "guadalajara-vs-vancouver",
+        "en": "guadalajara-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 160 },
+        "metroBudgetMeal": { "city1": 4, "city2": 16 },
+        "altitude": { "city1": 1566, "city2": 70 },
+        "safetyIndex": { "city1": 6, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 19 },
+        "stadiumCapacity": { "city1": 49850, "city2": 54500 },
+        "airportCode": { "city1": "GDL", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "vancouver",
+        "weather": "guadalajara",
+        "nightlife": "guadalajara",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "guadalajara-vs-atlanta",
+      "city1": "guadalajara",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "guadalajara-vs-atlanta",
+        "en": "guadalajara-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 130 },
+        "metroBudgetMeal": { "city1": 4, "city2": 14 },
+        "altitude": { "city1": 1566, "city2": 320 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 7 },
+        "weatherJuneAvg": { "city1": 25, "city2": 30 },
+        "stadiumCapacity": { "city1": 49850, "city2": 71000 },
+        "airportCode": { "city1": "GDL", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "empate",
+        "weather": "guadalajara",
+        "nightlife": "atlanta",
+        "families": "guadalajara"
+      }
+    },
+    {
+      "id": "guadalajara-vs-san-francisco",
+      "city1": "guadalajara",
+      "city2": "san-francisco",
+      "slugs": {
+        "es": "guadalajara-vs-san-francisco",
+        "en": "guadalajara-vs-san-francisco"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 65, "city2": 200 },
+        "metroBudgetMeal": { "city1": 4, "city2": 20 },
+        "altitude": { "city1": 1566, "city2": 52 },
+        "safetyIndex": { "city1": 6, "city2": 6 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 17 },
+        "stadiumCapacity": { "city1": 49850, "city2": 68500 },
+        "airportCode": { "city1": "GDL", "city2": "SFO" }
+      },
+      "recommendation": {
+        "budget": "guadalajara",
+        "transport": "san-francisco",
+        "weather": "guadalajara",
+        "nightlife": "san-francisco",
+        "families": "guadalajara"
+      }
+    },
+    {
+      "id": "monterrey-vs-atlanta",
+      "city1": "monterrey",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "monterrey-vs-atlanta",
+        "en": "monterrey-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 75, "city2": 130 },
+        "metroBudgetMeal": { "city1": 5, "city2": 14 },
+        "altitude": { "city1": 537, "city2": 320 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 7 },
+        "weatherJuneAvg": { "city1": 32, "city2": 30 },
+        "stadiumCapacity": { "city1": 53500, "city2": 71000 },
+        "airportCode": { "city1": "MTY", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "monterrey",
+        "transport": "empate",
+        "weather": "atlanta",
+        "nightlife": "atlanta",
+        "families": "monterrey"
+      }
+    },
+    {
+      "id": "monterrey-vs-miami",
+      "city1": "monterrey",
+      "city2": "miami",
+      "slugs": {
+        "es": "monterrey-vs-miami",
+        "en": "monterrey-vs-miami"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 75, "city2": 160 },
+        "metroBudgetMeal": { "city1": 5, "city2": 16 },
+        "altitude": { "city1": 537, "city2": 2 },
+        "safetyIndex": { "city1": 6, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 5 },
+        "weatherJuneAvg": { "city1": 32, "city2": 31 },
+        "stadiumCapacity": { "city1": 53500, "city2": 64767 },
+        "airportCode": { "city1": "MTY", "city2": "MIA" }
+      },
+      "recommendation": {
+        "budget": "monterrey",
+        "transport": "monterrey",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "monterrey"
+      }
+    },
+    {
+      "id": "monterrey-vs-toronto",
+      "city1": "monterrey",
+      "city2": "toronto",
+      "slugs": {
+        "es": "monterrey-vs-toronto",
+        "en": "monterrey-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 75, "city2": 170 },
+        "metroBudgetMeal": { "city1": 5, "city2": 16 },
+        "altitude": { "city1": 537, "city2": 76 },
+        "safetyIndex": { "city1": 6, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 32, "city2": 23 },
+        "stadiumCapacity": { "city1": 53500, "city2": 30000 },
+        "airportCode": { "city1": "MTY", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "monterrey",
+        "transport": "toronto",
+        "weather": "toronto",
+        "nightlife": "monterrey",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "monterrey-vs-vancouver",
+      "city1": "monterrey",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "monterrey-vs-vancouver",
+        "en": "monterrey-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 75, "city2": 160 },
+        "metroBudgetMeal": { "city1": 5, "city2": 16 },
+        "altitude": { "city1": 537, "city2": 70 },
+        "safetyIndex": { "city1": 6, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 32, "city2": 19 },
+        "stadiumCapacity": { "city1": 53500, "city2": 54500 },
+        "airportCode": { "city1": "MTY", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "monterrey",
+        "transport": "vancouver",
+        "weather": "vancouver",
+        "nightlife": "monterrey",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "nueva-york-vs-atlanta",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "nueva-york-vs-atlanta",
+        "en": "new-york-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 130 },
+        "metroBudgetMeal": { "city1": 20, "city2": 14 },
+        "altitude": { "city1": 10, "city2": 320 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 7 },
+        "weatherJuneAvg": { "city1": 25, "city2": 30 },
+        "stadiumCapacity": { "city1": 82500, "city2": 71000 },
+        "airportCode": { "city1": "EWR", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "atlanta"
+      }
+    },
+    {
+      "id": "nueva-york-vs-dallas",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "dallas",
+      "slugs": {
+        "es": "nueva-york-vs-dallas",
+        "en": "new-york-vs-dallas"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 140 },
+        "metroBudgetMeal": { "city1": 20, "city2": 15 },
+        "altitude": { "city1": 10, "city2": 139 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 6 },
+        "weatherJuneAvg": { "city1": 25, "city2": 34 },
+        "stadiumCapacity": { "city1": 82500, "city2": 80000 },
+        "airportCode": { "city1": "EWR", "city2": "DFW" }
+      },
+      "recommendation": {
+        "budget": "dallas",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "dallas"
+      }
+    },
+    {
+      "id": "nueva-york-vs-houston",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "houston",
+      "slugs": {
+        "es": "nueva-york-vs-houston",
+        "en": "new-york-vs-houston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 130 },
+        "metroBudgetMeal": { "city1": 20, "city2": 14 },
+        "altitude": { "city1": 10, "city2": 15 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 6 },
+        "weatherJuneAvg": { "city1": 25, "city2": 33 },
+        "stadiumCapacity": { "city1": 82500, "city2": 72220 },
+        "airportCode": { "city1": "EWR", "city2": "IAH" }
+      },
+      "recommendation": {
+        "budget": "houston",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "houston"
+      }
+    },
+    {
+      "id": "nueva-york-vs-boston",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "boston",
+      "slugs": {
+        "es": "nueva-york-vs-boston",
+        "en": "new-york-vs-boston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 190 },
+        "metroBudgetMeal": { "city1": 20, "city2": 18 },
+        "altitude": { "city1": 10, "city2": 14 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 23 },
+        "stadiumCapacity": { "city1": 82500, "city2": 65878 },
+        "airportCode": { "city1": "EWR", "city2": "BOS" }
+      },
+      "recommendation": {
+        "budget": "boston",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "boston"
+      }
+    },
+    {
+      "id": "nueva-york-vs-toronto",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "toronto",
+      "slugs": {
+        "es": "nueva-york-vs-toronto",
+        "en": "new-york-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 170 },
+        "metroBudgetMeal": { "city1": 20, "city2": 16 },
+        "altitude": { "city1": 10, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 23 },
+        "stadiumCapacity": { "city1": 82500, "city2": 30000 },
+        "airportCode": { "city1": "EWR", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "toronto",
+        "transport": "empate",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "nueva-york-vs-seattle",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "seattle",
+      "slugs": {
+        "es": "nueva-york-vs-seattle",
+        "en": "new-york-vs-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 160 },
+        "metroBudgetMeal": { "city1": 20, "city2": 16 },
+        "altitude": { "city1": 10, "city2": 52 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 7 },
+        "weatherJuneAvg": { "city1": 25, "city2": 18 },
+        "stadiumCapacity": { "city1": 82500, "city2": 68740 },
+        "airportCode": { "city1": "EWR", "city2": "SEA" }
+      },
+      "recommendation": {
+        "budget": "seattle",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "seattle"
+      }
+    },
+    {
+      "id": "nueva-york-vs-kansas-city",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "kansas-city",
+      "slugs": {
+        "es": "nueva-york-vs-kansas-city",
+        "en": "new-york-vs-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 120 },
+        "metroBudgetMeal": { "city1": 20, "city2": 13 },
+        "altitude": { "city1": 10, "city2": 270 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 6 },
+        "weatherJuneAvg": { "city1": 25, "city2": 29 },
+        "stadiumCapacity": { "city1": 82500, "city2": 76416 },
+        "airportCode": { "city1": "EWR", "city2": "MCI" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "nueva-york-vs-filadelfia",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "filadelfia",
+      "slugs": {
+        "es": "nueva-york-vs-filadelfia",
+        "en": "new-york-vs-philadelphia"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 150 },
+        "metroBudgetMeal": { "city1": 20, "city2": 15 },
+        "altitude": { "city1": 10, "city2": 12 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 9, "city2": 7 },
+        "weatherJuneAvg": { "city1": 25, "city2": 27 },
+        "stadiumCapacity": { "city1": 82500, "city2": 69176 },
+        "airportCode": { "city1": "EWR", "city2": "PHL" }
+      },
+      "recommendation": {
+        "budget": "filadelfia",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "filadelfia"
+      }
+    },
+    {
+      "id": "nueva-york-vs-san-francisco",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "san-francisco",
+      "slugs": {
+        "es": "nueva-york-vs-san-francisco",
+        "en": "new-york-vs-san-francisco"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 200 },
+        "metroBudgetMeal": { "city1": 20, "city2": 20 },
+        "altitude": { "city1": 10, "city2": 52 },
+        "safetyIndex": { "city1": 7, "city2": 6 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 17 },
+        "stadiumCapacity": { "city1": 82500, "city2": 68500 },
+        "airportCode": { "city1": "EWR", "city2": "SFO" }
+      },
+      "recommendation": {
+        "budget": "san-francisco",
+        "transport": "nueva-york-nueva-jersey",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "san-francisco"
+      }
+    },
+    {
+      "id": "nueva-york-vs-vancouver",
+      "city1": "nueva-york-nueva-jersey",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "nueva-york-vs-vancouver",
+        "en": "new-york-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 250, "city2": 160 },
+        "metroBudgetMeal": { "city1": 20, "city2": 16 },
+        "altitude": { "city1": 10, "city2": 70 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 9, "city2": 8 },
+        "weatherJuneAvg": { "city1": 25, "city2": 19 },
+        "stadiumCapacity": { "city1": 82500, "city2": 54500 },
+        "airportCode": { "city1": "EWR", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "vancouver",
+        "transport": "empate",
+        "weather": "nueva-york-nueva-jersey",
+        "nightlife": "nueva-york-nueva-jersey",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "los-angeles-vs-miami",
+      "city1": "los-angeles",
+      "city2": "miami",
+      "slugs": {
+        "es": "los-angeles-vs-miami",
+        "en": "los-angeles-vs-miami"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 160 },
+        "metroBudgetMeal": { "city1": 18, "city2": 16 },
+        "altitude": { "city1": 86, "city2": 2 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 5 },
+        "weatherJuneAvg": { "city1": 26, "city2": 31 },
+        "stadiumCapacity": { "city1": 70240, "city2": 64767 },
+        "airportCode": { "city1": "LAX", "city2": "MIA" }
+      },
+      "recommendation": {
+        "budget": "miami",
+        "transport": "los-angeles",
+        "weather": "los-angeles",
+        "nightlife": "miami",
+        "families": "los-angeles"
+      }
+    },
+    {
+      "id": "los-angeles-vs-dallas",
+      "city1": "los-angeles",
+      "city2": "dallas",
+      "slugs": {
+        "es": "los-angeles-vs-dallas",
+        "en": "los-angeles-vs-dallas"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 140 },
+        "metroBudgetMeal": { "city1": 18, "city2": 15 },
+        "altitude": { "city1": 86, "city2": 139 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 6 },
+        "weatherJuneAvg": { "city1": 26, "city2": 34 },
+        "stadiumCapacity": { "city1": 70240, "city2": 80000 },
+        "airportCode": { "city1": "LAX", "city2": "DFW" }
+      },
+      "recommendation": {
+        "budget": "dallas",
+        "transport": "empate",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "los-angeles"
+      }
+    },
+    {
+      "id": "los-angeles-vs-seattle",
+      "city1": "los-angeles",
+      "city2": "seattle",
+      "slugs": {
+        "es": "los-angeles-vs-seattle",
+        "en": "los-angeles-vs-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 160 },
+        "metroBudgetMeal": { "city1": 18, "city2": 16 },
+        "altitude": { "city1": 86, "city2": 52 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 7 },
+        "weatherJuneAvg": { "city1": 26, "city2": 18 },
+        "stadiumCapacity": { "city1": 70240, "city2": 68740 },
+        "airportCode": { "city1": "LAX", "city2": "SEA" }
+      },
+      "recommendation": {
+        "budget": "seattle",
+        "transport": "seattle",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "seattle"
+      }
+    },
+    {
+      "id": "los-angeles-vs-toronto",
+      "city1": "los-angeles",
+      "city2": "toronto",
+      "slugs": {
+        "es": "los-angeles-vs-toronto",
+        "en": "los-angeles-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 170 },
+        "metroBudgetMeal": { "city1": 18, "city2": 16 },
+        "altitude": { "city1": 86, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 6, "city2": 8 },
+        "weatherJuneAvg": { "city1": 26, "city2": 23 },
+        "stadiumCapacity": { "city1": 70240, "city2": 30000 },
+        "airportCode": { "city1": "LAX", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "toronto",
+        "transport": "toronto",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "los-angeles-vs-vancouver",
+      "city1": "los-angeles",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "los-angeles-vs-vancouver",
+        "en": "los-angeles-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 160 },
+        "metroBudgetMeal": { "city1": 18, "city2": 16 },
+        "altitude": { "city1": 86, "city2": 70 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 6, "city2": 8 },
+        "weatherJuneAvg": { "city1": 26, "city2": 19 },
+        "stadiumCapacity": { "city1": 70240, "city2": 54500 },
+        "airportCode": { "city1": "LAX", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "vancouver",
+        "transport": "vancouver",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "los-angeles-vs-atlanta",
+      "city1": "los-angeles",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "los-angeles-vs-atlanta",
+        "en": "los-angeles-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 130 },
+        "metroBudgetMeal": { "city1": 18, "city2": 14 },
+        "altitude": { "city1": 86, "city2": 320 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 7 },
+        "weatherJuneAvg": { "city1": 26, "city2": 30 },
+        "stadiumCapacity": { "city1": 70240, "city2": 71000 },
+        "airportCode": { "city1": "LAX", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "atlanta",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "atlanta"
+      }
+    },
+    {
+      "id": "los-angeles-vs-kansas-city",
+      "city1": "los-angeles",
+      "city2": "kansas-city",
+      "slugs": {
+        "es": "los-angeles-vs-kansas-city",
+        "en": "los-angeles-vs-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 180, "city2": 120 },
+        "metroBudgetMeal": { "city1": 18, "city2": 13 },
+        "altitude": { "city1": 86, "city2": 270 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 6 },
+        "weatherJuneAvg": { "city1": 26, "city2": 29 },
+        "stadiumCapacity": { "city1": 70240, "city2": 76416 },
+        "airportCode": { "city1": "LAX", "city2": "MCI" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "empate",
+        "weather": "los-angeles",
+        "nightlife": "los-angeles",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "dallas-vs-miami",
+      "city1": "dallas",
+      "city2": "miami",
+      "slugs": {
+        "es": "dallas-vs-miami",
+        "en": "dallas-vs-miami"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 140, "city2": 160 },
+        "metroBudgetMeal": { "city1": 15, "city2": 16 },
+        "altitude": { "city1": 139, "city2": 2 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 5 },
+        "weatherJuneAvg": { "city1": 34, "city2": 31 },
+        "stadiumCapacity": { "city1": 80000, "city2": 64767 },
+        "airportCode": { "city1": "DFW", "city2": "MIA" }
+      },
+      "recommendation": {
+        "budget": "dallas",
+        "transport": "dallas",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "dallas"
+      }
+    },
+    {
+      "id": "dallas-vs-atlanta",
+      "city1": "dallas",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "dallas-vs-atlanta",
+        "en": "dallas-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 140, "city2": 130 },
+        "metroBudgetMeal": { "city1": 15, "city2": 14 },
+        "altitude": { "city1": 139, "city2": 320 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 7 },
+        "weatherJuneAvg": { "city1": 34, "city2": 30 },
+        "stadiumCapacity": { "city1": 80000, "city2": 71000 },
+        "airportCode": { "city1": "DFW", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "atlanta",
+        "weather": "atlanta",
+        "nightlife": "dallas",
+        "families": "atlanta"
+      }
+    },
+    {
+      "id": "dallas-vs-seattle",
+      "city1": "dallas",
+      "city2": "seattle",
+      "slugs": {
+        "es": "dallas-vs-seattle",
+        "en": "dallas-vs-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 140, "city2": 160 },
+        "metroBudgetMeal": { "city1": 15, "city2": 16 },
+        "altitude": { "city1": 139, "city2": 52 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 7 },
+        "weatherJuneAvg": { "city1": 34, "city2": 18 },
+        "stadiumCapacity": { "city1": 80000, "city2": 68740 },
+        "airportCode": { "city1": "DFW", "city2": "SEA" }
+      },
+      "recommendation": {
+        "budget": "dallas",
+        "transport": "seattle",
+        "weather": "seattle",
+        "nightlife": "dallas",
+        "families": "seattle"
+      }
+    },
+    {
+      "id": "dallas-vs-toronto",
+      "city1": "dallas",
+      "city2": "toronto",
+      "slugs": {
+        "es": "dallas-vs-toronto",
+        "en": "dallas-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 140, "city2": 170 },
+        "metroBudgetMeal": { "city1": 15, "city2": 16 },
+        "altitude": { "city1": 139, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 6, "city2": 8 },
+        "weatherJuneAvg": { "city1": 34, "city2": 23 },
+        "stadiumCapacity": { "city1": 80000, "city2": 30000 },
+        "airportCode": { "city1": "DFW", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "dallas",
+        "transport": "toronto",
+        "weather": "toronto",
+        "nightlife": "dallas",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "houston-vs-miami",
+      "city1": "houston",
+      "city2": "miami",
+      "slugs": {
+        "es": "houston-vs-miami",
+        "en": "houston-vs-miami"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 160 },
+        "metroBudgetMeal": { "city1": 14, "city2": 16 },
+        "altitude": { "city1": 15, "city2": 2 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 5 },
+        "weatherJuneAvg": { "city1": 33, "city2": 31 },
+        "stadiumCapacity": { "city1": 72220, "city2": 64767 },
+        "airportCode": { "city1": "IAH", "city2": "MIA" }
+      },
+      "recommendation": {
+        "budget": "houston",
+        "transport": "houston",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "houston"
+      }
+    },
+    {
+      "id": "houston-vs-atlanta",
+      "city1": "houston",
+      "city2": "atlanta",
+      "slugs": {
+        "es": "houston-vs-atlanta",
+        "en": "houston-vs-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 130 },
+        "metroBudgetMeal": { "city1": 14, "city2": 14 },
+        "altitude": { "city1": 15, "city2": 320 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 7 },
+        "weatherJuneAvg": { "city1": 33, "city2": 30 },
+        "stadiumCapacity": { "city1": 72220, "city2": 71000 },
+        "airportCode": { "city1": "IAH", "city2": "ATL" }
+      },
+      "recommendation": {
+        "budget": "empate",
+        "transport": "atlanta",
+        "weather": "atlanta",
+        "nightlife": "houston",
+        "families": "atlanta"
+      }
+    },
+    {
+      "id": "houston-vs-kansas-city",
+      "city1": "houston",
+      "city2": "kansas-city",
+      "slugs": {
+        "es": "houston-vs-kansas-city",
+        "en": "houston-vs-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 120 },
+        "metroBudgetMeal": { "city1": 14, "city2": 13 },
+        "altitude": { "city1": 15, "city2": 270 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 6 },
+        "weatherJuneAvg": { "city1": 33, "city2": 29 },
+        "stadiumCapacity": { "city1": 72220, "city2": 76416 },
+        "airportCode": { "city1": "IAH", "city2": "MCI" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "empate",
+        "weather": "kansas-city",
+        "nightlife": "houston",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "miami-vs-seattle",
+      "city1": "miami",
+      "city2": "seattle",
+      "slugs": {
+        "es": "miami-vs-seattle",
+        "en": "miami-vs-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 160 },
+        "metroBudgetMeal": { "city1": 16, "city2": 16 },
+        "altitude": { "city1": 2, "city2": 52 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 5, "city2": 7 },
+        "weatherJuneAvg": { "city1": 31, "city2": 18 },
+        "stadiumCapacity": { "city1": 64767, "city2": 68740 },
+        "airportCode": { "city1": "MIA", "city2": "SEA" }
+      },
+      "recommendation": {
+        "budget": "empate",
+        "transport": "seattle",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "seattle"
+      }
+    },
+    {
+      "id": "miami-vs-boston",
+      "city1": "miami",
+      "city2": "boston",
+      "slugs": {
+        "es": "miami-vs-boston",
+        "en": "miami-vs-boston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 190 },
+        "metroBudgetMeal": { "city1": 16, "city2": 18 },
+        "altitude": { "city1": 2, "city2": 14 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 5, "city2": 8 },
+        "weatherJuneAvg": { "city1": 31, "city2": 23 },
+        "stadiumCapacity": { "city1": 64767, "city2": 65878 },
+        "airportCode": { "city1": "MIA", "city2": "BOS" }
+      },
+      "recommendation": {
+        "budget": "miami",
+        "transport": "boston",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "boston"
+      }
+    },
+    {
+      "id": "miami-vs-toronto",
+      "city1": "miami",
+      "city2": "toronto",
+      "slugs": {
+        "es": "miami-vs-toronto",
+        "en": "miami-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 170 },
+        "metroBudgetMeal": { "city1": 16, "city2": 16 },
+        "altitude": { "city1": 2, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 5, "city2": 8 },
+        "weatherJuneAvg": { "city1": 31, "city2": 23 },
+        "stadiumCapacity": { "city1": 64767, "city2": 30000 },
+        "airportCode": { "city1": "MIA", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "miami",
+        "transport": "toronto",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "miami-vs-kansas-city",
+      "city1": "miami",
+      "city2": "kansas-city",
+      "slugs": {
+        "es": "miami-vs-kansas-city",
+        "en": "miami-vs-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 120 },
+        "metroBudgetMeal": { "city1": 16, "city2": 13 },
+        "altitude": { "city1": 2, "city2": 270 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 5, "city2": 6 },
+        "weatherJuneAvg": { "city1": 31, "city2": 29 },
+        "stadiumCapacity": { "city1": 64767, "city2": 76416 },
+        "airportCode": { "city1": "MIA", "city2": "MCI" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "kansas-city",
+        "weather": "miami",
+        "nightlife": "miami",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "atlanta-vs-seattle",
+      "city1": "atlanta",
+      "city2": "seattle",
+      "slugs": {
+        "es": "atlanta-vs-seattle",
+        "en": "atlanta-vs-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 160 },
+        "metroBudgetMeal": { "city1": 14, "city2": 16 },
+        "altitude": { "city1": 320, "city2": 52 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 7 },
+        "weatherJuneAvg": { "city1": 30, "city2": 18 },
+        "stadiumCapacity": { "city1": 71000, "city2": 68740 },
+        "airportCode": { "city1": "ATL", "city2": "SEA" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "empate",
+        "weather": "atlanta",
+        "nightlife": "atlanta",
+        "families": "seattle"
+      }
+    },
+    {
+      "id": "atlanta-vs-boston",
+      "city1": "atlanta",
+      "city2": "boston",
+      "slugs": {
+        "es": "atlanta-vs-boston",
+        "en": "atlanta-vs-boston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 190 },
+        "metroBudgetMeal": { "city1": 14, "city2": 18 },
+        "altitude": { "city1": 320, "city2": 14 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 30, "city2": 23 },
+        "stadiumCapacity": { "city1": 71000, "city2": 65878 },
+        "airportCode": { "city1": "ATL", "city2": "BOS" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "boston",
+        "weather": "atlanta",
+        "nightlife": "atlanta",
+        "families": "boston"
+      }
+    },
+    {
+      "id": "atlanta-vs-toronto",
+      "city1": "atlanta",
+      "city2": "toronto",
+      "slugs": {
+        "es": "atlanta-vs-toronto",
+        "en": "atlanta-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 170 },
+        "metroBudgetMeal": { "city1": 14, "city2": 16 },
+        "altitude": { "city1": 320, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 30, "city2": 23 },
+        "stadiumCapacity": { "city1": 71000, "city2": 30000 },
+        "airportCode": { "city1": "ATL", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "toronto",
+        "weather": "atlanta",
+        "nightlife": "atlanta",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "atlanta-vs-vancouver",
+      "city1": "atlanta",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "atlanta-vs-vancouver",
+        "en": "atlanta-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 160 },
+        "metroBudgetMeal": { "city1": 14, "city2": 16 },
+        "altitude": { "city1": 320, "city2": 70 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 30, "city2": 19 },
+        "stadiumCapacity": { "city1": 71000, "city2": 54500 },
+        "airportCode": { "city1": "ATL", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "atlanta",
+        "transport": "vancouver",
+        "weather": "atlanta",
+        "nightlife": "atlanta",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "atlanta-vs-kansas-city",
+      "city1": "atlanta",
+      "city2": "kansas-city",
+      "slugs": {
+        "es": "atlanta-vs-kansas-city",
+        "en": "atlanta-vs-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 130, "city2": 120 },
+        "metroBudgetMeal": { "city1": 14, "city2": 13 },
+        "altitude": { "city1": 320, "city2": 270 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 7, "city2": 6 },
+        "weatherJuneAvg": { "city1": 30, "city2": 29 },
+        "stadiumCapacity": { "city1": 71000, "city2": 76416 },
+        "airportCode": { "city1": "ATL", "city2": "MCI" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "atlanta",
+        "weather": "empate",
+        "nightlife": "atlanta",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "seattle-vs-toronto",
+      "city1": "seattle",
+      "city2": "toronto",
+      "slugs": {
+        "es": "seattle-vs-toronto",
+        "en": "seattle-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 170 },
+        "metroBudgetMeal": { "city1": 16, "city2": 16 },
+        "altitude": { "city1": 52, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 18, "city2": 23 },
+        "stadiumCapacity": { "city1": 68740, "city2": 30000 },
+        "airportCode": { "city1": "SEA", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "seattle",
+        "transport": "toronto",
+        "weather": "toronto",
+        "nightlife": "toronto",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "seattle-vs-vancouver",
+      "city1": "seattle",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "seattle-vs-vancouver",
+        "en": "seattle-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 160 },
+        "metroBudgetMeal": { "city1": 16, "city2": 16 },
+        "altitude": { "city1": 52, "city2": 70 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 7, "city2": 8 },
+        "weatherJuneAvg": { "city1": 18, "city2": 19 },
+        "stadiumCapacity": { "city1": 68740, "city2": 54500 },
+        "airportCode": { "city1": "SEA", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "empate",
+        "transport": "vancouver",
+        "weather": "empate",
+        "nightlife": "seattle",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "boston-vs-toronto",
+      "city1": "boston",
+      "city2": "toronto",
+      "slugs": {
+        "es": "boston-vs-toronto",
+        "en": "boston-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 190, "city2": 170 },
+        "metroBudgetMeal": { "city1": 18, "city2": 16 },
+        "altitude": { "city1": 14, "city2": 76 },
+        "safetyIndex": { "city1": 8, "city2": 8 },
+        "transportScore": { "city1": 8, "city2": 8 },
+        "weatherJuneAvg": { "city1": 23, "city2": 23 },
+        "stadiumCapacity": { "city1": 65878, "city2": 30000 },
+        "airportCode": { "city1": "BOS", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "toronto",
+        "transport": "empate",
+        "weather": "empate",
+        "nightlife": "boston",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "boston-vs-vancouver",
+      "city1": "boston",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "boston-vs-vancouver",
+        "en": "boston-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 190, "city2": 160 },
+        "metroBudgetMeal": { "city1": 18, "city2": 16 },
+        "altitude": { "city1": 14, "city2": 70 },
+        "safetyIndex": { "city1": 8, "city2": 8 },
+        "transportScore": { "city1": 8, "city2": 8 },
+        "weatherJuneAvg": { "city1": 23, "city2": 19 },
+        "stadiumCapacity": { "city1": 65878, "city2": 54500 },
+        "airportCode": { "city1": "BOS", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "vancouver",
+        "transport": "empate",
+        "weather": "boston",
+        "nightlife": "boston",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "kansas-city-vs-houston",
+      "city1": "kansas-city",
+      "city2": "houston",
+      "slugs": {
+        "es": "kansas-city-vs-houston",
+        "en": "kansas-city-vs-houston"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 120, "city2": 130 },
+        "metroBudgetMeal": { "city1": 13, "city2": 14 },
+        "altitude": { "city1": 270, "city2": 15 },
+        "safetyIndex": { "city1": 7, "city2": 7 },
+        "transportScore": { "city1": 6, "city2": 6 },
+        "weatherJuneAvg": { "city1": 29, "city2": 33 },
+        "stadiumCapacity": { "city1": 76416, "city2": 72220 },
+        "airportCode": { "city1": "MCI", "city2": "IAH" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "empate",
+        "weather": "kansas-city",
+        "nightlife": "houston",
+        "families": "kansas-city"
+      }
+    },
+    {
+      "id": "kansas-city-vs-toronto",
+      "city1": "kansas-city",
+      "city2": "toronto",
+      "slugs": {
+        "es": "kansas-city-vs-toronto",
+        "en": "kansas-city-vs-toronto"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 120, "city2": 170 },
+        "metroBudgetMeal": { "city1": 13, "city2": 16 },
+        "altitude": { "city1": 270, "city2": 76 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 6, "city2": 8 },
+        "weatherJuneAvg": { "city1": 29, "city2": 23 },
+        "stadiumCapacity": { "city1": 76416, "city2": 30000 },
+        "airportCode": { "city1": "MCI", "city2": "YYZ" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "toronto",
+        "weather": "kansas-city",
+        "nightlife": "kansas-city",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "kansas-city-vs-vancouver",
+      "city1": "kansas-city",
+      "city2": "vancouver",
+      "slugs": {
+        "es": "kansas-city-vs-vancouver",
+        "en": "kansas-city-vs-vancouver"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 120, "city2": 160 },
+        "metroBudgetMeal": { "city1": 13, "city2": 16 },
+        "altitude": { "city1": 270, "city2": 70 },
+        "safetyIndex": { "city1": 7, "city2": 8 },
+        "transportScore": { "city1": 6, "city2": 8 },
+        "weatherJuneAvg": { "city1": 29, "city2": 19 },
+        "stadiumCapacity": { "city1": 76416, "city2": 54500 },
+        "airportCode": { "city1": "MCI", "city2": "YVR" }
+      },
+      "recommendation": {
+        "budget": "kansas-city",
+        "transport": "vancouver",
+        "weather": "kansas-city",
+        "nightlife": "kansas-city",
+        "families": "vancouver"
+      }
+    },
+    {
+      "id": "toronto-vs-san-francisco",
+      "city1": "toronto",
+      "city2": "san-francisco",
+      "slugs": {
+        "es": "toronto-vs-san-francisco",
+        "en": "toronto-vs-san-francisco"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 170, "city2": 200 },
+        "metroBudgetMeal": { "city1": 16, "city2": 20 },
+        "altitude": { "city1": 76, "city2": 52 },
+        "safetyIndex": { "city1": 8, "city2": 6 },
+        "transportScore": { "city1": 8, "city2": 8 },
+        "weatherJuneAvg": { "city1": 23, "city2": 17 },
+        "stadiumCapacity": { "city1": 30000, "city2": 68500 },
+        "airportCode": { "city1": "YYZ", "city2": "SFO" }
+      },
+      "recommendation": {
+        "budget": "toronto",
+        "transport": "empate",
+        "weather": "toronto",
+        "nightlife": "san-francisco",
+        "families": "toronto"
+      }
+    },
+    {
+      "id": "vancouver-vs-san-francisco",
+      "city1": "vancouver",
+      "city2": "san-francisco",
+      "slugs": {
+        "es": "vancouver-vs-san-francisco",
+        "en": "vancouver-vs-san-francisco"
+      },
+      "lastUpdated": "2026-03-27",
+      "metrics": {
+        "costPerNight": { "city1": 160, "city2": 200 },
+        "metroBudgetMeal": { "city1": 16, "city2": 20 },
+        "altitude": { "city1": 70, "city2": 52 },
+        "safetyIndex": { "city1": 8, "city2": 6 },
+        "transportScore": { "city1": 8, "city2": 8 },
+        "weatherJuneAvg": { "city1": 19, "city2": 17 },
+        "stadiumCapacity": { "city1": 54500, "city2": 68500 },
+        "airportCode": { "city1": "YVR", "city2": "SFO" }
+      },
+      "recommendation": {
+        "budget": "vancouver",
+        "transport": "empate",
+        "weather": "empate",
+        "nightlife": "san-francisco",
+        "families": "vancouver"
+      }
     }
   ]
 }

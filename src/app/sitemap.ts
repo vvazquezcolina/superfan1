@@ -8,6 +8,7 @@ import {
   getMatchDayGuides,
   getListicles,
 } from '@/lib/content/programmatic'
+import { getMatches } from '@/lib/content/schedule'
 import { hreflangMap } from '@/lib/i18n'
 
 const SITE_URL = 'https://www.superfaninfo.com'
@@ -78,15 +79,20 @@ function buildIndexAlternates(
 }
 
 /**
- * Build hreflang alternates for programmatic pages that only exist for es + en.
- * (comparar, como-llegar, dia-de-partido, mejores)
+ * Build hreflang alternates for programmatic pages across all 6 locales.
+ * Non-es/en locales use the en slug (or the es slug as final fallback).
+ * (comparar, como-llegar, dia-de-partido, mejores, partidos, grupos)
  */
-function buildEsEnAlternates(fsPath: string, esSlug: string, enSlug?: string): Record<string, string> {
-  return {
-    'es-419': `${SITE_URL}/es/${fsPath}/${esSlug}`,
-    en: `${SITE_URL}/en/${fsPath}/${enSlug ?? esSlug}`,
-    'x-default': `${SITE_URL}/es/${fsPath}/${esSlug}`,
+function buildAllLocalesAlternates(fsPath: string, esSlug: string, enSlug?: string): Record<string, string> {
+  const resolved = enSlug ?? esSlug
+  const languages: Record<string, string> = {}
+  for (const locale of locales) {
+    const hreflang = hreflangMap[locale]
+    const slug = locale === 'es' ? esSlug : resolved
+    languages[hreflang] = `${SITE_URL}/${locale}/${fsPath}/${slug}`
   }
+  languages['x-default'] = `${SITE_URL}/es/${fsPath}/${esSlug}`
+  return languages
 }
 
 /**
@@ -100,6 +106,8 @@ function buildStaticEsEnAlternates(esPath: string, enPath?: string): Record<stri
   }
 }
 
+const GROUPS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'] as const
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const cities = getCities()
   const stadiums = getStadiums()
@@ -108,6 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = getRoutes()
   const matchDayGuides = getMatchDayGuides()
   const listicles = getListicles()
+  const matches = getMatches()
 
   const entries: MetadataRoute.Sitemap = []
 
@@ -305,6 +314,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allLocaleIndexPages = [
     { path: 'viajes', priority: 0.7, freq: 'monthly' as const },
     { path: 'fan', priority: 0.7, freq: 'monthly' as const },
+    { path: 'calendario', priority: 0.8, freq: 'weekly' as const },
   ]
   for (const { path, priority, freq } of allLocaleIndexPages) {
     const alts: Record<string, string> = {}
@@ -334,7 +344,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: 'viajes/visa', priority: 0.7, freq: 'monthly' as const },
     { path: 'fan/entradas', priority: 0.7, freq: 'monthly' as const },
     { path: 'fan/seguridad', priority: 0.7, freq: 'monthly' as const },
-    { path: 'calendario', priority: 0.8, freq: 'weekly' as const },
     { path: 'herramientas', priority: 0.7, freq: 'monthly' as const },
     { path: 'herramientas/conversor-moneda', priority: 0.6, freq: 'monthly' as const },
   ]
@@ -406,84 +415,95 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // ─── City comparison pages (comparar) — es and en only ─────────────────────
+  // ─── City comparison pages (comparar) — all 6 locales ──────────────────────
   for (const comparison of comparisons) {
     const esSlug = comparison.slugs.es
     const enSlug = comparison.slugs.en ?? comparison.slugs.es
-    const alts = buildEsEnAlternates('comparar', esSlug, enSlug)
-    entries.push({
-      url: `${SITE_URL}/es/comparar/${esSlug}`,
-      lastModified: new Date(comparison.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/comparar/${enSlug}`,
-      lastModified: new Date(comparison.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-      alternates: { languages: alts },
-    })
+    const alts = buildAllLocalesAlternates('comparar', esSlug, enSlug)
+    for (const locale of locales) {
+      const slug = locale === 'es' ? esSlug : enSlug
+      entries.push({
+        url: `${SITE_URL}/${locale}/comparar/${slug}`,
+        lastModified: new Date(comparison.lastUpdated),
+        changeFrequency: 'monthly',
+        priority: 0.75,
+        alternates: { languages: alts },
+      })
+    }
   }
 
-  // ─── How-to-get pages (como-llegar) — es and en only ───────────────────────
+  // ─── How-to-get pages (como-llegar) — all 6 locales ─────────────────────────
   for (const route of routes) {
     const esSlug = route.slugs.es
     const enSlug = route.slugs.en ?? route.slugs.es
-    const alts = buildEsEnAlternates('como-llegar', esSlug, enSlug)
-    entries.push({
-      url: `${SITE_URL}/es/como-llegar/${esSlug}`,
-      lastModified: new Date(route.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/como-llegar/${enSlug}`,
-      lastModified: new Date(route.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-      alternates: { languages: alts },
-    })
+    const alts = buildAllLocalesAlternates('como-llegar', esSlug, enSlug)
+    for (const locale of locales) {
+      const slug = locale === 'es' ? esSlug : enSlug
+      entries.push({
+        url: `${SITE_URL}/${locale}/como-llegar/${slug}`,
+        lastModified: new Date(route.lastUpdated),
+        changeFrequency: 'monthly',
+        priority: 0.75,
+        alternates: { languages: alts },
+      })
+    }
   }
 
-  // ─── Match day guide pages (dia-de-partido) — es and en only ───────────────
+  // ─── Match day guide pages (dia-de-partido) — all 6 locales ─────────────────
   for (const guide of matchDayGuides) {
-    const alts = buildEsEnAlternates('dia-de-partido', guide.slug)
-    entries.push({
-      url: `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
-      lastModified: new Date(guide.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/dia-de-partido/${guide.slug}`,
-      lastModified: new Date(guide.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-      alternates: { languages: alts },
-    })
+    const alts = buildAllLocalesAlternates('dia-de-partido', guide.slug)
+    for (const locale of locales) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/dia-de-partido/${guide.slug}`,
+        lastModified: new Date(guide.lastUpdated),
+        changeFrequency: 'monthly',
+        priority: 0.75,
+        alternates: { languages: alts },
+      })
+    }
   }
 
-  // ─── Best-of listicle pages (mejores) — es and en only ─────────────────────
+  // ─── Best-of listicle pages (mejores) — all 6 locales ───────────────────────
   for (const listicle of listicles) {
-    const alts = buildEsEnAlternates('mejores', listicle.slug)
-    entries.push({
-      url: `${SITE_URL}/es/mejores/${listicle.slug}`,
-      lastModified: new Date(listicle.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/mejores/${listicle.slug}`,
-      lastModified: new Date(listicle.lastUpdated),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-      alternates: { languages: alts },
-    })
+    const alts = buildAllLocalesAlternates('mejores', listicle.slug)
+    for (const locale of locales) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/mejores/${listicle.slug}`,
+        lastModified: new Date(listicle.lastUpdated),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: { languages: alts },
+      })
+    }
+  }
+
+  // ─── Match pages (partidos) — 48 matches × 6 locales ────────────────────────
+  for (const match of matches) {
+    const alts = buildAllLocalesAlternates('partidos', match.id)
+    for (const locale of locales) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/partidos/${match.id}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        alternates: { languages: alts },
+      })
+    }
+  }
+
+  // ─── Group pages (grupos) — Groups A-L × 6 locales ──────────────────────────
+  for (const group of GROUPS) {
+    const groupSlug = group
+    const alts = buildAllLocalesAlternates('grupos', groupSlug)
+    for (const locale of locales) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/grupos/${groupSlug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        alternates: { languages: alts },
+      })
+    }
   }
 
   return entries

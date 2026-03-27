@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { trackToolUsage, trackAffiliateClick } from '@/lib/analytics'
+import { Calculator, Hotel, Utensils, Bus, Ticket, DollarSign } from 'lucide-react'
 
 // USD daily averages per destination city per hotel tier
 const HOTEL_COSTS: Record<string, Record<string, number>> = {
@@ -218,6 +219,7 @@ export function BudgetCalculator({ cities, lang, dict }: BudgetCalculatorProps) 
         </div>
 
         <button type="submit" className={btnClass}>
+          <Calculator className="h-4 w-4" />
           {dict.calculateButton}
         </button>
       </form>
@@ -228,33 +230,48 @@ export function BudgetCalculator({ cities, lang, dict }: BudgetCalculatorProps) 
           <h2 className="text-xl font-bold mb-4">{dict.resultsHeading}</h2>
 
           <div className="space-y-3">
-            <div className="flex justify-between items-center py-2 border-b border-gray-200">
-              <span className="text-gray-700">{dict.accommodation}</span>
+            <div className="flex justify-between items-center py-2.5 border-b border-gray-200">
+              <span className="flex items-center gap-2 text-gray-700">
+                <Hotel className="h-4 w-4 text-primary" />
+                {dict.accommodation}
+              </span>
               <span className="font-medium">
                 ${results.hotelPerDay} USD / {dict.perDay}
               </span>
             </div>
-            <div className="flex justify-between items-center py-2 border-b border-gray-200">
-              <span className="text-gray-700">{dict.food}</span>
+            <div className="flex justify-between items-center py-2.5 border-b border-gray-200">
+              <span className="flex items-center gap-2 text-gray-700">
+                <Utensils className="h-4 w-4 text-primary" />
+                {dict.food}
+              </span>
               <span className="font-medium">
                 ${results.mealsPerDay} USD / {dict.perDay}
               </span>
             </div>
-            <div className="flex justify-between items-center py-2 border-b border-gray-200">
-              <span className="text-gray-700">{dict.localTransport}</span>
+            <div className="flex justify-between items-center py-2.5 border-b border-gray-200">
+              <span className="flex items-center gap-2 text-gray-700">
+                <Bus className="h-4 w-4 text-primary" />
+                {dict.localTransport}
+              </span>
               <span className="font-medium">
                 ${results.transportPerDay} USD / {dict.perDay}
               </span>
             </div>
-            <div className="flex justify-between items-center py-2 border-b border-gray-200">
-              <span className="text-gray-700">{dict.entertainment}</span>
+            <div className="flex justify-between items-center py-2.5 border-b border-gray-200">
+              <span className="flex items-center gap-2 text-gray-700">
+                <Ticket className="h-4 w-4 text-primary" />
+                {dict.entertainment}
+              </span>
               <span className="font-medium">
                 ${results.entertainmentPerDay} USD / {dict.perDay}
               </span>
             </div>
-            <div className="flex justify-between items-center pt-3">
-              <span className="text-lg font-bold">{dict.total}</span>
-              <span className="text-2xl font-bold text-primary">
+            <div className="flex justify-between items-center pt-4">
+              <span className="flex items-center gap-2 text-lg font-bold">
+                <DollarSign className="h-5 w-5 text-primary" />
+                {dict.total}
+              </span>
+              <span className="text-2xl font-extrabold text-primary">
                 ${results.totalTrip.toLocaleString()} USD
               </span>
             </div>

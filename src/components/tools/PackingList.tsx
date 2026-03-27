@@ -1,19 +1,34 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import {
+  MapPin,
+  Activity,
+  ListChecks,
+  Printer,
+  RefreshCw,
+  Settings2,
+  CheckCircle2,
+  ClipboardList,
+  Shirt,
+  Trophy,
+  HeartPulse,
+  Smartphone,
+  Package,
+} from 'lucide-react'
 import { trackToolUsage } from '@/lib/analytics'
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
 
-type Activity = 'match' | 'sightseeing' | 'nightlife' | 'beach'
+type ActivityType = 'match' | 'sightseeing' | 'nightlife' | 'beach'
 
 interface PackingItem {
   id: string
   label: { es: string; en: string }
   categories: string[]          // which categories this item belongs to
-  activities?: Activity[]       // only show if one of these activities selected (undefined = always)
+  activities?: ActivityType[]   // only show if one of these activities selected (undefined = always)
   cities?: string[]             // only show for specific cities (undefined = all)
   checked: boolean
 }
@@ -95,13 +110,22 @@ const ALL_ITEMS: Omit<PackingItem, 'checked'>[] = [
   { id: 'notebook_pen', label: { es: 'Cuaderno y lapiz', en: 'Notebook and pen' }, categories: ['misc'] },
 ]
 
-const CATEGORY_CONFIG: Array<{ key: string; labelKey: keyof PackingListDict; icon: string }> = [
-  { key: 'essentials', labelKey: 'packingCategoryEssentials', icon: '📋' },
-  { key: 'clothing', labelKey: 'packingCategoryClothing', icon: '👕' },
-  { key: 'match', labelKey: 'packingCategoryMatch', icon: '⚽' },
-  { key: 'health', labelKey: 'packingCategoryHealth', icon: '💊' },
-  { key: 'tech', labelKey: 'packingCategoryTech', icon: '📱' },
-  { key: 'misc', labelKey: 'packingCategoryMisc', icon: '🎒' },
+// ---------------------------------------------------------------------------
+// Category config with lucide-react icon components
+// ---------------------------------------------------------------------------
+
+const CATEGORY_CONFIG: Array<{
+  key: string
+  labelKey: keyof PackingListDict
+  emoji: string
+  Icon: React.ComponentType<{ className?: string }>
+}> = [
+  { key: 'essentials', labelKey: 'packingCategoryEssentials', emoji: '📋', Icon: ClipboardList },
+  { key: 'clothing', labelKey: 'packingCategoryClothing', emoji: '👕', Icon: Shirt },
+  { key: 'match', labelKey: 'packingCategoryMatch', emoji: '⚽', Icon: Trophy },
+  { key: 'health', labelKey: 'packingCategoryHealth', emoji: '💊', Icon: HeartPulse },
+  { key: 'tech', labelKey: 'packingCategoryTech', emoji: '📱', Icon: Smartphone },
+  { key: 'misc', labelKey: 'packingCategoryMisc', emoji: '🎒', Icon: Package },
 ]
 
 const STORAGE_KEY = 'superfan_packing_checked'
@@ -146,7 +170,7 @@ interface PackingListProps {
 
 export function PackingList({ cities, lang, dict }: PackingListProps) {
   const [selectedCity, setSelectedCity] = useState('')
-  const [activities, setActivities] = useState<Set<Activity>>(new Set(['match', 'sightseeing']))
+  const [activities, setActivities] = useState<Set<ActivityType>>(new Set(['match', 'sightseeing']))
   const [items, setItems] = useState<PackingItem[]>([])
   const [generated, setGenerated] = useState(false)
 
@@ -174,7 +198,7 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
     }
   }
 
-  function toggleActivity(activity: Activity) {
+  function toggleActivity(activity: ActivityType) {
     setActivities((prev) => {
       const next = new Set(prev)
       if (next.has(activity)) {
@@ -242,12 +266,10 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
   const progressPct = totalCount > 0 ? Math.round((checkedCount / totalCount) * 100) : 0
 
   const inputClass =
-    'w-full rounded-lg border border-gray-200 px-4 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-primary/50 bg-white'
-  const labelClass = 'block text-sm font-medium text-gray-700 mb-2'
-  const btnPrimary =
-    'inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-white font-semibold hover:bg-primary/90 transition-colors'
+    'w-full rounded-xl border border-gray-200 px-4 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-primary/50 bg-white shadow-sm transition-shadow focus:shadow-md'
+  const labelClass = 'flex items-center gap-1.5 text-sm font-medium text-gray-700 mb-2'
 
-  const ACTIVITY_OPTIONS: Array<{ value: Activity; label: string }> = [
+  const ACTIVITY_OPTIONS: Array<{ value: ActivityType; label: string }> = [
     { value: 'match', label: dict.packingActivityMatch },
     { value: 'sightseeing', label: dict.packingActivitySightseeing },
     { value: 'nightlife', label: dict.packingActivityNightlife },
@@ -258,10 +280,11 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
     <div className="max-w-3xl mx-auto">
       {/* Config form */}
       {!generated ? (
-        <div className="space-y-6">
+        <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-6 space-y-6">
           {/* City */}
           <div>
             <label htmlFor="packingCity" className={labelClass}>
+              <MapPin className="w-4 h-4 text-primary" />
               {dict.packingSelectCity}
             </label>
             <select
@@ -281,15 +304,18 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
 
           {/* Activities */}
           <div>
-            <p className={labelClass}>{dict.packingActivities}</p>
+            <p className={labelClass}>
+              <Activity className="w-4 h-4 text-primary" />
+              {dict.packingActivities}
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {ACTIVITY_OPTIONS.map((opt) => (
                 <label
                   key={opt.value}
-                  className={`flex items-center gap-3 rounded-lg border px-4 py-3 cursor-pointer transition-colors ${
+                  className={`flex items-center gap-3 rounded-xl border px-4 py-3 cursor-pointer transition-all duration-150 ${
                     activities.has(opt.value)
-                      ? 'border-primary bg-primary/5 text-primary font-medium'
-                      : 'border-gray-200 bg-white text-gray-700 hover:border-primary/40'
+                      ? 'border-primary bg-primary/5 text-primary font-medium shadow-sm'
+                      : 'border-gray-200 bg-white text-gray-700 hover:border-primary/40 hover:bg-gray-50'
                   }`}
                 >
                   <input
@@ -304,23 +330,29 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
             </div>
           </div>
 
-          <button type="button" onClick={generateList} className={btnPrimary}>
+          <button
+            type="button"
+            onClick={generateList}
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-white font-semibold hover:bg-primary/90 active:scale-95 transition-all duration-150 shadow-sm"
+          >
+            <ListChecks className="w-4 h-4" />
             {dict.packingGenerate}
           </button>
         </div>
       ) : (
         <div>
           {/* Progress bar */}
-          <div className="mb-6 rounded-xl border border-gray-200 bg-gray-50 p-4">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-sm font-medium text-gray-700">
+          <div className="mb-6 rounded-2xl border border-gray-200 bg-white shadow-sm p-5">
+            <div className="flex justify-between items-center mb-3">
+              <span className="flex items-center gap-1.5 text-sm font-medium text-gray-700">
+                <CheckCircle2 className="w-4 h-4 text-primary" />
                 {checkedCount} / {totalCount} {dict.packingProgress}
               </span>
               <span className="text-sm font-bold text-primary">{progressPct}%</span>
             </div>
-            <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
+            <div className="w-full h-3 bg-gray-100 rounded-full overflow-hidden">
               <div
-                className="h-full bg-primary rounded-full transition-all duration-300"
+                className="h-full bg-primary rounded-full transition-all duration-500"
                 style={{ width: `${progressPct}%` }}
               />
             </div>
@@ -331,47 +363,60 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
             <button
               type="button"
               onClick={() => window.print()}
-              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 active:scale-95 transition-all duration-150 shadow-sm"
             >
+              <Printer className="w-4 h-4" />
               {dict.packingPrint}
             </button>
             <button
               type="button"
               onClick={handleReset}
-              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 active:scale-95 transition-all duration-150 shadow-sm"
             >
+              <RefreshCw className="w-4 h-4" />
               {dict.packingReset}
             </button>
             <button
               type="button"
               onClick={() => { setGenerated(false); setItems([]) }}
-              className="inline-flex items-center gap-2 rounded-lg border border-primary/30 px-5 py-2.5 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors"
+              className="inline-flex items-center gap-2 rounded-xl border border-primary/30 bg-primary/5 px-5 py-2.5 text-sm font-semibold text-primary hover:bg-primary/10 active:scale-95 transition-all duration-150 shadow-sm"
             >
+              <Settings2 className="w-4 h-4" />
               {lang === 'es' ? 'Cambiar seleccion' : 'Change selection'}
             </button>
           </div>
 
           {/* Items by category */}
-          {CATEGORY_CONFIG.map(({ key, labelKey, icon }) => {
+          {CATEGORY_CONFIG.map(({ key, labelKey, Icon }) => {
             const categoryItems = items.filter((item) => item.categories.includes(key))
             if (categoryItems.length === 0) return null
 
+            const catChecked = categoryItems.filter((i) => i.checked).length
+            const catTotal = categoryItems.length
+            const allCatDone = catChecked === catTotal
+
             return (
-              <section key={key} className="mb-8">
-                <h2 className="text-base font-semibold text-gray-800 mb-3 flex items-center gap-2 print:text-lg">
-                  <span aria-hidden="true">{icon}</span>
-                  {dict[labelKey]}
-                  <span className="ml-auto text-xs text-gray-500 font-normal">
-                    {categoryItems.filter((i) => i.checked).length}/{categoryItems.length}
+              <section key={key} className="mb-6">
+                <div className={`flex items-center gap-2 mb-2 px-1 print:text-lg`}>
+                  <Icon className={`w-4 h-4 flex-shrink-0 ${allCatDone ? 'text-green-500' : 'text-primary'}`} />
+                  <h2 className="text-sm font-semibold text-gray-800">
+                    {dict[labelKey]}
+                  </h2>
+                  <span className={`ml-auto text-xs font-medium px-2 py-0.5 rounded-full ${
+                    allCatDone
+                      ? 'bg-green-100 text-green-700'
+                      : 'bg-gray-100 text-gray-500'
+                  }`}>
+                    {catChecked}/{catTotal}
                   </span>
-                </h2>
-                <div className="rounded-xl border border-gray-200 overflow-hidden">
+                </div>
+                <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
                   {categoryItems.map((item, index) => (
                     <label
                       key={item.id}
-                      className={`flex items-center gap-3 px-4 py-3 cursor-pointer transition-colors ${
+                      className={`flex items-center gap-3 px-4 py-3 cursor-pointer transition-colors duration-100 ${
                         index < categoryItems.length - 1 ? 'border-b border-gray-100' : ''
-                      } ${item.checked ? 'bg-gray-50' : 'bg-white hover:bg-gray-50/50'}`}
+                      } ${item.checked ? 'bg-gray-50/80' : 'bg-white hover:bg-gray-50/60'}`}
                     >
                       <input
                         type="checkbox"
@@ -380,10 +425,13 @@ export function PackingList({ cities, lang, dict }: PackingListProps) {
                         onChange={() => toggleItem(item.id)}
                       />
                       <span
-                        className={`text-sm ${item.checked ? 'line-through text-gray-400' : 'text-gray-700'}`}
+                        className={`text-sm transition-colors duration-150 ${item.checked ? 'line-through text-gray-400' : 'text-gray-700'}`}
                       >
                         {item.label[lang]}
                       </span>
+                      {item.checked && (
+                        <CheckCircle2 className="w-3.5 h-3.5 text-green-500 ml-auto flex-shrink-0" />
+                      )}
                     </label>
                   ))}
                 </div>

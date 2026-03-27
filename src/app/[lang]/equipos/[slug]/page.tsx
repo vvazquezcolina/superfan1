@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getTeam, getTeamSlugs } from '@/lib/content/teams'
+import { getTeam, getTeams, getTeamSlugs } from '@/lib/content/teams'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
 import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
@@ -10,8 +11,10 @@ import { buildSportsTeamJsonLd, buildFAQPageJsonLd, buildArticleJsonLd } from '@
 import { TeamHero } from '@/components/team/TeamHero'
 import { TeamSection } from '@/components/team/TeamSection'
 import { TeamFAQ } from '@/components/team/TeamFAQ'
+import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
 import type { Locale, TeamPlayer } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
+import { History, Users, Trophy, Calendar, HelpCircle, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -96,6 +99,45 @@ export default async function TeamPage({
   const playersHeading = team.content?.keyPlayers.title[contentLocale] ??
     (contentLocale === 'es' ? 'Jugadores Clave' : 'Key Players')
 
+  // Build TOC items
+  const tocTitle = contentLocale === 'es' ? 'En esta guia' : 'In this guide'
+  const tocItems: TocItem[] = team.content ? [
+    {
+      id: 'historia',
+      label: team.content.worldCupHistory.title[contentLocale],
+      icon: <History className="h-3.5 w-3.5" />,
+    },
+    {
+      id: 'jugadores',
+      label: playersHeading,
+      icon: <Users className="h-3.5 w-3.5" />,
+    },
+    {
+      id: 'clasificacion',
+      label: team.content.qualifyingPath.title[contentLocale],
+      icon: <Trophy className="h-3.5 w-3.5" />,
+    },
+    {
+      id: 'calendario',
+      label: team.content.matchSchedule.title[contentLocale],
+      icon: <Calendar className="h-3.5 w-3.5" />,
+    },
+    {
+      id: 'faq',
+      label: contentLocale === 'es' ? 'Preguntas frecuentes' : 'FAQ',
+      icon: <HelpCircle className="h-3.5 w-3.5" />,
+    },
+  ] : []
+
+  // Prev/Next team navigation
+  const allTeams = getTeams()
+  const currentIndex = allTeams.findIndex((t) => t.id === team.id)
+  const prevTeam = currentIndex > 0 ? allTeams[currentIndex - 1] : null
+  const nextTeam = currentIndex < allTeams.length - 1 ? allTeams[currentIndex + 1] : null
+
+  const indexPath = `/${lang}/${section}`
+  const backLabel = contentLocale === 'es' ? 'Volver a equipos' : 'Back to teams'
+
   return (
     <>
       <script
@@ -122,6 +164,9 @@ export default async function TeamPage({
 
       {team.content ? (
         <article className="mx-auto max-w-4xl space-y-10 py-8">
+
+          {/* Table of Contents */}
+          <TableOfContents items={tocItems} title={tocTitle} />
 
           <TeamSection
             section={team.content.worldCupHistory}
@@ -150,12 +195,49 @@ export default async function TeamPage({
             id="calendario"
           />
 
-          <TeamFAQ faqs={team.content.faq} lang={contentLocale} />
+          <div id="faq">
+            <TeamFAQ faqs={team.content.faq} lang={contentLocale} />
+          </div>
 
-          <footer className="mt-8 border-t border-border pt-4">
+          {/* Prev/Next Navigation */}
+          <nav className="mx-auto max-w-prose grid grid-cols-2 gap-4 border-t border-border pt-6">
+            {prevTeam ? (
+              <Link
+                href={`/${lang}/${section}/${prevTeam.slugs[contentLocale]}`}
+                className="group flex items-center gap-2 rounded-lg border border-border p-4 transition-all hover:border-primary/50 hover:shadow-sm"
+              >
+                <ChevronLeft className="h-5 w-5 text-muted group-hover:text-primary" />
+                <div className="text-left">
+                  <span className="text-xs text-muted">{contentLocale === 'es' ? 'Anterior' : 'Previous'}</span>
+                  <p className="text-sm font-semibold group-hover:text-primary transition-colors">{prevTeam.name[contentLocale]}</p>
+                </div>
+              </Link>
+            ) : <div />}
+            {nextTeam ? (
+              <Link
+                href={`/${lang}/${section}/${nextTeam.slugs[contentLocale]}`}
+                className="group flex items-center justify-end gap-2 rounded-lg border border-border p-4 transition-all hover:border-primary/50 hover:shadow-sm"
+              >
+                <div className="text-right">
+                  <span className="text-xs text-muted">{contentLocale === 'es' ? 'Siguiente' : 'Next'}</span>
+                  <p className="text-sm font-semibold group-hover:text-primary transition-colors">{nextTeam.name[contentLocale]}</p>
+                </div>
+                <ChevronRight className="h-5 w-5 text-muted group-hover:text-primary" />
+              </Link>
+            ) : <div />}
+          </nav>
+
+          <footer className="mx-auto max-w-prose border-t border-border pt-4">
             <p className="text-sm text-muted">
               {lastUpdatedLabel}: {team.lastUpdated}
             </p>
+            <Link
+              href={indexPath}
+              className="mt-4 inline-flex items-center gap-1 text-primary underline hover:text-primary/80"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              {backLabel}
+            </Link>
           </footer>
         </article>
       ) : (
@@ -169,6 +251,13 @@ export default async function TeamPage({
             <p className="text-sm text-muted">
               {lastUpdatedLabel}: {team.lastUpdated}
             </p>
+            <Link
+              href={indexPath}
+              className="mt-4 inline-flex items-center gap-1 text-primary underline hover:text-primary/80"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              {backLabel}
+            </Link>
           </footer>
         </article>
       )}

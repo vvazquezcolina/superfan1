@@ -297,6 +297,486 @@
         { "rank": 9, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 6, "unit": "puntuacion /10", "note": { "es": "Variable (22-28 grados). Puede ser caluroso y humedo. Posibles lluvias.", "en": "Variable (22-28 degrees). Can be hot and humid. Rain possible." } },
         { "rank": 10, "entityId": "guadalajara", "type": "city", "value": 6, "unit": "puntuacion /10", "note": { "es": "Temporada de lluvias pero con temperaturas agradables (22-28 grados). Lluvias cortas.", "en": "Rainy season but pleasant temperatures (22-28 degrees). Short showers." } }
       ]
+    },
+    {
+      "id": "ciudades-mas-baratas-hotel",
+      "slug": "ciudades-mas-baratas-hotel-mundial-2026",
+      "topic": "cheapest-hotel",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede mas baratas del Mundial 2026 por costo de hotel",
+        "en": "Cheapest World Cup 2026 Host Cities by Hotel Cost Per Night"
+      },
+      "description": {
+        "es": "Ranking completo de las 16 ciudades sede del Mundial 2026 por precio medio de hotel por noche. Guadalajara y Ciudad de Mexico son las opciones mas economicas.",
+        "en": "Complete ranking of all 16 World Cup 2026 host cities by average hotel cost per night. Guadalajara and Mexico City are the most affordable options."
+      },
+      "items": [
+        { "rank": 1, "entityId": "guadalajara", "type": "city", "value": 65, "unit": "USD/noche" },
+        { "rank": 2, "entityId": "ciudad-de-mexico", "type": "city", "value": 72, "unit": "USD/noche" },
+        { "rank": 3, "entityId": "monterrey", "type": "city", "value": 78, "unit": "USD/noche" },
+        { "rank": 4, "entityId": "kansas-city", "type": "city", "value": 118, "unit": "USD/noche" },
+        { "rank": 5, "entityId": "houston", "type": "city", "value": 132, "unit": "USD/noche" },
+        { "rank": 6, "entityId": "atlanta", "type": "city", "value": 135, "unit": "USD/noche" },
+        { "rank": 7, "entityId": "dallas", "type": "city", "value": 138, "unit": "USD/noche" },
+        { "rank": 8, "entityId": "filadelfia", "type": "city", "value": 148, "unit": "USD/noche" },
+        { "rank": 9, "entityId": "seattle", "type": "city", "value": 155, "unit": "USD/noche" },
+        { "rank": 10, "entityId": "miami", "type": "city", "value": 162, "unit": "USD/noche" },
+        { "rank": 11, "entityId": "vancouver", "type": "city", "value": 165, "unit": "USD/noche" },
+        { "rank": 12, "entityId": "toronto", "type": "city", "value": 172, "unit": "USD/noche" },
+        { "rank": 13, "entityId": "los-angeles", "type": "city", "value": 180, "unit": "USD/noche" },
+        { "rank": 14, "entityId": "boston", "type": "city", "value": 192, "unit": "USD/noche" },
+        { "rank": 15, "entityId": "san-francisco", "type": "city", "value": 205, "unit": "USD/noche" },
+        { "rank": 16, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 252, "unit": "USD/noche" }
+      ]
+    },
+    {
+      "id": "ciudades-con-mejor-vida-nocturna",
+      "slug": "ciudades-mejor-vida-nocturna-mundial-2026",
+      "topic": "nightlife-rating",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las 16 ciudades sede del Mundial 2026 rankeadas por vida nocturna",
+        "en": "All 16 World Cup 2026 Host Cities Ranked by Nightlife"
+      },
+      "description": {
+        "es": "Ranking completo de las 16 ciudades sede del Mundial 2026 por calidad de vida nocturna. Puntuacion del 1 al 10 basada en clubs, bares, musica en vivo y horarios.",
+        "en": "Complete ranking of all 16 World Cup 2026 host cities by nightlife quality. Score from 1 to 10 based on clubs, bars, live music and opening hours."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "miami", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "los-angeles", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "guadalajara", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "houston", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "dallas", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "boston", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "seattle", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "toronto", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "monterrey", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "filadelfia", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "vancouver", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 5, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-mas-grandes",
+      "slug": "ciudades-mas-grandes-poblacion-mundial-2026",
+      "topic": "population",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 ordenadas por poblacion",
+        "en": "World Cup 2026 Host Cities Ranked by Population"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 por tamano de area metropolitana. Ciudad de Mexico y Nueva York encabezan la lista.",
+        "en": "Ranking of all 16 World Cup 2026 host cities by metropolitan area population. Mexico City and New York top the list."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 21600000, "unit": "habitantes metro" },
+        { "rank": 2, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 20100000, "unit": "habitantes metro" },
+        { "rank": 3, "entityId": "los-angeles", "type": "city", "value": 13200000, "unit": "habitantes metro" },
+        { "rank": 4, "entityId": "guadalajara", "type": "city", "value": 5300000, "unit": "habitantes metro" },
+        { "rank": 5, "entityId": "toronto", "type": "city", "value": 6700000, "unit": "habitantes metro" },
+        { "rank": 6, "entityId": "san-francisco", "type": "city", "value": 4700000, "unit": "habitantes metro" },
+        { "rank": 7, "entityId": "dallas", "type": "city", "value": 7800000, "unit": "habitantes metro" },
+        { "rank": 8, "entityId": "houston", "type": "city", "value": 7300000, "unit": "habitantes metro" },
+        { "rank": 9, "entityId": "atlanta", "type": "city", "value": 6100000, "unit": "habitantes metro" },
+        { "rank": 10, "entityId": "miami", "type": "city", "value": 6200000, "unit": "habitantes metro" },
+        { "rank": 11, "entityId": "monterrey", "type": "city", "value": 5300000, "unit": "habitantes metro" },
+        { "rank": 12, "entityId": "boston", "type": "city", "value": 4900000, "unit": "habitantes metro" },
+        { "rank": 13, "entityId": "seattle", "type": "city", "value": 4000000, "unit": "habitantes metro" },
+        { "rank": 14, "entityId": "filadelfia", "type": "city", "value": 6200000, "unit": "habitantes metro" },
+        { "rank": 15, "entityId": "vancouver", "type": "city", "value": 2600000, "unit": "habitantes metro" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 2200000, "unit": "habitantes metro" }
+      ]
+    },
+    {
+      "id": "estadios-mas-modernos",
+      "slug": "estadios-mas-modernos-mundial-2026",
+      "topic": "newest-stadium",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Los estadios mas modernos del Mundial 2026 por ano de construccion",
+        "en": "Newest World Cup 2026 Stadiums by Year Built or Renovated"
+      },
+      "description": {
+        "es": "Ranking de los 16 estadios del Mundial 2026 por modernidad, considerando el ano de inauguracion o ultima renovacion mayor.",
+        "en": "Ranking of all 16 World Cup 2026 stadiums by modernity, considering the year of opening or last major renovation."
+      },
+      "items": [
+        { "rank": 1, "entityId": "sofi-stadium", "type": "stadium", "value": 2020, "unit": "ano apertura" },
+        { "rank": 2, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 2017, "unit": "ano apertura" },
+        { "rank": 3, "entityId": "estadio-bbva", "type": "stadium", "value": 2015, "unit": "ano apertura" },
+        { "rank": 4, "entityId": "estadio-akron", "type": "stadium", "value": 2010, "unit": "ano apertura" },
+        { "rank": 5, "entityId": "bc-place", "type": "stadium", "value": 2011, "unit": "ano renovacion" },
+        { "rank": 6, "entityId": "hard-rock-stadium", "type": "stadium", "value": 2016, "unit": "ano renovacion" },
+        { "rank": 7, "entityId": "att-stadium", "type": "stadium", "value": 2009, "unit": "ano apertura" },
+        { "rank": 8, "entityId": "metlife-stadium", "type": "stadium", "value": 2010, "unit": "ano apertura" },
+        { "rank": 9, "entityId": "levis-stadium", "type": "stadium", "value": 2014, "unit": "ano apertura" },
+        { "rank": 10, "entityId": "nrg-stadium", "type": "stadium", "value": 2002, "unit": "ano apertura" },
+        { "rank": 11, "entityId": "lincoln-financial-field", "type": "stadium", "value": 2003, "unit": "ano apertura" },
+        { "rank": 12, "entityId": "gillette-stadium", "type": "stadium", "value": 2002, "unit": "ano apertura" },
+        { "rank": 13, "entityId": "lumen-field", "type": "stadium", "value": 2002, "unit": "ano apertura" },
+        { "rank": 14, "entityId": "bmo-field", "type": "stadium", "value": 2007, "unit": "ano apertura" },
+        { "rank": 15, "entityId": "arrowhead-stadium", "type": "stadium", "value": 1972, "unit": "ano apertura" },
+        { "rank": 16, "entityId": "estadio-azteca", "type": "stadium", "value": 1966, "unit": "ano apertura" }
+      ]
+    },
+    {
+      "id": "ciudades-mas-turisticas",
+      "slug": "ciudades-mas-turisticas-mundial-2026",
+      "topic": "tourism-infrastructure",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 con mejor infraestructura turistica",
+        "en": "Best Tourist Infrastructure Among World Cup 2026 Host Cities"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 por infraestructura turistica: hoteles, atracciones, transporte y servicios para visitantes.",
+        "en": "Ranking of all 16 World Cup 2026 host cities by tourism infrastructure: hotels, attractions, transportation and visitor services."
+      },
+      "items": [
+        { "rank": 1, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "los-angeles", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "ciudad-de-mexico", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "miami", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "san-francisco", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "boston", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "seattle", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "vancouver", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "houston", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "guadalajara", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "dallas", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "filadelfia", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "monterrey", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 6, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "estadios-con-mejor-transporte",
+      "slug": "estadios-mejor-transporte-publico-mundial-2026",
+      "topic": "stadium-transport",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Los estadios del Mundial 2026 con mejor acceso en transporte publico",
+        "en": "World Cup 2026 Stadiums with Best Public Transport Access"
+      },
+      "description": {
+        "es": "Ranking de los 16 estadios del Mundial 2026 segun facilidad de acceso en transporte publico: metro, tren ligero, bus rapido y distancia desde el centro.",
+        "en": "Ranking of all 16 World Cup 2026 stadiums by ease of public transport access: metro, light rail, rapid bus and distance from city center."
+      },
+      "items": [
+        { "rank": 1, "entityId": "estadio-azteca", "type": "stadium", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "bc-place", "type": "stadium", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "metlife-stadium", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "lumen-field", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "gillette-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "lincoln-financial-field", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "hard-rock-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "bmo-field", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "estadio-bbva", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "nrg-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "estadio-akron", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "arrowhead-stadium", "type": "stadium", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "att-stadium", "type": "stadium", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "levis-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "sofi-stadium", "type": "stadium", "value": 5, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-con-mejor-comida",
+      "slug": "ciudades-mejor-gastronomia-mundial-2026",
+      "topic": "gastronomy",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las mejores ciudades del Mundial 2026 para comer: ranking gastronomico completo",
+        "en": "Best World Cup 2026 Cities for Food: Complete Gastronomy Ranking"
+      },
+      "description": {
+        "es": "Ranking completo de las 16 ciudades sede del Mundial 2026 por calidad gastronomica. Desde tacos hasta sushi, descubre donde comer mejor durante el torneo.",
+        "en": "Complete ranking of all 16 World Cup 2026 host cities by gastronomy quality. From tacos to sushi, discover where to eat best during the tournament."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "guadalajara", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "los-angeles", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "san-francisco", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "miami", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "houston", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "boston", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "monterrey", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "seattle", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "dallas", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "atlanta", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "filadelfia", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "vancouver", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 5, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-mas-frias",
+      "slug": "ciudades-mas-frias-junio-mundial-2026",
+      "topic": "coldest-weather",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 con menor temperatura en junio",
+        "en": "Coldest World Cup 2026 Host Cities in June"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 de mas fria a mas calida en junio. San Francisco y Seattle son las mas frescas del torneo.",
+        "en": "Ranking of all 16 World Cup 2026 host cities from coldest to warmest in June. San Francisco and Seattle are the coolest of the tournament."
+      },
+      "items": [
+        { "rank": 1, "entityId": "san-francisco", "type": "city", "value": 14, "unit": "grados C promedio junio" },
+        { "rank": 2, "entityId": "seattle", "type": "city", "value": 16, "unit": "grados C promedio junio" },
+        { "rank": 3, "entityId": "vancouver", "type": "city", "value": 17, "unit": "grados C promedio junio" },
+        { "rank": 4, "entityId": "boston", "type": "city", "value": 19, "unit": "grados C promedio junio" },
+        { "rank": 5, "entityId": "ciudad-de-mexico", "type": "city", "value": 19, "unit": "grados C promedio junio" },
+        { "rank": 6, "entityId": "toronto", "type": "city", "value": 20, "unit": "grados C promedio junio" },
+        { "rank": 7, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 22, "unit": "grados C promedio junio" },
+        { "rank": 8, "entityId": "filadelfia", "type": "city", "value": 23, "unit": "grados C promedio junio" },
+        { "rank": 9, "entityId": "guadalajara", "type": "city", "value": 23, "unit": "grados C promedio junio" },
+        { "rank": 10, "entityId": "kansas-city", "type": "city", "value": 25, "unit": "grados C promedio junio" },
+        { "rank": 11, "entityId": "los-angeles", "type": "city", "value": 22, "unit": "grados C promedio junio" },
+        { "rank": 12, "entityId": "monterrey", "type": "city", "value": 30, "unit": "grados C promedio junio" },
+        { "rank": 13, "entityId": "atlanta", "type": "city", "value": 27, "unit": "grados C promedio junio" },
+        { "rank": 14, "entityId": "dallas", "type": "city", "value": 32, "unit": "grados C promedio junio" },
+        { "rank": 15, "entityId": "houston", "type": "city", "value": 33, "unit": "grados C promedio junio" },
+        { "rank": 16, "entityId": "miami", "type": "city", "value": 31, "unit": "grados C promedio junio" }
+      ]
+    },
+    {
+      "id": "ciudades-mas-caras",
+      "slug": "ciudades-mas-caras-mundial-2026",
+      "topic": "most-expensive",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede mas caras del Mundial 2026",
+        "en": "Most Expensive World Cup 2026 Host Cities"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 de mas cara a mas economica. Nueva York y San Francisco encabezan los costos para el viajero.",
+        "en": "Ranking of all 16 World Cup 2026 host cities from most to least expensive. New York and San Francisco top the costs for the traveler."
+      },
+      "items": [
+        { "rank": 1, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 350, "unit": "USD/dia estimado" },
+        { "rank": 2, "entityId": "san-francisco", "type": "city", "value": 310, "unit": "USD/dia estimado" },
+        { "rank": 3, "entityId": "boston", "type": "city", "value": 280, "unit": "USD/dia estimado" },
+        { "rank": 4, "entityId": "los-angeles", "type": "city", "value": 270, "unit": "USD/dia estimado" },
+        { "rank": 5, "entityId": "miami", "type": "city", "value": 250, "unit": "USD/dia estimado" },
+        { "rank": 6, "entityId": "seattle", "type": "city", "value": 240, "unit": "USD/dia estimado" },
+        { "rank": 7, "entityId": "toronto", "type": "city", "value": 235, "unit": "USD/dia estimado" },
+        { "rank": 8, "entityId": "vancouver", "type": "city", "value": 230, "unit": "USD/dia estimado" },
+        { "rank": 9, "entityId": "filadelfia", "type": "city", "value": 220, "unit": "USD/dia estimado" },
+        { "rank": 10, "entityId": "dallas", "type": "city", "value": 200, "unit": "USD/dia estimado" },
+        { "rank": 11, "entityId": "atlanta", "type": "city", "value": 195, "unit": "USD/dia estimado" },
+        { "rank": 12, "entityId": "houston", "type": "city", "value": 190, "unit": "USD/dia estimado" },
+        { "rank": 13, "entityId": "kansas-city", "type": "city", "value": 170, "unit": "USD/dia estimado" },
+        { "rank": 14, "entityId": "monterrey", "type": "city", "value": 110, "unit": "USD/dia estimado" },
+        { "rank": 15, "entityId": "ciudad-de-mexico", "type": "city", "value": 95, "unit": "USD/dia estimado" },
+        { "rank": 16, "entityId": "guadalajara", "type": "city", "value": 85, "unit": "USD/dia estimado" }
+      ]
+    },
+    {
+      "id": "estadios-con-mejor-vista",
+      "slug": "estadios-mejor-vista-experiencia-mundial-2026",
+      "topic": "fan-experience",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Los estadios del Mundial 2026 con mejor vista y experiencia para el aficionado",
+        "en": "World Cup 2026 Stadiums with Best Views and Fan Experience"
+      },
+      "description": {
+        "es": "Ranking de los 16 estadios del Mundial 2026 por calidad de vistas, comodidad, atmosfera y experiencia general para el aficionado.",
+        "en": "Ranking of all 16 World Cup 2026 stadiums by view quality, comfort, atmosphere and overall fan experience."
+      },
+      "items": [
+        { "rank": 1, "entityId": "sofi-stadium", "type": "stadium", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "att-stadium", "type": "stadium", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "estadio-azteca", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "estadio-akron", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "lumen-field", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "bc-place", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "arrowhead-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "metlife-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "estadio-bbva", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "gillette-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "hard-rock-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "lincoln-financial-field", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "nrg-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "levis-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "bmo-field", "type": "stadium", "value": 6, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-con-mejor-playa",
+      "slug": "ciudades-mejor-playa-actividades-outdoor-mundial-2026",
+      "topic": "beach-outdoor",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 con mejor playa y actividades al aire libre",
+        "en": "Best World Cup 2026 Host Cities for Beach and Outdoor Activities"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 por acceso a playas, parques naturales y actividades al aire libre para combinar el Mundial con vacaciones.",
+        "en": "Ranking of all 16 World Cup 2026 host cities by beach access, natural parks and outdoor activities to combine the World Cup with a vacation."
+      },
+      "items": [
+        { "rank": 1, "entityId": "miami", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "los-angeles", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "vancouver", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "seattle", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "san-francisco", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "boston", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "toronto", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "guadalajara", "type": "city", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "houston", "type": "city", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "ciudad-de-mexico", "type": "city", "value": 4, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "monterrey", "type": "city", "value": 4, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "filadelfia", "type": "city", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "atlanta", "type": "city", "value": 3, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "dallas", "type": "city", "value": 3, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 2, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-con-mas-cultura",
+      "slug": "ciudades-mas-cultura-historia-mundial-2026",
+      "topic": "culture-history",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 con mas cultura e historia",
+        "en": "Most Cultural and Historic World Cup 2026 Host Cities"
+      },
+      "description": {
+        "es": "Ranking completo de las 16 ciudades sede del Mundial 2026 por riqueza cultural, patrimonio historico, museos y experiencia para el turista curioso.",
+        "en": "Complete ranking of all 16 World Cup 2026 host cities by cultural richness, historical heritage, museums and experience for the curious traveler."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "boston", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "filadelfia", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "guadalajara", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "los-angeles", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "monterrey", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "seattle", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "miami", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "dallas", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "houston", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "vancouver", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 5, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-mas-seguras",
+      "slug": "ciudades-mas-seguras-turistas-mundial-2026",
+      "topic": "safety",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 mas seguras para turistas",
+        "en": "Safest World Cup 2026 Host Cities for Tourists"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 por seguridad para el turista. Basado en indice de criminalidad, zonas turisticas seguras y percepcion de seguridad.",
+        "en": "Ranking of all 16 World Cup 2026 host cities by tourist safety. Based on crime index, safe tourist zones and security perception."
+      },
+      "items": [
+        { "rank": 1, "entityId": "vancouver", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "toronto", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "seattle", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "boston", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "san-francisco", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "dallas", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "kansas-city", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "atlanta", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "houston", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "filadelfia", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "los-angeles", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "miami", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "guadalajara", "type": "city", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "monterrey", "type": "city", "value": 5, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "ciudad-de-mexico", "type": "city", "value": 5, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "estadios-mas-iconicos",
+      "slug": "estadios-mas-iconicos-mundial-2026",
+      "topic": "iconic-stadium",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Los estadios mas iconicos del Mundial 2026 por importancia historica",
+        "en": "Most Iconic World Cup 2026 Stadiums by Historical Significance"
+      },
+      "description": {
+        "es": "Ranking completo de los 16 estadios del Mundial 2026 por iconicidad e importancia historica en el deporte mundial. El Azteca lidera como el templo del futbol.",
+        "en": "Complete ranking of all 16 World Cup 2026 stadiums by iconic status and historical importance in world sport. The Azteca leads as the temple of football."
+      },
+      "items": [
+        { "rank": 1, "entityId": "estadio-azteca", "type": "stadium", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "metlife-stadium", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "att-stadium", "type": "stadium", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "arrowhead-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "sofi-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "estadio-akron", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "gillette-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "estadio-bbva", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "lumen-field", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "bc-place", "type": "stadium", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "hard-rock-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "lincoln-financial-field", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "nrg-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "levis-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "bmo-field", "type": "stadium", "value": 5, "unit": "puntuacion /10" }
+      ]
+    },
+    {
+      "id": "ciudades-con-vuelos-baratos",
+      "slug": "ciudades-vuelos-baratos-conexiones-mundial-2026",
+      "topic": "cheap-flights",
+      "lastUpdated": "2026-03-27",
+      "title": {
+        "es": "Las ciudades sede del Mundial 2026 con mejores conexiones de vuelos baratos",
+        "en": "World Cup 2026 Host Cities with Best Cheap Flight Connections"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 por cantidad de conexiones de vuelo disponibles y competencia de aerolineas que genera precios bajos.",
+        "en": "Ranking of all 16 World Cup 2026 host cities by number of available flight connections and airline competition that drives low prices."
+      },
+      "items": [
+        { "rank": 1, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 2, "entityId": "miami", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 3, "entityId": "los-angeles", "type": "city", "value": 10, "unit": "puntuacion /10" },
+        { "rank": 4, "entityId": "ciudad-de-mexico", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 5, "entityId": "houston", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 6, "entityId": "dallas", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 7, "entityId": "atlanta", "type": "city", "value": 9, "unit": "puntuacion /10" },
+        { "rank": 8, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 9, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 10, "entityId": "boston", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 11, "entityId": "seattle", "type": "city", "value": 8, "unit": "puntuacion /10" },
+        { "rank": 12, "entityId": "vancouver", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 13, "entityId": "guadalajara", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 14, "entityId": "filadelfia", "type": "city", "value": 7, "unit": "puntuacion /10" },
+        { "rank": 15, "entityId": "monterrey", "type": "city", "value": 6, "unit": "puntuacion /10" },
+        { "rank": 16, "entityId": "kansas-city", "type": "city", "value": 5, "unit": "puntuacion /10" }
+      ]
     }
   ]
 }

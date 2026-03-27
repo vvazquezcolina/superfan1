@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
@@ -60,9 +61,9 @@ export default function AcercaPage() {
           <p className="leading-relaxed">
             Nuestras recomendaciones se basan en investigacion y criterio editorial. Si bien
             utilizamos enlaces de afiliados para financiar el sitio (ver nuestra{' '}
-            <a href="/es/divulgacion" className="text-primary underline hover:text-primary/80">
+            <Link href="/es/divulgacion" className="text-primary underline hover:text-primary/80">
               pagina de divulgacion
-            </a>
+            </Link>
             ), las asociaciones de afiliados nunca influyen en nuestro contenido. Recomendamos
             opciones basadas en calidad, valor y relevancia para los fans, no en las tasas de
             comision.

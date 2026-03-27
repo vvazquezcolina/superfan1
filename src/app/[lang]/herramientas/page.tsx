@@ -7,6 +7,7 @@ import { buildJsonLdScript } from '@/lib/jsonld'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import type { Locale } from '@/lib/content/schemas'
+import { Wrench, Calculator, Map, CalendarDays, ArrowLeftRight, Backpack } from 'lucide-react'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -101,35 +102,35 @@ export default async function HerramientasPage({
   const tools = [
     {
       slug: 'presupuesto',
-      icon: '💰',
+      Icon: Calculator,
       heading: dict.tools.budgetHeading,
       description: dict.tools.toolsIndexBudgetDesc,
       color: 'green',
     },
     {
       slug: 'mapa',
-      icon: '🗺',
+      Icon: Map,
       heading: dict.tools.mapHeading,
       description: dict.tools.toolsIndexMapDesc,
       color: 'blue',
     },
     {
       slug: 'itinerario',
-      icon: '📅',
+      Icon: CalendarDays,
       heading: dict.tools.itineraryHeading,
       description: dict.tools.toolsIndexItineraryDesc,
       color: 'purple',
     },
     {
       slug: 'conversor-moneda',
-      icon: '💱',
+      Icon: ArrowLeftRight,
       heading: dict.tools.currencyHeading,
       description: dict.tools.toolsIndexCurrencyDesc,
       color: 'orange',
     },
     {
       slug: 'lista-equipaje',
-      icon: '🎒',
+      Icon: Backpack,
       heading: dict.tools.packingHeading,
       description: dict.tools.toolsIndexPackingDesc,
       color: 'teal',
@@ -183,7 +184,12 @@ export default async function HerramientasPage({
 
       <div className="mx-auto max-w-4xl py-6">
         <header className="mb-10">
-          <h1 className="text-3xl font-bold md:text-4xl">{dict.tools.toolsIndexHeading}</h1>
+          <div className="flex items-center gap-3 mb-2">
+            <div className="rounded-full bg-primary/10 p-2">
+              <Wrench className="h-6 w-6 text-primary" />
+            </div>
+            <h1 className="text-3xl font-bold md:text-4xl">{dict.tools.toolsIndexHeading}</h1>
+          </div>
           <p className="mt-3 text-lg text-muted">{dict.tools.toolsIndexSubheading}</p>
         </header>
 
@@ -197,10 +203,10 @@ export default async function HerramientasPage({
                 className={`group rounded-xl border ${colors.border} ${colors.bg} p-5 flex flex-col gap-3 hover:shadow-md transition-shadow`}
               >
                 <div
-                  className={`w-12 h-12 rounded-xl ${colors.icon} flex items-center justify-center text-2xl flex-shrink-0`}
+                  className={`w-12 h-12 rounded-xl ${colors.icon} flex items-center justify-center flex-shrink-0`}
                   aria-hidden="true"
                 >
-                  {tool.icon}
+                  <tool.Icon className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
                   <h2 className="font-bold text-gray-900 text-base leading-snug group-hover:underline">

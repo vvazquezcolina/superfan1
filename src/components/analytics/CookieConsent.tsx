@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { Cookie, X, Check } from 'lucide-react'
 
 interface CookieConsentProps {
   lang: string
@@ -86,23 +87,30 @@ export function CookieConsent({ lang }: CookieConsentProps) {
   const t = translations[lang] ?? translations.es
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-border shadow-lg p-4 sm:p-6">
-      <div className="mx-auto max-w-4xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <div className="flex-1">
-          <p className="text-sm font-medium">{t.title}</p>
-          <p className="mt-1 text-xs text-muted">{t.body}</p>
+    <div className="fixed bottom-0 inset-x-0 z-50 border-t border-border/60 bg-white/95 backdrop-blur-sm shadow-xl">
+      <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex items-start gap-3 flex-1 min-w-0">
+          <div className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+            <Cookie className="size-4.5 text-primary" aria-hidden="true" />
+          </div>
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-foreground">{t.title}</p>
+            <p className="mt-0.5 text-xs text-muted leading-relaxed">{t.body}</p>
+          </div>
         </div>
-        <div className="flex gap-3 shrink-0">
+        <div className="flex gap-2.5 shrink-0 sm:ml-4">
           <button
             onClick={handleReject}
-            className="rounded-md border border-border px-4 py-2 text-sm font-medium hover:bg-muted/10 transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground hover:bg-muted/10 transition-colors"
           >
+            <X className="size-3.5" aria-hidden="true" />
             {t.reject}
           </button>
           <button
             onClick={handleAccept}
-            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/90 transition-colors shadow-sm"
           >
+            <Check className="size-3.5" aria-hidden="true" />
             {t.accept}
           </button>
         </div>

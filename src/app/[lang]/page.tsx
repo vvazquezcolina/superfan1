@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { getDictionary, hasLocale } from './dictionaries'
 import { notFound } from 'next/navigation'
 import { buildPageMetadata } from '@/lib/seo'
@@ -12,6 +13,10 @@ import { toContentLocale } from '@/lib/content/locale'
 import { CountdownTimer } from '@/components/engagement/CountdownTimer'
 import { NewsletterSignup } from '@/components/engagement/NewsletterSignup'
 import { ExitIntentWrapper } from '@/components/engagement/ExitIntentWrapper'
+import {
+  MapPin, Building2, Users, Plane, Calendar, Wrench,
+  ChevronRight, Trophy, Globe, Ticket
+} from 'lucide-react'
 
 export async function generateMetadata({
   params,
@@ -38,28 +43,38 @@ const countryFlags: Record<string, string> = {
   canada: '\u{1F1E8}\u{1F1E6}',
 }
 
+const countryColors: Record<string, string> = {
+  mexico: 'border-t-green-600',
+  usa: 'border-t-blue-600',
+  canada: 'border-t-red-600',
+}
+
 function FeaturedCityCard({ city, lang, contentLocale, citiesPath }: { city: City; lang: string; contentLocale: Locale; citiesPath: string }) {
   const slug = city.slugs[contentLocale]
   const overview = city.content.overview[contentLocale]
   const excerpt = overview.length > 140 ? overview.slice(0, 137) + '...' : overview
   const flag = countryFlags[city.country] ?? ''
+  const colorClass = countryColors[city.country] ?? 'border-t-primary'
   const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
 
   return (
-    <a
+    <Link
       href={`/${lang}/${citiesPath}/${slug}`}
-      className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
+      className={`group block rounded-lg border border-border border-t-4 ${colorClass} p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5`}
     >
-      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-        {flag} {city.name[contentLocale]}
-      </h3>
+      <div className="flex items-center gap-2">
+        <MapPin className="h-4 w-4 text-primary" />
+        <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
+          {flag} {city.name[contentLocale]}
+        </h3>
+      </div>
       <p className="mt-3 text-sm leading-relaxed text-muted">
         {excerpt}
       </p>
-      <span className="mt-4 inline-block text-sm font-medium text-primary group-hover:underline">
-        {readMore} &rarr;
+      <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:underline">
+        {readMore} <ChevronRight className="h-3 w-3" />
       </span>
-    </a>
+    </Link>
   )
 }
 
@@ -81,26 +96,31 @@ function FeaturedStadiumCard({
   const excerpt = overview.length > 140 ? overview.slice(0, 137) + '...' : overview
   const city = getCityById(stadium.city)
   const cityName = city ? city.name[contentLocale] : ''
+  const countryKey = city?.country ?? 'usa'
+  const colorClass = countryColors[countryKey] ?? 'border-t-primary'
   const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
 
   return (
-    <a
+    <Link
       href={`/${lang}/${stadiumsPath}/${slug}`}
-      className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
+      className={`group block rounded-lg border border-border border-t-4 ${colorClass} p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5`}
     >
-      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-        {stadium.name[contentLocale]}
-      </h3>
+      <div className="flex items-center gap-2">
+        <Building2 className="h-4 w-4 text-primary" />
+        <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
+          {stadium.name[contentLocale]}
+        </h3>
+      </div>
       <p className="mt-1 text-sm text-muted">
         {cityName} &middot; {dict.stadiumCapacity}: {stadium.capacity.toLocaleString()}
       </p>
       <p className="mt-3 text-sm leading-relaxed text-muted">
         {excerpt}
       </p>
-      <span className="mt-4 inline-block text-sm font-medium text-primary group-hover:underline">
-        {readMore} &rarr;
+      <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:underline">
+        {readMore} <ChevronRight className="h-3 w-3" />
       </span>
-    </a>
+    </Link>
   )
 }
 
@@ -151,6 +171,7 @@ export default async function HomePage({
   const { pathTranslations } = await import('@/lib/i18n')
   const citiesPath = pathTranslations.ciudades[locale] ?? 'cities'
   const stadiumsPath = pathTranslations.estadios[locale] ?? 'stadiums'
+  const teamsPath = pathTranslations.equipos[locale] ?? 'teams'
   const itemListItems = [
     ...featuredCities.map((city) => ({
       name: city.name[contentLocale],
@@ -218,6 +239,26 @@ export default async function HomePage({
   ]
   const homeFaqJsonLd = buildFAQPageJsonLd(homeFaqs, contentLocale)
 
+  // Navigation cards with icons for the "Explore" section
+  const travelPath = contentLocale === 'es' ? 'viajes' : 'travel'
+  const toolsPath = contentLocale === 'es' ? 'herramientas' : 'tools'
+  const calendarLabel = contentLocale === 'es' ? 'Calendario' : 'Schedule'
+  const calendarDesc = contentLocale === 'es' ? '48 partidos de grupos' : '48 group matches'
+  const fanLabel = contentLocale === 'es' ? 'Fan Zone' : 'Fan Zone'
+  const fanDesc = contentLocale === 'es' ? 'Entradas y seguridad' : 'Tickets & safety'
+  const toolsLabel = contentLocale === 'es' ? 'Herramientas' : 'Tools'
+  const toolsDesc = contentLocale === 'es' ? 'Presupuesto, mapa y mas' : 'Budget, map & more'
+
+  const exploreCards = [
+    { href: `/${lang}/${citiesPath}`, icon: MapPin, label: dict.nav.cities, desc: dict.home.citiesCount },
+    { href: `/${lang}/${stadiumsPath}`, icon: Building2, label: dict.nav.stadiums, desc: dict.home.stadiumsCount },
+    { href: `/${lang}/${teamsPath}`, icon: Users, label: dict.nav.teams, desc: contentLocale === 'es' ? '48 selecciones' : '48 teams' },
+    { href: `/${lang}/${travelPath}`, icon: Plane, label: dict.nav.travel, desc: contentLocale === 'es' ? 'Vuelos y hospedaje' : 'Flights & hotels' },
+    { href: `/${lang}/calendario`, icon: Calendar, label: calendarLabel, desc: calendarDesc },
+    { href: `/${lang}/fan`, icon: Ticket, label: fanLabel, desc: fanDesc },
+    { href: `/${lang}/${toolsPath}`, icon: Wrench, label: toolsLabel, desc: toolsDesc },
+  ]
+
   return (
     <>
       <script
@@ -241,68 +282,132 @@ export default async function HomePage({
       />
 
       <div className="mx-auto max-w-6xl py-6">
-        {/* Hero Section */}
-        <section className="rounded-lg bg-primary/10 px-6 py-12 text-center md:px-12 md:py-16">
-          <h1 className="text-3xl font-bold md:text-5xl">
-            {dict.home.heading}
-          </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted md:text-xl">
-            {dict.home.subheading}
-          </p>
+        {/* Hero Section - Gradient background */}
+        <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-primary-dark to-secondary px-6 py-14 text-center text-white md:px-12 md:py-20">
+          {/* Decorative background pattern */}
+          <div className="pointer-events-none absolute inset-0 opacity-10">
+            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent" />
+            <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-accent" />
+          </div>
 
-          {/* Countdown */}
-          <CountdownTimer
-            targetDate="2026-06-11T00:00:00Z"
-            initialDays={daysUntil}
-            dict={dict.countdown}
-          />
+          <div className="relative z-10">
+            <div className="mx-auto mb-4 flex items-center justify-center gap-2">
+              <Trophy className="h-8 w-8 text-accent" />
+              <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+                {contentLocale === 'es' ? 'Mexico \u00B7 USA \u00B7 Canada' : 'Mexico \u00B7 USA \u00B7 Canada'}
+              </span>
+              <Globe className="h-8 w-8 text-accent" />
+            </div>
 
-          {/* Hero CTA */}
-          <a
-            href={`/${lang}/${citiesPath}`}
-            className="mt-8 inline-block rounded-md bg-primary px-8 py-3 text-base font-semibold text-white shadow-sm transition-shadow hover:shadow-md"
-          >
-            {dict.home.heroCta}
-          </a>
+            <h1 className="text-3xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
+              {dict.home.heading}
+            </h1>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80 md:text-xl">
+              {dict.home.subheading}
+            </p>
+
+            {/* Countdown */}
+            <CountdownTimer
+              targetDate="2026-06-11T00:00:00Z"
+              initialDays={daysUntil}
+              dict={dict.countdown}
+            />
+
+            {/* Hero CTAs */}
+            <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+              <Link
+                href={`/${lang}/${citiesPath}`}
+                className="inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-3 text-base font-bold text-primary shadow-lg transition-all hover:bg-accent-light hover:shadow-xl"
+              >
+                <MapPin className="h-4 w-4" />
+                {dict.home.heroCta}
+              </Link>
+              <Link
+                href={`/${lang}/calendario`}
+                className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-3 text-base font-semibold text-white transition-all hover:border-white hover:bg-white/10"
+              >
+                <Calendar className="h-4 w-4" />
+                {calendarLabel}
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Stats Bar */}
-        <section className="mt-8 grid grid-cols-3 gap-4 rounded-lg border border-border p-6 text-center">
+        <section className="mt-8 grid grid-cols-3 gap-4 rounded-xl border border-border bg-white p-6 text-center shadow-sm">
           <div>
-            <p className="text-2xl font-bold text-primary">16</p>
-            <p className="mt-1 text-sm text-muted">{dict.home.citiesCount}</p>
+            <p className="text-3xl font-extrabold text-primary md:text-4xl">16</p>
+            <p className="mt-1 text-sm font-medium text-muted">{dict.home.citiesCount}</p>
+          </div>
+          <div className="border-x border-border">
+            <p className="text-3xl font-extrabold text-primary md:text-4xl">16</p>
+            <p className="mt-1 text-sm font-medium text-muted">{dict.home.stadiumsCount}</p>
           </div>
           <div>
-            <p className="text-2xl font-bold text-primary">16</p>
-            <p className="mt-1 text-sm text-muted">{dict.home.stadiumsCount}</p>
+            <p className="text-3xl font-extrabold text-primary md:text-4xl">48</p>
+            <p className="mt-1 text-sm font-medium text-muted">{contentLocale === 'es' ? '48 selecciones' : '48 teams'}</p>
           </div>
-          <div>
-            <p className="text-2xl font-bold text-primary">3</p>
-            <p className="mt-1 text-sm text-muted">{dict.home.countriesCount}</p>
+        </section>
+
+        {/* Quick Navigation Grid */}
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold md:text-3xl">{dict.home.exploreMore}</h2>
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {exploreCards.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="group flex flex-col items-center gap-2 rounded-xl border border-border p-5 text-center shadow-sm transition-all hover:shadow-md hover:border-primary/50 hover:-translate-y-0.5"
+              >
+                <div className="rounded-full bg-primary/10 p-3 transition-colors group-hover:bg-primary/20">
+                  <card.icon className="h-6 w-6 text-primary" />
+                </div>
+                <p className="text-sm font-bold group-hover:text-primary transition-colors">
+                  {card.label}
+                </p>
+                <p className="text-xs text-muted">{card.desc}</p>
+              </Link>
+            ))}
           </div>
         </section>
 
         {/* Featured Cities */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-bold md:text-3xl">{dict.home.featuredCities}</h2>
+        <section className="mt-14">
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-bold md:text-3xl">{dict.home.featuredCities}</h2>
+            <Link
+              href={`/${lang}/${citiesPath}`}
+              className="hidden items-center gap-1 text-sm font-semibold text-primary hover:underline sm:inline-flex"
+            >
+              {dict.home.viewAllCities} <ChevronRight className="h-4 w-4" />
+            </Link>
+          </div>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredCities.map((city) => (
               <FeaturedCityCard key={city.id} city={city} lang={lang} contentLocale={contentLocale} citiesPath={citiesPath} />
             ))}
           </div>
-          <div className="mt-6 text-center">
-            <a
+          <div className="mt-6 text-center sm:hidden">
+            <Link
               href={`/${lang}/${citiesPath}`}
-              className="inline-block text-base font-semibold text-primary hover:underline"
+              className="inline-flex items-center gap-1 text-base font-semibold text-primary hover:underline"
             >
-              {dict.home.viewAllCities} &rarr;
-            </a>
+              {dict.home.viewAllCities} <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
         </section>
 
         {/* Featured Stadiums */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-bold md:text-3xl">{dict.home.featuredStadiums}</h2>
+        <section className="mt-14">
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-bold md:text-3xl">{dict.home.featuredStadiums}</h2>
+            <Link
+              href={`/${lang}/${stadiumsPath}`}
+              className="hidden items-center gap-1 text-sm font-semibold text-primary hover:underline sm:inline-flex"
+            >
+              {dict.home.viewAllStadiums} <ChevronRight className="h-4 w-4" />
+            </Link>
+          </div>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredStadiums.map((stadium) => (
               <FeaturedStadiumCard
@@ -315,82 +420,51 @@ export default async function HomePage({
               />
             ))}
           </div>
-          <div className="mt-6 text-center">
-            <a
+          <div className="mt-6 text-center sm:hidden">
+            <Link
               href={`/${lang}/${stadiumsPath}`}
-              className="inline-block text-base font-semibold text-primary hover:underline"
+              className="inline-flex items-center gap-1 text-base font-semibold text-primary hover:underline"
             >
-              {dict.home.viewAllStadiums} &rarr;
-            </a>
+              {dict.home.viewAllStadiums} <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
         </section>
 
         {/* Why SuperFan */}
-        <section className="mt-12 mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold md:text-3xl">{dict.home.whySuperfan}</h2>
-          <p className="mt-4 text-lg leading-relaxed text-muted">
-            {dict.home.whyText}
-          </p>
-        </section>
-
-        {/* Newsletter Signup */}
-        <section className="mt-12">
-          <NewsletterSignup dict={dict.newsletter} variant="inline" />
-        </section>
-
-        {/* CTA Links Section */}
-        <section className="mt-12">
-          <h2 className="sr-only">{dict.home.exploreMore}</h2>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            <a
-              href={`/${lang}/${citiesPath}`}
-              className="group rounded-lg border border-border p-6 text-center shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
-            >
-              <p className="text-lg font-bold group-hover:text-primary transition-colors">
-                {dict.nav.cities}
-              </p>
-              <p className="mt-1 text-sm text-muted">{dict.home.citiesCount}</p>
-            </a>
-            <a
-              href={`/${lang}/${stadiumsPath}`}
-              className="group rounded-lg border border-border p-6 text-center shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
-            >
-              <p className="text-lg font-bold group-hover:text-primary transition-colors">
-                {dict.nav.stadiums}
-              </p>
-              <p className="mt-1 text-sm text-muted">{dict.home.stadiumsCount}</p>
-            </a>
-            <div className="relative rounded-lg border border-border p-6 text-center opacity-60">
-              <p className="text-lg font-bold">{dict.nav.teams}</p>
-              <span className="mt-1 inline-block rounded-full bg-muted/20 px-3 py-0.5 text-xs font-medium text-muted">
-                {dict.home.comingSoon}
-              </span>
-            </div>
-            <div className="relative rounded-lg border border-border p-6 text-center opacity-60">
-              <p className="text-lg font-bold">{dict.nav.travel}</p>
-              <span className="mt-1 inline-block rounded-full bg-muted/20 px-3 py-0.5 text-xs font-medium text-muted">
-                {dict.home.comingSoon}
-              </span>
-            </div>
+        <section className="mt-14 rounded-2xl bg-primary/5 px-6 py-10 md:px-12">
+          <div className="mx-auto max-w-3xl text-center">
+            <Trophy className="mx-auto h-10 w-10 text-accent" />
+            <h2 className="mt-4 text-2xl font-bold md:text-3xl">{dict.home.whySuperfan}</h2>
+            <p className="mt-4 text-lg leading-relaxed text-muted">
+              {dict.home.whyText}
+            </p>
           </div>
         </section>
 
+        {/* Newsletter Signup */}
+        <section className="mt-14">
+          <NewsletterSignup dict={dict.newsletter} variant="inline" />
+        </section>
+
         {/* FAQ Section */}
-        <section className="mt-12 mx-auto max-w-3xl">
+        <section className="mt-14 mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold md:text-3xl">
             {contentLocale === 'es' ? 'Preguntas frecuentes sobre el Mundial 2026' : 'Frequently Asked Questions About the 2026 World Cup'}
           </h2>
-          <div className="mt-6 space-y-4">
+          <div className="mt-6 space-y-3">
             {homeFaqs.map((faq, i) => (
-              <details key={i} className="rounded-lg border border-border p-4">
-                <summary className="cursor-pointer font-semibold">{faq.question[contentLocale]}</summary>
+              <details key={i} className="group rounded-lg border border-border p-4 transition-colors open:bg-primary/5">
+                <summary className="cursor-pointer font-semibold list-none flex items-center justify-between">
+                  {faq.question[contentLocale]}
+                  <ChevronRight className="h-4 w-4 text-muted transition-transform group-open:rotate-90" />
+                </summary>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{faq.answer[contentLocale]}</p>
               </details>
             ))}
           </div>
         </section>
 
-        <p className="mt-8 text-center text-sm text-muted">
+        <p className="mt-10 text-center text-sm text-muted">
           {contentLocale === 'es' ? 'Ultima actualizacion' : 'Last updated'}: {new Date().toISOString().split('T')[0]}
         </p>
       </div>

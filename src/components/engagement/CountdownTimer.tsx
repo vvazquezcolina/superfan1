@@ -55,7 +55,7 @@ export function CountdownTimer({ targetDate, initialDays, dict }: CountdownTimer
 
   if (!timeLeft) {
     return (
-      <p className="mt-6 text-xl font-bold text-primary md:text-2xl">
+      <p className="mt-6 text-xl font-bold text-accent md:text-2xl">
         {dict.started}
       </p>
     )
@@ -69,27 +69,27 @@ export function CountdownTimer({ targetDate, initialDays, dict }: CountdownTimer
   ]
 
   return (
-    <div className="mt-6">
-      <div className="grid grid-cols-4 gap-2">
+    <div className="mt-8">
+      <div className="inline-flex items-center gap-2 sm:gap-3">
         {units.map((unit, index) => (
           <div key={unit.label} className="flex items-center">
-            <div className="flex flex-col items-center flex-1">
-              <span className="text-3xl font-bold text-primary md:text-4xl tabular-nums">
+            <div className="flex flex-col items-center">
+              <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-white/15 text-2xl font-extrabold tabular-nums text-white backdrop-blur-sm sm:h-16 sm:w-16 sm:text-3xl md:h-20 md:w-20 md:text-4xl">
                 {String(unit.value).padStart(2, '0')}
               </span>
-              <span className="text-xs text-muted mt-1 uppercase tracking-wide">
+              <span className="mt-1.5 text-[10px] font-medium uppercase tracking-wider text-white/60 sm:text-xs">
                 {unit.label}
               </span>
             </div>
             {index < units.length - 1 && (
-              <span className="hidden sm:block text-2xl font-bold text-primary/60 mx-1 pb-4">
+              <span className="mx-1 pb-4 text-xl font-bold text-white/40 sm:mx-2 sm:text-2xl">
                 :
               </span>
             )}
           </div>
         ))}
       </div>
-      <p className="text-sm text-muted mt-2">{dict.label}</p>
+      <p className="mt-3 text-sm text-white/60">{dict.label}</p>
     </div>
   )
 }

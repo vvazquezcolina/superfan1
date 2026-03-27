@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getGuide } from '@/lib/content/guides'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
@@ -8,6 +9,7 @@ import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
+import { Ticket, AlertTriangle, ArrowLeft, ChevronDown } from 'lucide-react'
 
 export const revalidate = 86400
 
@@ -95,7 +97,12 @@ export default async function EntradasPage({
 
       <article className="mx-auto max-w-4xl space-y-12 py-6">
         <header className="mx-auto max-w-prose">
-          <h1 className="text-3xl font-bold md:text-4xl">{guide.title[locale]}</h1>
+          <div className="flex items-center gap-3 mb-2">
+            <div className="rounded-full bg-primary/10 p-2">
+              <Ticket className="h-6 w-6 text-primary" />
+            </div>
+            <h1 className="text-3xl font-bold md:text-4xl">{guide.title[locale]}</h1>
+          </div>
         </header>
 
         {/* Prominent quick-answer info box (per D-05 LLM optimization) */}
@@ -106,8 +113,11 @@ export default async function EntradasPage({
 
         {/* Scam warning box */}
         <div className="mx-auto max-w-prose rounded-lg border-l-4 border-yellow-500 bg-yellow-50 p-6">
-          <p className="font-bold">{locale === 'es' ? 'Advertencia importante' : 'Important warning'}</p>
-          <p className="mt-2 text-sm leading-relaxed">
+          <div className="flex items-center gap-2 mb-2">
+            <AlertTriangle className="h-5 w-5 text-yellow-600 shrink-0" aria-hidden="true" />
+            <p className="font-bold text-yellow-800">{locale === 'es' ? 'Advertencia importante' : 'Important warning'}</p>
+          </div>
+          <p className="text-sm leading-relaxed text-yellow-900">
             {locale === 'es'
               ? 'Las unicas entradas oficiales se venden en FIFA.com/tickets. Cualquier otro sitio web, revendedor o persona que ofrezca entradas es potencialmente una estafa.'
               : 'The only official tickets are sold at FIFA.com/tickets. Any other website, reseller, or individual offering tickets is potentially a scam.'}
@@ -142,8 +152,9 @@ export default async function EntradasPage({
           <div className="mt-4 divide-y divide-border">
             {guide.faq.map((faq, index) => (
               <details key={index} className="group py-4">
-                <summary className="cursor-pointer font-semibold leading-relaxed hover:text-primary">
-                  {faq.question[locale]}
+                <summary className="flex cursor-pointer items-start justify-between gap-3 font-semibold leading-relaxed hover:text-primary">
+                  <span>{faq.question[locale]}</span>
+                  <ChevronDown className="mt-0.5 h-5 w-5 shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" />
                 </summary>
                 <p className="mt-3 leading-relaxed text-muted">{faq.answer[locale]}</p>
               </details>
@@ -174,12 +185,13 @@ export default async function EntradasPage({
           <p className="text-sm text-muted">
             {lastUpdatedLabel}: {guide.lastUpdated}
           </p>
-          <a
+          <Link
             href={indexPath}
-            className="mt-4 inline-block text-primary underline hover:text-primary/80"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 hover:underline transition-colors"
           >
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             {backLabel}
-          </a>
+          </Link>
         </footer>
       </article>
     </>

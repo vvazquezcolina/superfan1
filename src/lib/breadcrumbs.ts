@@ -29,6 +29,11 @@ const SEGMENT_TO_DICT_KEY: Record<string, string> = {
   'match-day': 'matchDay',
   mejores: 'best',
   best: 'best',
+  // Group pages
+  grupos: 'groups',
+  groups: 'groups',
+  groupes: 'groups',
+  gruppen: 'groups',
 }
 
 /**

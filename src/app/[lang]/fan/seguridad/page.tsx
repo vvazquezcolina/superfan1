@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getGuide } from '@/lib/content/guides'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
@@ -9,6 +10,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
 import { AffiliateLink } from '@/components/affiliate/AffiliateLink'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
+import { Shield, ShieldCheck, ArrowLeft, ChevronDown } from 'lucide-react'
 
 export const revalidate = 86400
 
@@ -96,7 +98,12 @@ export default async function SeguridadPage({
 
       <article className="mx-auto max-w-4xl space-y-12 py-6">
         <header className="mx-auto max-w-prose">
-          <h1 className="text-3xl font-bold md:text-4xl">{guide.title[locale]}</h1>
+          <div className="flex items-center gap-3 mb-2">
+            <div className="rounded-full bg-primary/10 p-2">
+              <Shield className="h-6 w-6 text-primary" />
+            </div>
+            <h1 className="text-3xl font-bold md:text-4xl">{guide.title[locale]}</h1>
+          </div>
         </header>
 
         {/* Prominent quick-answer info box (per D-05 LLM optimization) */}
@@ -107,19 +114,22 @@ export default async function SeguridadPage({
 
         {/* Travel insurance affiliate CTA (SafetyWing) */}
         {guide.affiliateCTAs.length > 0 && (
-          <div className="mx-auto max-w-prose rounded-lg border border-primary/30 bg-primary/5 p-6 my-6">
-            <p className="font-semibold text-sm mb-3">
-              {locale === 'es' ? 'Seguro de viaje recomendado' : 'Recommended travel insurance'}
-            </p>
+          <div className="mx-auto max-w-prose rounded-lg border border-green-200 bg-green-50 p-6 my-6">
+            <div className="flex items-center gap-2 mb-3">
+              <ShieldCheck className="h-5 w-5 text-green-700 shrink-0" aria-hidden="true" />
+              <p className="font-semibold text-sm text-green-800">
+                {locale === 'es' ? 'Seguro de viaje recomendado' : 'Recommended travel insurance'}
+              </p>
+            </div>
             {guide.affiliateCTAs.map((cta) => (
               <AffiliateLink
                 key={cta.partner}
                 href={cta.url}
                 partner={cta.partner}
                 disclosure={cta.disclosure[locale]}
-                className="font-semibold text-primary hover:underline"
+                className="inline-flex items-center gap-1 font-semibold text-green-700 hover:text-green-800 hover:underline transition-colors"
               >
-                {cta.label[locale]} &rarr;
+                {cta.label[locale]} →
               </AffiliateLink>
             ))}
           </div>
@@ -141,8 +151,9 @@ export default async function SeguridadPage({
           <div className="mt-4 divide-y divide-border">
             {guide.faq.map((faq, index) => (
               <details key={index} className="group py-4">
-                <summary className="cursor-pointer font-semibold leading-relaxed hover:text-primary">
-                  {faq.question[locale]}
+                <summary className="flex cursor-pointer items-start justify-between gap-3 font-semibold leading-relaxed hover:text-primary">
+                  <span>{faq.question[locale]}</span>
+                  <ChevronDown className="mt-0.5 h-5 w-5 shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" />
                 </summary>
                 <p className="mt-3 leading-relaxed text-muted">{faq.answer[locale]}</p>
               </details>
@@ -173,12 +184,13 @@ export default async function SeguridadPage({
           <p className="text-sm text-muted">
             {lastUpdatedLabel}: {guide.lastUpdated}
           </p>
-          <a
+          <Link
             href={indexPath}
-            className="mt-4 inline-block text-primary underline hover:text-primary/80"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 hover:underline transition-colors"
           >
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             {backLabel}
-          </a>
+          </Link>
         </footer>
       </article>
     </>

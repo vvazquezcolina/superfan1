@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getRoute, getRouteSlugs } from '@/lib/content/programmatic'
 import { getCityById } from '@/lib/content/cities'
@@ -8,6 +9,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/locale'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -25,7 +27,7 @@ export async function generateMetadata({
   const routeData = getRoute(route)
   if (!routeData) return {}
 
-  const locale = lang as Locale
+  const locale: Locale = toContentLocale(lang)
   const fromCity = getCityById(routeData.from)
   const toCity = getCityById(routeData.to)
   if (!fromCity || !toCity) return {}
@@ -81,12 +83,13 @@ export default async function HowToGetPage({
   const routeData = getRoute(route)
   if (!routeData) notFound()
 
-  const locale = lang as Locale
+  const dictLocale = lang as import('@/app/[lang]/dictionaries').Locale
+  const locale: Locale = toContentLocale(lang)
   const fromCity = getCityById(routeData.from)
   const toCity = getCityById(routeData.to)
   if (!fromCity || !toCity) notFound()
 
-  const dict = await getDictionary(locale)
+  const dict = await getDictionary(dictLocale)
   const slug = routeData.slugs.es
   const from = fromCity.name[locale]
   const to = toCity.name[locale]
@@ -362,28 +365,28 @@ export default async function HowToGetPage({
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a
+              <Link
                 href={`/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}/${fromCity.slugs[locale]}`}
                 className="text-primary underline"
               >
                 {locale === 'es' ? `Guia completa de ${from}` : `Complete guide to ${from}`}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href={`/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}/${toCity.slugs[locale]}`}
                 className="text-primary underline"
               >
                 {locale === 'es' ? `Guia completa de ${to}` : `Complete guide to ${to}`}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href={`/${lang}/dia-de-partido/${toCity.slugs.es}`}
                 className="text-primary underline"
               >
                 {locale === 'es' ? `Guia del dia de partido en ${to}` : `Match day guide for ${to}`}
-              </a>
+              </Link>
             </li>
           </ul>
         </section>

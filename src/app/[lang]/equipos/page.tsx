@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getTeams } from '@/lib/content/teams'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
@@ -9,6 +10,7 @@ import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { Team, Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
+import { Users, Shield, ChevronRight } from 'lucide-react'
 
 export async function generateStaticParams() {
   return [
@@ -57,22 +59,34 @@ const CONFEDERATION_FLAGS: Record<string, string> = {
   OFC: '\u{1F1F3}\u{1F1FF}',
 }
 
-function TeamCard({ team, lang, contentLocale }: { team: Team; lang: string; contentLocale: Locale }) {
+const CONFEDERATION_COLORS: Record<string, string> = {
+  UEFA: 'border-l-blue-500',
+  CONMEBOL: 'border-l-yellow-500',
+  CONCACAF: 'border-l-green-500',
+  CAF: 'border-l-orange-500',
+  AFC: 'border-l-red-500',
+  OFC: 'border-l-cyan-500',
+}
+
+function TeamCard({ team, lang, contentLocale, teamsPath }: { team: Team; lang: string; contentLocale: Locale; teamsPath: string }) {
   const flag = CONFEDERATION_FLAGS[team.confederation] ?? ''
   const groupLabel = contentLocale === 'es' ? 'Grupo' : 'Group'
-  const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
   const description = team.description[contentLocale]
-  const excerpt = description.length > 100 ? description.slice(0, 97) + '...' : description
+  const excerpt = description.length > 80 ? description.slice(0, 77) + '...' : description
+  const borderColor = CONFEDERATION_COLORS[team.confederation] ?? 'border-l-primary'
 
   return (
-    <a
-      href={`/${lang}/equipos/${team.slugs[contentLocale]}`}
-      className="group block rounded-lg border border-border p-5 shadow-sm transition-shadow hover:border-primary/50 hover:shadow-md"
+    <Link
+      href={`/${lang}/${teamsPath}/${team.slugs[contentLocale]}`}
+      className={`group block rounded-lg border border-border border-l-4 ${borderColor} p-4 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5`}
     >
-      <h3 className="text-base font-bold transition-colors group-hover:text-primary">
-        {flag} {team.name[contentLocale]}
-      </h3>
-      <div className="mt-1 flex flex-wrap items-center gap-2">
+      <div className="flex items-start justify-between gap-1">
+        <h3 className="text-base font-bold transition-colors group-hover:text-primary">
+          {flag} {team.name[contentLocale]}
+        </h3>
+        <ChevronRight className="h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
+      </div>
+      <div className="mt-1.5 flex flex-wrap items-center gap-2">
         {team.group && (
           <span className="inline-block rounded bg-primary px-1.5 py-0.5 text-xs font-semibold text-white">
             {groupLabel} {team.group}
@@ -81,10 +95,7 @@ function TeamCard({ team, lang, contentLocale }: { team: Team; lang: string; con
         <span className="text-xs text-muted">{team.confederation}</span>
       </div>
       <p className="mt-2 text-sm leading-relaxed text-muted">{excerpt}</p>
-      <span className="mt-3 inline-block text-sm font-medium text-primary group-hover:underline">
-        {readMore} &rarr;
-      </span>
-    </a>
+    </Link>
   )
 }
 
@@ -100,10 +111,13 @@ export default async function TeamIndexPage({
   const dict = await getDictionary(locale)
   const allTeams = getTeams()
 
+  const { pathTranslations } = await import('@/lib/i18n')
+  const teamsPath = pathTranslations.equipos[locale] ?? 'teams'
+
   // Build item list for JSON-LD
   const teamListItems = allTeams.map((team) => ({
     name: team.name[contentLocale],
-    url: `https://www.superfaninfo.com/${lang}/equipos/${team.slugs[contentLocale]}`,
+    url: `https://www.superfaninfo.com/${lang}/${teamsPath}/${team.slugs[contentLocale]}`,
   }))
   const itemListJsonLd = buildItemListJsonLd(teamListItems, contentLocale)
 
@@ -151,19 +165,41 @@ export default async function TeamIndexPage({
       <Breadcrumbs items={breadcrumbs} />
 
       <div className="mx-auto max-w-6xl py-6">
-        <h1 className="text-3xl font-bold md:text-4xl">{pageTitle}</h1>
+        <div className="flex items-center gap-3 mb-2">
+          <div className="rounded-full bg-primary/10 p-2">
+            <Users className="h-6 w-6 text-primary" />
+          </div>
+          <h1 className="text-3xl font-bold md:text-4xl">{pageTitle}</h1>
+        </div>
         <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted">{intro}</p>
+
+        {/* Quick stats */}
+        <div className="mt-6 flex flex-wrap gap-3">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+            <Shield className="h-3.5 w-3.5" />
+            48 {contentLocale === 'es' ? 'selecciones' : 'teams'}
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+            {sortedGroups.length} {contentLocale === 'es' ? 'grupos' : 'groups'}
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+            6 {contentLocale === 'es' ? 'confederaciones' : 'confederations'}
+          </span>
+        </div>
 
         {sortedGroups.map((group) => {
           const teams = groupedTeams[group] ?? []
           return (
             <section key={group} className="mt-10">
-              <h2 className="text-2xl font-bold">
-                {groupHeading} {group}
-              </h2>
-              <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <div className="inline-flex items-center gap-2 rounded-lg bg-primary/5 px-4 py-2 mb-4">
+                <h2 className="text-xl font-bold text-primary">
+                  {groupHeading} {group}
+                </h2>
+                <span className="text-sm text-muted">({teams.length} {contentLocale === 'es' ? 'equipos' : 'teams'})</span>
+              </div>
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
                 {teams.map((team) => (
-                  <TeamCard key={team.id} team={team} lang={lang} contentLocale={contentLocale} />
+                  <TeamCard key={team.id} team={team} lang={lang} contentLocale={contentLocale} teamsPath={teamsPath} />
                 ))}
               </div>
             </section>
@@ -172,10 +208,10 @@ export default async function TeamIndexPage({
 
         {ungrouped.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-2xl font-bold">{ungroupedHeading}</h2>
-            <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <h2 className="text-xl font-bold">{ungroupedHeading}</h2>
+            <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
               {ungrouped.map((team) => (
-                <TeamCard key={team.id} team={team} lang={lang} contentLocale={contentLocale} />
+                <TeamCard key={team.id} team={team} lang={lang} contentLocale={contentLocale} teamsPath={teamsPath} />
               ))}
             </div>
           </section>

@@ -3,6 +3,10 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import {
+  MapPin, Building2, Users, Plane, Calendar, Wrench,
+  Home, Globe, X, Menu, Ticket
+} from 'lucide-react'
 
 interface MobileNavProps {
   lang: string
@@ -22,13 +26,20 @@ interface MobileNavProps {
 function getNavLinks(lang: string) {
   const isEn = lang === 'en'
   return [
-    { href: `/${lang}`, key: 'home' as const },
-    { href: `/${lang}/${isEn ? 'cities' : 'ciudades'}`, key: 'cities' as const },
-    { href: `/${lang}/${isEn ? 'stadiums' : 'estadios'}`, key: 'stadiums' as const },
-    { href: `/${lang}/${isEn ? 'teams' : 'equipos'}`, key: 'teams' as const },
-    { href: `/${lang}/${isEn ? 'travel' : 'viajes'}`, key: 'travel' as const },
-    { href: `/${lang}/${isEn ? 'tools' : 'herramientas'}`, key: 'tools' as const },
+    { href: `/${lang}`, key: 'home' as const, icon: Home },
+    { href: `/${lang}/${isEn ? 'cities' : 'ciudades'}`, key: 'cities' as const, icon: MapPin },
+    { href: `/${lang}/${isEn ? 'stadiums' : 'estadios'}`, key: 'stadiums' as const, icon: Building2 },
+    { href: `/${lang}/${isEn ? 'teams' : 'equipos'}`, key: 'teams' as const, icon: Users },
+    { href: `/${lang}/${isEn ? 'travel' : 'viajes'}`, key: 'travel' as const, icon: Plane },
+    { href: `/${lang}/calendario`, key: 'calendar' as const, icon: Calendar },
+    { href: `/${lang}/fan`, key: 'fan' as const, icon: Ticket },
+    { href: `/${lang}/${isEn ? 'tools' : 'herramientas'}`, key: 'tools' as const, icon: Wrench },
   ]
+}
+
+const extraLabels: Record<string, Record<string, string>> = {
+  calendar: { es: 'Calendario', en: 'Schedule' },
+  fan: { es: 'Fan Zone', en: 'Fan Zone' },
 }
 
 export function MobileNav({ lang, dict }: MobileNavProps) {
@@ -61,20 +72,7 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
         className="text-white p-2"
         aria-label="Open navigation menu"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
+        <Menu className="w-6 h-6" />
       </button>
 
       {isOpen && (
@@ -97,40 +95,38 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
                 className="text-white p-2"
                 aria-label="Close navigation menu"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <X className="w-6 h-6" />
               </button>
             </div>
 
-            <div className="flex flex-col">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.key}
-                  href={link.href}
-                  className="py-3 px-6 text-white text-lg border-b border-white/10 hover:bg-primary-dark transition-colors"
-                >
-                  {dict.nav[link.key]}
-                </Link>
-              ))}
+            <div className="flex flex-col py-2">
+              {navLinks.map((link) => {
+                const Icon = link.icon
+                const label = link.key === 'calendar' || link.key === 'fan'
+                  ? extraLabels[link.key]?.[lang] ?? extraLabels[link.key]?.en ?? link.key
+                  : dict.nav[link.key as keyof typeof dict.nav]
+                const isActive = pathname === link.href || (link.key !== 'home' && pathname?.startsWith(link.href))
+                return (
+                  <Link
+                    key={link.key}
+                    href={link.href}
+                    className={`flex items-center gap-3 py-3 px-6 text-white text-base border-b border-white/5 hover:bg-primary-dark transition-colors ${
+                      isActive ? 'bg-primary-dark text-accent' : ''
+                    }`}
+                  >
+                    <Icon className="h-5 w-5 text-accent/80" />
+                    {label}
+                  </Link>
+                )
+              })}
             </div>
 
             <div className="mt-auto px-6 py-4 border-t border-white/10 absolute bottom-0 left-0 right-0">
               <Link
                 href={`/${switchLang}`}
-                className="text-accent font-medium hover:text-accent-light transition-colors"
+                className="flex items-center gap-2 text-accent font-medium hover:text-accent-light transition-colors"
               >
+                <Globe className="h-4 w-4" />
                 {switchLang === 'en' ? 'English' : 'Espanol'}
               </Link>
             </div>

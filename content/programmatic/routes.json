@@ -374,6 +374,206 @@
         "es": "Aeromexico tiene vuelos directos MEX-JFK. El vuelo dura unas 5 horas. Considera llegar a Newark (EWR) — suele ser mas barato y tiene buenas conexiones de tren a Manhattan.",
         "en": "Aeromexico has direct MEX-JFK flights. The flight is about 5 hours. Consider arriving at Newark (EWR) — it is usually cheaper and has good train connections to Manhattan."
       }
+    },
+    {
+      "id": "nueva-york-a-filadelfia",
+      "from": "nueva-york-nueva-jersey",
+      "to": "filadelfia",
+      "slugs": {
+        "es": "nueva-york-a-filadelfia",
+        "en": "new-york-to-philadelphia"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 45,
+      "flightCostMin": 80,
+      "flightCostMax": 200,
+      "airlines": ["American Airlines", "Delta", "JetBlue"],
+      "busOperator": "Greyhound / Megabus / FlixBus",
+      "busDuration": 120,
+      "busCostMin": 10,
+      "busCostMax": 35,
+      "driveDistance": 155,
+      "driveDuration": 95,
+      "recommendedMode": "bus",
+      "travelTip": {
+        "es": "El autobus o el tren Amtrak son la mejor opcion — Filadelfia esta a solo 95 minutos en carro o 80 minutos en tren. El vuelo no tiene sentido con los traslados al aeropuerto incluidos. Amtrak desde Penn Station es rapido y comodo.",
+        "en": "Bus or Amtrak train are the best option — Philadelphia is just 95 minutes by car or 80 minutes by train. Flying makes no sense once you add airport transfers. Amtrak from Penn Station is fast and comfortable."
+      }
+    },
+    {
+      "id": "los-angeles-a-seattle",
+      "from": "los-angeles",
+      "to": "seattle",
+      "slugs": {
+        "es": "los-angeles-a-seattle",
+        "en": "los-angeles-to-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 160,
+      "flightCostMin": 70,
+      "flightCostMax": 220,
+      "airlines": ["Alaska Airlines", "Southwest", "United", "Delta"],
+      "busOperator": "Greyhound / FlixBus",
+      "busDuration": 1080,
+      "busCostMin": 40,
+      "busCostMax": 100,
+      "driveDistance": 1850,
+      "driveDuration": 1020,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela — son casi 1,200 millas de distancia. Alaska Airlines domina esta ruta con vuelos frecuentes desde LAX. El viaje en carro por la I-5 tarda mas de 17 horas; reserva solo para road trips con tiempo.",
+        "en": "Fly — it is nearly 1,200 miles apart. Alaska Airlines dominates this route with frequent flights from LAX. The I-5 drive takes over 17 hours; only for road trips with plenty of time."
+      }
+    },
+    {
+      "id": "dallas-a-kansas-city",
+      "from": "dallas",
+      "to": "kansas-city",
+      "slugs": {
+        "es": "dallas-a-kansas-city",
+        "en": "dallas-to-kansas-city"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 100,
+      "flightCostMin": 80,
+      "flightCostMax": 210,
+      "airlines": ["Southwest", "American Airlines", "United"],
+      "busOperator": "Greyhound",
+      "busDuration": 570,
+      "busCostMin": 30,
+      "busCostMax": 75,
+      "driveDistance": 780,
+      "driveDuration": 435,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "El vuelo es la opcion mas inteligente para este trayecto de casi 500 millas. Southwest opera esta ruta con precios accesibles. Si manejas, la US-69 norte es la ruta mas directa desde Dallas.",
+        "en": "Flying is the smartest option for this nearly 500-mile trip. Southwest operates this route with accessible prices. If you drive, US-69 north is the most direct route from Dallas."
+      }
+    },
+    {
+      "id": "atlanta-a-miami",
+      "from": "atlanta",
+      "to": "miami",
+      "slugs": {
+        "es": "atlanta-a-miami",
+        "en": "atlanta-to-miami"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 110,
+      "flightCostMin": 70,
+      "flightCostMax": 220,
+      "airlines": ["Delta", "Spirit", "Frontier", "American Airlines"],
+      "busOperator": "Greyhound / FlixBus",
+      "busDuration": 660,
+      "busCostMin": 30,
+      "busCostMax": 90,
+      "driveDistance": 1100,
+      "driveDuration": 640,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Delta conecta Atlanta con Miami docenas de veces al dia — es uno de sus corredores mas activos. Spirit y Frontier tambien ofrecen tarifas muy bajas. El autobus supera las 11 horas; reservado solo para quienes no tengan prisa.",
+        "en": "Delta connects Atlanta to Miami dozens of times daily — one of their busiest corridors. Spirit and Frontier also offer very low fares. The bus exceeds 11 hours; only for those with plenty of time."
+      }
+    },
+    {
+      "id": "toronto-a-boston",
+      "from": "toronto",
+      "to": "boston",
+      "slugs": {
+        "es": "toronto-a-boston",
+        "en": "toronto-to-boston"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 100,
+      "flightCostMin": 90,
+      "flightCostMax": 260,
+      "airlines": ["Air Canada", "WestJet", "American Airlines", "Porter"],
+      "busOperator": "Greyhound / FlixBus Canada",
+      "busDuration": 780,
+      "busCostMin": 55,
+      "busCostMax": 130,
+      "driveDistance": 870,
+      "driveDuration": 560,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela — la frontera Canada-EE.UU. hace que el viaje en autobus sea largo y con posibles esperas en aduanas. Air Canada y Porter tienen vuelos directos Toronto-Boston. Lleva pasaporte vigente para el cruce fronterizo.",
+        "en": "Fly — the Canada-US border makes the bus journey long with potential customs delays. Air Canada and Porter have direct Toronto-Boston flights. Bring a valid passport for the border crossing."
+      }
+    },
+    {
+      "id": "miami-a-houston",
+      "from": "miami",
+      "to": "houston",
+      "slugs": {
+        "es": "miami-a-houston",
+        "en": "miami-to-houston"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 185,
+      "flightCostMin": 80,
+      "flightCostMax": 240,
+      "airlines": ["United", "American Airlines", "Southwest", "Spirit"],
+      "busOperator": "Greyhound",
+      "busDuration": 1260,
+      "busCostMin": 60,
+      "busCostMax": 130,
+      "driveDistance": 1980,
+      "driveDuration": 1155,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "El vuelo es obligatorio para este trayecto. Son mas de 1,200 millas en carro — practicamente imposible para un viaje de partido. United hub en Houston (IAH) tiene vuelos directos desde MIA todo el dia.",
+        "en": "Flying is a must for this trip. It is over 1,200 miles by car — practically impossible for a match-day trip. United hubs in Houston (IAH) with direct flights from MIA throughout the day."
+      }
+    },
+    {
+      "id": "san-francisco-a-seattle",
+      "from": "san-francisco",
+      "to": "seattle",
+      "slugs": {
+        "es": "san-francisco-a-seattle",
+        "en": "san-francisco-to-seattle"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 135,
+      "flightCostMin": 70,
+      "flightCostMax": 210,
+      "airlines": ["Alaska Airlines", "Southwest", "United", "Delta"],
+      "busOperator": "FlixBus / Greyhound",
+      "busDuration": 960,
+      "busCostMin": 35,
+      "busCostMax": 90,
+      "driveDistance": 1300,
+      "driveDuration": 750,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela — son mas de 800 millas en la costa oeste. Alaska Airlines es la aerolinea principal en esta ruta con muchos vuelos diarios. El tren Amtrak Coast Starlight es una opcion escenica pero tarda 23+ horas; ideal solo si tienes dias libres.",
+        "en": "Fly — it is over 800 miles along the west coast. Alaska Airlines is the main carrier on this route with many daily flights. The Amtrak Coast Starlight train is a scenic option but takes 23+ hours; ideal only if you have extra days."
+      }
+    },
+    {
+      "id": "kansas-city-a-atlanta",
+      "from": "kansas-city",
+      "to": "atlanta",
+      "slugs": {
+        "es": "kansas-city-a-atlanta",
+        "en": "kansas-city-to-atlanta"
+      },
+      "lastUpdated": "2026-03-27",
+      "flightDuration": 130,
+      "flightCostMin": 90,
+      "flightCostMax": 250,
+      "airlines": ["Delta", "Southwest", "American Airlines", "United"],
+      "busOperator": "Greyhound",
+      "busDuration": 840,
+      "busCostMin": 45,
+      "busCostMax": 110,
+      "driveDistance": 1350,
+      "driveDuration": 780,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "El vuelo es la opcion correcta para este trayecto de mas de 800 millas. Delta tiene el hub en Atlanta y opera vuelos directos desde Kansas City con buena frecuencia. El viaje en carro por I-55 sur tarda 13 horas — solo para road trips.",
+        "en": "Flying is the right choice for this 800-plus-mile journey. Delta hubs in Atlanta and operates direct flights from Kansas City with good frequency. The I-55 south drive takes 13 hours — only for road trips."
+      }
     }
   ]
 }

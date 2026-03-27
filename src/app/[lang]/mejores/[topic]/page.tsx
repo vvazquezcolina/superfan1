@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getListicle, getListicleSlugs } from '@/lib/content/programmatic'
 import { getCityById } from '@/lib/content/cities'
@@ -178,9 +179,9 @@ export default async function ListiclePage({
                     <div className="flex items-center justify-between gap-2 flex-wrap">
                       <h2 className="text-lg font-bold">
                         {item.url ? (
-                          <a href={item.url} className="hover:text-primary hover:underline">
+                          <Link href={item.url} className="hover:text-primary hover:underline">
                             {item.name}
-                          </a>
+                          </Link>
                         ) : (
                           item.name
                         )}
@@ -195,7 +196,7 @@ export default async function ListiclePage({
                       </p>
                     )}
                     {item.url && (
-                      <a
+                      <Link
                         href={item.url}
                         className="mt-2 inline-block text-xs text-primary underline"
                       >
@@ -206,7 +207,7 @@ export default async function ListiclePage({
                           : contentLocale === 'es'
                             ? `Ver guia del estadio`
                             : `View stadium guide`}
-                      </a>
+                      </Link>
                     )}
                   </div>
                 </div>
@@ -222,24 +223,24 @@ export default async function ListiclePage({
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a
+              <Link
                 href={`/${lang}/${contentLocale === 'es' ? 'ciudades' : 'cities'}`}
                 className="text-primary underline"
               >
                 {contentLocale === 'es'
                   ? 'Guias completas de las 16 ciudades sede'
                   : 'Complete guides to all 16 host cities'}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href={`/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}`}
                 className="text-primary underline"
               >
                 {contentLocale === 'es'
                   ? 'Guias de los 16 estadios del Mundial'
                   : 'Guides to all 16 World Cup stadiums'}
-              </a>
+              </Link>
             </li>
           </ul>
         </section>

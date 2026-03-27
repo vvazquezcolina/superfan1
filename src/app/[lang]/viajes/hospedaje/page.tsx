@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getGuide } from '@/lib/content/guides'
 import { getDictionary, hasLocale } from '@/app/[lang]/dictionaries'
@@ -186,12 +187,12 @@ export default async function HospedajePage({
           <p className="text-sm text-muted">
             {lastUpdatedLabel}: {guide.lastUpdated}
           </p>
-          <a
+          <Link
             href={indexPath}
             className="mt-4 inline-block text-primary underline hover:text-primary/80"
           >
             {backLabel}
-          </a>
+          </Link>
         </footer>
       </article>
     </>

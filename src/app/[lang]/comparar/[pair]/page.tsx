@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getCityComparison, getComparisonSlugs } from '@/lib/content/programmatic'
 import { getCityById } from '@/lib/content/cities'
@@ -9,6 +10,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildFAQPageJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/locale'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -26,7 +28,7 @@ export async function generateMetadata({
   const comparison = getCityComparison(pair)
   if (!comparison) return {}
 
-  const locale = lang as Locale
+  const locale: Locale = toContentLocale(lang)
   const city1 = getCityById(comparison.city1)
   const city2 = getCityById(comparison.city2)
   if (!city1 || !city2) return {}
@@ -89,12 +91,13 @@ export default async function CityComparisonPage({
   const comparison = getCityComparison(pair)
   if (!comparison) notFound()
 
-  const locale = lang as Locale
+  const dictLocale = lang as import('@/app/[lang]/dictionaries').Locale
+  const locale: Locale = toContentLocale(lang)
   const city1 = getCityById(comparison.city1)
   const city2 = getCityById(comparison.city2)
   if (!city1 || !city2) notFound()
 
-  const dict = await getDictionary(locale)
+  const dict = await getDictionary(dictLocale)
   const slug = comparison.slugs.es
 
   const c1Name = city1.name[locale]
@@ -381,12 +384,12 @@ export default async function CityComparisonPage({
                 <dd className="font-medium">${comparison.metrics.costPerNight.city1} USD/noche</dd>
               </div>
             </dl>
-            <a
+            <Link
               href={`/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}/${city1.slugs[locale]}`}
               className="inline-block text-sm text-primary underline"
             >
               {locale === 'es' ? `Guia completa de ${c1Name}` : `Complete guide to ${c1Name}`}
-            </a>
+            </Link>
           </div>
 
           <div className="rounded-lg border border-border p-6 space-y-3">
@@ -406,12 +409,12 @@ export default async function CityComparisonPage({
                 <dd className="font-medium">${comparison.metrics.costPerNight.city2} USD/noche</dd>
               </div>
             </dl>
-            <a
+            <Link
               href={`/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}/${city2.slugs[locale]}`}
               className="inline-block text-sm text-primary underline"
             >
               {locale === 'es' ? `Guia completa de ${c2Name}` : `Complete guide to ${c2Name}`}
-            </a>
+            </Link>
           </div>
         </section>
 

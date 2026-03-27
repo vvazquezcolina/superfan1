@@ -1,5 +1,6 @@
 import { getCities } from '@/lib/content/cities'
 import { getStadiums } from '@/lib/content/stadiums'
+import { getCityComparisons, getListicles } from '@/lib/content/programmatic'
 
 export const dynamic = 'force-static'
 
@@ -8,6 +9,8 @@ const SITE_URL = 'https://www.superfaninfo.com'
 export function GET() {
   const cities = getCities()
   const stadiums = getStadiums()
+  const comparisons = getCityComparisons()
+  const listicles = getListicles()
   const today = new Date().toISOString().split('T')[0]
 
   const cityLines = cities
@@ -63,11 +66,36 @@ ${stadiumLines}
 - [Calculadora de Presupuesto](${SITE_URL}/es/herramientas/presupuesto): Calcula el costo total de tu viaje al Mundial 2026: vuelos, hospedaje, entradas, comida y transporte
 - [Mapa Interactivo](${SITE_URL}/es/herramientas/mapa): Mapa de las 16 ciudades sede con estadios, zonas de fans y puntos de interes
 
+### Match Pages (Paginas de Partidos)
+Individual detail pages for each of the 48 group stage matches with venue info, city guide links, and travel context.
+- [Partido m001](${SITE_URL}/es/partidos/m001): Partido del Grupo A en Los Angeles (SoFi Stadium), 11 jun 2026
+- [Partido m007](${SITE_URL}/es/partidos/m007): Primer partido del Grupo B
+- [Partido m048](${SITE_URL}/es/partidos/m048): Ultimo partido de la fase de grupos
+- Full match index: ${SITE_URL}/es/calendario
+
+### Group Pages (Paginas de Grupos)
+Individual pages for each of the 8 groups with team listings, match schedule, and venue details.
+- [Grupo A](${SITE_URL}/es/grupos/A): Equipos, partidos y ciudades sede del Grupo A
+- [Grupo B](${SITE_URL}/es/grupos/B): Equipos, partidos y ciudades sede del Grupo B
+- [Grupo C](${SITE_URL}/es/grupos/C) through [Grupo H](${SITE_URL}/es/grupos/H): All 8 groups covered
+
+### City vs City Comparisons (Comparativas)
+${comparisons.length} city-vs-city comparison pages helping fans decide which host city to visit.
+- Example: [Los Angeles vs Dallas](${SITE_URL}/es/comparar/los-angeles-vs-dallas)
+- Covers costs, transport, weather, safety, stadium capacity, and nightlife side by side
+
+### Rankings & Listicles (Rankings)
+${listicles.length} curated ranking pages covering stadiums and cities by category.
+- Example: [Estadios por Capacidad](${SITE_URL}/es/rankings/estadios-por-capacidad): Los 16 estadios del Mundial ordenados de mayor a menor
+- Example: [Ciudades mas Baratas](${SITE_URL}/es/rankings/ciudades-mas-baratas): Ranking de ciudades sede por costo de vida para el fan
+- Covers capacity, budget, food, history, family friendliness, weather, transport, and more
+
 ## Content Details
 - Languages: Spanish (primary), English
 - Updated: ${today}
-- Coverage: 16 host cities, 16 stadiums, 48 national teams, full match schedule
-- Topics: Travel, transport, food, safety, accommodation, tickets, cultural context, interactive tools
+- Coverage: 16 host cities, 16 stadiums, 48 national teams, 48 group stage matches, 8 groups, full match schedule
+- Topics: Travel, transport, food, safety, accommodation, tickets, cultural context, interactive tools, city comparisons, rankings
+- Programmatic pages: ${comparisons.length} city comparisons, ${listicles.length} ranking listicles
 - Full content: ${SITE_URL}/llms-full.txt
 `
 

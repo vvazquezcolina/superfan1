@@ -1,4 +1,8 @@
 import Link from 'next/link'
+import {
+  MapPin, Building2, Users, Plane, Calendar, Wrench,
+  Ticket, Globe, Trophy
+} from 'lucide-react'
 
 interface FooterProps {
   lang: string
@@ -43,41 +47,64 @@ function getLegalPath(lang: string, page: string): string {
   return `/${lang}/${paths[page]?.[lang] ?? page}`
 }
 
+const calendarLabels: Record<string, string> = { es: 'Calendario', en: 'Schedule' }
+const fanLabels: Record<string, string> = { es: 'Fan Zone', en: 'Fan Zone' }
+
 export function Footer({ lang, dict }: FooterProps) {
   const switchLang = lang === 'es' ? 'en' : 'es'
+  const calLabel = calendarLabels[lang] ?? calendarLabels.en
+  const fnLabel = fanLabels[lang] ?? fanLabels.en
 
   return (
     <footer className="bg-primary text-white mt-auto">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Brand + tagline */}
+        <div className="flex items-center gap-2 mb-8">
+          <Trophy className="h-6 w-6 text-accent" />
+          <span className="text-xl font-bold">{dict.site.name}</span>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Column 1: Explore */}
           <div>
             <h3 className="text-accent font-bold text-sm uppercase tracking-wider mb-4">
               {dict.footer.sections.explore}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               <li>
                 <Link
                   href={getNavPath(lang, 'cities')}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
                 >
+                  <MapPin className="h-3.5 w-3.5" />
                   {dict.nav.cities}
                 </Link>
               </li>
               <li>
                 <Link
                   href={getNavPath(lang, 'stadiums')}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
                 >
+                  <Building2 className="h-3.5 w-3.5" />
                   {dict.nav.stadiums}
                 </Link>
               </li>
               <li>
                 <Link
                   href={getNavPath(lang, 'teams')}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
                 >
+                  <Users className="h-3.5 w-3.5" />
                   {dict.nav.teams}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/calendario`}
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
+                >
+                  <Calendar className="h-3.5 w-3.5" />
+                  {calLabel}
                 </Link>
               </li>
             </ul>
@@ -88,29 +115,32 @@ export function Footer({ lang, dict }: FooterProps) {
             <h3 className="text-accent font-bold text-sm uppercase tracking-wider mb-4">
               {dict.footer.sections.info}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               <li>
                 <Link
                   href={getNavPath(lang, 'travel')}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
                 >
+                  <Plane className="h-3.5 w-3.5" />
                   {dict.nav.travel}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={getNavPath(lang, 'tools')}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
+                  href={`/${lang}/fan`}
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {dict.nav.tools}
+                  <Ticket className="h-3.5 w-3.5" />
+                  {fnLabel}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={getLegalPath(lang, 'about')}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
+                  href={getNavPath(lang, 'tools')}
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {dict.footer.links.about}
+                  <Wrench className="h-3.5 w-3.5" />
+                  {dict.nav.tools}
                 </Link>
               </li>
             </ul>
@@ -121,7 +151,15 @@ export function Footer({ lang, dict }: FooterProps) {
             <h3 className="text-accent font-bold text-sm uppercase tracking-wider mb-4">
               {dict.footer.sections.legal}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
+              <li>
+                <Link
+                  href={getLegalPath(lang, 'about')}
+                  className="text-white/80 hover:text-white transition-colors text-sm"
+                >
+                  {dict.footer.links.about}
+                </Link>
+              </li>
               <li>
                 <Link
                   href={getLegalPath(lang, 'privacy')}
@@ -140,22 +178,44 @@ export function Footer({ lang, dict }: FooterProps) {
               </li>
             </ul>
           </div>
+
+          {/* Column 4: Countries */}
+          <div>
+            <h3 className="text-accent font-bold text-sm uppercase tracking-wider mb-4">
+              {lang === 'es' ? 'Paises sede' : 'Host Countries'}
+            </h3>
+            <div className="flex flex-col gap-2.5 text-sm text-white/80">
+              <span className="flex items-center gap-2">
+                <span className="inline-block h-3 w-3 rounded-full bg-green-500" />
+                Mexico
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="inline-block h-3 w-3 rounded-full bg-blue-500" />
+                {lang === 'es' ? 'Estados Unidos' : 'United States'}
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="inline-block h-3 w-3 rounded-full bg-red-500" />
+                Canada
+              </span>
+            </div>
+          </div>
         </div>
 
         {/* FIFA Disclaimer */}
-        <p className="text-sm text-white/80 border-t border-white/20 pt-6 mt-8">
+        <p className="text-sm text-white/60 border-t border-white/10 pt-6 mt-8">
           {dict.footer.disclaimer}
         </p>
 
         {/* Copyright and language switcher */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mt-4">
-          <p className="text-xs text-white/60">
+          <p className="text-xs text-white/50">
             &copy; 2026 SuperFan Info. {dict.footer.copyright}
           </p>
           <Link
             href={`/${switchLang}`}
-            className="text-accent text-xs font-medium hover:text-accent-light transition-colors"
+            className="flex items-center gap-1 text-accent text-xs font-medium hover:text-accent-light transition-colors"
           >
+            <Globe className="h-3 w-3" />
             {switchLang === 'en' ? 'English' : 'Espanol'}
           </Link>
         </div>

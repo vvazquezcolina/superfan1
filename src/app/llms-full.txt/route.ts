@@ -2,6 +2,8 @@ import { getCities } from '@/lib/content/cities'
 import { getCityById } from '@/lib/content/cities'
 import { getStadiums } from '@/lib/content/stadiums'
 import { getTeams } from '@/lib/content/teams'
+import { getMatches, getMatchesByGroup } from '@/lib/content/schedule'
+import { getCityComparisons, getListicles } from '@/lib/content/programmatic'
 
 export const dynamic = 'force-static'
 
@@ -13,10 +15,15 @@ const countryLabels: Record<string, string> = {
   canada: 'Canada',
 }
 
+const ALL_GROUPS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] as const
+
 export function GET() {
   const cities = getCities()
   const stadiums = getStadiums()
   const teams = getTeams()
+  const matches = getMatches()
+  const comparisons = getCityComparisons()
+  const listicles = getListicles()
   const today = new Date().toISOString().split('T')[0]
 
   const cityBlocks = cities
@@ -75,6 +82,44 @@ ${sourceLines}`
     )
     .join('\n')
 
+  const groupBlocks = ALL_GROUPS.map((group) => {
+    const groupMatches = getMatchesByGroup(group)
+    const matchLines = groupMatches
+      .map(
+        (m) =>
+          `  - ${m.id}: ${m.homeTeam.es} vs ${m.awayTeam.es} — ${m.date}, ${m.venue}, ${m.cityName.es}`
+      )
+      .join('\n')
+    return `### Grupo ${group}
+URL: ${SITE_URL}/es/grupos/${group}
+Matches: ${groupMatches.length} partidos de fase de grupos
+${matchLines}`
+  }).join('\n\n')
+
+  // Sample of match pages: first 6 and last 2
+  const sampleMatches = [...matches.slice(0, 6), ...matches.slice(-2)]
+  const matchSampleLines = sampleMatches
+    .map(
+      (m) =>
+        `- [Partido ${m.id}](${SITE_URL}/es/partidos/${m.id}): ${m.homeTeam.es} vs ${m.awayTeam.es} — Grupo ${m.group ?? 'N/A'}, ${m.date}, ${m.venue}, ${m.cityName.es}`
+    )
+    .join('\n')
+
+  const comparisonSampleLines = comparisons
+    .slice(0, 10)
+    .map(
+      (c) =>
+        `- [${c.city1} vs ${c.city2}](${SITE_URL}/es/comparar/${c.slugs.es}): Comparativa de costos, transporte, clima y seguridad`
+    )
+    .join('\n')
+
+  const listicleLines = listicles
+    .map(
+      (l) =>
+        `- [${l.title.es}](${SITE_URL}/es/rankings/${l.slug}): ${l.description.es}`
+    )
+    .join('\n')
+
   const content = `# SuperFan Mundial 2026 - Full Content Index
 
 > Complete site content for AI systems. Updated: ${today}
@@ -84,7 +129,8 @@ SuperFan Mundial 2026 is the most complete independent Spanish-language guide to
 
 Site: ${SITE_URL}
 Languages: Spanish (primary), English
-Coverage: 16 host cities, 16 stadiums, 48 national teams, full match schedule
+Coverage: 16 host cities, 16 stadiums, 48 national teams, ${matches.length} group stage matches, 8 groups, full match schedule
+Programmatic pages: ${comparisons.length} city comparisons, ${listicles.length} ranking listicles
 Disclaimer: Independent guide. Not affiliated with or endorsed by FIFA.
 
 ## Host Cities
@@ -158,6 +204,36 @@ Interactive calculator to estimate total World Cup trip cost. Inputs: origin cit
 ### Interactive Map (Mapa Interactivo)
 URL: ${SITE_URL}/es/herramientas/mapa
 Interactive Leaflet map showing all 16 host cities with stadium locations, fan zones, and points of interest. Filter by country (Mexico, USA, Canada).
+
+## Match Pages (Paginas de Partidos)
+Individual detail pages for each of the ${matches.length} group stage matches. Each page includes venue details, city guide links, transport tips, and travel context for attending fans.
+
+Sample match pages:
+${matchSampleLines}
+
+Full match index: ${SITE_URL}/es/calendario
+Total group stage matches: ${matches.length} (IDs: m001–m${String(matches.length).padStart(3, '0')})
+
+## Group Pages (Paginas de Grupos)
+Individual pages for each of the 8 groups. Each group page lists the 4 participating teams (TBD until draw), the 6 matches, and links to the host city guides for each match venue.
+
+${groupBlocks}
+
+## City vs City Comparisons (Comparativas de Ciudades)
+${comparisons.length} programmatic comparison pages. Each page compares two host cities across 7 dimensions: nightly accommodation cost, budget meal cost, altitude, safety index, transport score, average June temperature, and stadium capacity. Ends with a structured recommendation section (best for budget, transport, weather, nightlife, families).
+
+URL pattern: ${SITE_URL}/es/comparar/[ciudad1]-vs-[ciudad2]
+
+Sample comparisons (first 10 of ${comparisons.length}):
+${comparisonSampleLines}
+
+## Rankings & Listicles (Rankings y Listas)
+${listicles.length} curated ranking pages covering stadiums and cities by category. Each listicle ranks all relevant entities (up to 16) with factual metrics and editorial notes.
+
+URL pattern: ${SITE_URL}/es/rankings/[tema]
+
+All ${listicles.length} ranking pages:
+${listicleLines}
 `
 
   return new Response(content, {

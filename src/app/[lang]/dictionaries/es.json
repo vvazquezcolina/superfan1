@@ -56,7 +56,8 @@
     "compare": "Comparar ciudades",
     "howToGet": "Como llegar",
     "matchDay": "Dia de partido",
-    "best": "Rankings"
+    "best": "Rankings",
+    "groups": "Grupos"
   },
   "notFound": {
     "title": "Pagina no encontrada",

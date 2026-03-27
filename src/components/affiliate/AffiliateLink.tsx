@@ -1,6 +1,7 @@
 'use client'
 
 import type { ReactNode } from 'react'
+import { ExternalLink, Info } from 'lucide-react'
 import { trackAffiliateClick } from '@/lib/analytics'
 
 interface AffiliateLinkProps {
@@ -29,7 +30,7 @@ export function AffiliateLink({
   }
 
   return (
-    <span className="inline-flex flex-col">
+    <span className="inline-flex flex-col gap-1.5">
       <a
         href={href}
         target="_blank"
@@ -38,8 +39,12 @@ export function AffiliateLink({
         onClick={handleClick}
       >
         {children}
+        <ExternalLink className="ml-1.5 inline-block size-3.5 align-middle" aria-hidden="true" />
       </a>
-      <span className="mt-1 text-xs italic text-muted">{disclosure}</span>
+      <span className="inline-flex items-start gap-1 text-xs italic text-muted">
+        <Info className="mt-px size-3 shrink-0 opacity-60" aria-hidden="true" />
+        {disclosure}
+      </span>
     </span>
   )
 }

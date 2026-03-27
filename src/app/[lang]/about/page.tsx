@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
@@ -60,9 +61,9 @@ export default function AboutPage() {
           <p className="leading-relaxed">
             Our recommendations are based on research and editorial judgment. While we use
             affiliate links to fund the site (see our{' '}
-            <a href="/en/disclosure" className="text-primary underline hover:text-primary/80">
+            <Link href="/en/disclosure" className="text-primary underline hover:text-primary/80">
               disclosure page
-            </a>
+            </Link>
             ), affiliate partnerships never influence our content. We recommend options based
             on quality, value, and relevance to fans -- not commission rates.
           </p>

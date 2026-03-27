@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { Search, X, Loader2 } from 'lucide-react'
 
 interface SearchModalDict {
   label: string
@@ -96,6 +97,19 @@ export function SearchModal({ dict }: SearchModalProps) {
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [isOpen])
 
+  // Open on Ctrl+K / Cmd+K
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        setIsOpen(true)
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [])
+
   // Debounced search
   useEffect(() => {
     if (!pagefindLoaded || !pagefindModule) return
@@ -139,7 +153,7 @@ export function SearchModal({ dict }: SearchModalProps) {
     isOpen && isMounted
       ? createPortal(
           <div
-            className="fixed inset-0 bg-black/60 z-[100]"
+            className="fixed inset-0 bg-black/60 z-[100] backdrop-blur-sm"
             onClick={(e) => {
               if (e.target === e.currentTarget) handleClose()
             }}
@@ -147,21 +161,9 @@ export function SearchModal({ dict }: SearchModalProps) {
             aria-modal="true"
             aria-label={dict.label}
           >
-            <div className="fixed top-16 left-1/2 -translate-x-1/2 w-full max-w-2xl bg-white rounded-xl shadow-2xl p-4 mx-4">
+            <div className="fixed top-16 left-1/2 -translate-x-1/2 w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-5 mx-4">
               <div className="flex items-center gap-3">
-                <svg
-                  className="h-5 w-5 text-muted flex-shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
+                <Search className="h-5 w-5 text-muted flex-shrink-0" />
                 <input
                   ref={inputRef}
                   type="search"
@@ -172,34 +174,32 @@ export function SearchModal({ dict }: SearchModalProps) {
                 />
                 <button
                   onClick={handleClose}
-                  className="text-muted hover:text-foreground transition-colors p-1"
+                  className="rounded-full p-1.5 text-muted hover:text-foreground hover:bg-muted/10 transition-colors"
                   aria-label={dict.closeLabel}
                 >
-                  <svg
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
+                  <X className="h-5 w-5" />
                 </button>
               </div>
 
               <div className="max-h-96 overflow-y-auto mt-4">
                 {pagefindUnavailable && (
-                  <p className="text-sm text-muted py-4 text-center">{dict.notAvailableInDev}</p>
+                  <p className="text-sm text-muted py-6 text-center">{dict.notAvailableInDev}</p>
                 )}
 
                 {!pagefindUnavailable && isLoading && (
-                  <p className="text-sm text-muted py-4 text-center">{dict.loading}</p>
+                  <div className="flex items-center justify-center gap-2 py-6">
+                    <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                    <p className="text-sm text-muted">{dict.loading}</p>
+                  </div>
                 )}
 
                 {!pagefindUnavailable && !isLoading && query.trim() && results.length === 0 && (
-                  <p className="text-sm text-muted py-4 text-center">
-                    {dict.noResults} &ldquo;{query}&rdquo;
-                  </p>
+                  <div className="text-center py-8">
+                    <Search className="mx-auto h-8 w-8 text-muted/30 mb-2" />
+                    <p className="text-sm text-muted">
+                      {dict.noResults} &ldquo;{query}&rdquo;
+                    </p>
+                  </div>
                 )}
 
                 {results.length > 0 && (
@@ -209,11 +209,11 @@ export function SearchModal({ dict }: SearchModalProps) {
                         <a
                           href={result.url}
                           onClick={handleClose}
-                          className="block rounded-lg px-3 py-3 hover:bg-primary/5 transition-colors"
+                          className="block rounded-xl px-4 py-3 hover:bg-primary/5 transition-colors"
                         >
-                          <p className="font-medium text-foreground">{result.meta.title}</p>
+                          <p className="font-semibold text-foreground">{result.meta.title}</p>
                           <p
-                            className="text-sm text-muted mt-1"
+                            className="text-sm text-muted mt-1 line-clamp-2"
                             dangerouslySetInnerHTML={{ __html: result.excerpt }}
                           />
                         </a>
@@ -221,6 +221,12 @@ export function SearchModal({ dict }: SearchModalProps) {
                     ))}
                   </ul>
                 )}
+              </div>
+
+              {/* Keyboard shortcut hint */}
+              <div className="mt-3 pt-3 border-t border-border flex items-center justify-between text-xs text-muted">
+                <span>ESC {dict.closeLabel.toLowerCase()}</span>
+                <kbd className="rounded bg-muted/10 px-1.5 py-0.5 font-mono text-xs">Ctrl+K</kbd>
               </div>
             </div>
           </div>,
@@ -233,21 +239,10 @@ export function SearchModal({ dict }: SearchModalProps) {
       <button
         onClick={handleOpen}
         aria-label={dict.label}
-        className="text-white/90 hover:text-accent transition-colors p-1"
+        className="flex items-center gap-1.5 text-white/90 hover:text-accent transition-colors p-1.5 rounded-md hover:bg-white/10"
       >
-        <svg
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          />
-        </svg>
+        <Search className="h-4 w-4" />
+        <span className="hidden lg:inline text-sm">{dict.label}</span>
       </button>
       {modal}
     </>

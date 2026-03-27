@@ -7,6 +7,7 @@ import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { toContentLocale } from '@/lib/content/locale'
 import type { Locale } from '@/lib/content/schemas'
+import { Users, Ticket, Shield, ChevronRight } from 'lucide-react'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -47,13 +48,18 @@ export async function generateMetadata({
 
 const fanSections = {
   es: [
-    { href: '/es/fan/entradas', title: 'Entradas', desc: 'Cómo comprar entradas oficiales de forma segura, categorías, precios y cómo evitar estafas.' },
-    { href: '/es/fan/seguridad', title: 'Seguridad y Seguros', desc: 'Consejos de seguridad, seguros de viaje recomendados y números de emergencia en cada país.' },
+    { href: '/es/fan/entradas', title: 'Entradas', desc: 'Cómo comprar entradas oficiales de forma segura, categorías, precios y cómo evitar estafas.', Icon: Ticket, color: 'blue' },
+    { href: '/es/fan/seguridad', title: 'Seguridad y Seguros', desc: 'Consejos de seguridad, seguros de viaje recomendados y números de emergencia en cada país.', Icon: Shield, color: 'green' },
   ],
   en: [
-    { href: '/en/fan/entradas', title: 'Tickets', desc: 'How to safely buy official tickets, categories, prices, and how to avoid scams.' },
-    { href: '/en/fan/seguridad', title: 'Safety & Insurance', desc: 'Safety tips, recommended travel insurance, and emergency numbers in each country.' },
+    { href: '/en/fan/entradas', title: 'Tickets', desc: 'How to safely buy official tickets, categories, prices, and how to avoid scams.', Icon: Ticket, color: 'blue' },
+    { href: '/en/fan/seguridad', title: 'Safety & Insurance', desc: 'Safety tips, recommended travel insurance, and emergency numbers in each country.', Icon: Shield, color: 'green' },
   ],
+}
+
+const colorMap: Record<string, { bg: string; border: string; icon: string }> = {
+  blue: { bg: 'bg-blue-50', border: 'border-blue-200', icon: 'bg-blue-100 text-blue-700' },
+  green: { bg: 'bg-green-50', border: 'border-green-200', icon: 'bg-green-100 text-green-700' },
 }
 
 export default async function FanPage({
@@ -84,25 +90,39 @@ export default async function FanPage({
       <Breadcrumbs items={breadcrumbs} />
 
       <div className="mx-auto max-w-4xl py-6">
-        <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
+        <div className="flex items-center gap-3 mb-2">
+          <div className="rounded-full bg-primary/10 p-2">
+            <Users className="h-6 w-6 text-primary" />
+          </div>
+          <h1 className="text-3xl font-bold md:text-4xl">{title}</h1>
+        </div>
         <p className="mt-4 text-lg leading-relaxed text-muted">{intro}</p>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-          {sections.map((s) => (
-            <Link
-              key={s.href}
-              href={s.href}
-              className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
-            >
-              <h2 className="text-xl font-bold group-hover:text-primary transition-colors">
-                {s.title}
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{s.desc}</p>
-              <span className="mt-4 inline-block text-sm font-medium text-primary group-hover:underline">
-                {contentLocale === 'es' ? 'Leer guía' : 'Read guide'} &rarr;
-              </span>
-            </Link>
-          ))}
+        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+          {sections.map((s) => {
+            const colors = colorMap[s.color]
+            return (
+              <Link
+                key={s.href}
+                href={s.href}
+                className={`group flex items-start gap-4 rounded-xl border ${colors.border} ${colors.bg} p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5`}
+              >
+                <div className={`rounded-xl ${colors.icon} p-3 shrink-0`}>
+                  <s.Icon className="h-6 w-6" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-lg font-bold group-hover:text-primary transition-colors">
+                    {s.title}
+                  </h2>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted">{s.desc}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:underline">
+                    {contentLocale === 'es' ? 'Leer guía' : 'Read guide'}
+                    <ChevronRight className="h-3 w-3" />
+                  </span>
+                </div>
+              </Link>
+            )
+          })}
         </div>
       </div>
     </>

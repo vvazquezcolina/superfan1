@@ -117,6 +117,14 @@ export const pathTranslations: Record<string, Record<Locale, string>> = {
     de: 'beste',
     ar: 'best',
   },
+  grupos: {
+    es: 'grupos',
+    en: 'groups',
+    pt: 'grupos',
+    fr: 'groupes',
+    de: 'gruppen',
+    ar: 'groups',
+  },
 }
 
 /**

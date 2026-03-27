@@ -2,6 +2,10 @@
 
 import { useState, useCallback } from 'react'
 import { trackToolUsage, trackAffiliateClick } from '@/lib/analytics'
+import {
+  Plane, Bus, Map, Trophy, MapPin, Hotel, Share2, Check,
+  Calendar as CalendarIcon, DollarSign, Sparkles
+} from 'lucide-react'
 
 // ---------------------------------------------------------------------------
 // Static cost data (mirrors BudgetCalculator)
@@ -323,12 +327,12 @@ export function ItineraryPlanner({ cities, lang, dict }: ItineraryPlannerProps) 
   const btnSecondary =
     'inline-flex items-center gap-2 rounded-lg border border-primary px-5 py-2.5 text-primary font-semibold hover:bg-primary/5 transition-colors text-sm'
 
-  const dayTypeIcon: Record<ItineraryDay['type'], string> = {
-    arrival: '✈',
-    transit: '🚌',
-    sightseeing: '🗺',
-    match: '⚽',
-    departure: '✈',
+  const DayTypeIconComponents: Record<ItineraryDay['type'], typeof Plane> = {
+    arrival: Plane,
+    transit: Bus,
+    sightseeing: Map,
+    match: Trophy,
+    departure: Plane,
   }
   const dayTypeLabel: Record<ItineraryDay['type'], string> = {
     arrival: dict.itineraryArrival,
@@ -406,6 +410,7 @@ export function ItineraryPlanner({ cities, lang, dict }: ItineraryPlannerProps) 
       </section>
 
       <button type="button" onClick={buildItinerary} className={btnPrimary}>
+        <Sparkles className="h-4 w-4" />
         {dict.itineraryGenerate}
       </button>
 
@@ -426,6 +431,7 @@ export function ItineraryPlanner({ cities, lang, dict }: ItineraryPlannerProps) 
               </p>
             </div>
             <button type="button" onClick={handleShare} className={btnSecondary}>
+              {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
               {copied ? dict.itineraryShareCopied : dict.itineraryShareLabel}
             </button>
           </div>
@@ -449,9 +455,10 @@ export function ItineraryPlanner({ cities, lang, dict }: ItineraryPlannerProps) 
                   <div className="flex items-start justify-between gap-2 flex-wrap">
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="text-xl" aria-hidden="true">
-                          {dayTypeIcon[day.type]}
-                        </span>
+                        {(() => {
+                          const DayIcon = DayTypeIconComponents[day.type]
+                          return <DayIcon className="h-5 w-5 text-primary" aria-hidden="true" />
+                        })()}
                         <span className="font-semibold text-gray-900">
                           {dict.itineraryDayLabel} {day.dayNumber}
                           {currentDate ? ` — ${formatDate(currentDate, lang)}` : ''}

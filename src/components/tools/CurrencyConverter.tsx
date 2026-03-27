@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ArrowLeftRight, DollarSign, TrendingUp, RefreshCw, Globe } from 'lucide-react'
 import { trackToolUsage } from '@/lib/analytics'
 
 // ---------------------------------------------------------------------------
@@ -93,10 +94,8 @@ export function CurrencyConverter({ lang, dict }: CurrencyConverterProps) {
   }
 
   const inputClass =
-    'w-full rounded-lg border border-gray-200 px-4 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-primary/50 bg-white'
-  const labelClass = 'block text-sm font-medium text-gray-700 mb-1'
-  const btnPrimary =
-    'inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-white font-semibold hover:bg-primary/90 transition-colors'
+    'w-full rounded-xl border border-gray-200 px-4 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-primary/50 bg-white shadow-sm transition-shadow focus:shadow-md'
+  const labelClass = 'flex items-center gap-1.5 text-sm font-medium text-gray-700 mb-1.5'
 
   // Quick reference: how much is $100 USD in host countries
   const usd100InMXN = convert(100, 'USD', 'MXN')
@@ -108,123 +107,145 @@ export function CurrencyConverter({ lang, dict }: CurrencyConverterProps) {
   return (
     <div className="max-w-2xl mx-auto">
       {/* Converter form */}
-      <form onSubmit={handleConvert} className="space-y-5">
-        <div>
-          <label htmlFor="amount" className={labelClass}>
-            {dict.currencyAmount}
-          </label>
-          <input
-            id="amount"
-            type="number"
-            min="0.01"
-            step="0.01"
-            value={amount}
-            onChange={(e) => {
-              setAmount(e.target.value)
-              setHasConverted(false)
-            }}
-            className={inputClass}
-          />
-        </div>
-
-        <div className="grid grid-cols-[1fr_auto_1fr] gap-3 items-end">
+      <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-6">
+        <form onSubmit={handleConvert} className="space-y-5">
           <div>
-            <label htmlFor="fromCurrency" className={labelClass}>
-              {dict.currencyFrom}
+            <label htmlFor="amount" className={labelClass}>
+              <DollarSign className="w-4 h-4 text-primary" />
+              {dict.currencyAmount}
             </label>
-            <select
-              id="fromCurrency"
-              value={fromCurrency}
-              onChange={(e) => { setFromCurrency(e.target.value); setHasConverted(false) }}
+            <input
+              id="amount"
+              type="number"
+              min="0.01"
+              step="0.01"
+              value={amount}
+              onChange={(e) => {
+                setAmount(e.target.value)
+                setHasConverted(false)
+              }}
               className={inputClass}
+            />
+          </div>
+
+          <div className="grid grid-cols-[1fr_auto_1fr] gap-3 items-end">
+            <div>
+              <label htmlFor="fromCurrency" className={labelClass}>
+                <TrendingUp className="w-4 h-4 text-primary" />
+                {dict.currencyFrom}
+              </label>
+              <select
+                id="fromCurrency"
+                value={fromCurrency}
+                onChange={(e) => { setFromCurrency(e.target.value); setHasConverted(false) }}
+                className={inputClass}
+              >
+                {CURRENCIES.map((c) => (
+                  <option key={c.code} value={c.code}>
+                    {c.flag} {c.code}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <button
+              type="button"
+              onClick={swapCurrencies}
+              className="mb-0.5 p-2.5 rounded-xl border border-gray-200 bg-white hover:bg-primary/5 hover:border-primary/30 active:scale-95 transition-all duration-150 text-gray-500 hover:text-primary shadow-sm"
+              aria-label={lang === 'es' ? 'Intercambiar monedas' : 'Swap currencies'}
             >
-              {CURRENCIES.map((c) => (
-                <option key={c.code} value={c.code}>
-                  {c.flag} {c.code}
-                </option>
-              ))}
-            </select>
+              <ArrowLeftRight className="w-4 h-4" />
+            </button>
+
+            <div>
+              <label htmlFor="toCurrency" className={labelClass}>
+                <Globe className="w-4 h-4 text-primary" />
+                {dict.currencyTo}
+              </label>
+              <select
+                id="toCurrency"
+                value={toCurrency}
+                onChange={(e) => { setToCurrency(e.target.value); setHasConverted(false) }}
+                className={inputClass}
+              >
+                {CURRENCIES.map((c) => (
+                  <option key={c.code} value={c.code}>
+                    {c.flag} {c.code}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
 
           <button
-            type="button"
-            onClick={swapCurrencies}
-            className="mb-0.5 p-2.5 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors text-gray-600 font-bold text-lg"
-            aria-label={lang === 'es' ? 'Intercambiar monedas' : 'Swap currencies'}
+            type="submit"
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-white font-semibold hover:bg-primary/90 active:scale-95 transition-all duration-150 shadow-sm"
           >
-            ⇄
+            <RefreshCw className="w-4 h-4" />
+            {dict.currencyConvert}
           </button>
-
-          <div>
-            <label htmlFor="toCurrency" className={labelClass}>
-              {dict.currencyTo}
-            </label>
-            <select
-              id="toCurrency"
-              value={toCurrency}
-              onChange={(e) => { setToCurrency(e.target.value); setHasConverted(false) }}
-              className={inputClass}
-            >
-              {CURRENCIES.map((c) => (
-                <option key={c.code} value={c.code}>
-                  {c.flag} {c.code}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        <button type="submit" className={btnPrimary}>
-          {dict.currencyConvert}
-        </button>
-      </form>
+        </form>
+      </div>
 
       {/* Result */}
       {hasConverted && result !== null && (
-        <div className="mt-6 rounded-xl border border-primary/30 bg-primary/5 p-6">
-          <p className="text-sm text-gray-600 mb-1">{dict.currencyResult}</p>
-          <div className="flex items-baseline gap-2 flex-wrap">
-            <span className="text-2xl font-bold text-gray-800">
-              {fromCurrencyObj?.flag} {formatCurrency(parseFloat(amount), fromCurrency)} {fromCurrency}
-            </span>
-            <span className="text-gray-400 text-lg">=</span>
-            <span className="text-3xl font-bold text-primary">
-              {toCurrencyObj?.flag} {formatCurrency(result, toCurrency)} {toCurrency}
-            </span>
+        <div className="mt-5 rounded-2xl border border-primary/25 bg-white shadow-sm p-6">
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary/70 mb-3">
+            {dict.currencyResult}
+          </p>
+          <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-xl font-bold text-gray-600">
+                {fromCurrencyObj?.flag} {formatCurrency(parseFloat(amount), fromCurrency)}
+              </span>
+              <span className="text-sm text-gray-400">{fromCurrency}</span>
+            </div>
+            <span className="text-gray-300 text-2xl font-light">=</span>
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-3xl font-bold text-primary">
+                {toCurrencyObj?.flag} {formatCurrency(result, toCurrency)}
+              </span>
+              <span className="text-base font-semibold text-primary/70">{toCurrency}</span>
+            </div>
           </div>
-          <p className="text-xs text-gray-500 mt-3">
+          <p className="text-xs text-gray-400 mt-4 pt-3 border-t border-gray-100">
             {dict.currencyLastUpdated} {RATES_LAST_UPDATED} &bull; {dict.currencyDisclaimer}
           </p>
         </div>
       )}
 
       {/* All currencies table */}
-      <div className="mt-8">
-        <h3 className="text-base font-semibold text-gray-800 mb-3">
+      <div className="mt-6">
+        <h3 className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-3 px-1">
+          <Globe className="w-4 h-4 text-primary" />
           {lang === 'es'
             ? `1 ${fromCurrency} en todas las monedas`
             : `1 ${fromCurrency} in all currencies`}
         </h3>
-        <div className="overflow-x-auto rounded-xl border border-gray-200">
+        <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm">
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-gray-50 border-b border-gray-200">
-                <th className="text-left px-4 py-3 font-medium text-gray-700">
+                <th className="text-left px-4 py-3 font-medium text-gray-600">
                   {lang === 'es' ? 'Moneda' : 'Currency'}
                 </th>
-                <th className="text-right px-4 py-3 font-medium text-gray-700">
+                <th className="text-right px-4 py-3 font-medium text-gray-600">
                   {lang === 'es' ? `1 ${fromCurrency} =` : `1 ${fromCurrency} =`}
                 </th>
               </tr>
             </thead>
             <tbody>
               {CURRENCIES.filter((c) => c.code !== fromCurrency).map((c, i) => (
-                <tr key={c.code} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
+                <tr
+                  key={c.code}
+                  className={`transition-colors duration-100 hover:bg-primary/5 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+                >
                   <td className="px-4 py-3 text-gray-700">
                     {c.flag} {c.label}
                   </td>
-                  <td className="px-4 py-3 text-right font-medium text-gray-900">
-                    {formatCurrency(convert(1, fromCurrency, c.code), c.code)} {c.code}
+                  <td className="px-4 py-3 text-right font-semibold text-gray-900">
+                    {formatCurrency(convert(1, fromCurrency, c.code), c.code)}{' '}
+                    <span className="text-gray-500 font-normal">{c.code}</span>
                   </td>
                 </tr>
               ))}
@@ -234,22 +255,25 @@ export function CurrencyConverter({ lang, dict }: CurrencyConverterProps) {
       </div>
 
       {/* Quick Reference Card */}
-      <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-5">
-        <h3 className="text-base font-semibold text-gray-800 mb-4">{dict.currencyQuickRef}</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="rounded-lg bg-green-50 border border-green-200 p-4 text-center">
+      <div className="mt-6 rounded-2xl border border-gray-200 bg-white shadow-sm p-5">
+        <h3 className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-4">
+          <TrendingUp className="w-4 h-4 text-primary" />
+          {dict.currencyQuickRef}
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="rounded-xl bg-green-50 border border-green-200 p-4 text-center transition-transform duration-150 hover:scale-[1.02]">
             <p className="text-2xl mb-1">🇲🇽</p>
             <p className="text-xs text-gray-500 mb-1">{dict.currencyInMexico}</p>
             <p className="text-xl font-bold text-green-700">
               {formatCurrency(usd100InMXN, 'MXN')} MXN
             </p>
           </div>
-          <div className="rounded-lg bg-blue-50 border border-blue-200 p-4 text-center">
+          <div className="rounded-xl bg-blue-50 border border-blue-200 p-4 text-center transition-transform duration-150 hover:scale-[1.02]">
             <p className="text-2xl mb-1">🇺🇸</p>
             <p className="text-xs text-gray-500 mb-1">{dict.currencyInUSA}</p>
             <p className="text-xl font-bold text-blue-700">$100.00 USD</p>
           </div>
-          <div className="rounded-lg bg-red-50 border border-red-200 p-4 text-center">
+          <div className="rounded-xl bg-red-50 border border-red-200 p-4 text-center transition-transform duration-150 hover:scale-[1.02]">
             <p className="text-2xl mb-1">🇨🇦</p>
             <p className="text-xs text-gray-500 mb-1">{dict.currencyInCanada}</p>
             <p className="text-xl font-bold text-red-700">
