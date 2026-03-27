@@ -49,11 +49,15 @@ export function buildPageMetadata(input: PageMetadataInput): Metadata {
       siteName,
       locale: ogLocaleMap[lang] ?? 'en_US',
       type: 'website',
+      // Next.js auto-discovers opengraph-image.tsx files co-located with pages.
+      // metadataBase in layout.tsx ensures absolute URLs are generated correctly.
     },
     twitter: {
       card: 'summary_large_image',
       title: `${title} | ${siteName}`,
       description: safeDescription,
+      // Twitter picks up the same image Next.js generates from opengraph-image.tsx
+      // when metadataBase is set to https://www.superfaninfo.com in layout.tsx
     },
   }
 }
