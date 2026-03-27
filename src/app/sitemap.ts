@@ -26,20 +26,12 @@ const extraLocales: Locale[] = ['pt', 'fr', 'de', 'ar']
 
 /**
  * Returns the actual URL path segment for the given section and locale.
- *
- * Rules:
- * - es  → always the Spanish segment (ciudades, estadios, equipos)
- * - en  → English segment (cities, stadiums, teams) — works via Next.js rewrites
- * - pt/fr/de/ar → always the Spanish segment (actual filesystem path, no rewrites
- *                 for these translated segments exist that are canonical)
+ * ALL locales use Spanish filesystem paths — rewrites exist for English but
+ * the sitemap should point to the canonical filesystem path to avoid phantom 404s.
  */
-function getPathSegment(section: 'ciudades' | 'estadios' | 'equipos', locale: Locale): string {
-  if (locale === 'en') {
-    const enSegments = { ciudades: 'cities', estadios: 'stadiums', equipos: 'teams' }
-    return enSegments[section]
-  }
-  // es, pt, fr, de, ar — all use the Spanish filesystem segment
-  return section
+function getPathSegment(_section: 'ciudades' | 'estadios' | 'equipos', _locale: Locale): string {
+  // Always use Spanish filesystem paths — these are the actual built pages
+  return _section
 }
 
 /**
@@ -147,7 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: cityIndexAlts },
   })
   entries.push({
-    url: `${SITE_URL}/en/cities`,
+    url: `${SITE_URL}/en/ciudades`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,
@@ -178,7 +170,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: cityAlts },
     })
     entries.push({
-      url: `${SITE_URL}/en/cities/${enSlug}`,
+      url: `${SITE_URL}/en/ciudades/${enSlug}`,
       lastModified: new Date(city.lastUpdated),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -205,7 +197,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: stadiumIndexAlts },
   })
   entries.push({
-    url: `${SITE_URL}/en/stadiums`,
+    url: `${SITE_URL}/en/estadios`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.8,
@@ -235,7 +227,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: stadiumAlts },
     })
     entries.push({
-      url: `${SITE_URL}/en/stadiums/${enSlug}`,
+      url: `${SITE_URL}/en/estadios/${enSlug}`,
       lastModified: new Date(stadium.lastUpdated),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -262,7 +254,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: teamIndexAlts },
   })
   entries.push({
-    url: `${SITE_URL}/en/teams`,
+    url: `${SITE_URL}/en/equipos`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.8,
@@ -292,7 +284,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: teamAlts },
     })
     entries.push({
-      url: `${SITE_URL}/en/teams/${enSlug}`,
+      url: `${SITE_URL}/en/equipos/${enSlug}`,
       lastModified: new Date(team.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -309,100 +301,79 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // ─── Travel subpages (viajes/*) — es and en only ────────────────────────────
-  const travelSubpages = [
-    { path: 'viajes/vuelos', priority: 0.7 },
-    { path: 'viajes/vuelos/desde-mexico', priority: 0.6 },
-    { path: 'viajes/vuelos/desde-usa', priority: 0.6 },
-    { path: 'viajes/vuelos/desde-europa', priority: 0.6 },
-    { path: 'viajes/hospedaje', priority: 0.7 },
-    { path: 'viajes/transporte', priority: 0.7 },
-    { path: 'viajes/visa', priority: 0.7 },
+  // ─── Index pages that exist for ALL 6 locales ──────────────────────────────
+  const allLocaleIndexPages = [
+    { path: 'viajes', priority: 0.7, freq: 'monthly' as const },
+    { path: 'fan', priority: 0.7, freq: 'monthly' as const },
   ]
-  for (const { path, priority } of travelSubpages) {
-    const alts = buildStaticEsEnAlternates(path)
-    entries.push({
-      url: `${SITE_URL}/es/${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority,
-      alternates: { languages: alts },
-    })
+  for (const { path, priority, freq } of allLocaleIndexPages) {
+    const alts: Record<string, string> = {}
+    for (const loc of locales) {
+      alts[hreflangMap[loc]] = `${SITE_URL}/${loc}/${path}`
+    }
+    alts['x-default'] = `${SITE_URL}/es/${path}`
+    for (const loc of locales) {
+      entries.push({
+        url: `${SITE_URL}/${loc}/${path}`,
+        lastModified: new Date(),
+        changeFrequency: freq,
+        priority,
+        alternates: { languages: alts },
+      })
+    }
   }
 
-  // ─── Fan guide pages (fan/*) — es and en only ───────────────────────────────
-  const fanSubpages = [
-    { path: 'fan/entradas', priority: 0.7 },
-    { path: 'fan/seguridad', priority: 0.7 },
+  // ─── Subpages that exist for ES + EN only ─────────────────────────────────
+  const esEnSubpages = [
+    { path: 'viajes/vuelos', priority: 0.7, freq: 'monthly' as const },
+    { path: 'viajes/vuelos/desde-mexico', priority: 0.6, freq: 'monthly' as const },
+    { path: 'viajes/vuelos/desde-usa', priority: 0.6, freq: 'monthly' as const },
+    { path: 'viajes/vuelos/desde-europa', priority: 0.6, freq: 'monthly' as const },
+    { path: 'viajes/hospedaje', priority: 0.7, freq: 'monthly' as const },
+    { path: 'viajes/transporte', priority: 0.7, freq: 'monthly' as const },
+    { path: 'viajes/visa', priority: 0.7, freq: 'monthly' as const },
+    { path: 'fan/entradas', priority: 0.7, freq: 'monthly' as const },
+    { path: 'fan/seguridad', priority: 0.7, freq: 'monthly' as const },
+    { path: 'calendario', priority: 0.8, freq: 'weekly' as const },
+    { path: 'herramientas', priority: 0.7, freq: 'monthly' as const },
+    { path: 'herramientas/conversor-moneda', priority: 0.6, freq: 'monthly' as const },
   ]
-  for (const { path, priority } of fanSubpages) {
+  for (const { path, priority, freq } of esEnSubpages) {
     const alts = buildStaticEsEnAlternates(path)
-    entries.push({
-      url: `${SITE_URL}/es/${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority,
-      alternates: { languages: alts },
-    })
+    for (const loc of ['es', 'en'] as const) {
+      entries.push({
+        url: `${SITE_URL}/${loc}/${path}`,
+        lastModified: new Date(),
+        changeFrequency: freq,
+        priority,
+        alternates: { languages: alts },
+      })
+    }
   }
 
-  // ─── Tools pages (herramientas/*) — es and en only ─────────────────────────
-  const toolsPages = [
-    { path: 'herramientas', priority: 0.7 },
-    { path: 'herramientas/presupuesto', priority: 0.6 },
-    { path: 'herramientas/mapa', priority: 0.6 },
-    { path: 'herramientas/itinerario', priority: 0.6 },
-    { path: 'herramientas/conversor-moneda', priority: 0.6 },
-    { path: 'herramientas/lista-equipaje', priority: 0.6 },
+  // ─── Tools subpages — all 6 locales (except conversor-moneda which is es+en) ─
+  const toolsSubpages = [
+    { path: 'herramientas/presupuesto', priority: 0.6, freq: 'monthly' as const },
+    { path: 'herramientas/mapa', priority: 0.6, freq: 'monthly' as const },
+    { path: 'herramientas/itinerario', priority: 0.6, freq: 'monthly' as const },
+    { path: 'herramientas/lista-equipaje', priority: 0.6, freq: 'monthly' as const },
   ]
-  for (const { path, priority } of toolsPages) {
-    const alts = buildStaticEsEnAlternates(path)
-    entries.push({
-      url: `${SITE_URL}/es/${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority,
-      alternates: { languages: alts },
-    })
-    entries.push({
-      url: `${SITE_URL}/en/${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority,
-      alternates: { languages: alts },
-    })
+  for (const { path, priority, freq } of toolsSubpages) {
+    const alts: Record<string, string> = {}
+    for (const loc of locales) {
+      alts[hreflangMap[loc]] = `${SITE_URL}/${loc}/${path}`
+    }
+    alts['x-default'] = `${SITE_URL}/es/${path}`
+    for (const loc of locales) {
+      entries.push({
+        url: `${SITE_URL}/${loc}/${path}`,
+        lastModified: new Date(),
+        changeFrequency: freq,
+        priority,
+        alternates: { languages: alts },
+      })
+    }
   }
-
-  // ─── Calendar page (calendario) — es and en only ───────────────────────────
-  const calendarAlts = buildStaticEsEnAlternates('calendario')
-  entries.push({
-    url: `${SITE_URL}/es/calendario`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.8,
-    alternates: { languages: calendarAlts },
-  })
-  entries.push({
-    url: `${SITE_URL}/en/calendario`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.8,
-    alternates: { languages: calendarAlts },
-  })
 
   // ─── Legal pages ────────────────────────────────────────────────────────────
   // Spanish legal pages — es only
