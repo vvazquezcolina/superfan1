@@ -60,11 +60,11 @@ const sectionKeys = [
 ] as const
 
 const questionHeaders: Record<string, Record<string, string>> = {
-  gettingThere: { es: 'Como llegar al {stadiumName}?', en: 'How to get to {stadiumName}?' },
-  seatingGuide: { es: 'Como son los asientos en el {stadiumName}?', en: 'What are the seats like at {stadiumName}?' },
-  nearbyHotels: { es: 'Donde hospedarse cerca del {stadiumName}?', en: 'Where to stay near {stadiumName}?' },
-  accessibility: { es: 'Es accesible el {stadiumName}?', en: 'Is {stadiumName} accessible?' },
-  matchSchedule: { es: 'Que partidos se juegan en el {stadiumName}?', en: 'What matches are played at {stadiumName}?' },
+  gettingThere: { es: '¿Cómo llegar al {stadiumName}?', en: 'How to get to {stadiumName}?' },
+  seatingGuide: { es: '¿Cómo son los asientos en el {stadiumName}?', en: 'What are the seats like at {stadiumName}?' },
+  nearbyHotels: { es: '¿Dónde hospedarse cerca del {stadiumName}?', en: 'Where to stay near {stadiumName}?' },
+  accessibility: { es: '¿Es accesible el {stadiumName}?', en: 'Is {stadiumName} accessible?' },
+  matchSchedule: { es: '¿Qué partidos se juegan en el {stadiumName}?', en: 'What matches are played at {stadiumName}?' },
 }
 
 export default async function StadiumPage({

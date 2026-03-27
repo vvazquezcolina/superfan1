@@ -66,13 +66,13 @@ const sectionKeys = [
 ] as const
 
 const questionHeaders: Record<string, Record<string, string>> = {
-  gettingThere: { es: 'Como llegar a {cityName}?', en: 'How to get to {cityName}?' },
-  gettingAround: { es: 'Como moverse en {cityName}?', en: 'How to get around {cityName}?' },
-  neighborhoods: { es: 'Donde hospedarse en {cityName}?', en: 'Where to stay in {cityName}?' },
-  foodAndDrink: { es: 'Que comer y beber en {cityName}?', en: 'What to eat and drink in {cityName}?' },
-  safety: { es: 'Es seguro visitar {cityName}?', en: 'Is {cityName} safe to visit?' },
-  weather: { es: 'Como es el clima en {cityName} durante el Mundial?', en: 'What is the weather like in {cityName} during the World Cup?' },
-  culturalContext: { es: 'Que debe saber un fan latinoamericano sobre {cityName}?', en: 'What should a Latin American fan know about {cityName}?' },
+  gettingThere: { es: '¿Cómo llegar a {cityName}?', en: 'How to get to {cityName}?' },
+  gettingAround: { es: '¿Cómo moverse en {cityName}?', en: 'How to get around {cityName}?' },
+  neighborhoods: { es: '¿Dónde hospedarse en {cityName}?', en: 'Where to stay in {cityName}?' },
+  foodAndDrink: { es: '¿Qué comer y beber en {cityName}?', en: 'What to eat and drink in {cityName}?' },
+  safety: { es: '¿Es seguro visitar {cityName}?', en: 'Is {cityName} safe to visit?' },
+  weather: { es: '¿Cómo es el clima en {cityName} durante el Mundial?', en: 'What is the weather like in {cityName} during the World Cup?' },
+  culturalContext: { es: '¿Qué debe saber un fan latinoamericano sobre {cityName}?', en: 'What should a Latin American fan know about {cityName}?' },
 }
 
 export default async function CityPage({
