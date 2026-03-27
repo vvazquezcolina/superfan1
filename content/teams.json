@@ -1981,7 +1981,163 @@
         "es": "Seleccion en ascenso con una nueva generacion de talentos sudamericanos.",
         "en": "Rising team with a new generation of South American talent."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Ecuador es una de las selecciones en mayor ascenso de Sudamerica, con una nueva generacion de jugadores que han conquistado los principales mercados europeos. La Tri llega al Mundial 2026 con la ambicion de superar por primera vez en su historia la ronda de octavos de final. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl punto de inflexion mas reciente fue el partido inaugural de Qatar 2022, cuando Ecuador venció 2-0 al anfitrion Qatar con dos goles de Enner Valencia. Ese momento icónico demostró la madurez y la calidad de un equipo que ya no se conforma con solo participar. Enner Valencia, el maximo goleador historico del equipo, represento por anos el alma guerrera de esta seleccion.\n\nEcuador clasifica consistentemente via las eliminatorias sudamericanas de la CONMEBOL, una de las rutas mas exigentes del mundo. Para llegar al Mundial 2026, la seleccion debio superar la competencia directa de Brasil, Argentina, Colombia y Uruguay, lo que habla de su nivel real.",
+          "en": "Ecuador is one of South America's fastest-rising national teams, with a new generation of players who have conquered the top European markets. La Tri arrives at the 2026 World Cup with the ambition to advance past the Round of 16 for the first time in their history. Group assignment is pending the official FIFA draw.\n\nThe most recent turning point was the opening match of Qatar 2022, when Ecuador defeated host Qatar 2-0 with two goals from Enner Valencia. That iconic moment demonstrated the maturity and quality of a team no longer content merely to participate. Enner Valencia, the team's all-time leading scorer, has long represented the fighting spirit of this national side.\n\nEcuador qualifies consistently through CONMEBOL's South American qualifying — one of the toughest routes in the world. To reach the 2026 World Cup, the team had to overcome direct competition from Brazil, Argentina, Colombia, and Uruguay, testament to their real quality."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Ecuador ha participado en cuatro Copas del Mundo: 2002 en Corea/Japon, 2006 en Alemania, 2014 en Brasil y 2022 en Qatar. En 2006 lograron su mejor resultado al superar la fase de grupos y llegar a los octavos de final, donde cayeron ante Inglaterra. En 2022 protagonizaron el gol del partido inaugural cuando Enner Valencia marco los dos goles que derrotaron al anfitrion Qatar.\n\nEnner Valencia tiene un lugar especial en la historia ecuatoriana: es el maximo goleador historico de la seleccion y su figura mas reconocible a nivel mundial. En el Mundial de Rusia 2014, Valencia también marco todos los goles de Ecuador en el torneo. Para el Mundial 2026, Ecuador busca aprovechar la madurez colectiva de su generacion mas talentosa.",
+            "en": "Ecuador has participated in four World Cups: 2002 in Korea/Japan, 2006 in Germany, 2014 in Brazil, and 2022 in Qatar. In 2006 they achieved their best result by advancing from the group stage to the Round of 16, where they fell to England. In 2022 they starred in the tournament-opening goal when Enner Valencia scored both goals that defeated host Qatar.\n\nEnner Valencia holds a special place in Ecuadorian football history: he is the team's all-time leading scorer and their most internationally recognized figure. At the 2014 World Cup in Russia, Valencia also scored all of Ecuador's goals in the tournament. For 2026, Ecuador seeks to capitalize on the collective maturity of their most talented generation."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Enner Valencia",
+              "position": {
+                "es": "Delantero",
+                "en": "Forward"
+              },
+              "club": "Internacional",
+              "note": {
+                "es": "El maximo goleador historico de Ecuador y simbolo de una generacion. Sus dos goles contra Qatar en el partido inaugural de 2022 quedaron grabados en la historia del futbol mundial. Lider emocional y tecnico de la Tri.",
+                "en": "Ecuador's all-time leading scorer and the symbol of a generation. His two goals against Qatar in the 2022 opening match are etched in World Cup history. The emotional and technical leader of La Tri."
+              }
+            },
+            {
+              "name": "Jeremy Sarmiento",
+              "position": {
+                "es": "Extremo",
+                "en": "Winger"
+              },
+              "club": "Brighton & Hove Albion",
+              "note": {
+                "es": "Uno de los jugadores mas desequilibrantes de la seleccion. Formado en las academias europeas, Sarmiento combina velocidad, tecnica y vision de juego que lo convierten en una amenaza constante por las bandas.",
+                "en": "One of the team's most unbalancing players. Trained in European academies, Sarmiento combines pace, technique, and vision that make him a constant threat on the flanks."
+              }
+            },
+            {
+              "name": "Gonzalo Plata",
+              "position": {
+                "es": "Extremo",
+                "en": "Winger"
+              },
+              "club": "Al-Qadsiah",
+              "note": {
+                "es": "Extremo explosivo con capacidad para el gol y la asistencia. Plata ha crecido en experiencia internacional y es una de las piezas clave en el esquema ofensivo de Ecuador.",
+                "en": "An explosive winger with the ability to score and assist. Plata has grown in international experience and is one of the key pieces in Ecuador's attacking scheme."
+              }
+            },
+            {
+              "name": "Piero Hincapie",
+              "position": {
+                "es": "Defensa Central / Lateral",
+                "en": "Centre-back / Left-back"
+              },
+              "club": "Bayer Leverkusen",
+              "note": {
+                "es": "El baluarte defensivo de Ecuador. Hincapie fue pieza fundamental en el historico titulo de Bayer Leverkusen en la Bundesliga 2024, demostrando su nivel de elite en el futbol europeo.",
+                "en": "Ecuador's defensive cornerstone. Hincapie was a fundamental piece in Bayer Leverkusen's historic Bundesliga title in 2024, demonstrating his elite level in European football."
+              }
+            },
+            {
+              "name": "Alexander Dominguez",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "LDU Quito",
+              "note": {
+                "es": "El guardameta mas experimentado de Ecuador con multiples participaciones mundialistas. Su presencia en el arco transmite seguridad y experiencia al conjunto nacional.",
+                "en": "Ecuador's most experienced goalkeeper with multiple World Cup appearances. His presence in goal transmits confidence and experience to the national setup."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Ecuador clasifico al Mundial 2026 a través de las eliminatorias sudamericanas de la CONMEBOL, compitiendo contra las nueve mejores selecciones del continente. El formato de todos contra todos (18 fechas) es considerado el mas exigente del mundo, donde equipos como Brasil, Argentina, Colombia y Uruguay son adversarios directos en cada jornada.\n\nLa clasificacion de Ecuador confirma la solidez de un proyecto que viene construyendose desde hace varios ciclos. El equipo ha demostrado consistencia y caracter para ganar puntos en campos dificiles como Bogota, Asuncion y Lima. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "Ecuador qualified for the 2026 World Cup through CONMEBOL South American qualifying, competing against the nine best national teams on the continent. The round-robin format (18 matchdays) is considered the most demanding in the world, where teams like Brazil, Argentina, Colombia, and Uruguay are direct rivals every match week.\n\nEcuador's qualification confirms the solidity of a project built over several cycles. The team has demonstrated consistency and character to earn points in difficult venues like Bogota, Asuncion, and Lima. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Ecuador en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Ecuador's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cuantas veces ha clasificado Ecuador al Mundial?",
+              "en": "How many times has Ecuador qualified for the World Cup?"
+            },
+            "answer": {
+              "es": "Ecuador ha participado en cinco Copas del Mundo: 2002, 2006, 2014, 2022 y 2026. Su mejor resultado fue en Alemania 2006, cuando llegaron a los octavos de final.",
+              "en": "Ecuador has participated in five World Cups: 2002, 2006, 2014, 2022, and 2026. Their best result was at Germany 2006, when they reached the Round of 16."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quién es el maximo goleador historico de Ecuador?",
+              "en": "Who is Ecuador's all-time top scorer?"
+            },
+            "answer": {
+              "es": "Enner Valencia es el maximo goleador historico de la seleccion ecuatoriana. Tambien es recordado por marcar los dos goles del partido inaugural de Qatar 2022, venciendo al anfitrion. Marco todos los goles de Ecuador en el Mundial de Brasil 2014.",
+              "en": "Enner Valencia is Ecuador's all-time top scorer. He is also remembered for scoring both goals in the opening match of Qatar 2022, defeating the host nation, and scored all of Ecuador's goals at the 2014 World Cup in Brazil."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Que tan lejos puede llegar Ecuador en el Mundial 2026?",
+              "en": "How far can Ecuador go at the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Con jugadores como Piero Hincapie (Bayer Leverkusen) y Jeremy Sarmiento (Brighton) en sus filas, Ecuador tiene el potencial de superar la fase de grupos y competir en octavos de final. Su mayor reto sera enfrentar selecciones de mayor tradicion en las rondas eliminatorias.",
+              "en": "With players like Piero Hincapie (Bayer Leverkusen) and Jeremy Sarmiento (Brighton) in their ranks, Ecuador has the potential to advance past the group stage and compete in the Round of 16. Their greatest challenge will be facing more historically established teams in the knockout rounds."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Como clasifico Ecuador al Mundial 2026?",
+              "en": "How did Ecuador qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Ecuador clasifico a traves de las eliminatorias sudamericanas de la CONMEBOL, el proceso de clasificacion considerado el mas competitivo del mundo. El formato de todos contra todos incluye partidos contra Brasil, Argentina, Uruguay, Colombia y otras potencias del continente.",
+              "en": "Ecuador qualified through CONMEBOL South American qualifying, considered the world's most competitive qualification process. The round-robin format includes matches against Brazil, Argentina, Uruguay, Colombia, and other continental powers."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CONMEBOL",
+            "url": "https://www.conmebol.com"
+          }
+        ]
+      }
     },
     {
       "id": "paraguay",
@@ -1998,7 +2154,153 @@
         "es": "La Albirroja busca regresar a la elite del futbol mundial.",
         "en": "La Albirroja seeks to return to the elite of world football."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Paraguay, conocida como La Albirroja, es una seleccion con una identidad futbolistica muy particular: pragmatica, solida defensivamente y capaz de sorprender a cualquier rival en un dia bueno. Su mejor resultado en una Copa del Mundo fueron los cuartos de final en Sudafrica 2010, donde eliminaron a Japan y Eslovaquia antes de caer ante Espana en penales. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl jugador paraguayo mas conocido internacionalmente hoy es Miguel Almiron, quien se convirtio en un nombre global en la Premier League con Newcastle United. Su energía, calidad tecnica y capacidad de trabajo son el espejo del estilo paraguayo: intensa, comprometida y luchadora. Paraguay clasifica al Mundial via las exigentes eliminatorias sudamericanas de la CONMEBOL.\n\nPara el Mundial 2026, Paraguay busca reencontrar la solidez que caracterizo a las generaciones lideradas por Chilavert y luego por Santa Cruz, dos iconos del futbol sudamericano. Con una mezcla de experiencia y juventud, La Albirroja quiere demostrar que sigue siendo un rival temible en cualquier torneo.",
+          "en": "Paraguay, known as La Albirroja (The Red and White), is a national team with a very particular footballing identity: pragmatic, defensively solid, and capable of surprising any opponent on a good day. Their best World Cup result was reaching the quarterfinals at South Africa 2010, where they eliminated Japan and Slovakia before falling to Spain on penalties. Group assignment is pending the official FIFA draw.\n\nThe most internationally recognized Paraguayan player today is Miguel Almirón, who became a global name in the Premier League with Newcastle United. His energy, technical quality, and work rate are a mirror of the Paraguayan style: intense, committed, and battling. Paraguay qualifies for the World Cup through CONMEBOL's demanding South American qualifying.\n\nFor the 2026 World Cup, Paraguay seeks to rediscover the solidity that characterized the generations led by Chilavert and later Santa Cruz, two icons of South American football. With a mix of experience and youth, La Albirroja wants to prove they remain a formidable opponent in any tournament."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Paraguay ha participado en nueve Copas del Mundo, con una historia que se remonta al primer torneo en Uruguay 1930. Su mejor actuacion fue en Sudafrica 2010, donde llegaron a cuartos de final y cayeron en penales ante Espana, que finalmente seria campeon del mundo. Antes, en 1998 y 2002, tambien habian alcanzado los octavos de final.\n\nLa epoca dorada de Paraguay fue la de Jose Luis Chilavert, el portero-goleador que se convirtio en un fenomeno mundial y llevo a la seleccion a sus mejores actuaciones. Mas tarde, Roque Santa Cruz fue la gran estrella que lidera a su pais en los 2000s. Para el Mundial 2026, la nueva generacion tiene la responsabilidad de escribir su propio capitulo en esa historia.",
+            "en": "Paraguay has participated in nine World Cups, with a history dating back to the very first tournament in Uruguay 1930. Their best performance was at South Africa 2010, where they reached the quarterfinals and fell on penalties to Spain, who would go on to become world champions. They had also reached the Round of 16 in 1998 and 2002.\n\nParaguay's golden era was defined by Jose Luis Chilavert, the goalkeeper-scorer who became a global phenomenon and led the team to its best performances. Later, Roque Santa Cruz was the great star guiding the country through the 2000s. For 2026, the new generation has the responsibility to write their own chapter in that history."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Miguel Almirón",
+              "position": {
+                "es": "Mediapunta / Extremo",
+                "en": "Attacking Midfielder / Winger"
+              },
+              "club": "Newcastle United",
+              "note": {
+                "es": "El jugador paraguayo mas famoso del mundo. Su impacto en la Premier League con Newcastle le dio una proyeccion internacional sin precedentes para un futbolista paraguayo. Tecnicamente brillante y con una intensidad de trabajo admirable.",
+                "en": "The most famous Paraguayan footballer in the world. His impact in the Premier League with Newcastle gave him unprecedented international recognition for a Paraguayan footballer. Technically brilliant with admirable work intensity."
+              }
+            },
+            {
+              "name": "Julio Enciso",
+              "position": {
+                "es": "Extremo / Mediapunta",
+                "en": "Winger / Attacking Midfielder"
+              },
+              "club": "Brighton & Hove Albion",
+              "note": {
+                "es": "Una de las mayores promesas del futbol paraguayo. Enciso sorprendio al mundo con su gol de larga distancia contra Brasil en el Mundial Sub-20 y se ha consolidado rapidamente en la Premier League con Brighton.",
+                "en": "One of Paraguayan football's greatest prospects. Enciso surprised the world with his long-range goal against Brazil at the U-20 World Cup and has rapidly established himself in the Premier League with Brighton."
+              }
+            },
+            {
+              "name": "Robert Morales",
+              "position": {
+                "es": "Mediocampista",
+                "en": "Midfielder"
+              },
+              "club": "Cerro Porteno",
+              "note": {
+                "es": "Mediocampista de gran calidad que aporta equilibrio y creatividad al centro del campo paraguayo. Su vision de juego y capacidad para distribuir el balon son fundamentales para el sistema de la seleccion.",
+                "en": "A high-quality midfielder who brings balance and creativity to Paraguay's midfield. His vision and distribution ability are fundamental to the national team's system."
+              }
+            },
+            {
+              "name": "Omar Alderete",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Valencia CF",
+              "note": {
+                "es": "El baluarte defensivo de Paraguay. Alderete combina fortaleza fisica con una lectura tattica muy buena, siendo el pilar sobre el que se construye la solida defensa paraguaya.",
+                "en": "Paraguay's defensive cornerstone. Alderete combines physical strength with excellent tactical reading, being the pillar on which Paraguay's solid defence is built."
+              }
+            },
+            {
+              "name": "Antony Silva",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Libertad",
+              "note": {
+                "es": "El guardameta titular de Paraguay, conocido por sus atajadas cruciales en momentos decisivos. Su experiencia y temple son fundamentales para un equipo que basa parte de su juego en la solidez defensiva.",
+                "en": "Paraguay's first-choice goalkeeper, known for crucial saves in decisive moments. His experience and composure are fundamental for a team that bases part of its game on defensive solidity."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Paraguay clasifico al Mundial 2026 a traves de las eliminatorias sudamericanas de la CONMEBOL, el proceso de clasificacion mas competitivo del mundo. En las 18 fechas del torneo, Paraguay demostro el caracter y la competitividad que definen a la seleccion historicamente, sumando puntos clave en momentos decisivos.\n\nLa clasificacion representa un gran logro considerando la calidad de las selecciones en las eliminatorias sudamericanas. Paraguay compitio directamente contra Brasil, Argentina, Uruguay, Colombia, Ecuador, Chile, Peru, Bolivia y Venezuela. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "Paraguay qualified for the 2026 World Cup through CONMEBOL South American qualifying, the world's most competitive qualification process. Over the tournament's 18 matchdays, Paraguay demonstrated the character and competitiveness that historically define the national team, earning key points at decisive moments.\n\nQualification represents a great achievement considering the quality of teams in South American qualifying. Paraguay competed directly against Brazil, Argentina, Uruguay, Colombia, Ecuador, Chile, Peru, Bolivia, and Venezuela. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Paraguay en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Paraguay's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Paraguay en un Mundial?",
+              "en": "What is Paraguay's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Paraguay fue llegar a los cuartos de final en Sudafrica 2010, donde cayeron en penales ante Espana (0-0 en tiempo reglamentario, 1-0 en la tanda de penales). Espana fue campeon del mundo en ese torneo.",
+              "en": "Paraguay's best result was reaching the quarterfinals at South Africa 2010, where they lost on penalties to Spain (0-0 in regular time, 1-0 in the shootout). Spain went on to win the World Cup in that tournament."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quién es el jugador mas famoso de Paraguay actualmente?",
+              "en": "Who is Paraguay's most famous current player?"
+            },
+            "answer": {
+              "es": "Miguel Almirón, mediapunta del Newcastle United en la Premier League inglesa, es el futbolista paraguayo mas conocido internacionalmente. Su rendimiento en la Premier League le ha dado una proyeccion global sin precedentes para el futbol paraguayo.",
+              "en": "Miguel Almirón, an attacking midfielder for Newcastle United in the English Premier League, is the most internationally recognized Paraguayan footballer. His Premier League performances have given him unprecedented global projection for Paraguayan football."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cuantas veces ha participado Paraguay en el Mundial?",
+              "en": "How many times has Paraguay participated in the World Cup?"
+            },
+            "answer": {
+              "es": "Paraguay ha participado en nueve Copas del Mundo, incluyendo el primer torneo de la historia en Uruguay 1930. Sus participaciones incluyen 1930, 1950, 1958, 1986, 1998, 2002, 2006, 2010 y 2026.",
+              "en": "Paraguay has participated in nine World Cups, including the very first tournament in Uruguay 1930. Their appearances include 1930, 1950, 1958, 1986, 1998, 2002, 2006, 2010, and 2026."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "CONMEBOL",
+            "url": "https://www.conmebol.com"
+          }
+        ]
+      }
     },
     {
       "id": "germany",
@@ -6145,7 +6447,153 @@
         "es": "Bafana Bafana busca regresar al Mundial tras ser anfitriones en 2010.",
         "en": "Bafana Bafana seek to return to the World Cup after hosting in 2010."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Sudafrica, conocida como Bafana Bafana ('Los Chicos, Los Chicos' en zulu), es la seleccion que tuvo el honor de organizar el primer Mundial africano en 2010, un hito historico para todo el continente. Para el Mundial 2026, Bafana Bafana busca clasificar y demostrar que el futbol sudafricano ha madurado desde aquella edicion de anfitrion. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl Mundial de Sudafrica 2010 quedo grabado en la memoria colectiva del mundo gracias a la vuvuzela, el instrumento de viento que sono en cada estadio, y a la cancion 'Waka Waka' de Shakira, que se convirtio en el himno no oficial del torneo. Sudafrica fue el primer pais africano en organizar una Copa del Mundo, y ese legado sigue siendo motivo de orgullo nacional.\n\nPercky Tau, el jugador mas reconocido del futbol sudafricano actual, representa la nueva generacion que busca regresar al maximo escenario mundial. La Super Sport United y las ligas sudafricanas producen talentos que cada vez estan mas expuestos al futbol europeo.",
+          "en": "South Africa, known as Bafana Bafana ('The Boys, The Boys' in Zulu), is the nation that had the honor of hosting the first African World Cup in 2010, a historic milestone for the entire continent. For the 2026 World Cup, Bafana Bafana seeks to qualify and demonstrate that South African football has matured since that host edition. Group assignment is pending the official FIFA draw.\n\nThe 2010 South Africa World Cup was etched in collective global memory thanks to the vuvuzela, the wind instrument that sounded in every stadium, and Shakira's 'Waka Waka' song, which became the tournament's unofficial anthem. South Africa was the first African country to host a World Cup, and that legacy remains a source of national pride.\n\nPercy Tau, South African football's most recognized current player, represents the new generation seeking to return to the biggest stage. SuperSport United and South African leagues increasingly produce talent exposed to European football."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Sudafrica ha participado en tres Copas del Mundo: Francia 1998, Corea/Japon 2002 y el historico Sudafrica 2010 como anfitriones. En los tres torneos, el equipo fue eliminado en la fase de grupos, aunque como anfitriones en 2010 lograron victorias memorables ante Mexico y Francia.\n\nEn Sudafrica 2010, Bafana Bafana abrio el torneo con un empate ante Mexico (1-1) con gol de Tshabalala, uno de los goles mas celebrados en la historia mundialista africana. Luego vencieron a Francia (2-1) pero no pudieron avanzar. Para el Mundial 2026, la seleccion busca escribir un capitulo diferente en su historia.",
+            "en": "South Africa has participated in three World Cups: France 1998, Korea/Japan 2002, and the historic South Africa 2010 as hosts. In all three tournaments, the team was eliminated in the group stage, although as hosts in 2010 they achieved memorable victories against Mexico and France.\n\nAt South Africa 2010, Bafana Bafana opened the tournament with a draw against Mexico (1-1) featuring Tshabalala's goal, one of the most celebrated strikes in African World Cup history. They then defeated France (2-1) but could not advance. For the 2026 World Cup, the national team seeks to write a different chapter in their history."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Percy Tau",
+              "position": {
+                "es": "Extremo / Delantero",
+                "en": "Winger / Forward"
+              },
+              "club": "Al Ahly",
+              "note": {
+                "es": "El jugador mas influyente del futbol sudafricano moderno. Tau tiene experiencia en la Premier League con Brighton y en el futbol egipcio con Al Ahly, donde ha ganado multiples titulos africanos. Su velocidad y tecnica son sus mayores activos.",
+                "en": "The most influential player in modern South African football. Tau has experience in the Premier League with Brighton and in Egyptian football with Al Ahly, where he has won multiple African titles. His pace and technique are his greatest assets."
+              }
+            },
+            {
+              "name": "Bongani Zungu",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Mamelodi Sundowns",
+              "note": {
+                "es": "Mediocampista de gran calidad con experiencia en la Ligue 1 francesa. Zungu aporta solidez y creatividad al centro del campo de Bafana Bafana, siendo uno de sus jugadores mas valorados.",
+                "en": "A high-quality midfielder with experience in French Ligue 1. Zungu brings solidity and creativity to Bafana Bafana's midfield, being one of their most valued players."
+              }
+            },
+            {
+              "name": "Ronwen Williams",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Mamelodi Sundowns",
+              "note": {
+                "es": "Considerado el mejor portero de Africa en varias ediciones de los premios continentales. Williams es el baluarte defensivo de Sudafrica, conocido por sus intervenciones decisivas en momentos clave.",
+                "en": "Considered one of Africa's best goalkeepers across multiple continental award editions. Williams is South Africa's defensive cornerstone, known for his decisive interventions at key moments."
+              }
+            },
+            {
+              "name": "Evidence Makgopa",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Orlando Pirates",
+              "note": {
+                "es": "El delantero mas prolífico de la seleccion sudafricana actual. Makgopa ha sido uno de los goleadores mas destacados de la PSL (Premier Soccer League) y lleva esa forma goleadora a la seleccion nacional.",
+                "en": "The most prolific striker in the current South African national team. Makgopa has been one of the PSL's (Premier Soccer League) top scorers and brings that goal-scoring form to the national team."
+              }
+            },
+            {
+              "name": "Sifiso Hlanti",
+              "position": {
+                "es": "Lateral Izquierdo",
+                "en": "Left Back"
+              },
+              "club": "Kaizer Chiefs",
+              "note": {
+                "es": "Lateral dinamico que aporta profundidad ofensiva por la banda izquierda. Hlanti es conocido por su capacidad atletica y su disposicion para atacar, lo que lo convierte en una pieza importante del sistema de juego de Bafana Bafana.",
+                "en": "A dynamic left back who provides offensive depth down the left flank. Hlanti is known for his athletic ability and willingness to attack, making him an important piece in Bafana Bafana's system."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Sudafrica clasifico al Mundial 2026 a traves de las eliminatorias africanas de la CAF (Confederacion Africana de Futbol). El proceso clasificatorio de la CAF para 2026 fue ampliado dado el mayor numero de plazas disponibles para Africa (9 plazas directas mas una en el repechaje intercontinental), lo que incremento las posibilidades de clasificacion para las selecciones del continente.\n\nLa clasificacion de Bafana Bafana representa un logro importante para el futbol sudafricano, que busca volver al maximo escenario mundial. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "South Africa qualified for the 2026 World Cup through CAF (Confederation of African Football) qualifying. The CAF qualification process for 2026 was expanded given the greater number of available places for Africa (9 direct spots plus one in the intercontinental playoff), which increased qualification possibilities for the continent's teams.\n\nBafana Bafana's qualification represents an important achievement for South African football, which seeks to return to the world stage. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Sudafrica en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "South Africa's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Sudafrica fue anfitrion del Mundial?",
+              "en": "Was South Africa a World Cup host?"
+            },
+            "answer": {
+              "es": "Si, Sudafrica fue el pais anfitrion del Mundial 2010, convirtiendose en el primer pais africano en organizar una Copa del Mundo. El torneo fue un exito rotundo y dejo un legado cultural enorme, con la vuvuzela y 'Waka Waka' de Shakira como simbolos de aquella edicion.",
+              "en": "Yes, South Africa hosted the 2010 World Cup, becoming the first African country to host a World Cup. The tournament was a resounding success and left an enormous cultural legacy, with the vuvuzela and Shakira's 'Waka Waka' as symbols of that edition."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Sudafrica en un Mundial?",
+              "en": "What is South Africa's best World Cup result?"
+            },
+            "answer": {
+              "es": "Sudafrica ha sido eliminada en fase de grupos en sus tres participaciones mundialistas (1998, 2002, 2010). Sin embargo, como anfitriones en 2010 lograron victorias ante Mexico y Francia, aunque no fue suficiente para avanzar a octavos.",
+              "en": "South Africa has been eliminated in the group stage in all three of their World Cup appearances (1998, 2002, 2010). However, as hosts in 2010 they achieved victories against Mexico and France, although it was not enough to advance to the Round of 16."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Que es la vuvuzela y por que es famosa en el futbol?",
+              "en": "What is the vuvuzela and why is it famous in football?"
+            },
+            "answer": {
+              "es": "La vuvuzela es un instrumento de viento sudafricano, similar a una trompeta larga de plastico, que produce un sonido muy distintivo. Se hizo mundialmente famosa durante el Mundial de Sudafrica 2010, donde los aficionados la usaron en cada partido. Su sonido caracteristico se convirtio en el simbolo sonoro de aquel torneo.",
+              "en": "The vuvuzela is a South African wind instrument, similar to a long plastic trumpet, that produces a very distinctive sound. It became world-famous during the South Africa 2010 World Cup, where fans used it at every match. Its characteristic sound became the sonic symbol of that tournament."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "SAFA - South African Football Association",
+            "url": "https://www.safa.net"
+          }
+        ]
+      }
     },
     {
       "id": "japan",
@@ -6162,7 +6610,167 @@
         "es": "Los Samurai Azules son la seleccion asiatica con mas participaciones mundialistas consecutivas.",
         "en": "The Blue Samurai are the Asian team with the most consecutive World Cup appearances."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Japon, los Blue Samurai, es la seleccion asiatica con mayor presencia en las ultimas Copas del Mundo, clasificando a siete ediciones consecutivas. El futbol japones ha experimentado una transformacion espectacular: de una liga nacional incipiente en los anos 90 a exportar talentos a los grandes clubes europeos. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEn Qatar 2022, Japon escribio una de las paginas mas emocionantes del torneo: vencio a Alemania (2-1 remonmdo) y a Espana (2-1 remontando), dos potencias europeas, para liderar su grupo. En octavos cayeron ante Croacia en la tanda de penales (1-1, 1-3). Lo que ocurrio en el vestuario japones tras esa eliminacion se volvio viral: dejaron las instalaciones completamente limpias, con mensajes de agradecimiento en japones, generando admiracion mundial.\n\nJugadores como Takefusa Kubo (Real Sociedad) y Ritsu Doan (Freiburg) lideran la generacion mas talentosa de la historia del futbol japones. El pais tiene ademas una cultura futbolistica muy arraigada, con la J1 League como una liga competitiva que atrae talento internacional.",
+          "en": "Japan, the Blue Samurai, is the Asian team with the greatest consecutive presence at recent World Cups, qualifying for seven straight editions. Japanese football has undergone a spectacular transformation: from a nascent national league in the 1990s to exporting talent to Europe's top clubs. Group assignment is pending the official FIFA draw.\n\nAt Qatar 2022, Japan wrote one of the tournament's most thrilling pages: they defeated Germany (2-1 comeback) and Spain (2-1 comeback), two European powers, to top their group. In the Round of 16 they fell to Croatia in a penalty shootout (1-1, 1-3). What happened in the Japanese dressing room after that elimination went viral: they left the facilities completely clean, with thank-you messages in Japanese, generating worldwide admiration.\n\nPlayers like Takefusa Kubo (Real Sociedad) and Ritsu Doan (Freiburg) lead the most talented generation in Japanese football history. The country also has a deeply rooted football culture, with the J1 League as a competitive league attracting international talent."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Japon debuto en una Copa del Mundo en Francia 1998 y desde entonces ha clasificado a todos los torneos. Su mejor resultado ha sido los octavos de final, logrado en 2002 (coorganizador), 2010, 2018 y 2022. En Qatar 2022 protagonizaron una de las mayores sorpresas del torneo al vencer a Alemania y Espana en fase de grupos.\n\nLa caida ante Croacia en penales en Qatar 2022 fue decepcionante dado el nivel mostrado, pero el equipo salio de ahi con una reputacion enorme. La seleccion japonesa es conocida mundialmente por su disciplina tactica, su alto rendimiento fisico y, sobre todo, por el famoso vestuario que dejaron impecable con mensajes de 'Arigato' (gracias) tras su eliminacion. Un gesto que resume perfectamente la filosofia del futbol y la cultura japonesa.",
+            "en": "Japan debuted at a World Cup at France 1998 and has qualified to every tournament since. Their best result has been the Round of 16, achieved in 2002 (as co-host), 2010, 2018, and 2022. At Qatar 2022 they produced one of the tournament's greatest surprises by defeating Germany and Spain in the group stage.\n\nThe defeat to Croatia on penalties at Qatar 2022 was disappointing given the level shown, but the team emerged with an enormous reputation. The Japanese national team is known worldwide for their tactical discipline, high physical performance, and above all, for the famous dressing room they left spotless with 'Arigato' (thank you) messages after their elimination — a gesture that perfectly encapsulates Japanese football and culture."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Takefusa Kubo",
+              "position": {
+                "es": "Extremo / Mediapunta",
+                "en": "Winger / Attacking Midfielder"
+              },
+              "club": "Real Sociedad",
+              "note": {
+                "es": "Apodado 'el Messi japones' desde su paso por la cantera del Barcelona, Kubo ha demostrado que el apodo no era exagerado. Su tecnica excepcional y vision de juego lo han convertido en el jugador mas deseado de su generacion en la Liga Española.",
+                "en": "Nicknamed 'the Japanese Messi' since his time in Barcelona's youth academy, Kubo has proven the nickname was no exaggeration. His exceptional technique and vision have made him one of the most sought-after players of his generation in La Liga."
+              }
+            },
+            {
+              "name": "Wataru Endo",
+              "position": {
+                "es": "Mediocampista Defensivo",
+                "en": "Defensive Midfielder"
+              },
+              "club": "Liverpool FC",
+              "note": {
+                "es": "El capitan de la seleccion japonesa. Endo se convirtio en el primer japones en jugar para el Liverpool en la historia del club y ha demostrado adaptarse perfectamente a la Premier League con su intensidad y calidad.",
+                "en": "The captain of the Japanese national team. Endo became the first Japanese player to represent Liverpool in the club's history and has proven perfectly adapted to the Premier League with his intensity and quality."
+              }
+            },
+            {
+              "name": "Ritsu Doan",
+              "position": {
+                "es": "Extremo",
+                "en": "Winger"
+              },
+              "club": "SC Freiburg",
+              "note": {
+                "es": "Uno de los heroes de Qatar 2022, Doan marco goals clave contra Alemania y Espana. Su velocidad en las bandas y su capacidad para aparecer en momentos cruciales lo convierten en un jugador temible para cualquier defensa.",
+                "en": "One of the heroes of Qatar 2022, Doan scored key goals against Germany and Spain. His pace on the flanks and ability to appear in crucial moments make him a frightening prospect for any defence."
+              }
+            },
+            {
+              "name": "Takumi Minamino",
+              "position": {
+                "es": "Mediapunta / Extremo",
+                "en": "Attacking Midfielder / Winger"
+              },
+              "club": "AS Monaco",
+              "note": {
+                "es": "Minamino tiene experiencia en el Liverpool y en la Ligue 1 francesa. Un jugador versatil con inteligencia tactica, capaz de jugar en multiples posiciones del ataque y contribuir tanto con goles como con asistencias.",
+                "en": "Minamino has experience at Liverpool and in French Ligue 1. A versatile player with tactical intelligence, capable of playing in multiple attacking positions and contributing with both goals and assists."
+              }
+            },
+            {
+              "name": "Shuichi Gonda",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Shimizu S-Pulse",
+              "note": {
+                "es": "El guardameta titular de Japon, conocido por sus intervenciones cruciales en momentos decisivos. Gonda fue clave en Qatar 2022 para mantener al equipo en partidos de alta presion, incluyendo el drammatico partido ante Espana.",
+                "en": "Japan's first-choice goalkeeper, known for his crucial saves in decisive moments. Gonda was key at Qatar 2022 in keeping the team in high-pressure matches, including the dramatic game against Spain."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Japon clasifico al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC (Confederacion Asiatica de Futbol). En el nuevo formato ampliado para 2026, la AFC tiene 8 plazas directas mas una plaza en el repechaje intercontinental. La tercera ronda de clasificacion asiatica reune a los mejores equipos del continente divididos en grupos, donde los dos primeros clasifican directamente al Mundial.\n\nJapon, como una de las selecciones mas fuertes de Asia, clasifica consistentemente en las primeras posiciones de su grupo. La AFC es la confederacion con mayor numero de plazas directas para 2026 entre las no-anfitrionas, lo que refleja el crecimiento del futbol asiatico. Consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Japan qualified for the 2026 World Cup through the AFC (Asian Football Confederation) third round of qualifying. In the expanded new format for 2026, the AFC has 8 direct spots plus one spot in the intercontinental playoff. The Asian third qualifying round gathers the continent's best teams in groups, where the top two qualify directly for the World Cup.\n\nJapan, as one of Asia's strongest teams, consistently qualifies in the top positions of their group. The AFC is the confederation with the most direct spots for 2026 among non-host confederations, reflecting the growth of Asian football. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Japon en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Japan's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Por que el vestuario de Japon en Qatar 2022 se hizo famoso?",
+              "en": "Why did Japan's dressing room at Qatar 2022 become famous?"
+            },
+            "answer": {
+              "es": "Tras ser eliminados por Croacia en penales, los jugadores japoneses dejaron su vestuario completamente limpio, con las instalaciones en perfecto estado y un mensaje de 'Arigato' (gracias en japones) escrito. La foto viralizo en todo el mundo como ejemplo de respeto y deportividad, resumiendo perfectamente la filosofia japonesa.",
+              "en": "After being eliminated by Croatia on penalties, the Japanese players left their dressing room completely clean, with the facilities in perfect condition and a 'Arigato' (thank you in Japanese) message written. The photo went viral worldwide as an example of respect and sportsmanship, perfectly summarizing Japanese philosophy."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cuantos Mundiales seguidos ha clasificado Japon?",
+              "en": "How many consecutive World Cups has Japan qualified for?"
+            },
+            "answer": {
+              "es": "Japon ha clasificado a siete Copas del Mundo consecutivas: 1998, 2002, 2006, 2010, 2014, 2018 y 2022. En 2026 busca su octava clasificacion consecutiva, lo que lo convierte en la seleccion asiatica mas consistente en mundiales.",
+              "en": "Japan has qualified for seven consecutive World Cups: 1998, 2002, 2006, 2010, 2014, 2018, and 2022. In 2026 they seek their eighth consecutive qualification, making them the most consistently present Asian team at World Cups."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Japon en un Mundial?",
+              "en": "What is Japan's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Japon es los octavos de final, alcanzado en 2002 (como co-anfitrion), 2010, 2018 y 2022. En Qatar 2022 realizaron su mejor actuacion en fase de grupos al vencer a Alemania y Espana, aunque cayeron ante Croacia en octavos.",
+              "en": "Japan's best result is the Round of 16, achieved in 2002 (as co-host), 2010, 2018, and 2022. At Qatar 2022 they produced their best group stage performance by defeating Germany and Spain, although they fell to Croatia in the Round of 16."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quienes son las estrellas actuales de la seleccion japonesa?",
+              "en": "Who are the current stars of the Japanese national team?"
+            },
+            "answer": {
+              "es": "Las principales estrellas de Japon son Takefusa Kubo (Real Sociedad), Wataru Endo (Liverpool) y Ritsu Doan (Freiburg). Todos juegan en ligas europeas de primer nivel, lo que refleja el crecimiento del futbol japones en las ultimas decadas.",
+              "en": "Japan's main stars are Takefusa Kubo (Real Sociedad), Wataru Endo (Liverpool), and Ritsu Doan (Freiburg). All play in top European leagues, reflecting the growth of Japanese football over the last few decades."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "JFA - Japan Football Association",
+            "url": "https://www.jfa.jp"
+          }
+        ]
+      }
     },
     {
       "id": "south-korea",
@@ -6179,7 +6787,157 @@
         "es": "Historica semifinalista en 2002, la mejor actuacion asiatica en un Mundial.",
         "en": "Historic semifinalist in 2002, the best Asian performance in a World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Corea del Sur, los Taeguk Warriors, es la seleccion asiatica con el mayor logro historico en un Mundial: las semifinales del torneo que coorganizaron en casa en 2002. Con 11 participaciones mundialistas, Corea del Sur es una potencia futbolistica en crecimiento constante, impulsada por una liga nacional competitiva y una nueva generacion de jugadores de clase mundial. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nSon Heung-min, capitan y maximo goleador historico de la seleccion, es hoy uno de los 20 mejores futbolistas del mundo y juega en el Tottenham Hotspur de la Premier League. Su calidad tecnica, su velocidad y su capacidad goleadora elevan el nivel de toda la seleccion. Son es tambien conocido por su carisma y liderazgo, siendo el futbolista coreano mas querido dentro y fuera del pais.\n\nPara el Mundial 2026, Corea del Sur llegara con la ambicion de al menos replicar sus octavos de final de Qatar 2022 y sonar con repetir la hazana de 2002. El futbol surcoreano vive un gran momento: la K-League produce jugadores cada vez mas competitivos para los mercados europeos.",
+          "en": "South Korea, the Taeguk Warriors, is the Asian team with the greatest historical achievement at a World Cup: the semifinals of the tournament they co-hosted at home in 2002. With 11 World Cup appearances, South Korea is a constantly growing football power, driven by a competitive domestic league and a new generation of world-class players. Group assignment is pending the official FIFA draw.\n\nSon Heung-min, captain and all-time top scorer, is today one of the world's top 20 footballers and plays for Tottenham Hotspur in the Premier League. His technical quality, pace, and goalscoring ability elevate the entire team's level. Son is also known for his charisma and leadership, being the most beloved Korean footballer both at home and abroad.\n\nFor the 2026 World Cup, South Korea will arrive with the ambition of at least replicating their Round of 16 run from Qatar 2022 and dreaming of repeating the 2002 feat. Korean football is in great shape: the K-League produces increasingly competitive players for European markets."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Corea del Sur tiene una de las historias mas impresionantes del futbol asiatico en los Mundiales. Con 11 participaciones, su cima fue la semifinal del Mundial 2002 que coorganizaron con Japon, donde eliminaron a Polonia, Portugal, Italia (en controversia arbitral) y Espana (en penales) antes de caer ante Alemania. Fue el mejor resultado de Asia en una Copa del Mundo.\n\nEn Qatar 2022, Corea del Sur demostro su calidad con una remontada epica ante Portugal para clasificar en octavos, donde cayeron ante Brasil. El gol tardio de Hwang Hee-chan contra Portugal fue uno de los momentos mas dramaticos del torneo. Con Son Heung-min como lider indiscutible, la seleccion surcoreana sigue siendo una de las mas temibles de Asia.",
+            "en": "South Korea has one of the most impressive histories in Asian football at World Cups. With 11 appearances, their peak was the 2002 World Cup semifinal they co-hosted with Japan, where they eliminated Poland, Portugal, Italy (amid refereeing controversy), and Spain (on penalties) before falling to Germany. It was Asia's best-ever World Cup result.\n\nAt Qatar 2022, South Korea demonstrated their quality with an epic comeback against Portugal to qualify from the group stage, before falling to Brazil in the Round of 16. Hwang Hee-chan's late goal against Portugal was one of the tournament's most dramatic moments. With Son Heung-min as undisputed leader, the South Korean team remains one of Asia's most formidable."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Son Heung-min",
+              "position": {
+                "es": "Extremo / Delantero",
+                "en": "Winger / Forward"
+              },
+              "club": "Tottenham Hotspur",
+              "note": {
+                "es": "El futbolista asiatico mas completo de la historia moderna. Maximo goleador del Tottenham Hotspur en multiples temporadas y uno de los mejores extremos de la Premier League, Son combina velocidad devastadora con una tecnica exquisita y un remate potente con ambos pies.",
+                "en": "The most complete Asian footballer in modern history. Tottenham Hotspur's top scorer in multiple seasons and one of the Premier League's best wingers, Son combines devastating pace with exquisite technique and a powerful shot with both feet."
+              }
+            },
+            {
+              "name": "Kim Min-jae",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Bayern Munich",
+              "note": {
+                "es": "Considerado uno de los mejores defensas centrales del mundo, Kim Min-jae ha brillado en el Napoli y en el Bayern Munich. Su potencia fisica, su velocidad y su capacidad para anticipar hacen de el uno de los baluartes defensivos mas valorados de Europa.",
+                "en": "Considered one of the world's best centre-backs, Kim Min-jae has shone at Napoli and Bayern Munich. His physical power, pace, and anticipation make him one of Europe's most valued defensive pillars."
+              }
+            },
+            {
+              "name": "Hwang Hee-chan",
+              "position": {
+                "es": "Extremo / Delantero",
+                "en": "Winger / Forward"
+              },
+              "club": "Wolverhampton Wanderers",
+              "note": {
+                "es": "El autor del drammatico gol ante Portugal en Qatar 2022 que clasfico a Corea del Sur a octavos. Hwang tiene un olfato goleador excepcional y una velocidad que complica la vida de cualquier defensor.",
+                "en": "The scorer of the dramatic goal against Portugal at Qatar 2022 that sent South Korea through to the Round of 16. Hwang has an exceptional goalscoring instinct and pace that makes life difficult for any defender."
+              }
+            },
+            {
+              "name": "Cho Gue-sung",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Midtjylland",
+              "note": {
+                "es": "Delantero con gran presencia en el area y capacidad de cabeza excepcional. Cho Gue-sung se dio a conocer mundialmente en Qatar 2022 con sus dos goles de cabeza ante Ghana, convirtiendose en un nombre reconocible del futbol coreano.",
+                "en": "A striker with great presence in the box and exceptional heading ability. Cho Gue-sung became known worldwide at Qatar 2022 with his two headed goals against Ghana, becoming a recognizable name in Korean football."
+              }
+            },
+            {
+              "name": "Jo Hyeon-woo",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Ulsan HD",
+              "note": {
+                "es": "El portero titular de la seleccion surcoreana, conocido por sus actuaciones solidas y su liderazgo bajo los palos. Jo Hyeon-woo es uno de los guardametas mas confiables de Asia.",
+                "en": "South Korea's first-choice goalkeeper, known for his solid performances and leadership in goal. Jo Hyeon-woo is one of Asia's most reliable goalkeepers."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Corea del Sur clasifico al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC. El nuevo formato ampliado para 2026 da a Asia 8 plazas directas mas una en el repechaje intercontinental, lo que refleja el reconocimiento del futbol asiatico. En la tercera ronda, los equipos compiten en grupos donde los dos primeros clasifican directamente.\n\nCorea del Sur, como una de las selecciones mas fuertes de Asia junto con Japon, clasifica habitualmente en las primeras posiciones de su grupo. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "South Korea qualified for the 2026 World Cup through the AFC third round of qualifying. The new expanded format for 2026 gives Asia 8 direct spots plus one in the intercontinental playoff, reflecting the recognition of Asian football's growth. In the third round, teams compete in groups where the top two qualify directly.\n\nSouth Korea, as one of Asia's strongest teams alongside Japan, habitually qualifies in the top positions of their group. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Corea del Sur en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "South Korea's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Corea del Sur en un Mundial?",
+              "en": "What is South Korea's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Corea del Sur es las semifinales del Mundial 2002, coorganizado con Japon. En ese torneo eliminaron a Polonia, Portugal, Italia y Espana antes de caer ante Alemania. Es el mejor resultado de Asia en la historia de las Copas del Mundo.",
+              "en": "South Korea's best result is the semifinals of the 2002 World Cup, co-hosted with Japan. In that tournament they eliminated Poland, Portugal, Italy, and Spain before falling to Germany. It is Asia's best-ever result in World Cup history."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Son Heung-min juega en el Mundial 2026?",
+              "en": "Does Son Heung-min play at the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Son Heung-min, capitan del Tottenham Hotspur y de la seleccion surcoreana, es el gran referente y maximo goleador historico del equipo. Mientras siga en activo, es el jugador mas importante de Corea del Sur y su presencia en 2026 es fundamental para las aspiraciones del equipo.",
+              "en": "Son Heung-min, captain of Tottenham Hotspur and the South Korean national team, is the great reference and all-time top scorer for the team. As long as he remains active, he is South Korea's most important player and his presence in 2026 is fundamental to the team's aspirations."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cuantas veces ha clasificado Corea del Sur al Mundial?",
+              "en": "How many times has South Korea qualified for the World Cup?"
+            },
+            "answer": {
+              "es": "Corea del Sur ha participado en 11 Copas del Mundo, siendo una de las selecciones asiaticas con mas presencia mundialista. Han clasificado de forma practicamente ininterrumpida desde los anos 80, demostrando la solidez y consistencia del futbol surcoreano.",
+              "en": "South Korea has participated in 11 World Cups, being one of the Asian teams with the greatest World Cup presence. They have qualified almost uninterruptedly since the 1980s, demonstrating the solidity and consistency of South Korean football."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "KFA - Korea Football Association",
+            "url": "https://www.kfa.or.kr"
+          }
+        ]
+      }
     },
     {
       "id": "australia",
@@ -6196,7 +6954,157 @@
         "es": "Los Socceroos representan a Oceania convertidos en miembros de la AFC.",
         "en": "The Socceroos represent Oceania turned AFC members."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Australia, los Socceroos, es una de las selecciones con mayor crecimiento en la confederacion asiatica (AFC), a la que se unieron en 2006. Su mejor resultado en un Mundial fue los cuartos de final en Alemania 2006, con una generacion legendaria liderada por Viduka y Harry Kewell. En Qatar 2022, volvieron a brillar con una clasificacion a octavos de final, eliminando a Dinamarca. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl futbol australiano tiene una particularidad unica: compite en la AFC desde 2006, habiendo decidido abandonar la OFC (Confederacion de Oceania) para tener mayor competencia y mejor acceso a plazas mundialistas. Esta decision estrategica ha beneficiado al desarrollo del futbol australiano al enfrentarse regularmente a las potencias asiaticas.\n\nLa A-League australiana es una de las ligas mas populares del pais, compitiendo con el cricket, el rugby australiano y el rugby en el gusto del aficionado deportivo. La seleccion nacional sirve de inspiracion para las generaciones jovenes, especialmente tras actuaciones como la de Qatar 2022.",
+          "en": "Australia, the Socceroos, is one of the fastest-growing teams in the Asian Football Confederation (AFC), which they joined in 2006. Their best World Cup result was the quarterfinals at Germany 2006, with a legendary generation led by Viduka and Harry Kewell. At Qatar 2022, they shone again by reaching the Round of 16, eliminating Denmark. Group assignment is pending the official FIFA draw.\n\nAustralian football has a unique characteristic: it has competed in the AFC since 2006, having decided to leave the OFC (Oceania Football Confederation) for greater competition and better access to World Cup spots. This strategic decision has benefited Australian football development by regularly facing Asian powerhouses.\n\nThe Australian A-League is one of the country's most popular leagues, competing with cricket, Australian rules football, and rugby for sporting fans' attention. The national team serves as inspiration for younger generations, especially following performances like Qatar 2022."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Australia tiene una historia mundialista con momentos de gran brillo. Su primera participacion fue en 1974 (Alemania Occidental), pero el momento definitorio fue Alemania 2006, cuando llegaron a cuartos de final con una generacion de jugadores como Mark Viduka, Harry Kewell y Tim Cahill. Este resultado sigue siendo el techo historico de la seleccion.\n\nEn Qatar 2022, los Socceroos realizaron una actuacion memorable al superar la fase de grupos y eliminar a Dinamarca en octavos, aunque cayeron ante Argentina. Mat Ryan, Mathew Leckie y el seleccionador Graham Arnold construyeron un equipo solido y comprometido que devolvio la esperanza al futbol australiano. Para el Mundial 2026, la seleccion quiere demostrar que Qatar fue solo el principio.",
+            "en": "Australia has a World Cup history with moments of great brilliance. Their first appearance was in 1974 (West Germany), but the defining moment was Germany 2006, when they reached the quarterfinals with a generation featuring players like Mark Viduka, Harry Kewell, and Tim Cahill. This result remains the team's historical ceiling.\n\nAt Qatar 2022, the Socceroos produced a memorable performance by advancing from the group stage and eliminating Denmark in the Round of 16, although they fell to Argentina. Mat Ryan, Mathew Leckie, and manager Graham Arnold built a solid and committed team that restored hope to Australian football. For the 2026 World Cup, the team wants to prove that Qatar was just the beginning."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Mat Ryan",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Real Sociedad",
+              "note": {
+                "es": "El portero mas experimentado e importante de Australia, con larga trayectoria en la Premier League y la Liga Española. Ryan es el lider dentro del vestuario y sus actuaciones son criticas para cualquier aspiration australiana en el Mundial.",
+                "en": "Australia's most experienced and important goalkeeper, with a long career in the Premier League and La Liga. Ryan is the dressing room leader and his performances are critical to any Australian World Cup aspiration."
+              }
+            },
+            {
+              "name": "Mathew Leckie",
+              "position": {
+                "es": "Extremo Derecho",
+                "en": "Right Winger"
+              },
+              "club": "Melbourne City",
+              "note": {
+                "es": "Uno de los mas importantes de la generacion de Qatar 2022. Leckie es conocido por su velocidad y su capacidad para desequilibrar en las bandas. Su gol ante Dinamarca en octavos de Qatar 2022 quedo grabado en la historia del futbol australiano.",
+                "en": "One of the most important players of the Qatar 2022 generation. Leckie is known for his pace and ability to unbalance on the flanks. His goal against Denmark in the Qatar 2022 Round of 16 is etched in Australian football history."
+              }
+            },
+            {
+              "name": "Mitchell Duke",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Fagiano Okayama",
+              "note": {
+                "es": "Delantero con experiencia en la J-League japonesa y en la seleccion australiana. Duke es conocido por su entrega total y su capacidad de juego de espaldas al arco, siendo una pieza util en el sistema de juego de los Socceroos.",
+                "en": "A forward with experience in the Japanese J-League and the Australian national team. Duke is known for his total commitment and ability to play with his back to goal, being a useful piece in the Socceroos' playing system."
+              }
+            },
+            {
+              "name": "Harry Souttar",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Leicester City",
+              "note": {
+                "es": "Defensa central de 2 metros con gran presencia fisica y buenas condiciones aereas. Souttar es uno de los defensas mas prometedores del futbol australiano, con experiencia en el Championship ingles y la Premier League.",
+                "en": "A 2-metre centre-back with great physical presence and excellent aerial ability. Souttar is one of Australian football's most promising defenders, with experience in the English Championship and Premier League."
+              }
+            },
+            {
+              "name": "Cameron Devlin",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Hearts",
+              "note": {
+                "es": "Mediocampista trabajador con gran capacidad para presionar y recuperar balones. Devlin aporta energía y dinamismo al centro del campo australiano, siendo una pieza clave en el esquema del seleccionador.",
+                "en": "A hard-working midfielder with great pressing and ball-winning ability. Devlin brings energy and dynamism to Australia's midfield, being a key piece in the manager's system."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Australia clasifico al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC. Desde que se unio a la AFC en 2006, Australia ha cambiado sustancialmente su proceso clasificatorio, compitiendo ahora contra las selecciones asiaticas en lugar del formato OFC con repechaje.\n\nEl acceso de Australia al Mundial via AFC ha demostrado ser la decision correcta: mayor competencia, mejor desarrollo y clasificaciones mas consistentes. Con 8 plazas directas para la AFC en 2026, Australia tiene mejores posibilidades que nunca de estar en el torneo. Consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Australia qualified for the 2026 World Cup through the AFC third round of qualifying. Since joining the AFC in 2006, Australia has substantially changed its qualifying process, now competing against Asian nations instead of the OFC format with playoffs.\n\nAustralia's access to the World Cup via the AFC has proven to be the right decision: greater competition, better development, and more consistent qualifications. With 8 direct AFC spots for 2026, Australia has better chances than ever of being at the tournament. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Australia en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Australia's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Australia en un Mundial?",
+              "en": "What is Australia's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado de Australia fue los cuartos de final en Alemania 2006, donde cayeron ante Italia en un partido muy cerrado. En Qatar 2022 llegaron a los octavos de final, eliminando a Dinamarca, antes de perder ante Argentina.",
+              "en": "Australia's best result was the quarterfinals at Germany 2006, where they narrowly fell to Italy. At Qatar 2022 they reached the Round of 16, eliminating Denmark, before losing to Argentina."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Por que Australia juega en la AFC si es un pais de Oceania?",
+              "en": "Why does Australia play in the AFC if they are an Oceanian country?"
+            },
+            "answer": {
+              "es": "Australia se traslado a la AFC (Confederacion Asiatica de Futbol) en 2006 para tener mayor competencia y mejor acceso a plazas mundialistas directas. La OFC historicamente tenia muy pocas plazas directas para el Mundial, lo que obligaba a Australia a pasar por repechajes. El movimiento ha beneficiado enormemente al desarrollo del futbol australiano.",
+              "en": "Australia moved to the AFC (Asian Football Confederation) in 2006 for greater competition and better access to direct World Cup spots. The OFC historically had very few direct World Cup spots, forcing Australia through playoffs. The move has enormously benefited the development of Australian football."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quien es el maximo goleador historico de Australia?",
+              "en": "Who is Australia's all-time top scorer?"
+            },
+            "answer": {
+              "es": "Tim Cahill es el maximo goleador historico de la seleccion australiana con 50 goles en 108 partidos. Sus famosos goles de cabeza son una marca registrada y su actuacion en Alemania 2006 es legendaria. Actualmente retirado, Cahill es considerado el mejor futbolista australiano de la historia.",
+              "en": "Tim Cahill is Australia's all-time top scorer with 50 goals in 108 appearances. His famous headed goals are a trademark and his performance at Germany 2006 is legendary. Now retired, Cahill is considered the greatest Australian footballer in history."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "Football Australia",
+            "url": "https://www.footballaustralia.com.au"
+          }
+        ]
+      }
     },
     {
       "id": "saudi-arabia",
@@ -6213,7 +7121,157 @@
         "es": "Famosa por su victoria sobre Argentina en Qatar 2022 en uno de los mayores upsets mundialistas.",
         "en": "Famous for their victory over Argentina in Qatar 2022 in one of the greatest World Cup upsets."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Arabia Saudita es famosa mundialmente por protagonizar el mayor upset de la historia del futbol en Qatar 2022: vencio a Argentina, entonces favorita al titulo mundial, por 2-1 en la fase de grupos. Esa victoria sacudio al futbol mundial y posiciono a Arabia Saudita como una seleccion a tener muy en cuenta. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nMas alla del historico resultado contra Argentina, Arabia Saudita llega al Mundial 2026 en pleno proceso de profesionalizacion de su futbol. La Saudi Pro League ha atraido a grandes estrellas mundiales, lo que ha elevado enormemente el nivel del futbol local. Salem Al-Dawsari, autor del gol de la victoria ante Argentina, y Mohammed Al-Owais, el portero que fue clave en esa victoria, son los lideres de una generacion que quiere demostrar que aquel resultado no fue una casualidad.\n\nAdemas, Arabia Saudita sera la sede del Mundial 2034, lo que significa que el pais esta invirtiendo masivamente en infraestructura futbolistica y en el desarrollo de su seleccion nacional. El futbol saudita tiene una trayectoria ascendente que solo apunta hacia arriba.",
+          "en": "Saudi Arabia is world-famous for producing the greatest upset in football history at Qatar 2022: they defeated Argentina, then the heavy favorites for the world title, 2-1 in the group stage. That victory shook the football world and positioned Saudi Arabia as a team to be reckoned with. Group assignment is pending the official FIFA draw.\n\nBeyond the historic result against Argentina, Saudi Arabia arrives at the 2026 World Cup amid a full professionalization of their football. The Saudi Pro League has attracted global superstars, which has enormously elevated the level of local football. Salem Al-Dawsari, scorer of the winning goal against Argentina, and Mohammed Al-Owais, the goalkeeper key to that victory, lead a generation wanting to prove that result was no coincidence.\n\nFurthermore, Saudi Arabia will host the 2034 World Cup, meaning the country is massively investing in football infrastructure and national team development. Saudi football is on an ascending trajectory pointing only upward."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Arabia Saudita ha participado en seis Copas del Mundo: 1994, 1998, 2002, 2006, 2018 y 2022. Su mejor resultado fue los octavos de final en los Estados Unidos en 1994, cuando derrotaron a Bélgica gracias al famoso gol de largo alcance de Said Al-Owairan, considerado uno de los mejores goles en la historia de los Mundiales.\n\nPero fue en Qatar 2022 donde Arabia Saudita escribio su pagina mas gloriosa: el 2-1 sobre Argentina, que iba ganando el partido, conmociono al mundo. Los dos goles de Al-Shehri y Al-Dawsari en la segunda parte, sumados a las cinco anulaciones de offside a Argentina en el primer tiempo, crearon una de las actuaciones mas sorprendentes en la historia del torneo. El pais entero celebro esa victoria durante dias.",
+            "en": "Saudi Arabia has participated in six World Cups: 1994, 1998, 2002, 2006, 2018, and 2022. Their best result was the Round of 16 in the United States in 1994, when they defeated Belgium thanks to Said Al-Owairan's famous long-range goal, considered one of the greatest goals in World Cup history.\n\nBut it was at Qatar 2022 where Saudi Arabia wrote its most glorious page: the 2-1 victory over Argentina, who were leading the match, stunned the world. The two goals from Al-Shehri and Al-Dawsari in the second half, combined with five offside calls against Argentina in the first half, created one of the most surprising performances in tournament history. The entire country celebrated that victory for days."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Salem Al-Dawsari",
+              "position": {
+                "es": "Extremo / Mediapunta",
+                "en": "Winger / Attacking Midfielder"
+              },
+              "club": "Al-Hilal",
+              "note": {
+                "es": "El autor del gol de la victoria ante Argentina en Qatar 2022, uno de los goles mas celebrados en la historia mundialista. Al-Dawsari es el jugador mas tecnico y desequilibrante de Arabia Saudita, con una carrera brillante en la Saudi Pro League.",
+                "en": "The scorer of the winning goal against Argentina at Qatar 2022, one of the most celebrated goals in World Cup history. Al-Dawsari is Saudi Arabia's most technical and unbalancing player, with a brilliant career in the Saudi Pro League."
+              }
+            },
+            {
+              "name": "Mohammed Al-Owais",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Al-Hilal",
+              "note": {
+                "es": "Reconocido como uno de los mejores porteros de Asia, Al-Owais fue fundamental en la victoria sobre Argentina con sus intervenciones clave. Ha ganado multiples premios al mejor portero asiatico y es el capitán de la seleccion.",
+                "en": "Recognized as one of Asia's best goalkeepers, Al-Owais was fundamental in the victory over Argentina with his key interventions. He has won multiple Asian best goalkeeper awards and is the national team captain."
+              }
+            },
+            {
+              "name": "Saleh Al-Shehri",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Al-Hilal",
+              "note": {
+                "es": "El delantero que marco el primer gol ante Argentina en Qatar 2022 que inicio la remontada historica. Al-Shehri es un goleador prolífico en la Saudi Pro League conocido por su velocidad y su capacidad para aparecer en los momentos decisivos.",
+                "en": "The forward who scored the first goal against Argentina at Qatar 2022 that started the historic comeback. Al-Shehri is a prolific scorer in the Saudi Pro League known for his pace and ability to appear in decisive moments."
+              }
+            },
+            {
+              "name": "Ali Al-Bulaihi",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Al-Hilal",
+              "note": {
+                "es": "El lider defensivo de la seleccion saudita, con una trayectoria solida en la Saudi Pro League. Al-Bulaihi es conocido por su liderazgo dentro del campo y por ser un baluarte defensivo que da confianza al equipo.",
+                "en": "The defensive leader of the Saudi national team, with a solid career in the Saudi Pro League. Al-Bulaihi is known for his on-field leadership and being a defensive rock that gives the team confidence."
+              }
+            },
+            {
+              "name": "Firas Al-Buraikan",
+              "position": {
+                "es": "Delantero / Extremo",
+                "en": "Forward / Winger"
+              },
+              "club": "Al-Fateh",
+              "note": {
+                "es": "Uno de los jovenes talentos mas prometedores del futbol saudita. Al-Buraikan combina velocidad y destreza tecnica, siendo considerado una de las apuestas de futuro de la seleccion nacional para el ciclo que lleva al Mundial 2026.",
+                "en": "One of the most promising young talents in Saudi football. Al-Buraikan combines pace and technical skill, being considered one of the national team's future prospects for the cycle leading to the 2026 World Cup."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Arabia Saudita clasifico al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC. El creciente nivel del futbol saudita, impulsado por la Saudi Pro League y su atraccion de figuras mundiales, se refleja en la mayor competitividad de la seleccion nacional en las eliminatorias asiaticas.\n\nComo futuro anfitrion del Mundial 2034, Arabia Saudita esta en plena fase de inversion y desarrollo futbolistico. Clasificarse para 2026 forma parte de un proyecto a largo plazo para convertir al futbol saudita en una referencia mundial. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial 2026: /es/ciudades/",
+            "en": "Saudi Arabia qualified for the 2026 World Cup through the AFC third round of qualifying. The growing level of Saudi football, driven by the Saudi Pro League and its attraction of world-class players, is reflected in the national team's increasing competitiveness in Asian qualifying.\n\nAs the future host of the 2034 World Cup, Saudi Arabia is in a full phase of football investment and development. Qualifying for 2026 is part of a long-term project to make Saudi football a world reference. Check out our host cities guide to plan your 2026 World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Arabia Saudita en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Saudi Arabia's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Es cierto que Arabia Saudita derroto a Argentina en el Mundial 2022?",
+              "en": "Did Saudi Arabia really defeat Argentina at the 2022 World Cup?"
+            },
+            "answer": {
+              "es": "Si, Arabia Saudita derrroto a Argentina 2-1 en la fase de grupos de Qatar 2022 en uno de los mayores upsets de la historia del futbol. Argentina iba ganando 1-0 en el descanso, pero dos goles en la segunda parte (Al-Shehri y Al-Dawsari) dieron la victoria a los sauditas. Argentina, que habia pasado 36 partidos sin perder, sufrió su primera derrota en tres anos.",
+              "en": "Yes, Saudi Arabia defeated Argentina 2-1 in the Qatar 2022 group stage in one of the greatest upsets in football history. Argentina was leading 1-0 at half-time, but two second-half goals (Al-Shehri and Al-Dawsari) gave Saudi Arabia the victory. Argentina, who had gone 36 matches unbeaten, suffered their first defeat in three years."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Arabia Saudita sera sede de un Mundial?",
+              "en": "Will Saudi Arabia host a World Cup?"
+            },
+            "answer": {
+              "es": "Si, Arabia Saudita fue elegida como sede del Mundial 2034. El pais esta invirtiendo masivamente en infraestructura futbolistica y en el desarrollo de su seleccion nacional en preparation para ese torneo. El Mundial 2026 forma parte del proceso de preparacion para 2034.",
+              "en": "Yes, Saudi Arabia was selected to host the 2034 World Cup. The country is massively investing in football infrastructure and national team development in preparation for that tournament. The 2026 World Cup is part of the preparation process for 2034."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Arabia Saudita en un Mundial?",
+              "en": "What is Saudi Arabia's best World Cup result?"
+            },
+            "answer": {
+              "es": "El mejor resultado historico de Arabia Saudita es los octavos de final en Estados Unidos 1994, donde derrotaron a Bélgica. Sin embargo, su actuacion mas famosa es la victoria 2-1 sobre Argentina en Qatar 2022, considerada el mayor upset de la historia mundialista.",
+              "en": "Saudi Arabia's best historical result is the Round of 16 at USA 1994, where they defeated Belgium. However, their most famous performance is the 2-1 victory over Argentina at Qatar 2022, considered the greatest upset in World Cup history."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "SAFF - Saudi Arabia Football Federation",
+            "url": "https://www.saff.com.sa"
+          }
+        ]
+      }
     },
     {
       "id": "iran",
@@ -6230,7 +7288,157 @@
         "es": "La seleccion mas exitosa de Asia occidental con multiples participaciones mundialistas.",
         "en": "The most successful team in Western Asia with multiple World Cup appearances."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Iran, conocida como Team Melli, es la seleccion mas exitosa de Asia Occidental y una de las mas historicas de la AFC. Con seis participaciones mundialistas, Iran tiene una rica tradicion futbolistica que combina talento tecnico con una intensa pasion nacional. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl Mundial de Qatar 2022 fue para Iran mucho mas que un torneo deportivo. La seleccion estuvo en el centro de las protestas que sacudian el pais, y en el primer partido ante Inglaterra los jugadores se negaron a cantar el himno nacional en solidaridad con los manifestantes. Este gesto de valentia tuvo consecuencias para los jugadores pero se convirtio en un momento historico que trascendio al futbol.\n\nSardar Azmoun, Alireza Jahanbakhsh y Mehdi Taremi son referentes del futbol irani moderno, todos con carreras consolidadas en Europa. Iran clasifica consistentemente al Mundial a traves de las eliminatorias de la AFC, siendo una de las tres o cuatro selecciones mas fuertes del continente asitico.",
+          "en": "Iran, known as Team Melli, is the most successful team in West Asia and one of the AFC's most historic. With six World Cup appearances, Iran has a rich football tradition combining technical talent with intense national passion. Group assignment is pending the official FIFA draw.\n\nThe Qatar 2022 World Cup was for Iran far more than a sporting tournament. The national team was at the center of the protests shaking their country, and in the opening match against England the players refused to sing the national anthem in solidarity with protesters. This act of bravery had consequences for the players but became a historic moment that transcended football.\n\nSardar Azmoun, Alireza Jahanbakhsh, and Mehdi Taremi are references of modern Iranian football, all with established careers in Europe. Iran consistently qualifies for the World Cup through AFC qualifying, being one of the three or four strongest teams on the Asian continent."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Iran ha participado en seis Copas del Mundo: 1978, 1998, 2006, 2014, 2018 y 2022. Su primera participacion en Argentina 1978 fue especialmente notable: estaban en un grupo con Holanda, Peru y Escocia, logrando su primera victoria mundialista al vencer a Escocia. El contexto politico de la revolucion islamica de 1979 cambiaria todo.\n\nEn Qatar 2022, Iran protagonizo momentos que van mas alla del futbol. La negativa de los jugadores a cantar el himno nacional en el primer partido fue ampliamente comentada en medios mundiales. Deportivamente, cayeron en la fase de grupos pero mostraron calidad, con Mehdi Taremi marcando en el partido ante Estados Unidos. Para 2026, Iran busca por primera vez superar la fase de grupos.",
+            "en": "Iran has participated in six World Cups: 1978, 1998, 2006, 2014, 2018, and 2022. Their first appearance at Argentina 1978 was especially notable: they were in a group with the Netherlands, Peru, and Scotland, achieving their first World Cup victory by defeating Scotland. The political context of the 1979 Islamic Revolution would change everything.\n\nAt Qatar 2022, Iran produced moments that go beyond football. The players' refusal to sing the national anthem in the first match was widely covered in global media. Sportingly, they were eliminated in the group stage but showed quality, with Mehdi Taremi scoring in the match against the United States. For 2026, Iran seeks to advance past the group stage for the first time."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Mehdi Taremi",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Inter Milan",
+              "note": {
+                "es": "El jugador irani mas conocido en Europa y uno de los mejores delanteros de su generacion. Taremi ha demostrado su clase en el Porto y en el Inter Milan de la Serie A. Su tecnica, su inteligencia tactica y su capacidad goleadora lo convierten en una amenaza real para cualquier defensa.",
+                "en": "The most well-known Iranian player in Europe and one of the best strikers of his generation. Taremi has demonstrated his class at Porto and at Inter Milan in Serie A. His technique, tactical intelligence, and goalscoring ability make him a genuine threat to any defence."
+              }
+            },
+            {
+              "name": "Alireza Jahanbakhsh",
+              "position": {
+                "es": "Extremo / Mediapunta",
+                "en": "Winger / Attacking Midfielder"
+              },
+              "club": "Feyenoord",
+              "note": {
+                "es": "Extremo tecnico con experiencia en la Premier League con Brighton y en la Eredivisie con Feyenoord. Jahanbakhsh es conocido por su tecnica individual y su capacidad para crear oportunidades de gol tanto como asistente como goleador.",
+                "en": "A technical winger with experience in the Premier League with Brighton and in the Eredivisie with Feyenoord. Jahanbakhsh is known for his individual technique and ability to create goalscoring opportunities both as an assister and as a scorer."
+              }
+            },
+            {
+              "name": "Sardar Azmoun",
+              "position": {
+                "es": "Delantero",
+                "en": "Forward"
+              },
+              "club": "Bayer Leverkusen",
+              "note": {
+                "es": "Apodado 'el Messi irani', Azmoun es uno de los goleadores mas prolíficos de la historia de Team Melli. Con un poderoso remate de ambos pies y una inteligencia de movimiento excepcional, ha brillado en la Bundesliga con Leverkusen.",
+                "en": "Nicknamed 'the Iranian Messi', Azmoun is one of the most prolific scorers in Team Melli's history. With a powerful shot with both feet and exceptional movement intelligence, he has shone in the Bundesliga with Leverkusen."
+              }
+            },
+            {
+              "name": "Ali Gholizadeh",
+              "position": {
+                "es": "Extremo",
+                "en": "Winger"
+              },
+              "club": "Charleroi",
+              "note": {
+                "es": "Extremo rapido y tecnico con experiencia en la Primera Division belga. Gholizadeh aporta profundidad y desequilibrio por las bandas, siendo una pieza importante en el esquema ofensivo de la seleccion iranı.",
+                "en": "A fast and technical winger with experience in the Belgian First Division. Gholizadeh provides depth and imbalance on the flanks, being an important piece in Iran's offensive system."
+              }
+            },
+            {
+              "name": "Hossein Hosseini",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Esteghlal",
+              "note": {
+                "es": "El portero de la seleccion iranı, conocido por su solidez bajo los palos y sus reflejos rapidos. Hosseini es una pieza clave en el esquema defensivo de Team Melli, aportando seguridad y confianza al equipo.",
+                "en": "Iran's national team goalkeeper, known for his solidity in goal and quick reflexes. Hosseini is a key piece in Team Melli's defensive system, providing security and confidence to the team."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Iran clasifico al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC. Como una de las tres o cuatro selecciones mas fuertes de Asia junto con Japon, Corea del Sur y Australia, Iran habitualmente clasifica en las primeras posiciones de su grupo en la tercera ronda.\n\nLa seleccion iranı es especialmente fuerte en casa, donde el apoyo del Estadio Azadi de Teheran (con capacidad para 100,000 aficionados) representa una ventaja enorme. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "Iran qualified for the 2026 World Cup through the AFC third round of qualifying. As one of the three or four strongest teams in Asia alongside Japan, South Korea, and Australia, Iran habitually qualifies in the top positions of their group in the third round.\n\nThe Iranian national team is especially strong at home, where the support of Tehran's Azadi Stadium (with capacity for 100,000 fans) represents an enormous advantage. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Iran en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Iran's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Por que fue controversial la participacion de Iran en Qatar 2022?",
+              "en": "Why was Iran's participation at Qatar 2022 controversial?"
+            },
+            "answer": {
+              "es": "En el primer partido de Iran en Qatar 2022 ante Inglaterra, los jugadores se negaron a cantar el himno nacional en solidaridad con las protestas que ocurrian en Iran por los derechos de la mujer (movimiento 'Mujer, Vida, Libertad'). Fue un gesto de gran valentia que tuvo eco mundial y que trasciende el ambito deportivo.",
+              "en": "In Iran's first match at Qatar 2022 against England, the players refused to sing the national anthem in solidarity with the protests occurring in Iran over women's rights (the 'Woman, Life, Freedom' movement). It was a gesture of great courage that resonated worldwide and transcends the sporting realm."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cual es el mejor resultado de Iran en un Mundial?",
+              "en": "What is Iran's best World Cup result?"
+            },
+            "answer": {
+              "es": "Iran ha participado en seis Copas del Mundo pero nunca ha superado la fase de grupos. Su mayor exito fue clasificarse para el torneo seis veces, siendo una de las selecciones asiaticas mas consistentes en la clasificacion. La esperanza para 2026 es superar por primera vez esa barrera.",
+              "en": "Iran has participated in six World Cups but has never advanced past the group stage. Their greatest achievement has been qualifying for the tournament six times, being one of the most consistently qualifying Asian teams. The hope for 2026 is to surpass that barrier for the first time."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quienes son los jugadores iranies mas importantes en Europa?",
+              "en": "Who are the most important Iranian players in Europe?"
+            },
+            "answer": {
+              "es": "Los jugadores iranies con mayor proyeccion europea son Mehdi Taremi (Inter Milan, Serie A), Sardar Azmoun (Bayer Leverkusen, Bundesliga) y Alireza Jahanbakhsh (Feyenoord, Eredivisie). Los tres tienen experiencia en las ligas mas competitivas de Europa.",
+              "en": "The Iranian players with the greatest European projection are Mehdi Taremi (Inter Milan, Serie A), Sardar Azmoun (Bayer Leverkusen, Bundesliga), and Alireza Jahanbakhsh (Feyenoord, Eredivisie). All three have experience in Europe's most competitive leagues."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "FFIRI - Football Federation of Iran",
+            "url": "https://www.ffiri.ir"
+          }
+        ]
+      }
     },
     {
       "id": "qatar",
@@ -6247,7 +7455,157 @@
         "es": "Campeon de Asia que debuto como anfitrion del Mundial 2022.",
         "en": "Asian champion that debuted as host of the 2022 World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Qatar es la seleccion que debuto en los Mundiales de la manera mas insolita posible: como anfitrion del torneo en 2022. Campeon de Asia (Copa Asiatica 2019) y primer pais arabe en organizar una Copa del Mundo, Qatar ha invertido enormemente en el desarrollo futbolistico del pais. Para el Mundial 2026, compiten como cualquier otra seleccion de la AFC. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nA pesar de haber sido eliminados en la fase de grupos como anfitriones en 2022 (algo historicamente poco comun), la experiencia del torneo fue transformadora para el futbol qatari. Jugadores como Akram Afif y Almoez Ali demostraron que el trabajo de desarrollo realizado por la Federacion qatari durante dos decadas estaba dando frutos.\n\nQatar posee la liga Arabe mas profesionalizada (QSL), donde juegan figuras internacionales de nivel mundial. El pais sigue invirtiendo en futbol como parte de su Vision 2030, y la clasificacion al Mundial 2026 forma parte de los objetivos nacionales del futbol qatari.",
+          "en": "Qatar is the team that debuted at World Cups in the most unusual way possible: as the host of the 2022 tournament. Asian champion (2019 Asian Cup) and the first Arab country to organize a World Cup, Qatar has invested enormously in football development. For the 2026 World Cup, they compete like any other AFC nation. Group assignment is pending the official FIFA draw.\n\nDespite being eliminated in the group stage as hosts in 2022 (historically uncommon), the tournament experience was transformative for Qatari football. Players like Akram Afif and Almoez Ali demonstrated that the development work carried out by the Qatari Football Association over two decades was bearing fruit.\n\nQatar possesses the most professionalized Arab league (QSL), where international world-class players compete. The country continues to invest in football as part of its Vision 2030, and qualifying for the 2026 World Cup is part of Qatari football's national objectives."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Qatar tiene una unica participacion en Copas del Mundo: el historico torneo de 2022 que organizaron. Fueron el primer pais arabe en organizar un Mundial y el debut mundialista lo hicieron en casa. Sin embargo, fueron eliminados en la fase de grupos, convirtiendose en la segunda seleccion anfitriona en caer en esa fase (tras Italia en 1966 y Sudafrica en 2010 como primer pais en no superar grupos).\n\nA pesar de la eliminacion, Qatar mostro momentos de calidad individual, con Akram Afif y Almoez Ali como sus jugadores mas destacados. La Copa del Mundo 2022 fue organizada en otono (noviembre-diciembre) en lugar de en verano, un cambio historico para evitar el calor extremo del golfo persico. Para 2026, Qatar quiere demostrar que puede competir al maximo nivel sin la ventaja de jugar en casa.",
+            "en": "Qatar has one World Cup appearance: the historic 2022 tournament they organized. They were the first Arab country to host a World Cup and made their tournament debut on home soil. However, they were eliminated in the group stage, becoming the second host team to fall at that stage (after Italy in 1966, with South Africa in 2010 being the first host not to advance from the groups).\n\nDespite the elimination, Qatar showed moments of individual quality, with Akram Afif and Almoez Ali as their standout players. The 2022 World Cup was held in autumn (November-December) instead of summer, a historic change to avoid the extreme Persian Gulf heat. For 2026, Qatar wants to prove they can compete at the highest level without the advantage of playing at home."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Akram Afif",
+              "position": {
+                "es": "Extremo / Mediapunta",
+                "en": "Winger / Attacking Midfielder"
+              },
+              "club": "Al-Sadd",
+              "note": {
+                "es": "El jugador mas creativo y talentoso de Qatar. Afif fue el maximo anotador en el torneo inaugural de Qatar 2022 para la seleccion local y ha ganado multiples premios como mejor jugador de la QSL. Su creatividad y su tecnica son sus principales activos.",
+                "en": "Qatar's most creative and talented player. Afif was the top scorer for the local team in the inaugural Qatar 2022 tournament and has won multiple QSL Player of the Year awards. His creativity and technique are his main assets."
+              }
+            },
+            {
+              "name": "Almoez Ali",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Al-Duhail",
+              "note": {
+                "es": "El maximo goleador historico de la seleccion qatari y uno de sus jugadores mas representativos. Ali fue heroe de la Copa Asiatica 2019 con sus goles en el torneo. Es conocido por sus espectaculares goles de volée y su olfato goleador en el area.",
+                "en": "Qatar's all-time top scorer and one of their most representative players. Ali was a hero at the 2019 Asian Cup with his tournament goals. He is known for his spectacular volley goals and his goalscoring instinct in the box."
+              }
+            },
+            {
+              "name": "Bassam Al-Rawi",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Al-Sadd",
+              "note": {
+                "es": "El baluarte defensivo de Qatar, nacido en Irak pero naturalizado qatari. Al-Rawi aporta experiencia y solidez a la defensa de la seleccion, siendo uno de los jugadores mas respetados en el futbol del Golfo.",
+                "en": "Qatar's defensive cornerstone, born in Iraq but naturalized Qatari. Al-Rawi brings experience and solidity to the national team's defence, being one of the most respected players in Gulf football."
+              }
+            },
+            {
+              "name": "Ismaeel Mohammad",
+              "position": {
+                "es": "Mediocampista",
+                "en": "Midfielder"
+              },
+              "club": "Al-Sadd",
+              "note": {
+                "es": "Mediocampista versatil que aporta equilibrio entre defensa y ataque. Mohammad es conocido por su capacidad para distribuir el balon y su lectura tactica del juego, siendo una pieza clave en el sistema de la seleccion qatari.",
+                "en": "A versatile midfielder who provides balance between defence and attack. Mohammad is known for his ball distribution ability and tactical game reading, being a key piece in Qatar's national team system."
+              }
+            },
+            {
+              "name": "Meshaal Barsham",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Al-Sadd",
+              "note": {
+                "es": "El portero titular de Qatar desde 2022, con grandes actuaciones en la Qatar Stars League. Barsham es conocido por sus reflejos rapidos y su liderazgo bajo los palos, siendo fundamental para las aspiraciones de Qatar en el Mundial.",
+                "en": "Qatar's starting goalkeeper since 2022, with strong performances in the Qatar Stars League. Barsham is known for his quick reflexes and leadership in goal, being fundamental to Qatar's World Cup aspirations."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Qatar clasifica al Mundial 2026 a traves de las eliminatorias de la AFC, sin el privilegio de la clasificacion automatica como anfitrion (que tuvieron en 2022). Este es un desafio significativo para la seleccion qatari, que debera competir contra Japon, Corea del Sur, Australia, Iran y Arabia Saudita, entre otros, en las eliminatorias asiaticas.\n\nLa clasificacion de Qatar para el Mundial 2026 sin ser anfitrion seria un gran logro y demostraria la solidez del proyecto futbolistico del pais. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "Qatar qualifies for the 2026 World Cup through AFC qualifying, without the privilege of automatic qualification as host (which they had in 2022). This is a significant challenge for the Qatari national team, who must compete against Japan, South Korea, Australia, Iran, and Saudi Arabia, among others, in Asian qualifying.\n\nQatar qualifying for the 2026 World Cup without being the host would be a great achievement and would demonstrate the solidity of the country's football project. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Qatar en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Qatar's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Como organizo Qatar el Mundial siendo una seleccion debil?",
+              "en": "How did Qatar organize the World Cup being a weak national team?"
+            },
+            "answer": {
+              "es": "La organizacion del Mundial 2022 fue independiente del nivel de la seleccion. Qatar gano la sede en 2010 tras un proceso de votacion entre los miembros del comité ejecutivo de la FIFA. El pais invirtio mas de 200,000 millones de dolares en infraestructura incluyendo estadios, metro, hoteles y ciudades nuevas.",
+              "en": "The organization of the 2022 World Cup was independent of the national team's level. Qatar won the hosting rights in 2010 after a voting process among FIFA executive committee members. The country invested over $200 billion in infrastructure including stadiums, metro, hotels, and new cities."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Qatar fue el primer anfitrion eliminado en grupos?",
+              "en": "Was Qatar the first host eliminated in the group stage?"
+            },
+            "answer": {
+              "es": "Qatar fue la primera seleccion anfitriona eliminada en la fase de grupos en la historia moderna del torneo. Italia en 1966 fue eliminada en grupos pero el formato era diferente. Sudafrica 2010 tampoco supero la fase de grupos, siendo el primer anfitrion moderno en esa situacion. Qatar 2022 replico ese resultado.",
+              "en": "Qatar was the first host team eliminated in the group stage in the modern tournament era. Italy in 1966 was eliminated in groups but the format was different. South Africa 2010 also did not advance from the group stage, being the first modern host in that situation. Qatar 2022 replicated that result."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Tiene Qatar posibilidades de clasificar al Mundial 2026?",
+              "en": "Does Qatar have a chance to qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Qatar tiene posibilidades reales de clasificar al Mundial 2026 a traves de las eliminatorias asiaticas de la AFC. Son campeones de Asia (Copa Asiatica 2019) y con 8 plazas directas para la AFC en 2026, las chances de clasificacion son mayores que en ediciones anteriores. La seleccion viene trabajando intensamente para mejorar su nivel competitivo.",
+              "en": "Qatar has real chances of qualifying for the 2026 World Cup through AFC Asian qualifying. They are Asian champions (2019 Asian Cup) and with 8 direct AFC spots for 2026, the qualification chances are greater than in previous editions. The team has been working intensely to improve their competitive level."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "QFA - Qatar Football Association",
+            "url": "https://www.qfa.qa"
+          }
+        ]
+      }
     },
     {
       "id": "iraq",
@@ -6264,7 +7622,157 @@
         "es": "Seleccion con una historia de superacion que busca regresar a la elite mundial.",
         "en": "A team with a story of resilience seeking to return to the world elite."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Irak es una seleccion que representa la resiliencia y el espiritu de superacion de un pueblo que ha vivido decadas de conflictos. A pesar de las enormes dificultades que ha enfrentado el pais, el futbol sigue siendo una fuente de orgullo y union nacional. La seleccion irakı busca su segunda clasificacion al Mundial tras la historica participacion en Mexico 1986. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nLa seleccion irakı vivio un renacimiento con el titulo de la Copa Asiatica 2007, cuando gan el torneo disputado en Asean en medio de la guerra en Irak. Ese titulo fue descrito como 'el unico momento de alegria del pais en anos', y la celebracion en las calles de Bagdad fue una de las imagenes mas emotivas del futbol asiatico. Fue un momento que trascendio al deporte.\n\nActualmente, la seleccion cuenta con jugadores como Mohanad Ali y Amjad Attwan que militan en las principales ligas de la region. El futbol irakı crece con una generacion que ha vivido en condiciones mas estables, lo que permite un desarrollo deportivo mas consistente.",
+          "en": "Iraq is a team that represents the resilience and spirit of a people who have lived through decades of conflict. Despite the enormous difficulties the country has faced, football remains a source of national pride and unity. The Iraqi national team seeks their second World Cup qualification since the historic 1986 Mexico appearance. Group assignment is pending the official FIFA draw.\n\nThe Iraqi national team experienced a renaissance with the 2007 Asian Cup title, winning the tournament held in Southeast Asia amid war in Iraq. That title was described as 'the country's only moment of joy in years,' and the celebrations in the streets of Baghdad were one of the most moving images in Asian football. It was a moment that transcended sport.\n\nCurrently, the team features players like Mohanad Ali and Amjad Attwan who play in the region's main leagues. Iraqi football is growing with a generation that has lived in more stable conditions, allowing for more consistent sporting development."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Irak tiene una unica participacion mundialista: Mexico 1986. En ese torneo, el equipo cayo en sus tres partidos (0-1 ante Paraguay, 1-2 ante Belgica y 0-1 ante Mexico), pero la mera clasificacion fue un logro enorme dado el contexto regional.\n\nDesde 1986, Irak ha estado muy cerca de clasificar en varias ocasiones, pero siempre ha quedado fuera. La Copa Asiatica 2007 demostro el nivel real de la seleccion, que era capaz de ganar a los mejores de Asia. Para 2026, el objetivo de Irak es regresar al maximo escenario despues de 40 anos de ausencia y demostrar que el futbol irakı ha madurado.",
+            "en": "Iraq has one World Cup appearance: Mexico 1986. In that tournament, the team lost all three matches (0-1 against Paraguay, 1-2 against Belgium, and 0-1 against Mexico), but the mere qualification was an enormous achievement given the regional context.\n\nSince 1986, Iraq has been very close to qualifying on several occasions but has always fallen short. The 2007 Asian Cup demonstrated the real level of the national team, which was capable of defeating Asia's best. For 2026, Iraq's objective is to return to the biggest stage after 40 years of absence and show that Iraqi football has matured."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Mohanad Ali",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Al-Zawraa",
+              "note": {
+                "es": "El maximo goleador de la seleccion irakı en las eliminatorias recientes. Mohanad Ali es conocido por su potencia fisica y su efectividad en el area rival. Es el referente ofensivo del equipo y el jugador que mas inspira a la aficion irakı.",
+                "en": "Iraq's top scorer in recent qualifying campaigns. Mohanad Ali is known for his physical power and effectiveness in the opponent's penalty area. He is the team's offensive reference and the player who most inspires Iraqi fans."
+              }
+            },
+            {
+              "name": "Amjad Attwan",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Al-Shorta",
+              "note": {
+                "es": "Mediocampista tecnico que organiza el juego de Irak desde el centro del campo. Attwan combina vision de juego con capacidad para recuperar balones, siendo la figura clave en la transicion entre defensa y ataque.",
+                "en": "A technical midfielder who organizes Iraq's play from the centre of the field. Attwan combines vision with ball-winning ability, being the key figure in the transition between defence and attack."
+              }
+            },
+            {
+              "name": "Basim Abbas",
+              "position": {
+                "es": "Extremo",
+                "en": "Winger"
+              },
+              "club": "Al-Quwa Al-Jawiya",
+              "note": {
+                "es": "Extremo rapido y tecnico que aporta desequilibrio por las bandas. Abbas es uno de los jugadores mas creativos de la seleccion irakı, con capacidad para crear peligro tanto como asistente como goleador.",
+                "en": "A fast and technical winger who provides imbalance on the flanks. Abbas is one of Iraq's most creative players, with the ability to create danger both as an assister and as a scorer."
+              }
+            },
+            {
+              "name": "Ahmed Ibrahim",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Erbil SC",
+              "note": {
+                "es": "Defensa central solido y experimentado que lidera la linea defensiva de Irak. Ibrahim es conocido por su fortaleza fisica y su capacidad de liderazgo, siendo el pilar sobre el que se construye la defensa irakı.",
+                "en": "A solid and experienced centre-back who leads Iraq's defensive line. Ibrahim is known for his physical strength and leadership ability, being the pillar on which Iraq's defence is built."
+              }
+            },
+            {
+              "name": "Fahad Thamer",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Al-Zawraa",
+              "note": {
+                "es": "El portero titular de la seleccion irakı, conocido por sus actuaciones solidas bajo los palos. Thamer aporta confianza y seguridad al equipo, siendo fundamental en los momentos de mayor presion en las eliminatorias.",
+                "en": "Iraq's first-choice goalkeeper, known for his solid performances in goal. Thamer brings confidence and security to the team, being fundamental in the most pressured moments of qualifying."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Irak clasifica al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC. Con 8 plazas directas para Asia en 2026, las posibilidades de clasificacion para Irak son las mejores en decadas. La seleccion irakı ha mostrado un nivel creciente en las eliminatorias asiaticas, especialmente en casa en el Estadio Franso Hariri de Erbil.\n\nSi Irak clasifica al Mundial 2026, seria su regreso al torneo despues de 40 anos (desde Mexico 1986), un logro historico que generaria una celebracion enorme en el pais. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "Iraq qualifies for the 2026 World Cup through the AFC third round of qualifying. With 8 direct AFC spots for 2026, qualification possibilities for Iraq are the best in decades. The Iraqi national team has shown a growing level in Asian qualifying, especially at home at the Franso Hariri Stadium in Erbil.\n\nIf Iraq qualifies for the 2026 World Cup, it would be their return to the tournament after 40 years (since Mexico 1986), a historic achievement that would generate enormous celebrations throughout the country. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Irak en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Iraq's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cuando fue la ultima vez que Irak jugo un Mundial?",
+              "en": "When was the last time Iraq played in a World Cup?"
+            },
+            "answer": {
+              "es": "La unica participacion mundialista de Irak fue en Mexico 1986, donde cayeron en los tres partidos de la fase de grupos. Llevan 40 anos intentando regresar al maximo escenario. El Mundial 2026 representa la mejor oportunidad en decadas dado el mayor numero de plazas para Asia.",
+              "en": "Iraq's only World Cup appearance was at Mexico 1986, where they lost all three group stage matches. They have spent 40 years trying to return to the biggest stage. The 2026 World Cup represents the best opportunity in decades given the greater number of spots for Asia."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Cuando gano Irak la Copa Asiatica?",
+              "en": "When did Iraq win the Asian Cup?"
+            },
+            "answer": {
+              "es": "Irak gano la Copa Asiatica en 2007, disputada en Vietnam, Tailandia, Indonesia y Malasia. El titulo se logro en medio de la guerra en Irak y las celebraciones en las calles de Bagdad fueron historicas. El futbol unio al pais en uno de sus momentos mas dificiles.",
+              "en": "Iraq won the Asian Cup in 2007, held in Vietnam, Thailand, Indonesia, and Malaysia. The title was achieved in the midst of the war in Iraq and the celebrations in Baghdad's streets were historic. Football united the country in one of its most difficult moments."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Tiene Irak posibilidades de clasificar al Mundial 2026?",
+              "en": "Does Iraq have a chance to qualify for the 2026 World Cup?"
+            },
+            "answer": {
+              "es": "Si, Irak tiene posibilidades reales de clasificar al Mundial 2026. Con 8 plazas directas para la AFC y la creciente competitividad del futbol irakı, el equipo ha demostrado en las eliminatorias que puede competir con las mejores selecciones asiaticas. Su historial en la Copa Asiatica (campeon en 2007) muestra el potencial de la seleccion.",
+              "en": "Yes, Iraq has real chances of qualifying for the 2026 World Cup. With 8 direct AFC spots and the growing competitiveness of Iraqi football, the team has shown in qualifying that it can compete with Asia's best. Their Asian Cup record (champions in 2007) shows the team's potential."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "IFA - Iraq Football Association",
+            "url": "https://www.ifo.iq"
+          }
+        ]
+      }
     },
     {
       "id": "uzbekistan",
@@ -6281,7 +7789,157 @@
         "es": "Los Lobos Blancos buscan su primera clasificacion a una Copa del Mundo.",
         "en": "The White Wolves seek their first qualification to a World Cup."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Uzbekistan, los Lobos Blancos, es la seleccion de futbol de Asia Central con mayor crecimiento en los ultimos anos. Si logran clasificarse al Mundial 2026, seria la primera participacion mundialista de Uzbekistan en la historia, un logro que representaria un hito historico para el futbol centroasiatico. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl futbol uzbeko ha experimentado una transformacion notable desde la independencia del pais en 1991. Con jugadores formados en academias europeas y en las mejores ligas de Asia, la generacion actual es la mas talentosa de la historia. Eldor Shomurodov, delantero del AS Roma en la Serie A italiana, es la maxima figura de este equipo y uno de los jugadores uzbekos mas reconocidos internacionalmente.\n\nLa clasificacion de Uzbekistan al Mundial 2026 seria algo mucho mas grande que un resultado deportivo: seria el reconocimiento de todo el trabajo realizado durante decadas para llevar el futbol uzbeko al maximo nivel. Para los cinco millones de uzbekos que siguen a su seleccion con pasion, este Mundial seria su primera gran experiencia en el escenario mundial.",
+          "en": "Uzbekistan, the White Wolves, is Central Asia's fastest-growing football team in recent years. If they qualify for the 2026 World Cup, it would be Uzbekistan's first-ever World Cup appearance in history, an achievement that would represent a historic milestone for Central Asian football. Group assignment is pending the official FIFA draw.\n\nUzbek football has undergone a notable transformation since the country's independence in 1991. With players trained in European academies and Asia's top leagues, the current generation is the most talented in history. Eldor Shomurodov, a forward at AS Roma in Italian Serie A, is the team's biggest star and one of the most internationally recognized Uzbek players.\n\nUzbekistan qualifying for the 2026 World Cup would be something far greater than a sporting result: it would be the recognition of all the work done over decades to bring Uzbek football to the highest level. For the 35 million Uzbeks who passionately follow their team, this World Cup would be their first great experience on the world stage."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Uzbekistan nunca ha participado en una Copa del Mundo. Desde su independencia de la Union Sovietica en 1991, la seleccion uzbeka ha sido parte de la AFC pero nunca ha logrado superar el proceso de clasificacion para llegar al torneo final.\n\nSin embargo, Uzbekistan tiene un palmarés respetable a nivel regional: ha ganado el campeonato de la AFC para sub-23 y ha mostrado niveles competitivos en las Copas Asiaticas. La generacion actual, con Shomurodov en Europa y otros jugadores en ligas asiaticas de primer nivel, es la que mas cerca ha estado de lograr la primera clasificacion historica. Para el Mundial 2026, Uzbekistan tiene la mejor oportunidad de su historia.",
+            "en": "Uzbekistan has never participated in a World Cup. Since their independence from the Soviet Union in 1991, the Uzbek national team has been part of the AFC but has never managed to complete the qualification process to reach the final tournament.\n\nHowever, Uzbekistan has a respectable regional record: they have won the AFC U-23 championship and have shown competitive levels at Asian Cups. The current generation, with Shomurodov in Europe and other players in top Asian leagues, is the closest they have ever been to achieving first-ever historical qualification. For the 2026 World Cup, Uzbekistan has the best opportunity in their history."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Eldor Shomurodov",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "AS Roma",
+              "note": {
+                "es": "El jugador uzbeko mas conocido en el futbol europeo. Shomurodov ha jugado en el Genoa y en la AS Roma en la Serie A italiana, demostrando que el futbol uzbeko puede producir jugadores de nivel europeo. Es el maximo goleador y referente ofensivo de la seleccion.",
+                "en": "The most well-known Uzbek player in European football. Shomurodov has played at Genoa and AS Roma in Italian Serie A, proving that Uzbek football can produce European-level players. He is the national team's top scorer and offensive reference."
+              }
+            },
+            {
+              "name": "Jaloliddin Masharipov",
+              "position": {
+                "es": "Mediapunta / Extremo",
+                "en": "Attacking Midfielder / Winger"
+              },
+              "club": "Pakhtakor",
+              "note": {
+                "es": "Uno de los jugadores mas creativos y tecnicos de Uzbekistan. Masharipov es conocido por su habilidad para driblar y crear ocasiones de gol, siendo una de las piezas mas importantes del sistema ofensivo de la seleccion uzbeka.",
+                "en": "One of Uzbekistan's most creative and technical players. Masharipov is known for his dribbling ability and chance creation, being one of the most important pieces in the Uzbek national team's offensive system."
+              }
+            },
+            {
+              "name": "Jasur Jalolov",
+              "position": {
+                "es": "Delantero",
+                "en": "Forward"
+              },
+              "club": "Pakhtakor",
+              "note": {
+                "es": "Delantero con gran efectividad en front el arco rival. Jalolov es uno de los maximos goleadores de la Superliga uzbeka y ha demostrado su nivel en los partidos de clasificacion de la AFC, siendo una pieza complementaria junto a Shomurodov.",
+                "en": "A forward with great effectiveness in front of goal. Jalolov is one of the top scorers in the Uzbek Super League and has demonstrated his level in AFC qualifying matches, being a complementary piece alongside Shomurodov."
+              }
+            },
+            {
+              "name": "Otabek Shukurov",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Pakhtakor",
+              "note": {
+                "es": "El baluarte defensivo de Uzbekistan. Shukurov es conocido por su fortaleza fisica, su capacidad de liderazgo y su consistencia en los partidos de clasificacion, siendo uno de los defensas mas respetados del futbol asiatico.",
+                "en": "Uzbekistan's defensive cornerstone. Shukurov is known for his physical strength, leadership ability, and consistency in qualifying matches, being one of the most respected defenders in Asian football."
+              }
+            },
+            {
+              "name": "Sanjar Tursunov",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Nasaf",
+              "note": {
+                "es": "El portero titular de la seleccion uzbeka, conocido por sus intervenciones decisivas en los partidos de clasificacion. Tursunov ha sido clave en mantener la solidez defensiva del equipo en los momentos mas criticos.",
+                "en": "Uzbekistan's first-choice goalkeeper, known for his decisive interventions in qualifying matches. Tursunov has been key in maintaining the team's defensive solidity at the most critical moments."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Uzbekistan busca clasificar al Mundial 2026 a traves de la tercera ronda de clasificacion de la AFC. Con 8 plazas directas para Asia en 2026, las posibilidades de clasificacion son las mejores en la historia del futbol uzbeko. La seleccion ha demostrado en las eliminatorias recientes que puede competir con las potencias asiaticas.\n\nSi Uzbekistan logra clasificarse, seria el primer pais de Asia Central en hacerlo en la era moderna, representando un hito enorme para el futbol de la region. Consulta nuestra guia de ciudades sede para planear tu viaje al Mundial: /es/ciudades/",
+            "en": "Uzbekistan seeks to qualify for the 2026 World Cup through the AFC third round of qualifying. With 8 direct AFC spots for 2026, qualification possibilities are the best in Uzbek football history. The team has demonstrated in recent qualifying campaigns that it can compete with Asian powers.\n\nIf Uzbekistan qualifies, it would be the first Central Asian country to do so in the modern era, representing an enormous milestone for the region's football. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Uzbekistan en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "Uzbekistan's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Ha clasificado Uzbekistan alguna vez al Mundial?",
+              "en": "Has Uzbekistan ever qualified for the World Cup?"
+            },
+            "answer": {
+              "es": "No, Uzbekistan nunca ha participado en una Copa del Mundo. El Mundial 2026 representa su primera y mejor oportunidad historica, con el mayor numero de plazas para Asia (8 directas) y la generacion uzbeka mas talentosa de la historia.",
+              "en": "No, Uzbekistan has never participated in a World Cup. The 2026 World Cup represents their first and best historical opportunity, with the greatest number of spots for Asia (8 direct) and the most talented Uzbek generation in history."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Quienes son los mejores jugadores uzbekos actualmente?",
+              "en": "Who are the best Uzbek players currently?"
+            },
+            "answer": {
+              "es": "El jugador uzbeko mas conocido es Eldor Shomurodov, delantero de la AS Roma en la Serie A italiana. Junto a el, Jaloliddin Masharipov (Pakhtakor) es el creativo del equipo. Ambos forman el nucleo de ataque de una seleccion que aspira a su primera clasificacion mundialista.",
+              "en": "The most well-known Uzbek player is Eldor Shomurodov, a forward at AS Roma in Italian Serie A. Alongside him, Jaloliddin Masharipov (Pakhtakor) is the team's creative force. Both form the attacking core of a team aspiring to its first World Cup qualification."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Por que seria historico que Uzbekistan clasifique al Mundial?",
+              "en": "Why would it be historic if Uzbekistan qualifies for the World Cup?"
+            },
+            "answer": {
+              "es": "Seria la primera vez en la historia que Uzbekistan participa en una Copa del Mundo desde su independencia en 1991. Ademas, seria el primer pais de Asia Central (junto con Kazajistan, Kirguistan, Tajikistan y Turkmenistan) en clasificarse al torneo, representando a toda una region futbolisticamente emergente.",
+              "en": "It would be the first time in history that Uzbekistan participates in a World Cup since their independence in 1991. Additionally, it would be the first Central Asian country (alongside Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan) to qualify for the tournament, representing an entire emerging football region."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "AFC - Asian Football Confederation",
+            "url": "https://www.the-afc.com"
+          },
+          {
+            "name": "UFF - Uzbekistan Football Federation",
+            "url": "https://www.uff.uz"
+          }
+        ]
+      }
     },
     {
       "id": "new-zealand",
@@ -6298,7 +7956,157 @@
         "es": "Los All Whites representan a Oceania como la principal potencia futbolistica de la confederacion.",
         "en": "The All Whites represent Oceania as the confederation's main football power."
       },
-      "lastUpdated": "2026-03-26"
+      "lastUpdated": "2026-03-26",
+      "content": {
+        "overview": {
+          "es": "Nueva Zelanda, los All Whites, es la maxima potencia futbolistica de Oceania y la seleccion de la OFC (Confederacion de Futbol de Oceania) con mayor experiencia en Copas del Mundo. Clasificar al Mundial siempre es una gesta para los All Whites, que deben superar el riguroso proceso de clasificacion de la OFC y habitualmente un repechaje intercontinental. La asignacion de grupo esta pendiente del sorteo oficial de la FIFA.\n\nEl nombre 'All Whites' es un guino al famoso equipo de rugby 'All Blacks', y refleja el orgullo de Nueva Zelanda en su seleccion nacional. Chris Wood, el goleador mas conocido del equipo y delantero de varios clubes de la Premier League, es el referente de una generacion que busca dejar huella en el maximo escenario mundial.\n\nNueva Zelanda tiene una cultura deportiva dominada por el rugby, pero el futbol ha ido ganando espacio especialmente entre las comunidades inmigrantes y las nuevas generaciones. Cada clasificacion mundialista de los All Whites es una celebracion nacional y una motivacion enorme para el futbol neozalandes.",
+          "en": "New Zealand, the All Whites, is Oceania's greatest football power and the OFC (Oceania Football Confederation) team with the most World Cup experience. Qualifying for the World Cup is always a feat for the All Whites, who must navigate the demanding OFC qualification process and typically an intercontinental playoff. Group assignment is pending the official FIFA draw.\n\nThe name 'All Whites' is a nod to the famous 'All Blacks' rugby team, reflecting New Zealand's pride in their national team. Chris Wood, the team's best-known scorer and a Premier League striker, is the reference for a generation seeking to leave their mark on the world stage.\n\nNew Zealand has a sporting culture dominated by rugby, but football has been gaining ground especially among immigrant communities and younger generations. Every All Whites World Cup qualification is a national celebration and an enormous motivation for New Zealand football."
+        },
+        "worldCupHistory": {
+          "title": {
+            "es": "Historia en los Mundiales",
+            "en": "World Cup History"
+          },
+          "content": {
+            "es": "Nueva Zelanda ha participado en tres Copas del Mundo: 1982 (Espana), 2010 (Sudafrica) y posiblemente 2026. En 1982 fueron eliminados en la fase de grupos. En 2010, su actuacion fue memorable: jugaron tres partidos, empataron los tres (1-1 con Eslovaquia, 1-1 con Italia, 0-0 con Paraguay) y terminaron invictos, aunque sin ganar un partido. Ese invicto fue considerado un gran logro para una seleccion de Oceania.\n\nLa presencia de Nueva Zelanda en los Mundiales es siempre una historia de superacion. Como representante de la OFC, deben superar la clasificacion regional y luego habitualmente enfrentarse a selecciones de otras confederaciones en los repechajes intercontinentales. Cada clasificacion es un hito y un motivo de orgullo nacional.",
+            "en": "New Zealand has participated in three World Cups: 1982 (Spain), 2010 (South Africa), and possibly 2026. In 1982 they were eliminated in the group stage. In 2010, their performance was memorable: they played three matches, drew all three (1-1 with Slovakia, 1-1 with Italy, 0-0 with Paraguay) and finished unbeaten, though without winning a game. That unbeaten record was considered a great achievement for an Oceanian team.\n\nNew Zealand's presence at World Cups is always a story of overcoming the odds. As the OFC representative, they must overcome regional qualification and then typically face teams from other confederations in intercontinental playoffs. Each qualification is a milestone and a source of national pride."
+          }
+        },
+        "keyPlayers": {
+          "title": {
+            "es": "Jugadores Clave",
+            "en": "Key Players"
+          },
+          "players": [
+            {
+              "name": "Chris Wood",
+              "position": {
+                "es": "Delantero Centro",
+                "en": "Centre Forward"
+              },
+              "club": "Nottingham Forest",
+              "note": {
+                "es": "El jugador mas conocido y el maximo goleador historico de Nueva Zelanda. Wood ha tenido una brillante carrera en la Premier League con Burnley, Newcastle y Nottingham Forest. Su potencia fisica, su juego aereo y su instinto goleador lo convierten en el gran referente ofensivo de los All Whites.",
+                "en": "New Zealand's most famous player and all-time top scorer. Wood has had a brilliant Premier League career with Burnley, Newcastle, and Nottingham Forest. His physical power, aerial game, and goalscoring instinct make him the All Whites' great offensive reference."
+              }
+            },
+            {
+              "name": "Clayton Lewis",
+              "position": {
+                "es": "Mediocampista",
+                "en": "Midfielder"
+              },
+              "club": "Vancouver Whitecaps",
+              "note": {
+                "es": "Mediocampista dinamico que aporta energia y calidad al centro del campo de Nueva Zelanda. Lewis combina solidez defensiva con creatividad ofensiva, siendo una pieza clave en el esquema del seleccionador de los All Whites.",
+                "en": "A dynamic midfielder who brings energy and quality to New Zealand's midfield. Lewis combines defensive solidity with offensive creativity, being a key piece in the All Whites manager's system."
+              }
+            },
+            {
+              "name": "Michael Boxall",
+              "position": {
+                "es": "Defensa Central",
+                "en": "Centre-back"
+              },
+              "club": "Minnesota United",
+              "note": {
+                "es": "Defensa central experimentado con una larga trayectoria en la MLS estadounidense. Boxall es el lider de la linea defensiva de Nueva Zelanda, conocido por su solidez, su liderazgo y su capacidad de mando en las pelotas detenidas.",
+                "en": "An experienced centre-back with a long MLS career. Boxall is the leader of New Zealand's defensive line, known for his solidity, leadership, and command on set pieces."
+              }
+            },
+            {
+              "name": "Joe Bell",
+              "position": {
+                "es": "Mediocampista Central",
+                "en": "Central Midfielder"
+              },
+              "club": "Club Brugge",
+              "note": {
+                "es": "Mediocampista de gran calidad con experiencia en la Primera Division belga. Bell aporta vision de juego, calidad en el pase y capacidad para controlar el ritmo del partido, siendo uno de los jugadores mas tecnicos de la seleccion neozalandesa.",
+                "en": "A high-quality midfielder with experience in the Belgian First Division. Bell brings vision, passing quality, and the ability to control match tempo, being one of New Zealand's most technical players."
+              }
+            },
+            {
+              "name": "Oli Sail",
+              "position": {
+                "es": "Portero",
+                "en": "Goalkeeper"
+              },
+              "club": "Columbus Crew",
+              "note": {
+                "es": "El portero titular de Nueva Zelanda, con experiencia en la MLS. Sail es conocido por su agilidad y sus reflejos rapidos, siendo fundamental para que los All Whites puedan competir ante selecciones mas fuertes en las eliminatorias.",
+                "en": "New Zealand's first-choice goalkeeper, with MLS experience. Sail is known for his agility and quick reflexes, being fundamental for the All Whites to compete against stronger teams in qualifying."
+              }
+            }
+          ]
+        },
+        "qualifyingPath": {
+          "title": {
+            "es": "Camino a la Clasificacion",
+            "en": "Path to Qualification"
+          },
+          "content": {
+            "es": "Nueva Zelanda clasifica al Mundial 2026 a traves del proceso de clasificacion de la OFC (Confederacion de Futbol de Oceania). La OFC agrupa a paises como Australia (que se fue a la AFC en 2006), Fiji, Papua Nueva Guinea, Islas Salomon y otras selecciones de la region. Nueva Zelanda, siendo la potencia de la region, habitualmente lidera la clasificacion regional.\n\nSin embargo, la OFC tiene una plaza directa al Mundial 2026 mas una posible via repechaje intercontinental. Esto significa que Nueva Zelanda debe ganar la clasificacion regional de la OFC para asegurarse la plaza directa o acceder al repechaje. La clasificacion de los All Whites al Mundial siempre es noticia en todo el mundo del futbol por la dificultad del proceso. Consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "New Zealand qualifies for the 2026 World Cup through the OFC (Oceania Football Confederation) qualification process. The OFC groups countries like Australia (which moved to the AFC in 2006), Fiji, Papua New Guinea, Solomon Islands, and other regional teams. New Zealand, being the region's power, habitually leads regional qualifying.\n\nHowever, the OFC has one direct World Cup 2026 spot plus a possible intercontinental playoff path. This means New Zealand must win OFC regional qualifying to secure the direct spot or access the playoff. The All Whites qualifying for the World Cup is always news in world football given the difficulty of the process. Check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "matchSchedule": {
+          "title": {
+            "es": "Calendario de Partidos",
+            "en": "Match Schedule"
+          },
+          "content": {
+            "es": "Los partidos de Nueva Zelanda en el Mundial 2026 seran confirmados por la FIFA tras el sorteo oficial. Vuelve pronto para ver el calendario completo con fechas, sedes y horarios. Mientras tanto, consulta nuestra guia de ciudades sede para planear tu viaje: /es/ciudades/",
+            "en": "New Zealand's matches at the 2026 World Cup will be confirmed by FIFA after the official draw. Check back soon for the complete schedule with dates, venues, and times. Meanwhile, check out our host cities guide to plan your World Cup trip: /es/ciudades/"
+          }
+        },
+        "faq": [
+          {
+            "question": {
+              "es": "¿Cuantas veces ha clasificado Nueva Zelanda al Mundial?",
+              "en": "How many times has New Zealand qualified for the World Cup?"
+            },
+            "answer": {
+              "es": "Nueva Zelanda ha participado en tres Copas del Mundo: 1982 en Espana y 2010 en Sudafrica. En 2010 lograron su mejor actuacion, quedando invictos en la fase de grupos con tres empates. El Mundial 2026 seria su tercera participacion.",
+              "en": "New Zealand has participated in two World Cups: 1982 in Spain and 2010 in South Africa. In 2010 they achieved their best performance, remaining unbeaten in the group stage with three draws. The 2026 World Cup would be their third appearance."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Por que es tan dificil para Nueva Zelanda clasificar al Mundial?",
+              "en": "Why is it so difficult for New Zealand to qualify for the World Cup?"
+            },
+            "answer": {
+              "es": "La OFC tiene muy pocas plazas directas al Mundial (una en 2026). Esto significa que aunque Nueva Zelanda domine la clasificacion de Oceania, muchas veces debe pasar por repechajes intercontinentales contra selecciones de otras confederaciones. El nivel de competencia en estos repechajes es muy alto.",
+              "en": "The OFC has very few direct World Cup spots (one in 2026). This means that even though New Zealand dominates Oceanian qualifying, they often must go through intercontinental playoffs against teams from other confederations. The competition level in these playoffs is very high."
+            }
+          },
+          {
+            "question": {
+              "es": "¿Nueva Zelanda gano algun partido en el Mundial de 2010?",
+              "en": "Did New Zealand win any match at the 2010 World Cup?"
+            },
+            "answer": {
+              "es": "Nueva Zelanda no gano ningun partido en el Mundial 2010, pero tampoco perdio ninguno. Empataron sus tres partidos de la fase de grupos (1-1 con Eslovaquia, 1-1 con Italia y 0-0 con Paraguay) y fueron eliminados a pesar del invicto. Ese invicto fue considerado un gran logro para la seleccion ocenica.",
+              "en": "New Zealand did not win any match at the 2010 World Cup, but they also did not lose any. They drew all three group stage matches (1-1 with Slovakia, 1-1 with Italy, and 0-0 with Paraguay) and were eliminated despite being unbeaten. That unbeaten record was considered a great achievement for the Oceanian team."
+            }
+          }
+        ],
+        "sources": [
+          {
+            "name": "FIFA.com",
+            "url": "https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/2026fifaworldcup"
+          },
+          {
+            "name": "OFC - Oceania Football Confederation",
+            "url": "https://www.oceaniafootball.com"
+          },
+          {
+            "name": "NZF - New Zealand Football",
+            "url": "https://www.nzfootball.co.nz"
+          }
+        ]
+      }
     }
   ]
 }
