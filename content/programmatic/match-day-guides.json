@@ -1,0 +1,452 @@
+{
+  "guides": [
+    {
+      "id": "dia-de-partido-ciudad-de-mexico",
+      "cityId": "ciudad-de-mexico",
+      "slug": "ciudad-de-mexico",
+      "lastUpdated": "2026-03-26",
+      "stadium": "estadio-azteca",
+      "arriveHours": 3,
+      "fanZones": {
+        "es": "Zocalo (pantalla gigante), Foro Sol, Zona Rosa",
+        "en": "Zocalo (giant screen), Foro Sol, Zona Rosa"
+      },
+      "food": {
+        "es": "Tacos al pastor cerca del Estadio Azteca (Mercado de Xochimilco), elotes asados, tortas de carnitas. Evita comida cara dentro del estadio — come antes.",
+        "en": "Tacos al pastor near Estadio Azteca (Xochimilco market area), roasted corn, carnitas sandwiches. Avoid expensive stadium food — eat before you go."
+      },
+      "transport": {
+        "es": "Metro Linea 2 (Tasquena) + Tren Ligero hasta General Anaya. Llega al menos 2.5 horas antes — el Metro se satura. Uber/DiDi disponible pero con esperas largas post-partido.",
+        "en": "Metro Line 2 (Tasquena) + Tren Ligero to General Anaya. Arrive at least 2.5 hours early — the Metro gets saturated. Uber/DiDi available but long waits post-match."
+      },
+      "whatToBring": {
+        "es": "Impermeable (lluvias vespertinas en junio/julio), protector solar, capas de ropa (mañanas frescas), efectivo en pesos, identificacion, boletos descargados offline.",
+        "en": "Rain jacket (afternoon showers in June/July), sunscreen, layers (cool mornings), cash in pesos, ID, tickets downloaded offline."
+      },
+      "weatherWarning": {
+        "es": "Espera aguacero entre las 3-6 PM. Lleva impermeable siempre. A 2,240m de altitud, el sol quema aunque haya nubes.",
+        "en": "Expect downpour between 3-6 PM. Always bring a rain jacket. At 2,240m altitude, the sun burns even through clouds."
+      }
+    },
+    {
+      "id": "dia-de-partido-monterrey",
+      "cityId": "monterrey",
+      "slug": "monterrey",
+      "lastUpdated": "2026-03-26",
+      "stadium": "estadio-bbva",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Macroplaza, Barrio Antiguo, Gran Plaza Fashion Mall cerca del estadio",
+        "en": "Macroplaza, Barrio Antiguo, Gran Plaza Fashion Mall near the stadium"
+      },
+      "food": {
+        "es": "Cabrito al pastor (especialidad local), carnes asadas al carbon, machacado con huevo. El Barrio Antiguo tiene muchos restaurantes a 30 min del estadio.",
+        "en": "Cabrito al pastor (local specialty), charcoal grilled meats, machacado con huevo. Barrio Antiguo has many restaurants 30 min from the stadium."
+      },
+      "transport": {
+        "es": "Metrolinea (Metro de Monterrey) hasta la estacion Hospital — camina 15 min o toma shuttle oficial. Uber disponible pero saturado los dias de partido.",
+        "en": "Metrolinea (Monterrey Metro) to Hospital station — walk 15 min or take official shuttle. Uber available but saturated on match days."
+      },
+      "whatToBring": {
+        "es": "Agua extra (el calor de Monterrey en junio supera los 35 grados), ropa ligera y comoda, protector solar alto, ventilador portatil, efectivo.",
+        "en": "Extra water (Monterrey heat in June exceeds 35 degrees), light and comfortable clothing, high SPF sunscreen, portable fan, cash."
+      },
+      "weatherWarning": {
+        "es": "Monterrey es extremadamente caluroso en junio: 32-38 grados. Hidratate constantemente y evita el sol directo en los horarios de mayor calor (12-4 PM).",
+        "en": "Monterrey is extremely hot in June: 32-38 degrees. Hydrate constantly and avoid direct sun during peak heat hours (12-4 PM)."
+      }
+    },
+    {
+      "id": "dia-de-partido-guadalajara",
+      "cityId": "guadalajara",
+      "slug": "guadalajara",
+      "lastUpdated": "2026-03-26",
+      "stadium": "estadio-akron",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Centro Historico de Guadalajara, Tlaquepaque, Zona Minerva",
+        "en": "Guadalajara Historic Center, Tlaquepaque, Zona Minerva"
+      },
+      "food": {
+        "es": "Birria de chivo (especialidad tapatia), tortas ahogadas, tepache de pina. Come en el centro antes de ir al estadio — los precios son mejores.",
+        "en": "Birria de chivo (Guadalajara specialty), tortas ahogadas, pineapple tepache. Eat downtown before going to the stadium — prices are better."
+      },
+      "transport": {
+        "es": "MIBus o Mi Macro hasta Estadio Akron. El tren ligero llega cerca. Uber disponible. El estadio esta en la zona de Zapopan — reserva transporte de vuelta con anticipacion.",
+        "en": "MIBus or Mi Macro to Estadio Akron. The light rail gets close. Uber available. The stadium is in the Zapopan area — book return transport in advance."
+      },
+      "whatToBring": {
+        "es": "Capas de ropa (Guadalajara puede ser fresca por las noches), impermeable por si hay lluvia, protector solar, efectivo en pesos.",
+        "en": "Layers (Guadalajara can be cool at night), rain jacket just in case, sunscreen, cash in pesos."
+      },
+      "weatherWarning": {
+        "es": "Junio es temporada de lluvias en Guadalajara. Espera chaparrones por la tarde. Las temperaturas son mas moderadas que Monterrey: 22-28 grados.",
+        "en": "June is rainy season in Guadalajara. Expect afternoon showers. Temperatures are more moderate than Monterrey: 22-28 degrees."
+      }
+    },
+    {
+      "id": "dia-de-partido-los-angeles",
+      "cityId": "los-angeles",
+      "slug": "los-angeles",
+      "lastUpdated": "2026-03-26",
+      "stadium": "sofi-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Hollywood Boulevard, Santa Monica Pier, fan zones oficiales en Downtown LA",
+        "en": "Hollywood Boulevard, Santa Monica Pier, official fan zones in Downtown LA"
+      },
+      "food": {
+        "es": "LA tiene la mejor comida mexicana de Estados Unidos: taquerias en East LA, food trucks en toda la ciudad. Prueba mariscos al estilo Baja en Inglewood cerca del estadio.",
+        "en": "LA has the best Mexican food in the United States: taquerias in East LA, food trucks throughout the city. Try Baja-style seafood in Inglewood near the stadium."
+      },
+      "transport": {
+        "es": "Metro C Line (Green Line) hasta Westchester/Veterans Station, luego shuttle al estadio. El metro es lo mejor — el trafico en LA es caótico el dia de partido.",
+        "en": "Metro C Line (Green Line) to Westchester/Veterans Station, then shuttle to stadium. Metro is best — LA traffic is chaotic on match day."
+      },
+      "whatToBring": {
+        "es": "Protector solar alto factor (el sol de Los Angeles quema), ropa comoda y ligera, gafas de sol, efectivo y tarjeta (el estadio acepta ambos).",
+        "en": "High SPF sunscreen (LA sun burns), comfortable light clothing, sunglasses, cash and card (the stadium accepts both)."
+      },
+      "weatherWarning": {
+        "es": "Junio en LA es soleado y caluroso (24-28 grados). Poca lluvia. El sol del mediodia puede ser intenso — busca sombra y usa protector solar.",
+        "en": "June in LA is sunny and warm (24-28 degrees). Little rain. Midday sun can be intense — find shade and use sunscreen."
+      }
+    },
+    {
+      "id": "dia-de-partido-nueva-york",
+      "cityId": "nueva-york-nueva-jersey",
+      "slug": "nueva-york-nueva-jersey",
+      "lastUpdated": "2026-03-26",
+      "stadium": "metlife-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Times Square, Central Park, Hudson Yards, fan zones en Manhattan",
+        "en": "Times Square, Central Park, Hudson Yards, fan zones in Manhattan"
+      },
+      "food": {
+        "es": "NYC tiene de todo: pizza por slice en cualquier esquina, hot dogs, tacos en la Pequeña Mexico de East Harlem. Come en Manhattan antes de cruzar a New Jersey.",
+        "en": "NYC has everything: pizza by the slice on every corner, hot dogs, tacos in East Harlem's Little Mexico. Eat in Manhattan before crossing to New Jersey."
+      },
+      "transport": {
+        "es": "NJ Transit desde Penn Station (servicio directo al estadio los dias de partido). El Ferry de Hudson River tambien puede ser una opcion escénica. No intentes ir en carro.",
+        "en": "NJ Transit from Penn Station (direct service to the stadium on match days). The Hudson River Ferry can also be a scenic option. Do not attempt to drive."
+      },
+      "whatToBring": {
+        "es": "Paraguas compacto (NYC es impredecible climaticamente), capas (puede refrescar por la noche), tarjeta de metro (MetroCard/OMNY), efectivo para propinas.",
+        "en": "Compact umbrella (NYC weather is unpredictable), layers (can get cool at night), metro card (MetroCard/OMNY), cash for tips."
+      },
+      "weatherWarning": {
+        "es": "Junio en NYC puede ser caluroso y humedo (23-28 grados) o refrescante. Lleva capas y algo para la lluvia — el clima cambia rapido.",
+        "en": "June in NYC can be hot and humid (23-28 degrees) or refreshing. Bring layers and something for rain — weather changes quickly."
+      }
+    },
+    {
+      "id": "dia-de-partido-dallas",
+      "cityId": "dallas",
+      "slug": "dallas",
+      "lastUpdated": "2026-03-26",
+      "stadium": "att-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Deep Ellum, Uptown Dallas, zona de AT&T Entertainment District en Arlington",
+        "en": "Deep Ellum, Uptown Dallas, AT&T Entertainment District zone in Arlington"
+      },
+      "food": {
+        "es": "BBQ texano es obligatorio: Pecan Lodge en Deep Ellum o Cattleack BBQ. La comunidad hispana de Dallas tiene excelentes taquerias en Oak Cliff y Garland.",
+        "en": "Texas BBQ is mandatory: Pecan Lodge in Deep Ellum or Cattleack BBQ. Dallas's Hispanic community has excellent taquerias in Oak Cliff and Garland."
+      },
+      "transport": {
+        "es": "El AT&T Stadium esta en Arlington, sin Metro. La mejor opcion es Uber/Lyft compartido o ir en carro (hay parqueos pero costosos). Busca shuttles desde el DART (tren de Dallas).",
+        "en": "AT&T Stadium is in Arlington, with no Metro. Best option is shared Uber/Lyft or driving (parking available but expensive). Look for shuttles from the DART (Dallas train)."
+      },
+      "whatToBring": {
+        "es": "Ropa muy ligera (Dallas en junio supera los 34 grados), agua extra, protector solar. El estadio esta techado y con AC — pero el camino hasta el estadio es al aire libre.",
+        "en": "Very light clothing (Dallas in June exceeds 34 degrees), extra water, sunscreen. The stadium is roofed with AC — but the walk to the stadium is outdoors."
+      },
+      "weatherWarning": {
+        "es": "Calor extremo en junio: 32-38 grados y alta humedad. El AT&T Stadium esta climatizado, pero la caminata desde el parqueo puede ser agotadora. Hidratate antes.",
+        "en": "Extreme heat in June: 32-38 degrees and high humidity. AT&T Stadium is air-conditioned, but the walk from parking can be exhausting. Hydrate beforehand."
+      }
+    },
+    {
+      "id": "dia-de-partido-san-francisco",
+      "cityId": "san-francisco",
+      "slug": "san-francisco",
+      "lastUpdated": "2026-03-26",
+      "stadium": "levis-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Fisherman's Wharf, Mission District, fan zones en el centro de San Jose",
+        "en": "Fisherman's Wharf, Mission District, fan zones in downtown San Jose"
+      },
+      "food": {
+        "es": "El Mission District tiene la mejor comida mexicana de la ciudad: La Taqueria, El Farolito. Come antes de ir a Santa Clara (el estadio esta a 45 min del centro de SF).",
+        "en": "The Mission District has the best Mexican food in the city: La Taqueria, El Farolito. Eat before heading to Santa Clara (the stadium is 45 min from SF downtown)."
+      },
+      "transport": {
+        "es": "Caltrain desde San Francisco a Mountain View + conexion a Levi's Stadium. El VTA (Valle del Silicon) tambien da servicio. Evita el carro — el estacionamiento es caro y escaso.",
+        "en": "Caltrain from San Francisco to Mountain View + connection to Levi's Stadium. The VTA (Silicon Valley) also provides service. Avoid driving — parking is expensive and scarce."
+      },
+      "whatToBring": {
+        "es": "Capas de ropa (San Francisco puede ser fria y ventosa incluso en junio), impermeable, gafas de sol para cuando salga el sol.",
+        "en": "Layers (San Francisco can be cold and windy even in June), rain jacket, sunglasses for when the sun comes out."
+      },
+      "weatherWarning": {
+        "es": "San Francisco en junio es famosamente impredecible: la niebla mañanera puede convertirse en sol esplendido o frio persistente. La temperatura varia entre 13 y 20 grados. Siempre lleva chaqueta.",
+        "en": "San Francisco in June is famously unpredictable: morning fog can turn into brilliant sunshine or persistent cold. Temperature ranges from 13 to 20 degrees. Always bring a jacket."
+      }
+    },
+    {
+      "id": "dia-de-partido-houston",
+      "cityId": "houston",
+      "slug": "houston",
+      "lastUpdated": "2026-03-26",
+      "stadium": "nrg-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Discovery Green Park, Midtown Houston, zona del NRG Park",
+        "en": "Discovery Green Park, Midtown Houston, NRG Park zone"
+      },
+      "food": {
+        "es": "Houston tiene la mayor comunidad hispana de Texas: Ninfa's on Navigation (cuna del fajita), taquerias en la avenida Harwin, mariscos al estilo Veracruz. Come en el area de Midtown antes del partido.",
+        "en": "Houston has the largest Hispanic community in Texas: Ninfa's on Navigation (birthplace of fajita), taquerias on Harwin Avenue, Veracruz-style seafood. Eat in Midtown before the match."
+      },
+      "transport": {
+        "es": "METRORail Linea Roja hasta NRG/Reliant Station — directo al estadio. Es la opcion mas inteligente en dias de partido. El Uber tiene precios inflados post-partido.",
+        "en": "METRORail Red Line to NRG/Reliant Station — direct to stadium. Smartest option on match days. Uber prices surge post-match."
+      },
+      "whatToBring": {
+        "es": "Ropa muy ligera, agua en abundancia (el calor y humedad de Houston en junio son brutales), protector solar, ropa de repuesto (sudaras mucho).",
+        "en": "Very light clothing, plenty of water (Houston heat and humidity in June are brutal), sunscreen, spare clothing (you will sweat a lot)."
+      },
+      "weatherWarning": {
+        "es": "Junio en Houston: 33-37 grados con 80-90% de humedad. Es el clima mas dificil de todas las sedes. El NRG Stadium esta techado y climatizado, pero el trayecto al estadio es sofocante.",
+        "en": "June in Houston: 33-37 degrees with 80-90% humidity. This is the most challenging weather of all venues. NRG Stadium is roofed and air-conditioned, but the journey to the stadium is stifling."
+      }
+    },
+    {
+      "id": "dia-de-partido-atlanta",
+      "cityId": "atlanta",
+      "slug": "atlanta",
+      "lastUpdated": "2026-03-26",
+      "stadium": "mercedes-benz-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Centennial Olympic Park, Beltline Eastside Trail, Sweet Auburn",
+        "en": "Centennial Olympic Park, Beltline Eastside Trail, Sweet Auburn"
+      },
+      "food": {
+        "es": "Atlanta tiene una escena gastronomica excelente: Buford Highway es el corredor de comida internacional (vietnamita, coreana, mexicana). Come en el Mercado Buford antes del partido.",
+        "en": "Atlanta has an excellent food scene: Buford Highway is the international food corridor (Vietnamese, Korean, Mexican). Eat at Buford Highway Farmers Market before the match."
+      },
+      "transport": {
+        "es": "MARTA (Metro de Atlanta) Linea Roja/Dorada hasta Vine City o GWCC/CNN Center. El estadio esta a 5 minutos caminando. Es el sistema mas conveniente para fans.",
+        "en": "MARTA (Atlanta Metro) Red/Gold Line to Vine City or GWCC/CNN Center. The stadium is a 5-minute walk. It is the most convenient system for fans."
+      },
+      "whatToBring": {
+        "es": "Ropa ligera (30-33 grados en junio), agua, protector solar. El Mercedes-Benz Stadium es cubierto y con muy buena climatizacion — una de las mejores sedes para el calor del verano.",
+        "en": "Light clothing (30-33 degrees in June), water, sunscreen. Mercedes-Benz Stadium is covered with excellent climate control — one of the best venues for summer heat."
+      },
+      "weatherWarning": {
+        "es": "Caluroso y humedo en junio (29-33 grados), con posibilidad de tormentas vespertinas. El estadio cubierto es un alivio. Sal temprano del estadio para evitar trafico.",
+        "en": "Hot and humid in June (29-33 degrees), with possible afternoon storms. The covered stadium is a relief. Leave the stadium early to avoid traffic."
+      }
+    },
+    {
+      "id": "dia-de-partido-filadelfia",
+      "cityId": "filadelfia",
+      "slug": "filadelfia",
+      "lastUpdated": "2026-03-26",
+      "stadium": "lincoln-financial-field",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Benjamin Franklin Parkway, Reading Terminal Market, Old City",
+        "en": "Benjamin Franklin Parkway, Reading Terminal Market, Old City"
+      },
+      "food": {
+        "es": "El cheesesteak de Filadelfia es obligatorio (Pat's vs. Geno's en South Philadelphia — prueba ambos). Reading Terminal Market tiene todo tipo de cocina a buen precio.",
+        "en": "Philadelphia cheesesteak is mandatory (Pat's vs. Geno's in South Philadelphia — try both). Reading Terminal Market has all kinds of cuisine at good prices."
+      },
+      "transport": {
+        "es": "SEPTA (metro de Filadelfia): toma el Broad Street Subway Line al sur hasta Pattison Station — el estadio esta a 5 minutos caminando.",
+        "en": "SEPTA (Philadelphia metro): take the Broad Street Subway Line south to Pattison Station — the stadium is a 5-minute walk."
+      },
+      "whatToBring": {
+        "es": "Capas (Filadelfia en junio puede ser calurosa o fresca segun el dia), impermeable por si acaso, calzado comodo para caminar.",
+        "en": "Layers (Philadelphia in June can be hot or cool depending on the day), rain jacket just in case, comfortable walking shoes."
+      },
+      "weatherWarning": {
+        "es": "Junio en Filadelfia: 25-30 grados, con posibilidad de tormentas eléctricas. El Lincoln Financial Field es abierto — si hay tormenta severa, el partido puede retrasarse.",
+        "en": "June in Philadelphia: 25-30 degrees, with possibility of thunderstorms. Lincoln Financial Field is open-air — if there is a severe storm, the match may be delayed."
+      }
+    },
+    {
+      "id": "dia-de-partido-miami",
+      "cityId": "miami",
+      "slug": "miami",
+      "lastUpdated": "2026-03-26",
+      "stadium": "hard-rock-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Ocean Drive, Wynwood Walls, Little Havana, Brickell City Center",
+        "en": "Ocean Drive, Wynwood Walls, Little Havana, Brickell City Center"
+      },
+      "food": {
+        "es": "Little Havana es obligatoria: Calle Ocho tiene los mejores restaurantes cubanos y latinos de la ciudad. La comunidad latina de Miami es enorme — encontraras comida de casi cualquier pais.",
+        "en": "Little Havana is a must: Calle Ocho has the best Cuban and Latin restaurants in the city. Miami's Latin community is huge — you will find food from almost any country."
+      },
+      "transport": {
+        "es": "El Hard Rock Stadium esta en Miami Gardens, sin Metro directo. Uber/Lyft es la opcion mas comoda, aunque los precios suben mucho post-partido. Busca shuttles oficiales desde Downtown.",
+        "en": "Hard Rock Stadium is in Miami Gardens, with no direct Metro. Uber/Lyft is the most comfortable option, although prices surge post-match. Look for official shuttles from Downtown."
+      },
+      "whatToBring": {
+        "es": "Ropa muy ligera, protector solar alto factor, agua extra, gafas de sol. El calor y la humedad de Miami en junio son intensos incluso de noche.",
+        "en": "Very light clothing, high SPF sunscreen, extra water, sunglasses. Miami heat and humidity in June are intense even at night."
+      },
+      "weatherWarning": {
+        "es": "Junio en Miami: 30-34 grados con humedad extrema. Tormentas eléctricas vespertinas son comunes. El Hard Rock Stadium tiene tejado retractil — gran ventaja.",
+        "en": "June in Miami: 30-34 degrees with extreme humidity. Afternoon thunderstorms are common. Hard Rock Stadium has a retractable roof — a big advantage."
+      }
+    },
+    {
+      "id": "dia-de-partido-seattle",
+      "cityId": "seattle",
+      "slug": "seattle",
+      "lastUpdated": "2026-03-26",
+      "stadium": "lumen-field",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Pike Place Market, Capitol Hill, Pioneer Square, fan zones junto al estadio",
+        "en": "Pike Place Market, Capitol Hill, Pioneer Square, fan zones next to the stadium"
+      },
+      "food": {
+        "es": "Pike Place Market: salmon ahumado, marisco fresco, el primer Starbucks. Pioneer Square tiene bares y restaurantes a pasos del estadio. Come antes — las filas en el estadio son largas.",
+        "en": "Pike Place Market: smoked salmon, fresh seafood, the original Starbucks. Pioneer Square has bars and restaurants steps from the stadium. Eat beforehand — stadium lines are long."
+      },
+      "transport": {
+        "es": "El Lumen Field esta en el centro de Seattle — puedes caminar desde muchos barrios o llegar en Link Light Rail (LINK). Es una de las sedes mas faciles de alcanzar sin carro.",
+        "en": "Lumen Field is in downtown Seattle — you can walk from many neighborhoods or take the Link Light Rail (LINK). It is one of the easiest venues to reach without a car."
+      },
+      "whatToBring": {
+        "es": "Impermeable o poncho (Seattle tiene fama de lluviosa aunque junio es relativamente seco), capas de ropa, calzado resistente al agua.",
+        "en": "Rain jacket or poncho (Seattle has a rainy reputation although June is relatively dry), layers, water-resistant footwear."
+      },
+      "weatherWarning": {
+        "es": "Junio es el mes mas seco de Seattle (mas soleado de lo que la gente imagina), pero la temperatura puede bajar a 13-16 grados de noche. Lleva siempre una capa extra.",
+        "en": "June is Seattle's driest month (sunnier than people imagine), but temperatures can drop to 13-16 degrees at night. Always bring an extra layer."
+      }
+    },
+    {
+      "id": "dia-de-partido-kansas-city",
+      "cityId": "kansas-city",
+      "slug": "kansas-city",
+      "lastUpdated": "2026-03-26",
+      "stadium": "arrowhead-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Power and Light District, Plaza Country Club, Crossroads Arts District",
+        "en": "Power and Light District, Country Club Plaza, Crossroads Arts District"
+      },
+      "food": {
+        "es": "Kansas City BBQ es legendario: Joe's Kansas City Bar-B-Que (en una gasolinera, pero increíble), Q39, Gates Bar-B-Q. Come antes — el BBQ local es parte de la experiencia mundialista.",
+        "en": "Kansas City BBQ is legendary: Joe's Kansas City Bar-B-Que (in a gas station, but incredible), Q39, Gates Bar-B-Q. Eat beforehand — local BBQ is part of the World Cup experience."
+      },
+      "transport": {
+        "es": "El Arrowhead Stadium tiene acceso principalmente por carro. El KC Streetcar no llega al estadio. Busca shuttles desde el Power and Light District o comparte Uber.",
+        "en": "Arrowhead Stadium is primarily accessible by car. The KC Streetcar does not reach the stadium. Look for shuttles from the Power and Light District or share an Uber."
+      },
+      "whatToBring": {
+        "es": "Ropa ligera para el dia (28-32 grados en junio), chaqueta para la noche (puede refrescar), protector solar, agua. El estadio es abierto.",
+        "en": "Light clothing for daytime (28-32 degrees in June), jacket for evening (can cool down), sunscreen, water. The stadium is open-air."
+      },
+      "weatherWarning": {
+        "es": "Kansas City en junio: caluroso y tormentoso. Las tormentas severas son posibles. Descarga la app de meteorologia local antes del partido y sigue las instrucciones del estadio.",
+        "en": "Kansas City in June: hot and stormy. Severe storms are possible. Download a local weather app before the match and follow stadium instructions."
+      }
+    },
+    {
+      "id": "dia-de-partido-boston",
+      "cityId": "boston",
+      "slug": "boston",
+      "lastUpdated": "2026-03-26",
+      "stadium": "gillette-stadium",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Faneuil Hall, Fenway Park area, South Boston, Patriot Place en Foxborough",
+        "en": "Faneuil Hall, Fenway Park area, South Boston, Patriot Place in Foxborough"
+      },
+      "food": {
+        "es": "Clam chowder en Faneuil Hall Marketplace, lobster roll (aunque caro), pizza en North End. Come en Boston antes de ir a Foxborough — las opciones en el estadio son limitadas y caras.",
+        "en": "Clam chowder at Faneuil Hall Marketplace, lobster roll (pricey but worth it), pizza in North End. Eat in Boston before going to Foxborough — stadium options are limited and pricey."
+      },
+      "transport": {
+        "es": "Tren MBTA Commuter Rail (Providence/Stoughton Line) desde South Station hasta Foxborough — servicio especial los dias de partido. Llega con tiempo porque los trenes se llenan.",
+        "en": "MBTA Commuter Rail (Providence/Stoughton Line) from South Station to Foxborough — special service on match days. Arrive early because trains fill up."
+      },
+      "whatToBring": {
+        "es": "Capas de ropa (Boston en junio puede ser fresco o caluroso), impermeable, calzado comodo. El Gillette Stadium es abierto — las condiciones climáticas importan.",
+        "en": "Layers (Boston in June can be cool or warm), rain jacket, comfortable shoes. Gillette Stadium is open-air — weather conditions matter."
+      },
+      "weatherWarning": {
+        "es": "Junio en Boston: temperatura de 20-26 grados, con posibilidad de lluvia. La manana puede ser fresca y la tarde calurosa. Lleva capas y paraguas.",
+        "en": "June in Boston: temperature of 20-26 degrees, with possibility of rain. Morning can be cool and afternoon warm. Bring layers and an umbrella."
+      }
+    },
+    {
+      "id": "dia-de-partido-toronto",
+      "cityId": "toronto",
+      "slug": "toronto",
+      "lastUpdated": "2026-03-26",
+      "stadium": "bmo-field",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Distillery District, Harbourfront, Nathan Phillips Square, Dundas Square",
+        "en": "Distillery District, Harbourfront, Nathan Phillips Square, Dundas Square"
+      },
+      "food": {
+        "es": "Toronto es una de las ciudades mas multiculturales del mundo: Kensington Market (comida de todo el mundo), St. Lawrence Market (quesos, carnes, pescado fresco), Little Portugal y Little Italy.",
+        "en": "Toronto is one of the world's most multicultural cities: Kensington Market (food from everywhere), St. Lawrence Market (cheeses, meats, fresh fish), Little Portugal and Little Italy."
+      },
+      "transport": {
+        "es": "TTC (Metro de Toronto) hasta Exhibition Station (cerca de BMO Field) o Streetcar 509/511. El estadio esta en Exhibition Place, muy bien conectado al centro de Toronto.",
+        "en": "TTC (Toronto Metro) to Exhibition Station (near BMO Field) or Streetcar 509/511. The stadium is at Exhibition Place, very well connected to downtown Toronto."
+      },
+      "whatToBring": {
+        "es": "Capas de ropa (Toronto en junio tiene dias calurosos y noches frescas: 18-24 grados), impermeable por si llueve, tarjeta PRESTO para el transporte.",
+        "en": "Layers (Toronto in June has warm days and cool nights: 18-24 degrees), rain jacket in case of rain, PRESTO card for transit."
+      },
+      "weatherWarning": {
+        "es": "Junio en Toronto es agradable: 20-24 grados con sol frecuente. Las lluvias son moderadas. El BMO Field es abierto — lleva impermeable liviano.",
+        "en": "June in Toronto is pleasant: 20-24 degrees with frequent sun. Rainfall is moderate. BMO Field is open-air — bring a light rain jacket."
+      }
+    },
+    {
+      "id": "dia-de-partido-vancouver",
+      "cityId": "vancouver",
+      "slug": "vancouver",
+      "lastUpdated": "2026-03-26",
+      "stadium": "bc-place",
+      "arriveHours": 2,
+      "fanZones": {
+        "es": "Granville Island, Gastown, Robson Street, BC Place area en Downtown",
+        "en": "Granville Island, Gastown, Robson Street, BC Place area Downtown"
+      },
+      "food": {
+        "es": "Vancouver tiene una escena gastronomica asiatica excepcional (Richmond es el barrio con la mejor comida china fuera de China). Prueba dim sum en Richmond o sushi en el centro. Granville Island Market para comida gourmet.",
+        "en": "Vancouver has an exceptional Asian food scene (Richmond has the best Chinese food outside China). Try dim sum in Richmond or sushi downtown. Granville Island Market for gourmet food."
+      },
+      "transport": {
+        "es": "SkyTrain Stadium-Chinatown Station — el BC Place esta literalmente al lado de la estacion. Es la sede mas facil de llegar en transporte publico de todo el Mundial.",
+        "en": "SkyTrain Stadium-Chinatown Station — BC Place is literally next to the station. It is the easiest venue to reach by public transport in the entire World Cup."
+      },
+      "whatToBring": {
+        "es": "Impermeable (Vancouver tiene fama de lluviosa, aunque junio es relativamente seco), capas para la noche. El BC Place esta techado y climatizado.",
+        "en": "Rain jacket (Vancouver has a rainy reputation, although June is relatively dry), layers for the evening. BC Place is roofed and climate-controlled."
+      },
+      "weatherWarning": {
+        "es": "Junio es uno de los meses mas secos y soleados de Vancouver: 17-22 grados. Las noches pueden ser frescas. El BC Place cubierto hace que el clima exterior sea menos relevante.",
+        "en": "June is one of Vancouver's driest and sunniest months: 17-22 degrees. Evenings can be cool. The covered BC Place makes outdoor weather less relevant."
+      }
+    }
+  ]
+}

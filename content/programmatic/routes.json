@@ -1,0 +1,379 @@
+{
+  "routes": [
+    {
+      "id": "ciudad-de-mexico-a-monterrey",
+      "from": "ciudad-de-mexico",
+      "to": "monterrey",
+      "slugs": {
+        "es": "ciudad-de-mexico-a-monterrey",
+        "en": "mexico-city-to-monterrey"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 95,
+      "flightCostMin": 40,
+      "flightCostMax": 120,
+      "airlines": ["Aeromexico", "VivaAerobus", "Volaris"],
+      "busOperator": "ETN / Omnibus de Mexico",
+      "busDuration": 780,
+      "busCostMin": 20,
+      "busCostMax": 45,
+      "driveDistance": 915,
+      "driveDuration": 600,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "El vuelo es la opcion mas practica. La carretera federal es segura y bien sefializada, pero el trayecto en carro es largo para un fin de semana mundialista.",
+        "en": "Flying is the most practical option. The federal highway is safe and well-signposted, but the drive is long for a World Cup weekend trip."
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-a-guadalajara",
+      "from": "ciudad-de-mexico",
+      "to": "guadalajara",
+      "slugs": {
+        "es": "ciudad-de-mexico-a-guadalajara",
+        "en": "mexico-city-to-guadalajara"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 60,
+      "flightCostMin": 30,
+      "flightCostMax": 90,
+      "airlines": ["Aeromexico", "VivaAerobus", "Volaris"],
+      "busOperator": "Primera Plus / ETN",
+      "busDuration": 360,
+      "busCostMin": 18,
+      "busCostMax": 35,
+      "driveDistance": 540,
+      "driveDuration": 330,
+      "recommendedMode": "bus",
+      "travelTip": {
+        "es": "El autobus de primera clase es la mejor relacion calidad-precio: comodo, puntual y llega directo al centro de Guadalajara. El vuelo es rapido pero con traslados al aeropuerto casi no ahorras tiempo.",
+        "en": "First-class bus is the best value: comfortable, punctual, and arrives directly at Guadalajara city center. Flying is fast but with airport transfers you barely save time."
+      }
+    },
+    {
+      "id": "guadalajara-a-monterrey",
+      "from": "guadalajara",
+      "to": "monterrey",
+      "slugs": {
+        "es": "guadalajara-a-monterrey",
+        "en": "guadalajara-to-monterrey"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 80,
+      "flightCostMin": 45,
+      "flightCostMax": 130,
+      "airlines": ["VivaAerobus", "Volaris", "Aeromexico"],
+      "busOperator": "ETN / Omnibus",
+      "busDuration": 540,
+      "busCostMin": 25,
+      "busCostMax": 50,
+      "driveDistance": 720,
+      "driveDuration": 480,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela — el autobus tarda demasiado para un viaje de partido. Los vuelos en VivaAerobus suelen ser economicos si los reservas con antelacion.",
+        "en": "Fly — the bus takes too long for a match day trip. VivaAerobus flights are usually affordable if booked in advance."
+      }
+    },
+    {
+      "id": "nueva-york-a-miami",
+      "from": "nueva-york-nueva-jersey",
+      "to": "miami",
+      "slugs": {
+        "es": "nueva-york-a-miami",
+        "en": "new-york-to-miami"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 175,
+      "flightCostMin": 80,
+      "flightCostMax": 250,
+      "airlines": ["American Airlines", "JetBlue", "Spirit", "Frontier"],
+      "busOperator": "Greyhound / Flixbus",
+      "busDuration": 1440,
+      "busCostMin": 50,
+      "busCostMax": 120,
+      "driveDistance": 1760,
+      "driveDuration": 1080,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela sin duda. El autobus tarda mas de 24 horas. JetBlue y Spirit ofrecen tarifas muy competitivas en esta ruta.",
+        "en": "Fly without a doubt. The bus takes over 24 hours. JetBlue and Spirit offer very competitive fares on this route."
+      }
+    },
+    {
+      "id": "nueva-york-a-boston",
+      "from": "nueva-york-nueva-jersey",
+      "to": "boston",
+      "slugs": {
+        "es": "nueva-york-a-boston",
+        "en": "new-york-to-boston"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 60,
+      "flightCostMin": 70,
+      "flightCostMax": 200,
+      "airlines": ["American Airlines", "JetBlue", "Delta"],
+      "busOperator": "Flixbus / Megabus / Peter Pan",
+      "busDuration": 240,
+      "busCostMin": 15,
+      "busCostMax": 50,
+      "driveDistance": 350,
+      "driveDuration": 225,
+      "recommendedMode": "bus",
+      "travelTip": {
+        "es": "El autobus es la mejor opcion: sale del centro, llega al centro y cuesta una fraccion del vuelo. Con traslados al aeropuerto, el vuelo no ahorra tiempo real.",
+        "en": "The bus is the best option: departs from downtown, arrives downtown, and costs a fraction of flying. With airport transfers, flying saves no real time."
+      }
+    },
+    {
+      "id": "dallas-a-houston",
+      "from": "dallas",
+      "to": "houston",
+      "slugs": {
+        "es": "dallas-a-houston",
+        "en": "dallas-to-houston"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 65,
+      "flightCostMin": 80,
+      "flightCostMax": 200,
+      "airlines": ["Southwest", "American Airlines", "United"],
+      "busOperator": "Greyhound / Flixbus",
+      "busDuration": 270,
+      "busCostMin": 20,
+      "busCostMax": 60,
+      "driveDistance": 390,
+      "driveDuration": 225,
+      "recommendedMode": "drive",
+      "travelTip": {
+        "es": "El carro es lo mas practico en Texas: la autopista I-45 es directa y hay estacionamiento disponible cerca de los estadios. Comparte el costo entre amigos.",
+        "en": "Driving is the most practical in Texas: I-45 is direct and parking is available near the stadiums. Split costs with friends."
+      }
+    },
+    {
+      "id": "los-angeles-a-san-francisco",
+      "from": "los-angeles",
+      "to": "san-francisco",
+      "slugs": {
+        "es": "los-angeles-a-san-francisco",
+        "en": "los-angeles-to-san-francisco"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 65,
+      "flightCostMin": 60,
+      "flightCostMax": 180,
+      "airlines": ["Southwest", "United", "Alaska", "Spirit"],
+      "busOperator": "Flixbus / Greyhound",
+      "busDuration": 420,
+      "busCostMin": 25,
+      "busCostMax": 70,
+      "driveDistance": 560,
+      "driveDuration": 350,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela — la I-5 puede tener trafico horrible. Southwest ofrece vuelos frecuentes y economicos. Llega al SFO o al OAK (mas barato y cerca de San Jose).",
+        "en": "Fly — I-5 traffic can be horrible. Southwest offers frequent and cheap flights. Land at SFO or OAK (cheaper and closer to San Jose)."
+      }
+    },
+    {
+      "id": "toronto-a-nueva-york",
+      "from": "toronto",
+      "to": "nueva-york-nueva-jersey",
+      "slugs": {
+        "es": "toronto-a-nueva-york",
+        "en": "toronto-to-new-york"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 90,
+      "flightCostMin": 100,
+      "flightCostMax": 280,
+      "airlines": ["Air Canada", "Porter", "American Airlines"],
+      "busOperator": "Greyhound / FlixBus Canada",
+      "busDuration": 720,
+      "busCostMin": 50,
+      "busCostMax": 120,
+      "driveDistance": 840,
+      "driveDuration": 540,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Vuela y considera la cruce fronterizo: necesitaras pasaporte vigente. Porter Airlines ofrece vuelos directos con buen precio desde el centro de Toronto (Billy Bishop Airport).",
+        "en": "Fly and remember the border crossing: you will need a valid passport. Porter Airlines offers direct flights at good prices from downtown Toronto (Billy Bishop Airport)."
+      }
+    },
+    {
+      "id": "miami-a-atlanta",
+      "from": "miami",
+      "to": "atlanta",
+      "slugs": {
+        "es": "miami-a-atlanta",
+        "en": "miami-to-atlanta"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 110,
+      "flightCostMin": 70,
+      "flightCostMax": 220,
+      "airlines": ["Delta", "Spirit", "Frontier", "American Airlines"],
+      "busOperator": "Greyhound / Flixbus",
+      "busDuration": 660,
+      "busCostMin": 30,
+      "busCostMax": 90,
+      "driveDistance": 1100,
+      "driveDuration": 640,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Delta tiene el hub en Atlanta — vuelos frecuentes y economicos. El autobus tarda 11+ horas; solo para los mas aventureros con presupuesto muy ajustado.",
+        "en": "Delta hubs in Atlanta — frequent and affordable flights. The bus takes 11+ hours; only for the most adventurous on very tight budgets."
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-a-los-angeles",
+      "from": "ciudad-de-mexico",
+      "to": "los-angeles",
+      "slugs": {
+        "es": "ciudad-de-mexico-a-los-angeles",
+        "en": "mexico-city-to-los-angeles"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 215,
+      "flightCostMin": 120,
+      "flightCostMax": 400,
+      "airlines": ["Aeromexico", "United", "Volaris", "VivaAerobus"],
+      "busOperator": "No disponible (cruce fronterizo)",
+      "busDuration": null,
+      "busCostMin": null,
+      "busCostMax": null,
+      "driveDistance": 3600,
+      "driveDuration": 3000,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Solo avion es practico. Aeromexico y Volaris tienen vuelos directos. Reserva con 2-3 meses de anticipacion para mejores tarifas. Los precios suben mucho durante el Mundial.",
+        "en": "Only flying is practical. Aeromexico and Volaris have direct flights. Book 2-3 months in advance for best fares. Prices spike significantly during the World Cup."
+      }
+    },
+    {
+      "id": "monterrey-a-dallas",
+      "from": "monterrey",
+      "to": "dallas",
+      "slugs": {
+        "es": "monterrey-a-dallas",
+        "en": "monterrey-to-dallas"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 115,
+      "flightCostMin": 80,
+      "flightCostMax": 280,
+      "airlines": ["Aeromexico", "VivaAerobus", "American Airlines"],
+      "busOperator": "No recomendado (cruce fronterizo)",
+      "busDuration": null,
+      "busCostMin": null,
+      "busCostMax": null,
+      "driveDistance": 1050,
+      "driveDuration": 780,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Monterrey es la ciudad mexicana mas cercana a Dallas — vuelo de menos de 2 horas. Asegurate de tener visa americana si la necesitas. El cruce terrestre en Laredo o Nuevo Laredo toma mucho tiempo durante el Mundial.",
+        "en": "Monterrey is the closest Mexican city to Dallas — less than a 2-hour flight. Make sure you have a US visa if required. Land crossing at Laredo or Nuevo Laredo takes a long time during the World Cup."
+      }
+    },
+    {
+      "id": "guadalajara-a-dallas",
+      "from": "guadalajara",
+      "to": "dallas",
+      "slugs": {
+        "es": "guadalajara-a-dallas",
+        "en": "guadalajara-to-dallas"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 180,
+      "flightCostMin": 100,
+      "flightCostMax": 350,
+      "airlines": ["Volaris", "Aeromexico", "American Airlines"],
+      "busOperator": "No recomendado",
+      "busDuration": null,
+      "busCostMin": null,
+      "busCostMax": null,
+      "driveDistance": 2100,
+      "driveDuration": 1800,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Volaris opera esta ruta con frecuencia y buen precio. Reserva con anticipacion — los vuelos de Guadalajara a Texas se llenan rapido durante el Mundial.",
+        "en": "Volaris operates this route frequently and affordably. Book in advance — flights from Guadalajara to Texas fill up fast during the World Cup."
+      }
+    },
+    {
+      "id": "seattle-a-vancouver",
+      "from": "seattle",
+      "to": "vancouver",
+      "slugs": {
+        "es": "seattle-a-vancouver",
+        "en": "seattle-to-vancouver"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 40,
+      "flightCostMin": 80,
+      "flightCostMax": 200,
+      "airlines": ["Air Canada", "Alaska Airlines"],
+      "busOperator": "Greyhound / BoltBus / Quick Shuttle",
+      "busDuration": 180,
+      "busCostMin": 20,
+      "busCostMax": 60,
+      "driveDistance": 230,
+      "driveDuration": 180,
+      "recommendedMode": "bus",
+      "travelTip": {
+        "es": "El autobus o el carro son las mejores opciones — solo son 3 horas. El Quick Shuttle va directo de Downtown Seattle al aeropuerto de Vancouver (YVR). Recuerda el pasaporte para cruzar a Canada.",
+        "en": "Bus or drive are the best options — it is only 3 hours. Quick Shuttle goes direct from Downtown Seattle to Vancouver Airport (YVR). Remember your passport to enter Canada."
+      }
+    },
+    {
+      "id": "boston-a-filadelfia",
+      "from": "boston",
+      "to": "filadelfia",
+      "slugs": {
+        "es": "boston-a-filadelfia",
+        "en": "boston-to-philadelphia"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 60,
+      "flightCostMin": 80,
+      "flightCostMax": 220,
+      "airlines": ["American Airlines", "JetBlue", "Delta"],
+      "busOperator": "Greyhound / Megabus / FlixBus",
+      "busDuration": 330,
+      "busCostMin": 15,
+      "busCostMax": 50,
+      "driveDistance": 480,
+      "driveDuration": 300,
+      "recommendedMode": "bus",
+      "travelTip": {
+        "es": "El autobus gana: sale de South Station, llega a Filadelfia en 5-6 horas por menos de $30. El Amtrak (tren) es otra excelente opcion — rapido, comodo y puntual en el corredor del noreste.",
+        "en": "The bus wins: departs from South Station, arrives in Philadelphia in 5-6 hours for under $30. Amtrak (train) is another excellent option — fast, comfortable, and punctual on the Northeast Corridor."
+      }
+    },
+    {
+      "id": "ciudad-de-mexico-a-nueva-york",
+      "from": "ciudad-de-mexico",
+      "to": "nueva-york-nueva-jersey",
+      "slugs": {
+        "es": "ciudad-de-mexico-a-nueva-york",
+        "en": "mexico-city-to-new-york"
+      },
+      "lastUpdated": "2026-03-26",
+      "flightDuration": 290,
+      "flightCostMin": 150,
+      "flightCostMax": 500,
+      "airlines": ["Aeromexico", "United", "Volaris", "American Airlines"],
+      "busOperator": "No disponible",
+      "busDuration": null,
+      "busCostMin": null,
+      "busCostMax": null,
+      "driveDistance": 5200,
+      "driveDuration": null,
+      "recommendedMode": "flight",
+      "travelTip": {
+        "es": "Aeromexico tiene vuelos directos MEX-JFK. El vuelo dura unas 5 horas. Considera llegar a Newark (EWR) — suele ser mas barato y tiene buenas conexiones de tren a Manhattan.",
+        "en": "Aeromexico has direct MEX-JFK flights. The flight is about 5 hours. Consider arriving at Newark (EWR) — it is usually cheaper and has good train connections to Manhattan."
+      }
+    }
+  ]
+}

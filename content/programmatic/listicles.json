@@ -1,0 +1,302 @@
+{
+  "listicles": [
+    {
+      "id": "estadios-por-capacidad",
+      "slug": "estadios-mundial-2026-por-capacidad",
+      "topic": "capacity",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Los 16 estadios del Mundial 2026 ordenados por capacidad",
+        "en": "All 16 World Cup 2026 Stadiums Ranked by Capacity"
+      },
+      "description": {
+        "es": "Ranking completo de los 16 estadios del Mundial 2026 por capacidad. El Azteca encabeza la lista con 87,523 aficionados.",
+        "en": "Complete ranking of all 16 World Cup 2026 stadiums by capacity. The Azteca leads the list with 87,523 fans."
+      },
+      "items": [
+        { "rank": 1, "entityId": "estadio-azteca", "type": "stadium", "value": 87523, "unit": "personas" },
+        { "rank": 2, "entityId": "metlife-stadium", "type": "stadium", "value": 82500, "unit": "personas" },
+        { "rank": 3, "entityId": "att-stadium", "type": "stadium", "value": 80000, "unit": "personas" },
+        { "rank": 4, "entityId": "arrowhead-stadium", "type": "stadium", "value": 76416, "unit": "personas" },
+        { "rank": 5, "entityId": "sofi-stadium", "type": "stadium", "value": 70240, "unit": "personas" },
+        { "rank": 6, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 71000, "unit": "personas" },
+        { "rank": 7, "entityId": "nrg-stadium", "type": "stadium", "value": 72220, "unit": "personas" },
+        { "rank": 8, "entityId": "lumen-field", "type": "stadium", "value": 68740, "unit": "personas" },
+        { "rank": 9, "entityId": "levis-stadium", "type": "stadium", "value": 68500, "unit": "personas" },
+        { "rank": 10, "entityId": "lincoln-financial-field", "type": "stadium", "value": 69176, "unit": "personas" },
+        { "rank": 11, "entityId": "gillette-stadium", "type": "stadium", "value": 65878, "unit": "personas" },
+        { "rank": 12, "entityId": "hard-rock-stadium", "type": "stadium", "value": 64767, "unit": "personas" },
+        { "rank": 13, "entityId": "estadio-bbva", "type": "stadium", "value": 53500, "unit": "personas" },
+        { "rank": 14, "entityId": "bc-place", "type": "stadium", "value": 54500, "unit": "personas" },
+        { "rank": 15, "entityId": "estadio-akron", "type": "stadium", "value": 49850, "unit": "personas" },
+        { "rank": 16, "entityId": "bmo-field", "type": "stadium", "value": 30000, "unit": "personas" }
+      ]
+    },
+    {
+      "id": "ciudades-mas-baratas",
+      "slug": "ciudades-mas-baratas-mundial-2026",
+      "topic": "cheapest",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las ciudades sede mas baratas del Mundial 2026",
+        "en": "The Cheapest Host Cities for the 2026 World Cup"
+      },
+      "description": {
+        "es": "Ranking de las 16 ciudades sede del Mundial 2026 por costo de viaje. Ciudad de Mexico encabeza como la mas economica.",
+        "en": "Ranking of the 16 World Cup 2026 host cities by travel cost. Mexico City leads as the most affordable."
+      },
+      "items": [
+        { "rank": 1, "entityId": "guadalajara", "type": "city", "value": 65, "unit": "USD/noche hotel" },
+        { "rank": 2, "entityId": "ciudad-de-mexico", "type": "city", "value": 70, "unit": "USD/noche hotel" },
+        { "rank": 3, "entityId": "monterrey", "type": "city", "value": 75, "unit": "USD/noche hotel" },
+        { "rank": 4, "entityId": "kansas-city", "type": "city", "value": 120, "unit": "USD/noche hotel" },
+        { "rank": 5, "entityId": "dallas", "type": "city", "value": 140, "unit": "USD/noche hotel" },
+        { "rank": 6, "entityId": "houston", "type": "city", "value": 130, "unit": "USD/noche hotel" },
+        { "rank": 7, "entityId": "atlanta", "type": "city", "value": 130, "unit": "USD/noche hotel" },
+        { "rank": 8, "entityId": "filadelfia", "type": "city", "value": 150, "unit": "USD/noche hotel" },
+        { "rank": 9, "entityId": "miami", "type": "city", "value": 160, "unit": "USD/noche hotel" },
+        { "rank": 10, "entityId": "seattle", "type": "city", "value": 160, "unit": "USD/noche hotel" },
+        { "rank": 11, "entityId": "los-angeles", "type": "city", "value": 180, "unit": "USD/noche hotel" },
+        { "rank": 12, "entityId": "vancouver", "type": "city", "value": 160, "unit": "USD/noche hotel" },
+        { "rank": 13, "entityId": "toronto", "type": "city", "value": 170, "unit": "USD/noche hotel" },
+        { "rank": 14, "entityId": "boston", "type": "city", "value": 190, "unit": "USD/noche hotel" },
+        { "rank": 15, "entityId": "san-francisco", "type": "city", "value": 200, "unit": "USD/noche hotel" },
+        { "rank": 16, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 250, "unit": "USD/noche hotel" }
+      ]
+    },
+    {
+      "id": "ciudades-gastronomia",
+      "slug": "mejores-ciudades-gastronomia-mundial-2026",
+      "topic": "food",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las mejores ciudades para comer bien durante el Mundial 2026",
+        "en": "Best World Cup 2026 Cities for Food Lovers"
+      },
+      "description": {
+        "es": "Ranking de las ciudades sede del Mundial 2026 por calidad y variedad gastronomica. Ciudad de Mexico y Nueva York lideran.",
+        "en": "Ranking of World Cup 2026 host cities by food quality and variety. Mexico City and New York lead the way."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "Patrimonio inmaterial UNESCO. Tacos al pastor, mole, tlayudas, mercados.", "en": "UNESCO intangible heritage. Tacos al pastor, mole, tlayudas, markets." } },
+        { "rank": 2, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "La ciudad con mas restaurantes Michelin del mundo. Cualquier cocina del planeta.", "en": "The city with the most Michelin-starred restaurants in the world. Any cuisine on the planet." } },
+        { "rank": 3, "entityId": "los-angeles", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Mejor comida mexicana de EEUU, fusion asiatica, food trucks legendarios.", "en": "Best Mexican food in the US, Asian fusion, legendary food trucks." } },
+        { "rank": 4, "entityId": "guadalajara", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Birria, tortas ahogadas, tepache. Cuna de la gastronomia jalisciense.", "en": "Birria, tortas ahogadas, tepache. Cradle of Jalisco gastronomy." } },
+        { "rank": 5, "entityId": "miami", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Vibrante escena latina: cubano, peruana, venezolana. South Beach nightlife.", "en": "Vibrant Latin scene: Cuban, Peruvian, Venezuelan. South Beach nightlife." } },
+        { "rank": 6, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "La ciudad mas multicultural del mundo. Increible variedad asiatica, caribena, africana.", "en": "The world's most multicultural city. Incredible Asian, Caribbean, African variety." } },
+        { "rank": 7, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Farm-to-table, Mission District tacos, Dim Sum en Richmond. Alta cocina californiana.", "en": "Farm-to-table, Mission District tacos, Dim Sum in Richmond. High California cuisine." } },
+        { "rank": 8, "entityId": "houston", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Diversidad sorprendente. Fajitas originales en Ninfa's, BBQ texano, mariscos.", "en": "Surprising diversity. Original fajitas at Ninfa's, Texas BBQ, seafood." } },
+        { "rank": 9, "entityId": "monterrey", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Capital del cabrito y las carnes asadas. Ambiente de asador incomparable.", "en": "Capital of cabrito and grilled meats. Unmatched grill atmosphere." } },
+        { "rank": 10, "entityId": "boston", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Clam chowder, lobster roll, North End italiana. Escena de cerveza artesanal vibrante.", "en": "Clam chowder, lobster roll, North End Italian. Vibrant craft beer scene." } }
+      ]
+    },
+    {
+      "id": "estadios-historicos",
+      "slug": "estadios-mas-historicos-mundial-2026",
+      "topic": "historic",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Los estadios mas historicos del Mundial 2026",
+        "en": "The Most Historic Stadiums of the 2026 World Cup"
+      },
+      "description": {
+        "es": "Ranking de los estadios sede del Mundial 2026 por historia e importancia futbolistica. El Estadio Azteca es el mas historico del mundo.",
+        "en": "Ranking of World Cup 2026 stadiums by history and football significance. Estadio Azteca is the most historic in the world."
+      },
+      "items": [
+        { "rank": 1, "entityId": "estadio-azteca", "type": "stadium", "value": 10, "unit": "puntuacion /10", "note": { "es": "Primer estadio en albergar 3 Copas del Mundo. La Mano de Dios. Inaugurado en 1966.", "en": "First stadium to host 3 World Cups. The Hand of God. Opened in 1966." } },
+        { "rank": 2, "entityId": "estadio-akron", "type": "stadium", "value": 7, "unit": "puntuacion /10", "note": { "es": "Inaugurado en 2010. Una de las obras arquitectonicas mas impresionantes de Mexico.", "en": "Opened in 2010. One of Mexico's most impressive architectural works." } },
+        { "rank": 3, "entityId": "estadio-bbva", "type": "stadium", "value": 7, "unit": "puntuacion /10", "note": { "es": "Considerado el mejor estadio de Mexico actualmente. Inaugurado en 2015.", "en": "Considered the best stadium in Mexico currently. Opened in 2015." } },
+        { "rank": 4, "entityId": "metlife-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10", "note": { "es": "Sede de la final del Mundial 2026. Super Bowl XLVIII en 2014. Uno de los mas grandes del mundo.", "en": "Host of the 2026 World Cup Final. Super Bowl XLVIII in 2014. One of the largest in the world." } },
+        { "rank": 5, "entityId": "att-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10", "note": { "es": "El palacio de Jerry Jones. La pantalla de video mas grande de un estadio deportivo.", "en": "Jerry Jones's palace. The largest video screen in a sports stadium." } },
+        { "rank": 6, "entityId": "arrowhead-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10", "note": { "es": "El estadio mas ruidoso de la NFL segun el record Guinness. Inaugurado en 1972.", "en": "The loudest NFL stadium according to Guinness World Records. Opened in 1972." } },
+        { "rank": 7, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10", "note": { "es": "Techo retractil iconico. Premio al mejor estadio del mundo 2019. Sede de la Copa America 2024.", "en": "Iconic retractable roof. World's best stadium award 2019. Hosted Copa America 2024." } },
+        { "rank": 8, "entityId": "gillette-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10", "note": { "es": "Casa de los Patriots y Revolution. 6 Super Bowls ganados aqui. Inaugurado en 2002.", "en": "Home of the Patriots and Revolution. 6 Super Bowls won here. Opened in 2002." } },
+        { "rank": 9, "entityId": "sofi-stadium", "type": "stadium", "value": 6, "unit": "puntuacion /10", "note": { "es": "El estadio mas caro jamas construido (5.5 mil millones USD). Sede del Super Bowl LVI.", "en": "The most expensive stadium ever built ($5.5 billion USD). Hosted Super Bowl LVI." } },
+        { "rank": 10, "entityId": "lumen-field", "type": "stadium", "value": 6, "unit": "puntuacion /10", "note": { "es": "Inaugurado en 2002. Famoso por su atmósfera electrorizante y los '12th Man' fans.", "en": "Opened in 2002. Famous for its electrifying atmosphere and the '12th Man' fans." } }
+      ]
+    },
+    {
+      "id": "ciudades-familias",
+      "slug": "mejores-ciudades-familias-mundial-2026",
+      "topic": "families",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las mejores ciudades sede del Mundial 2026 para familias con ninos",
+        "en": "Best 2026 World Cup Cities for Families with Children"
+      },
+      "description": {
+        "es": "Ranking de ciudades sede del Mundial 2026 segun facilidad para familias: seguridad, transporte, atracciones y costos.",
+        "en": "Ranking of World Cup 2026 host cities for family-friendliness: safety, transport, attractions and costs."
+      },
+      "items": [
+        { "rank": 1, "entityId": "vancouver", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "Playa, montana, Stanley Park, acuario. Segura, limpia, facil de moverse.", "en": "Beach, mountain, Stanley Park, aquarium. Safe, clean, easy to get around." } },
+        { "rank": 2, "entityId": "toronto", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "CN Tower, Centro de Ciencias, Ripley's Aquarium, animales de la naturaleza.", "en": "CN Tower, Science Centre, Ripley's Aquarium, nature animals." } },
+        { "rank": 3, "entityId": "seattle", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Space Needle, Museum of Pop Culture, Pike Place, Woodland Park Zoo.", "en": "Space Needle, Museum of Pop Culture, Pike Place, Woodland Park Zoo." } },
+        { "rank": 4, "entityId": "boston", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Freedom Trail, New England Aquarium, USS Constitution, museos excepcionales.", "en": "Freedom Trail, New England Aquarium, USS Constitution, exceptional museums." } },
+        { "rank": 5, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Golden Gate, Exploratorium, Alcatraz, cable cars. Clima suave pero frio.", "en": "Golden Gate, Exploratorium, Alcatraz, cable cars. Mild but cool climate." } },
+        { "rank": 6, "entityId": "ciudad-de-mexico", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Museos para ninos, Bosque de Chapultepec, zoológico gratuito, Lucha Libre.", "en": "Children's museums, Bosque de Chapultepec, free zoo, Lucha Libre." } },
+        { "rank": 7, "entityId": "dallas", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Legoland, Dallas World Aquarium, Perot Museum of Nature and Science.", "en": "Legoland, Dallas World Aquarium, Perot Museum of Nature and Science." } },
+        { "rank": 8, "entityId": "los-angeles", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Disneyland, Universal Studios, Santa Monica Beach, California Science Center.", "en": "Disneyland, Universal Studios, Santa Monica Beach, California Science Center." } },
+        { "rank": 9, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Georgia Aquarium (el mayor del mundo), World of Coca-Cola, CNN Studio Tours.", "en": "Georgia Aquarium (largest in the world), World of Coca-Cola, CNN Studio Tours." } },
+        { "rank": 10, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Central Park, American Museum of Natural History, Statue of Liberty. Caro pero incomparable.", "en": "Central Park, American Museum of Natural History, Statue of Liberty. Pricey but unmatched." } }
+      ]
+    },
+    {
+      "id": "ciudades-transporte",
+      "slug": "mejores-ciudades-transporte-publico-mundial-2026",
+      "topic": "transport",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las ciudades del Mundial 2026 con mejor transporte publico",
+        "en": "Best Public Transport in World Cup 2026 Host Cities"
+      },
+      "description": {
+        "es": "Ranking de las ciudades sede del Mundial 2026 segun calidad del transporte publico. Ideal para fans que viajan sin carro.",
+        "en": "Ranking of World Cup 2026 host cities by public transport quality. Ideal for fans traveling without a car."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "Metro (12 lineas), Metrobus (7 lineas), tren suburbano. $0.25 USD por viaje.", "en": "Metro (12 lines), Metrobus (7 lines), suburban train. $0.25 USD per ride." } },
+        { "rank": 2, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Subway 24/7, buses, NJ Transit. La red de transporte publico mas usada de EEUU.", "en": "Subway 24/7, buses, NJ Transit. The most-used public transport network in the US." } },
+        { "rank": 3, "entityId": "vancouver", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "SkyTrain al estadio, Seabus, buses integrados. Tarjeta Compass. Altamente eficiente.", "en": "SkyTrain to stadium, Seabus, integrated buses. Compass Card. Highly efficient." } },
+        { "rank": 4, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "TTC (metro, buses, streetcars). GO Transit para suburbios. Tarjeta PRESTO.", "en": "TTC (metro, buses, streetcars). GO Transit for suburbs. PRESTO card." } },
+        { "rank": 5, "entityId": "boston", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "MBTA (T): metro, buses, commuter rail. Historico sistema del noreste de EEUU.", "en": "MBTA (T): metro, buses, commuter rail. Historic Northeast US system." } },
+        { "rank": 6, "entityId": "seattle", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Link Light Rail directo al estadio, monorail, buses. Tarjeta ORCA.", "en": "Link Light Rail direct to stadium, monorail, buses. ORCA card." } },
+        { "rank": 7, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "MARTA metro al estadio, buses. Limitado pero funcional para el Mundial.", "en": "MARTA metro to stadium, buses. Limited but functional for the World Cup." } },
+        { "rank": 8, "entityId": "guadalajara", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Tren Ligero, Mi Bus, Mi Macro BRT. Buena cobertura en el centro.", "en": "Tren Ligero, Mi Bus, Mi Macro BRT. Good coverage in the center." } },
+        { "rank": 9, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "BART (hacia el estadio en Santa Clara via Caltrain), Muni, cable cars.", "en": "BART (to stadium in Santa Clara via Caltrain), Muni, cable cars." } },
+        { "rank": 10, "entityId": "filadelfia", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "SEPTA metro directo al Lincoln Financial Field. Buses y tranvias.", "en": "SEPTA metro direct to Lincoln Financial Field. Buses and trolleys." } }
+      ]
+    },
+    {
+      "id": "ciudades-vida-nocturna",
+      "slug": "mejores-ciudades-vida-nocturna-mundial-2026",
+      "topic": "nightlife",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las mejores ciudades del Mundial 2026 para la vida nocturna",
+        "en": "Best World Cup 2026 Cities for Nightlife"
+      },
+      "description": {
+        "es": "Ranking de las ciudades sede del Mundial 2026 para festejar despues del partido. Ciudad de Mexico y Miami lideran.",
+        "en": "Ranking of World Cup 2026 host cities for celebrating after the match. Mexico City and Miami lead."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "Roma, Condesa, Polanco. La ciudad que no duerme. Mezcal, pulque, clubs hasta el amanecer.", "en": "Roma, Condesa, Polanco. The city that never sleeps. Mezcal, pulque, clubs until dawn." } },
+        { "rank": 2, "entityId": "miami", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "South Beach, Wynwood, Brickell. Clubs de talla mundial. La fiesta latinoamericana mas grande de EEUU.", "en": "South Beach, Wynwood, Brickell. World-class clubs. The biggest Latin party in the US." } },
+        { "rank": 3, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "La ciudad que nunca duerme. Cualquier tipo de musica, cultura y ambiente hasta las 4 AM.", "en": "The city that never sleeps. Any type of music, culture and atmosphere until 4 AM." } },
+        { "rank": 4, "entityId": "los-angeles", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Hollywood, Sunset Strip, Silver Lake. DJs de talla mundial, clubs con terraza.", "en": "Hollywood, Sunset Strip, Silver Lake. World-class DJs, rooftop clubs." } },
+        { "rank": 5, "entityId": "guadalajara", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "La Minerva, Chapultepec, Tlaquepaque. Tequila y birria a cualquier hora.", "en": "La Minerva, Chapultepec, Tlaquepaque. Tequila and birria at any hour." } },
+        { "rank": 6, "entityId": "dallas", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Deep Ellum (musica en vivo), Uptown Dallas, Lower Greenville. Escena vibrante y variada.", "en": "Deep Ellum (live music), Uptown Dallas, Lower Greenville. Vibrant and varied scene." } },
+        { "rank": 7, "entityId": "houston", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Midtown, Montrose, Lower Westheimer. Scena musical y LGBTQ+ excelente.", "en": "Midtown, Montrose, Lower Westheimer. Excellent music and LGBTQ+ scene." } },
+        { "rank": 8, "entityId": "boston", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Lansdowne Street junto a Fenway, Faneuil Hall, Seaport District. Grandes festivales de musica.", "en": "Lansdowne Street near Fenway, Faneuil Hall, Seaport District. Major music festivals." } },
+        { "rank": 9, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Buckhead (clubs de lujo), Little Five Points (indie), Edgewood Avenue. Hip-hop capital.", "en": "Buckhead (luxury clubs), Little Five Points (indie), Edgewood Avenue. Hip-hop capital." } },
+        { "rank": 10, "entityId": "seattle", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Capitol Hill, Belltown, South Lake Union. Escena de musica en vivo legendaria (cuna del grunge).", "en": "Capitol Hill, Belltown, South Lake Union. Legendary live music scene (grunge birthplace)." } }
+      ]
+    },
+    {
+      "id": "estadios-arquitectura",
+      "slug": "estadios-mas-espectaculares-arquitectura-mundial-2026",
+      "topic": "architecture",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Los estadios mas espectaculares del Mundial 2026 por arquitectura",
+        "en": "The Most Spectacular World Cup 2026 Stadiums by Architecture"
+      },
+      "description": {
+        "es": "Ranking de los estadios del Mundial 2026 por diseno e impacto arquitectonico. Desde el legendario Azteca hasta el futurista SoFi Stadium.",
+        "en": "Ranking of World Cup 2026 stadiums by design and architectural impact. From the legendary Azteca to the futuristic SoFi Stadium."
+      },
+      "items": [
+        { "rank": 1, "entityId": "sofi-stadium", "type": "stadium", "value": 10, "unit": "puntuacion /10", "note": { "es": "Estadio mas caro del mundo. Techo translucido, pantalla gigante interior/exterior de 70,000 pies cuadrados.", "en": "Most expensive stadium in the world. Translucent roof, 70,000 sq ft interior/exterior giant screen." } },
+        { "rank": 2, "entityId": "mercedes-benz-stadium", "type": "stadium", "value": 10, "unit": "puntuacion /10", "note": { "es": "Techo retractil de 8 petalos. El estadio mas sostenible de la historia del deporte profesional.", "en": "8-petal retractable roof. The most sustainable stadium in professional sports history." } },
+        { "rank": 3, "entityId": "att-stadium", "type": "stadium", "value": 9, "unit": "puntuacion /10", "note": { "es": "La pantalla de video colgante mas grande del mundo (600 pies de largo). Espectacular desde dentro.", "en": "World's largest hanging video screen (600 feet long). Spectacular from inside." } },
+        { "rank": 4, "entityId": "estadio-akron", "type": "stadium", "value": 9, "unit": "puntuacion /10", "note": { "es": "Diseno futurista con cascadas de agua y jardin botanico integrado. Referencia mundial.", "en": "Futuristic design with water cascades and integrated botanical garden. World reference." } },
+        { "rank": 5, "entityId": "metlife-stadium", "type": "stadium", "value": 8, "unit": "puntuacion /10", "note": { "es": "Fachada de aluminio con iluminacion dinamica. El estadio dual de dos franquicias (Giants + Jets).", "en": "Aluminum facade with dynamic lighting. The dual-franchise stadium (Giants + Jets)." } },
+        { "rank": 6, "entityId": "estadio-azteca", "type": "stadium", "value": 8, "unit": "puntuacion /10", "note": { "es": "Inaugurado en 1966 y aun imponente. Icono arquitectonico de Mexico y el futbol mundial.", "en": "Opened in 1966 and still imposing. Architectural icon of Mexico and world football." } },
+        { "rank": 7, "entityId": "lumen-field", "type": "stadium", "value": 8, "unit": "puntuacion /10", "note": { "es": "Techo parcial que canaliza el ruido y crea una atmosfera unica. Vista increible al Downtown Seattle.", "en": "Partial roof that channels noise and creates a unique atmosphere. Incredible view of Downtown Seattle." } },
+        { "rank": 8, "entityId": "bc-place", "type": "stadium", "value": 8, "unit": "puntuacion /10", "note": { "es": "Techo retractil blanco iconico del skyline de Vancouver. Completamente renovado para 2011.", "en": "Iconic white retractable roof on Vancouver's skyline. Completely renovated for 2011." } },
+        { "rank": 9, "entityId": "hard-rock-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10", "note": { "es": "Techo de sombrilla unico. Renovado en 2016 con shade canopy de diseno de vanguardia.", "en": "Unique shade canopy roof. Renovated in 2016 with cutting-edge canopy design." } },
+        { "rank": 10, "entityId": "arrowhead-stadium", "type": "stadium", "value": 7, "unit": "puntuacion /10", "note": { "es": "Clasico diseno de los 70s perfectamente conservado. El color rojo es iconico en el horizonte de KC.", "en": "Classic 70s design perfectly maintained. The red color is iconic on the KC skyline." } }
+      ]
+    },
+    {
+      "id": "ciudades-cultura",
+      "slug": "mejores-ciudades-cultura-museos-mundial-2026",
+      "topic": "culture",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las mejores ciudades del Mundial 2026 para turismo cultural y museos",
+        "en": "Best World Cup 2026 Cities for Cultural Tourism and Museums"
+      },
+      "description": {
+        "es": "Ranking de las ciudades sede del Mundial 2026 por oferta cultural, museos y atractivos historicos para turistas.",
+        "en": "Ranking of World Cup 2026 host cities by cultural offerings, museums and historical attractions for tourists."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "Templo Mayor, Palacio Nacional (murales de Rivera), Museo Frida Kahlo, Museo Nacional de Antropologia.", "en": "Templo Mayor, National Palace (Rivera murals), Frida Kahlo Museum, National Museum of Anthropology." } },
+        { "rank": 2, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "MoMA, Met, AMNH, Guggenheim, Brooklyn Museum, MoMA PS1. Decenas de museos gratuitos.", "en": "MoMA, Met, AMNH, Guggenheim, Brooklyn Museum, MoMA PS1. Dozens of free museums." } },
+        { "rank": 3, "entityId": "boston", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Freedom Trail (historia colonial), MFA Boston, Harvard Museum, USS Constitution.", "en": "Freedom Trail (colonial history), MFA Boston, Harvard Museum, USS Constitution." } },
+        { "rank": 4, "entityId": "san-francisco", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "SFMOMA, de Young Museum, Exploratorium, Asian Art Museum, California Academy of Sciences.", "en": "SFMOMA, de Young Museum, Exploratorium, Asian Art Museum, California Academy of Sciences." } },
+        { "rank": 5, "entityId": "los-angeles", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Getty Center, LACMA, MoCA, Hammer Museum, Hollywood History Museum.", "en": "Getty Center, LACMA, MoCA, Hammer Museum, Hollywood History Museum." } },
+        { "rank": 6, "entityId": "toronto", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Royal Ontario Museum, AGO, Aga Khan Museum, Toronto History Museum.", "en": "Royal Ontario Museum, AGO, Aga Khan Museum, Toronto History Museum." } },
+        { "rank": 7, "entityId": "guadalajara", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Instituto Cultural Cabanas (Patrimonio UNESCO), Museo Regional de Guadalajara, Hospicio Cabanas.", "en": "Instituto Cultural Cabanas (UNESCO Heritage), Guadalajara Regional Museum, Hospicio Cabanas." } },
+        { "rank": 8, "entityId": "filadelfia", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Independence Hall, Liberty Bell, Philadelphia Museum of Art, Barnes Foundation.", "en": "Independence Hall, Liberty Bell, Philadelphia Museum of Art, Barnes Foundation." } },
+        { "rank": 9, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "National Center for Civil and Human Rights, High Museum of Art, Martin Luther King Jr. Center.", "en": "National Center for Civil and Human Rights, High Museum of Art, Martin Luther King Jr. Center." } },
+        { "rank": 10, "entityId": "dallas", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Dallas Arts District (el mayor de EEUU), DMA, Nasher Sculpture Center, Perot Museum.", "en": "Dallas Arts District (largest in US), DMA, Nasher Sculpture Center, Perot Museum." } }
+      ]
+    },
+    {
+      "id": "ciudades-fans-latinos",
+      "slug": "mejores-ciudades-fans-latinoamericanos-mundial-2026",
+      "topic": "latin-fans",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las mejores ciudades del Mundial 2026 para fans latinoamericanos",
+        "en": "Best World Cup 2026 Cities for Latin American Fans"
+      },
+      "description": {
+        "es": "Ranking de ciudades sede del Mundial 2026 pensado especificamente para aficionados de Mexico, Colombia, Argentina y toda America Latina.",
+        "en": "Ranking of World Cup 2026 host cities specifically for fans from Mexico, Colombia, Argentina and all of Latin America."
+      },
+      "items": [
+        { "rank": 1, "entityId": "ciudad-de-mexico", "type": "city", "value": 10, "unit": "puntuacion /10", "note": { "es": "Casa. Espanol nativo en todas partes, cultura familiar, precios accesibles, atmosfera unica.", "en": "Home. Native Spanish everywhere, familiar culture, accessible prices, unique atmosphere." } },
+        { "rank": 2, "entityId": "miami", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "La ciudad mas latina de EEUU. Espanol en todas partes. Little Havana, barrios venezolanos, colombianos.", "en": "The most Latin city in the US. Spanish everywhere. Little Havana, Venezuelan and Colombian neighborhoods." } },
+        { "rank": 3, "entityId": "los-angeles", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "4 millones de mexicanos. East LA es Mexico en California. Futbol es religion en LA.", "en": "4 million Mexicans. East LA is Mexico in California. Football is religion in LA." } },
+        { "rank": 4, "entityId": "guadalajara", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Para fans latinoamericanos, Guadalajara es la experiencia mexicana mas autentica fuera de CDMX.", "en": "For Latin American fans, Guadalajara is the most authentic Mexican experience outside CDMX." } },
+        { "rank": 5, "entityId": "houston", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Mayor concentracion de venezolanos, salvadorenos y hondurenos en EEUU. Espanol muy comun.", "en": "Largest concentration of Venezuelans, Salvadorans and Hondurans in the US. Spanish very common." } },
+        { "rank": 6, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Washington Heights (dominicano), Jackson Heights (colombiano/ecuatoriano), Little Mexico en East Harlem.", "en": "Washington Heights (Dominican), Jackson Heights (Colombian/Ecuadorian), Little Mexico in East Harlem." } },
+        { "rank": 7, "entityId": "dallas", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Oak Cliff y Garland son comunidades mexicanas enormes. Comida latina excelente y precios razonables.", "en": "Oak Cliff and Garland are huge Mexican communities. Excellent Latin food and reasonable prices." } },
+        { "rank": 8, "entityId": "monterrey", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "La ciudad industrial mas grande del norte de Mexico. Espanol, cultura mexicana, precios accesibles.", "en": "The largest industrial city in northern Mexico. Spanish, Mexican culture, accessible prices." } },
+        { "rank": 9, "entityId": "toronto", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Comunidades latinoamericanas en Kensington Market y Scarborough. Canada es libre de visa para muchos paises de AL.", "en": "Latin American communities in Kensington Market and Scarborough. Canada is visa-free for many LA countries." } },
+        { "rank": 10, "entityId": "atlanta", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Gran comunidad guatemalteca y hondurena. Buford Highway: el corredor de comida latina mas diverso del sur de EEUU.", "en": "Large Guatemalan and Honduran community. Buford Highway: the most diverse Latin food corridor in the US South." } }
+      ]
+    },
+    {
+      "id": "ciudades-climaticas",
+      "slug": "ciudades-mejor-clima-junio-julio-mundial-2026",
+      "topic": "weather",
+      "lastUpdated": "2026-03-26",
+      "title": {
+        "es": "Las ciudades del Mundial 2026 con mejor clima en junio y julio",
+        "en": "Best Weather at World Cup 2026 Host Cities in June and July"
+      },
+      "description": {
+        "es": "Ranking de las ciudades sede del Mundial 2026 por clima durante junio y julio. Temperatura, lluvia y condiciones ideales para el fan viajero.",
+        "en": "Ranking of World Cup 2026 host cities by weather in June and July. Temperature, rain and ideal conditions for the traveling fan."
+      },
+      "items": [
+        { "rank": 1, "entityId": "san-francisco", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Fresco y soleado (17-20 grados). Sin calor ni lluvia excesivos. Ideal para caminar.", "en": "Cool and sunny (17-20 degrees). No excessive heat or rain. Ideal for walking." } },
+        { "rank": 2, "entityId": "los-angeles", "type": "city", "value": 9, "unit": "puntuacion /10", "note": { "es": "Calido y soleado (24-28 grados). Poca lluvia. El clima perfecto para el Mundial.", "en": "Warm and sunny (24-28 degrees). Little rain. The perfect weather for the World Cup." } },
+        { "rank": 3, "entityId": "seattle", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Junio es el mes mas seco de Seattle (15-20 grados). Mucho mas agradable de lo esperado.", "en": "June is Seattle's driest month (15-20 degrees). Much more pleasant than expected." } },
+        { "rank": 4, "entityId": "vancouver", "type": "city", "value": 8, "unit": "puntuacion /10", "note": { "es": "Fresco y relativamente seco en junio (17-22 grados). El BC Place cubierto protege del clima.", "en": "Cool and relatively dry in June (17-22 degrees). Covered BC Place protects from weather." } },
+        { "rank": 5, "entityId": "ciudad-de-mexico", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Mananas soleadas (18-22 grados). Lluvias vespertinas de 3-6 PM. Fresco por la altitud.", "en": "Sunny mornings (18-22 degrees). Afternoon rains 3-6 PM. Cool due to altitude." } },
+        { "rank": 6, "entityId": "toronto", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Calido y agradable (20-25 grados). Puede llover pero generalmente soleado.", "en": "Warm and pleasant (20-25 degrees). Can rain but generally sunny." } },
+        { "rank": 7, "entityId": "boston", "type": "city", "value": 7, "unit": "puntuacion /10", "note": { "es": "Temperatura agradable (20-26 grados). Algunas lluvias posibles. Impredecible a veces.", "en": "Pleasant temperature (20-26 degrees). Some rain possible. Sometimes unpredictable." } },
+        { "rank": 8, "entityId": "filadelfia", "type": "city", "value": 6, "unit": "puntuacion /10", "note": { "es": "Caluroso y humedo (26-30 grados). Posibles tormentas eléctricas vespertinas.", "en": "Hot and humid (26-30 degrees). Possible afternoon thunderstorms." } },
+        { "rank": 9, "entityId": "nueva-york-nueva-jersey", "type": "city", "value": 6, "unit": "puntuacion /10", "note": { "es": "Variable (22-28 grados). Puede ser caluroso y humedo. Posibles lluvias.", "en": "Variable (22-28 degrees). Can be hot and humid. Rain possible." } },
+        { "rank": 10, "entityId": "guadalajara", "type": "city", "value": 6, "unit": "puntuacion /10", "note": { "es": "Temporada de lluvias pero con temperaturas agradables (22-28 grados). Lluvias cortas.", "en": "Rainy season but pleasant temperatures (22-28 degrees). Short showers." } }
+      ]
+    }
+  ]
+}
