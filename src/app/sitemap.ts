@@ -43,6 +43,35 @@ function buildSitemapIndexAlternates(section: string): Record<string, string> {
   return languages
 }
 
+/**
+ * Build hreflang alternates for static pages that use the same path for all locales
+ * (programmatic pages where the filesystem path is the Spanish name).
+ */
+function buildProgrammaticAlternates(
+  fsPath: string,
+  slug: string,
+): Record<string, string> {
+  return {
+    'es-419': `${SITE_URL}/es/${fsPath}/${slug}`,
+    en: `${SITE_URL}/en/${fsPath}/${slug}`,
+    'x-default': `${SITE_URL}/es/${fsPath}/${slug}`,
+  }
+}
+
+/**
+ * Build hreflang alternates for static index pages using the same filesystem path for all locales.
+ */
+function buildStaticIndexAlternates(
+  esPath: string,
+  enPath: string,
+): Record<string, string> {
+  return {
+    'es-419': `${SITE_URL}/es/${esPath}`,
+    en: `${SITE_URL}/en/${enPath}`,
+    'x-default': `${SITE_URL}/es/${esPath}`,
+  }
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const cities = getCities()
   const stadiums = getStadiums()
@@ -128,6 +157,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Team index pages -- all 6 locales
+  const teamIndexAlternates = buildSitemapIndexAlternates('equipos')
+  for (const locale of locales) {
+    const pathSegment = pathTranslations.equipos[locale]
+    entries.push({
+      url: `${SITE_URL}/${locale}/${pathSegment}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: { languages: teamIndexAlternates },
+    })
+  }
+
   // Team pages -- all 6 locales
   for (const team of teams) {
     const teamAlternates = buildSitemapAlternates('equipos', team.slugs)
@@ -144,13 +186,120 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // City comparison pages -- es and en only (programmatic, no multi-locale slugs)
-  for (const comparison of comparisons) {
-    const comparisonAlternates: Record<string, string> = {
-      'es-419': `${SITE_URL}/es/comparar/${comparison.slugs.es}`,
-      en: `${SITE_URL}/en/compare/${comparison.slugs.en}`,
-      'x-default': `${SITE_URL}/es/comparar/${comparison.slugs.es}`,
+  // Travel subpages (viajes/*) -- es and en only
+  const travelSubpages = [
+    { path: 'viajes/vuelos', priority: 0.7 },
+    { path: 'viajes/vuelos/desde-mexico', priority: 0.6 },
+    { path: 'viajes/vuelos/desde-usa', priority: 0.6 },
+    { path: 'viajes/vuelos/desde-europa', priority: 0.6 },
+    { path: 'viajes/hospedaje', priority: 0.7 },
+    { path: 'viajes/transporte', priority: 0.7 },
+    { path: 'viajes/visa', priority: 0.7 },
+  ]
+  for (const { path, priority } of travelSubpages) {
+    const alts = buildStaticIndexAlternates(path, path)
+    entries.push({
+      url: `${SITE_URL}/es/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority,
+      alternates: { languages: alts },
+    })
+    entries.push({
+      url: `${SITE_URL}/en/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority,
+      alternates: { languages: alts },
+    })
+  }
+
+  // Fan guide pages (fan/*) -- es and en only
+  const fanSubpages = [
+    { path: 'fan/entradas', priority: 0.7 },
+    { path: 'fan/seguridad', priority: 0.7 },
+  ]
+  for (const { path, priority } of fanSubpages) {
+    const alts = buildStaticIndexAlternates(path, path)
+    entries.push({
+      url: `${SITE_URL}/es/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority,
+      alternates: { languages: alts },
+    })
+    entries.push({
+      url: `${SITE_URL}/en/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority,
+      alternates: { languages: alts },
+    })
+  }
+
+  // Tools index and subpages (herramientas/*) -- es and en only
+  const toolsPages = [
+    { path: 'herramientas', priority: 0.7 },
+    { path: 'herramientas/presupuesto', priority: 0.6 },
+    { path: 'herramientas/mapa', priority: 0.6 },
+    { path: 'herramientas/itinerario', priority: 0.6 },
+    { path: 'herramientas/conversor-moneda', priority: 0.6 },
+    { path: 'herramientas/lista-equipaje', priority: 0.6 },
+  ]
+  for (const { path, priority } of toolsPages) {
+    const alts = buildStaticIndexAlternates(path, path)
+    entries.push({
+      url: `${SITE_URL}/es/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority,
+      alternates: { languages: alts },
+    })
+    entries.push({
+      url: `${SITE_URL}/en/${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority,
+      alternates: { languages: alts },
+    })
+  }
+
+  // Calendar page (calendario) -- es and en only
+  const calendarAlts = buildStaticIndexAlternates('calendario', 'calendario')
+  entries.push({
+    url: `${SITE_URL}/es/calendario`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: { languages: calendarAlts },
+  })
+  entries.push({
+    url: `${SITE_URL}/en/calendario`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: { languages: calendarAlts },
+  })
+
+  // Legal/about pages -- all 6 locales
+  const legalSections = ['acerca', 'privacidad', 'divulgacion']
+  for (const section of legalSections) {
+    const legalAlternates = buildSitemapIndexAlternates(section)
+    for (const locale of locales) {
+      const pathSegment = pathTranslations[section]?.[locale] ?? section
+      entries.push({
+        url: `${SITE_URL}/${locale}/${pathSegment}`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0.3,
+        alternates: { languages: legalAlternates },
+      })
     }
+  }
+
+  // City comparison pages -- use ACTUAL filesystem paths (Spanish names for all locales)
+  for (const comparison of comparisons) {
+    const comparisonAlternates = buildProgrammaticAlternates('comparar', comparison.slugs.es)
     entries.push({
       url: `${SITE_URL}/es/comparar/${comparison.slugs.es}`,
       lastModified: new Date(comparison.lastUpdated),
@@ -159,7 +308,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: comparisonAlternates },
     })
     entries.push({
-      url: `${SITE_URL}/en/compare/${comparison.slugs.en}`,
+      url: `${SITE_URL}/en/comparar/${comparison.slugs.es}`,
       lastModified: new Date(comparison.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
@@ -167,13 +316,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // How-to-get (travel route) pages -- es and en only
+  // How-to-get (travel route) pages -- use ACTUAL filesystem paths (Spanish names)
   for (const route of routes) {
-    const routeAlternates: Record<string, string> = {
-      'es-419': `${SITE_URL}/es/como-llegar/${route.slugs.es}`,
-      en: `${SITE_URL}/en/how-to-get/${route.slugs.en}`,
-      'x-default': `${SITE_URL}/es/como-llegar/${route.slugs.es}`,
-    }
+    const routeAlternates = buildProgrammaticAlternates('como-llegar', route.slugs.es)
     entries.push({
       url: `${SITE_URL}/es/como-llegar/${route.slugs.es}`,
       lastModified: new Date(route.lastUpdated),
@@ -182,7 +327,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: routeAlternates },
     })
     entries.push({
-      url: `${SITE_URL}/en/how-to-get/${route.slugs.en}`,
+      url: `${SITE_URL}/en/como-llegar/${route.slugs.es}`,
       lastModified: new Date(route.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
@@ -190,13 +335,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // Match day guide pages -- es and en only
+  // Match day guide pages -- use ACTUAL filesystem paths (Spanish names)
   for (const guide of matchDayGuides) {
-    const guideAlternates: Record<string, string> = {
-      'es-419': `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
-      en: `${SITE_URL}/en/match-day/${guide.slug}`,
-      'x-default': `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
-    }
+    const guideAlternates = buildProgrammaticAlternates('dia-de-partido', guide.slug)
     entries.push({
       url: `${SITE_URL}/es/dia-de-partido/${guide.slug}`,
       lastModified: new Date(guide.lastUpdated),
@@ -205,7 +346,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: guideAlternates },
     })
     entries.push({
-      url: `${SITE_URL}/en/match-day/${guide.slug}`,
+      url: `${SITE_URL}/en/dia-de-partido/${guide.slug}`,
       lastModified: new Date(guide.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.75,
@@ -213,13 +354,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // Best-of listicle pages -- es and en only
+  // Best-of listicle pages -- use ACTUAL filesystem paths (Spanish names)
   for (const listicle of listicles) {
-    const listicleAlternates: Record<string, string> = {
-      'es-419': `${SITE_URL}/es/mejores/${listicle.slug}`,
-      en: `${SITE_URL}/en/best/${listicle.slug}`,
-      'x-default': `${SITE_URL}/es/mejores/${listicle.slug}`,
-    }
+    const listicleAlternates = buildProgrammaticAlternates('mejores', listicle.slug)
     entries.push({
       url: `${SITE_URL}/es/mejores/${listicle.slug}`,
       lastModified: new Date(listicle.lastUpdated),
@@ -228,7 +365,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: listicleAlternates },
     })
     entries.push({
-      url: `${SITE_URL}/en/best/${listicle.slug}`,
+      url: `${SITE_URL}/en/mejores/${listicle.slug}`,
       lastModified: new Date(listicle.lastUpdated),
       changeFrequency: 'monthly',
       priority: 0.7,
