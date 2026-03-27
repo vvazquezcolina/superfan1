@@ -6,12 +6,14 @@ import { buildAlternates } from '@/lib/i18n'
 import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
-import { buildSportsTeamJsonLd } from '@/lib/jsonld'
+import { buildSportsTeamJsonLd, buildFAQPageJsonLd, buildArticleJsonLd } from '@/lib/jsonld'
 import { TeamHero } from '@/components/team/TeamHero'
 import { TeamSection } from '@/components/team/TeamSection'
 import { TeamFAQ } from '@/components/team/TeamFAQ'
 import type { Locale, TeamPlayer } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/cities'
+
+const SITE_URL = 'https://www.superfaninfo.com'
 
 export async function generateStaticParams() {
   return getTeamSlugs().map(({ slug, lang }) => ({ lang, slug }))
@@ -71,6 +73,25 @@ export default async function TeamPage({
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
   const sportsTeamJsonLd = buildSportsTeamJsonLd(team, contentLocale)
 
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.equipos[lang as import('@/app/[lang]/dictionaries').Locale] ?? 'teams'
+  const canonicalUrl = `${SITE_URL}/${lang}/${section}/${slug}`
+
+  const articleJsonLd = buildArticleJsonLd({
+    headline: team.name[contentLocale],
+    description: team.description[contentLocale],
+    url: canonicalUrl,
+    dateModified: team.lastUpdated,
+    lang: contentLocale,
+  })
+
+  const faqJsonLd = team.content?.faq
+    ? buildFAQPageJsonLd(
+        team.content.faq as Array<{ question: { es: string; en: string }; answer: { es: string; en: string } }>,
+        contentLocale,
+      )
+    : null
+
   const lastUpdatedLabel = contentLocale === 'es' ? 'Ultima actualizacion' : 'Last updated'
   const playersHeading = team.content?.keyPlayers.title[contentLocale] ??
     (contentLocale === 'es' ? 'Jugadores Clave' : 'Key Players')
@@ -85,6 +106,16 @@ export default async function TeamPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsTeamJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Breadcrumbs items={breadcrumbs} />
 
       <TeamHero team={team} lang={contentLocale} />
