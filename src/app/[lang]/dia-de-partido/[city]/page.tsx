@@ -9,6 +9,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildFAQPageJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -26,27 +27,27 @@ export async function generateMetadata({
   const guide = getMatchDayGuide(city)
   if (!guide) return {}
 
-  const locale = lang as Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const cityData = getCityById(guide.cityId)
   if (!cityData) return {}
 
-  const cityName = cityData.name[locale]
-  const section = locale === 'es' ? 'dia-de-partido' : 'match-day'
+  const cityName = cityData.name[contentLocale]
+  const section = contentLocale === 'es' ? 'dia-de-partido' : 'match-day'
 
   const title =
-    locale === 'es'
+    contentLocale === 'es'
       ? `Guia del dia de partido en ${cityName} — Mundial 2026`
       : `Match Day Guide for ${cityName} — World Cup 2026`
 
   const description =
-    locale === 'es'
+    contentLocale === 'es'
       ? `Todo lo que necesitas para el dia de partido en ${cityName}: cuando llegar, transporte, donde comer, que llevar y zonas de fans.`
       : `Everything you need for match day in ${cityName}: when to arrive, transport, where to eat, what to bring and fan zones.`
 
   return buildPageMetadata({
     title,
     description,
-    lang: locale,
+    lang: contentLocale,
     path: `/${lang}/${section}/${city}`,
     alternates: {
       languages: {
@@ -68,18 +69,19 @@ export default async function MatchDayPage({
   const guide = getMatchDayGuide(city)
   if (!guide) notFound()
 
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const cityData = getCityById(guide.cityId)
   const stadium = getStadiumById(guide.stadium)
   if (!cityData) notFound()
 
   const dict = await getDictionary(locale)
-  const section = locale === 'es' ? 'dia-de-partido' : 'match-day'
-  const cityName = cityData.name[locale]
-  const stadiumName = stadium?.name[locale] ?? guide.stadium
+  const section = contentLocale === 'es' ? 'dia-de-partido' : 'match-day'
+  const cityName = cityData.name[contentLocale]
+  const stadiumName = stadium?.name[contentLocale] ?? guide.stadium
 
   const pageTitle =
-    locale === 'es'
+    contentLocale === 'es'
       ? `Guia del dia de partido en ${cityName} — Mundial 2026`
       : `Match Day Guide for ${cityName} — World Cup 2026`
 
@@ -87,7 +89,7 @@ export default async function MatchDayPage({
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/${section}/${guide.slug}`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
     cityName,
   )
@@ -137,57 +139,57 @@ export default async function MatchDayPage({
 
   const articleJsonLd = buildArticleJsonLd({
     headline: pageTitle,
-    description: locale === 'es' ? guide.food.es : guide.food.en,
+    description: contentLocale === 'es' ? guide.food.es : guide.food.en,
     url: canonicalUrl,
     dateModified: guide.lastUpdated,
-    lang: locale,
+    lang: contentLocale,
   })
 
-  const faqJsonLd = buildFAQPageJsonLd(faqs, locale)
+  const faqJsonLd = buildFAQPageJsonLd(faqs, contentLocale)
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const sections = [
     {
       id: 'cuando-llegar',
       icon: '⏰',
-      title: locale === 'es' ? 'Cuando llegar' : 'When to Arrive',
+      title: contentLocale === 'es' ? 'Cuando llegar' : 'When to Arrive',
       content:
-        locale === 'es'
+        contentLocale === 'es'
           ? `Llega al menos ${guide.arriveHours} horas antes del partido al ${stadiumName}. Los controles de seguridad son rigurosos y las filas en los accesos pueden ser largas. Si llegas en transporte publico, suma al menos 30-45 minutos extra al trayecto por el trafico en dias de partido.`
           : `Arrive at least ${guide.arriveHours} hours before the match at ${stadiumName}. Security checks are thorough and entry queues can be long. If using public transport, add at least 30-45 minutes to your journey for match day traffic.`,
     },
     {
       id: 'transporte',
       icon: '🚇',
-      title: locale === 'es' ? 'Transporte el dia del partido' : 'Match Day Transport',
-      content: guide.transport[locale],
+      title: contentLocale === 'es' ? 'Transporte el dia del partido' : 'Match Day Transport',
+      content: guide.transport[contentLocale],
     },
     {
       id: 'donde-comer',
       icon: '🍽',
-      title: locale === 'es' ? 'Donde comer antes del partido' : 'Where to Eat Before the Match',
-      content: guide.food[locale],
+      title: contentLocale === 'es' ? 'Donde comer antes del partido' : 'Where to Eat Before the Match',
+      content: guide.food[contentLocale],
     },
     {
       id: 'zonas-fans',
       icon: '📍',
-      title: locale === 'es' ? 'Zonas de fans' : 'Fan Zones',
+      title: contentLocale === 'es' ? 'Zonas de fans' : 'Fan Zones',
       content:
-        locale === 'es'
+        contentLocale === 'es'
           ? `Las principales zonas de fans y lugares para ver los partidos en ${cityName}: ${guide.fanZones.es}.`
           : `Main fan zones and viewing areas in ${cityName}: ${guide.fanZones.en}.`,
     },
     {
       id: 'que-llevar',
       icon: '🎒',
-      title: locale === 'es' ? 'Que llevar al estadio' : 'What to Bring to the Stadium',
-      content: guide.whatToBring[locale],
+      title: contentLocale === 'es' ? 'Que llevar al estadio' : 'What to Bring to the Stadium',
+      content: guide.whatToBring[contentLocale],
     },
     {
       id: 'clima',
       icon: '🌤',
-      title: locale === 'es' ? 'Preparacion para el clima' : 'Weather Preparation',
-      content: guide.weatherWarning[locale],
+      title: contentLocale === 'es' ? 'Preparacion para el clima' : 'Weather Preparation',
+      content: guide.weatherWarning[contentLocale],
     },
   ]
 
@@ -213,18 +215,18 @@ export default async function MatchDayPage({
         <header className="space-y-4">
           <h1 className="text-3xl font-bold md:text-4xl">{pageTitle}</h1>
           <p className="text-muted-foreground">
-            {stadiumName} &bull; {locale === 'es' ? 'Mundial FIFA 2026' : 'FIFA World Cup 2026'}
+            {stadiumName} &bull; {contentLocale === 'es' ? 'Mundial FIFA 2026' : 'FIFA World Cup 2026'}
           </p>
         </header>
 
         {/* Quick info card */}
         <aside className="rounded-lg border border-border p-6">
-          <p className="font-semibold mb-3">{locale === 'es' ? 'Datos clave' : 'Key facts'}</p>
+          <p className="font-semibold mb-3">{contentLocale === 'es' ? 'Datos clave' : 'Key facts'}</p>
           <ul className="space-y-2 text-sm">
             <li>
-              <span className="font-medium">{locale === 'es' ? 'Estadio: ' : 'Stadium: '}</span>
+              <span className="font-medium">{contentLocale === 'es' ? 'Estadio: ' : 'Stadium: '}</span>
               <a
-                href={`/${lang}/${locale === 'es' ? 'estadios' : 'stadiums'}/${stadium?.slugs[locale] ?? guide.stadium}`}
+                href={`/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}/${stadium?.slugs[contentLocale] ?? guide.stadium}`}
                 className="text-primary underline"
               >
                 {stadiumName}
@@ -232,9 +234,9 @@ export default async function MatchDayPage({
             </li>
             <li>
               <span className="font-medium">
-                {locale === 'es' ? 'Llega con anticipacion: ' : 'Arrive early: '}
+                {contentLocale === 'es' ? 'Llega con anticipacion: ' : 'Arrive early: '}
               </span>
-              {locale === 'es'
+              {contentLocale === 'es'
                 ? `${guide.arriveHours} horas antes del partido`
                 : `${guide.arriveHours} hours before the match`}
             </li>
@@ -254,13 +256,13 @@ export default async function MatchDayPage({
         {/* FAQ */}
         <section>
           <h2 className="text-2xl font-bold mb-6">
-            {locale === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions'}
+            {contentLocale === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions'}
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <details key={i} className="rounded-lg border border-border p-4">
-                <summary className="cursor-pointer font-semibold">{faq.question[locale]}</summary>
-                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{faq.answer[locale]}</p>
+                <summary className="cursor-pointer font-semibold">{faq.question[contentLocale]}</summary>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{faq.answer[contentLocale]}</p>
               </details>
             ))}
           </div>
@@ -269,24 +271,24 @@ export default async function MatchDayPage({
         {/* Cross links */}
         <section className="rounded-lg bg-muted/20 p-6">
           <h3 className="font-bold mb-3">
-            {locale === 'es' ? 'Mas informacion sobre ' : 'More about '}{cityName}
+            {contentLocale === 'es' ? 'Mas informacion sobre ' : 'More about '}{cityName}
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
               <a
-                href={`/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}/${cityData.slugs[locale]}`}
+                href={`/${lang}/${contentLocale === 'es' ? 'ciudades' : 'cities'}/${cityData.slugs[contentLocale]}`}
                 className="text-primary underline"
               >
-                {locale === 'es' ? `Guia completa de ${cityName}` : `Complete guide to ${cityName}`}
+                {contentLocale === 'es' ? `Guia completa de ${cityName}` : `Complete guide to ${cityName}`}
               </a>
             </li>
             {stadium && (
               <li>
                 <a
-                  href={`/${lang}/${locale === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[locale]}`}
+                  href={`/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[contentLocale]}`}
                   className="text-primary underline"
                 >
-                  {locale === 'es' ? `Guia del ${stadiumName}` : `${stadiumName} Guide`}
+                  {contentLocale === 'es' ? `Guia del ${stadiumName}` : `${stadiumName} Guide`}
                 </a>
               </li>
             )}
@@ -295,9 +297,9 @@ export default async function MatchDayPage({
 
         <footer className="border-t border-border pt-6">
           <p className="text-xs text-muted-foreground">
-            {locale === 'es' ? 'Datos actualizados: ' : 'Data updated: '}{guide.lastUpdated}
+            {contentLocale === 'es' ? 'Datos actualizados: ' : 'Data updated: '}{guide.lastUpdated}
             {' | '}
-            {locale === 'es'
+            {contentLocale === 'es'
               ? 'Este sitio no esta afiliado con la FIFA.'
               : 'This site is not affiliated with FIFA.'}
           </p>

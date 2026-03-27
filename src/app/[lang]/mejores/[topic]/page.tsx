@@ -9,6 +9,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildItemListJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -26,13 +27,13 @@ export async function generateMetadata({
   const listicle = getListicle(topic)
   if (!listicle) return {}
 
-  const locale = lang as Locale
-  const section = locale === 'es' ? 'mejores' : 'best'
+  const contentLocale: Locale = toContentLocale(lang)
+  const section = contentLocale === 'es' ? 'mejores' : 'best'
 
   return buildPageMetadata({
-    title: listicle.title[locale],
-    description: listicle.description[locale],
-    lang: locale,
+    title: listicle.title[contentLocale],
+    description: listicle.description[contentLocale],
+    lang: contentLocale,
     path: `/${lang}/${section}/${topic}`,
     alternates: {
       languages: {
@@ -61,17 +62,18 @@ export default async function ListiclePage({
   const listicle = getListicle(topic)
   if (!listicle) notFound()
 
-  const locale = lang as Locale
-  const section = locale === 'es' ? 'mejores' : 'best'
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
+  const section = contentLocale === 'es' ? 'mejores' : 'best'
 
   const dict = await getDictionary(locale)
   const canonicalUrl = `${SITE_URL}/${lang}/${section}/${listicle.slug}`
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/${section}/${listicle.slug}`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
-    listicle.title[locale],
+    listicle.title[contentLocale],
   )
 
   // Resolve entity names and URLs for each item
@@ -80,37 +82,37 @@ export default async function ListiclePage({
       const city = getCityById(item.entityId)
       return {
         rank: item.rank,
-        name: city?.name[locale] ?? item.entityId,
+        name: city?.name[contentLocale] ?? item.entityId,
         url: city
-          ? `/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}/${city.slugs[locale]}`
+          ? `/${lang}/${contentLocale === 'es' ? 'ciudades' : 'cities'}/${city.slugs[contentLocale]}`
           : null,
         value: item.value,
         unit: item.unit,
-        note: item.note?.[locale],
+        note: item.note?.[contentLocale],
         type: 'city' as const,
       }
     } else {
       const stadium = getStadiumById(item.entityId)
       return {
         rank: item.rank,
-        name: stadium?.name[locale] ?? item.entityId,
+        name: stadium?.name[contentLocale] ?? item.entityId,
         url: stadium
-          ? `/${lang}/${locale === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[locale]}`
+          ? `/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[contentLocale]}`
           : null,
         value: item.value,
         unit: item.unit,
-        note: item.note?.[locale],
+        note: item.note?.[contentLocale],
         type: 'stadium' as const,
       }
     }
   })
 
   const articleJsonLd = buildArticleJsonLd({
-    headline: listicle.title[locale],
-    description: listicle.description[locale],
+    headline: listicle.title[contentLocale],
+    description: listicle.description[contentLocale],
     url: canonicalUrl,
     dateModified: listicle.lastUpdated,
-    lang: locale,
+    lang: contentLocale,
   })
 
   const itemListJsonLd = buildItemListJsonLd(
@@ -118,7 +120,7 @@ export default async function ListiclePage({
       name: item.name,
       url: item.url ? `${SITE_URL}${item.url}` : canonicalUrl,
     })),
-    locale,
+    contentLocale,
   )
 
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
@@ -143,8 +145,8 @@ export default async function ListiclePage({
       <article className="mx-auto max-w-4xl space-y-12 py-6">
         {/* Hero */}
         <header className="space-y-4">
-          <h1 className="text-3xl font-bold md:text-4xl">{listicle.title[locale]}</h1>
-          <p className="text-lg text-muted-foreground">{listicle.description[locale]}</p>
+          <h1 className="text-3xl font-bold md:text-4xl">{listicle.title[contentLocale]}</h1>
+          <p className="text-lg text-muted-foreground">{listicle.description[contentLocale]}</p>
         </header>
 
         {/* Ranked list */}
@@ -200,10 +202,10 @@ export default async function ListiclePage({
                         className="mt-2 inline-block text-xs text-primary underline"
                       >
                         {item.type === 'city'
-                          ? locale === 'es'
+                          ? contentLocale === 'es'
                             ? `Ver guia de ${item.name}`
                             : `View ${item.name} guide`
-                          : locale === 'es'
+                          : contentLocale === 'es'
                             ? `Ver guia del estadio`
                             : `View stadium guide`}
                       </a>
@@ -218,25 +220,25 @@ export default async function ListiclePage({
         {/* Related listicles link block */}
         <section className="rounded-lg bg-muted/20 p-6">
           <h3 className="font-bold mb-3">
-            {locale === 'es' ? 'Mas rankings del Mundial 2026' : 'More World Cup 2026 Rankings'}
+            {contentLocale === 'es' ? 'Mas rankings del Mundial 2026' : 'More World Cup 2026 Rankings'}
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
               <a
-                href={`/${lang}/${locale === 'es' ? 'ciudades' : 'cities'}`}
+                href={`/${lang}/${contentLocale === 'es' ? 'ciudades' : 'cities'}`}
                 className="text-primary underline"
               >
-                {locale === 'es'
+                {contentLocale === 'es'
                   ? 'Guias completas de las 16 ciudades sede'
                   : 'Complete guides to all 16 host cities'}
               </a>
             </li>
             <li>
               <a
-                href={`/${lang}/${locale === 'es' ? 'estadios' : 'stadiums'}`}
+                href={`/${lang}/${contentLocale === 'es' ? 'estadios' : 'stadiums'}`}
                 className="text-primary underline"
               >
-                {locale === 'es'
+                {contentLocale === 'es'
                   ? 'Guias de los 16 estadios del Mundial'
                   : 'Guides to all 16 World Cup stadiums'}
               </a>
@@ -246,10 +248,10 @@ export default async function ListiclePage({
 
         <footer className="border-t border-border pt-6">
           <p className="text-xs text-muted-foreground">
-            {locale === 'es' ? 'Datos actualizados: ' : 'Data updated: '}
+            {contentLocale === 'es' ? 'Datos actualizados: ' : 'Data updated: '}
             {listicle.lastUpdated}
             {' | '}
-            {locale === 'es'
+            {contentLocale === 'es'
               ? 'Este sitio no esta afiliado con la FIFA. Los rankings son editoriales independientes.'
               : 'This site is not affiliated with FIFA. Rankings are independent editorial content.'}
           </p>

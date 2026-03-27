@@ -5,14 +5,21 @@ import { buildPageMetadata } from '@/lib/seo'
 import { buildJsonLdScript } from '@/lib/jsonld'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
-import { getCities } from '@/lib/content/cities'
+import { getCities, toContentLocale } from '@/lib/content/cities'
 import { BudgetCalculator } from '@/components/tools/BudgetCalculator'
 import type { Locale } from '@/lib/content/schemas'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -22,15 +29,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  const locale = lang as Locale
+  const dictLocale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
 
-  const dict = await getDictionary(locale)
-  const path = `/${locale}/herramientas/presupuesto`
+  const dict = await getDictionary(dictLocale)
+  const path = `/${lang}/herramientas/presupuesto`
 
   return buildPageMetadata({
     title: dict.tools.budgetTitle,
     description: dict.tools.budgetDescription,
-    lang: locale,
+    lang: contentLocale,
     path,
     alternates: {
       languages: {
@@ -49,20 +57,21 @@ export default async function PresupuestoPage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
 
   const dict = await getDictionary(locale)
-  const path = `/${locale}/herramientas/presupuesto`
+  const path = `/${lang}/herramientas/presupuesto`
   const canonicalUrl = `${SITE_URL}${path}`
 
   // Prepare city options for the client component
   const cities = getCities()
   const cityOptions = cities.map((city) => ({
     id: city.id,
-    name: city.name[locale],
+    name: city.name[contentLocale],
   }))
 
-  const breadcrumbs = generateBreadcrumbs(path, locale, dict.breadcrumbs, dict.tools.budgetHeading)
+  const breadcrumbs = generateBreadcrumbs(path, contentLocale, dict.breadcrumbs, dict.tools.budgetHeading)
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const softwareJsonLd = {
@@ -72,7 +81,7 @@ export default async function PresupuestoPage({
     description: dict.tools.budgetDescription,
     applicationCategory: 'UtilityApplication',
     url: canonicalUrl,
-    inLanguage: locale === 'es' ? 'es-419' : 'en',
+    inLanguage: contentLocale === 'es' ? 'es-419' : 'en',
     operatingSystem: 'Web browser',
     offers: {
       '@type': 'Offer',
@@ -99,7 +108,7 @@ export default async function PresupuestoPage({
           <p className="mt-3 text-lg text-muted">{dict.tools.budgetSubheading}</p>
         </header>
 
-        <BudgetCalculator cities={cityOptions} lang={locale} dict={dict.tools} />
+        <BudgetCalculator cities={cityOptions} lang={contentLocale} dict={dict.tools} />
       </div>
     </>
   )

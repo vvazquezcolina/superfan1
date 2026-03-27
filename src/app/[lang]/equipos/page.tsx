@@ -8,9 +8,17 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { Team, Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -20,20 +28,21 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
+  const contentLocale: Locale = toContentLocale(lang)
 
   const title =
-    lang === 'es'
+    contentLocale === 'es'
       ? 'Equipos del Mundial 2026 | SuperFan'
       : '2026 World Cup Teams | SuperFan'
   const description =
-    lang === 'es'
+    contentLocale === 'es'
       ? 'Conoce los 48 equipos clasificados al Mundial FIFA 2026. Historia, jugadores clave, trayectoria clasificatoria y guias para seguir a tu seleccion en Mexico, Estados Unidos y Canada.'
       : 'Discover all 48 teams qualified for the FIFA World Cup 2026. History, key players, qualifying path, and guides for following your team in Mexico, the United States, and Canada.'
 
   return buildPageMetadata({
     title,
     description,
-    lang: lang as Locale,
+    lang: contentLocale,
     path: `/${lang}/equipos`,
     alternates: buildIndexAlternates('equipos'),
   })
@@ -48,20 +57,20 @@ const CONFEDERATION_FLAGS: Record<string, string> = {
   OFC: '\u{1F1F3}\u{1F1FF}',
 }
 
-function TeamCard({ team, lang }: { team: Team; lang: Locale }) {
+function TeamCard({ team, lang, contentLocale }: { team: Team; lang: string; contentLocale: Locale }) {
   const flag = CONFEDERATION_FLAGS[team.confederation] ?? ''
-  const groupLabel = lang === 'es' ? 'Grupo' : 'Group'
-  const readMore = lang === 'es' ? 'Leer mas' : 'Read more'
-  const description = team.description[lang]
+  const groupLabel = contentLocale === 'es' ? 'Grupo' : 'Group'
+  const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
+  const description = team.description[contentLocale]
   const excerpt = description.length > 100 ? description.slice(0, 97) + '...' : description
 
   return (
     <a
-      href={`/${lang}/equipos/${team.slugs[lang]}`}
+      href={`/${lang}/equipos/${team.slugs[contentLocale]}`}
       className="group block rounded-lg border border-border p-5 shadow-sm transition-shadow hover:border-primary/50 hover:shadow-md"
     >
       <h3 className="text-base font-bold transition-colors group-hover:text-primary">
-        {flag} {team.name[lang]}
+        {flag} {team.name[contentLocale]}
       </h3>
       <div className="mt-1 flex flex-wrap items-center gap-2">
         {team.group && (
@@ -86,20 +95,21 @@ export default async function TeamIndexPage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const dict = await getDictionary(locale)
   const allTeams = getTeams()
 
   // Build item list for JSON-LD
   const teamListItems = allTeams.map((team) => ({
-    name: team.name[locale],
-    url: `https://www.superfaninfo.com/${lang}/equipos/${team.slugs[locale]}`,
+    name: team.name[contentLocale],
+    url: `https://www.superfaninfo.com/${lang}/equipos/${team.slugs[contentLocale]}`,
   }))
-  const itemListJsonLd = buildItemListJsonLd(teamListItems, locale)
+  const itemListJsonLd = buildItemListJsonLd(teamListItems, contentLocale)
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/equipos`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
@@ -120,13 +130,13 @@ export default async function TeamIndexPage({
   const sortedGroups = Object.keys(groupedTeams).sort()
 
   const intro =
-    locale === 'es'
+    contentLocale === 'es'
       ? 'Conoce los 48 equipos clasificados al Mundial FIFA 2026. Encuentra la historia, jugadores clave, trayectoria clasificatoria y guias de viaje para seguir a tu seleccion en Mexico, Estados Unidos y Canada.'
       : 'Discover all 48 teams qualified for the FIFA World Cup 2026. Find the history, key players, qualifying path, and travel guides to follow your team in Mexico, the United States, and Canada.'
 
-  const groupHeading = locale === 'es' ? 'Grupo' : 'Group'
-  const ungroupedHeading = locale === 'es' ? 'Sin grupo asignado' : 'Group Not Yet Assigned'
-  const pageTitle = locale === 'es' ? 'Equipos del Mundial 2026' : '2026 World Cup Teams'
+  const groupHeading = contentLocale === 'es' ? 'Grupo' : 'Group'
+  const ungroupedHeading = contentLocale === 'es' ? 'Sin grupo asignado' : 'Group Not Yet Assigned'
+  const pageTitle = contentLocale === 'es' ? 'Equipos del Mundial 2026' : '2026 World Cup Teams'
 
   return (
     <>
@@ -153,7 +163,7 @@ export default async function TeamIndexPage({
               </h2>
               <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
                 {teams.map((team) => (
-                  <TeamCard key={team.id} team={team} lang={locale} />
+                  <TeamCard key={team.id} team={team} lang={lang} contentLocale={contentLocale} />
                 ))}
               </div>
             </section>
@@ -165,7 +175,7 @@ export default async function TeamIndexPage({
             <h2 className="text-2xl font-bold">{ungroupedHeading}</h2>
             <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
               {ungrouped.map((team) => (
-                <TeamCard key={team.id} team={team} lang={locale} />
+                <TeamCard key={team.id} team={team} lang={lang} contentLocale={contentLocale} />
               ))}
             </div>
           </section>

@@ -22,10 +22,11 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {}
   const dict = await getDictionary(lang)
 
+  const { toContentLocale: getContentLocale } = await import('@/lib/content/cities')
   return buildPageMetadata({
     title: dict.site.tagline,
     description: dict.home.description,
-    lang: lang as Locale,
+    lang: getContentLocale(lang),
     path: `/${lang}`,
     alternates: buildHomeAlternates(),
   })
@@ -228,7 +229,7 @@ export default async function HomePage({
           <h2 className="text-2xl font-bold md:text-3xl">{dict.home.featuredCities}</h2>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredCities.map((city) => (
-              <FeaturedCityCard key={city.id} city={city} lang={locale} />
+              <FeaturedCityCard key={city.id} city={city} lang={lang} contentLocale={contentLocale} citiesPath={citiesPath} />
             ))}
           </div>
           <div className="mt-6 text-center">
@@ -249,7 +250,9 @@ export default async function HomePage({
               <FeaturedStadiumCard
                 key={stadium.id}
                 stadium={stadium}
-                lang={locale}
+                lang={lang}
+                contentLocale={contentLocale}
+                stadiumsPath={stadiumsPath}
                 dict={{ stadiumCapacity: dict.home.stadiumCapacity }}
               />
             ))}
@@ -315,7 +318,7 @@ export default async function HomePage({
         </section>
 
         <p className="mt-8 text-center text-sm text-muted">
-          {locale === 'es' ? 'Ultima actualizacion' : 'Last updated'}: {new Date().toISOString().split('T')[0]}
+          {contentLocale === 'es' ? 'Ultima actualizacion' : 'Last updated'}: {new Date().toISOString().split('T')[0]}
         </p>
       </div>
 

@@ -6,14 +6,21 @@ import { buildJsonLdScript } from '@/lib/jsonld'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { getStadiums } from '@/lib/content/stadiums'
-import { getCityById } from '@/lib/content/cities'
+import { getCityById, toContentLocale } from '@/lib/content/cities'
 import { InteractiveMap } from '@/components/tools/InteractiveMap'
 import type { Locale } from '@/lib/content/schemas'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -23,15 +30,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  const locale = lang as Locale
+  const dictLocale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
 
-  const dict = await getDictionary(locale)
-  const path = `/${locale}/herramientas/mapa`
+  const dict = await getDictionary(dictLocale)
+  const path = `/${lang}/herramientas/mapa`
 
   return buildPageMetadata({
     title: dict.tools.mapTitle,
     description: dict.tools.mapDescription,
-    lang: locale,
+    lang: contentLocale,
     path,
     alternates: {
       languages: {
@@ -50,10 +58,11 @@ export default async function MapaPage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
 
   const dict = await getDictionary(locale)
-  const path = `/${locale}/herramientas/mapa`
+  const path = `/${lang}/herramientas/mapa`
   const canonicalUrl = `${SITE_URL}${path}`
 
   // Build StadiumMarker[] for the client component (server-side data prep)
@@ -62,9 +71,9 @@ export default async function MapaPage({
     const city = getCityById(stadium.city)
     return {
       id: stadium.id,
-      name: stadium.name[locale],
+      name: stadium.name[contentLocale],
       cityId: stadium.city,
-      cityName: city?.name[locale] ?? stadium.city,
+      cityName: city?.name[contentLocale] ?? stadium.city,
       capacity: stadium.capacity,
       lat: stadium.coordinates.lat,
       lng: stadium.coordinates.lng,
@@ -74,12 +83,12 @@ export default async function MapaPage({
           : city?.country === 'canada'
             ? '#dc2626'
             : '#2563eb',
-      stadiumSlug: stadium.slugs[locale],
-      citySlug: city?.slugs[locale] ?? stadium.city,
+      stadiumSlug: stadium.slugs[contentLocale],
+      citySlug: city?.slugs[contentLocale] ?? stadium.city,
     }
   })
 
-  const breadcrumbs = generateBreadcrumbs(path, locale, dict.breadcrumbs, dict.tools.mapHeading)
+  const breadcrumbs = generateBreadcrumbs(path, contentLocale, dict.breadcrumbs, dict.tools.mapHeading)
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const softwareJsonLd = {
@@ -89,7 +98,7 @@ export default async function MapaPage({
     description: dict.tools.mapDescription,
     applicationCategory: 'UtilityApplication',
     url: canonicalUrl,
-    inLanguage: locale === 'es' ? 'es-419' : 'en',
+    inLanguage: contentLocale === 'es' ? 'es-419' : 'en',
     operatingSystem: 'Web browser',
     offers: {
       '@type': 'Offer',
@@ -118,7 +127,7 @@ export default async function MapaPage({
 
         <InteractiveMap
           stadiums={stadiumMarkers}
-          lang={locale}
+          lang={contentLocale}
           dict={{
             mapLoading: dict.tools.mapLoading,
             popupCapacity: dict.tools.popupCapacity,
@@ -128,7 +137,7 @@ export default async function MapaPage({
         />
 
         <p className="mt-4 text-sm text-muted">
-          {locale === 'es' ? '16 estadios en 3 paises' : '16 stadiums across 3 countries'}
+          {contentLocale === 'es' ? '16 estadios en 3 paises' : '16 stadiums across 3 countries'}
         </p>
       </div>
     </>

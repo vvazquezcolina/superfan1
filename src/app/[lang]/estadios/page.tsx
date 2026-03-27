@@ -9,9 +9,17 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { Stadium, Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -21,13 +29,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  const dict = await getDictionary(lang)
+  const dict = await getDictionary(lang as import('@/app/[lang]/dictionaries').Locale)
+  const contentLocale: Locale = toContentLocale(lang)
 
-  const section = lang === 'es' ? 'estadios' : 'stadiums'
+  const section = contentLocale === 'es' ? 'estadios' : 'stadiums'
   return buildPageMetadata({
     title: dict.stadium.indexTitle,
     description: dict.stadium.indexDescription,
-    lang: lang as Locale,
+    lang: contentLocale,
     path: `/${lang}/${section}`,
     alternates: buildIndexAlternates('estadios'),
   })
@@ -39,16 +48,17 @@ const countryFlags: Record<string, string> = {
   canada: '\u{1F1E8}\u{1F1E6}',
 }
 
-function StadiumCard({ stadium, lang }: { stadium: Stadium; lang: Locale }) {
-  const section = lang === 'es' ? 'estadios' : 'stadiums'
-  const slug = stadium.slugs[lang]
-  const overview = stadium.content.overview[lang]
+function StadiumCard({ stadium, lang }: { stadium: Stadium; lang: string }) {
+  const contentLang = toContentLocale(lang) as Locale
+  const section = contentLang === 'es' ? 'estadios' : 'stadiums'
+  const slug = stadium.slugs[contentLang] ?? stadium.slugs.es
+  const overview = stadium.content?.overview?.[contentLang] ?? stadium.content?.overview?.es ?? ''
   const excerpt = overview.length > 120 ? overview.slice(0, 117) + '...' : overview
-  const readMore = lang === 'es' ? 'Leer mas' : 'Read more'
-  const capacityLabel = lang === 'es' ? 'Capacidad' : 'Capacity'
+  const readMore = contentLang === 'es' ? 'Leer mas' : 'Read more'
+  const capacityLabel = contentLang === 'es' ? 'Capacidad' : 'Capacity'
 
   const city = getCityById(stadium.city)
-  const cityName = city?.name[lang] ?? stadium.city
+  const cityName = city?.name[contentLang] ?? stadium.city
 
   return (
     <a
@@ -56,7 +66,7 @@ function StadiumCard({ stadium, lang }: { stadium: Stadium; lang: Locale }) {
       className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
     >
       <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-        {stadium.name[lang]}
+        {stadium.name[contentLang]}
       </h3>
       <p className="mt-1 text-sm text-muted">
         {cityName} &middot; {capacityLabel}: {stadium.capacity.toLocaleString()}
@@ -78,26 +88,27 @@ export default async function StadiumIndexPage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const dict = await getDictionary(locale)
   const allStadiums = getStadiums()
   const stadiumsByCountry = getStadiumsByCountry()
 
-  const section = locale === 'es' ? 'estadios' : 'stadiums'
+  const section = contentLocale === 'es' ? 'estadios' : 'stadiums'
   const stadiumListItems = allStadiums.map((stadium) => ({
-    name: stadium.name[locale],
-    url: `https://www.superfaninfo.com/${lang}/${section}/${stadium.slugs[locale]}`,
+    name: stadium.name[contentLocale] ?? stadium.name.es,
+    url: `https://www.superfaninfo.com/${lang}/${section}/${stadium.slugs[contentLocale] ?? stadium.slugs.es}`,
   }))
-  const itemListJsonLd = buildItemListJsonLd(stadiumListItems, locale)
+  const itemListJsonLd = buildItemListJsonLd(stadiumListItems, contentLocale)
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/estadios`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
-  const intro = locale === 'es'
+  const intro = contentLocale === 'es'
     ? 'Conoce los 16 estadios que seran sede del Mundial 2026 en Mexico, Estados Unidos y Canada. Cada guia incluye informacion sobre capacidad, transporte, asientos, hoteles cercanos y accesibilidad para que planifiques tu experiencia al maximo.'
     : 'Discover the 16 stadiums hosting the 2026 World Cup in Mexico, the United States, and Canada. Each guide includes information about capacity, transport, seating, nearby hotels, and accessibility so you can plan your experience to the fullest.'
 
@@ -136,7 +147,7 @@ export default async function StadiumIndexPage({
               </h2>
               <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {countryStadiums.map((stadium) => (
-                  <StadiumCard key={stadium.id} stadium={stadium} lang={locale} />
+                  <StadiumCard key={stadium.id} stadium={stadium} lang={lang} />
                 ))}
               </div>
             </section>

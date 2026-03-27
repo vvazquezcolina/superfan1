@@ -5,14 +5,21 @@ import { buildPageMetadata } from '@/lib/seo'
 import { buildJsonLdScript } from '@/lib/jsonld'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
-import { getCities } from '@/lib/content/cities'
+import { getCities, toContentLocale } from '@/lib/content/cities'
 import { ItineraryPlanner } from '@/components/tools/ItineraryPlanner'
 import type { Locale } from '@/lib/content/schemas'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -22,15 +29,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  const locale = lang as Locale
+  const dictLocale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
 
-  const dict = await getDictionary(locale)
-  const path = `/${locale}/herramientas/itinerario`
+  const dict = await getDictionary(dictLocale)
+  const path = `/${lang}/herramientas/itinerario`
 
   return buildPageMetadata({
     title: dict.tools.itineraryTitle,
     description: dict.tools.itineraryDescription,
-    lang: locale,
+    lang: contentLocale,
     path,
     alternates: {
       languages: {
@@ -49,19 +57,20 @@ export default async function ItinerarioPage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
 
   const dict = await getDictionary(locale)
-  const path = `/${locale}/herramientas/itinerario`
+  const path = `/${lang}/herramientas/itinerario`
   const canonicalUrl = `${SITE_URL}${path}`
 
   const cities = getCities()
   const cityOptions = cities.map((city) => ({
     id: city.id,
-    name: city.name[locale],
+    name: city.name[contentLocale],
   }))
 
-  const breadcrumbs = generateBreadcrumbs(path, locale, dict.breadcrumbs, dict.tools.itineraryHeading)
+  const breadcrumbs = generateBreadcrumbs(path, contentLocale, dict.breadcrumbs, dict.tools.itineraryHeading)
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const softwareJsonLd = {
@@ -71,7 +80,7 @@ export default async function ItinerarioPage({
     description: dict.tools.itineraryDescription,
     applicationCategory: 'TravelApplication',
     url: canonicalUrl,
-    inLanguage: locale === 'es' ? 'es-419' : 'en',
+    inLanguage: contentLocale === 'es' ? 'es-419' : 'en',
     operatingSystem: 'Web browser',
     offers: {
       '@type': 'Offer',
@@ -100,7 +109,7 @@ export default async function ItinerarioPage({
 
         <ItineraryPlanner
           cities={cityOptions}
-          lang={locale}
+          lang={contentLocale}
           dict={dict.tools}
         />
       </div>

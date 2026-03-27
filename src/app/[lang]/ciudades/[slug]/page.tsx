@@ -14,6 +14,7 @@ import { CitySection } from '@/components/city/CitySection'
 import { CityFAQ } from '@/components/city/CityFAQ'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import type { Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 export async function generateStaticParams() {
   return getCitySlugs().map(({ slug, lang }) => ({ lang, slug }))
@@ -26,17 +27,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang, slug } = await params
   if (!hasLocale(lang)) return {}
-  const city = getCity(slug, lang as Locale)
+  const contentLocale: Locale = toContentLocale(lang)
+  const city = getCity(slug, lang)
   if (!city) return {}
 
-  const overview = city.content.overview[lang as Locale]
+  const overview = city.content.overview[contentLocale]
   const description = overview.length > 155 ? overview.slice(0, 152) + '...' : overview
 
-  const section = lang === 'es' ? 'ciudades' : 'cities'
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.ciudades[lang as import('@/app/[lang]/dictionaries').Locale] ?? 'cities'
   return buildPageMetadata({
-    title: city.name[lang as Locale],
+    title: city.name[contentLocale],
     description,
-    lang: lang as Locale,
+    lang: contentLocale,
     path: `/${lang}/${section}/${slug}`,
     alternates: buildAlternates('ciudades', city.slugs),
   })
@@ -79,35 +82,37 @@ export default async function CityPage({
 }) {
   const { lang, slug } = await params
   if (!hasLocale(lang)) notFound()
-  const city = getCity(slug, lang as Locale)
+  const city = getCity(slug, lang)
   if (!city) notFound()
 
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const dict = await getDictionary(locale)
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.ciudades[locale] ?? 'cities'
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/ciudades/${slug}`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
-    city.name[locale],
+    city.name[contentLocale],
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
-  const section = locale === 'es' ? 'ciudades' : 'cities'
   const canonicalUrl = `https://www.superfaninfo.com/${lang}/${section}/${slug}`
-  const placeJsonLd = buildPlaceJsonLd(city, locale)
-  const faqJsonLd = buildFAQPageJsonLd(city.content.faq, locale)
+  const placeJsonLd = buildPlaceJsonLd(city, contentLocale)
+  const faqJsonLd = buildFAQPageJsonLd(city.content.faq, contentLocale)
   const articleJsonLd = buildArticleJsonLd({
-    headline: city.name[locale],
-    description: city.content.overview[locale],
+    headline: city.name[contentLocale],
+    description: city.content.overview[contentLocale],
     url: canonicalUrl,
     dateModified: city.lastUpdated,
-    lang: locale,
+    lang: contentLocale,
   })
 
-  const sourcesLabel = locale === 'es' ? 'Fuentes' : 'Sources'
-  const backLabel = locale === 'es' ? 'Ver todas las ciudades' : 'View all cities'
-  const indexPath = locale === 'es' ? `/${lang}/ciudades` : `/${lang}/cities`
-  const lastUpdatedLabel = locale === 'es' ? 'Ultima actualizacion' : 'Last updated'
+  const sourcesLabel = dict.city.sources
+  const backLabel = dict.city.backToIndex
+  const indexPath = `/${lang}/${section}`
+  const lastUpdatedLabel = dict.city.lastUpdated
 
   return (
     <>
@@ -130,42 +135,42 @@ export default async function CityPage({
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="mx-auto max-w-4xl space-y-12 py-6">
-        <CityHero city={city} lang={locale} />
+        <CityHero city={city} lang={contentLocale} />
 
         <section className="mx-auto max-w-prose rounded-lg border-l-4 border-primary bg-primary/5 p-6">
           <p className="text-lg font-medium leading-relaxed">
-            {city.content.overview[locale].split('\n\n')[0]}
+            {city.content.overview[contentLocale].split('\n\n')[0]}
           </p>
         </section>
 
         <aside className="mx-auto max-w-prose rounded-lg bg-muted/10 p-4 text-sm">
-          <p className="font-semibold">{locale === 'es' ? 'Datos clave' : 'Key Facts'}</p>
+          <p className="font-semibold">{contentLocale === 'es' ? 'Datos clave' : 'Key Facts'}</p>
           <ul className="mt-2 list-disc pl-5 space-y-1">
-            <li>{locale === 'es' ? 'Estadio sede' : 'Host stadium'}: {getStadiumById(city.stadium)?.name[locale] ?? city.stadium}</li>
-            <li>{locale === 'es' ? 'Pais' : 'Country'}: {locale === 'es' ? (city.country === 'mexico' ? 'Mexico' : city.country === 'usa' ? 'Estados Unidos' : 'Canada') : (city.country === 'mexico' ? 'Mexico' : city.country === 'usa' ? 'United States' : 'Canada')}</li>
-            <li>{locale === 'es' ? 'Ubicacion' : 'Location'}: {city.coordinates.lat.toFixed(2)}N, {Math.abs(city.coordinates.lng).toFixed(2)}W</li>
+            <li>{contentLocale === 'es' ? 'Estadio sede' : 'Host stadium'}: {getStadiumById(city.stadium)?.name[contentLocale] ?? city.stadium}</li>
+            <li>{contentLocale === 'es' ? 'Pais' : 'Country'}: {contentLocale === 'es' ? (city.country === 'mexico' ? 'Mexico' : city.country === 'usa' ? 'Estados Unidos' : 'Canada') : (city.country === 'mexico' ? 'Mexico' : city.country === 'usa' ? 'United States' : 'Canada')}</li>
+            <li>{contentLocale === 'es' ? 'Ubicacion' : 'Location'}: {city.coordinates.lat.toFixed(2)}N, {Math.abs(city.coordinates.lng).toFixed(2)}W</li>
           </ul>
           <p className="mt-2 text-xs text-muted">
-            {locale === 'es' ? 'Fuente: FIFA.com, sitios oficiales de turismo' : 'Source: FIFA.com, official tourism sites'}
+            {contentLocale === 'es' ? 'Fuente: FIFA.com, sitios oficiales de turismo' : 'Source: FIFA.com, official tourism sites'}
           </p>
         </aside>
 
         {sectionKeys.map((key) => {
           const qh = questionHeaders[key]
-          const titleOverride = qh ? qh[locale].replace('{cityName}', city.name[locale]) : undefined
+          const titleOverride = qh ? qh[contentLocale].replace('{cityName}', city.name[contentLocale]) : undefined
           return (
             <React.Fragment key={key}>
               <CitySection
                 section={city.content[key]}
-                lang={locale}
+                lang={contentLocale}
                 id={sectionIds[key]}
                 titleOverride={titleOverride}
               />
               {key === 'neighborhoods' && (
                 <BookingWidget
-                  cityName={city.name[locale]}
+                  cityName={city.name[contentLocale]}
                   citySlug={slug}
-                  lang={locale}
+                  lang={contentLocale}
                   dict={dict.affiliate}
                 />
               )}
@@ -173,7 +178,7 @@ export default async function CityPage({
           )
         })}
 
-        <CityFAQ faqs={city.content.faq} lang={locale} />
+        <CityFAQ faqs={city.content.faq} lang={contentLocale} />
 
         <section className="mx-auto max-w-prose">
           <h2 className="text-2xl font-bold md:text-3xl">{sourcesLabel}</h2>

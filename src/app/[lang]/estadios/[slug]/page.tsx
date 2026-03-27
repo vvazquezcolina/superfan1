@@ -12,6 +12,7 @@ import { StadiumHero } from '@/components/stadium/StadiumHero'
 import { StadiumSection } from '@/components/stadium/StadiumSection'
 import { StadiumFAQ } from '@/components/stadium/StadiumFAQ'
 import type { Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 export async function generateStaticParams() {
   return getStadiumSlugs().map(({ slug, lang }) => ({ lang, slug }))
@@ -24,17 +25,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang, slug } = await params
   if (!hasLocale(lang)) return {}
-  const stadium = getStadium(slug, lang as Locale)
+  const contentLocale: Locale = toContentLocale(lang)
+  const stadium = getStadium(slug, lang)
   if (!stadium) return {}
 
-  const overview = stadium.content.overview[lang as Locale]
+  const overview = stadium.content.overview[contentLocale]
   const description = overview.length > 155 ? overview.slice(0, 152) + '...' : overview
 
-  const section = lang === 'es' ? 'estadios' : 'stadiums'
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.estadios[lang as import('@/app/[lang]/dictionaries').Locale] ?? 'stadiums'
   return buildPageMetadata({
-    title: stadium.name[lang as Locale],
+    title: stadium.name[contentLocale],
     description,
-    lang: lang as Locale,
+    lang: contentLocale,
     path: `/${lang}/${section}/${slug}`,
     alternates: buildAlternates('estadios', stadium.slugs),
   })
@@ -71,36 +74,38 @@ export default async function StadiumPage({
 }) {
   const { lang, slug } = await params
   if (!hasLocale(lang)) notFound()
-  const stadium = getStadium(slug, lang as Locale)
+  const stadium = getStadium(slug, lang)
   if (!stadium) notFound()
 
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const dict = await getDictionary(locale)
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.estadios[locale] ?? 'stadiums'
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/estadios/${slug}`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
-    stadium.name[locale],
+    stadium.name[contentLocale],
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const city = getCityById(stadium.city)
 
-  const section = locale === 'es' ? 'estadios' : 'stadiums'
   const canonicalUrl = `https://www.superfaninfo.com/${lang}/${section}/${slug}`
-  const stadiumJsonLd = buildStadiumJsonLd(stadium, city?.name[locale] ?? '', locale)
-  const faqJsonLd = buildFAQPageJsonLd(stadium.content.faq, locale)
+  const stadiumJsonLd = buildStadiumJsonLd(stadium, city?.name[contentLocale] ?? '', contentLocale)
+  const faqJsonLd = buildFAQPageJsonLd(stadium.content.faq, contentLocale)
   const articleJsonLd = buildArticleJsonLd({
-    headline: stadium.name[locale],
-    description: stadium.content.overview[locale],
+    headline: stadium.name[contentLocale],
+    description: stadium.content.overview[contentLocale],
     url: canonicalUrl,
     dateModified: stadium.lastUpdated,
-    lang: locale,
+    lang: contentLocale,
   })
 
   const sourcesLabel = dict.stadium.sources
   const backLabel = dict.stadium.backToIndex
-  const indexPath = locale === 'es' ? `/${lang}/estadios` : `/${lang}/stadiums`
+  const indexPath = `/${lang}/${section}`
   const lastUpdatedLabel = dict.stadium.lastUpdated
 
   return (
@@ -124,41 +129,41 @@ export default async function StadiumPage({
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="mx-auto max-w-4xl space-y-12 py-6">
-        <StadiumHero stadium={stadium} lang={locale} />
+        <StadiumHero stadium={stadium} lang={contentLocale} />
 
         <section className="mx-auto max-w-prose rounded-lg border-l-4 border-primary bg-primary/5 p-6">
           <p className="text-lg font-medium leading-relaxed">
-            {stadium.content.overview[locale].split('\n\n')[0]}
+            {stadium.content.overview[contentLocale].split('\n\n')[0]}
           </p>
         </section>
 
         <aside className="mx-auto max-w-prose rounded-lg bg-muted/10 p-4 text-sm">
-          <p className="font-semibold">{locale === 'es' ? 'Datos clave' : 'Key Facts'}</p>
+          <p className="font-semibold">{contentLocale === 'es' ? 'Datos clave' : 'Key Facts'}</p>
           <ul className="mt-2 list-disc pl-5 space-y-1">
-            <li>{locale === 'es' ? 'Capacidad' : 'Capacity'}: {stadium.capacity.toLocaleString()}</li>
-            <li>{locale === 'es' ? 'Ciudad sede' : 'Host city'}: {city?.name[locale]}</li>
-            <li>{locale === 'es' ? 'Ubicacion' : 'Location'}: {stadium.coordinates.lat.toFixed(2)}N, {Math.abs(stadium.coordinates.lng).toFixed(2)}W</li>
+            <li>{contentLocale === 'es' ? 'Capacidad' : 'Capacity'}: {stadium.capacity.toLocaleString()}</li>
+            <li>{contentLocale === 'es' ? 'Ciudad sede' : 'Host city'}: {city?.name[contentLocale]}</li>
+            <li>{contentLocale === 'es' ? 'Ubicacion' : 'Location'}: {stadium.coordinates.lat.toFixed(2)}N, {Math.abs(stadium.coordinates.lng).toFixed(2)}W</li>
           </ul>
           <p className="mt-2 text-xs text-muted">
-            {locale === 'es' ? 'Fuente: FIFA.com, sitio oficial del estadio' : 'Source: FIFA.com, official stadium site'}
+            {contentLocale === 'es' ? 'Fuente: FIFA.com, sitio oficial del estadio' : 'Source: FIFA.com, official stadium site'}
           </p>
         </aside>
 
         {sectionKeys.map((key) => {
           const qh = questionHeaders[key]
-          const titleOverride = qh ? qh[locale].replace('{stadiumName}', stadium.name[locale]) : undefined
+          const titleOverride = qh ? qh[contentLocale].replace('{stadiumName}', stadium.name[contentLocale]) : undefined
           return (
             <StadiumSection
               key={key}
               section={stadium.content[key]}
-              lang={locale}
+              lang={contentLocale}
               id={sectionIds[key]}
               titleOverride={titleOverride}
             />
           )
         })}
 
-        <StadiumFAQ faqs={stadium.content.faq} lang={locale} />
+        <StadiumFAQ faqs={stadium.content.faq} lang={contentLocale} />
 
         <section className="mx-auto max-w-prose">
           <h2 className="text-2xl font-bold md:text-3xl">{sourcesLabel}</h2>

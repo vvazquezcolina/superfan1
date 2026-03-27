@@ -8,9 +8,17 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildItemListJsonLd } from '@/lib/jsonld'
 import type { City, Locale } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 export async function generateStaticParams() {
-  return [{ lang: 'es' }, { lang: 'en' }]
+  return [
+    { lang: 'es' },
+    { lang: 'en' },
+    { lang: 'pt' },
+    { lang: 'fr' },
+    { lang: 'de' },
+    { lang: 'ar' },
+  ]
 }
 
 export async function generateMetadata({
@@ -20,13 +28,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  const dict = await getDictionary(lang)
+  const dict = await getDictionary(lang as import('@/app/[lang]/dictionaries').Locale)
+  const contentLocale: Locale = toContentLocale(lang)
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.ciudades[lang as import('@/app/[lang]/dictionaries').Locale] ?? 'cities'
 
-  const section = lang === 'es' ? 'ciudades' : 'cities'
   return buildPageMetadata({
     title: dict.city.indexTitle,
     description: dict.city.indexDescription,
-    lang: lang as Locale,
+    lang: contentLocale,
     path: `/${lang}/${section}`,
     alternates: buildIndexAlternates('ciudades'),
   })
@@ -38,21 +48,20 @@ const countryFlags: Record<string, string> = {
   canada: '\u{1F1E8}\u{1F1E6}',
 }
 
-function CityCard({ city, lang }: { city: City; lang: Locale }) {
-  const section = lang === 'es' ? 'ciudades' : 'cities'
-  const slug = city.slugs[lang]
-  const overview = city.content.overview[lang]
+function CityCard({ city, lang, contentLocale, citiesPath }: { city: City; lang: string; contentLocale: Locale; citiesPath: string }) {
+  const slug = city.slugs[contentLocale]
+  const overview = city.content.overview[contentLocale]
   const excerpt = overview.length > 120 ? overview.slice(0, 117) + '...' : overview
   const flag = countryFlags[city.country] ?? ''
-  const readMore = lang === 'es' ? 'Leer mas' : 'Read more'
+  const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
 
   return (
     <a
-      href={`/${lang}/${section}/${slug}`}
+      href={`/${lang}/${citiesPath}/${slug}`}
       className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
     >
       <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-        {flag} {city.name[lang]}
+        {flag} {city.name[contentLocale]}
       </h3>
       <p className="mt-1 text-sm text-muted">
         {city.stadium.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
@@ -74,26 +83,28 @@ export default async function CityIndexPage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
   const dict = await getDictionary(locale)
   const allCities = getCities()
   const citiesByCountry = getCitiesByCountry()
 
-  const section = locale === 'es' ? 'ciudades' : 'cities'
+  const { pathTranslations: pt2 } = await import('@/lib/i18n')
+  const citiesPath = pt2.ciudades[locale] ?? 'cities'
   const cityListItems = allCities.map((city) => ({
-    name: city.name[locale],
-    url: `https://www.superfaninfo.com/${lang}/${section}/${city.slugs[locale]}`,
+    name: city.name[contentLocale],
+    url: `https://www.superfaninfo.com/${lang}/${citiesPath}/${city.slugs[contentLocale]}`,
   }))
-  const itemListJsonLd = buildItemListJsonLd(cityListItems, locale)
+  const itemListJsonLd = buildItemListJsonLd(cityListItems, contentLocale)
 
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/ciudades`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
-  const intro = locale === 'es'
+  const intro = contentLocale === 'es'
     ? 'Descubre las 16 ciudades que seran sede del Mundial 2026 en Mexico, Estados Unidos y Canada. Cada guia incluye informacion sobre transporte, hospedaje, comida, seguridad y consejos culturales para fans latinoamericanos.'
     : 'Discover the 16 cities that will host the 2026 World Cup in Mexico, the United States, and Canada. Each guide includes information about transportation, accommodation, food, safety, and cultural tips for Latin American fans.'
 
@@ -132,7 +143,7 @@ export default async function CityIndexPage({
               </h2>
               <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {countryCities.map((city) => (
-                  <CityCard key={city.id} city={city} lang={locale} />
+                  <CityCard key={city.id} city={city} lang={lang} contentLocale={contentLocale} citiesPath={citiesPath} />
                 ))}
               </div>
             </section>

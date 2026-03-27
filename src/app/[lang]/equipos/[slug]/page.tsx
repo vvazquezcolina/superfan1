@@ -11,6 +11,7 @@ import { TeamHero } from '@/components/team/TeamHero'
 import { TeamSection } from '@/components/team/TeamSection'
 import { TeamFAQ } from '@/components/team/TeamFAQ'
 import type { Locale, TeamPlayer } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 
 export async function generateStaticParams() {
   return getTeamSlugs().map(({ slug, lang }) => ({ lang, slug }))
@@ -23,14 +24,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang, slug } = await params
   if (!hasLocale(lang)) return {}
-  const team = getTeam(slug, lang as Locale)
+  const contentLocale: Locale = toContentLocale(lang)
+  const team = getTeam(slug, lang)
   if (!team) return {}
 
-  const section = lang === 'es' ? 'equipos' : 'teams'
+  const { pathTranslations } = await import('@/lib/i18n')
+  const section = pathTranslations.equipos[lang as import('@/app/[lang]/dictionaries').Locale] ?? 'teams'
   return buildPageMetadata({
-    title: team.name[lang as Locale],
-    description: team.description[lang as Locale],
-    lang: lang as Locale,
+    title: team.name[contentLocale],
+    description: team.description[contentLocale],
+    lang: contentLocale,
     path: `/${lang}/${section}/${slug}`,
     alternates: buildAlternates('equipos', team.slugs),
   })
@@ -53,23 +56,24 @@ export default async function TeamPage({
 }) {
   const { lang, slug } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
-  const team = getTeam(slug, locale)
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  const contentLocale: Locale = toContentLocale(lang)
+  const team = getTeam(slug, lang)
   if (!team) notFound()
 
   const dict = await getDictionary(locale)
   const breadcrumbs = generateBreadcrumbs(
     `/${lang}/equipos/${slug}`,
-    locale,
+    contentLocale,
     dict.breadcrumbs,
-    team.name[locale],
+    team.name[contentLocale],
   )
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
-  const sportsTeamJsonLd = buildSportsTeamJsonLd(team, locale)
+  const sportsTeamJsonLd = buildSportsTeamJsonLd(team, contentLocale)
 
-  const lastUpdatedLabel = locale === 'es' ? 'Ultima actualizacion' : 'Last updated'
-  const playersHeading = team.content?.keyPlayers.title[locale] ??
-    (locale === 'es' ? 'Jugadores Clave' : 'Key Players')
+  const lastUpdatedLabel = contentLocale === 'es' ? 'Ultima actualizacion' : 'Last updated'
+  const playersHeading = team.content?.keyPlayers.title[contentLocale] ??
+    (contentLocale === 'es' ? 'Jugadores Clave' : 'Key Players')
 
   return (
     <>
@@ -83,14 +87,14 @@ export default async function TeamPage({
       />
       <Breadcrumbs items={breadcrumbs} />
 
-      <TeamHero team={team} lang={locale} />
+      <TeamHero team={team} lang={contentLocale} />
 
       {team.content ? (
         <article className="mx-auto max-w-4xl space-y-10 py-8">
 
           <TeamSection
             section={team.content.worldCupHistory}
-            lang={locale}
+            lang={contentLocale}
             id="historia"
           />
 
@@ -98,24 +102,24 @@ export default async function TeamPage({
             <h2 className="text-2xl font-bold md:text-3xl">{playersHeading}</h2>
             <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {team.content.keyPlayers.players.map((player, index) => (
-                <PlayerCard key={index} player={player} lang={locale} />
+                <PlayerCard key={index} player={player} lang={contentLocale} />
               ))}
             </div>
           </section>
 
           <TeamSection
             section={team.content.qualifyingPath}
-            lang={locale}
+            lang={contentLocale}
             id="clasificacion"
           />
 
           <TeamSection
             section={team.content.matchSchedule}
-            lang={locale}
+            lang={contentLocale}
             id="calendario"
           />
 
-          <TeamFAQ faqs={team.content.faq} lang={locale} />
+          <TeamFAQ faqs={team.content.faq} lang={contentLocale} />
 
           <footer className="mt-8 border-t border-border pt-4">
             <p className="text-sm text-muted">
@@ -127,7 +131,7 @@ export default async function TeamPage({
         <article className="mx-auto max-w-4xl py-8">
           <section className="rounded-lg border-l-4 border-primary bg-primary/5 p-6">
             <p className="text-lg font-medium leading-relaxed">
-              {team.description[locale]}
+              {team.description[contentLocale]}
             </p>
           </section>
           <footer className="mt-8 border-t border-border pt-4">
