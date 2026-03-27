@@ -1,4 +1,4 @@
-import type { WithContext, Place, StadiumOrArena, SportsTeam, FAQPage, Article, Organization, ItemList } from 'schema-dts'
+import type { WithContext, Place, StadiumOrArena, SportsTeam, FAQPage, Article, Organization, ItemList, SiteNavigationElement } from 'schema-dts'
 import type { City, Stadium, Team, CityFAQ, Locale } from '@/lib/content/schemas'
 
 const SITE_URL = 'https://www.superfaninfo.com'
@@ -107,6 +107,8 @@ export function buildArticleJsonLd(params: {
   headline: string
   description: string
   url: string
+  /** ISO date string. Defaults to dateModified if omitted. */
+  datePublished?: string
   dateModified: string
   lang: Locale
 }): WithContext<Article> {
@@ -116,6 +118,7 @@ export function buildArticleJsonLd(params: {
     headline: params.headline,
     description: truncate(params.description, 300),
     url: params.url,
+    datePublished: params.datePublished ?? params.dateModified,
     dateModified: params.dateModified,
     inLanguage: params.lang === 'es' ? 'es-419' : 'en',
     publisher: {
@@ -143,8 +146,67 @@ export function buildOrganizationJsonLd(
     name: ORG_NAME,
     url: SITE_URL,
     description,
-    sameAs: [],
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/icon.svg`,
+      width: '32',
+      height: '32',
+    },
+    sameAs: [
+      // Social links — update when accounts are created
+      // 'https://twitter.com/superfanmundial',
+      // 'https://instagram.com/superfanmundial',
+      // 'https://facebook.com/superfanmundial',
+    ],
   } as WithContext<Organization>
+}
+
+export function buildSiteNavigationJsonLd(
+  lang: Locale,
+): WithContext<SiteNavigationElement>[] {
+  const isEs = lang === 'es'
+  const base = `${SITE_URL}/${lang}`
+  const citiesHref = isEs ? `${base}/ciudades` : `${base}/cities`
+  const stadiumsHref = isEs ? `${base}/estadios` : `${base}/stadiums`
+  const teamsHref = isEs ? `${base}/equipos` : `${base}/teams`
+  const travelHref = isEs ? `${base}/viajes` : `${base}/viajes`
+  const toolsHref = isEs ? `${base}/herramientas` : `${base}/herramientas`
+
+  const navItems = [
+    {
+      name: isEs ? 'Ciudades Sede' : 'Host Cities',
+      url: citiesHref,
+      position: 1,
+    },
+    {
+      name: isEs ? 'Estadios' : 'Stadiums',
+      url: stadiumsHref,
+      position: 2,
+    },
+    {
+      name: isEs ? 'Equipos' : 'Teams',
+      url: teamsHref,
+      position: 3,
+    },
+    {
+      name: isEs ? 'Guias de Viaje' : 'Travel Guides',
+      url: travelHref,
+      position: 4,
+    },
+    {
+      name: isEs ? 'Herramientas' : 'Tools',
+      url: toolsHref,
+      position: 5,
+    },
+  ]
+
+  return navItems.map((item) => ({
+    '@context': 'https://schema.org',
+    '@type': 'SiteNavigationElement',
+    name: item.name,
+    url: item.url,
+    position: item.position,
+  })) as WithContext<SiteNavigationElement>[]
 }
 
 export function buildItemListJsonLd(
