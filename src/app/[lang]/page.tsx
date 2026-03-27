@@ -8,6 +8,7 @@ import { getStadiums } from '@/lib/content/stadiums'
 import { getCityById } from '@/lib/content/cities'
 import { buildOrganizationJsonLd, buildItemListJsonLd, buildSiteNavigationJsonLd } from '@/lib/jsonld'
 import type { Locale, City, Stadium } from '@/lib/content/schemas'
+import { toContentLocale } from '@/lib/content/cities'
 import { CountdownTimer } from '@/components/engagement/CountdownTimer'
 import { NewsletterSignup } from '@/components/engagement/NewsletterSignup'
 import { ExitIntentWrapper } from '@/components/engagement/ExitIntentWrapper'
@@ -36,21 +37,20 @@ const countryFlags: Record<string, string> = {
   canada: '\u{1F1E8}\u{1F1E6}',
 }
 
-function FeaturedCityCard({ city, lang }: { city: City; lang: Locale }) {
-  const section = lang === 'es' ? 'ciudades' : 'cities'
-  const slug = city.slugs[lang]
-  const overview = city.content.overview[lang]
+function FeaturedCityCard({ city, lang, contentLocale, citiesPath }: { city: City; lang: string; contentLocale: Locale; citiesPath: string }) {
+  const slug = city.slugs[contentLocale]
+  const overview = city.content.overview[contentLocale]
   const excerpt = overview.length > 140 ? overview.slice(0, 137) + '...' : overview
   const flag = countryFlags[city.country] ?? ''
-  const readMore = lang === 'es' ? 'Leer mas' : 'Read more'
+  const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
 
   return (
     <a
-      href={`/${lang}/${section}/${slug}`}
+      href={`/${lang}/${citiesPath}/${slug}`}
       className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
     >
       <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-        {flag} {city.name[lang]}
+        {flag} {city.name[contentLocale]}
       </h3>
       <p className="mt-3 text-sm leading-relaxed text-muted">
         {excerpt}
@@ -65,27 +65,30 @@ function FeaturedCityCard({ city, lang }: { city: City; lang: Locale }) {
 function FeaturedStadiumCard({
   stadium,
   lang,
+  contentLocale,
+  stadiumsPath,
   dict,
 }: {
   stadium: Stadium
-  lang: Locale
+  lang: string
+  contentLocale: Locale
+  stadiumsPath: string
   dict: { stadiumCapacity: string }
 }) {
-  const section = lang === 'es' ? 'estadios' : 'stadiums'
-  const slug = stadium.slugs[lang]
-  const overview = stadium.content.overview[lang]
+  const slug = stadium.slugs[contentLocale]
+  const overview = stadium.content.overview[contentLocale]
   const excerpt = overview.length > 140 ? overview.slice(0, 137) + '...' : overview
   const city = getCityById(stadium.city)
-  const cityName = city ? city.name[lang] : ''
-  const readMore = lang === 'es' ? 'Leer mas' : 'Read more'
+  const cityName = city ? city.name[contentLocale] : ''
+  const readMore = contentLocale === 'es' ? 'Leer mas' : 'Read more'
 
   return (
     <a
-      href={`/${lang}/${section}/${slug}`}
+      href={`/${lang}/${stadiumsPath}/${slug}`}
       className="group block rounded-lg border border-border p-6 shadow-sm transition-shadow hover:shadow-md hover:border-primary/50"
     >
       <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-        {stadium.name[lang]}
+        {stadium.name[contentLocale]}
       </h3>
       <p className="mt-1 text-sm text-muted">
         {cityName} &middot; {dict.stadiumCapacity}: {stadium.capacity.toLocaleString()}
@@ -107,17 +110,20 @@ export default async function HomePage({
 }) {
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
-  const locale = lang as Locale
+  const locale = lang as import('@/app/[lang]/dictionaries').Locale
+  // Content locale maps new locales (pt/fr/de/ar) to 'en' for data field lookups
+  const contentLocale: Locale = toContentLocale(lang)
   const dict = await getDictionary(locale)
 
   // WebSite JSON-LD (per D-09)
+  const { hreflangMap } = await import('@/lib/i18n')
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: dict.site.name,
     url: `https://www.superfaninfo.com/${lang}`,
     description: dict.home.description,
-    inLanguage: lang === 'es' ? 'es-419' : 'en',
+    inLanguage: hreflangMap[locale],
   }
 
   // Countdown: days until June 11, 2026
@@ -140,23 +146,22 @@ export default async function HomePage({
     .filter((s): s is Stadium => s !== undefined)
 
   // Organization JSON-LD injected in layout.tsx; keep for reference only
-  void buildOrganizationJsonLd(locale)
+  void buildOrganizationJsonLd(contentLocale)
+  const { pathTranslations } = await import('@/lib/i18n')
+  const citiesPath = pathTranslations.ciudades[locale] ?? 'cities'
+  const stadiumsPath = pathTranslations.estadios[locale] ?? 'stadiums'
   const itemListItems = [
     ...featuredCities.map((city) => ({
-      name: city.name[locale],
-      url: `https://www.superfaninfo.com/${lang}/${lang === 'es' ? 'ciudades' : 'cities'}/${city.slugs[locale]}`,
+      name: city.name[contentLocale],
+      url: `https://www.superfaninfo.com/${lang}/${citiesPath}/${city.slugs[contentLocale]}`,
     })),
     ...featuredStadiums.map((stadium) => ({
-      name: stadium.name[locale],
-      url: `https://www.superfaninfo.com/${lang}/${lang === 'es' ? 'estadios' : 'stadiums'}/${stadium.slugs[locale]}`,
+      name: stadium.name[contentLocale],
+      url: `https://www.superfaninfo.com/${lang}/${stadiumsPath}/${stadium.slugs[contentLocale]}`,
     })),
   ]
-  const itemListJsonLd = buildItemListJsonLd(itemListItems, locale)
-  const siteNavJsonLd = buildSiteNavigationJsonLd(locale)
-
-  // Section paths
-  const citiesPath = lang === 'es' ? 'ciudades' : 'cities'
-  const stadiumsPath = lang === 'es' ? 'estadios' : 'stadiums'
+  const itemListJsonLd = buildItemListJsonLd(itemListItems, contentLocale)
+  const siteNavJsonLd = buildSiteNavigationJsonLd(contentLocale)
 
   return (
     <>
