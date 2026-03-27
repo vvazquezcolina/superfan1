@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Phase complete — ready for verification
-stopped_at: Completed 07-03-PLAN.md
-last_updated: "2026-03-27T00:14:40.592Z"
+stopped_at: Completed 08-01-PLAN.md
+last_updated: "2026-03-27T00:28:43.487Z"
 progress:
   total_phases: 10
   completed_phases: 7
   total_plans: 23
-  completed_plans: 20
+  completed_plans: 21
 ---
 
 # Project State
@@ -66,6 +66,7 @@ Plan: 4 of 4
 | Phase 07 P01 | 15 | 3 tasks | 7 files |
 | Phase 07 P02 | 17min | 2 tasks | 1 files |
 | Phase 07 P03 | 20 | 3 tasks | 1 files |
+| Phase 08-travel-fan-experience-guides P01 | 11min | 3 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -137,6 +138,9 @@ Recent decisions affecting current work:
 - [Phase 07]: Phase 07-02: Eriksen cardiac arrest story used as primary narrative hook for Denmark page - strongest emotional differentiator
 - [Phase 07]: Phase 07-02: Italy FAQ explains 2018/2022 absences directly - most common search question for Italian team
 - [Phase 07]: Used Python scripts for bulk JSON content injection — safer than string replacements on large JSON files
+- [Phase 08-01]: GuideFAQ cast as CityFAQ[] for buildFAQPageJsonLd — structurally identical shapes enable reuse without modification
+- [Phase 08-01]: content/guides/travel.json placed at content/ root (not src/data/) to match @content/* tsconfig path alias used by all data loaders
+- [Phase 08-01]: affiliateCTAs empty for flight guides — Travelpayouts/Skyscanner integration deferred to V2-05 per plan spec
 
 ### Pending Todos
 
@@ -151,6 +155,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T00:14:35.366Z
-Stopped at: Completed 07-03-PLAN.md
+Last session: 2026-03-27T00:28:43.484Z
+Stopped at: Completed 08-01-PLAN.md
 Resume file: None

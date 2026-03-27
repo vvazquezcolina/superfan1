@@ -155,10 +155,10 @@ Plans:
   3. A visa and entry requirements guide covers USA ESTA, Mexico FMM, and Canada eTA by nationality
   4. Ticket buying and safety/insurance guides provide actionable advice with scam warnings
   5. A match schedule page is filterable by city, team, group, and date (using ISR for updates as FIFA releases data)
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 08-01-PLAN.md -- GuidePage schema + travel.json (7 guides), flight/accommodation/transport/visa pages under /viajes/
+- [x] 08-01-PLAN.md -- GuidePage schema + travel.json (7 guides), flight/accommodation/transport/visa pages under /viajes/
 - [ ] 08-02-PLAN.md -- fan.json (ticket + safety guides), matches.json (48 group stage), fan experience pages + match calendar
 **UI hint**: yes
 
@@ -202,6 +202,6 @@ Note: Phases 7 and 9 can run in parallel with 8 (they share Phase 6 as dependenc
 | 5. LLM Optimization Layer | 0/2 | Planning complete | - |
 | 6. Monetization & Analytics | 2/2 | Complete   | 2026-03-26 |
 | 7. Team Pages | 2/4 | In Progress|  |
-| 8. Travel & Fan Experience Guides | 0/2 | Planning complete | - |
+| 8. Travel & Fan Experience Guides | 1/2 | In Progress|  |
 | 9. Lead Capture & Engagement | 1/1 | Complete   | 2026-03-26 |
 | 10. Interactive Tools & Final Polish | 0/TBD | Not started | - |
