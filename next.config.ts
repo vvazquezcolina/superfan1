@@ -31,11 +31,11 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://tp.media",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://images.pexels.com https://www.google-analytics.com https://tp.media",
       "font-src 'self'",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://tp.media",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com",
       "frame-src 'self' https://tp.media https://www.booking.com",
       "object-src 'none'",
       "base-uri 'self'",

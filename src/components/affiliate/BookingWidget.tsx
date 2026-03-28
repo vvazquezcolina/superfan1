@@ -5,7 +5,6 @@ import {
   buildTravelpayoutsHotelWidgetSrc,
 } from '@/lib/content/affiliates'
 import { AffiliateLink } from './AffiliateLink'
-import { TravelpayoutsEmbed } from './TravelpayoutsEmbed'
 import type { Locale } from '@/lib/content/schemas'
 
 interface BookingWidgetDict {
@@ -33,7 +32,7 @@ export function BookingWidget({ cityName, citySlug, lang, dict }: BookingWidgetP
   const travelpayoutsPartner = getAffiliatePartner('travelpayouts')
   const bookingPartner = getAffiliatePartner('booking')
 
-  // Primary: Travelpayouts hotel widget (loaded as script, not iframe)
+  // Primary: Travelpayouts hotel widget (loaded as iframe for CSP isolation)
   if (travelpayoutsPartner?.active) {
     const widgetSrc = buildTravelpayoutsHotelWidgetSrc(lang)
     const disclosure =
@@ -57,14 +56,21 @@ export function BookingWidget({ cityName, citySlug, lang, dict }: BookingWidgetP
           {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
         </p>
         {widgetSrc && (
-          <TravelpayoutsEmbed
-            scriptSrc={widgetSrc}
-            title={
-              lang === 'es'
-                ? `Buscar hoteles en ${cityName}`
-                : `Search hotels in ${cityName}`
-            }
-          />
+          <div className="mt-4 overflow-hidden rounded-lg border border-primary/15 shadow-sm">
+            <iframe
+              src={widgetSrc}
+              width="100%"
+              height="440"
+              className="border-0 w-full"
+              title={
+                lang === 'es'
+                  ? `Buscar hoteles en ${cityName}`
+                  : `Search hotels in ${cityName}`
+              }
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         )}
         <div className="mt-3 flex items-start gap-1.5 text-xs text-muted">
           <Info className="mt-px h-3 w-3 shrink-0 opacity-60" aria-hidden="true" />
