@@ -170,6 +170,23 @@ export function buildKlookSearchUrl(query: string, lang: 'es' | 'en'): string {
   )
 }
 
+/**
+ * Klook hotels search — used as the hotels CTA fallback because Booking.com
+ * declined the Superfaninfo project connection. Klook has bookable hotel
+ * inventory worldwide and pays 2-5% with a 30-day cookie. Verified that
+ * attribution flows through the same partner_id we use for Klook activities.
+ */
+export function buildKlookHotelsUrl(cityName: string, lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en-US'
+  return withParams(
+    `https://www.klook.com/${langCode}/hotels/?keyword=${encodeURIComponent(cityName)}`,
+    {
+      aid: KLOOK_AID,
+      aff_pid: TP_USER_ID,
+    },
+  )
+}
+
 // --- EKTA travel insurance (25% reward, 30d cookie) ------------------------
 
 export function buildEktaInsuranceUrl(lang: 'es' | 'en'): string {

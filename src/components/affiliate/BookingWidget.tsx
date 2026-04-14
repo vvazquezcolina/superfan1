@@ -1,9 +1,5 @@
 import { Hotel } from 'lucide-react'
-import {
-  getAffiliatePartner,
-  buildBookingUrl,
-  buildTravelpayoutsBookingUrl,
-} from '@/lib/content/affiliates'
+import { buildKlookHotelsUrl } from '@/lib/travelpayouts/partners'
 import { AffiliateLink } from './AffiliateLink'
 import type { Locale } from '@/lib/content/schemas'
 
@@ -24,52 +20,43 @@ interface BookingWidgetProps {
 }
 
 /**
- * Hotel search CTA for city pages.
- * Uses Travelpayouts' tracked tp.media/r redirect to Booking.com when active
- * (proper marker attribution), falls back to the direct Booking.com partner
- * URL otherwise. Avoids embedded widgets — those turned out to be a flight
- * search template in our Travelpayouts account and the embed form_action was
- * blocked by CSP.
+ * Hotel search CTA for city / stadium / match / dia-de-partido pages.
+ *
+ * Originally pointed at Booking.com via the Travelpayouts redirect, but
+ * Booking.com declined the Superfaninfo project connection (sites under
+ * 2 months old aren't accepted). To keep hotel monetization working
+ * before the World Cup, swapped the destination to Klook hotels — Klook
+ * is instant-connect approved on the Superfaninfo project and has
+ * bookable global hotel inventory at 2-5% commission with a 30-day
+ * cookie. Reapply Booking after launch when the site has aged.
+ *
+ * Component name and surrounding copy stay the same so the CTA reads
+ * naturally to the user.
  */
-export function BookingWidget({ cityName, citySlug, lang, dict }: BookingWidgetProps) {
-  const travelpayoutsPartner = getAffiliatePartner('travelpayouts')
-  const bookingPartner = getAffiliatePartner('booking')
-
-  const useTravelpayouts = travelpayoutsPartner?.active === true
-
-  const href = useTravelpayouts
-    ? buildTravelpayoutsBookingUrl(cityName, lang)
-    : bookingPartner?.active
-      ? buildBookingUrl(cityName, lang)
-      : null
-
-  if (!href) return null
-
-  const disclosure = useTravelpayouts
-    ? (dict.disclosureTravelpayouts ?? travelpayoutsPartner!.disclosure[lang])
-    : bookingPartner!.disclosure[lang]
-
-  const poweredByLabel = useTravelpayouts
-    ? (dict.poweredByTravelpayouts ??
-      (lang === 'es'
-        ? 'Resultados via Travelpayouts (Booking.com / Agoda)'
-        : 'Results via Travelpayouts (Booking.com / Agoda)'))
-    : dict.poweredBy
-
-  const partnerId = useTravelpayouts ? 'travelpayouts' : 'booking'
+export function BookingWidget({ cityName, citySlug, lang }: BookingWidgetProps) {
+  const localeKey: 'es' | 'en' = lang === 'es' ? 'es' : 'en'
+  const href = buildKlookHotelsUrl(cityName, localeKey)
 
   const headline =
-    lang === 'es'
+    localeKey === 'es'
       ? `Hospedaje en ${cityName} para el Mundial 2026`
       : `Where to stay in ${cityName} for the 2026 World Cup`
   const urgency =
-    lang === 'es'
+    localeKey === 'es'
       ? 'Las reservas durante el Mundial son limitadas y los precios suben semana a semana — los hoteles cerca del estadio suelen agotarse 2-3 meses antes del partido.'
       : 'World Cup bookings are limited and prices climb weekly — hotels near the stadium typically sell out 2-3 months before kickoff.'
   const ctaLabel =
-    lang === 'es'
+    localeKey === 'es'
       ? 'Ver hoteles disponibles para el Mundial'
       : 'See hotels available for the World Cup'
+  const poweredByLabel =
+    localeKey === 'es'
+      ? 'Resultados via Klook (inventario global de hoteles)'
+      : 'Results via Klook (global hotel inventory)'
+  const disclosure =
+    localeKey === 'es'
+      ? 'Enlace de afiliado (Klook) — recibimos una pequeña comisión si reservas, sin costo extra para ti.'
+      : 'Affiliate link (Klook) — we earn a small commission if you book, at no extra cost to you.'
 
   return (
     <aside className="mx-auto max-w-prose my-8 rounded-xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-6 shadow-sm">
@@ -85,7 +72,7 @@ export function BookingWidget({ cityName, citySlug, lang, dict }: BookingWidgetP
       <div className="mt-5 pl-12">
         <AffiliateLink
           href={href}
-          partner={partnerId}
+          partner="klook-hotels"
           citySlug={citySlug}
           disclosure={disclosure}
           className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary/90 hover:shadow-md transition-all"
