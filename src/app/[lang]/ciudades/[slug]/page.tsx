@@ -14,6 +14,7 @@ import { CityHero } from '@/components/city/CityHero'
 import { CitySection } from '@/components/city/CitySection'
 import { CityFAQ } from '@/components/city/CityFAQ'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
+import { FlightPrices } from '@/components/affiliate/FlightPrices'
 import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
@@ -228,6 +229,13 @@ export default async function CityPage({
                 id={sectionIds[key]}
                 titleOverride={titleOverride}
               />
+              {key === 'gettingThere' && (
+                <FlightPrices
+                  cityId={city.id}
+                  cityName={city.name[contentLocale]}
+                  lang={contentLocale}
+                />
+              )}
               {key === 'neighborhoods' && (
                 <BookingWidget
                   cityName={city.name[contentLocale]}
