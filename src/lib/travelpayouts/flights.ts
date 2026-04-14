@@ -209,16 +209,17 @@ export async function getCheapestFlightsFromOrigins(
 
 /**
  * Build a tracked Aviasales deep link for an origin → destination route
- * with optional dates. Uses tp.media/r so clicks attribute to our marker.
+ * with optional dates. Uses the Superfaninfo project marker extracted from
+ * the Travelpayouts dashboard — Aviasales attribution is project-specific.
  */
+const SUPERFAN_AVIASALES_MARKER = '677963.Zz415029e6833748d7bcaba2c-677963'
+
 export function buildAviasalesUrl(
   origin: string,
   destination: string,
   departureAt?: string,
   returnAt?: string,
 ): string {
-  const partner = getAffiliatePartner('travelpayouts')
-  const marker = partner?.marker ?? '233922'
   const params = new URLSearchParams()
   params.set('origin_iata', origin)
   params.set('destination_iata', destination)
@@ -226,8 +227,8 @@ export function buildAviasalesUrl(
   if (returnAt) params.set('return_date', returnAt.slice(0, 10))
   params.set('adults', '1')
   params.set('with_request', 'true')
-  const search = `https://www.aviasales.com/search?${params.toString()}`
-  return `https://tp.media/r?marker=${marker}&trs=${marker}&p=4114&u=${encodeURIComponent(search)}`
+  params.set('marker', SUPERFAN_AVIASALES_MARKER)
+  return `https://www.aviasales.com/search?${params.toString()}`
 }
 
 /**

@@ -1,52 +1,50 @@
 /**
  * Per-partner affiliate URL builders for the Travelpayouts programs we are
- * connected to. Each Travelpayouts partner uses one of two attribution
- * schemes:
+ * connected to. Each partner uses its OWN attribution scheme — direct query
+ * parameters on the partner's own URL, NOT a unified tp.media/r redirect.
  *
- *   1. Direct partner URL with a partner-specific id parameter
- *      (verified via dashboard for GetYourGuide and Booking.com).
+ * All identifiers below were extracted via the Travelpayouts Tools link
+ * generator on the Superfaninfo project (id 518576), account 677963.
  *
- *   2. Travelpayouts unified redirect:
- *        https://tp.media/r?marker=233922&trs=233922&u=ENCODED_DESTINATION
- *      The marker (233922) is what credits the affiliate account on
- *      conversion. Travelpayouts cookies the user, redirects to the
- *      destination, and attributes commission to the marker.
- *
- * Account context (from app.travelpayouts.com, account 677963):
- *   - Travelpayouts user id: 677963
- *   - Marker:                233922
- *   - GetYourGuide partner:  0JJQDRO  (extracted via dashboard generator)
- *   - Booking.com aid:       304142
+ * Status of each connection (as of project creation date):
+ *   - Aviasales        ✅ instant connect
+ *   - Welcome Pickups  ✅ instant connect
+ *   - Kiwitaxi         ✅ instant connect
+ *   - Tiqets           ✅ instant connect
+ *   - EKTA             ✅ instant connect
+ *   - AirHelp          ✅ instant connect
+ *   - Klook            ✅ instant connect
+ *   - GetYourGuide     ⏳ in review (using legacy Travelreport partner_id)
+ *   - Booking.com      ❌ declined for Superfaninfo, fallback to legacy
+ *                         Travelreport marker for that one partner only
  */
 
-const TP_MARKER = '233922'
 const TP_USER_ID = '677963'
 
-/** Wrap any URL in the unified Travelpayouts tracking redirect. */
-function tpRedirect(destinationUrl: string): string {
-  return `https://tp.media/r?marker=${TP_MARKER}&trs=${TP_MARKER}&u=${encodeURIComponent(
-    destinationUrl,
-  )}`
-}
+// Aviasales marker (Superfaninfo project) — long format with project hash.
+const AVIASALES_MARKER = '677963.Zz415029e6833748d7bcaba2c-677963'
 
-// --- GetYourGuide (8% reward, 31d cookie) ----------------------------------
+// Per-partner attribution hashes (Superfaninfo project).
+const KLOOK_AID = `api|13694|a4236e1a61264f6a979abf80a-${TP_USER_ID}|pid|${TP_USER_ID}`
+const AIRHELP_DATA1 = `e2ab326072bc4f87b4855048c-${TP_USER_ID}`
+const WELCOME_PICKUPS_TRACK = `7c02c399cf3144dd91da3d363-${TP_USER_ID}`
+const EKTA_SUB_ID = `983ff6b7e98a4eca9ea09e54a-${TP_USER_ID}`
+const TIQETS_CAMPAIGN = `7d80805efdc8447282ec6a53f-${TP_USER_ID}`
+const KIWITAXI_TPO = `2e0b9affc08d471d90cceaa84-${TP_USER_ID}`
 
-const GYG_PARTNER_ID = '0JJQDRO'
-const GYG_CMP_PREFIX = 'c003dd2abdd3486d89b6db57d'
+// Legacy Travelreport marker — only used for partners where Superfaninfo
+// is not yet connected (GetYourGuide in review, Booking declined).
+const LEGACY_MARKER = '233922'
+const LEGACY_GYG_PARTNER_ID = '0JJQDRO'
+const LEGACY_GYG_CMP_PREFIX = 'c003dd2abdd3486d89b6db57d'
 
-export function buildGetYourGuideUrl(destinationUrl: string): string {
-  const url = new URL(destinationUrl)
-  url.searchParams.set('partner_id', GYG_PARTNER_ID)
-  url.searchParams.set('cmp', `${GYG_CMP_PREFIX}-${TP_USER_ID}`)
+/** Append (or merge) query parameters to any URL safely. */
+function withParams(rawUrl: string, params: Record<string, string>): string {
+  const url = new URL(rawUrl)
+  for (const [k, v] of Object.entries(params)) {
+    url.searchParams.set(k, v)
+  }
   return url.toString()
-}
-
-export function buildGetYourGuideSearchUrl(query: string, lang: 'es' | 'en'): string {
-  const path = lang === 'es' ? '/es-es/s/' : '/s/'
-  const base = `https://www.getyourguide.com${path}?q=${encodeURIComponent(
-    query,
-  )}&searchSource=3`
-  return buildGetYourGuideUrl(base)
 }
 
 // --- Aviasales (40% reward, 30d cookie) ------------------------------------
@@ -63,10 +61,11 @@ export function buildAviasalesSearchUrl(
   if (departDate) params.set('depart_date', departDate)
   if (returnDate) params.set('return_date', returnDate)
   params.set('adults', '1')
-  return tpRedirect(`https://www.aviasales.com/search?${params.toString()}`)
+  params.set('marker', AVIASALES_MARKER)
+  return `https://www.aviasales.com/search?${params.toString()}`
 }
 
-// --- Booking.com (3-5% reward, session cookie) -----------------------------
+// --- Booking.com (LEGACY Travelreport marker — Superfaninfo declined) ------
 
 export function buildBookingSearchUrl(
   cityName: string,
@@ -78,19 +77,46 @@ export function buildBookingSearchUrl(
   const search = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(
     cityName,
   )}&checkin=${checkin}&checkout=${checkout}&lang=${bookingLang}&aid=304142`
-  return tpRedirect(search)
+  return `https://tp.media/r?marker=${LEGACY_MARKER}&trs=${LEGACY_MARKER}&p=4114&u=${encodeURIComponent(search)}`
+}
+
+// --- GetYourGuide (LEGACY Travelreport partner_id — in review) -------------
+
+export function buildGetYourGuideUrl(destinationUrl: string): string {
+  return withParams(destinationUrl, {
+    partner_id: LEGACY_GYG_PARTNER_ID,
+    cmp: `${LEGACY_GYG_CMP_PREFIX}-${TP_USER_ID}`,
+  })
+}
+
+export function buildGetYourGuideSearchUrl(
+  query: string,
+  lang: 'es' | 'en',
+): string {
+  const path = lang === 'es' ? '/es-es/s/' : '/s/'
+  const base = `https://www.getyourguide.com${path}?q=${encodeURIComponent(
+    query,
+  )}&searchSource=3`
+  return buildGetYourGuideUrl(base)
 }
 
 // --- Welcome Pickups (8-9% reward, 45d cookie) -----------------------------
 
 export function buildWelcomePickupsUrl(citySlug: string): string {
-  return tpRedirect(`https://welcomepickups.com/${citySlug}/`)
+  return withParams(`https://welcomepickups.com/${citySlug}/`, {
+    aff_track_id: WELCOME_PICKUPS_TRACK,
+    utm_source: 'travelpayouts',
+  })
 }
 
 export function buildWelcomePickupsSearchUrl(cityName: string): string {
-  return tpRedirect(
-    `https://welcomepickups.com/?destination=${encodeURIComponent(cityName)}`,
-  )
+  const url = cityName
+    ? `https://welcomepickups.com?destination=${encodeURIComponent(cityName)}`
+    : 'https://welcomepickups.com'
+  return withParams(url, {
+    aff_track_id: WELCOME_PICKUPS_TRACK,
+    utm_source: 'travelpayouts',
+  })
 }
 
 // --- Kiwitaxi (9-11% reward, 30d cookie) -----------------------------------
@@ -101,24 +127,33 @@ export function buildKiwitaxiSearchUrl(
   lang: 'es' | 'en',
 ): string {
   const langCode = lang === 'es' ? 'es' : 'en'
-  return tpRedirect(
-    `https://kiwitaxi.com/?lang=${langCode}&from=${fromIata}&to=${encodeURIComponent(
-      toName,
-    )}`,
-  )
+  return withParams(`https://kiwitaxi.com/?lang=${langCode}`, {
+    from: fromIata,
+    to: toName,
+    tpo: KIWITAXI_TPO,
+    utm_source: 'travelpayouts',
+  })
 }
 
 export function buildKiwitaxiHomeUrl(lang: 'es' | 'en'): string {
   const langCode = lang === 'es' ? 'es' : 'en'
-  return tpRedirect(`https://kiwitaxi.com/?lang=${langCode}`)
+  return withParams(`https://kiwitaxi.com/?lang=${langCode}`, {
+    tpo: KIWITAXI_TPO,
+    utm_source: 'travelpayouts',
+  })
 }
 
 // --- Tiqets (3.5-8% reward, 30d cookie) ------------------------------------
 
 export function buildTiqetsSearchUrl(query: string, lang: 'es' | 'en'): string {
   const langCode = lang === 'es' ? 'es' : 'en'
-  return tpRedirect(
+  return withParams(
     `https://www.tiqets.com/${langCode}/search?q=${encodeURIComponent(query)}`,
+    {
+      partner: 'travelpayouts.com',
+      tq_campaign: TIQETS_CAMPAIGN,
+      tq_click_id: TIQETS_CAMPAIGN,
+    },
   )
 }
 
@@ -126,8 +161,12 @@ export function buildTiqetsSearchUrl(query: string, lang: 'es' | 'en'): string {
 
 export function buildKlookSearchUrl(query: string, lang: 'es' | 'en'): string {
   const langCode = lang === 'es' ? 'es' : 'en-US'
-  return tpRedirect(
+  return withParams(
     `https://www.klook.com/${langCode}/search/?keyword=${encodeURIComponent(query)}`,
+    {
+      aid: KLOOK_AID,
+      aff_pid: TP_USER_ID,
+    },
   )
 }
 
@@ -135,57 +174,23 @@ export function buildKlookSearchUrl(query: string, lang: 'es' | 'en'): string {
 
 export function buildEktaInsuranceUrl(lang: 'es' | 'en'): string {
   const langCode = lang === 'es' ? 'es' : 'en'
-  return tpRedirect(`https://ektatraveling.com/${langCode}/`)
+  return withParams(`https://ektatraveling.com/${langCode}/`, {
+    sub_id: EKTA_SUB_ID,
+    utm_source: 'travelpayouts',
+  })
 }
 
 // --- AirHelp (15-16.6% reward, 45d cookie) ---------------------------------
 
 export function buildAirHelpUrl(lang: 'es' | 'en'): string {
   const langCode = lang === 'es' ? 'es' : 'en'
-  return tpRedirect(`https://www.airhelp.com/${langCode}/`)
-}
-
-// --- Trip.com (1-5.5% reward, 7-30d cookie) --------------------------------
-
-export function buildTripComHotelsUrl(cityName: string, lang: 'es' | 'en'): string {
-  const langCode = lang === 'es' ? 'es-mx' : 'en-us'
-  return tpRedirect(
-    `https://www.trip.com/hotels/list?city=${encodeURIComponent(
-      cityName,
-    )}&locale=${langCode}`,
-  )
-}
-
-// --- Expedia (1.35-3.6% reward, 7d cookie) ---------------------------------
-
-export function buildExpediaHotelsUrl(cityName: string, lang: 'es' | 'en'): string {
-  const langCode = lang === 'es' ? 'es_MX' : 'en_US'
-  return tpRedirect(
-    `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(
-      cityName,
-    )}&locale=${langCode}`,
-  )
-}
-
-// --- Go City (3.4-6% reward, 90d cookie) -----------------------------------
-
-export function buildGoCityUrl(citySlug: string): string {
-  return tpRedirect(`https://gocity.com/en/${citySlug}/`)
-}
-
-// --- WeGoTrip (6.64-41.5% reward, 30d cookie) ------------------------------
-
-export function buildWeGoTripSearchUrl(query: string, lang: 'es' | 'en'): string {
-  const langCode = lang === 'es' ? 'es' : 'en'
-  return tpRedirect(
-    `https://wegotrip.com/${langCode}/search?q=${encodeURIComponent(query)}`,
-  )
-}
-
-// --- CheapOair ($5-25 fixed reward, 30d cookie) ----------------------------
-
-export function buildCheapOairUrl(): string {
-  return tpRedirect('https://www.cheapoair.com/')
+  return withParams(`https://www.airhelp.com/${langCode}/`, {
+    a_aid: 'Travelpayouts',
+    data1: AIRHELP_DATA1,
+    utm_campaign: 'aff-Travelpayouts',
+    utm_medium: 'affiliate',
+    utm_source: 'pap',
+  })
 }
 
 // --- Disclosure helpers ----------------------------------------------------
