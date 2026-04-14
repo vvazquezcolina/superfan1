@@ -466,6 +466,46 @@ export default async function HomePage({
               </details>
             ))}
           </div>
+
+          {/* Money-question deep links — drives SEO indexation and
+              surfaces high-intent answer pages from the root */}
+          <div className="mt-6 rounded-lg border border-primary/20 bg-primary/5 p-5">
+            <p className="text-sm font-semibold text-primary">
+              {contentLocale === 'es' ? 'Respuestas detalladas' : 'Detailed answers'}
+            </p>
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link href={`/${lang}/respuestas/cuanto-cuesta-viaje-mundial-2026-desde-mexico`} className="text-primary hover:underline">
+                  {contentLocale === 'es' ? '¿Cuánto cuesta un viaje al Mundial 2026 desde México?' : 'How much does a World Cup 2026 trip from Mexico cost?'}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/respuestas/vuelos-baratos-mundial-2026-desde-mexico`} className="text-primary hover:underline">
+                  {contentLocale === 'es' ? '¿Cuáles son los vuelos más baratos al Mundial 2026?' : 'Cheapest flights to the 2026 World Cup?'}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/respuestas/donde-hospedarse-cerca-sofi-stadium-mundial-2026`} className="text-primary hover:underline">
+                  {contentLocale === 'es' ? '¿Dónde hospedarse cerca del SoFi Stadium?' : 'Where to stay near SoFi Stadium?'}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/respuestas/seguro-viaje-mundial-2026`} className="text-primary hover:underline">
+                  {contentLocale === 'es' ? '¿Necesito seguro de viaje para el Mundial 2026?' : 'Do I need travel insurance for the 2026 World Cup?'}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/respuestas/visa-estados-unidos-mundial-2026-mexicanos`} className="text-primary hover:underline">
+                  {contentLocale === 'es' ? '¿Necesito visa para Estados Unidos siendo mexicano?' : 'Do I need a US visa as a Mexican citizen?'}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/respuestas/como-llegar-estadio-azteca-mundial-2026`} className="text-primary hover:underline">
+                  {contentLocale === 'es' ? '¿Cómo llego al Estadio Azteca?' : 'How to get to Estadio Azteca?'}
+                </Link>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <p className="mt-10 text-center text-sm text-muted">
