@@ -58,32 +58,42 @@ export function BookingWidget({ cityName, citySlug, lang, dict }: BookingWidgetP
 
   const partnerId = useTravelpayouts ? 'travelpayouts' : 'booking'
 
+  const headline =
+    lang === 'es'
+      ? `Hospedaje en ${cityName} para el Mundial 2026`
+      : `Where to stay in ${cityName} for the 2026 World Cup`
+  const urgency =
+    lang === 'es'
+      ? 'Las reservas durante el Mundial son limitadas y los precios suben semana a semana — los hoteles cerca del estadio suelen agotarse 2-3 meses antes del partido.'
+      : 'World Cup bookings are limited and prices climb weekly — hotels near the stadium typically sell out 2-3 months before kickoff.'
+  const ctaLabel =
+    lang === 'es'
+      ? 'Ver hoteles disponibles para el Mundial'
+      : 'See hotels available for the World Cup'
+
   return (
-    <aside className="mx-auto max-w-prose my-8 rounded-xl border border-primary/25 bg-gradient-to-br from-primary/8 to-primary/3 p-6 shadow-sm">
+    <aside className="mx-auto max-w-prose my-8 rounded-xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-6 shadow-sm">
       <div className="flex items-center gap-2.5 mb-1">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/15">
-          <Hotel className="h-4 w-4 text-primary" aria-hidden="true" />
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/15">
+          <Hotel className="h-5 w-5 text-primary" aria-hidden="true" />
         </div>
-        <h3 className="text-lg font-bold">
-          {dict.searchHotels} {cityName}
-        </h3>
+        <h3 className="text-lg font-bold">{headline}</h3>
       </div>
-      <p className="mt-2 text-sm text-muted pl-11">
-        {dict.hotelsNear} {cityName}{' '}
-        {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
+      <p className="mt-2 text-sm text-muted pl-12 leading-relaxed">
+        {urgency}
       </p>
-      <div className="mt-5">
+      <div className="mt-5 pl-12">
         <AffiliateLink
           href={href}
           partner={partnerId}
           citySlug={citySlug}
           disclosure={disclosure}
-          className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 hover:shadow-md transition-all"
+          className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary/90 hover:shadow-md transition-all"
         >
-          {dict.bookNow}
+          {ctaLabel}
         </AffiliateLink>
       </div>
-      <p className="mt-3 text-xs text-muted">{poweredByLabel}</p>
+      <p className="mt-3 pl-12 text-xs text-muted">{poweredByLabel}</p>
     </aside>
   )
 }

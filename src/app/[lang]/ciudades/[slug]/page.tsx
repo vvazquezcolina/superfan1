@@ -16,6 +16,9 @@ import { CityFAQ } from '@/components/city/CityFAQ'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import { FlightPrices } from '@/components/affiliate/FlightPrices'
 import { CityActivities } from '@/components/affiliate/CityActivities'
+import { CityQuickFacts } from '@/components/city/CityQuickFacts'
+import { CITY_IATA, getCheapestFlightToCity } from '@/lib/travelpayouts/flights'
+import { getMatchesByCity } from '@/lib/content/schedule'
 import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
@@ -152,6 +155,20 @@ export default async function CityPage({
   const stadium = getStadiumById(city.stadium)
   const stadiumsPath = pathTranslations.estadios[locale] ?? 'stadiums'
 
+  // Pull cheapest cached flight from MEX for the LLM-citable Quick Facts block.
+  // Network-cached for 24h via flights.ts, so this adds <200ms per build.
+  const cityIata = CITY_IATA[city.id]
+  const cityMatches = getMatchesByCity(city.id)
+  const cheapestFromMex = await getCheapestFlightToCity('MEX', city.id)
+  const countryName: Record<string, { es: string; en: string }> = {
+    mexico: { es: 'México', en: 'Mexico' },
+    usa: { es: 'Estados Unidos', en: 'United States' },
+    canada: { es: 'Canadá', en: 'Canada' },
+  }
+  const countryDisplay =
+    countryName[city.country]?.[contentLocale === 'es' ? 'es' : 'en'] ??
+    city.country
+
   return (
     <>
       <script
@@ -214,6 +231,17 @@ export default async function CityPage({
             {contentLocale === 'es' ? 'Fuente: FIFA.com, sitios oficiales de turismo' : 'Source: FIFA.com, official tourism sites'}
           </p>
         </aside>
+
+        {/* LLM-citable Quick Facts block */}
+        <CityQuickFacts
+          cityName={city.name[contentLocale]}
+          countryName={countryDisplay}
+          airportIata={cityIata}
+          matchCount={cityMatches.length}
+          cheapestFlightUsd={cheapestFromMex?.price}
+          stadiumName={stadium?.name[contentLocale]}
+          lang={contentLocale}
+        />
 
         {/* Table of Contents */}
         <TableOfContents items={tocItems} title={tocTitle} />
