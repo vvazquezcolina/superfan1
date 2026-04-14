@@ -8,6 +8,9 @@ import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd } from '@/lib/jsonld'
+import { FlightPrices } from '@/components/affiliate/FlightPrices'
+import { AirportTransfers } from '@/components/affiliate/AirportTransfers'
+import { CITY_IATA } from '@/lib/travelpayouts/flights'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 
@@ -308,6 +311,21 @@ export default async function HowToGetPage({
             )}
           </div>
         </section>
+
+        {/* Affiliate stack — route research = high commercial intent */}
+        <FlightPrices
+          cityId={toCity.id}
+          cityName={toCity.name[locale]}
+          lang={locale}
+        />
+        {CITY_IATA[toCity.id] && (
+          <AirportTransfers
+            fromLabel={`${CITY_IATA[toCity.id]} (${toCity.name[locale]})`}
+            fromIata={CITY_IATA[toCity.id]}
+            toName={toCity.name[locale]}
+            lang={locale}
+          />
+        )}
 
         {/* FAQ */}
         <section>

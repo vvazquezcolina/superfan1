@@ -9,6 +9,10 @@ import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildFAQPageJsonLd } from '@/lib/jsonld'
+import { AirportTransfers } from '@/components/affiliate/AirportTransfers'
+import { BookingWidget } from '@/components/affiliate/BookingWidget'
+import { TravelInsurance } from '@/components/affiliate/TravelInsurance'
+import { CITY_IATA } from '@/lib/travelpayouts/flights'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 
@@ -251,6 +255,24 @@ export default async function MatchDayPage({
             <p className="text-base leading-relaxed text-muted-foreground">{sec.content}</p>
           </section>
         ))}
+
+        {/* Affiliate stack — match day = peak intent. Show transfers,
+            hotel CTA, and insurance right where the user is reading. */}
+        {CITY_IATA[guide.cityId] && (
+          <AirportTransfers
+            fromLabel={`${CITY_IATA[guide.cityId]} (${cityName})`}
+            fromIata={CITY_IATA[guide.cityId]}
+            toName={stadiumName}
+            lang={contentLocale}
+          />
+        )}
+        <BookingWidget
+          cityName={cityName}
+          citySlug={cityData.slugs[contentLocale]}
+          lang={contentLocale}
+          dict={dict.affiliate}
+        />
+        <TravelInsurance lang={contentLocale} />
 
         {/* FAQ */}
         <section>

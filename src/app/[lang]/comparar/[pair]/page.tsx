@@ -9,6 +9,8 @@ import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildFAQPageJsonLd } from '@/lib/jsonld'
+import { BookingWidget } from '@/components/affiliate/BookingWidget'
+import { FlightPrices } from '@/components/affiliate/FlightPrices'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 
@@ -417,6 +419,31 @@ export default async function CityComparisonPage({
             </Link>
           </div>
         </section>
+
+        {/* Affiliate stack — two-city comparison ⇒ user is deciding which
+            to visit. Show real flight prices + booking CTAs for both. */}
+        <FlightPrices
+          cityId={city1.id}
+          cityName={city1.name[locale]}
+          lang={locale}
+        />
+        <BookingWidget
+          cityName={city1.name[locale]}
+          citySlug={city1.slugs[locale]}
+          lang={locale}
+          dict={dict.affiliate}
+        />
+        <FlightPrices
+          cityId={city2.id}
+          cityName={city2.name[locale]}
+          lang={locale}
+        />
+        <BookingWidget
+          cityName={city2.name[locale]}
+          citySlug={city2.slugs[locale]}
+          lang={locale}
+          dict={dict.affiliate}
+        />
 
         {/* FAQ section */}
         <section>

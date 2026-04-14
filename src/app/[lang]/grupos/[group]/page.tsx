@@ -14,6 +14,8 @@ import type { Locale, Team } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 import { pathTranslations, SITE_URL } from '@/lib/i18n'
 import { Users, Trophy, Calendar, MapPin, Building2, ChevronLeft, ChevronRight } from 'lucide-react'
+import { FlightPrices } from '@/components/affiliate/FlightPrices'
+import { TravelInsurance } from '@/components/affiliate/TravelInsurance'
 
 const LOCALES = ['es', 'en', 'pt', 'fr', 'de', 'ar'] as const
 const GROUPS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'] as const
@@ -431,6 +433,18 @@ export default async function GroupPage({
             </div>
           </section>
         )}
+
+        {/* Affiliate stack — group page = fans planning to follow their
+            team across host cities. Show flights to the first host city +
+            travel insurance for the trip. */}
+        {cities[0] && (
+          <FlightPrices
+            cityId={cities[0].id}
+            cityName={cities[0].name[contentLocale]}
+            lang={contentLocale}
+          />
+        )}
+        <TravelInsurance lang={contentLocale} />
 
         {/* Back link */}
         <div className="mt-12 border-t border-border pt-6">

@@ -9,6 +9,8 @@ import { buildPageMetadata } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildArticleJsonLd, buildItemListJsonLd } from '@/lib/jsonld'
+import { TravelInsurance } from '@/components/affiliate/TravelInsurance'
+import { HomeAffiliateBand } from '@/components/affiliate/HomeAffiliateBand'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 
@@ -215,6 +217,10 @@ export default async function ListiclePage({
             ))}
           </ol>
         </section>
+
+        {/* Affiliate band — listicle visitors are at top of funnel,
+            give them the broad recommendations menu. */}
+        <HomeAffiliateBand lang={contentLocale} />
 
         {/* Related listicles link block */}
         <section className="rounded-lg bg-muted/20 p-6">

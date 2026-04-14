@@ -8,6 +8,8 @@ import { buildArticleJsonLd, buildFAQPageJsonLd, buildJsonLdScript } from '@/lib
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
+import { TravelInsurance } from '@/components/affiliate/TravelInsurance'
+import { AirHelpBanner } from '@/components/affiliate/AirHelpBanner'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 import { Ticket, AlertTriangle, ArrowLeft, ChevronDown } from 'lucide-react'
 
@@ -145,6 +147,12 @@ export default async function EntradasPage({
             id={`seccion-${index + 1}`}
           />
         ))}
+
+        {/* If the user is researching tickets, they're going to fly. Two
+            highest-converting CTAs for ticket-stage fans: insurance for the
+            trip itself + AirHelp in case the inbound flight gets disrupted. */}
+        <TravelInsurance lang={locale} />
+        <AirHelpBanner lang={locale} />
 
         {/* FAQ */}
         <section className="mx-auto max-w-prose scroll-mt-20">
