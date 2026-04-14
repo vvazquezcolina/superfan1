@@ -15,7 +15,13 @@ import { FlightPrices } from '@/components/affiliate/FlightPrices'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import { AirportTransfers } from '@/components/affiliate/AirportTransfers'
 import { CityActivities } from '@/components/affiliate/CityActivities'
-import { CITY_IATA } from '@/lib/travelpayouts/flights'
+import { CITY_IATA, buildAviasalesUrl } from '@/lib/travelpayouts/flights'
+import {
+  buildKlookHotelsUrl,
+  buildWelcomePickupsSearchUrl,
+} from '@/lib/travelpayouts/partners'
+import { StickyQuickBook } from '@/components/affiliate/StickyQuickBook'
+import { WhatsAppShare } from '@/components/engagement/WhatsAppShare'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 
@@ -218,6 +224,20 @@ export default async function MatchPage({
       />
 
       <Breadcrumbs items={breadcrumbs} />
+
+      {city && (
+        <StickyQuickBook
+          flightHref={
+            CITY_IATA[city.id]
+              ? buildAviasalesUrl('MEX', CITY_IATA[city.id], match.date, match.date)
+              : undefined
+          }
+          hotelHref={buildKlookHotelsUrl(city.name[contentLocale], contentLocale)}
+          transferHref={buildWelcomePickupsSearchUrl(city.name[contentLocale])}
+          cityName={city.name[contentLocale]}
+          lang={contentLocale}
+        />
+      )}
 
       <article className="mx-auto max-w-4xl space-y-8 py-6">
 
@@ -459,6 +479,19 @@ export default async function MatchPage({
             />
           </section>
         )}
+
+        {/* WhatsApp share — send the match info to friends planning to attend */}
+        <div className="mx-auto flex max-w-prose justify-center py-2">
+          <WhatsAppShare
+            url={canonicalUrl}
+            title={
+              contentLocale === 'es'
+                ? `${matchTitle} — Mundial 2026 en ${cityName}`
+                : `${matchTitle} — 2026 World Cup in ${cityName}`
+            }
+            lang={contentLocale}
+          />
+        </div>
 
         {/* Disclaimer */}
         <p className="rounded-lg border border-border bg-muted/10 p-4 text-xs text-muted">

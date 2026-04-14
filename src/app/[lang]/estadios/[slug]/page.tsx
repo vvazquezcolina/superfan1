@@ -16,7 +16,13 @@ import { StadiumFAQ } from '@/components/stadium/StadiumFAQ'
 import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
 import { AirportTransfers } from '@/components/affiliate/AirportTransfers'
 import { StadiumTickets } from '@/components/affiliate/StadiumTickets'
-import { CITY_IATA } from '@/lib/travelpayouts/flights'
+import { StickyQuickBook } from '@/components/affiliate/StickyQuickBook'
+import { WhatsAppShare } from '@/components/engagement/WhatsAppShare'
+import { CITY_IATA, buildAviasalesUrl } from '@/lib/travelpayouts/flights'
+import {
+  buildKlookHotelsUrl,
+  buildWelcomePickupsSearchUrl,
+} from '@/lib/travelpayouts/partners'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 import {
@@ -166,6 +172,20 @@ export default async function StadiumPage({
       />
       <Breadcrumbs items={breadcrumbs} />
 
+      {city && (
+        <StickyQuickBook
+          flightHref={
+            cityIata
+              ? buildAviasalesUrl('MEX', cityIata, '2026-06-11', '2026-06-18')
+              : undefined
+          }
+          hotelHref={buildKlookHotelsUrl(city.name[contentLocale], contentLocale)}
+          transferHref={buildWelcomePickupsSearchUrl(stadium.name[contentLocale])}
+          cityName={city.name[contentLocale]}
+          lang={contentLocale}
+        />
+      )}
+
       <article className="mx-auto max-w-4xl space-y-10 py-6">
         <StadiumHero stadium={stadium} lang={contentLocale} />
 
@@ -268,6 +288,19 @@ export default async function StadiumPage({
 
         <div id="faq">
           <StadiumFAQ faqs={stadium.content.faq} lang={contentLocale} />
+        </div>
+
+        {/* WhatsApp share */}
+        <div className="mx-auto flex max-w-prose justify-center py-2">
+          <WhatsAppShare
+            url={canonicalUrl}
+            title={
+              contentLocale === 'es'
+                ? `Guía del ${stadium.name[contentLocale]} para el Mundial 2026`
+                : `${stadium.name[contentLocale]} guide for the 2026 World Cup`
+            }
+            lang={contentLocale}
+          />
         </div>
 
         <section id="fuentes" className="mx-auto max-w-prose scroll-mt-20">

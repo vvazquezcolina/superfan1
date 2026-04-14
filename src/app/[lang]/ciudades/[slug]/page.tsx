@@ -17,7 +17,17 @@ import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import { FlightPrices } from '@/components/affiliate/FlightPrices'
 import { CityActivities } from '@/components/affiliate/CityActivities'
 import { CityQuickFacts } from '@/components/city/CityQuickFacts'
-import { CITY_IATA, getCheapestFlightToCity } from '@/lib/travelpayouts/flights'
+import { StickyQuickBook } from '@/components/affiliate/StickyQuickBook'
+import { WhatsAppShare } from '@/components/engagement/WhatsAppShare'
+import {
+  buildAviasalesUrl,
+  CITY_IATA,
+  getCheapestFlightToCity,
+} from '@/lib/travelpayouts/flights'
+import {
+  buildKlookHotelsUrl,
+  buildWelcomePickupsSearchUrl,
+} from '@/lib/travelpayouts/partners'
 import { getMatchesByCity } from '@/lib/content/schedule'
 import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
 import type { Locale } from '@/lib/content/schemas'
@@ -189,6 +199,19 @@ export default async function CityPage({
       />
       <Breadcrumbs items={breadcrumbs} />
 
+      {/* Sticky quick-book bar — appears after scroll, one-tap CTAs */}
+      <StickyQuickBook
+        flightHref={
+          cityIata
+            ? buildAviasalesUrl('MEX', cityIata, '2026-06-11', '2026-06-18')
+            : undefined
+        }
+        hotelHref={buildKlookHotelsUrl(city.name[contentLocale], contentLocale)}
+        transferHref={buildWelcomePickupsSearchUrl(city.name[contentLocale])}
+        cityName={city.name[contentLocale]}
+        lang={contentLocale}
+      />
+
       <article className="mx-auto max-w-4xl space-y-10 py-6">
         <CityHero city={city} lang={contentLocale} />
 
@@ -312,6 +335,19 @@ export default async function CityPage({
 
         <div id="faq">
           <CityFAQ faqs={city.content.faq} lang={contentLocale} />
+        </div>
+
+        {/* WhatsApp share — amplifies LATAM distribution */}
+        <div className="mx-auto flex max-w-prose justify-center py-2">
+          <WhatsAppShare
+            url={`https://www.superfaninfo.com/${lang}/${section}/${slug}`}
+            title={
+              contentLocale === 'es'
+                ? `Guía de ${city.name[contentLocale]} para el Mundial 2026`
+                : `${city.name[contentLocale]} guide for the 2026 World Cup`
+            }
+            lang={contentLocale}
+          />
         </div>
 
         <section id="fuentes" className="mx-auto max-w-prose scroll-mt-20">
