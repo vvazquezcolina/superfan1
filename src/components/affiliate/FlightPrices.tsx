@@ -135,19 +135,26 @@ export async function FlightPrices({
   const offers = await getCheapestFlightsFromOrigins(origins, cityId)
   if (offers.length === 0) return null
 
+  // Days remaining until World Cup opening (June 11, 2026) — used as gentle
+  // urgency in the subtitle. Falls back gracefully if the date math fails.
+  const daysToCup = Math.max(
+    0,
+    Math.ceil((Date.parse('2026-06-11') - Date.now()) / 86_400_000),
+  )
+
   const title =
     lang === 'es'
-      ? `Vuelos baratos a ${cityName}`
-      : `Cheap flights to ${cityName}`
+      ? `Vuelos al Mundial 2026: ${cityName}`
+      : `World Cup 2026 flights: ${cityName}`
   const subtitle =
     lang === 'es'
-      ? `Precios recientes en cache de Aviasales. Haz clic para buscar tus fechas exactas.`
-      : `Recent cached prices from Aviasales. Click to search your exact dates.`
-  const bookLabel = lang === 'es' ? 'Buscar' : 'Search'
+      ? `Precios reales en cache de Aviasales para fechas del Mundial. Faltan ${daysToCup} días para el inicio — los precios suben conforme se acerca.`
+      : `Real Aviasales cached prices for World Cup dates. ${daysToCup} days until kickoff — prices rise as it gets closer.`
+  const bookLabel = lang === 'es' ? 'Ver vuelo' : 'View flight'
   const footer =
     lang === 'es'
-      ? 'Los precios provienen del cache público de Travelpayouts (Aviasales) y cambian constantemente. Haz clic en "Buscar" para ver disponibilidad y precios en tiempo real.'
-      : 'Prices come from the public Travelpayouts/Aviasales cache and change constantly. Click "Search" for real-time availability and prices.'
+      ? 'Precios indicativos del cache público de Aviasales — pueden haber cambiado. Haz clic en "Ver vuelo" para ver disponibilidad y reservar al precio actual.'
+      : 'Indicative prices from the public Aviasales cache — may have changed. Click "View flight" to see live availability and book at the current price.'
 
   return (
     <aside className="mx-auto max-w-prose my-8 rounded-xl border border-blue-500/25 bg-gradient-to-br from-blue-500/8 to-blue-500/3 p-6 shadow-sm">

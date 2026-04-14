@@ -13,6 +13,7 @@ import { toContentLocale } from '@/lib/content/locale'
 import { CountdownTimer } from '@/components/engagement/CountdownTimer'
 import { NewsletterSignup } from '@/components/engagement/NewsletterSignup'
 import { ExitIntentWrapper } from '@/components/engagement/ExitIntentWrapper'
+import { HomeAffiliateBand } from '@/components/affiliate/HomeAffiliateBand'
 import {
   MapPin, Building2, Users, Plane, Calendar, Wrench,
   ChevronRight, Trophy, Globe, Ticket
@@ -440,6 +441,9 @@ export default async function HomePage({
             </p>
           </div>
         </section>
+
+        {/* Affiliate monetization band */}
+        <HomeAffiliateBand lang={contentLocale} />
 
         {/* Newsletter Signup */}
         <section className="mt-14">

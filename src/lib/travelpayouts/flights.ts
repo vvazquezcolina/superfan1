@@ -160,10 +160,23 @@ function pickFirstOffer(
   }
 }
 
+// World Cup 2026 runs June 11 - July 19. Allow May 15 - August 15 as the
+// "useful" window — if the cheapest cached offer is outside this range it
+// becomes misleading instead of helpful (e.g. "vuelos baratos a LA" landing
+// on a November fare). Better to suppress than mislead.
+const WORLD_CUP_START_MS = Date.parse('2026-05-15')
+const WORLD_CUP_END_MS = Date.parse('2026-08-15')
+
+function isWithinWorldCupWindow(iso: string): boolean {
+  const t = Date.parse(iso)
+  if (Number.isNaN(t)) return false
+  return t >= WORLD_CUP_START_MS && t <= WORLD_CUP_END_MS
+}
+
 /**
  * Fetch the cheapest cached flight from `origin` to a city.
- * First tries June 2026 (World Cup window). If empty, retries without a date
- * filter so we always have *some* indicative price to show.
+ * Tries June 2026, then May 2026, then July 2026. Only returns an offer
+ * if its outbound date falls inside the World Cup-adjacent window.
  */
 export async function getCheapestFlightToCity(
   origin: string,
@@ -172,12 +185,12 @@ export async function getCheapestFlightToCity(
   const destination = CITY_IATA[cityId]
   if (!destination) return null
 
-  const worldCup = await fetchCheap(origin, destination, '2026-06')
-  const offer = pickFirstOffer(worldCup, origin, destination)
-  if (offer) return offer
-
-  const fallback = await fetchCheap(origin, destination)
-  return pickFirstOffer(fallback, origin, destination)
+  for (const month of ['2026-06', '2026-05', '2026-07']) {
+    const res = await fetchCheap(origin, destination, month)
+    const offer = pickFirstOffer(res, origin, destination)
+    if (offer && isWithinWorldCupWindow(offer.departureAt)) return offer
+  }
+  return null
 }
 
 /**

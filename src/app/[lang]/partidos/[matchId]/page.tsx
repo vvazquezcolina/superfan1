@@ -11,6 +11,11 @@ import { buildPageMetadata } from '@/lib/seo'
 import { buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { buildJsonLdScript } from '@/lib/jsonld'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
+import { FlightPrices } from '@/components/affiliate/FlightPrices'
+import { BookingWidget } from '@/components/affiliate/BookingWidget'
+import { AirportTransfers } from '@/components/affiliate/AirportTransfers'
+import { CityActivities } from '@/components/affiliate/CityActivities'
+import { CITY_IATA } from '@/lib/travelpayouts/flights'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 
@@ -417,6 +422,43 @@ export default async function MatchPage({
 
           </div>
         </section>
+
+        {/* Affiliate monetization stack — high-intent page, the user is
+            literally researching attending this match. Show them how to
+            get there, where to sleep, and how to book transfers. */}
+        {city && (
+          <section>
+            <h2 className="mb-4 text-xl font-bold">
+              {contentLocale === 'es'
+                ? `Planea tu viaje a ${cityName}`
+                : `Plan your trip to ${cityName}`}
+            </h2>
+            <FlightPrices
+              cityId={city.id}
+              cityName={city.name[contentLocale]}
+              lang={contentLocale}
+            />
+            <BookingWidget
+              cityName={city.name[contentLocale]}
+              citySlug={city.slugs[contentLocale]}
+              lang={contentLocale}
+              dict={dict.affiliate}
+            />
+            {stadium && CITY_IATA[city.id] && (
+              <AirportTransfers
+                fromLabel={`${CITY_IATA[city.id]} (${city.name[contentLocale]})`}
+                fromIata={CITY_IATA[city.id]}
+                toName={stadium.name[contentLocale]}
+                lang={contentLocale}
+              />
+            )}
+            <CityActivities
+              cityName={city.name[contentLocale]}
+              citySlug={city.slugs[contentLocale]}
+              lang={contentLocale}
+            />
+          </section>
+        )}
 
         {/* Disclaimer */}
         <p className="rounded-lg border border-border bg-muted/10 p-4 text-xs text-muted">
