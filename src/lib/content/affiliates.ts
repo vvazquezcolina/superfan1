@@ -73,6 +73,34 @@ export function buildBookingUrl(
 }
 
 /**
+ * Build a tracked Booking.com URL that routes through Travelpayouts' redirect
+ * (tp.media/r?marker=...) so clicks are attributed to the affiliate marker.
+ * Same pattern BudgetCalculator and ItineraryPlanner already use.
+ */
+export function buildTravelpayoutsBookingUrl(
+  cityName: string,
+  lang: Locale,
+): string {
+  const partner = getAffiliatePartner('travelpayouts')
+  const marker = partner?.marker ?? partner?.aid ?? '233922'
+  const checkin = '2026-06-11'
+  const checkout = '2026-06-18'
+  const bookingLang = lang === 'es' ? 'es' : 'en'
+  const booking = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(cityName)}&checkin=${checkin}&checkout=${checkout}&lang=${bookingLang}&aid=304142`
+  return `https://tp.media/r?marker=${marker}&trs=${marker}&p=4114&u=${encodeURIComponent(booking)}`
+}
+
+/**
+ * Build a tracked Aviasales flight URL for a destination.
+ */
+export function buildTravelpayoutsFlightUrl(destinationIata: string): string {
+  const partner = getAffiliatePartner('travelpayouts')
+  const marker = partner?.marker ?? partner?.aid ?? '233922'
+  const dest = `https://www.aviasales.com/?destination=${encodeURIComponent(destinationIata)}`
+  return `https://tp.media/r?marker=${marker}&trs=${marker}&p=501&u=${encodeURIComponent(dest)}`
+}
+
+/**
  * Build a Travelpayouts hotel widget script URL.
  * Returns the iframe/script src for embedding the hotel search widget.
  */
