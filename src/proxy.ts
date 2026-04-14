@@ -33,7 +33,10 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Skip internal paths, static files, and API routes
-    '/((?!_next|api|favicon.ico|images|robots.txt|sitemap.xml|llms.txt|llms-full.txt).*)',
+    // Skip internal paths, static files, and API routes.
+    // Excluding *.txt / *.xml / *.json files in the root so public/ assets
+    // (e.g. the IndexNow verification key) are served directly without being
+    // redirected to a locale prefix.
+    '/((?!_next|api|favicon.ico|images|robots.txt|sitemap.xml|llms.txt|llms-full.txt|ads.txt|.*\\.txt$|.*\\.xml$|.*\\.json$).*)',
   ],
 }
