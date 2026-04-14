@@ -74,11 +74,14 @@ Every host city page surfaces real cached round-trip flight prices from Mexico C
 
 ### Bookable Travel Services (Servicios Reservables)
 The site partners with reviewed providers via the Travelpayouts affiliate network. All links carry FTC disclosure and pay no extra cost to the user.
-- Hotels: Booking.com partner search with World Cup dates pre-filled, embedded on every host city page and the hospedaje guide.
-- Airport transfers: Welcome Pickups and Kiwitaxi side-by-side CTAs on stadium pages, deep-linked from the city's main airport to the venue.
-- Tours and activities: GetYourGuide search cards on every city page (city tours, top attractions, food experiences) plus standalone CTAs on stadium and match pages for venue tours via Tiqets.
-- Travel insurance: EKTA quotes on the visa guide and hospedaje page; required for many entry visas to the host countries.
-- Flight delay compensation: AirHelp claim CTA on the flights guide and the desde-europa sub-page (covered by EU regulation 261/2004).
+- Hotels: Booking.com partner search with World Cup dates pre-filled, embedded on every host city page, the hospedaje guide, comparison pages, match-day pages, and individual match pages.
+- Flights: Aviasales / Kiwi.com / Trip.com — real cached prices on every city page and dedicated by-origin sub-pages (desde-mexico, desde-usa, desde-europa). 16 host cities × 4 origins.
+- Airport transfers: Welcome Pickups and Kiwitaxi side-by-side CTAs on stadium pages, dia-de-partido pages, como-llegar route pages, and the transporte guide. Deep-linked from the city's main airport to the venue.
+- Tours and activities: GetYourGuide search cards on every city page (city tours, top attractions, food experiences) plus standalone CTAs on stadium and match pages for venue tours via Tiqets and Klook.
+- Travel insurance: EKTA (25% reward, 30-day cookie) on the visa guide, hospedaje page, dia-de-partido pages, fan/entradas page, every group page, and listicle pages. Required for many entry visas to the host countries.
+- Flight delay compensation: AirHelp claim CTA on the flights guide, the desde-europa sub-page, and the fan/entradas page. Covered by EU regulation 261/2004 — applies to flights to/from the EU and EU-operator flights worldwide.
+
+Affiliate disclosure: SuperFan is an independent guide, not affiliated with FIFA. We earn small commissions on partner bookings to fund the site, at no cost to readers.
 
 ### Match Pages (Paginas de Partidos)
 Individual detail pages for each of the 48 group stage matches with venue info, city guide links, and travel context.
