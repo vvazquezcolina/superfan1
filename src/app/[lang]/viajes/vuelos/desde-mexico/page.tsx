@@ -8,6 +8,7 @@ import { buildArticleJsonLd, buildFAQPageJsonLd, buildJsonLdScript } from '@/lib
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
+import { FlightsFromOrigin } from '@/components/affiliate/FlightsFromOrigin'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 
 export const revalidate = 86400
@@ -120,6 +121,13 @@ export default async function VuelosDesdeMexicoPage({
             id={`seccion-${index + 1}`}
           />
         ))}
+
+        {/* Live flight prices from MEX to all 16 host cities */}
+        <FlightsFromOrigin
+          origin="MEX"
+          originLabel={locale === 'es' ? 'Ciudad de México' : 'Mexico City'}
+          lang={locale}
+        />
 
         {/* FAQ */}
         <section className="mx-auto max-w-prose scroll-mt-20">

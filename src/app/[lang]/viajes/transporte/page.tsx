@@ -8,6 +8,7 @@ import { buildArticleJsonLd, buildFAQPageJsonLd, buildJsonLdScript } from '@/lib
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
+import { TransferGenericCTA } from '@/components/affiliate/TransferGenericCTA'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 
 export const revalidate = 86400
@@ -116,6 +117,9 @@ export default async function TransportePage({
             id={`seccion-${index + 1}`}
           />
         ))}
+
+        {/* Transfer providers CTA */}
+        <TransferGenericCTA lang={locale} />
 
         {/* FAQ */}
         <section className="mx-auto max-w-prose scroll-mt-20">

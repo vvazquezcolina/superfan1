@@ -8,6 +8,7 @@ import { buildArticleJsonLd, buildFAQPageJsonLd, buildJsonLdScript } from '@/lib
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
+import { FlightsFromOrigin } from '@/components/affiliate/FlightsFromOrigin'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 
 export const revalidate = 86400
@@ -120,6 +121,18 @@ export default async function VuelosDesdeUSAPage({
             id={`seccion-${index + 1}`}
           />
         ))}
+
+        {/* Live flight prices from JFK to all 16 host cities */}
+        <FlightsFromOrigin
+          origin="JFK"
+          originLabel={locale === 'es' ? 'Nueva York (JFK)' : 'New York (JFK)'}
+          lang={locale}
+        />
+        <FlightsFromOrigin
+          origin="MIA"
+          originLabel={locale === 'es' ? 'Miami (MIA)' : 'Miami (MIA)'}
+          lang={locale}
+        />
 
         {/* FAQ */}
         <section className="mx-auto max-w-prose scroll-mt-20">

@@ -8,6 +8,8 @@ import { buildArticleJsonLd, buildFAQPageJsonLd, buildJsonLdScript } from '@/lib
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
+import { FlightsFromOrigin } from '@/components/affiliate/FlightsFromOrigin'
+import { AirHelpBanner } from '@/components/affiliate/AirHelpBanner'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 
 export const revalidate = 86400
@@ -120,6 +122,16 @@ export default async function VuelosDesdeEuropaPage({
             id={`seccion-${index + 1}`}
           />
         ))}
+
+        {/* Live flight prices from MAD to all 16 host cities */}
+        <FlightsFromOrigin
+          origin="MAD"
+          originLabel={locale === 'es' ? 'Madrid (MAD)' : 'Madrid (MAD)'}
+          lang={locale}
+        />
+
+        {/* European flights are governed by EU 261 — AirHelp is the perfect fit */}
+        <AirHelpBanner lang={locale} />
 
         {/* FAQ */}
         <section className="mx-auto max-w-prose scroll-mt-20">

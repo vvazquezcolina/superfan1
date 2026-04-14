@@ -10,6 +10,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
 import { AffiliateLink } from '@/components/affiliate/AffiliateLink'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
+import { TravelInsurance } from '@/components/affiliate/TravelInsurance'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 
 export const revalidate = 86400
@@ -148,6 +149,9 @@ export default async function HospedajePage({
             )}
           </div>
         ))}
+
+        {/* Travel insurance — natural fit for lodging research */}
+        <TravelInsurance lang={locale} />
 
         {/* FAQ */}
         <section className="mx-auto max-w-prose scroll-mt-20">
