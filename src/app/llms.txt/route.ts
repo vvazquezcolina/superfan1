@@ -66,6 +66,15 @@ ${stadiumLines}
 - [Calculadora de Presupuesto](${SITE_URL}/es/herramientas/presupuesto): Calcula el costo total de tu viaje al Mundial 2026: vuelos, hospedaje, entradas, comida y transporte
 - [Mapa Interactivo](${SITE_URL}/es/herramientas/mapa): Mapa de las 16 ciudades sede con estadios, zonas de fans y puntos de interes
 
+### Money Questions Answered (Respuestas a Preguntas Económicas)
+High-intent long-form answers to the most-searched questions about attending the World Cup 2026 from Latin America. Each page combines a direct-answer block (formatted for AI overviews / featured snippets), detailed sections with numbers and examples, and affiliate CTAs for the exact partner that matches the question.
+- [¿Cuánto cuesta un viaje al Mundial 2026 desde México?](${SITE_URL}/es/respuestas/cuanto-cuesta-viaje-mundial-2026-desde-mexico): Total trip cost breakdown with real flight prices from the Aviasales cache ($299-$742 USD), hotel ranges, ticket prices by category, and sample 5-day budget.
+- [¿Dónde hospedarse cerca del SoFi Stadium?](${SITE_URL}/es/respuestas/donde-hospedarse-cerca-sofi-stadium-mundial-2026): Neighborhood-by-neighborhood hotel guide for the final venue in Los Angeles.
+- [¿Cuáles son los vuelos más baratos al Mundial 2026 desde México?](${SITE_URL}/es/respuestas/vuelos-baratos-mundial-2026-desde-mexico): Cheapest cached routes CDMX → 16 host cities with airline names and travel times.
+- [¿Necesito seguro de viaje?](${SITE_URL}/es/respuestas/seguro-viaje-mundial-2026): Why insurance is critical for USA trips, what to cover, typical costs.
+- [¿Cómo llego al Estadio Azteca?](${SITE_URL}/es/respuestas/como-llegar-estadio-azteca-mundial-2026): Metro + Tren Ligero vs Uber vs shuttle, realistic travel times, what to avoid.
+- [¿Necesito visa para Estados Unidos?](${SITE_URL}/es/respuestas/visa-estados-unidos-mundial-2026-mexicanos): Current wait times by consulate (2-14 months), cost ($185 USD), documents, Canada alternative.
+
 ### Live Flight Prices (Precios de Vuelos en Vivo)
 Every host city page surfaces real cached round-trip flight prices from Mexico City (MEX), Miami (MIA), Madrid (MAD), and Bogota (BOG) for the World Cup window (May-August 2026). Sourced from the Travelpayouts/Aviasales public price cache, refreshed every 24 hours via ISR.
 - Each city page includes a "Datos rapidos" Quick Facts block with the cheapest cached fare from MEX, the host stadium, and the main airport IATA — formatted for direct citation.

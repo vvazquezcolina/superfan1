@@ -10,6 +10,7 @@ import {
 } from '@/lib/content/programmatic'
 import { getMatches } from '@/lib/content/schedule'
 import { hreflangMap } from '@/lib/i18n'
+import faqPagesJson from '@content/faq-pages.json'
 
 const SITE_URL = 'https://www.superfaninfo.com'
 
@@ -473,6 +474,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly',
         priority: 0.7,
         alternates: { languages: alts },
+      })
+    }
+  }
+
+  // ─── Long-tail Q&A landing pages (respuestas) — es + en ─────────────────────
+  const faqPages = (faqPagesJson as { pages: Array<{ slug: string }> }).pages
+  for (const page of faqPages) {
+    for (const locale of ['es', 'en'] as const) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/respuestas/${page.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.9, // high priority — these are money pages
+        alternates: {
+          languages: {
+            'es-419': `${SITE_URL}/es/respuestas/${page.slug}`,
+            en: `${SITE_URL}/en/respuestas/${page.slug}`,
+            'x-default': `${SITE_URL}/es/respuestas/${page.slug}`,
+          },
+        },
       })
     }
   }
