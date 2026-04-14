@@ -15,6 +15,7 @@ import { CitySection } from '@/components/city/CitySection'
 import { CityFAQ } from '@/components/city/CityFAQ'
 import { BookingWidget } from '@/components/affiliate/BookingWidget'
 import { FlightPrices } from '@/components/affiliate/FlightPrices'
+import { CityActivities } from '@/components/affiliate/CityActivities'
 import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
@@ -242,6 +243,13 @@ export default async function CityPage({
                   citySlug={slug}
                   lang={contentLocale}
                   dict={dict.affiliate}
+                />
+              )}
+              {key === 'foodAndDrink' && (
+                <CityActivities
+                  cityName={city.name[contentLocale]}
+                  citySlug={slug}
+                  lang={contentLocale}
                 />
               )}
             </React.Fragment>
