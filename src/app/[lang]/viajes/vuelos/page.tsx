@@ -8,6 +8,7 @@ import { buildArticleJsonLd, buildFAQPageJsonLd, buildJsonLdScript } from '@/lib
 import { generateBreadcrumbs, buildBreadcrumbJsonLd } from '@/lib/breadcrumbs'
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs'
 import { CitySection } from '@/components/city/CitySection'
+import { AirHelpBanner } from '@/components/affiliate/AirHelpBanner'
 import type { Locale, GuideFAQ } from '@/lib/content/schemas'
 
 export const revalidate = 86400
@@ -129,6 +130,9 @@ export default async function VuelosPage({
             id={`seccion-${index + 1}`}
           />
         ))}
+
+        {/* Flight delay compensation CTA */}
+        <AirHelpBanner lang={locale} />
 
         {/* Links to origin-specific sub-pages */}
         <nav className="mx-auto max-w-prose">

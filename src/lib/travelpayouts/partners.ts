@@ -1,27 +1,35 @@
 /**
  * Per-partner affiliate URL builders for the Travelpayouts programs we are
- * connected to. Each Travelpayouts partner uses its OWN attribution scheme:
+ * connected to. Each Travelpayouts partner uses one of two attribution
+ * schemes:
  *
- *   - Aviasales:    tp.media/r?marker=233922&p=4114&u=encoded
- *   - Booking.com:  tp.media/r?marker=233922&p=4114&u=encoded (or aid=304142)
- *   - GetYourGuide: direct URL with ?partner_id=0JJQDRO&cmp=...-677963
+ *   1. Direct partner URL with a partner-specific id parameter
+ *      (verified via dashboard for GetYourGuide and Booking.com).
  *
- * IDs verified against the user's connected dashboard (account 677963):
- *   - GetYourGuide partner_id: 0JJQDRO  (extracted via dashboard generator)
- *   - Travelpayouts marker:    233922   (existing affiliates.json)
- *   - Travelpayouts user id:   677963
+ *   2. Travelpayouts unified redirect:
+ *        https://tp.media/r?marker=233922&trs=233922&u=ENCODED_DESTINATION
+ *      The marker (233922) is what credits the affiliate account on
+ *      conversion. Travelpayouts cookies the user, redirects to the
+ *      destination, and attributes commission to the marker.
  *
- * IDs still TODO (ask the user to drop one short link per program from
- * https://app.travelpayouts.com/programs/connected → Tools → Generate link
- * and we'll add the builder):
- *   - Trip.com, Expedia, Klook, Welcome Pickups, Tiqets, Kiwitaxi,
- *     GetTransfer, CheapOair, AirHelp, Go City, EKTA, WeGoTrip
+ * Account context (from app.travelpayouts.com, account 677963):
+ *   - Travelpayouts user id: 677963
+ *   - Marker:                233922
+ *   - GetYourGuide partner:  0JJQDRO  (extracted via dashboard generator)
+ *   - Booking.com aid:       304142
  */
 
 const TP_MARKER = '233922'
 const TP_USER_ID = '677963'
 
-// --- GetYourGuide ----------------------------------------------------------
+/** Wrap any URL in the unified Travelpayouts tracking redirect. */
+function tpRedirect(destinationUrl: string): string {
+  return `https://tp.media/r?marker=${TP_MARKER}&trs=${TP_MARKER}&u=${encodeURIComponent(
+    destinationUrl,
+  )}`
+}
+
+// --- GetYourGuide (8% reward, 31d cookie) ----------------------------------
 
 const GYG_PARTNER_ID = '0JJQDRO'
 const GYG_CMP_PREFIX = 'c003dd2abdd3486d89b6db57d'
@@ -33,18 +41,15 @@ export function buildGetYourGuideUrl(destinationUrl: string): string {
   return url.toString()
 }
 
-/**
- * GetYourGuide search URL for a destination keyword. Always works regardless
- * of whether GetYourGuide has a dedicated location page for the city.
- */
 export function buildGetYourGuideSearchUrl(query: string, lang: 'es' | 'en'): string {
-  const subdomain = lang === 'es' ? 'www' : 'www'
   const path = lang === 'es' ? '/es-es/s/' : '/s/'
-  const base = `https://${subdomain}.getyourguide.com${path}?q=${encodeURIComponent(query)}&searchSource=3`
+  const base = `https://www.getyourguide.com${path}?q=${encodeURIComponent(
+    query,
+  )}&searchSource=3`
   return buildGetYourGuideUrl(base)
 }
 
-// --- Aviasales (already used by flights.ts) --------------------------------
+// --- Aviasales (40% reward, 30d cookie) ------------------------------------
 
 export function buildAviasalesSearchUrl(
   origin: string,
@@ -58,11 +63,10 @@ export function buildAviasalesSearchUrl(
   if (departDate) params.set('depart_date', departDate)
   if (returnDate) params.set('return_date', returnDate)
   params.set('adults', '1')
-  const search = `https://www.aviasales.com/search?${params.toString()}`
-  return `https://tp.media/r?marker=${TP_MARKER}&trs=${TP_MARKER}&p=4114&u=${encodeURIComponent(search)}`
+  return tpRedirect(`https://www.aviasales.com/search?${params.toString()}`)
 }
 
-// --- Booking.com -----------------------------------------------------------
+// --- Booking.com (3-5% reward, session cookie) -----------------------------
 
 export function buildBookingSearchUrl(
   cityName: string,
@@ -74,7 +78,114 @@ export function buildBookingSearchUrl(
   const search = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(
     cityName,
   )}&checkin=${checkin}&checkout=${checkout}&lang=${bookingLang}&aid=304142`
-  return `https://tp.media/r?marker=${TP_MARKER}&trs=${TP_MARKER}&p=4114&u=${encodeURIComponent(search)}`
+  return tpRedirect(search)
+}
+
+// --- Welcome Pickups (8-9% reward, 45d cookie) -----------------------------
+
+export function buildWelcomePickupsUrl(citySlug: string): string {
+  return tpRedirect(`https://welcomepickups.com/${citySlug}/`)
+}
+
+export function buildWelcomePickupsSearchUrl(cityName: string): string {
+  return tpRedirect(
+    `https://welcomepickups.com/?destination=${encodeURIComponent(cityName)}`,
+  )
+}
+
+// --- Kiwitaxi (9-11% reward, 30d cookie) -----------------------------------
+
+export function buildKiwitaxiSearchUrl(
+  fromIata: string,
+  toName: string,
+  lang: 'es' | 'en',
+): string {
+  const langCode = lang === 'es' ? 'es' : 'en'
+  return tpRedirect(
+    `https://kiwitaxi.com/?lang=${langCode}&from=${fromIata}&to=${encodeURIComponent(
+      toName,
+    )}`,
+  )
+}
+
+export function buildKiwitaxiHomeUrl(lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en'
+  return tpRedirect(`https://kiwitaxi.com/?lang=${langCode}`)
+}
+
+// --- Tiqets (3.5-8% reward, 30d cookie) ------------------------------------
+
+export function buildTiqetsSearchUrl(query: string, lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en'
+  return tpRedirect(
+    `https://www.tiqets.com/${langCode}/search?q=${encodeURIComponent(query)}`,
+  )
+}
+
+// --- Klook (2-5% reward, 30d cookie) ---------------------------------------
+
+export function buildKlookSearchUrl(query: string, lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en-US'
+  return tpRedirect(
+    `https://www.klook.com/${langCode}/search/?keyword=${encodeURIComponent(query)}`,
+  )
+}
+
+// --- EKTA travel insurance (25% reward, 30d cookie) ------------------------
+
+export function buildEktaInsuranceUrl(lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en'
+  return tpRedirect(`https://ektatraveling.com/${langCode}/`)
+}
+
+// --- AirHelp (15-16.6% reward, 45d cookie) ---------------------------------
+
+export function buildAirHelpUrl(lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en'
+  return tpRedirect(`https://www.airhelp.com/${langCode}/`)
+}
+
+// --- Trip.com (1-5.5% reward, 7-30d cookie) --------------------------------
+
+export function buildTripComHotelsUrl(cityName: string, lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es-mx' : 'en-us'
+  return tpRedirect(
+    `https://www.trip.com/hotels/list?city=${encodeURIComponent(
+      cityName,
+    )}&locale=${langCode}`,
+  )
+}
+
+// --- Expedia (1.35-3.6% reward, 7d cookie) ---------------------------------
+
+export function buildExpediaHotelsUrl(cityName: string, lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es_MX' : 'en_US'
+  return tpRedirect(
+    `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(
+      cityName,
+    )}&locale=${langCode}`,
+  )
+}
+
+// --- Go City (3.4-6% reward, 90d cookie) -----------------------------------
+
+export function buildGoCityUrl(citySlug: string): string {
+  return tpRedirect(`https://gocity.com/en/${citySlug}/`)
+}
+
+// --- WeGoTrip (6.64-41.5% reward, 30d cookie) ------------------------------
+
+export function buildWeGoTripSearchUrl(query: string, lang: 'es' | 'en'): string {
+  const langCode = lang === 'es' ? 'es' : 'en'
+  return tpRedirect(
+    `https://wegotrip.com/${langCode}/search?q=${encodeURIComponent(query)}`,
+  )
+}
+
+// --- CheapOair ($5-25 fixed reward, 30d cookie) ----------------------------
+
+export function buildCheapOairUrl(): string {
+  return tpRedirect('https://www.cheapoair.com/')
 }
 
 // --- Disclosure helpers ----------------------------------------------------

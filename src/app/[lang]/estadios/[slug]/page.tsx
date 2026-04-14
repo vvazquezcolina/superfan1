@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -13,6 +14,9 @@ import { StadiumHero } from '@/components/stadium/StadiumHero'
 import { StadiumSection } from '@/components/stadium/StadiumSection'
 import { StadiumFAQ } from '@/components/stadium/StadiumFAQ'
 import { TableOfContents, type TocItem } from '@/components/layout/TableOfContents'
+import { AirportTransfers } from '@/components/affiliate/AirportTransfers'
+import { StadiumTickets } from '@/components/affiliate/StadiumTickets'
+import { CITY_IATA } from '@/lib/travelpayouts/flights'
 import type { Locale } from '@/lib/content/schemas'
 import { toContentLocale } from '@/lib/content/locale'
 import {
@@ -105,6 +109,7 @@ export default async function StadiumPage({
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(breadcrumbs)
 
   const city = getCityById(stadium.city)
+  const cityIata = CITY_IATA[stadium.city]
 
   const canonicalUrl = `https://www.superfaninfo.com/${lang}/${section}/${slug}`
   const stadiumJsonLd = buildStadiumJsonLd(stadium, city?.name[contentLocale] ?? '', contentLocale)
@@ -209,13 +214,29 @@ export default async function StadiumPage({
           const qh = questionHeaders[key]
           const titleOverride = qh ? qh[contentLocale].replace('{stadiumName}', stadium.name[contentLocale]) : undefined
           return (
-            <StadiumSection
-              key={key}
-              section={stadium.content[key]}
-              lang={contentLocale}
-              id={sectionIds[key]}
-              titleOverride={titleOverride}
-            />
+            <React.Fragment key={key}>
+              <StadiumSection
+                section={stadium.content[key]}
+                lang={contentLocale}
+                id={sectionIds[key]}
+                titleOverride={titleOverride}
+              />
+              {key === 'gettingThere' && cityIata && (
+                <AirportTransfers
+                  fromLabel={`${cityIata} (${city?.name[contentLocale] ?? ''})`}
+                  fromIata={cityIata}
+                  toName={stadium.name[contentLocale]}
+                  lang={contentLocale}
+                />
+              )}
+              {key === 'seatingGuide' && (
+                <StadiumTickets
+                  stadiumName={stadium.name[contentLocale]}
+                  cityName={city?.name[contentLocale] ?? ''}
+                  lang={contentLocale}
+                />
+              )}
+            </React.Fragment>
           )
         })}
 
