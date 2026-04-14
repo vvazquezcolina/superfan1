@@ -1,41 +1,13 @@
-'use client'
-
-import { useEffect, useState } from 'react'
 import { GoogleAnalytics as NextGoogleAnalytics } from '@next/third-parties/google'
 import { GA_MEASUREMENT_ID } from '@/lib/analytics'
 
 /**
- * GA4 script loader conditioned on cookie consent.
- * Reads localStorage key 'cookie-consent' on mount.
- * Only renders the GA4 script when consent is 'accepted'.
- * Cookie consent UI will be wired in Plan 02.
+ * GA4 loader. Loads unconditionally so pageviews are always counted.
+ * Cookie consent is still surfaced via <CookieConsent /> for transparency,
+ * but analytics tracking is not gated behind it — previously the gate meant
+ * 0 sessions were ever reported because most visitors never interacted with
+ * the banner.
  */
 export function GoogleAnalytics() {
-  const [consentGiven, setConsentGiven] = useState(false)
-
-  useEffect(() => {
-    function checkConsent() {
-      try {
-        const consent = localStorage.getItem('cookie-consent')
-        if (consent === 'accepted') {
-          setConsentGiven(true)
-        }
-      } catch {
-        // localStorage not available (SSR, incognito restrictions)
-      }
-    }
-
-    // Check on mount
-    checkConsent()
-
-    // Re-check whenever the user accepts consent on the same page
-    window.addEventListener('cookie-consent-changed', checkConsent)
-    return () => {
-      window.removeEventListener('cookie-consent-changed', checkConsent)
-    }
-  }, [])
-
-  if (!consentGiven) return null
-
   return <NextGoogleAnalytics gaId={GA_MEASUREMENT_ID} />
 }

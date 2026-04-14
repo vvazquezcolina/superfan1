@@ -5,6 +5,7 @@ import {
   buildTravelpayoutsHotelWidgetSrc,
 } from '@/lib/content/affiliates'
 import { AffiliateLink } from './AffiliateLink'
+import { TravelpayoutsScriptEmbed } from './TravelpayoutsScriptEmbed'
 import type { Locale } from '@/lib/content/schemas'
 
 interface BookingWidgetDict {
@@ -56,21 +57,15 @@ export function BookingWidget({ cityName, citySlug, lang, dict }: BookingWidgetP
           {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
         </p>
         {widgetSrc && (
-          <div className="mt-4 overflow-hidden rounded-lg border border-primary/15 shadow-sm">
-            <iframe
-              src={widgetSrc}
-              width="100%"
-              height="440"
-              className="border-0 w-full"
-              title={
-                lang === 'es'
-                  ? `Buscar hoteles en ${cityName}`
-                  : `Search hotels in ${cityName}`
-              }
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <TravelpayoutsScriptEmbed
+            src={widgetSrc}
+            title={
+              lang === 'es'
+                ? `Buscar hoteles en ${cityName}`
+                : `Search hotels in ${cityName}`
+            }
+            className="mt-4 min-h-[440px] overflow-hidden rounded-lg border border-primary/15 shadow-sm"
+          />
         )}
         <div className="mt-3 flex items-start gap-1.5 text-xs text-muted">
           <Info className="mt-px h-3 w-3 shrink-0 opacity-60" aria-hidden="true" />

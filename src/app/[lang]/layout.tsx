@@ -6,6 +6,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics'
 import { CookieConsent } from '@/components/analytics/CookieConsent'
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
 import { buildOrganizationJsonLd } from '@/lib/jsonld'
 import type { Locale } from '@/app/[lang]/dictionaries'
 import '@/app/globals.css'
@@ -90,6 +91,7 @@ export default async function LangLayout({
         <Footer lang={lang} dict={dict} />
         <CookieConsent lang={lang} />
         <GoogleAnalytics />
+        <VercelAnalytics />
       </body>
     </html>
   )

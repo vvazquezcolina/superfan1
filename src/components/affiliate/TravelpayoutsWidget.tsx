@@ -4,6 +4,7 @@ import {
   buildTravelpayoutsHotelWidgetSrc,
   buildTravelpayoutsFlightWidgetSrc,
 } from '@/lib/content/affiliates'
+import { TravelpayoutsScriptEmbed } from './TravelpayoutsScriptEmbed'
 import type { Locale } from '@/lib/content/schemas'
 
 interface TravelpayoutsWidgetDict {
@@ -28,11 +29,6 @@ interface TravelpayoutsFlightWidgetProps {
   dict: TravelpayoutsWidgetDict
 }
 
-/**
- * Server component that embeds a Travelpayouts hotel search widget.
- * Placed after the neighborhoods ("Where to Stay") section on city pages.
- * Uses an iframe to load the Travelpayouts white-label hotel search.
- */
 export function TravelpayoutsHotelWidget({
   cityName,
   lang,
@@ -60,17 +56,15 @@ export function TravelpayoutsHotelWidget({
         {dict.hotelsNear} {cityName}{' '}
         {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
       </p>
-      <div className="mt-4 overflow-hidden rounded-lg border border-amber-500/15 shadow-sm">
-        <iframe
-          src={widgetSrc}
-          width="100%"
-          height="440"
-          className="border-0 w-full"
-          title={lang === 'es' ? `Buscar hoteles en ${cityName}` : `Search hotels in ${cityName}`}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </div>
+      <TravelpayoutsScriptEmbed
+        src={widgetSrc}
+        title={
+          lang === 'es'
+            ? `Buscar hoteles en ${cityName}`
+            : `Search hotels in ${cityName}`
+        }
+        className="mt-4 min-h-[440px] overflow-hidden rounded-lg border border-amber-500/15 shadow-sm"
+      />
       <div className="mt-3 flex items-start gap-1.5 text-xs text-muted">
         <Info className="mt-px size-3 shrink-0 opacity-60" aria-hidden="true" />
         <span className="italic">{disclosure}</span>
@@ -80,10 +74,6 @@ export function TravelpayoutsHotelWidget({
   )
 }
 
-/**
- * Server component that embeds a Travelpayouts flight search widget.
- * Can be used on travel pages, city pages, or any page that promotes flight booking.
- */
 export function TravelpayoutsFlightWidget({
   cityName,
   lang,
@@ -111,17 +101,15 @@ export function TravelpayoutsFlightWidget({
         {dict.flightsTo} {cityName}{' '}
         {lang === 'es' ? 'para el Mundial 2026' : 'for the 2026 World Cup'}
       </p>
-      <div className="mt-4 overflow-hidden rounded-lg border border-blue-500/15 shadow-sm">
-        <iframe
-          src={widgetSrc}
-          width="100%"
-          height="440"
-          className="border-0 w-full"
-          title={lang === 'es' ? `Buscar vuelos a ${cityName}` : `Search flights to ${cityName}`}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </div>
+      <TravelpayoutsScriptEmbed
+        src={widgetSrc}
+        title={
+          lang === 'es'
+            ? `Buscar vuelos a ${cityName}`
+            : `Search flights to ${cityName}`
+        }
+        className="mt-4 min-h-[440px] overflow-hidden rounded-lg border border-blue-500/15 shadow-sm"
+      />
       <div className="mt-3 flex items-start gap-1.5 text-xs text-muted">
         <Info className="mt-px size-3 shrink-0 opacity-60" aria-hidden="true" />
         <span className="italic">{disclosure}</span>
