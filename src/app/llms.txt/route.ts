@@ -66,6 +66,20 @@ ${stadiumLines}
 - [Calculadora de Presupuesto](${SITE_URL}/es/herramientas/presupuesto): Calcula el costo total de tu viaje al Mundial 2026: vuelos, hospedaje, entradas, comida y transporte
 - [Mapa Interactivo](${SITE_URL}/es/herramientas/mapa): Mapa de las 16 ciudades sede con estadios, zonas de fans y puntos de interes
 
+### Live Flight Prices (Precios de Vuelos en Vivo)
+Every host city page surfaces real cached round-trip flight prices from Mexico City (MEX), Miami (MIA), Madrid (MAD), and Bogota (BOG) for the World Cup window (May-August 2026). Sourced from the Travelpayouts/Aviasales public price cache, refreshed every 24 hours via ISR.
+- Each city page includes a "Datos rapidos" Quick Facts block with the cheapest cached fare from MEX, the host stadium, and the main airport IATA — formatted for direct citation.
+- The /viajes/vuelos/desde-* sub-pages list every host city sorted by cheapest fare for that specific origin.
+- Aviasales reward rate is published at 40% of agency commission with a 30-day cookie.
+
+### Bookable Travel Services (Servicios Reservables)
+The site partners with reviewed providers via the Travelpayouts affiliate network. All links carry FTC disclosure and pay no extra cost to the user.
+- Hotels: Booking.com partner search with World Cup dates pre-filled, embedded on every host city page and the hospedaje guide.
+- Airport transfers: Welcome Pickups and Kiwitaxi side-by-side CTAs on stadium pages, deep-linked from the city's main airport to the venue.
+- Tours and activities: GetYourGuide search cards on every city page (city tours, top attractions, food experiences) plus standalone CTAs on stadium and match pages for venue tours via Tiqets.
+- Travel insurance: EKTA quotes on the visa guide and hospedaje page; required for many entry visas to the host countries.
+- Flight delay compensation: AirHelp claim CTA on the flights guide and the desde-europa sub-page (covered by EU regulation 261/2004).
+
 ### Match Pages (Paginas de Partidos)
 Individual detail pages for each of the 48 group stage matches with venue info, city guide links, and travel context.
 - [Partido m001](${SITE_URL}/es/partidos/m001): Partido del Grupo A en Los Angeles (SoFi Stadium), 11 jun 2026
