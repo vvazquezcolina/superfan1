@@ -37,6 +37,6 @@ export const config = {
     // Excluding *.txt / *.xml / *.json files in the root so public/ assets
     // (e.g. the IndexNow verification key) are served directly without being
     // redirected to a locale prefix.
-    '/((?!_next|api|favicon.ico|images|robots.txt|sitemap.xml|llms.txt|llms-full.txt|ads.txt|.*\\.txt$|.*\\.xml$|.*\\.json$).*)',
+    '/((?!_next|api|favicon.ico|images|robots.txt|sitemap.xml|llms.txt|llms-full.txt|ads.txt|google.+\\.html$|.*\\.txt$|.*\\.xml$|.*\\.json$).*)',
   ],
 }
