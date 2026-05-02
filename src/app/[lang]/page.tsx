@@ -314,13 +314,14 @@ export default async function HomePage({
               dict={dict.countdown}
             />
 
-            {/* Hero CTAs */}
+            {/* Hero CTAs — primary goes to budget calculator (high-intent
+                conversion path), secondary to calendar */}
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
               <Link
-                href={`/${lang}/${citiesPath}`}
+                href={`/${lang}/${toolsPath}/presupuesto`}
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-3 text-base font-bold text-primary shadow-lg transition-all hover:bg-accent-light hover:shadow-xl"
               >
-                <MapPin className="h-4 w-4" />
+                <Calendar className="h-4 w-4" />
                 {dict.home.heroCta}
               </Link>
               <Link
